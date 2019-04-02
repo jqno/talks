@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "TilburgsAns";
+    src: url("../_assets/tilburgsans/TilburgsAns-Regular.woff") format('woff');
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  text-transform: none;
+}
+
+.level1 h1 {
+  color: #002b36;
+  font-family: 'TilburgsAns';
+}
+
+html.page-title body {
+  background-color: #eee8d5;
+}
+
+html.page-good body {
+  background-color: #476995;
+}
+
+html.page-bad body {
+  background-color: #500a16;
+}
