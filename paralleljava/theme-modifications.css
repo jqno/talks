@@ -1,6 +1,6 @@
 @font-face {
     font-family: "TilburgsAns";
-    src: url("../_assets/tilburgsans/TilburgsAns-Regular.woff") format('woff');
+    src: url("../-assets/tilburgsans/TilburgsAns-Regular.woff") format('woff');
 }
 
 .reveal h1, .reveal h2, .reveal h3 {
