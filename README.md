@@ -8,4 +8,5 @@ This repo contains my talks.
 # Credits
 
 * [Reveal.js](https://revealjs.com/).
+* Font [TilburgsAns](https://www.tilburgsans.nl/). See its license [here](_assets/tilburgsans/Ans Font License-AFL.pdf).
 
