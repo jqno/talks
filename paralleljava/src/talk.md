@@ -1,22 +1,34 @@
 ---
-author: Jan Ouwens
-title: Java from a Parallel Universe
-date: 2019-05-29
+pagetitle: Java from a Parallel Universe
 theme: moon
 transition: none
 progress: "false"
 controls: "false"
 center: "false"
 ---
+# Java from a Parallel Universe { data-state="page-title" }
+
+Jan Ouwens
+
+2019-05-29
+
 # Slide 1 { data-state="page-title" }
 
-## Regular content
+Nog meer tekst
+
+# Regular content
+
+Hier tekst
+
+Daar tekst
 
 # Slide 2 { data-state="page-title" }
 
-## Code good { data-state="page-good" }
+# Code good { data-state="page-good" }
 
-## Code bad { data-state="page-bad" }
+Overal tekst
+
+# Code bad { data-state="page-bad" }
 
 # Slide 3 { data-state="page-title" }
 
