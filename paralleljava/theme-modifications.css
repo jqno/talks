@@ -18,8 +18,12 @@ html.page-title body {
   background-color: #eee8d5;
 }
 
+html.page-good p, html.page-bad p {
+  color: #eee8d5;
+}
+
 html.page-good body {
-  background-color: #476995;
+  background-color: #558b6e;
 }
 
 html.page-bad body {
