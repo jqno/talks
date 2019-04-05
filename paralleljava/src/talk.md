@@ -16,7 +16,7 @@ Jan Ouwens
 
 Nog meer tekst
 
-# Regular content
+## Regular content
 
 Hier tekst
 
@@ -24,11 +24,18 @@ Daar tekst
 
 # Slide 2 { data-state="page-title" }
 
-# Code good { data-state="page-good" }
+## Code good { data-state="page-good" }
 
 Overal tekst
 
-# Code bad { data-state="page-bad" }
+## Code bad { data-state="page-bad" }
+
+Alle tekst
+
+---
+## { data-state="page-good" }
+
+good
 
 # Slide 3 { data-state="page-title" }
 
