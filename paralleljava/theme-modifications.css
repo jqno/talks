@@ -35,8 +35,12 @@ html.page-bad body {
   background-color: #500a16;
 }
 
-.reveal code {
+.reveal pre {
   box-shadow: none;
+}
+
+.reveal code a {
+  color: #ccd5dd;
   font-family: "FiraCode";
 }
 
