@@ -6,36 +6,24 @@ progress: "false"
 controls: "false"
 center: "false"
 ---
+
 # Java from a Parallel Universe { data-state="page-title" }
 
 Jan Ouwens
 
 2019-05-29
 
-# Slide 1 { data-state="page-title" }
+# Annotations { data-state="page-title" }
 
-Nog meer tekst
+# Testing { data-state="page-title" }
 
-## Regular content
+# Web { data-state="page-title" }
 
-Hier tekst
+# Database { data-state="page-title" }
 
-Daar tekst
+# Serialization { data-state="page-title" }
 
-# Slide 2 { data-state="page-title" }
+# Dependency Injection { data-state="page-title" }
 
-## Code good { data-state="page-good" }
-
-Overal tekst
-
-## Code bad { data-state="page-bad" }
-
-Alle tekst
-
----
-## { data-state="page-good" }
-
-good
-
-# Slide 3 { data-state="page-title" }
+# Wrapping up { data-state="page-title" }
 
