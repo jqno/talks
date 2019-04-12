@@ -28,11 +28,11 @@ html.page-good p, html.page-bad p {
 }
 
 html.page-good body {
-  background-color: #558b6e;
+  background-color: #2a6d54;
 }
 
 html.page-bad body {
-  background-color: #500a16;
+  background-color: #95473d;
 }
 
 .reveal pre {
