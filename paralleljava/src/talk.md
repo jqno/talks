@@ -177,6 +177,8 @@ Stringly typed
 
 Discoverability
 
+![](../images/discoverability.png){ height=300px }
+
 ## The problem
 
 Debugability
