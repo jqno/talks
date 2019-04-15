@@ -15,7 +15,7 @@ center: "false"
 
 ![](../images/codestar.png)
 
-![](../images/twitter.png) [jqno](https://twitter.com/jqno) | [jqno.nl](https://jqno.nl)
+![](../images/twitter.png) [jqno](https://twitter.com/jqno) **|** [jqno.nl](https://jqno.nl)
 
 ---
 
@@ -50,7 +50,9 @@ center: "false"
 ---
 
 ::: superbig
-Let me help you
+Let me
+<br/>
+help you
 :::
 
 # Annotations { data-state="page-title" }
@@ -78,15 +80,15 @@ public class Something { ... }
 
 ## Why?
 
-C# had them
+**C#** had them
 
 <br/>
 
-<small>(C# → 2002, Java → 2004)</small>
+<small>(C# → **2002**, Java → **2004**)</small>
 
 . . .
 
-<small>(Parallel Java → never)</small>
+<small>(Parallel Java → **never**)</small>
 
 ## Why?
 
@@ -187,10 +189,6 @@ Discoverability
 
 Debugability
 
-## The problem { data-state="page-bad" }
-
-Debugability
-
 ::: { style="font-size:0.4em;" }
 
 ```xml
@@ -248,7 +246,7 @@ No annotations!
 
 <br/>
 
-Just plain Java
+Just **plain Java**
 
 # Testing { data-state="page-title" }
 
@@ -265,7 +263,6 @@ public void indexOfReturnsTheCorrectIndex() {
 ## JUnit 3 👹 { data-state="page-bad" }
 
 ```java
-
 public void testIndexOfReturnsTheCorrectIndex() {
     int actual = "hello world".indexOf('w');
     assertEquals(6, actual);
@@ -275,7 +272,6 @@ public void testIndexOfReturnsTheCorrectIndex() {
 ## In the parallel universe { data-state="page-good" }
 
 ```java
-
 test("indexOf returns the correct index", () -> {
     int actual = "hello world".indexOf('w');
     assertThat(actual).isEqualTo(6);
