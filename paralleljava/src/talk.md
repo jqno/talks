@@ -274,6 +274,47 @@ test("indexOf returns the correct index", () -> {
 
 # Web { data-state="page-title" }
 
+## In your universe { data-state="page-bad" }
+
+```java
+@GetMapping("/todo/{id}", produces = MediaType.APPLICATION_JSON)
+public String getTodo(@PathVariable("id") String id) {
+    return fetch(id);
+}
+```
+
+## In the parallel universe { data-state="page-good" }
+
+```java
+get("/todo/:id", (request, response) -> {
+    return fetch(request.params("id"));
+})
+```
+
+## Separating concerns { data-state="page-good" }
+
+```java
+public void defineRoutes() {
+    get("/todo/:id", this::handleGet);
+}
+
+// ...
+
+public String handleGet(Request request, Response response) {
+    return fetch(request.params("id"));
+}
+```
+
+## Cross-cutting concerns { data-state="page-good" }
+
+```java
+before((request, response) -> {
+    if (!authenticated(request)) {
+        halt(401, "nope");
+    }
+});
+```
+
 # Database { data-state="page-title" }
 
 # Serialization { data-state="page-title" }
