@@ -74,15 +74,19 @@ public void something() { ... }
 public class Something { ... }
 ```
 
-## History
-
-C# → 2002
-
-Java → 2004
-
-Parallel Java → never
+## Why?
 
 ## Why?
+
+C# had them
+
+<br/>
+
+<small>(C# → 2002, Java → 2004)</small>
+
+. . .
+
+<small>(Parallel Java → never)</small>
 
 ## Why?
 
