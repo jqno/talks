@@ -230,6 +230,16 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
 
 :::
 
+## Frameworks and libraries
+
+many existed **before** lambdas were introduced
+
+## What if ...
+
+* they dropped annotations?
+
+* and **embraced lambdas**?
+
 ## In the Parallel Universe
 
 <br/>
@@ -238,7 +248,7 @@ No annotations!
 
 <br/>
 
-Just Java
+Just plain Java
 
 # Testing { data-state="page-title" }
 
