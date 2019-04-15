@@ -23,6 +23,11 @@
   text-transform: none;
 }
 
+.reveal strong {
+  color: #ffa630;
+  font-weight: normal;
+}
+
 .reveal a {
   color: #eee8d5;
 }
