@@ -242,6 +242,36 @@ Just Java
 
 # Testing { data-state="page-title" }
 
+## In your universe { data-state="page-bad" }
+
+```java
+@Test
+public void indexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+```
+
+## JUnit 3 👹 { data-state="page-bad" }
+
+```java
+
+public void testIndexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+```
+
+## In the parallel universe { data-state="page-good" }
+
+```java
+
+test("indexOf returns the correct index", () -> {
+    int actual = "hello world".indexOf('w');
+    assertThat(actual).isEqualTo(6);
+});
+```
+
 # Web { data-state="page-title" }
 
 # Database { data-state="page-title" }
