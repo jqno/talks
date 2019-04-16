@@ -323,6 +323,80 @@ before((request, response) -> {
 
 # Database { data-state="page-title" }
 
+## In your universe { data-state="page-bad" }
+
+```java
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+```
+
+# JPA entities
+
+* must be **mutable**
+* jumble up domain logic and database hints
+
+## In the parallel universe { data-state="page-good" }
+
+```java
+public class Todo {
+    private final String id;
+    private final String title;
+
+    // No default constructor
+}
+```
+
+## In the parallel universe { data-state="page-good" }
+
+```java
+List<Todo> todos = engine.query(handle -> {
+    return handle
+        .createQuery("SELECT * FROM todo WHERE id = :id")
+        .bind("id", id)
+        .mapToBean(Todo.class)
+        .list();
+});
+```
+
+## How about transactions?
+
+```java
+String query = "SELECT * FROM todo WHERE title = :title";
+String update = "UPDATE todo SET completed = TRUE WHERE id = :id";
+
+engine.execute(handle -> {
+    return handle.inTransaction(h -> {
+        Todo todo = h.createQuery(query)
+                .bind("title", "rewrite annotations")
+                .mapToBean(Todo.class)
+                .findFirst();
+
+        h.createUpdate(update)
+                .bind("id", todo.id)
+                .execute();
+    });
+});
+```
+
+## Advantages
+
+* **Clean** separation of concerns
+* **Immutable** domain classes
+* **Easier** debugging
+
 # Serialization { data-state="page-title" }
 
 # Dependency Injection { data-state="page-title" }
