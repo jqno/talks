@@ -189,7 +189,7 @@ Discoverability
 
 Debugability
 
-::: { style="font-size:0.4em;" }
+::: stacktrace
 
 ```xml
 java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[public abstract java.util.Collection org.springframework.samples.petclinic.vet.VetRepository.findAll() throws org.springframework.dao.DataAccessException] caches=[vets] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
