@@ -397,9 +397,162 @@ engine.execute(handle -> {
 * **Immutable** domain classes
 * **Easier** debugging
 
-# Serialization { data-state="page-title" }
-
 # Dependency Injection { data-state="page-title" }
+
+## DI with Spring { data-state="page-bad" }
+
+```java
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+```
+
+## DI with Spring { data-state="page-bad" }
+
+```java
+public class INeedSomething {
+    @Autowired
+    public INeedSomething(Something needed) {
+        // ...
+    }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+```
+
+## DI with Spring { data-state="page-bad" }
+
+```java
+public class INeedSomething {
+
+    public INeedSomething(Something needed) {
+        // ...
+    }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+```
+
+## DI with Spring { data-state="page-bad" }
+
+```java
+public class INeedSomething {
+
+    public INeedSomething(Something needed) {
+        // ...
+    }
+}
+
+public class IHaveSomething {
+
+    public Something something = ...;
+}
+```
+
+## DI with Spring { data-state="page-bad" }
+
+::: stacktrace
+
+```xml
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'petController': Unsatisfied dependency expressed through field 'something'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.samples.petclinic.model.Something' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.samples.petclinic.PetClinicApplication.main(PetClinicApplication.java:32) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.samples.petclinic.model.Something' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 common frames omitted
+```
+
+:::
+
+## DI with Spring { data-state="page-bad" }
+
+```java
+public class INeedSomething {
+
+    public INeedSomething(Something needed) {
+        // ...
+    }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+
+    @Bean
+    public Something somethingElse = ...;
+}
+```
+
+## DI with Spring { data-state="page-bad" }
+
+::: stacktrace
+
+```xml
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field needed in org.springframework.samples.petclinic.owner.PetController required a single bean, but 2 were found:
+	- something: defined by method 'something' in class path resource [org/springframework/samples/petclinic/system/CacheConfiguration.class]
+	- somethingElse: defined by method 'somethingElse' in class path resource [org/springframework/samples/petclinic/system/CrashController.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+```
+
+:::
+
+## DI with Spring: conclusion
+
+* Need a **container**
+* Fields **can't** be final
+* Call constructor **directly**
+* **`@Autowired`** not always necessary?
+* **Confusing** stacktraces
+* Issues found at runtime
+* **No** architectural boundaries
 
 # Wrapping up { data-state="page-title" }
 
