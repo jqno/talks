@@ -343,7 +343,7 @@ public class Todo {
 }
 ```
 
-# JPA entities
+## JPA entities
 
 * must be **mutable**
 * jumble up domain logic and database hints
