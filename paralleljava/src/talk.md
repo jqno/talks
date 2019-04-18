@@ -770,5 +770,24 @@ You have to pick!
 **Shit don't compile**
 :::
 
+# Other annotations { data-state="page-title" }
+
+## Bad annotations
+
+* Serialization
+* Validation
+* Code generation
+
+## So-so annotations
+
+* `@NonNull`
+* `@Immutable`
+* `@SuppressWarnings`
+
+## Good annotations
+
+* `@Override`
+* `@Deprecated`
+
 # Wrapping up { data-state="page-title" }
 
