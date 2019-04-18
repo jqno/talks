@@ -445,6 +445,10 @@ public class IHaveSomething {
 }
 ```
 
+## DI with Spring
+
+A mistake: no match
+
 ## DI with Spring { data-state="page-bad" }
 
 ```java
@@ -502,6 +506,10 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 
 :::
 
+## DI with Spring
+
+A mistake: two matches
+
 ## DI with Spring { data-state="page-bad" }
 
 ```java
@@ -553,6 +561,214 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 * **Confusing** stacktraces
 * Issues found at runtime
 * **No** architectural boundaries
+
+## DI with Guice { data-state="page-bad" }
+
+```java
+public class INeedSomething {
+    private final Something needed;
+
+    @Inject
+    public INeedSomething(Something needed) {
+        this.needed = needed;
+    }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+    }
+}
+```
+
+## DI with Guice
+
+A mistake: no match
+
+## DI with Guice { data-state="page-bad" }
+
+```java
+public class INeedSomething {
+    private final Something needed;
+
+    @Inject
+    public INeedSomething(Something needed) {
+        this.needed = needed;
+    }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        // bind(Something.class).toInstance(...);
+    }
+}
+```
+
+## DI with Guice { data-state="page-bad" }
+
+::: stacktrace
+
+```xml
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) No implementation for services.Counter was bound.
+  while locating services.Counter
+    for the 1st parameter of controllers.CountController.<init>(CountController.java:22)
+  while locating controllers.CountController
+    for the 3rd parameter of router.Routes.<init>(Routes.scala:38)
+  at play.api.inject.RoutesProvider$.bindingsFromConfiguration(BuiltinModule.scala:123):
+Binding(class router.Routes to self) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$4)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+```
+
+:::
+
+## DI with Guice
+
+A mistake: two matches
+
+## DI with Guice { data-state="page-bad" }
+
+```java
+public class INeedSomething {
+    private final Something needed;
+
+    @Inject
+    public INeedSomething(Something needed) {
+        this.needed = needed;
+    }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+        bind(Something.class).toInstance(...);
+    }
+}
+```
+
+## DI with Guice { data-state="page-bad" }
+
+::: stacktrace
+
+```xml
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) A binding to services.Counter was already configured at Module.configure(Module.java:29) (via modules: com.google.inject.util.Modules$OverrideModule -> Module).
+  at Module.configure(Module.java:30) (via modules: com.google.inject.util.Modules$OverrideModule -> Module)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+```
+
+:::
+
+## DI with Guice: conclusion
+
+* Need a **container**
+* Call constructor **directly**
+* **Clear** stacktraces
+* Issues found at runtime
+* **Some** architectural boundaries
+
+## Manual DI { data-state="page-good" }
+
+```java
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething = new INeedSomething(needed);
+    }
+}
+
+public class INeedSomething {
+    private final Something needed;
+
+    public INeedSomething(Something needed) {
+        this.needed = needed;
+    }
+}
+```
+
+## Manual DI
+
+A mistake: no matches
+
+## Manual DI { data-state="page-good" }
+
+```java
+public class Main {
+    public static void main(String... args) {
+        // Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+```
+
+## Manual DI { data-state="page-good" }
+
+```xml
+[ERROR] COMPILATION ERROR :
+[ERROR] [...]/Main.java:[34,82] cannot find symbol
+  symbol:   variable needed
+  location: class nl.jqno.paralleljava.Main
+```
+
+## Manual DI
+
+A mistake: two matches
+
+## Manual DI { data-state="page-good" }
+
+```java
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        Something somethingElse = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(???);
+    }
+}
+```
+
+. . .
+
+You have to pick!
+
+
+## Manual DI: conclusion
+
+* Don't need a **container**
+* **Clear** architectural boundaries
+* Invalid states are **not representable**
+* Some **boilerplate**
+
+## Manual DI: conclusion
+
+::: superbig
+**Shit don't compile**
+:::
 
 # Wrapping up { data-state="page-title" }
 
