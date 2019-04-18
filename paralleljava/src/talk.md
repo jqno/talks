@@ -15,7 +15,7 @@ center: "false"
 
 ![](../images/codestar.png)
 
-![](../images/twitter.png) [jqno](https://twitter.com/jqno) **|** [jqno.nl](https://jqno.nl)
+![](../images/twitter.png) [jqno](https://twitter.com/jqno) | [jqno.nl](https://jqno.nl)
 
 ---
 
@@ -790,4 +790,30 @@ You have to pick!
 * `@Deprecated`
 
 # Wrapping up { data-state="page-title" }
+
+## Yeah right
+
+---
+
+<br/><br/>
+
+::: superbig
+It's all **real**
+:::
+
+## Libraries
+
+* [SparkJava](http://sparkjava.com/)
+* [JDBI](http://jdbi.org/)
+* [PicoTest](https://github.com/jqno/PicoTest)
+
+## Demo application
+
+<br/>
+
+![](../images/github.png)
+
+[github.com/jqno/paralleljava](https://github.com/jqno/paralleljava)
+
+# Questions? { data-state="page-title" }
 
