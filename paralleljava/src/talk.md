@@ -346,6 +346,7 @@ public class Todo {
 ## JPA entities
 
 * must be **mutable**
+* generate invisible code
 * jumble up domain logic and database hints
 
 ## In the parallel universe { data-state="page-good" }
@@ -763,6 +764,7 @@ You have to pick!
 * **Clear** architectural boundaries
 * Invalid states are **not representable**
 * Some **boilerplate**
+* One dirty class
 
 ## Manual DI: conclusion
 
