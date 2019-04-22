@@ -52,7 +52,7 @@ center: "false"
 ::: superbig
 Let me
 
-help you
+**help** you
 :::
 
 # Annotations { data-state="page-title" }
