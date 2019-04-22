@@ -809,6 +809,19 @@ It's all **real**
 * [JDBI](http://jdbi.org/)
 * [PicoTest](https://github.com/jqno/PicoTest)
 
+# Alternatives
+
+* Web: [Spring 5 Functional Web Framework](https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework)
+* DB: [JOOQ](https://www.jooq.org/)
+
+# Alternatives
+
+* Web: [Spring 5 Functional Web Framework](https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework)
+* DB: [JOOQ](https://www.jooq.org/)
+* Scala
+* Kotlin
+* ...
+
 ## Demo application
 
 <br/>
