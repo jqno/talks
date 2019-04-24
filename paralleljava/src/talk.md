@@ -1,6 +1,7 @@
 ---
 pagetitle: Java from a Parallel Universe
 theme: moon
+backgroundTransition: none
 transition: none
 progress: "false"
 controls: "false"
@@ -147,7 +148,7 @@ Modify runtime behavior
 Magic
 :::
 
----
+## { data-background="../images/darkmagic.jpg" }
 
 ::: superbig
 Dark
