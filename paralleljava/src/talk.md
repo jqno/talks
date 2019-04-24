@@ -267,6 +267,10 @@ No annotations!
 
 <br/>
 
+No magic!
+
+<br/>
+
 Just **plain Java**
 
 # Testing { data-state="page-title" }
