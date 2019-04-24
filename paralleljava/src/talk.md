@@ -287,7 +287,7 @@ test("indexOf returns the correct index", () -> {
 ## In your universe { data-state="page-bad" }
 
 ```java
-@GetMapping("/todo/{id}", produces = MediaType.APPLICATION_JSON)
+@GetMapping("/todo/{id}")
 public String getTodo(@PathVariable("id") String id) {
     return fetch(id);
 }
