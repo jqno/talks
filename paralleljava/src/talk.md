@@ -147,17 +147,13 @@ Modify runtime behavior
 ---
 
 ::: superbig
-&nbsp;
-
 Magic
 :::
 
 ## { data-background="../images/darkmagic.jpg" }
 
 ::: superbig
-Dark
-
-Magic
+Dark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;magic
 :::
 
 ## The problem
