@@ -851,3 +851,9 @@ It's all **real**
 
 # Questions? { data-state="page-title" }
 
+<br/>
+
+![](../images/qr.png)
+
+[jqno.nl/talks/paralleljava](http://jqno.nl/talks/paralleljava)
+

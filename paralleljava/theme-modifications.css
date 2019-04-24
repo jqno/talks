@@ -43,6 +43,9 @@ html.page-title .reveal h1 {
   font-size: 3.77em;
 }
 
+html.page-title .reveal a {
+  color: #002b36;
+}
 
 /* Overrides for page-good and page-bad */
 
@@ -96,3 +99,4 @@ div.sourceCode {
 .stacktrace {
   font-size: 0.4em;
 }
+
