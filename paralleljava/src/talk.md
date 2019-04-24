@@ -303,6 +303,11 @@ test("indexOf returns the correct index", () -> {
 });
 ```
 
+## Pros & cons
+
+* **Pro** clear description of test
+* **Con** ?
+
 # Web { data-state="page-title" }
 
 ## In your universe { data-state="page-bad" }
@@ -345,6 +350,12 @@ before((request, response) -> {
     }
 });
 ```
+
+## Pros & Cons
+
+* **Pro** clean separation of concerns
+* **Pro** generate endpoints
+* **Con** ?
 
 # Database { data-state="page-title" }
 
@@ -417,13 +428,16 @@ engine.execute(handle -> {
 });
 ```
 
-## Advantages
+## Pros & Cons
 
-* **Clean** separation of concerns
-* **Immutable** domain classes
-* **Easier** debugging
+* **Pro** clean separation of concerns
+* **Pro** immutable domain classes
+* **Pro** easier debugging
+* **Con** write SQL directly
 
 # Dependency Injection { data-state="page-title" }
+
+## DI with Spring
 
 ## DI with Spring { data-state="page-bad" }
 
@@ -578,15 +592,7 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 
 :::
 
-## DI with Spring: conclusion
-
-* Need a **container**
-* Fields **can't** be final
-* Call constructor **directly**
-* **`@Autowired`** not always necessary?
-* **Confusing** stacktraces
-* Issues found at runtime
-* **No** architectural boundaries
+## DI with Guice
 
 ## DI with Guice { data-state="page-bad" }
 
@@ -709,13 +715,7 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 
 :::
 
-## DI with Guice: conclusion
-
-* Need a **container**
-* Call constructor **directly**
-* **Clear** stacktraces
-* Issues found at runtime
-* **Some** architectural boundaries
+## Manual DI
 
 ## Manual DI { data-state="page-good" }
 
@@ -782,20 +782,14 @@ public class Main {
 
 You have to pick!
 
+## Pros & Cons
 
-## Manual DI: conclusion
-
-* Don't need a **container**
-* **Clear** architectural boundaries
-* Invalid states are **not representable**
-* Some **boilerplate**
-* One dirty class
-
-## Manual DI: conclusion
-
-::: superbig
-**Shit don't compile**
-:::
+* **Pro** problems found at compile time 🍃🍹
+* **Pro** clear architectural boundaries 🍃🍹
+* **Pro** clear error messages 🍃
+* **Pro** don't need a container 🍃
+* **Con** 1 dirty class
+* **Con** some boilerplate
 
 # Other annotations { data-state="page-title" }
 
