@@ -10,6 +10,10 @@ center: "false"
 
 # Java from a Parallel Universe { data-state="page-title" }
 
+::: preload-background-images
+![](../images/darkmagic.jpg)
+:::
+
 ## Jan Ouwens
 
 <br/><br/><br/><br/>
