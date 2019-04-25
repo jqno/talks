@@ -146,6 +146,11 @@ Modify runtime behavior
            produces = MediaType.APPLICATION_JSON_VALUE)
 ```
 
+## How?
+
+* Reflection
+* Code generation
+
 ---
 
 ::: superbig
@@ -182,6 +187,10 @@ Weakly typed
 public void waitwhat() { ... }
 ```
 
+## The problem
+
+Stringly typed
+
 ## The problem { data-state="page-bad" }
 
 Stringly typed
@@ -202,7 +211,9 @@ Stringly typed
 
 Discoverability
 
-. . .
+## The problem { data-state="page-bad" }
+
+Discoverability
 
 ![](../images/discoverability.png){ height=300px }
 
@@ -210,7 +221,9 @@ Discoverability
 
 Debugability
 
-. . .
+## The problem { data-state="page-bad" }
+
+Debugability
 
 ::: stacktrace
 
@@ -250,6 +263,23 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
 ```
 
 :::
+
+
+## The problem
+
+Difficult path to modules
+
+## The problem { data-state="page-bad" }
+
+Difficult path to modules
+
+```xml
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (jar:file:/home/huzhifeng/tmp/demo/build/libs/demo-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/spring-core-5.0.1.RELEASE.jar!/) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+```
 
 ## Frameworks and libraries
 
