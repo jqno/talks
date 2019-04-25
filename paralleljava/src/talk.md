@@ -848,7 +848,7 @@ You have to pick!
 * `@Override`
 * `@Deprecated`
 
-# Wrapping up { data-state="page-title" }
+# Parallel Java { data-state="page-title" }
 
 ## Yeah right
 
@@ -859,6 +859,105 @@ You have to pick!
 ::: superbig
 It's all **real**
 :::
+
+## Some code
+
+## Some code { data-state="page-good" }
+
+``` { .yml style="font-size:0.8em;" }
+modelVersion: 4.0.0
+groupId: nl.jqno.paralleljava
+artifactId: parallel-java
+version: 1.0
+packaging: jar
+name: parallel-java
+
+properties: {
+  encoding: utf-8,
+  maven.compiler.source: 11,
+  maven.compiler.target: 11,
+}
+
+dependencies:
+  - { groupId: com.sparkjava, artifactId: spark-core, version: 2.7.2 }
+  - { groupId: com.google.code.gson, artifactId: gson, version: 2.8.5 }
+  - { groupId: org.jdbi, artifactId: jdbi3-core }
+  - { groupId: org.postgresql, artifactId: postgresql, version: 42.2.5 }
+```
+
+## Some code { data-state="page-good" }
+
+``` { .java style="font-size:0.8em;" }
+public void architecture() {
+    test("only SparkServer and SparkServerTest access Spark classes", () -> {
+        assertBoundary("spark..", SparkServer.class.getPackage());
+    });
+
+    test("only DatabaseRepository accesses Engine classes", () -> {
+        assertBoundary("org.jdbi..", DatabaseRepository.class.getPackage());
+    });
+}
+```
+
+## Some code { data-state="page-good" }
+
+```java
+public void run() {
+    port(port);
+    enableCors();
+
+    get(endpoint,
+        (req, resp) -> controller.get());
+    get(endpoint + "/:id",
+        (req, resp) -> controller.get(req.params("id")));
+    post(endpoint,
+        (req, resp) -> controller.post(req.body()));
+}
+```
+
+## Some code { data-state="page-good" }
+
+```java
+public Try<Void> create(Todo todo) {
+    return engine.execute(handle -> {
+        String sql = "INSERT INTO todo" +
+            "(id, title, completed, index)" +
+            "VALUES" +
+            "(:id, :title, :completed, :order)";
+        return handle.createUpdate(sql)
+            .bind("id", todo.id().toString())
+            .bind("title", todo.title())
+            .bind("completed", todo.completed())
+            .bind("order", todo.order())
+            .execute());
+    }
+}
+```
+
+## Some code { data-state="page-good" }
+
+``` { .java style="font-size:0.8em;" }
+public class Main {
+    public static void main(String... args) {
+        LoggerFactory loggerFactory =
+                c -> new Slf4jLogger(org.slf4j.LoggerFactory.getLogger(c));
+
+        // ...
+
+        var todoMapper = new TodoMapper(fullUrl);
+        var dbEngine = new JdbiEngine(jdbcUrl, todoMapper, loggerFactory);
+        var repository = new DatabaseRepository(dbEngine);
+
+        var idGenerator = new RandomIdGenerator();
+        var serializer = GsonSerializer.create(loggerFactory);
+        var controller = new DefaultController(fullUrl, repository, idGenerator, serializer, loggerFactory);
+        var server = new SparkServer(Environment.ENDPOINT, port, controller, loggerFactory);
+
+        var runner = new Runner(repository, server, loggerFactory);
+        runner.startup();
+    }
+}
+```
 
 ## Libraries
 
