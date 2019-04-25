@@ -829,6 +829,7 @@ It's all **real**
 * [SparkJava](http://sparkjava.com/)
 * [JDBI](http://jdbi.org/)
 * [PicoTest](https://github.com/jqno/PicoTest)
+* Enforced by [Checkstyle](https://checkstyle.org/)
 
 # Alternatives
 
