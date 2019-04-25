@@ -10,11 +10,6 @@ center: "false"
 
 # Java from a Parallel Universe { data-state="page-title" }
 
-::: preload-background-images
-![](../images/universe.jpg)
-![](../images/darkmagic.jpg)
-:::
-
 ## Jan Ouwens
 
 <br/><br/><br/><br/>
@@ -22,6 +17,10 @@ center: "false"
 ![](../images/codestar.png){style="height:30px;margin-top:5px;"} | [EqualsVerifier](https://jqno.nl/equalsverifier)
 
 ![](../images/twitter.png) [jqno](https://twitter.com/jqno) | [jqno.nl](https://jqno.nl)
+
+::: preload-background-images
+![](../images/universe.jpg)
+:::
 
 ## { data-background-image="../images/universe.jpg" data-background-position=bottom }
 
@@ -170,6 +169,10 @@ Modify runtime behavior
 
 ::: superbig
 Magic
+:::
+
+::: preload-background-images
+![](../images/darkmagic.jpg)
 :::
 
 ## { data-background="../images/darkmagic.jpg" }
@@ -1017,6 +1020,10 @@ Think about your **languages**
 * Scala
 * Kotlin
 * ...
+
+::: preload-background-images
+![](../images/universe.jpg)
+:::
 
 ## Conclusion { data-background-image="../images/universe.jpg" data-background-position=bottom }
 
