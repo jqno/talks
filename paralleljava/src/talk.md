@@ -831,19 +831,6 @@ It's all **real**
 * [PicoTest](https://github.com/jqno/PicoTest)
 * Enforced by [Checkstyle](https://checkstyle.org/)
 
-# Alternatives
-
-* Web: [Spring 5 Functional Web Framework](https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework)
-* DB: [JOOQ](https://www.jooq.org/)
-
-# Alternatives
-
-* Web: [Spring 5 Functional Web Framework](https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework)
-* DB: [JOOQ](https://www.jooq.org/)
-* Scala
-* Kotlin
-* ...
-
 ## Demo application
 
 <br/>
@@ -851,6 +838,29 @@ It's all **real**
 ![](../images/github.png)
 
 [github.com/jqno/paralleljava](https://github.com/jqno/paralleljava)
+
+# Conclusion { data-state="page-title" }
+
+## Conclusion
+
+Think about your **libraries**
+
+## Conclusion
+
+Think about your **frameworks**
+
+<br/><br/><br/>
+<br/><br/><br/>
+
+<small>[Spring Functional Web Framework](https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework)</small>
+
+## Conclusion
+
+Think about your **languages**
+
+## Conclusion
+
+Think about your **universe**
 
 # Questions? { data-state="page-title" }
 
