@@ -11,6 +11,7 @@ center: "false"
 # Java from a Parallel Universe { data-state="page-title" }
 
 ::: preload-background-images
+![](../images/universe.jpg)
 ![](../images/darkmagic.jpg)
 :::
 
@@ -22,13 +23,7 @@ center: "false"
 
 ![](../images/twitter.png) [jqno](https://twitter.com/jqno) | [jqno.nl](https://jqno.nl)
 
-## Jan Ouwens { data-background-image="../images/universe.jpg" data-background-position=bottom }
-
-<br/><br/><br/><br/>
-
-![](../images/codestar.png){style="height:30px;margin-top:5px;"} | [EqualsVerifier](https://jqno.nl/equalsverifier)
-
-![](../images/twitter.png) [jqno](https://twitter.com/jqno) | [jqno.nl](https://jqno.nl)
+## { data-background-image="../images/universe.jpg" data-background-position=bottom }
 
 ---
 
@@ -311,7 +306,7 @@ many existed **before** lambdas were introduced
 
 * and **embraced lambdas**?
 
-## In the Parallel Universe
+## Parallel Java
 
 <br/>
 
@@ -1023,7 +1018,7 @@ Think about your **languages**
 * Kotlin
 * ...
 
-## Conclusion
+## Conclusion { data-background-image="../images/universe.jpg" data-background-position=bottom }
 
 Think about your **universe**
 
