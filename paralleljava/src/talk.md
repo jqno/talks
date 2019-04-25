@@ -411,12 +411,6 @@ public class Todo {
 }
 ```
 
-## JPA entities
-
-* must be **mutable**
-* generate invisible code
-* jumble up domain logic and database hints
-
 ## In the parallel universe { data-state="page-good" }
 
 ```java
