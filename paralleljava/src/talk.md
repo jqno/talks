@@ -87,13 +87,15 @@ public class Something { ... }
 
 **C#** had them
 
+¯\\\_(ツ)\_/¯
+
 <br/>
 
-<small>(C# → **2002**, Java → **2004**)</small>
-
-. . .
-
-<small>(Parallel Java → **never**)</small>
+::: stacktrace
+* **2002** → C#
+* **2004** → Java
+* **never** → Parallel Java
+:::
 
 ## Why?
 
