@@ -881,14 +881,27 @@ It's all **real**
 
 Think about your **libraries**
 
+. . .
+
+<br/>
+
+Do you really need them?
+
+Are they good citizens?
+
 ## Conclusion
 
 Think about your **frameworks**
 
-<br/><br/><br/>
-<br/><br/><br/>
+. . .
 
-<small>[Spring Functional Web Framework](https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework)</small>
+<br/>
+
+Will they infect your architecture?
+
+Are there alternatives?
+<br/> 
+<small>([Spring Functional Web Framework](https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework))</small>
 
 ## Conclusion
 
