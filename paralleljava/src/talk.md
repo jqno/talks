@@ -60,6 +60,18 @@ Let me
 **help** you
 :::
 
+## Language of the Year
+
+. . .
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+Java without annotations
+
 # Annotations { data-state="page-title" }
 
 ## What are they?
@@ -881,6 +893,15 @@ Think about your **frameworks**
 ## Conclusion
 
 Think about your **languages**
+
+. . .
+
+<br/>
+
+* **Parallel Java**
+* Scala
+* Kotlin
+* ...
 
 ## Conclusion
 
