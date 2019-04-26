@@ -767,7 +767,8 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 public class Main {
     public static void main(String... args) {
         Something needed = ...;
-        INeedSomething iNeedSomething = new INeedSomething(needed);
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
     }
 }
 
@@ -870,7 +871,7 @@ It's all **real**
 
 ## Some code { data-state="page-good" }
 
-``` { .yml style="font-size:0.8em;" }
+```yml
 modelVersion: 4.0.0
 groupId: nl.jqno.paralleljava
 artifactId: parallel-java
@@ -893,7 +894,7 @@ dependencies:
 
 ## Some code { data-state="page-good" }
 
-``` { .java style="font-size:0.8em;" }
+```java
 public void architecture() {
     test("only SparkServer and SparkServerTest access Spark classes", () -> {
         assertBoundary("spark..", SparkServer.class.getPackage());
@@ -912,12 +913,9 @@ public void run() {
     port(port);
     enableCors();
 
-    get(endpoint,
-        (req, resp) -> controller.get());
-    get(endpoint + "/:id",
-        (req, resp) -> controller.get(req.params("id")));
-    post(endpoint,
-        (req, resp) -> controller.post(req.body()));
+    get(endpoint, (req, resp) -> controller.get());
+    get(endpoint + "/:id", (req, resp) -> controller.get(req.params("id")));
+    post(endpoint, (req, resp) -> controller.post(req.body()));
 }
 ```
 
@@ -926,10 +924,8 @@ public void run() {
 ```java
 public Try<Void> create(Todo todo) {
     return engine.execute(handle -> {
-        String sql = "INSERT INTO todo" +
-            "(id, title, completed, index)" +
-            "VALUES" +
-            "(:id, :title, :completed, :order)";
+        String sql = "INSERT INTO todo (id, title, completed, index)" +
+            "VALUES (:id, :title, :completed, :order)";
         return handle.createUpdate(sql)
             .bind("id", todo.id().toString())
             .bind("title", todo.title())
@@ -942,7 +938,7 @@ public Try<Void> create(Todo todo) {
 
 ## Some code { data-state="page-good" }
 
-``` { .java style="font-size:0.8em;" }
+```java
 public class Main {
     public static void main(String... args) {
         LoggerFactory loggerFactory =
