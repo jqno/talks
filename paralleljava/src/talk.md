@@ -356,7 +356,7 @@ test("indexOf returns the correct index", () -> {
 ## Pros & cons
 
 * **Pro** clear description of test
-* **Con** ?
+* **Con** ugly without lambdas
 
 # Web { data-state="page-title" }
 
@@ -405,7 +405,7 @@ before((request, response) -> {
 
 * **Pro** clean separation of concerns
 * **Pro** generate endpoints
-* **Con** ?
+* **Con** ugly without lambdas
 
 # Database { data-state="page-title" }
 
@@ -478,6 +478,7 @@ engine.execute(handle -> {
 * **Pro** immutable domain classes
 * **Pro** easier debugging
 * **Con** write SQL directly
+* **Con** still some reflection magic
 
 # Dependency Injection { data-state="page-title" }
 
