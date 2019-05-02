@@ -87,6 +87,10 @@ html.page-bad body {
   font-size: 5em;
 }
 
+.supersmall {
+  font-size: 0.6em;
+}
+
 .stacktrace {
   font-size: 0.6em;
 }

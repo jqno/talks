@@ -105,7 +105,7 @@ public class Something { ... }
 
 <br/>
 
-::: stacktrace
+::: supersmall
 * **2002** → C#
 * **2004** → Java
 * **never** → Parallel Java
@@ -285,11 +285,11 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
 
 ## The problem
 
-Difficult path to modules
+Difficult path to modules due to **reflection**
 
 ## The problem { data-state="page-bad" }
 
-Difficult path to modules
+Difficult path to modules due to **reflection**
 
 ```xml
 WARNING: An illegal reflective access operation has occurred
@@ -299,9 +299,28 @@ WARNING: Use --illegal-access=warn to enable warnings of further illegal reflect
 WARNING: All illegal access operations will be denied in a future release
 ```
 
+## The solution
+
+. . .
+
+::: superbig
+**λ**
+:::
+
+::: supersmall
+Also, **plain Java**
+:::
+
 ## Frameworks and libraries
 
-many existed **before** lambdas were introduced
+Many existed **before** lambdas were introduced
+
+<br/>
+
+::: supersmall
+* **2004** → Annotations
+* **2014** → Lambdas
+:::
 
 ## What if ...
 
@@ -1002,8 +1021,10 @@ Think about your **frameworks**
 Will they infect your architecture?
 
 Are there alternatives?
-<br/> 
-<small>([Spring Functional Web Framework](https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework))</small>
+
+::: supersmall
+([Spring Functional Web Framework](https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework))
+:::
 
 ## Conclusion
 
