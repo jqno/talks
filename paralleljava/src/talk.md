@@ -465,7 +465,7 @@ public String getTodo(@PathVariable("id") String id) {
 <pre><code class="java" data-trim data-line-numbers>
 get("/todo/:id", (request, response) -> {
     return fetch(request.params("id"));
-})
+});
 </code></pre>
 
 ## Separating concerns { data-state="page-good" }
