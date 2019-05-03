@@ -1375,3 +1375,9 @@ Think about your **universe**
 
 [jqno.nl/talks/paralleljava](http://jqno.nl/talks/paralleljava)
 
+<br/>
+
+::: { style="color:#002b36;font-size:0.3em;" }
+Photo credits: [Hafidh Satyanto](https://unsplash.com/photos/boNRsEMxPsY) and [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY) on [Unsplash](https://unsplash.com)
+:::
+
