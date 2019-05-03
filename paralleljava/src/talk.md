@@ -1234,6 +1234,78 @@ dependencies:
 
 ## Some code { data-state="page-good" }
 
+<pre><code class="xml" data-trim data-line-numbers>
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers="7">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers="3">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers="10">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
 <pre><code class="java" data-trim data-line-numbers>
 public void architecture() {
     test("only SparkServer and SparkServerTest access Spark classes", () -> {
@@ -1306,7 +1378,6 @@ public class Main {
 * [SparkJava](http://sparkjava.com/)
 * [JDBI](http://jdbi.org/)
 * [PicoTest](https://github.com/jqno/PicoTest)
-* Enforced by [Checkstyle](https://checkstyle.org/)
 
 ## Demo application
 
