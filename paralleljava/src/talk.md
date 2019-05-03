@@ -1098,19 +1098,19 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
-public class Main {
-    public static void main(String... args) {
-        Something needed = ...;
-        INeedSomething iNeedSomething =
-            new INeedSomething(needed);
-    }
-}
-
 public class INeedSomething {
     private final Something needed;
 
     public INeedSomething(Something needed) {
         this.needed = needed;
+    }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
     }
 }
 </code></pre>
