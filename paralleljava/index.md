@@ -1,8 +1,9 @@
 ---
 title: "Java from a Parallel Universe"
 ---
-[Source for the demo application](https://github.com/jqno/paralleljava/)
+## Source for the demo application
+Fork it [on GitHub](https://github.com/jqno/paralleljava/)!
 
-Deliveries
+## Deliveries
 * [J-Spring 2019](2019-jspring)
 
