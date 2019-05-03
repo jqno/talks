@@ -1373,19 +1373,26 @@ public class Main {
 }
 </code></pre>
 
-## Libraries
+## Libraries used
 
 * [SparkJava](http://sparkjava.com/)
 * [JDBI](http://jdbi.org/)
 * [PicoTest](https://github.com/jqno/PicoTest)
 
-## Demo application
+::: preload-background-images
+![](../images/universe.jpg)
+:::
+
+## PicoTest { data-background-image="../images/universe.jpg" data-background-position=bottom }
+
+## Code
 
 <br/>
 
 ![](../images/github.png)
 
-[github.com/jqno/paralleljava](https://github.com/jqno/paralleljava)
+* [github.com/jqno/paralleljava](https://github.com/jqno/paralleljava)
+* [github.com/jqno/picotest](https://github.com/jqno/picotest)
 
 # Conclusion { data-state="page-title" }
 
