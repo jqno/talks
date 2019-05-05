@@ -913,7 +913,15 @@ Action:
 Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
 </code></pre>
 
+<br/>
+
 :::
+
+. . .
+
+```xml
+logging.level.org.springframework=OFF
+```
 
 ## DI with Guice
 
@@ -1169,6 +1177,7 @@ You have to pick!
 
 ## Pros & Cons
 
+* **Pro** illegal states unrepresentable 🍃🍹
 * **Pro** problems found at compile time 🍃🍹
 * **Pro** clear architectural boundaries 🍃🍹
 * **Pro** clear error messages 🍃
