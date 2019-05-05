@@ -442,8 +442,13 @@ test("indexOf returns the correct index", () -> {
 
 ## Pros & cons
 
-* **Pro** clear description of test
 * **Con** ugly without lambdas
+
+<br/>
+
+. . .
+
+* **Pro** clear description of test
 
 # Web { data-state="page-title" }
 
@@ -498,9 +503,14 @@ before((request, response) -> {
 
 ## Pros & Cons
 
+* **Con** ugly without lambdas
+
+<br/>
+
+. . .
+
 * **Pro** clean separation of concerns
 * **Pro** generate endpoints
-* **Con** ugly without lambdas
 
 # Database { data-state="page-title" }
 
@@ -577,11 +587,16 @@ engine.execute(handle -> {
 
 ## Pros & Cons
 
+* **Con** write SQL directly
+* **Con** still some reflection magic
+
+<br/>
+
+. . .
+
 * **Pro** clean separation of concerns
 * **Pro** immutable domain classes
 * **Pro** easier debugging
-* **Con** write SQL directly
-* **Con** still some reflection magic
 
 # Dependency Injection { data-state="page-title" }
 
@@ -1177,13 +1192,19 @@ You have to pick!
 
 ## Pros & Cons
 
+* **Con** 1 dirty class
+* **Con** some boilerplate
+
+<br/>
+
+. . .
+
 * **Pro** illegal states unrepresentable 🍃🍹
 * **Pro** problems found at compile time 🍃🍹
 * **Pro** clear architectural boundaries 🍃🍹
 * **Pro** clear error messages 🍃
 * **Pro** don't need a container 🍃
-* **Con** 1 dirty class
-* **Con** some boilerplate
+
 
 # Other annotations { data-state="page-title" }
 
