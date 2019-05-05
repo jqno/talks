@@ -1288,7 +1288,6 @@ You have to pick!
 * **Pro** clear error messages 🍃
 * **Pro** don't need a container 🍃
 
-
 # Other annotations { data-state="page-title" }
 
 ## Bad annotations
