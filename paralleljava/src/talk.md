@@ -440,6 +440,49 @@ test("indexOf returns the correct index", () -> {
 });
 </code></pre>
 
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+test("indexOf returns the correct index", new Runnable() {
+    @Override
+    public void run() {
+        int actual = "hello world".indexOf('w');
+        assertThat(actual).isEqualTo(6);
+    }
+});
+</code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+test("indexOf returns the correct index", new Runnable() {
+    @Override
+    public void run() {
+        int actual = "hello world".indexOf('w');
+        assertThat(actual).isEqualTo(6);
+    }
+});
+</code></pre>
+
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+test("indexOf returns the correct index", () -> {
+    int actual = "hello world".indexOf('w');
+    assertThat(actual).isEqualTo(6);
+});
+</code></pre>
+
+::: superbig
+λ
+:::
+
 ## Pros & cons
 
 * **Con** ugly without lambdas
@@ -472,6 +515,46 @@ get("/todo/:id", (request, response) -> {
     return fetch(request.params("id"));
 });
 </code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+get("/todo/:id", new Route() {
+    @Override
+    public Object handle(Request request, Response response) throws Exception {
+        return fetch(request.params("id"));
+    }
+});
+</code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+get("/todo/:id", new Route() {
+    @Override
+    public Object handle(Request request, Response response) throws Exception {
+        return fetch(request.params("id"));
+    }
+});
+</code></pre>
+
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+get("/todo/:id", (request, response) -> {
+    return fetch(request.params("id"));
+});
+</code></pre>
+
+::: superbig
+λ
+:::
 
 ## Separating concerns { data-state="page-good" }
 
