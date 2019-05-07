@@ -1542,12 +1542,33 @@ Think about your **languages**
 
 . . .
 
-<br/>
+Language of the Year
 
-* **Parallel Java**
-* Scala
-* Kotlin
-* ...
+## Conclusion
+
+Think about your **languages**
+
+Language of the Year
+
+**Scala**
+
+## Conclusion
+
+Think about your **languages**
+
+Language of the Year
+
+**Kotlin**
+
+## Conclusion
+
+Think about your **languages**
+
+Language of the Year
+
+::: superbig
+**Parallel Java**
+:::
 
 ::: preload-background-images
 ![](../images/universe.jpg)
