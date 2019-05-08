@@ -202,17 +202,21 @@ Dark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;magic
 
 ## The problem
 
+## The problems
+
+## The problems
+
 Checked at runtime
 
 ## The problem { data-state="page-bad" }
 
 ![](../images/funtimeexceptions.png)
 
-## The problem
+## The problems
 
 Weakly typed
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Weakly typed
 
@@ -224,11 +228,11 @@ Weakly typed
 public void waitwhat() { ... }
 ```
 
-## The problem
+## The problems
 
 Stringly typed
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Stringly typed
 
@@ -236,7 +240,7 @@ Stringly typed
 @PreAuthorize("isFullyAuthenticated")
 ```
 
-## The problem { data-state="page-good" }
+## The problems { data-state="page-good" }
 
 Stringly typed
 
@@ -244,21 +248,21 @@ Stringly typed
 @PreAuthorize("isFullyAuthenticated()")
 ```
 
-## The problem
+## The problems
 
 Discoverability
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Discoverability
 
 ![](../images/discoverability.png){ height=300px }
 
-## The problem
+## The problems
 
 Debugability
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Debugability
 
@@ -301,7 +305,7 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
 
 :::
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Debugability
 
@@ -344,12 +348,11 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
 
 :::
 
-
-## The problem
+## The problems
 
 Difficult path to modules due to **reflection**
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Difficult path to modules due to **reflection**
 
