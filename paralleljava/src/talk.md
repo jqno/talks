@@ -172,6 +172,8 @@ public class Something { ... }
 
 Add metadata
 
+::: big
+
 ```java
 @Override
 
@@ -182,9 +184,13 @@ Add metadata
 @Nonnull
 ```
 
+:::
+
 ## Why?
 
 Remove external configuration (xml)
+
+::: big
 
 ```java
 @Inject
@@ -194,9 +200,13 @@ Remove external configuration (xml)
 @Bean
 ```
 
+:::
+
 ## Why?
 
 Generate code
+
+::: big
 
 ```java
 @Entity
@@ -204,9 +214,13 @@ Generate code
 @Data(staticConstructor = "of")
 ```
 
+:::
+
 ## Why?
 
 Modify runtime behavior
+
+::: big
 
 ```java
 @Test
@@ -214,8 +228,10 @@ Modify runtime behavior
 @Transaction(isolation = Isolation.SERIALIZABLE)
 
 @GetMethod(value = "/endpoint/{id}",
-           produces = MediaType.APPLICATION_JSON_VALUE)
+    produces = MediaType.APPLICATION_JSON_VALUE)
 ```
+
+:::
 
 ## How?
 
@@ -258,6 +274,8 @@ Weakly typed
 
 Weakly typed
 
+::: big
+
 ```java
 @Autowired @Bean
 @Column(name = "id")
@@ -265,6 +283,8 @@ Weakly typed
 @Test
 public void waitwhat() { ... }
 ```
+
+:::
 
 ## The problems
 
@@ -274,17 +294,25 @@ Stringly typed
 
 Stringly typed
 
+::: big
+
 ```java
 @PreAuthorize("isFullyAuthenticated")
 ```
+
+:::
 
 ## The problems { data-state="page-good" }
 
 Stringly typed
 
+::: big
+
 ```java
 @PreAuthorize("isFullyAuthenticated()")
 ```
+
+:::
 
 ## The problems
 
@@ -713,6 +741,7 @@ engine.execute(handle -> {
 
 * **Con** write SQL directly
 * **Con** still some reflection magic
+* **Con** duplication between code and SQL
 
 <br/>
 
