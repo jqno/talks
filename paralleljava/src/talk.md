@@ -64,7 +64,45 @@ Let me
 
 ## Language of the Year
 
-. . .
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+Java for parallel computing and multi-threading
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+~~Java for parallel computing and multi-threading~~
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+Java from a Parallel Universe
+
+## Language of the Year
 
 <br/>
 
