@@ -1281,15 +1281,29 @@ You have to pick!
 * **Con** 1 dirty class
 * **Con** some boilerplate
 
-<br/>
+## Pros & Cons
 
-. . .
+* **Con** 1 dirty class
+* **Con** some boilerplate
 
-* **Pro** illegal states unrepresentable 🍃🍹
-* **Pro** problems found at compile time 🍃🍹
-* **Pro** clear architectural boundaries 🍃🍹
-* **Pro** clear error messages 🍃
-* **Pro** don't need a container 🍃
+🍃🍹
+
+* **Pro** illegal states unrepresentable
+* **Pro** problems found at compile time
+* **Pro** clear architectural boundaries
+
+## Pros & Cons
+
+* **Con** 1 dirty class
+* **Con** some boilerplate
+
+🍃
+
+* **Pro** illegal states unrepresentable
+* **Pro** problems found at compile time
+* **Pro** clear architectural boundaries
+* **Pro** clear error messages
+* **Pro** don't need a container
 
 # Other annotations { data-state="page-title" }
 
