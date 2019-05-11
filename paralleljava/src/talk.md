@@ -688,6 +688,72 @@ public class Todo {
 }
 </code></pre>
 
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1-2,4-6,9">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7,10">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="12-14">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+
 ## In the parallel universe { data-state="page-good" }
 
 <br/>
@@ -720,6 +786,28 @@ List&lt;Todo> todos = engine.query(handle -> {
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+String query = "SELECT * FROM todo WHERE title = :title";
+String update = "UPDATE todo SET completed = TRUE WHERE id = :id";
+
+engine.execute(handle -> {
+    return handle.inTransaction(h -> {
+        Todo todo = h.createQuery(query)
+                .bind("title", "rewrite annotations")
+                .mapToBean(Todo.class)
+                .findFirst();
+
+        h.createUpdate(update)
+                .bind("id", todo.id)
+                .execute();
+    });
+});
+</code></pre>
+
+## How about transactions? { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="4-5,14-15">
 String query = "SELECT * FROM todo WHERE title = :title";
 String update = "UPDATE todo SET completed = TRUE WHERE id = :id";
 
@@ -778,9 +866,7 @@ public class IHaveSomething {
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
     @Autowired
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -796,9 +882,7 @@ public class IHaveSomething {
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -818,9 +902,7 @@ A mistake: no match
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -833,12 +915,10 @@ public class IHaveSomething {
 
 <br/>
 
-<pre><code class="java" data-trim data-line-numbers="9-10">
+<pre><code class="java" data-trim data-line-numbers="7-8">
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { .. }
 }
 
 public class IHaveSomething {
@@ -1023,9 +1103,7 @@ A mistake: two matches
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -1041,12 +1119,10 @@ public class IHaveSomething {
 
 <br/>
 
-<pre><code class="java" data-trim data-line-numbers="9-13">
+<pre><code class="java" data-trim data-line-numbers="7-11">
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -1099,12 +1175,8 @@ logging.level.org.springframework=OFF
 
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -1124,12 +1196,8 @@ A mistake: no match
 
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -1143,14 +1211,10 @@ public class Module extends AbstractModule {
 
 <br/>
 
-<pre><code class="java" data-trim data-line-numbers="12">
+<pre><code class="java" data-trim data-line-numbers="8">
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -1192,6 +1256,38 @@ Binding(class router.Routes to self) (via modules: com.google.inject.util.Module
 
 :::
 
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers="3-9">
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) No implementation for services.Counter was bound.
+  while locating services.Counter
+    for the 1st parameter of controllers.CountController.&lt;init>(CountController.java:22)
+  while locating controllers.CountController
+    for the 3rd parameter of router.Routes.&lt;init>(Routes.scala:38)
+  at play.api.inject.RoutesProvider$.bindingsFromConfiguration(BuiltinModule.scala:123):
+Binding(class router.Routes to self) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$4)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+</code></pre>
+
+:::
+
 ## DI with Guice
 
 A mistake: two matches
@@ -1202,12 +1298,8 @@ A mistake: two matches
 
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -1222,14 +1314,10 @@ public class Module extends AbstractModule {
 
 <br/>
 
-<pre><code class="java" data-trim data-line-numbers="12-13">
+<pre><code class="java" data-trim data-line-numbers="8-9">
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -1267,6 +1355,33 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 
 :::
 
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers="3-4">
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) A binding to services.Counter was already configured at Module.configure(Module.java:29) (via modules: com.google.inject.util.Modules$OverrideModule -> Module).
+  at Module.configure(Module.java:30) (via modules: com.google.inject.util.Modules$OverrideModule -> Module)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+</code></pre>
+
+:::
+
 ## Manual DI
 
 ## Manual DI { data-state="page-good" }
@@ -1275,11 +1390,7 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
-    private final Something needed;
-
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Main {
@@ -1300,6 +1411,28 @@ A mistake: no matches
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        // Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-9">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
 public class Main {
     public static void main(String... args) {
         // Something needed = ...;
@@ -1329,6 +1462,10 @@ A mistake: two matches
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
 public class Main {
     public static void main(String... args) {
         Something needed = ...;
@@ -1339,9 +1476,24 @@ public class Main {
 }
 </code></pre>
 
-. . .
+## Manual DI { data-state="page-good" }
 
-You have to pick!
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-10">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        Something somethingElse = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(???);
+    }
+}
+</code></pre>
 
 ## Pros & Cons
 
