@@ -968,7 +968,6 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 
 :::
 
-
 ## DI with Spring { data-state="page-bad" }
 
 ::: stacktrace
