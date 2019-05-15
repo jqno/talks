@@ -835,9 +835,9 @@ engine.execute(handle -> {
 
 . . .
 
+* **Pro** write SQL directly
 * **Pro** clean separation of concerns
 * **Pro** immutable domain classes
-* **Pro** easier debugging
 
 # Dependency Injection { data-state="page-title" }
 
