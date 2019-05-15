@@ -1257,6 +1257,73 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 logging.level.org.springframework=OFF
 ```
 
+## DI with Spring
+
+A mistake: cyclic dependencies
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something(SomethingElse somethingElse) {}
+
+    @Bean
+    public SomethingElse somethingElse(Something something) {}
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-11">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something(SomethingElse somethingElse) {}
+
+    @Bean
+    public SomethingElse somethingElse(Something something) {}
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers>
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   petController defined in file [/spring-petclinic/target/classes/org/springframework/samples/petclinic/owner/PetController.class]
+┌─────┐
+|  something defined in class path resource [org/springframework/samples/petclinic/owner/OwnerController.class]
+↑     ↓
+|  somethingElse defined in class path resource [org/springframework/samples/petclinic/owner/OwnerController.class]
+└─────┘
+</code></pre>
+
+:::
+
 ## DI with Guice
 
 ## DI with Guice { data-state="page-bad" }
@@ -1472,6 +1539,16 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 
 :::
 
+## DI with Spring
+
+A mistake: cyclic dependencies
+
+. . .
+
+<br/>
+
+**Probably** possible?
+
 ## In the parallel universe
 
 <br/>
@@ -1588,6 +1665,104 @@ public class Main {
     }
 }
 </code></pre>
+
+## Manual DI
+
+A mistake: cyclic dependencies
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2,6">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="11-12">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="11-12">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        SomethingElse se = new SomethingElse(...);
+        Something s = new Something(se);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+Illegal states are 
+
+::: superbig
+**unrepresentable**
+:::
 
 ## Pros & Cons
 
