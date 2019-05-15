@@ -841,6 +841,13 @@ engine.execute(handle -> {
 
 # Dependency Injection { data-state="page-title" }
 
+## In your universe
+
+<br/>
+
+* Spring
+* Guice
+
 ## DI with Spring
 
 ## DI with Spring { data-state="page-bad" }
@@ -886,6 +893,90 @@ public class INeedSomething {
 }
 
 public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring
+
+Architectural boundaries
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class EmployeeDAO {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Util {
     @Bean
     public Something something = ...;
 }
@@ -1381,7 +1472,11 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 
 :::
 
-## Manual DI
+## In the parallel universe
+
+<br/>
+
+Manual DI
 
 ## Manual DI { data-state="page-good" }
 
@@ -1496,24 +1591,23 @@ public class Main {
 
 ## Pros & Cons
 
-* **Con** 1 dirty class
 * **Con** some boilerplate
+* **Con** 1 dirty class
 
 ## Pros & Cons
 
-* **Con** 1 dirty class
 * **Con** some boilerplate
+* **Con** 1 dirty class
 
 🍃🍹
 
 * **Pro** illegal states unrepresentable
 * **Pro** problems found at compile time
-* **Pro** clear architectural boundaries
 
 ## Pros & Cons
 
-* **Con** 1 dirty class
 * **Con** some boilerplate
+* **Con** 1 dirty class
 
 🍃
 
@@ -1522,6 +1616,47 @@ public class Main {
 * **Pro** clear architectural boundaries
 * **Pro** clear error messages
 * **Pro** don't need a container
+
+## Pros & Cons
+
+* **Con** some boilerplate
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+<br/>
+
+An **important** part of your project
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+<br/>
+
+* Everything is **explicit**
+* Everything is **in the same place**
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+<br/>
+
+Helps **discovering** a new project
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+<br/>
+
+Helps when things get **complicated**
 
 # Other annotations { data-state="page-title" }
 
