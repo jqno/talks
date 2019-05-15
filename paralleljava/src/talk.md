@@ -1789,8 +1789,7 @@ Illegal states are
 * **Pro** illegal states unrepresentable
 * **Pro** problems found at compile time
 * **Pro** clear architectural boundaries
-* **Pro** clear error messages
-* **Pro** don't need a container
+* **Pro** boots much faster
 
 ## Pros & Cons
 
@@ -1799,14 +1798,6 @@ Illegal states are
 ## Pros & Cons
 
 * **Pro** some boilerplate
-
-## Pros & Cons
-
-* **Pro** some boilerplate
-
-<br/>
-
-An **important** part of your project
 
 ## Pros & Cons
 
