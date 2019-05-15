@@ -487,6 +487,18 @@ public void indexOfReturnsTheCorrectIndex() {
 }
 </code></pre>
 
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1-2">
+@Test
+public void indexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+</code></pre>
+
 ## JUnit 3 👹 { data-state="page-bad" }
 
 <br/>
@@ -498,11 +510,33 @@ public void testIndexOfReturnsTheCorrectIndex() {
 }
 </code></pre>
 
+## JUnit 3 👹 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
+public void testIndexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+</code></pre>
+
 ## In the parallel universe { data-state="page-good" }
 
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+test("indexOf returns the correct index", () -> {
+    int actual = "hello world".indexOf('w');
+    assertThat(actual).isEqualTo(6);
+});
+</code></pre>
+
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
 test("indexOf returns the correct index", () -> {
     int actual = "hello world".indexOf('w');
     assertThat(actual).isEqualTo(6);
@@ -575,11 +609,43 @@ public String getTodo(@PathVariable("id") String id) {
 }
 </code></pre>
 
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
+@GetMapping("/todo/{id}")
+public String getTodo(@PathVariable("id") String id) {
+    return fetch(id);
+}
+</code></pre>
+
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+@GetMapping("/todo/{id}")
+public String getTodo(@PathVariable("id") String id) {
+    return fetch(id);
+}
+</code></pre>
+
 ## In the parallel universe { data-state="page-good" }
 
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+get("/todo/:id", (request, response) -> {
+    return fetch(request.params("id"));
+});
+</code></pre>
+
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
 get("/todo/:id", (request, response) -> {
     return fetch(request.params("id"));
 });
@@ -630,6 +696,22 @@ get("/todo/:id", (request, response) -> {
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+public void defineRoutes() {
+    get("/todo/:id", this::handleGet);
+}
+
+// ...
+
+public String handleGet(Request request, Response response) {
+    return fetch(request.params("id"));
+}
+</code></pre>
+
+## Separating concerns { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2,7">
 public void defineRoutes() {
     get("/todo/:id", this::handleGet);
 }
