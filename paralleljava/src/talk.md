@@ -2210,11 +2210,11 @@ Think about your **universe**
 
 [jqno.nl/talks/paralleljava](http://jqno.nl/talks/paralleljava)
 
-::: { style="color:#002b36;font-family:TilburgsAns;" }
+::: { style="font-family:TilburgsAns;" }
 ![](../images/twitter-dark.png){ height=30px } #paralleljava
 :::
 
-::: { style="color:#002b36;font-size:0.3em;" }
+::: { style="font-size:0.3em;" }
 Photo credits: [Hafidh Satyanto](https://unsplash.com/photos/boNRsEMxPsY) and [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY) on [Unsplash](https://unsplash.com)
 :::
 
