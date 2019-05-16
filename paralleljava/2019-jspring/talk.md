@@ -10,6 +10,8 @@ center: "false"
 
 # Java from a Parallel Universe { data-state="page-title" }
 
+![](../images/jspring2019.png){ style="height:200px;" }
+
 ## Jan Ouwens
 
 <br/><br/><br/><br/>
@@ -17,6 +19,12 @@ center: "false"
 ![](../images/codestar.png){style="height:30px;margin-top:5px;"} | [EqualsVerifier](https://jqno.nl/equalsverifier)
 
 ![](../images/twitter.png) [jqno](https://twitter.com/jqno) | [jqno.nl](https://jqno.nl)
+
+<br/>
+
+::: { style="font-family:TilburgsAns;" }
+#jspring&nbsp;&nbsp;&nbsp;&nbsp;#paralleljava
+:::
 
 ::: preload-background-images
 ![](../images/universe.jpg)
@@ -64,7 +72,45 @@ Let me
 
 ## Language of the Year
 
-. . .
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+Java for parallel computing and multi-threading
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+~~Java for parallel computing and multi-threading~~
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+Java from a Parallel Universe
+
+## Language of the Year
 
 <br/>
 
@@ -134,6 +180,8 @@ public class Something { ... }
 
 Add metadata
 
+::: big
+
 ```java
 @Override
 
@@ -144,9 +192,13 @@ Add metadata
 @Nonnull
 ```
 
+:::
+
 ## Why?
 
 Remove external configuration (xml)
+
+::: big
 
 ```java
 @Inject
@@ -156,9 +208,13 @@ Remove external configuration (xml)
 @Bean
 ```
 
+:::
+
 ## Why?
 
 Generate code
+
+::: big
 
 ```java
 @Entity
@@ -166,9 +222,13 @@ Generate code
 @Data(staticConstructor = "of")
 ```
 
+:::
+
 ## Why?
 
 Modify runtime behavior
+
+::: big
 
 ```java
 @Test
@@ -176,8 +236,10 @@ Modify runtime behavior
 @Transaction(isolation = Isolation.SERIALIZABLE)
 
 @GetMethod(value = "/endpoint/{id}",
-           produces = MediaType.APPLICATION_JSON_VALUE)
+    produces = MediaType.APPLICATION_JSON_VALUE)
 ```
+
+:::
 
 ## How?
 
@@ -202,19 +264,25 @@ Dark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;magic
 
 ## The problem
 
+## The problems
+
+## The problems
+
 Checked at runtime
 
 ## The problem { data-state="page-bad" }
 
 ![](../images/funtimeexceptions.png)
 
-## The problem
+## The problems
 
 Weakly typed
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Weakly typed
+
+::: big
 
 ```java
 @Autowired @Bean
@@ -224,41 +292,51 @@ Weakly typed
 public void waitwhat() { ... }
 ```
 
-## The problem
+:::
+
+## The problems
 
 Stringly typed
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Stringly typed
+
+::: big
 
 ```java
 @PreAuthorize("isFullyAuthenticated")
 ```
 
-## The problem { data-state="page-good" }
+:::
+
+## The problems { data-state="page-good" }
 
 Stringly typed
+
+::: big
 
 ```java
 @PreAuthorize("isFullyAuthenticated()")
 ```
 
-## The problem
+:::
+
+## The problems
 
 Discoverability
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Discoverability
 
 ![](../images/discoverability.png){ height=300px }
 
-## The problem
+## The problems
 
 Debugability
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Debugability
 
@@ -301,7 +379,7 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
 
 :::
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Debugability
 
@@ -344,12 +422,11 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
 
 :::
 
-
-## The problem
+## The problems
 
 Difficult path to modules due to **reflection**
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 Difficult path to modules due to **reflection**
 
@@ -418,11 +495,34 @@ public void indexOfReturnsTheCorrectIndex() {
 }
 </code></pre>
 
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1-2">
+@Test
+public void indexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+</code></pre>
+
 ## JUnit 3 👹 { data-state="page-bad" }
 
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+public void testIndexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+</code></pre>
+
+## JUnit 3 👹 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
 public void testIndexOfReturnsTheCorrectIndex() {
     int actual = "hello world".indexOf('w');
     assertEquals(6, actual);
@@ -440,10 +540,69 @@ test("indexOf returns the correct index", () -> {
 });
 </code></pre>
 
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
+test("indexOf returns the correct index", () -> {
+    int actual = "hello world".indexOf('w');
+    assertThat(actual).isEqualTo(6);
+});
+</code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+test("indexOf returns the correct index", new Runnable() {
+    @Override
+    public void run() {
+        int actual = "hello world".indexOf('w');
+        assertThat(actual).isEqualTo(6);
+    }
+});
+</code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+test("indexOf returns the correct index", new Runnable() {
+    @Override
+    public void run() {
+        int actual = "hello world".indexOf('w');
+        assertThat(actual).isEqualTo(6);
+    }
+});
+</code></pre>
+
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+test("indexOf returns the correct index", () -> {
+    int actual = "hello world".indexOf('w');
+    assertThat(actual).isEqualTo(6);
+});
+</code></pre>
+
+::: superbig
+λ
+:::
+
 ## Pros & cons
 
-* **Pro** clear description of test
 * **Con** ugly without lambdas
+
+<br/>
+
+. . .
+
+* **Pro** clear description of test
 
 # Web { data-state="page-title" }
 
@@ -458,6 +617,28 @@ public String getTodo(@PathVariable("id") String id) {
 }
 </code></pre>
 
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
+@GetMapping("/todo/{id}")
+public String getTodo(@PathVariable("id") String id) {
+    return fetch(id);
+}
+</code></pre>
+
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+@GetMapping("/todo/{id}")
+public String getTodo(@PathVariable("id") String id) {
+    return fetch(id);
+}
+</code></pre>
+
 ## In the parallel universe { data-state="page-good" }
 
 <br/>
@@ -465,14 +646,80 @@ public String getTodo(@PathVariable("id") String id) {
 <pre><code class="java" data-trim data-line-numbers>
 get("/todo/:id", (request, response) -> {
     return fetch(request.params("id"));
-})
+});
 </code></pre>
+
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
+get("/todo/:id", (request, response) -> {
+    return fetch(request.params("id"));
+});
+</code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+get("/todo/:id", new Route() {
+    @Override
+    public Object handle(Request request, Response response) throws Exception {
+        return fetch(request.params("id"));
+    }
+});
+</code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+get("/todo/:id", new Route() {
+    @Override
+    public Object handle(Request request, Response response) throws Exception {
+        return fetch(request.params("id"));
+    }
+});
+</code></pre>
+
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+get("/todo/:id", (request, response) -> {
+    return fetch(request.params("id"));
+});
+</code></pre>
+
+::: superbig
+λ
+:::
 
 ## Separating concerns { data-state="page-good" }
 
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+public void defineRoutes() {
+    get("/todo/:id", this::handleGet);
+}
+
+// ...
+
+public String handleGet(Request request, Response response) {
+    return fetch(request.params("id"));
+}
+</code></pre>
+
+## Separating concerns { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2,7">
 public void defineRoutes() {
     get("/todo/:id", this::handleGet);
 }
@@ -498,9 +745,14 @@ before((request, response) -> {
 
 ## Pros & Cons
 
+* **Con** ugly without lambdas
+
+<br/>
+
+. . .
+
 * **Pro** clean separation of concerns
 * **Pro** generate endpoints
-* **Con** ugly without lambdas
 
 # Database { data-state="page-title" }
 
@@ -509,6 +761,72 @@ before((request, response) -> {
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1-2,4-6,9">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7,10">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+
+## In your universe { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="12-14">
 @Entity
 @Table(name = "todo")
 public class Todo {
@@ -553,7 +871,7 @@ List&lt;Todo> todos = engine.query(handle -> {
 });
 </code></pre>
 
-## How about transactions?
+## How about transactions? { data-state="page-good" }
 
 <br/>
 
@@ -575,15 +893,50 @@ engine.execute(handle -> {
 });
 </code></pre>
 
+## How about transactions? { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="4-5,14-15">
+String query = "SELECT * FROM todo WHERE title = :title";
+String update = "UPDATE todo SET completed = TRUE WHERE id = :id";
+
+engine.execute(handle -> {
+    return handle.inTransaction(h -> {
+        Todo todo = h.createQuery(query)
+                .bind("title", "rewrite annotations")
+                .mapToBean(Todo.class)
+                .findFirst();
+
+        h.createUpdate(update)
+                .bind("id", todo.id)
+                .execute();
+    });
+});
+</code></pre>
+
 ## Pros & Cons
 
-* **Pro** clean separation of concerns
-* **Pro** immutable domain classes
-* **Pro** easier debugging
 * **Con** write SQL directly
 * **Con** still some reflection magic
+* **Con** duplication between code and SQL
+
+<br/>
+
+. . .
+
+* **Pro** write SQL directly
+* **Pro** clean separation of concerns
+* **Pro** immutable domain classes
 
 # Dependency Injection { data-state="page-title" }
+
+## In your universe
+
+<br/>
+
+* Spring
+* Guice
 
 ## DI with Spring
 
@@ -610,9 +963,7 @@ public class IHaveSomething {
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
     @Autowired
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -628,12 +979,94 @@ public class IHaveSomething {
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring
+
+Architectural boundaries
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class EmployeeDAO {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Util {
     @Bean
     public Something something = ...;
 }
@@ -650,9 +1083,7 @@ A mistake: no match
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -665,12 +1096,10 @@ public class IHaveSomething {
 
 <br/>
 
-<pre><code class="java" data-trim data-line-numbers="9-10">
+<pre><code class="java" data-trim data-line-numbers="7-8">
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { .. }
 }
 
 public class IHaveSomething {
@@ -719,7 +1148,6 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 </code></pre>
 
 :::
-
 
 ## DI with Spring { data-state="page-bad" }
 
@@ -855,9 +1283,7 @@ A mistake: two matches
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -873,12 +1299,10 @@ public class IHaveSomething {
 
 <br/>
 
-<pre><code class="java" data-trim data-line-numbers="9-13">
+<pre><code class="java" data-trim data-line-numbers="7-11">
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -913,6 +1337,81 @@ Action:
 Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
 </code></pre>
 
+<br/>
+
+:::
+
+. . .
+
+```xml
+logging.level.org.springframework=OFF
+```
+
+## DI with Spring
+
+A mistake: cyclic dependencies
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something(SomethingElse somethingElse) {}
+
+    @Bean
+    public SomethingElse somethingElse(Something something) {}
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-11">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something(SomethingElse somethingElse) {}
+
+    @Bean
+    public SomethingElse somethingElse(Something something) {}
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers>
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   petController defined in file [/spring-petclinic/target/classes/org/springframework/samples/petclinic/owner/PetController.class]
+┌─────┐
+|  something defined in class path resource [org/springframework/samples/petclinic/owner/OwnerController.class]
+↑     ↓
+|  somethingElse defined in class path resource [org/springframework/samples/petclinic/owner/OwnerController.class]
+└─────┘
+</code></pre>
+
 :::
 
 ## DI with Guice
@@ -923,12 +1422,8 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -948,12 +1443,8 @@ A mistake: no match
 
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -967,14 +1458,10 @@ public class Module extends AbstractModule {
 
 <br/>
 
-<pre><code class="java" data-trim data-line-numbers="12">
+<pre><code class="java" data-trim data-line-numbers="8">
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -1016,6 +1503,38 @@ Binding(class router.Routes to self) (via modules: com.google.inject.util.Module
 
 :::
 
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers="3-9">
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) No implementation for services.Counter was bound.
+  while locating services.Counter
+    for the 1st parameter of controllers.CountController.&lt;init>(CountController.java:22)
+  while locating controllers.CountController
+    for the 3rd parameter of router.Routes.&lt;init>(Routes.scala:38)
+  at play.api.inject.RoutesProvider$.bindingsFromConfiguration(BuiltinModule.scala:123):
+Binding(class router.Routes to self) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$4)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+</code></pre>
+
+:::
+
 ## DI with Guice
 
 A mistake: two matches
@@ -1026,12 +1545,8 @@ A mistake: two matches
 
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -1046,14 +1561,10 @@ public class Module extends AbstractModule {
 
 <br/>
 
-<pre><code class="java" data-trim data-line-numbers="12-13">
+<pre><code class="java" data-trim data-line-numbers="8-9">
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -1091,26 +1602,63 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 
 :::
 
-## Manual DI
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers="3-4">
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) A binding to services.Counter was already configured at Module.configure(Module.java:29) (via modules: com.google.inject.util.Modules$OverrideModule -> Module).
+  at Module.configure(Module.java:30) (via modules: com.google.inject.util.Modules$OverrideModule -> Module)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+</code></pre>
+
+:::
+
+## DI with Spring
+
+A mistake: cyclic dependencies
+
+. . .
+
+<br/>
+
+**Probably** possible?
+
+## In the parallel universe
+
+<br/>
+
+Manual DI
 
 ## Manual DI { data-state="page-good" }
 
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
 public class Main {
     public static void main(String... args) {
         Something needed = ...;
         INeedSomething iNeedSomething =
             new INeedSomething(needed);
-    }
-}
-
-public class INeedSomething {
-    private final Something needed;
-
-    public INeedSomething(Something needed) {
-        this.needed = needed;
     }
 }
 </code></pre>
@@ -1124,6 +1672,28 @@ A mistake: no matches
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        // Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-9">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
 public class Main {
     public static void main(String... args) {
         // Something needed = ...;
@@ -1153,6 +1723,10 @@ A mistake: two matches
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
 public class Main {
     public static void main(String... args) {
         Something needed = ...;
@@ -1163,18 +1737,182 @@ public class Main {
 }
 </code></pre>
 
-. . .
+## Manual DI { data-state="page-good" }
 
-You have to pick!
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-10">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        Something somethingElse = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(???);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+A mistake: cyclic dependencies
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2,6">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="11-12">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="11-12">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        SomethingElse se = new SomethingElse(...);
+        Something s = new Something(se);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+Illegal states are 
+
+::: superbig
+**unrepresentable**
+:::
 
 ## Pros & Cons
 
-* **Pro** problems found at compile time 🍃🍹
-* **Pro** clear architectural boundaries 🍃🍹
-* **Pro** clear error messages 🍃
-* **Pro** don't need a container 🍃
-* **Con** 1 dirty class
 * **Con** some boilerplate
+* **Con** 1 dirty class
+
+## Pros & Cons
+
+* **Con** some boilerplate
+* **Con** 1 dirty class
+
+🍃🍹
+
+* **Pro** illegal states unrepresentable
+* **Pro** problems found at compile time
+
+## Pros & Cons
+
+* **Con** some boilerplate
+* **Con** 1 dirty class
+
+🍃
+
+* **Pro** illegal states unrepresentable
+* **Pro** problems found at compile time
+* **Pro** clear architectural boundaries
+* **Pro** boots much faster
+
+## Pros & Cons
+
+* **Con** some boilerplate
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+<br/>
+
+* Everything is **explicit**
+* Everything is **in the same place**
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+<br/>
+
+Helps **discovering** a new project
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+<br/>
+
+Helps when things get **complicated**
 
 # Other annotations { data-state="page-title" }
 
@@ -1230,6 +1968,78 @@ dependencies:
   - { groupId: com.google.code.gson, artifactId: gson, version: 2.8.5 }
   - { groupId: org.jdbi, artifactId: jdbi3-core }
   - { groupId: org.postgresql, artifactId: postgresql, version: 42.2.5 }
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers>
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers="7">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers="3">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers="10">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
 </code></pre>
 
 ## Some code { data-state="page-good" }
@@ -1301,20 +2111,26 @@ public class Main {
 }
 </code></pre>
 
-## Libraries
+## Libraries used
 
 * [SparkJava](http://sparkjava.com/)
 * [JDBI](http://jdbi.org/)
 * [PicoTest](https://github.com/jqno/PicoTest)
-* Enforced by [Checkstyle](https://checkstyle.org/)
 
-## Demo application
+::: preload-background-images
+![](../images/universe.jpg)
+:::
+
+## PicoTest { data-background-image="../images/universe.jpg" data-background-position=bottom }
+
+## Code
 
 <br/>
 
 ![](../images/github.png)
 
-[github.com/jqno/paralleljava](https://github.com/jqno/paralleljava)
+* [github.com/jqno/paralleljava](https://github.com/jqno/paralleljava)
+* [github.com/jqno/picotest](https://github.com/jqno/picotest)
 
 # Conclusion { data-state="page-title" }
 
@@ -1352,12 +2168,33 @@ Think about your **languages**
 
 . . .
 
-<br/>
+Language of the Year
 
-* **Parallel Java**
-* Scala
-* Kotlin
-* ...
+## Conclusion
+
+Think about your **languages**
+
+Language of the Year
+
+**Scala**
+
+## Conclusion
+
+Think about your **languages**
+
+Language of the Year
+
+**Kotlin**
+
+## Conclusion
+
+Think about your **languages**
+
+Language of the Year
+
+::: superbig
+**Parallel Java**
+:::
 
 ::: preload-background-images
 ![](../images/universe.jpg)
@@ -1367,6 +2204,14 @@ Think about your **languages**
 
 Think about your **universe**
 
+# Rate this session { data-state="page-title" }
+
+::: big
+in the J-Spring app
+:::
+
+![](../images/jspring2019.png){ style="height:350px;" }
+
 # Questions? { data-state="page-title" }
 
 <br/>
@@ -1374,4 +2219,12 @@ Think about your **universe**
 ![](../images/qr.png)
 
 [jqno.nl/talks/paralleljava](http://jqno.nl/talks/paralleljava)
+
+::: { style="font-family:TilburgsAns;" }
+![](../images/twitter-dark.png){ height=30px }&nbsp;&nbsp;&nbsp;&nbsp;#jspring&nbsp;&nbsp;&nbsp;&nbsp;#paralleljava
+:::
+
+::: { style="font-size:0.3em;" }
+Photo credits: [Hafidh Satyanto](https://unsplash.com/photos/boNRsEMxPsY) and [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY) on [Unsplash](https://unsplash.com)
+:::
 
