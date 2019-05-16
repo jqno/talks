@@ -39,6 +39,10 @@ html.page-title body {
   background-color: #eee8d5;
 }
 
+html.page-title .reveal {
+  color: #002b36;
+}
+
 html.page-title .reveal h1 {
   color: #002b36;
   font-size: 3.77em;
