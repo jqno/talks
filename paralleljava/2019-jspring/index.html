@@ -34,11 +34,15 @@
     <div class="slides">
 
 
-<section><section id="java-from-a-parallel-universe" class="title-slide slide level1" data-state="page-title"><h1>Java from a Parallel Universe</h1></section><section id="jan-ouwens" class="slide level2">
+<section><section id="java-from-a-parallel-universe" class="title-slide slide level1" data-state="page-title"><h1>Java from a Parallel Universe</h1><p><img data-src="../images/jspring2019.png" style="height:200px;" /></p></section><section id="jan-ouwens" class="slide level2">
 <h2>Jan Ouwens</h2>
 <p><br/><br/><br/><br/></p>
 <p><img data-src="../images/codestar.png" style="height:30px;margin-top:5px;" /> | <a href="https://jqno.nl/equalsverifier">EqualsVerifier</a></p>
 <p><img data-src="../images/twitter.png" /> <a href="https://twitter.com/jqno">jqno</a> | <a href="https://jqno.nl">jqno.nl</a></p>
+<p><br/></p>
+<div style="font-family:TilburgsAns;">
+<p>#jspring    #paralleljava</p>
+</div>
 <div class="preload-background-images">
 <p><img data-src="../images/universe.jpg" /></p>
 </div>
@@ -77,13 +81,40 @@
 </div>
 </section><section id="language-of-the-year" class="slide level2">
 <h2>Language of the Year</h2>
-<div class="fragment">
+</section><section id="language-of-the-year-1" class="slide level2">
+<h2>Language of the Year</h2>
+<p><br/></p>
+<div class="superbig">
+<p><strong>Parallel Java</strong></p>
+</div>
+</section><section id="language-of-the-year-2" class="slide level2">
+<h2>Language of the Year</h2>
+<p><br/></p>
+<div class="superbig">
+<p><strong>Parallel Java</strong></p>
+</div>
+<p>Java for parallel computing and multi-threading</p>
+</section><section id="language-of-the-year-3" class="slide level2">
+<h2>Language of the Year</h2>
+<p><br/></p>
+<div class="superbig">
+<p><strong>Parallel Java</strong></p>
+</div>
+<p><del>Java for parallel computing and multi-threading</del></p>
+</section><section id="language-of-the-year-4" class="slide level2">
+<h2>Language of the Year</h2>
+<p><br/></p>
+<div class="superbig">
+<p><strong>Parallel Java</strong></p>
+</div>
+<p>Java from a Parallel Universe</p>
+</section><section id="language-of-the-year-5" class="slide level2">
+<h2>Language of the Year</h2>
 <p><br/></p>
 <div class="superbig">
 <p><strong>Parallel Java</strong></p>
 </div>
 <p>Java without annotations</p>
-</div>
 </section></section>
 <section><section id="annotations" class="title-slide slide level1" data-state="page-title"><h1>Annotations</h1></section><section id="what-are-they" class="slide level2">
 <h2>What are they?</h2>
@@ -138,6 +169,7 @@ public class Something { ... }
 </section><section id="why-2" class="slide level2">
 <h2>Why?</h2>
 <p>Add metadata</p>
+<div class="big">
 <pre class="java"><code>@Override
 
 @Deprecated
@@ -145,29 +177,36 @@ public class Something { ... }
 @SuppressWarnings(&quot;deprecation&quot;)
 
 @Nonnull</code></pre>
+</div>
 </section><section id="why-3" class="slide level2">
 <h2>Why?</h2>
 <p>Remove external configuration (xml)</p>
+<div class="big">
 <pre class="java"><code>@Inject
 
 @Autowired
 
 @Bean</code></pre>
+</div>
 </section><section id="why-4" class="slide level2">
 <h2>Why?</h2>
 <p>Generate code</p>
+<div class="big">
 <pre class="java"><code>@Entity
 
 @Data(staticConstructor = &quot;of&quot;)</code></pre>
+</div>
 </section><section id="why-5" class="slide level2">
 <h2>Why?</h2>
 <p>Modify runtime behavior</p>
+<div class="big">
 <pre class="java"><code>@Test
 
 @Transaction(isolation = Isolation.SERIALIZABLE)
 
 @GetMethod(value = &quot;/endpoint/{id}&quot;,
-           produces = MediaType.APPLICATION_JSON_VALUE)</code></pre>
+    produces = MediaType.APPLICATION_JSON_VALUE)</code></pre>
+</div>
 </section><section id="how" class="slide level2">
 <h2>How?</h2>
 <ul>
@@ -189,44 +228,54 @@ public class Something { ... }
 </div>
 </section><section id="the-problem" class="slide level2">
 <h2>The problem</h2>
+</section><section id="the-problems" class="slide level2">
+<h2>The problems</h2>
+</section><section id="the-problems-1" class="slide level2">
+<h2>The problems</h2>
 <p>Checked at runtime</p>
 </section><section id="the-problem-1" class="slide level2" data-state="page-bad">
 <h2>The problem</h2>
 <p><img data-src="../images/funtimeexceptions.png" /></p>
-</section><section id="the-problem-2" class="slide level2">
-<h2>The problem</h2>
+</section><section id="the-problems-2" class="slide level2">
+<h2>The problems</h2>
 <p>Weakly typed</p>
-</section><section id="the-problem-3" class="slide level2" data-state="page-bad">
-<h2>The problem</h2>
+</section><section id="the-problems-3" class="slide level2" data-state="page-bad">
+<h2>The problems</h2>
 <p>Weakly typed</p>
+<div class="big">
 <pre class="java"><code>@Autowired @Bean
 @Column(name = &quot;id&quot;)
 @PostMapping(&quot;/endpoint/new&quot;)
 @Test
 public void waitwhat() { ... }</code></pre>
-</section><section id="the-problem-4" class="slide level2">
-<h2>The problem</h2>
+</div>
+</section><section id="the-problems-4" class="slide level2">
+<h2>The problems</h2>
 <p>Stringly typed</p>
-</section><section id="the-problem-5" class="slide level2" data-state="page-bad">
-<h2>The problem</h2>
+</section><section id="the-problems-5" class="slide level2" data-state="page-bad">
+<h2>The problems</h2>
 <p>Stringly typed</p>
+<div class="big">
 <pre class="java"><code>@PreAuthorize(&quot;isFullyAuthenticated&quot;)</code></pre>
-</section><section id="the-problem-6" class="slide level2" data-state="page-good">
-<h2>The problem</h2>
+</div>
+</section><section id="the-problems-6" class="slide level2" data-state="page-good">
+<h2>The problems</h2>
 <p>Stringly typed</p>
+<div class="big">
 <pre class="java"><code>@PreAuthorize(&quot;isFullyAuthenticated()&quot;)</code></pre>
-</section><section id="the-problem-7" class="slide level2">
-<h2>The problem</h2>
+</div>
+</section><section id="the-problems-7" class="slide level2">
+<h2>The problems</h2>
 <p>Discoverability</p>
-</section><section id="the-problem-8" class="slide level2" data-state="page-bad">
-<h2>The problem</h2>
+</section><section id="the-problems-8" class="slide level2" data-state="page-bad">
+<h2>The problems</h2>
 <p>Discoverability</p>
 <p><img data-src="../images/discoverability.png" height="300" /></p>
-</section><section id="the-problem-9" class="slide level2">
-<h2>The problem</h2>
+</section><section id="the-problems-9" class="slide level2">
+<h2>The problems</h2>
 <p>Debugability</p>
-</section><section id="the-problem-10" class="slide level2" data-state="page-bad">
-<h2>The problem</h2>
+</section><section id="the-problems-10" class="slide level2" data-state="page-bad">
+<h2>The problems</h2>
 <p>Debugability</p>
 <div class="stacktrace">
 <pre><code class="xml" data-trim data-line-numbers>
@@ -264,8 +313,8 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
     at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.16.jar:9.0.16]
 </code></pre>
 </div>
-</section><section id="the-problem-11" class="slide level2" data-state="page-bad">
-<h2>The problem</h2>
+</section><section id="the-problems-11" class="slide level2" data-state="page-bad">
+<h2>The problems</h2>
 <p>Debugability</p>
 <div class="stacktrace">
 <pre><code class="xml" data-trim data-line-numbers="12">
@@ -303,11 +352,11 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
     at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.16.jar:9.0.16]
 </code></pre>
 </div>
-</section><section id="the-problem-12" class="slide level2">
-<h2>The problem</h2>
+</section><section id="the-problems-12" class="slide level2">
+<h2>The problems</h2>
 <p>Difficult path to modules due to <strong>reflection</strong></p>
-</section><section id="the-problem-13" class="slide level2" data-state="page-bad">
-<h2>The problem</h2>
+</section><section id="the-problems-13" class="slide level2" data-state="page-bad">
+<h2>The problems</h2>
 <p>Difficult path to modules due to <strong>reflection</strong></p>
 <pre><code class="xml" data-trim data-line-numbers>
 WARNING: An illegal reflective access operation has occurred
@@ -361,10 +410,29 @@ public void indexOfReturnsTheCorrectIndex() {
     assertEquals(6, actual);
 }
 </code></pre>
+</section><section id="in-your-universe-1" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="1-2">
+@Test
+public void indexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+</code></pre>
 </section><section id="junit-3" class="slide level2" data-state="page-bad">
 <h2>JUnit 3 👹</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
+public void testIndexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+</code></pre>
+</section><section id="junit-3-1" class="slide level2" data-state="page-bad">
+<h2>JUnit 3 👹</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="1">
 public void testIndexOfReturnsTheCorrectIndex() {
     int actual = "hello world".indexOf('w');
     assertEquals(6, actual);
@@ -379,14 +447,64 @@ test("indexOf returns the correct index", () -> {
     assertThat(actual).isEqualTo(6);
 });
 </code></pre>
+</section><section id="in-the-parallel-universe-1" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="1">
+test("indexOf returns the correct index", () -> {
+    int actual = "hello world".indexOf('w');
+    assertThat(actual).isEqualTo(6);
+});
+</code></pre>
+</section><section id="before-2014" class="slide level2" data-state="page-bad">
+<h2>Before 2014</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers>
+test("indexOf returns the correct index", new Runnable() {
+    @Override
+    public void run() {
+        int actual = "hello world".indexOf('w');
+        assertThat(actual).isEqualTo(6);
+    }
+});
+</code></pre>
+</section><section id="before-2014-1" class="slide level2" data-state="page-bad">
+<h2>Before 2014</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="2">
+test("indexOf returns the correct index", new Runnable() {
+    @Override
+    public void run() {
+        int actual = "hello world".indexOf('w');
+        assertThat(actual).isEqualTo(6);
+    }
+});
+</code></pre>
+</section><section id="in-the-parallel-universe-2" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers>
+test("indexOf returns the correct index", () -> {
+    int actual = "hello world".indexOf('w');
+    assertThat(actual).isEqualTo(6);
+});
+</code></pre>
+<div class="superbig">
+<p>λ</p>
+</div>
 </section><section id="pros-cons" class="slide level2">
 <h2>Pros &amp; cons</h2>
 <ul>
-<li><strong>Pro</strong> clear description of test</li>
 <li><strong>Con</strong> ugly without lambdas</li>
 </ul>
+<p><br/></p>
+<div class="fragment">
+<ul>
+<li><strong>Pro</strong> clear description of test</li>
+</ul>
+</div>
 </section></section>
-<section><section id="web" class="title-slide slide level1" data-state="page-title"><h1>Web</h1></section><section id="in-your-universe-1" class="slide level2" data-state="page-bad">
+<section><section id="web" class="title-slide slide level1" data-state="page-title"><h1>Web</h1></section><section id="in-your-universe-2" class="slide level2" data-state="page-bad">
 <h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
@@ -395,18 +513,91 @@ public String getTodo(@PathVariable("id") String id) {
     return fetch(id);
 }
 </code></pre>
-</section><section id="in-the-parallel-universe-1" class="slide level2" data-state="page-good">
+</section><section id="in-your-universe-3" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="1">
+@GetMapping("/todo/{id}")
+public String getTodo(@PathVariable("id") String id) {
+    return fetch(id);
+}
+</code></pre>
+</section><section id="in-your-universe-4" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="2">
+@GetMapping("/todo/{id}")
+public String getTodo(@PathVariable("id") String id) {
+    return fetch(id);
+}
+</code></pre>
+</section><section id="in-the-parallel-universe-3" class="slide level2" data-state="page-good">
 <h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 get("/todo/:id", (request, response) -> {
     return fetch(request.params("id"));
-})
+});
 </code></pre>
+</section><section id="in-the-parallel-universe-4" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="1">
+get("/todo/:id", (request, response) -> {
+    return fetch(request.params("id"));
+});
+</code></pre>
+</section><section id="before-2014-2" class="slide level2" data-state="page-bad">
+<h2>Before 2014</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers>
+get("/todo/:id", new Route() {
+    @Override
+    public Object handle(Request request, Response response) throws Exception {
+        return fetch(request.params("id"));
+    }
+});
+</code></pre>
+</section><section id="before-2014-3" class="slide level2" data-state="page-bad">
+<h2>Before 2014</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="2">
+get("/todo/:id", new Route() {
+    @Override
+    public Object handle(Request request, Response response) throws Exception {
+        return fetch(request.params("id"));
+    }
+});
+</code></pre>
+</section><section id="in-the-parallel-universe-5" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers>
+get("/todo/:id", (request, response) -> {
+    return fetch(request.params("id"));
+});
+</code></pre>
+<div class="superbig">
+<p>λ</p>
+</div>
 </section><section id="separating-concerns" class="slide level2" data-state="page-good">
 <h2>Separating concerns</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
+public void defineRoutes() {
+    get("/todo/:id", this::handleGet);
+}
+
+// ...
+
+public String handleGet(Request request, Response response) {
+    return fetch(request.params("id"));
+}
+</code></pre>
+</section><section id="separating-concerns-1" class="slide level2" data-state="page-good">
+<h2>Separating concerns</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="2,7">
 public void defineRoutes() {
     get("/todo/:id", this::handleGet);
 }
@@ -430,12 +621,17 @@ before((request, response) -> {
 </section><section id="pros-cons-1" class="slide level2">
 <h2>Pros &amp; Cons</h2>
 <ul>
-<li><strong>Pro</strong> clean separation of concerns</li>
-<li><strong>Pro</strong> generate endpoints</li>
 <li><strong>Con</strong> ugly without lambdas</li>
 </ul>
+<p><br/></p>
+<div class="fragment">
+<ul>
+<li><strong>Pro</strong> clean separation of concerns</li>
+<li><strong>Pro</strong> generate endpoints</li>
+</ul>
+</div>
 </section></section>
-<section><section id="database" class="title-slide slide level1" data-state="page-title"><h1>Database</h1></section><section id="in-your-universe-2" class="slide level2" data-state="page-bad">
+<section><section id="database" class="title-slide slide level1" data-state="page-title"><h1>Database</h1></section><section id="in-your-universe-5" class="slide level2" data-state="page-bad">
 <h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
@@ -455,7 +651,67 @@ public class Todo {
     }
 }
 </code></pre>
-</section><section id="in-the-parallel-universe-2" class="slide level2" data-state="page-good">
+</section><section id="in-your-universe-6" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="1-2,4-6,9">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+</section><section id="in-your-universe-7" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="7,10">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+</section><section id="in-your-universe-8" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="12-14">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+</section><section id="in-the-parallel-universe-6" class="slide level2" data-state="page-good">
 <h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
@@ -466,7 +722,7 @@ public class Todo {
     // No default constructor
 }
 </code></pre>
-</section><section id="in-the-parallel-universe-3" class="slide level2" data-state="page-good">
+</section><section id="in-the-parallel-universe-7" class="slide level2" data-state="page-good">
 <h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
@@ -478,7 +734,7 @@ List&lt;Todo> todos = engine.query(handle -> {
         .list();
 });
 </code></pre>
-</section><section id="how-about-transactions" class="slide level2">
+</section><section id="how-about-transactions" class="slide level2" data-state="page-good">
 <h2>How about transactions?</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
@@ -498,17 +754,50 @@ engine.execute(handle -> {
     });
 });
 </code></pre>
+</section><section id="how-about-transactions-1" class="slide level2" data-state="page-good">
+<h2>How about transactions?</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="4-5,14-15">
+String query = "SELECT * FROM todo WHERE title = :title";
+String update = "UPDATE todo SET completed = TRUE WHERE id = :id";
+
+engine.execute(handle -> {
+    return handle.inTransaction(h -> {
+        Todo todo = h.createQuery(query)
+                .bind("title", "rewrite annotations")
+                .mapToBean(Todo.class)
+                .findFirst();
+
+        h.createUpdate(update)
+                .bind("id", todo.id)
+                .execute();
+    });
+});
+</code></pre>
 </section><section id="pros-cons-2" class="slide level2">
 <h2>Pros &amp; Cons</h2>
 <ul>
-<li><strong>Pro</strong> clean separation of concerns</li>
-<li><strong>Pro</strong> immutable domain classes</li>
-<li><strong>Pro</strong> easier debugging</li>
 <li><strong>Con</strong> write SQL directly</li>
 <li><strong>Con</strong> still some reflection magic</li>
+<li><strong>Con</strong> duplication between code and SQL</li>
 </ul>
+<p><br/></p>
+<div class="fragment">
+<ul>
+<li><strong>Pro</strong> write SQL directly</li>
+<li><strong>Pro</strong> clean separation of concerns</li>
+<li><strong>Pro</strong> immutable domain classes</li>
+</ul>
+</div>
 </section></section>
-<section><section id="dependency-injection" class="title-slide slide level1" data-state="page-title"><h1>Dependency Injection</h1></section><section id="di-with-spring" class="slide level2">
+<section><section id="dependency-injection" class="title-slide slide level1" data-state="page-title"><h1>Dependency Injection</h1></section><section id="in-your-universe-9" class="slide level2">
+<h2>In your universe</h2>
+<p><br/></p>
+<ul>
+<li>Spring</li>
+<li>Guice</li>
+</ul>
+</section><section id="di-with-spring" class="slide level2">
 <h2>DI with Spring</h2>
 </section><section id="di-with-spring-1" class="slide level2" data-state="page-bad">
 <h2>DI with Spring</h2>
@@ -530,9 +819,7 @@ public class IHaveSomething {
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
     @Autowired
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -546,9 +833,7 @@ public class IHaveSomething {
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -558,32 +843,87 @@ public class IHaveSomething {
 </code></pre>
 </section><section id="di-with-spring-4" class="slide level2">
 <h2>DI with Spring</h2>
-<p>A mistake: no match</p>
+<p>Architectural boundaries</p>
 </section><section id="di-with-spring-5" class="slide level2" data-state="page-bad">
 <h2>DI with Spring</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
-    // Forgot to put @Bean here!
+    @Bean
     public Something something = ...;
 }
 </code></pre>
 </section><section id="di-with-spring-6" class="slide level2" data-state="page-bad">
 <h2>DI with Spring</h2>
 <p><br/></p>
-<pre><code class="java" data-trim data-line-numbers="9-10">
+<pre><code class="java" data-trim data-line-numbers="6">
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+</section><section id="di-with-spring-7" class="slide level2" data-state="page-bad">
+<h2>DI with Spring</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+</section><section id="di-with-spring-8" class="slide level2" data-state="page-bad">
+<h2>DI with Spring</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class EmployeeDAO {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+</section><section id="di-with-spring-9" class="slide level2" data-state="page-bad">
+<h2>DI with Spring</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Util {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+</section><section id="di-with-spring-10" class="slide level2">
+<h2>DI with Spring</h2>
+<p>A mistake: no match</p>
+</section><section id="di-with-spring-11" class="slide level2" data-state="page-bad">
+<h2>DI with Spring</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -591,7 +931,21 @@ public class IHaveSomething {
     public Something something = ...;
 }
 </code></pre>
-</section><section id="di-with-spring-7" class="slide level2" data-state="page-bad">
+</section><section id="di-with-spring-12" class="slide level2" data-state="page-bad">
+<h2>DI with Spring</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="7-8">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { .. }
+}
+
+public class IHaveSomething {
+    // Forgot to put @Bean here!
+    public Something something = ...;
+}
+</code></pre>
+</section><section id="di-with-spring-13" class="slide level2" data-state="page-bad">
 <h2>DI with Spring</h2>
 <div class="stacktrace">
 <pre><code class="xml" data-trim data-line-numbers>
@@ -629,7 +983,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
     ... 24 common frames omitted
 </code></pre>
 </div>
-</section><section id="di-with-spring-8" class="slide level2" data-state="page-bad">
+</section><section id="di-with-spring-14" class="slide level2" data-state="page-bad">
 <h2>DI with Spring</h2>
 <div class="stacktrace">
 <pre><code class="xml" data-trim data-line-numbers="21">
@@ -667,7 +1021,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
     ... 24 common frames omitted
 </code></pre>
 </div>
-</section><section id="di-with-spring-9" class="slide level2" data-state="page-bad">
+</section><section id="di-with-spring-15" class="slide level2" data-state="page-bad">
 <h2>DI with Spring</h2>
 <div class="stacktrace">
 <pre><code class="xml" data-trim data-line-numbers="1337">
@@ -705,7 +1059,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
     ... 24 common frames omitted
 </code></pre>
 </div>
-</section><section id="di-with-spring-10" class="slide level2" data-state="page-bad">
+</section><section id="di-with-spring-16" class="slide level2" data-state="page-bad">
 <h2>DI with Spring</h2>
 <div class="stacktrace">
 <pre><code class="xml" data-trim data-line-numbers="1,27">
@@ -743,18 +1097,16 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
     ... 24 common frames omitted
 </code></pre>
 </div>
-</section><section id="di-with-spring-11" class="slide level2">
+</section><section id="di-with-spring-17" class="slide level2">
 <h2>DI with Spring</h2>
 <p>A mistake: two matches</p>
-</section><section id="di-with-spring-12" class="slide level2" data-state="page-bad">
+</section><section id="di-with-spring-18" class="slide level2" data-state="page-bad">
 <h2>DI with Spring</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -765,15 +1117,13 @@ public class IHaveSomething {
     public Something somethingElse = ...;
 }
 </code></pre>
-</section><section id="di-with-spring-13" class="slide level2" data-state="page-bad">
+</section><section id="di-with-spring-19" class="slide level2" data-state="page-bad">
 <h2>DI with Spring</h2>
 <p><br/></p>
-<pre><code class="java" data-trim data-line-numbers="9-13">
+<pre><code class="java" data-trim data-line-numbers="7-11">
 public class INeedSomething {
 
-    public INeedSomething(Something needed) {
-        // ...
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class IHaveSomething {
@@ -784,7 +1134,7 @@ public class IHaveSomething {
     public Something somethingElse = ...;
 }
 </code></pre>
-</section><section id="di-with-spring-14" class="slide level2" data-state="page-bad">
+</section><section id="di-with-spring-20" class="slide level2" data-state="page-bad">
 <h2>DI with Spring</h2>
 <p><br/></p>
 <div class="stacktrace">
@@ -804,6 +1154,68 @@ Action:
 
 Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
 </code></pre>
+<p><br/></p>
+</div>
+<div class="fragment">
+<pre class="xml"><code>logging.level.org.springframework=OFF</code></pre>
+</div>
+</section><section id="di-with-spring-21" class="slide level2">
+<h2>DI with Spring</h2>
+<p>A mistake: cyclic dependencies</p>
+</section><section id="di-with-spring-22" class="slide level2" data-state="page-bad">
+<h2>DI with Spring</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something(SomethingElse somethingElse) {}
+
+    @Bean
+    public SomethingElse somethingElse(Something something) {}
+}
+</code></pre>
+</section><section id="di-with-spring-23" class="slide level2" data-state="page-bad">
+<h2>DI with Spring</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="7-11">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something(SomethingElse somethingElse) {}
+
+    @Bean
+    public SomethingElse somethingElse(Something something) {}
+}
+</code></pre>
+</section><section id="di-with-spring-24" class="slide level2" data-state="page-bad">
+<h2>DI with Spring</h2>
+<p><br/></p>
+<div class="stacktrace">
+<pre><code class="xml" data-trim data-line-numbers>
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   petController defined in file [/spring-petclinic/target/classes/org/springframework/samples/petclinic/owner/PetController.class]
+┌─────┐
+|  something defined in class path resource [org/springframework/samples/petclinic/owner/OwnerController.class]
+↑     ↓
+|  somethingElse defined in class path resource [org/springframework/samples/petclinic/owner/OwnerController.class]
+└─────┘
+</code></pre>
 </div>
 </section><section id="di-with-guice" class="slide level2">
 <h2>DI with Guice</h2>
@@ -812,12 +1224,8 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -834,12 +1242,8 @@ public class Module extends AbstractModule {
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -851,14 +1255,10 @@ public class Module extends AbstractModule {
 </section><section id="di-with-guice-4" class="slide level2" data-state="page-bad">
 <h2>DI with Guice</h2>
 <p><br/></p>
-<pre><code class="java" data-trim data-line-numbers="12">
+<pre><code class="java" data-trim data-line-numbers="8">
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -895,40 +1295,44 @@ Binding(class router.Routes to self) (via modules: com.google.inject.util.Module
     at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
 </code></pre>
 </div>
-</section><section id="di-with-guice-6" class="slide level2">
+</section><section id="di-with-guice-6" class="slide level2" data-state="page-bad">
+<h2>DI with Guice</h2>
+<p><br/></p>
+<div class="stacktrace">
+<pre><code class="xml" data-trim data-line-numbers="3-9">
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) No implementation for services.Counter was bound.
+  while locating services.Counter
+    for the 1st parameter of controllers.CountController.&lt;init>(CountController.java:22)
+  while locating controllers.CountController
+    for the 3rd parameter of router.Routes.&lt;init>(Routes.scala:38)
+  at play.api.inject.RoutesProvider$.bindingsFromConfiguration(BuiltinModule.scala:123):
+Binding(class router.Routes to self) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$4)
+
+1 error
+    at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+    at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+    at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+    at com.google.inject.Guice.createInjector(Guice.java:87)
+    at com.google.inject.Guice.createInjector(Guice.java:78)
+    at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+    at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+    at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+    at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+    at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+</code></pre>
+</div>
+</section><section id="di-with-guice-7" class="slide level2">
 <h2>DI with Guice</h2>
 <p>A mistake: two matches</p>
-</section><section id="di-with-guice-7" class="slide level2" data-state="page-bad">
+</section><section id="di-with-guice-8" class="slide level2" data-state="page-bad">
 <h2>DI with Guice</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 public class INeedSomething {
-    private final Something needed;
-
     @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
-}
-
-public class Module extends AbstractModule {
-    public void configure() {
-        bind(Something.class).toInstance(...);
-        bind(Something.class).toInstance(...);
-    }
-}
-</code></pre>
-</section><section id="di-with-guice-8" class="slide level2" data-state="page-bad">
-<h2>DI with Guice</h2>
-<p><br/></p>
-<pre><code class="java" data-trim data-line-numbers="12-13">
-public class INeedSomething {
-    private final Something needed;
-
-    @Inject
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
+    public INeedSomething(Something needed) { ... }
 }
 
 public class Module extends AbstractModule {
@@ -939,6 +1343,22 @@ public class Module extends AbstractModule {
 }
 </code></pre>
 </section><section id="di-with-guice-9" class="slide level2" data-state="page-bad">
+<h2>DI with Guice</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="8-9">
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+        bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+</section><section id="di-with-guice-10" class="slide level2" data-state="page-bad">
 <h2>DI with Guice</h2>
 <p><br/></p>
 <div class="stacktrace">
@@ -961,12 +1381,48 @@ com.google.inject.CreationException: Unable to create injector, see the followin
     at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
 </code></pre>
 </div>
-</section><section id="manual-di" class="slide level2">
-<h2>Manual DI</h2>
-</section><section id="manual-di-1" class="slide level2" data-state="page-good">
+</section><section id="di-with-guice-11" class="slide level2" data-state="page-bad">
+<h2>DI with Guice</h2>
+<p><br/></p>
+<div class="stacktrace">
+<pre><code class="xml" data-trim data-line-numbers="3-4">
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) A binding to services.Counter was already configured at Module.configure(Module.java:29) (via modules: com.google.inject.util.Modules$OverrideModule -> Module).
+  at Module.configure(Module.java:30) (via modules: com.google.inject.util.Modules$OverrideModule -> Module)
+
+1 error
+    at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+    at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+    at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+    at com.google.inject.Guice.createInjector(Guice.java:87)
+    at com.google.inject.Guice.createInjector(Guice.java:78)
+    at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+    at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+    at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+    at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+    at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+</code></pre>
+</div>
+</section><section id="di-with-spring-25" class="slide level2">
+<h2>DI with Spring</h2>
+<p>A mistake: cyclic dependencies</p>
+<div class="fragment">
+<p><br/></p>
+<p><strong>Probably</strong> possible?</p>
+</div>
+</section><section id="in-the-parallel-universe-8" class="slide level2">
+<h2>In the parallel universe</h2>
+<p><br/></p>
+<p>Manual DI</p>
+</section><section id="manual-di" class="slide level2" data-state="page-good">
 <h2>Manual DI</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
 public class Main {
     public static void main(String... args) {
         Something needed = ...;
@@ -974,22 +1430,34 @@ public class Main {
             new INeedSomething(needed);
     }
 }
-
-public class INeedSomething {
-    private final Something needed;
-
-    public INeedSomething(Something needed) {
-        this.needed = needed;
-    }
-}
 </code></pre>
-</section><section id="manual-di-2" class="slide level2">
+</section><section id="manual-di-1" class="slide level2">
 <h2>Manual DI</h2>
 <p>A mistake: no matches</p>
-</section><section id="manual-di-3" class="slide level2" data-state="page-good">
+</section><section id="manual-di-2" class="slide level2" data-state="page-good">
 <h2>Manual DI</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        // Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+</section><section id="manual-di-3" class="slide level2" data-state="page-good">
+<h2>Manual DI</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="7-9">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
 public class Main {
     public static void main(String... args) {
         // Something needed = ...;
@@ -1014,6 +1482,10 @@ public class Main {
 <h2>Manual DI</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
 public class Main {
     public static void main(String... args) {
         Something needed = ...;
@@ -1023,19 +1495,173 @@ public class Main {
     }
 }
 </code></pre>
-<div class="fragment">
-<p>You have to pick!</p>
+</section><section id="manual-di-7" class="slide level2" data-state="page-good">
+<h2>Manual DI</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="7-10">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        Something somethingElse = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(???);
+    }
+}
+</code></pre>
+</section><section id="manual-di-8" class="slide level2">
+<h2>Manual DI</h2>
+<p>A mistake: cyclic dependencies</p>
+</section><section id="manual-di-9" class="slide level2">
+<h2>Manual DI</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers>
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+</section><section id="manual-di-10" class="slide level2">
+<h2>Manual DI</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="2,6">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+</section><section id="manual-di-11" class="slide level2">
+<h2>Manual DI</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="11-12">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+</section><section id="manual-di-12" class="slide level2">
+<h2>Manual DI</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers="11-12">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        SomethingElse se = new SomethingElse(...);
+        Something s = new Something(se);
+    }
+}
+</code></pre>
+</section><section id="manual-di-13" class="slide level2">
+<h2>Manual DI</h2>
+<p><br/></p>
+<p>Illegal states are</p>
+<div class="superbig">
+<p><strong>unrepresentable</strong></p>
 </div>
 </section><section id="pros-cons-3" class="slide level2">
 <h2>Pros &amp; Cons</h2>
 <ul>
-<li><strong>Pro</strong> problems found at compile time 🍃🍹</li>
-<li><strong>Pro</strong> clear architectural boundaries 🍃🍹</li>
-<li><strong>Pro</strong> clear error messages 🍃</li>
-<li><strong>Pro</strong> don’t need a container 🍃</li>
+<li><strong>Con</strong> some boilerplate</li>
 <li><strong>Con</strong> 1 dirty class</li>
+</ul>
+</section><section id="pros-cons-4" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<ul>
+<li><strong>Con</strong> some boilerplate</li>
+<li><strong>Con</strong> 1 dirty class</li>
+</ul>
+<p>🍃🍹</p>
+<ul>
+<li><strong>Pro</strong> illegal states unrepresentable</li>
+<li><strong>Pro</strong> problems found at compile time</li>
+</ul>
+</section><section id="pros-cons-5" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<ul>
+<li><strong>Con</strong> some boilerplate</li>
+<li><strong>Con</strong> 1 dirty class</li>
+</ul>
+<p>🍃</p>
+<ul>
+<li><strong>Pro</strong> illegal states unrepresentable</li>
+<li><strong>Pro</strong> problems found at compile time</li>
+<li><strong>Pro</strong> clear architectural boundaries</li>
+<li><strong>Pro</strong> boots much faster</li>
+</ul>
+</section><section id="pros-cons-6" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<ul>
 <li><strong>Con</strong> some boilerplate</li>
 </ul>
+</section><section id="pros-cons-7" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<ul>
+<li><strong>Pro</strong> some boilerplate</li>
+</ul>
+</section><section id="pros-cons-8" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<ul>
+<li><strong>Pro</strong> some boilerplate</li>
+</ul>
+<p><br/></p>
+<ul>
+<li>Everything is <strong>explicit</strong></li>
+<li>Everything is <strong>in the same place</strong></li>
+</ul>
+</section><section id="pros-cons-9" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<ul>
+<li><strong>Pro</strong> some boilerplate</li>
+</ul>
+<p><br/></p>
+<p>Helps <strong>discovering</strong> a new project</p>
+</section><section id="pros-cons-10" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<ul>
+<li><strong>Pro</strong> some boilerplate</li>
+</ul>
+<p><br/></p>
+<p>Helps when things get <strong>complicated</strong></p>
 </section></section>
 <section><section id="other-annotations" class="title-slide slide level1" data-state="page-title"><h1>Other annotations</h1></section><section id="bad-annotations" class="slide level2">
 <h2>Bad annotations</h2>
@@ -1092,6 +1718,74 @@ dependencies:
 </code></pre>
 </section><section id="some-code-2" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
+<pre><code class="xml" data-trim data-line-numbers>
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+</section><section id="some-code-3" class="slide level2" data-state="page-good">
+<h2>Some code</h2>
+<pre><code class="xml" data-trim data-line-numbers="7">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+</section><section id="some-code-4" class="slide level2" data-state="page-good">
+<h2>Some code</h2>
+<pre><code class="xml" data-trim data-line-numbers="3">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+</section><section id="some-code-5" class="slide level2" data-state="page-good">
+<h2>Some code</h2>
+<pre><code class="xml" data-trim data-line-numbers="10">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+</section><section id="some-code-6" class="slide level2" data-state="page-good">
+<h2>Some code</h2>
 <pre><code class="java" data-trim data-line-numbers>
 public void architecture() {
     test("only SparkServer and SparkServerTest access Spark classes", () -> {
@@ -1103,7 +1797,7 @@ public void architecture() {
     });
 }
 </code></pre>
-</section><section id="some-code-3" class="slide level2" data-state="page-good">
+</section><section id="some-code-7" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
 <pre><code class="java" data-trim data-line-numbers>
 public void run() {
@@ -1115,7 +1809,7 @@ public void run() {
     post(endpoint, (req, resp) -> controller.post(req.body()));
 }
 </code></pre>
-</section><section id="some-code-4" class="slide level2" data-state="page-good">
+</section><section id="some-code-8" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
 <pre><code class="java" data-trim data-line-numbers>
 public Try&lt;Void> create(Todo todo) {
@@ -1131,7 +1825,7 @@ public Try&lt;Void> create(Todo todo) {
     }
 }
 </code></pre>
-</section><section id="some-code-5" class="slide level2" data-state="page-good">
+</section><section id="some-code-9" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
 <pre><code class="java" data-trim data-line-numbers>
 public class Main {
@@ -1155,19 +1849,26 @@ public class Main {
     }
 }
 </code></pre>
-</section><section id="libraries" class="slide level2">
-<h2>Libraries</h2>
+</section><section id="libraries-used" class="slide level2">
+<h2>Libraries used</h2>
 <ul>
 <li><a href="http://sparkjava.com/">SparkJava</a></li>
 <li><a href="http://jdbi.org/">JDBI</a></li>
 <li><a href="https://github.com/jqno/PicoTest">PicoTest</a></li>
-<li>Enforced by <a href="https://checkstyle.org/">Checkstyle</a></li>
 </ul>
-</section><section id="demo-application" class="slide level2">
-<h2>Demo application</h2>
+<div class="preload-background-images">
+<p><img data-src="../images/universe.jpg" /></p>
+</div>
+</section><section id="picotest" class="slide level2" data-background-image="../images/universe.jpg" data-background-position="bottom">
+<h2>PicoTest</h2>
+</section><section id="code" class="slide level2">
+<h2>Code</h2>
 <p><br/></p>
 <p><img data-src="../images/github.png" /></p>
-<p><a href="https://github.com/jqno/paralleljava">github.com/jqno/paralleljava</a></p>
+<ul>
+<li><a href="https://github.com/jqno/paralleljava">github.com/jqno/paralleljava</a></li>
+<li><a href="https://github.com/jqno/picotest">github.com/jqno/picotest</a></li>
+</ul>
 </section></section>
 <section><section id="conclusion" class="title-slide slide level1" data-state="page-title"><h1>Conclusion</h1></section><section id="conclusion-1" class="slide level2">
 <h2>Conclusion</h2>
@@ -1192,24 +1893,45 @@ public class Main {
 <h2>Conclusion</h2>
 <p>Think about your <strong>languages</strong></p>
 <div class="fragment">
-<p><br/></p>
-<ul>
-<li><strong>Parallel Java</strong></li>
-<li>Scala</li>
-<li>Kotlin</li>
-<li>…</li>
-</ul>
+<p>Language of the Year</p>
+</div>
+</section><section id="conclusion-4" class="slide level2">
+<h2>Conclusion</h2>
+<p>Think about your <strong>languages</strong></p>
+<p>Language of the Year</p>
+<p><strong>Scala</strong></p>
+</section><section id="conclusion-5" class="slide level2">
+<h2>Conclusion</h2>
+<p>Think about your <strong>languages</strong></p>
+<p>Language of the Year</p>
+<p><strong>Kotlin</strong></p>
+</section><section id="conclusion-6" class="slide level2">
+<h2>Conclusion</h2>
+<p>Think about your <strong>languages</strong></p>
+<p>Language of the Year</p>
+<div class="superbig">
+<p><strong>Parallel Java</strong></p>
+</div>
 <div class="preload-background-images">
 <p><img data-src="../images/universe.jpg" /></p>
 </div>
-</div>
-</section><section id="conclusion-4" class="slide level2" data-background-image="../images/universe.jpg" data-background-position="bottom">
+</section><section id="conclusion-7" class="slide level2" data-background-image="../images/universe.jpg" data-background-position="bottom">
 <h2>Conclusion</h2>
 <p>Think about your <strong>universe</strong></p>
 </section></section>
+<section id="rate-this-session" class="title-slide slide level1" data-state="page-title"><h1>Rate this session</h1><div class="big">
+<p>in the J-Spring app</p>
+</div>
+<p><img data-src="../images/jspring2019.png" style="height:350px;" /></p></section>
 <section id="questions" class="title-slide slide level1" data-state="page-title"><h1>Questions?</h1><p><br/></p>
 <p><img data-src="../images/qr.png" /></p>
-<p><a href="http://jqno.nl/talks/paralleljava">jqno.nl/talks/paralleljava</a></p></section>
+<p><a href="http://jqno.nl/talks/paralleljava">jqno.nl/talks/paralleljava</a></p>
+<div style="font-family:TilburgsAns;">
+<p><img data-src="../images/twitter-dark.png" height="30" />    #jspring    #paralleljava</p>
+</div>
+<div style="font-size:0.3em;">
+<p>Photo credits: <a href="https://unsplash.com/photos/boNRsEMxPsY">Hafidh Satyanto</a> and <a href="https://unsplash.com/photos/y_dCjaRWthY">freestocks.org</a> on <a href="https://unsplash.com">Unsplash</a></p>
+</div></section>
     </div>
   </div>
 
@@ -1227,6 +1949,8 @@ public class Main {
         progress: false,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: {39:'next',37:'prev'},
         // Vertical centering of slides
         center: false,
         // Transition style
