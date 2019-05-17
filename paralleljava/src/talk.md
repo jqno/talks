@@ -1862,7 +1862,7 @@ Illegal states are
 * **Con** some boilerplate
 * **Con** 1 dirty class
 
-🍃🍹
+over Spring and Guice
 
 * **Pro** illegal states unrepresentable
 * **Pro** problems found at compile time
@@ -1872,7 +1872,7 @@ Illegal states are
 * **Con** some boilerplate
 * **Con** 1 dirty class
 
-🍃
+over Spring
 
 * **Pro** illegal states unrepresentable
 * **Pro** problems found at compile time
