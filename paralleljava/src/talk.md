@@ -869,6 +869,34 @@ List&lt;Todo> todos = engine.query(handle -> {
 });
 </code></pre>
 
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="3">
+List&lt;Todo> todos = engine.query(handle -> {
+    return handle
+        .createQuery("SELECT * FROM todo WHERE id = :id")
+        .bind("id", id)
+        .mapToBean(Todo.class)
+        .list();
+});
+</code></pre>
+
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="5">
+List&lt;Todo> todos = engine.query(handle -> {
+    return handle
+        .createQuery("SELECT * FROM todo WHERE id = :id")
+        .bind("id", id)
+        .mapToBean(Todo.class)
+        .list();
+});
+</code></pre>
+
 ## How about transactions? { data-state="page-good" }
 
 <br/>
@@ -937,6 +965,54 @@ engine.execute(handle -> {
 * Guice
 
 ## DI with Spring
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2-3">
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-8">
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
 
 ## DI with Spring { data-state="page-bad" }
 
@@ -1437,6 +1513,40 @@ public class Module extends AbstractModule {
 }
 </code></pre>
 
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2-3">
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="8">
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
 ## DI with Guice
 
 A mistake: no match
@@ -1654,6 +1764,60 @@ Manual DI
 <br/>
 
 <pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-9">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6,10">
 public class INeedSomething {
     public INeedSomething(Something needed) { ... }
 }
