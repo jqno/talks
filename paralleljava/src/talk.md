@@ -268,7 +268,7 @@ Dark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;magic
 
 Checked at runtime
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 ![](../images/funtimeexceptions.png)
 
@@ -1855,12 +1855,12 @@ Illegal states are
 ## Pros & Cons
 
 * **Con** some boilerplate
-* **Con** 1 dirty class
+* **Con** one dirty class
 
 ## Pros & Cons
 
 * **Con** some boilerplate
-* **Con** 1 dirty class
+* **Con** one dirty class
 
 over Spring and Guice
 
@@ -1870,7 +1870,7 @@ over Spring and Guice
 ## Pros & Cons
 
 * **Con** some boilerplate
-* **Con** 1 dirty class
+* **Con** one dirty class
 
 over Spring
 
@@ -1958,7 +1958,7 @@ name: parallel-java
 properties: {
   encoding: utf-8,
   maven.compiler.source: 11,
-  maven.compiler.target: 11,
+  maven.compiler.target: 11
 }
 
 dependencies:
