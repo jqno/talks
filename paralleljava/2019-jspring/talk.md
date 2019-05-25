@@ -270,7 +270,7 @@ Dark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;magic
 
 Checked at runtime
 
-## The problem { data-state="page-bad" }
+## The problems { data-state="page-bad" }
 
 ![](../images/funtimeexceptions.png)
 
@@ -871,6 +871,34 @@ List&lt;Todo> todos = engine.query(handle -> {
 });
 </code></pre>
 
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="3">
+List&lt;Todo> todos = engine.query(handle -> {
+    return handle
+        .createQuery("SELECT * FROM todo WHERE id = :id")
+        .bind("id", id)
+        .mapToBean(Todo.class)
+        .list();
+});
+</code></pre>
+
+## In the parallel universe { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="5">
+List&lt;Todo> todos = engine.query(handle -> {
+    return handle
+        .createQuery("SELECT * FROM todo WHERE id = :id")
+        .bind("id", id)
+        .mapToBean(Todo.class)
+        .list();
+});
+</code></pre>
+
 ## How about transactions? { data-state="page-good" }
 
 <br/>
@@ -939,6 +967,54 @@ engine.execute(handle -> {
 * Guice
 
 ## DI with Spring
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2-3">
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-8">
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
 
 ## DI with Spring { data-state="page-bad" }
 
@@ -1071,6 +1147,12 @@ public class Util {
     public Something something = ...;
 }
 </code></pre>
+
+::: preload-background-images
+![](../images/boundary.jpg)
+:::
+
+## { data-background="../images/boundary.jpg" }
 
 ## DI with Spring
 
@@ -1433,6 +1515,40 @@ public class Module extends AbstractModule {
 }
 </code></pre>
 
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2-3">
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="8">
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
 ## DI with Guice
 
 A mistake: no match
@@ -1663,6 +1779,60 @@ public class Main {
 }
 </code></pre>
 
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-9">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6,10">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
 ## Manual DI
 
 A mistake: no matches
@@ -1857,12 +2027,12 @@ Illegal states are
 ## Pros & Cons
 
 * **Con** some boilerplate
-* **Con** 1 dirty class
+* **Con** one dirty class
 
 ## Pros & Cons
 
 * **Con** some boilerplate
-* **Con** 1 dirty class
+* **Con** one dirty class
 
 over Spring and Guice
 
@@ -1872,7 +2042,7 @@ over Spring and Guice
 ## Pros & Cons
 
 * **Con** some boilerplate
-* **Con** 1 dirty class
+* **Con** one dirty class
 
 over Spring
 
@@ -1945,6 +2115,16 @@ Helps when things get **complicated**
 It's all **real**
 :::
 
+## TodoBackend.com
+
+![](../images/todobackend.png)
+
+## TodoBackend.com
+
+**fully compliant**
+
+![](../images/todobackend-compliance.png)
+
 ## Some code
 
 ## Some code { data-state="page-good" }
@@ -1960,7 +2140,7 @@ name: parallel-java
 properties: {
   encoding: utf-8,
   maven.compiler.source: 11,
-  maven.compiler.target: 11,
+  maven.compiler.target: 11
 }
 
 dependencies:
@@ -2225,6 +2405,6 @@ in the J-Spring app
 :::
 
 ::: { style="font-size:0.3em;" }
-Photo credits: [Hafidh Satyanto](https://unsplash.com/photos/boNRsEMxPsY) and [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY) on [Unsplash](https://unsplash.com)
+Photo credits: [Hafidh Satyanto](https://unsplash.com/photos/boNRsEMxPsY), [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY) and [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) on [Unsplash](https://unsplash.com)
 :::
 
