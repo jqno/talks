@@ -2152,6 +2152,29 @@ dependencies:
 
 ## Some code { data-state="page-good" }
 
+<pre><code class="yml" data-trim data-line-numbers="10-11">
+modelVersion: 4.0.0
+groupId: nl.jqno.paralleljava
+artifactId: parallel-java
+version: 1.0
+packaging: jar
+name: parallel-java
+
+properties: {
+  encoding: utf-8,
+  maven.compiler.source: 11,
+  maven.compiler.target: 11
+}
+
+dependencies:
+  - { groupId: com.sparkjava, artifactId: spark-core, version: 2.7.2 }
+  - { groupId: com.google.code.gson, artifactId: gson, version: 2.8.5 }
+  - { groupId: org.jdbi, artifactId: jdbi3-core }
+  - { groupId: org.postgresql, artifactId: postgresql, version: 42.2.5 }
+</code></pre>
+
+## Some code { data-state="page-good" }
+
 <pre><code class="xml" data-trim data-line-numbers>
 &lt;module name = "Checker">
     &lt;property name="charset" value="UTF-8"/>

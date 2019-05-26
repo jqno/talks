@@ -1874,24 +1874,29 @@ dependencies:
 </code></pre>
 </section><section id="some-code-2" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
-<pre><code class="xml" data-trim data-line-numbers>
-&lt;module name = "Checker">
-    &lt;property name="charset" value="UTF-8"/>
-    &lt;property name="severity" value="error"/>
+<pre><code class="yml" data-trim data-line-numbers="10-11">
+modelVersion: 4.0.0
+groupId: nl.jqno.paralleljava
+artifactId: parallel-java
+version: 1.0
+packaging: jar
+name: parallel-java
 
-    &lt;module name="TreeWalker">
-        &lt;module name="Regexp">
-            &lt;property name="format" value="@"/>
-            &lt;property name="illegalPattern" value="true"/>
-            &lt;property name="ignoreComments" value="true"/>
-            &lt;property name="message" value="Annotations are not allowed!"/>
-        &lt;/module>
-    &lt;/module>
-&lt;/module>
+properties: {
+  encoding: utf-8,
+  maven.compiler.source: 11,
+  maven.compiler.target: 11
+}
+
+dependencies:
+  - { groupId: com.sparkjava, artifactId: spark-core, version: 2.7.2 }
+  - { groupId: com.google.code.gson, artifactId: gson, version: 2.8.5 }
+  - { groupId: org.jdbi, artifactId: jdbi3-core }
+  - { groupId: org.postgresql, artifactId: postgresql, version: 42.2.5 }
 </code></pre>
 </section><section id="some-code-3" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
-<pre><code class="xml" data-trim data-line-numbers="7">
+<pre><code class="xml" data-trim data-line-numbers>
 &lt;module name = "Checker">
     &lt;property name="charset" value="UTF-8"/>
     &lt;property name="severity" value="error"/>
@@ -1908,7 +1913,7 @@ dependencies:
 </code></pre>
 </section><section id="some-code-4" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
-<pre><code class="xml" data-trim data-line-numbers="3">
+<pre><code class="xml" data-trim data-line-numbers="7">
 &lt;module name = "Checker">
     &lt;property name="charset" value="UTF-8"/>
     &lt;property name="severity" value="error"/>
@@ -1925,7 +1930,7 @@ dependencies:
 </code></pre>
 </section><section id="some-code-5" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
-<pre><code class="xml" data-trim data-line-numbers="10">
+<pre><code class="xml" data-trim data-line-numbers="3">
 &lt;module name = "Checker">
     &lt;property name="charset" value="UTF-8"/>
     &lt;property name="severity" value="error"/>
@@ -1942,6 +1947,23 @@ dependencies:
 </code></pre>
 </section><section id="some-code-6" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
+<pre><code class="xml" data-trim data-line-numbers="10">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+</section><section id="some-code-7" class="slide level2" data-state="page-good">
+<h2>Some code</h2>
 <pre><code class="java" data-trim data-line-numbers>
 public void architecture() {
     test("only SparkServer and SparkServerTest access Spark classes", () -> {
@@ -1953,7 +1975,7 @@ public void architecture() {
     });
 }
 </code></pre>
-</section><section id="some-code-7" class="slide level2" data-state="page-good">
+</section><section id="some-code-8" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
 <pre><code class="java" data-trim data-line-numbers>
 public void run() {
@@ -1965,7 +1987,7 @@ public void run() {
     post(endpoint, (req, resp) -> controller.post(req.body()));
 }
 </code></pre>
-</section><section id="some-code-8" class="slide level2" data-state="page-good">
+</section><section id="some-code-9" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
 <pre><code class="java" data-trim data-line-numbers>
 public Try&lt;Void> create(Todo todo) {
@@ -1981,7 +2003,7 @@ public Try&lt;Void> create(Todo todo) {
     }
 }
 </code></pre>
-</section><section id="some-code-9" class="slide level2" data-state="page-good">
+</section><section id="some-code-10" class="slide level2" data-state="page-good">
 <h2>Some code</h2>
 <pre><code class="java" data-trim data-line-numbers>
 public class Main {
