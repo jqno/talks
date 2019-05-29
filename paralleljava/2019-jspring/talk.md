@@ -1596,8 +1596,8 @@ public class Module extends AbstractModule {
 <pre><code class="xml" data-trim data-line-numbers>
 com.google.inject.CreationException: Unable to create injector, see the following errors:
 
-1) No implementation for services.Counter was bound.
-  while locating services.Counter
+1) No implementation for Something was bound.
+  while locating Something
     for the 1st parameter of controllers.CountController.&lt;init>(CountController.java:22)
   while locating controllers.CountController
     for the 3rd parameter of router.Routes.&lt;init>(Routes.scala:38)
@@ -1628,8 +1628,8 @@ Binding(class router.Routes to self) (via modules: com.google.inject.util.Module
 <pre><code class="xml" data-trim data-line-numbers="3-9">
 com.google.inject.CreationException: Unable to create injector, see the following errors:
 
-1) No implementation for services.Counter was bound.
-  while locating services.Counter
+1) No implementation for Something was bound.
+  while locating Something
     for the 1st parameter of controllers.CountController.&lt;init>(CountController.java:22)
   while locating controllers.CountController
     for the 3rd parameter of router.Routes.&lt;init>(Routes.scala:38)
@@ -1700,7 +1700,7 @@ public class Module extends AbstractModule {
 <pre><code class="xml" data-trim data-line-numbers>
 com.google.inject.CreationException: Unable to create injector, see the following errors:
 
-1) A binding to services.Counter was already configured at Module.configure(Module.java:29) (via modules: com.google.inject.util.Modules$OverrideModule -> Module).
+1) A binding to Something was already configured at Module.configure(Module.java:29) (via modules: com.google.inject.util.Modules$OverrideModule -> Module).
   at Module.configure(Module.java:30) (via modules: com.google.inject.util.Modules$OverrideModule -> Module)
 
 1 error
@@ -1727,7 +1727,7 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 <pre><code class="xml" data-trim data-line-numbers="3-4">
 com.google.inject.CreationException: Unable to create injector, see the following errors:
 
-1) A binding to services.Counter was already configured at Module.configure(Module.java:29) (via modules: com.google.inject.util.Modules$OverrideModule -> Module).
+1) A binding to Something was already configured at Module.configure(Module.java:29) (via modules: com.google.inject.util.Modules$OverrideModule -> Module).
   at Module.configure(Module.java:30) (via modules: com.google.inject.util.Modules$OverrideModule -> Module)
 
 1 error
@@ -2428,6 +2428,6 @@ in the J-Spring app
 :::
 
 ::: { style="font-size:0.3em;" }
-Photo credits: [Hafidh Satyanto](https://unsplash.com/photos/boNRsEMxPsY), [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY) and [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) on [Unsplash](https://unsplash.com)
+Photo credits: [Hafidh Satyanto](https://unsplash.com/photos/boNRsEMxPsY), [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY) and [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) on [Unsplash](https://unsplash.com) - Joke credit: [Ryan North](https://www.youtube.com/watch?v=nu_IDIVoZ2Q)
 :::
 
