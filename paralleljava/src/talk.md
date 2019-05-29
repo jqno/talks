@@ -2418,6 +2418,6 @@ Think about your **universe**
 :::
 
 ::: { style="font-size:0.3em;" }
-Photo credits: [Hafidh Satyanto](https://unsplash.com/photos/boNRsEMxPsY), [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY) and [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) on [Unsplash](https://unsplash.com)
+Photo credits: [Hafidh Satyanto](https://unsplash.com/photos/boNRsEMxPsY), [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY) and [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) on [Unsplash](https://unsplash.com) - Joke credit: [Ryan North](https://www.youtube.com/watch?v=nu_IDIVoZ2Q)
 :::
 
