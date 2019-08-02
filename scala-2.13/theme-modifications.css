@@ -1,0 +1,124 @@
+/* Fonts */
+
+@font-face {
+    font-family: "TilburgsAns";
+    src: url("../-assets/tilburgsans/TilburgsAns-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "FiraCode";
+    src: url("../-assets/firacode/FiraCode-Regular.woff") format('woff');
+}
+
+
+/* General layout */
+
+.reveal {
+  color: #eee8d5;
+  font-family: 'Gill Sans';
+}
+
+.reveal h1, .reveal h2 {
+  font-family: 'TilburgsAns';
+  text-transform: none;
+}
+
+.reveal strong {
+  color: #ffa630;
+  font-weight: normal;
+}
+
+.reveal a {
+  color: #ffa630;
+}
+
+
+/* Overrides for page-title */
+
+html.page-title body {
+  background-color: #eee8d5;
+}
+
+html.page-title .reveal {
+  color: #002b36;
+}
+
+html.page-title .reveal h1 {
+  color: #002b36;
+  font-size: 3.77em;
+}
+
+html.page-title .reveal a {
+  color: #002b36;
+}
+
+
+/* Overrides for page-good and page-bad */
+
+html.page-good body {
+  background-color: #2a6d54;
+}
+
+html.page-bad body {
+  background-color: #95473d;
+}
+
+
+/* Images */
+
+.reveal section img {
+  background: none;
+  border: 0;
+  vertical-align: middle;
+  box-shadow: 0px 0px 0px;
+}
+
+
+/* Lists */
+
+.reveal ul {
+  margin-left: 5em;
+  width: 100%;
+}
+
+
+/* Code blocks */
+
+.reveal pre code {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+  font-family: "FiraCode";
+  font-size: 0.8em;
+  max-height: 600px;
+  padding: 10px;
+}
+
+
+/* Various */
+
+.superbig {
+  font-family: "TilburgsAns";
+  font-size: 5em;
+}
+
+.big {
+  font-size: 1.5em;
+}
+
+.supersmall {
+  font-size: 0.6em;
+}
+
+.stacktrace {
+  font-size: 0.6em;
+}
+
+.preload-background-images {
+  /* HACK:
+   * Because Reveal.js lazy-loads data-background-images,
+   * there's a slight delay when transitioning to a slide that has one.
+   * Showing these images on the first slide with this css class
+   * will pre-fetch them and make the transition smooth.
+   */
+  visibility: hidden;
+}
+
