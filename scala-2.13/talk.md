@@ -9,13 +9,13 @@ center: "false"
 ---
 # Upgrading Scala 2.12 to 2.13
 
-Jan Ouwens
+**Jan Ouwens**
 
-@jqno
-
-# What's new in 2.13
+**@jqno**
 
 # What's new in 2.13
+
+## What's new
 
 * Collections overhaul
 * `Future` is faster and more robust
@@ -24,18 +24,48 @@ Jan Ouwens
 
 [Read more](https://github.com/scala/scala/releases/tag/v2.13.0)
 
-# What's deprecated in 2.13
+## What's deprecated
 
-* Procedure syntax<br>`def m() { ... }` → `def m(): Unit = { ... }`
-* Unicode arrows<br>`→ ⇒ ←` → `- >  = >  < -`
-* Postfix operators<br>`xs size` → `xs.size`
+Procedure syntax
+
+```scala
+def m() { ... }
+
+  ↓
+
+def m(): Unit = { ... }
+```
+
+## What's deprecated
+
+Unicode arrows
+
+::: {style="font-family:Courier;"}
+`←   →   ⇒`
+
+  ↓
+
+`<-  ->  =>`
+:::
+
+## What's deprecated
+
+Postfix operators
+
+```scala
+xs size
+
+  ↓
+
+xs.size
+```
 
 ## Collections overhaul
 
 For simplicity, performance and safety
 
-* Simpler signatures: ~~`CanBuildFrom`~~
-* Simpler hierarchy: ~~`Traversable`~~, ~~`TraversableOnce`~~
+* Simpler signatures:<br>~~`CanBuildFrom`~~
+* Simpler hierarchy:<br>~~`Traversable`~~, ~~`TraversableOnce`~~
 
 ## Collections overhaul
 
@@ -63,7 +93,11 @@ Using(new BufferedReader(new FileReader("file"))) { reader =>
 }
 ```
 
+`reader.close()` called automatically
+
 ## tap
+
+Useful for debugging
 
 ```scala
 val result = ???
@@ -81,6 +115,8 @@ result.tap(println)
 
 ## toIntOption
 
+<br>
+
 ```scala
 "12".toIntOption   → Some(12)
 "nope".toIntOption → None
@@ -90,9 +126,17 @@ result.tap(println)
 
 `.right` is deprecated
 
-Either is now right biased
+Either is now right-biased
 
-# Changes
+# In our project
+
+## Our application
+
+* Uses Slick
+* Uses ScalaTest
+* Maven build 😢
+* Lots of linting
+* Scoverage
 
 ## Build
 
@@ -109,61 +153,85 @@ Not all of them work
 
 ## Build
 
-`<artifactId>scalafmt-core_${scala.version}</artifactId>`
+```xml
+<artifactId>scalafmt-core_${scala.version}</artifactId>
 
-↓
+  ↓
 
-`<artifactId>scalafmt-core_2.12</artifactId>`
+<artifactId>scalafmt-core_2.12</artifactId>
+```
 
-## Code
+Scala-fmt is not available for 2.13 yet
 
-## Code
-
-`array.map(...)`
-
-↓
-
-`array.toSeq.map(...)`
+But it doesn't matter
 
 ## Code
 
-`import scala.collection.immutable.Seq`
+## Code
 
-↓
+```scala
+array.map(...)
+
+  ↓
+
+array.toSeq.map(...)
+```
+
+Arrays are mutable
+
+`map` should not mutate in-place
+
+## Code
+
+```scala
+import scala.collection.immutable.Seq
+
+  ↓
 
 nothing
+```
+
+🎉
 
 ## Code
 
-`import scala.collection.JavaConverters._`
+```scala
+import scala.collection.JavaConverters._
 
-↓
+  ↓
 
-`import scala.jdk.CollectionConverters._`
+import scala.jdk.CollectionConverters._
+```
 
-## Code
-
-`myMap.filterKeys(...)`
-
-↓
-
-`myMap.view.filterKeys(...)`
+Java interop has moved
 
 ## Code
 
-`myMap.mapValues(...)`
+```scala
+myMap.filterKeys(...)
+myMap.mapValues(...)
 
-↓
+  ↓
 
-`myMap.view.mapValues(...)`
+myMap.view.filterKeys(...)
+myMap.view.mapValues(...)
+```
+
+They are implemented as views; this makes that explicit
+
+Strict versions may come later
 
 ## Code
 
-`Stream.continually(...)`
+```scala
+Stream.continually(...)
 
-↓
+  ↓
 
-`LazyList.continually(...)`
+LazyList.continually(...)
+```
+
+`Stream` is deprecated because it was not fully lazy
 
 # Dependencies
 
@@ -183,23 +251,29 @@ Did you update?
 
 ## ScalaTest
 
-`import org.scalatest.prop.Checkers`
+```
+import org.scalatest.prop.Checkers
 
-↓
+  ↓
 
-`import org.scalatestplus.scalacheck.Checkers`
+import org.scalatestplus.scalacheck.Checkers
+```
+
+ScalaCheck related classes have moved to ScalaTestPlus
 
 ## ScalaTest
 
-Remove `EitherValues`
+Remove `EitherValues` trait
 
-<br>
+```scala
+e.right.value
 
-`e.right.value`
+  ↓
 
-↓
+e.toOption.value
+```
 
-`e.toOption.value`
+Because `Either.right` is deprecated
 
 ## Slick
 
@@ -207,11 +281,9 @@ Remove `EitherValues`
 
 ## Slick
 
-Now supports `java.time`
-
-Requires changes if you already have mappings for these types!
-
-Especially on MySql/MariaDB, where Slick uses `VARCHAR` instead of `TIMESTAMP`
+* Now supports `java.time`
+* **Requires changes** if you already have mappings for these types!
+* Especially on **MySql/MariaDB**, where Slick uses `VARCHAR` instead of `TIMESTAMP`
 
 ## Scoverage
 
@@ -225,25 +297,23 @@ Fork this [Pull Request](https://github.com/scoverage/scoverage-maven-plugin/pul
 
 ## Scoverage
 
-Measures differently
-
-May need to adjust thresholds
+Measures differently: may need to **adjust thresholds**
 
 ## WartRemover
 
 ## WartRemover
 
-`Any`
+**`Any`**
 
 Now unusable due to so many false positives
 
 ## WartRemover
 
-`StringPlusAny`
+**`StringPlusAny`**
 
 Now also applies to string-interpolation!
 
-Also, `any2stringadd` is now deprecated in Scala anyway
+Also, **`any2stringadd`** is now deprecated in Scala anyway
 
 ## Random dependency hell
 
