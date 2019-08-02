@@ -15,15 +15,82 @@ Jan Ouwens
 
 # What's new in 2.13
 
-## Collections rework
+# What's new in 2.13
+
+* Collections overhaul
+* `Future` is faster and more robust
+* Language: literal types, partial unification, more
+* Compiler: 5-10% faster
+
+[Read more](https://github.com/scala/scala/releases/tag/v2.13.0)
+
+# What's deprecated in 2.13
+
+* Procedure syntax<br>`def m() { ... }` → `def m(): Unit = { ... }`
+* Unicode arrows<br>`→ ⇒ ←` → `- >  = >  < -`
+* Postfix operators<br>`xs size` → `xs.size`
+
+## Collections overhaul
+
+For simplicity, performance and safety
+
+* Simpler signatures: ~~`CanBuildFrom`~~
+* Simpler hierarchy: ~~`Traversable`~~, ~~`TraversableOnce`~~
+
+## Collections overhaul
+
+`scala.Seq` is now immutable! 🎉
+
+## Collections overhaul
+
+Deprecated `/:` and `:\`
+
+(use `foldLeft` and `foldRight`)
+
+## Collections overhaul
+
+much, much [more](https://github.com/scala/scala/releases/tag/v2.13.0)
+
+## Java interop moved
+
+more about that later
+
+## Using
+
+```scala
+Using(new BufferedReader(new FileReader("file"))) { reader =>
+  // do stuff
+}
+```
+
+## tap
+
+```scala
+val result = ???
+println(result)
+result
+```
+
+↓
+
+```scala
+import scala.util.chaining._
+
+result.tap(println)
+```
+
+## toIntOption
+
+```scala
+"12".toIntOption   → Some(12)
+"nope".toIntOption → None
+```
 
 ## Either
 
-Right-biased
+`.right` is deprecated
 
-## Seq
-
-## tap
+Either is now right biased
 
 # Changes
 
@@ -164,8 +231,19 @@ May need to adjust thresholds
 
 ## WartRemover
 
-* `Any`
-* `StringPlusAny`
+## WartRemover
+
+`Any`
+
+Now unusable due to so many false positives
+
+## WartRemover
+
+`StringPlusAny`
+
+Now also applies to string-interpolation!
+
+Also, `any2stringadd` is now deprecated in Scala anyway
 
 ## Random dependency hell
 
