@@ -9,9 +9,9 @@ center: "false"
 ---
 # Upgrading Scala 2.12 to 2.13
 
-**Jan Ouwens**
+**Jan Ouwens** | **@jqno**
 
-**@jqno**
+August 9th, 2019
 
 # What's new in 2.13
 
