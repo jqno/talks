@@ -15,6 +15,7 @@
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <link rel="stylesheet" href="../-revealjs-3.8.0/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="parallel-highlight.css"/>
   <link rel="stylesheet" href="theme-modifications.css"/>
   <!-- Printing and PDF exports -->
   <script>
@@ -33,7 +34,129 @@
     <div class="slides">
 
 
-<section id="upgrading-scala-2.12-to-2.13" class="title-slide slide level1"><h1>Upgrading Scala 2.12 to 2.13</h1></section>
+<section id="upgrading-scala-2.12-to-2.13" class="title-slide slide level1"><h1>Upgrading Scala 2.12 to 2.13</h1><p>Jan Ouwens</p>
+<p><span class="citation" data-cites="jqno">@jqno</span></p></section>
+<section><section id="whats-new-in-2.13" class="title-slide slide level1"><h1>What’s new in 2.13</h1></section><section id="collections-rework" class="slide level2">
+<h2>Collections rework</h2>
+</section><section id="either" class="slide level2">
+<h2>Either</h2>
+<p>Right-biased</p>
+</section><section id="seq" class="slide level2">
+<h2>Seq</h2>
+</section><section id="tap" class="slide level2">
+<h2>tap</h2>
+</section></section>
+<section><section id="changes" class="title-slide slide level1"><h1>Changes</h1></section><section id="build" class="slide level2">
+<h2>Build</h2>
+</section><section id="build-1" class="slide level2">
+<h2>Build</h2>
+<p><a href="https://tpolecat.github.io/2017/04/25/scalac-flags.html">Recommended flags for 2.12 by tpolecat</a></p>
+<p>Not all of them work</p>
+</section><section id="build-2" class="slide level2">
+<h2>Build</h2>
+<ul>
+<li><code>-Ywarn-inaccessible</code> → <code>-Xlint:inaccessible</code><br>Inaccessible types in method signatures</li>
+<li><del><code>-Yno-adapted-args</code></del><br>Do not adapt an argument list (either by inserting () or creating a tuple) to match the receiver</li>
+</ul>
+</section><section id="build-3" class="slide level2">
+<h2>Build</h2>
+<p><code>&lt;artifactId&gt;scalafmt-core_${scala.version}&lt;/artifactId&gt;</code></p>
+<p>↓</p>
+<p><code>&lt;artifactId&gt;scalafmt-core_2.12&lt;/artifactId&gt;</code></p>
+</section><section id="code" class="slide level2">
+<h2>Code</h2>
+</section><section id="code-1" class="slide level2">
+<h2>Code</h2>
+<p><code>array.map(...)</code></p>
+<p>↓</p>
+<p><code>array.toSeq.map(...)</code></p>
+</section><section id="code-2" class="slide level2">
+<h2>Code</h2>
+<p><code>import scala.collection.immutable.Seq</code></p>
+<p>↓</p>
+<p>nothing</p>
+</section><section id="code-3" class="slide level2">
+<h2>Code</h2>
+<p><code>import scala.collection.JavaConverters._</code></p>
+<p>↓</p>
+<p><code>import scala.jdk.CollectionConverters._</code></p>
+</section><section id="code-4" class="slide level2">
+<h2>Code</h2>
+<p><code>myMap.filterKeys(...)</code></p>
+<p>↓</p>
+<p><code>myMap.view.filterKeys(...)</code></p>
+</section><section id="code-5" class="slide level2">
+<h2>Code</h2>
+<p><code>myMap.mapValues(...)</code></p>
+<p>↓</p>
+<p><code>myMap.view.mapValues(...)</code></p>
+</section><section id="code-6" class="slide level2">
+<h2>Code</h2>
+<p><code>Stream.continually(...)</code></p>
+<p>↓</p>
+<p><code>LazyList.continually(...)</code></p>
+</section></section>
+<section><section id="dependencies" class="title-slide slide level1"><h1>Dependencies</h1></section><section id="scala-maven-plugin" class="slide level2">
+<h2>Scala-Maven-Plugin</h2>
+<p>Did you update?</p>
+<div class="fragment">
+<p>4.0 is broken for us</p>
+<p>¯\_(ツ)_/¯</p>
+</div>
+</section><section id="scalatest" class="slide level2">
+<h2>ScalaTest</h2>
+<p>≥ 3.0.8</p>
+</section><section id="scalatest-1" class="slide level2">
+<h2>ScalaTest</h2>
+<p><code>import org.scalatest.prop.Checkers</code></p>
+<p>↓</p>
+<p><code>import org.scalatestplus.scalacheck.Checkers</code></p>
+</section><section id="scalatest-2" class="slide level2">
+<h2>ScalaTest</h2>
+<p>Remove <code>EitherValues</code></p>
+<p><br></p>
+<p><code>e.right.value</code></p>
+<p>↓</p>
+<p><code>e.toOption.value</code></p>
+</section><section id="slick" class="slide level2">
+<h2>Slick</h2>
+<p>≥ 3.3.2</p>
+</section><section id="slick-1" class="slide level2">
+<h2>Slick</h2>
+<p>Now supports <code>java.time</code></p>
+<p>Requires changes if you already have mappings for these types!</p>
+<p>Especially on MySql/MariaDB, where Slick uses <code>VARCHAR</code> instead of <code>TIMESTAMP</code></p>
+</section><section id="scoverage" class="slide level2">
+<h2>Scoverage</h2>
+<p>≥ 1.4.0</p>
+</section><section id="scoverage-1" class="slide level2">
+<h2>Scoverage</h2>
+<p><code>scoverage-maven-plugin</code> 1.4.0 does not exist 😢</p>
+<p>Fork this <a href="https://github.com/scoverage/scoverage-maven-plugin/pull/73">Pull Request</a></p>
+</section><section id="scoverage-2" class="slide level2">
+<h2>Scoverage</h2>
+<p>Measures differently</p>
+<p>May need to adjust thresholds</p>
+</section><section id="wartremover" class="slide level2">
+<h2>WartRemover</h2>
+<ul>
+<li><code>Any</code></li>
+<li><code>StringPlusAny</code></li>
+</ul>
+</section><section id="random-dependency-hell" class="slide level2">
+<h2>Random dependency hell</h2>
+<p>Transitive dependencies may or may not be compatible</p>
+<pre class="xml"><code>&lt;exclusions&gt;
+  &lt;!-- pulls in Jackson for Scala 2.12 instead of 2.13,
+       so we have to suppress here --&gt;
+  &lt;exclusion&gt;
+      &lt;groupId&gt;com.fasterxml.jackson.module&lt;/groupId&gt;
+      &lt;artifactId&gt;jackson-module-scala_2.12&lt;/artifactId&gt;
+  &lt;/exclusion&gt;
+&lt;/exclusions&gt;</code></pre>
+</section></section>
+<section id="questions" class="title-slide slide level1"><h1>Questions?</h1><p><img data-src="images/qr.png" /></p>
+<p><span class="citation" data-cites="jqno">@jqno</span></p></section>
     </div>
   </div>
 
@@ -64,6 +187,7 @@
         dependencies: [
           { src: '../-revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: '../-revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
+          { src: '../-revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
           { src: '../-revealjs-3.8.0/plugin/notes/notes.js', async: true }
         ]
       });
