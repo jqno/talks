@@ -36,15 +36,60 @@
 
 <section id="upgrading-scala-2.12-to-2.13" class="title-slide slide level1"><h1>Upgrading Scala 2.12 to 2.13</h1><p>Jan Ouwens</p>
 <p><span class="citation" data-cites="jqno">@jqno</span></p></section>
-<section><section id="whats-new-in-2.13" class="title-slide slide level1"><h1>What’s new in 2.13</h1></section><section id="collections-rework" class="slide level2">
-<h2>Collections rework</h2>
-</section><section id="either" class="slide level2">
-<h2>Either</h2>
-<p>Right-biased</p>
-</section><section id="seq" class="slide level2">
-<h2>Seq</h2>
+<section id="whats-new-in-2.13" class="title-slide slide level1"><h1>What’s new in 2.13</h1></section>
+<section id="whats-new-in-2.13-1" class="title-slide slide level1"><h1>What’s new in 2.13</h1><ul>
+<li>Collections overhaul</li>
+<li><code>Future</code> is faster and more robust</li>
+<li>Language: literal types, partial unification, more</li>
+<li>Compiler: 5-10% faster</li>
+</ul>
+<p><a href="https://github.com/scala/scala/releases/tag/v2.13.0">Read more</a></p></section>
+<section><section id="whats-deprecated-in-2.13" class="title-slide slide level1"><h1>What’s deprecated in 2.13</h1><ul>
+<li>Procedure syntax<br><code>def m() { ... }</code> → <code>def m(): Unit = { ... }</code></li>
+<li>Unicode arrows<br><code>→ ⇒ ←</code> → <code>- &gt;  = &gt;  &lt; -</code></li>
+<li>Postfix operators<br><code>xs size</code> → <code>xs.size</code></li>
+</ul></section><section id="collections-overhaul" class="slide level2">
+<h2>Collections overhaul</h2>
+<p>For simplicity, performance and safety</p>
+<ul>
+<li>Simpler signatures: <del><code>CanBuildFrom</code></del></li>
+<li>Simpler hierarchy: <del><code>Traversable</code></del>, <del><code>TraversableOnce</code></del></li>
+</ul>
+</section><section id="collections-overhaul-1" class="slide level2">
+<h2>Collections overhaul</h2>
+<p><code>scala.Seq</code> is now immutable! 🎉</p>
+</section><section id="collections-overhaul-2" class="slide level2">
+<h2>Collections overhaul</h2>
+<p>Deprecated <code>/:</code> and <code>:\</code></p>
+<p>(use <code>foldLeft</code> and <code>foldRight</code>)</p>
+</section><section id="collections-overhaul-3" class="slide level2">
+<h2>Collections overhaul</h2>
+<p>much, much <a href="https://github.com/scala/scala/releases/tag/v2.13.0">more</a></p>
+</section><section id="java-interop-moved" class="slide level2">
+<h2>Java interop moved</h2>
+<p>more about that later</p>
+</section><section id="using" class="slide level2">
+<h2>Using</h2>
+<pre class="scala"><code>Using(new BufferedReader(new FileReader(&quot;file&quot;))) { reader =&gt;
+  // do stuff
+}</code></pre>
 </section><section id="tap" class="slide level2">
 <h2>tap</h2>
+<pre class="scala"><code>val result = ???
+println(result)
+result</code></pre>
+<p>↓</p>
+<pre class="scala"><code>import scala.util.chaining._
+
+result.tap(println)</code></pre>
+</section><section id="tointoption" class="slide level2">
+<h2>toIntOption</h2>
+<pre class="scala"><code>&quot;12&quot;.toIntOption   → Some(12)
+&quot;nope&quot;.toIntOption → None</code></pre>
+</section><section id="either" class="slide level2">
+<h2>Either</h2>
+<p><code>.right</code> is deprecated</p>
+<p>Either is now right biased</p>
 </section></section>
 <section><section id="changes" class="title-slide slide level1"><h1>Changes</h1></section><section id="build" class="slide level2">
 <h2>Build</h2>
@@ -139,10 +184,15 @@
 <p>May need to adjust thresholds</p>
 </section><section id="wartremover" class="slide level2">
 <h2>WartRemover</h2>
-<ul>
-<li><code>Any</code></li>
-<li><code>StringPlusAny</code></li>
-</ul>
+</section><section id="wartremover-1" class="slide level2">
+<h2>WartRemover</h2>
+<p><code>Any</code></p>
+<p>Now unusable due to so many false positives</p>
+</section><section id="wartremover-2" class="slide level2">
+<h2>WartRemover</h2>
+<p><code>StringPlusAny</code></p>
+<p>Now also applies to string-interpolation!</p>
+<p>Also, <code>any2stringadd</code> is now deprecated in Scala anyway</p>
 </section><section id="random-dependency-hell" class="slide level2">
 <h2>Random dependency hell</h2>
 <p>Transitive dependencies may or may not be compatible</p>
