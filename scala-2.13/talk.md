@@ -11,7 +11,7 @@ center: "false"
 
 **Jan Ouwens** | **@jqno**
 
-August 9th, 2019
+August 23th, 2019
 
 # What's new in 2.13
 
