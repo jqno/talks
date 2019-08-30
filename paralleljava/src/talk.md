@@ -24,6 +24,24 @@ center: "false"
 #paralleljava
 :::
 
+::: preload-background-images
+![](../images/don-quixote.jpg)
+:::
+
+## { data-background="../images/don-quixote.jpg" background-size="contain" }
+
+::: { style="color:#002b36;" }
+Don Quixote
+:::
+
+::: preload-background-images
+![](../images/mill.jpg)
+:::
+
+## { data-background="../images/mill.jpg" background-size="contain" }
+
+Don Quixote
+
 ## Language of the Year
 
 ## Language of the Year
@@ -2354,6 +2372,14 @@ Language of the Year
 **Parallel Java**
 :::
 
+::: preload-background-images
+![](../images/mill.jpg)
+:::
+
+## Conclusion { data-background="../images/mill.jpg" background-size="contain" }
+
+Keep fighting those windmills!
+
 # Questions? { data-state="page-title" }
 
 <br/>
@@ -2367,6 +2393,6 @@ Language of the Year
 :::
 
 ::: { style="font-size:0.3em;" }
-Photo credits: [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY), [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) and [Adi Goldstein](https://unsplash.com/photos/mDinBvq1Sfg) on [Unsplash](https://unsplash.com)
+Photo credits: [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY), [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) and [Adi Goldstein](https://unsplash.com/photos/mDinBvq1Sfg) on [Unsplash](https://unsplash.com); [Unknown](https://pixabay.com/photos/mill-wind-grind-tourist-tourism-1745186/) on [Pixabay](https://pixabay.com); and [Gustave Doré](https://www.wikiart.org/en/gustave-dore/don-quixote-and-sancho-setting-out-1863)
 :::
 
