@@ -94,6 +94,12 @@ Java without annotations
 
 # Annotations { data-state="page-title" }
 
+::: preload-background-images
+![](../images/mill.jpg)
+:::
+
+## Annotations: my windmill { data-background="../images/mill.jpg" background-size="contain" }
+
 ## What are they?
 
 <pre><code class="java" data-trim data-line-numbers>
