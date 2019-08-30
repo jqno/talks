@@ -1,6 +1,15 @@
 ---
 title: "Don't hack the platform? ☠️💣💥"
 ---
+A funny anthology of tricks and hacks for the JVM. Voted 2018’s ["best non-Venkat talk"](https://nljug.org/nieuws/j-fall-2018-the-top-10-sessions/) by the J-Fall audience! 
+
+## Abstract
+Don’t go to this talk! Your coworkers will not be happy when you come back to work tomorrow and start applying the things you’ll learn here. You’ll do a lot of damage.
+
+Mutating immutable objects is never a good idea. You shouldn’t be bypassing the constructor when you instantiate an object. You certainly don’t need to add constants to your enums at runtime. And don’t even think about including Java 8 code in your Java 7 codebase. Truly, nothing good will come from attending this talk.
+
+In all seriousness, this talk will provide awareness about some of the lesser-known vulnerabilities of Java and the JVM. Maybe I’ll even tell you how to guard against them.
+
 ## Show me the code!
 * All **hacks** can be found on [github](https://github.com/jqno/dont-hack-the-platform-talk)
 
