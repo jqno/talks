@@ -6,5 +6,5 @@ title: "Java from a Parallel Universe"
 * **PicoTest** test framework on [github](https://github.com/jqno/picotest)
 
 ## Deliveries
-* [J-Spring 2019](2019-jspring): [[video](https://www.youtube.com/watch?v=Yj_Bh93omw4)]
+* _29 May 2019_: J-Spring Netherlands: [[event](https://jspring.nl/sessions/java-from-a-parallel-universe/)] [[slides](2019-jspring)] [[video](https://www.youtube.com/watch?v=Yj_Bh93omw4)]
 
