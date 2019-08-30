@@ -24,50 +24,6 @@ center: "false"
 #paralleljava
 :::
 
-::: preload-background-images
-![](../images/universe.jpg)
-:::
-
-## { data-background-image="../images/universe.jpg" data-background-position=bottom }
-
----
-
-::: superbig
-#1
-:::
-
----
-
-::: superbig
-#10
-:::
-
----
-
-::: superbig
-#1024579 23508726
-:::
-
----
-
-::: superbig
-#1024579 2350x10<sup>42</sup>
-:::
-
----
-
-::: superbig
-#1024579 2350x10<sup>∞</sup>
-:::
-
----
-
-::: superbig
-Let me
-
-**help** you
-:::
-
 ## Language of the Year
 
 ## Language of the Year
@@ -171,7 +127,6 @@ public class Something { ... }
 ::: supersmall
 * **2002** → C#
 * **2004** → Java
-* **never** → Parallel Java
 :::
 
 ## Why?
@@ -481,7 +436,7 @@ Just **plain Java**
 
 # Testing { data-state="page-title" }
 
-## In your universe { data-state="page-bad" }
+## Familiar Java { data-state="page-bad" }
 
 <br/>
 
@@ -493,7 +448,7 @@ public void indexOfReturnsTheCorrectIndex() {
 }
 </code></pre>
 
-## In your universe { data-state="page-bad" }
+## Familiar Java { data-state="page-bad" }
 
 <br/>
 
@@ -527,7 +482,7 @@ public void testIndexOfReturnsTheCorrectIndex() {
 }
 </code></pre>
 
-## In the parallel universe { data-state="page-good" }
+## Parallel Java { data-state="page-good" }
 
 <br/>
 
@@ -538,7 +493,7 @@ test("indexOf returns the correct index", () -> {
 });
 </code></pre>
 
-## In the parallel universe { data-state="page-good" }
+## Parallel Java { data-state="page-good" }
 
 <br/>
 
@@ -577,7 +532,7 @@ test("indexOf returns the correct index", new Runnable() {
 });
 </code></pre>
 
-## In the parallel universe { data-state="page-good" }
+## Parallel Java { data-state="page-good" }
 
 <br/>
 
@@ -604,7 +559,7 @@ test("indexOf returns the correct index", () -> {
 
 # Web { data-state="page-title" }
 
-## In your universe { data-state="page-bad" }
+## Familiar Java { data-state="page-bad" }
 
 <br/>
 
@@ -615,7 +570,7 @@ public String getTodo(@PathVariable("id") String id) {
 }
 </code></pre>
 
-## In your universe { data-state="page-bad" }
+## Familiar Java { data-state="page-bad" }
 
 <br/>
 
@@ -626,7 +581,7 @@ public String getTodo(@PathVariable("id") String id) {
 }
 </code></pre>
 
-## In your universe { data-state="page-bad" }
+## Familiar Java { data-state="page-bad" }
 
 <br/>
 
@@ -637,7 +592,7 @@ public String getTodo(@PathVariable("id") String id) {
 }
 </code></pre>
 
-## In the parallel universe { data-state="page-good" }
+## Parallel Java { data-state="page-good" }
 
 <br/>
 
@@ -647,7 +602,7 @@ get("/todo/:id", (request, response) -> {
 });
 </code></pre>
 
-## In the parallel universe { data-state="page-good" }
+## Parallel Java { data-state="page-good" }
 
 <br/>
 
@@ -683,7 +638,7 @@ get("/todo/:id", new Route() {
 });
 </code></pre>
 
-## In the parallel universe { data-state="page-good" }
+## Parallel Java { data-state="page-good" }
 
 <br/>
 
@@ -754,7 +709,7 @@ before((request, response) -> {
 
 # Database { data-state="page-title" }
 
-## In your universe { data-state="page-bad" }
+## Familiar Java { data-state="page-bad" }
 
 <br/>
 
@@ -776,7 +731,7 @@ public class Todo {
 }
 </code></pre>
 
-## In your universe { data-state="page-bad" }
+## Familiar Java { data-state="page-bad" }
 
 <br/>
 
@@ -798,7 +753,7 @@ public class Todo {
 }
 </code></pre>
 
-## In your universe { data-state="page-bad" }
+## Familiar Java { data-state="page-bad" }
 
 <br/>
 
@@ -820,7 +775,7 @@ public class Todo {
 }
 </code></pre>
 
-## In your universe { data-state="page-bad" }
+## Familiar Java { data-state="page-bad" }
 
 <br/>
 
@@ -842,7 +797,7 @@ public class Todo {
 }
 </code></pre>
 
-## In the parallel universe { data-state="page-good" }
+## Parallel Java { data-state="page-good" }
 
 <br/>
 
@@ -855,7 +810,7 @@ public class Todo {
 }
 </code></pre>
 
-## In the parallel universe { data-state="page-good" }
+## Parallel Java { data-state="page-good" }
 
 <br/>
 
@@ -869,7 +824,7 @@ List&lt;Todo> todos = engine.query(handle -> {
 });
 </code></pre>
 
-## In the parallel universe { data-state="page-good" }
+## Parallel Java { data-state="page-good" }
 
 <br/>
 
@@ -883,7 +838,7 @@ List&lt;Todo> todos = engine.query(handle -> {
 });
 </code></pre>
 
-## In the parallel universe { data-state="page-good" }
+## Parallel Java { data-state="page-good" }
 
 <br/>
 
@@ -957,7 +912,7 @@ engine.execute(handle -> {
 
 # Dependency Injection { data-state="page-title" }
 
-## In your universe
+## Familiar Java
 
 <br/>
 
@@ -1753,7 +1708,7 @@ A mistake: cyclic dependencies
 
 **Probably** possible?
 
-## In the parallel universe
+## Parallel Java
 
 <br/>
 
@@ -2318,11 +2273,13 @@ public class Main {
 * [JDBI](http://jdbi.org/)
 * [PicoTest](https://github.com/jqno/PicoTest)
 
+## PicoTest
+
 ::: preload-background-images
-![](../images/universe.jpg)
+![](../images/everyonecancode.jpg)
 :::
 
-## PicoTest { data-background-image="../images/universe.jpg" data-background-position=bottom }
+## PicoTest { data-background="../images/everyonecancode.jpg" }
 
 ## Code
 
@@ -2397,14 +2354,6 @@ Language of the Year
 **Parallel Java**
 :::
 
-::: preload-background-images
-![](../images/universe.jpg)
-:::
-
-## Conclusion { data-background-image="../images/universe.jpg" data-background-position=bottom }
-
-Think about your **universe**
-
 # Questions? { data-state="page-title" }
 
 <br/>
@@ -2418,6 +2367,6 @@ Think about your **universe**
 :::
 
 ::: { style="font-size:0.3em;" }
-Photo credits: [Hafidh Satyanto](https://unsplash.com/photos/boNRsEMxPsY), [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY) and [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) on [Unsplash](https://unsplash.com) - Joke credit: [Ryan North](https://www.youtube.com/watch?v=nu_IDIVoZ2Q)
+Photo credits: [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY), [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) and [Adi Goldstein](https://unsplash.com/photos/mDinBvq1Sfg) on [Unsplash](https://unsplash.com)
 :::
 
