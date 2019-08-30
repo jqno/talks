@@ -4,6 +4,7 @@ title: "My talks"
 # Main talks
 
 * [Java from a Parallel Universe](paralleljava/)
+* [Don't hack the platform? ☠💣💥️](dont-hack-the-platform/)
 
 # One-offs
 
