@@ -10,6 +10,6 @@ title: "My talks"
 
 # One-offs
 
-* Aug 2019 - [Upgrading Scala 2.12 to 2.13](scala-2.13/) - [Codestar brown-bag session]
-
+* Aug 2019 - Upgrading Scala 2.12 to 2.13 - [Codestar brown-bag session] [[slides](https://www.youtube.com/watch?v=uksqLVk3l6M)]
+* Jun 2014 - Scala - [Sogeti] [[video](https://www.youtube.com/watch?v=uksqLVk3l6M)]
 
