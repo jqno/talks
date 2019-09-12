@@ -2063,22 +2063,53 @@ Helps when things get **complicated**
 
 # Other annotations { data-state="page-title" }
 
-## Bad annotations
+## Serialization
 
-* Serialization
-* Validation
-* Code generation
+* JSON
+* XML
 
-## So-so annotations
+## Serialization { data-state="page-bad" }
+
+* JSON
+* XML
+
+## Code generation
+
+* Lombok
+* AutoValue
+
+## Code generation { data-state="page-bad" }
+
+* Lombok
+* AutoValue
+
+## Static analysis
 
 * `@NonNull`
 * `@Immutable`
-* `@SuppressWarnings`
 
-## Good annotations
+## Static analysis { data-state="page-good" }
+
+* `@NonNull`
+* `@Immutable`
+
+## Code meta-data
+
+* `@SuppressWarnings`
+* `@Deprecated`
+
+## Code meta-data { data-state="page-good" }
+
+* `@SuppressWarnings`
+* `@Deprecated`
+
+## Should have been built-in
 
 * `@Override`
-* `@Deprecated`
+
+## Should have been built-in { data-state="page-good" }
+
+* `@Override`
 
 # Parallel Java { data-state="page-title" }
 
