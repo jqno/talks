@@ -2073,6 +2073,16 @@ Helps when things get **complicated**
 * JSON
 * XML
 
+## Properties
+
+* `@Value`
+* `@ConfigurationProperties`
+
+## Properties { data-state="page-bad" }
+
+* `@Value`
+* `@ConfigurationProperties`
+
 ## Code generation
 
 * Lombok
