@@ -2397,19 +2397,25 @@ Language of the Year
 **Parallel Java**
 :::
 
-::: preload-background-images
-![](../images/mill.jpg)
-:::
-
 ## Conclusion
 
 ::: superbig
 **fun**
 :::
 
-## Conclusion { data-background="../images/mill.jpg" background-size="contain" }
+::: preload-background-images
+![](../images/mill.jpg)
+:::
+
+## Conclusion { data-background="../images/mill.jpg" }
 
 Keep fighting those windmills!
+
+## Conclusion
+
+![](../images/don-quixote-1.jpg){ height=400px }
+
+And read a **good book**!
 
 # Questions? { data-state="page-title" }
 
