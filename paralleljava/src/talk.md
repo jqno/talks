@@ -2063,59 +2063,32 @@ Helps when things get **complicated**
 
 # Other annotations { data-state="page-title" }
 
-## Serialization
-
-* JSON
-* XML
-
 ## Serialization { data-state="page-bad" }
 
 * JSON
 * XML
-
-## Properties
-
-* `@Value`
-* `@ConfigurationProperties`
 
 ## Properties { data-state="page-bad" }
 
 * `@Value`
 * `@ConfigurationProperties`
 
-## Code generation
-
-* Lombok
-* AutoValue
-
 ## Code generation { data-state="page-bad" }
 
 * Lombok
 * AutoValue
 
-## Static analysis
-
-* `@NonNull`
-* `@Immutable`
+# Are annotations all bad?
 
 ## Static analysis { data-state="page-good" }
 
 * `@NonNull`
 * `@Immutable`
 
-## Code meta-data
-
-* `@SuppressWarnings`
-* `@Deprecated`
-
 ## Code meta-data { data-state="page-good" }
 
 * `@SuppressWarnings`
 * `@Deprecated`
-
-## Should have been built-in
-
-* `@Override`
 
 ## Should have been built-in { data-state="page-good" }
 
