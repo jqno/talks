@@ -28,19 +28,19 @@ center: "false"
 ![](../images/don-quixote-1.jpg)
 :::
 
-## { data-background="../images/don-quixote-1.jpg" background-size="contain" }
+## { data-background="../images/don-quixote-1.jpg" }
 
 ::: preload-background-images
 ![](../images/mill.jpg)
 :::
 
-## { data-background="../images/mill.jpg" background-size="contain" }
+## { data-background="../images/mill.jpg" }
 
 ::: preload-background-images
 ![](../images/don-quixote-2.jpg)
 :::
 
-## { data-background="../images/don-quixote-2.jpg" background-size="contain" }
+## { data-background="../images/don-quixote-2.jpg" }
 
 ## Language of the Year
 
@@ -98,7 +98,7 @@ Java without annotations
 ![](../images/mill.jpg)
 :::
 
-## Annotations: my windmill { data-background="../images/mill.jpg" background-size="contain" }
+## Annotations: my windmill { data-background="../images/mill.jpg"  }
 
 ## What are they?
 
