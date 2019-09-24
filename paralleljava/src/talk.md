@@ -98,7 +98,7 @@ Java without annotations
 ![](../images/mill.jpg)
 :::
 
-## Annotations: my windmill { data-background="../images/mill.jpg"  }
+## Annotations { data-background="../images/mill.jpg"  }
 
 ## What are they?
 
