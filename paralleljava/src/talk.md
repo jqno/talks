@@ -2078,7 +2078,7 @@ Helps when things get **complicated**
 * Lombok
 * AutoValue
 
-# Are annotations all bad?
+# Are **all** annotations bad?
 
 ## Static analysis { data-state="page-good" }
 
@@ -2093,6 +2093,11 @@ Helps when things get **complicated**
 ## Should have been built-in { data-state="page-good" }
 
 * `@Override`
+
+## Conclusion
+
+* Do something **useful**
+* Can't **reasonably** be done differently
 
 # Parallel Java { data-state="page-title" }
 
