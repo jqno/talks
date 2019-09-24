@@ -25,14 +25,10 @@ center: "false"
 :::
 
 ::: preload-background-images
-![](../images/don-quixote.jpg)
+![](../images/don-quixote-1.jpg)
 :::
 
-## { data-background="../images/don-quixote.jpg" background-size="contain" }
-
-::: { style="color:#002b36;" }
-Don Quixote
-:::
+## { data-background="../images/don-quixote-1.jpg" background-size="contain" }
 
 ::: preload-background-images
 ![](../images/mill.jpg)
@@ -40,7 +36,11 @@ Don Quixote
 
 ## { data-background="../images/mill.jpg" background-size="contain" }
 
-Don Quixote
+::: preload-background-images
+![](../images/don-quixote-2.jpg)
+:::
+
+## { data-background="../images/don-quixote-2.jpg" background-size="contain" }
 
 ## Language of the Year
 
@@ -2424,6 +2424,6 @@ Keep fighting those windmills!
 :::
 
 ::: { style="font-size:0.3em;" }
-Photo credits: [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY), [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) and [Adi Goldstein](https://unsplash.com/photos/mDinBvq1Sfg) on [Unsplash](https://unsplash.com); [Unknown](https://pixabay.com/photos/mill-wind-grind-tourist-tourism-1745186/) on [Pixabay](https://pixabay.com); and [Gustave Doré](https://www.wikiart.org/en/gustave-dore/don-quixote-and-sancho-setting-out-1863)
+Photo credits: [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY), [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) and [Adi Goldstein](https://unsplash.com/photos/mDinBvq1Sfg) on [Unsplash](https://unsplash.com); [Unknown](https://pixabay.com/photos/mill-wind-grind-tourist-tourism-1745186/) on [Pixabay](https://pixabay.com); and [Gustave Doré](https://www.wikiart.org/en/gustave-dore/all-works#!#filterName:Series_don-quixote,resultType:detailed)
 :::
 
