@@ -21,5 +21,6 @@ Will you join me there?
 * **PicoTest** test framework on [github](https://github.com/jqno/picotest)
 
 ## Deliveries
+* _25 September 2019_, Den Bosch JUG: [[event](https://www.meetup.com/Den-Bosch-Java-User-Group/events/263672508/)] [[slides](2019-denboschjug)]
 * _29 May 2019_: J-Spring Netherlands: [[event](https://jspring.nl/sessions/java-from-a-parallel-universe/)] [[slides](2019-jspring)] [[video](https://www.youtube.com/watch?v=Yj_Bh93omw4)]
 
