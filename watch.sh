@@ -6,5 +6,5 @@ if [ -z "$PRESENTATION" ]; then
   exit 1
 fi
 
-chokidar "$PRESENTATION/**/*.md" "$PRESENTATION/**/*.css" -c "cd $PRESENTATION && ./generate.sh"
+chokidar "$PRESENTATION/**/*.md" "$PRESENTATION/**/*.css" -c "./generate.sh $PRESENTATION"
 

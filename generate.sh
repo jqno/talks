@@ -1,10 +1,14 @@
 #!/bin/sh
 
-TEMPLATE_DIR="."
-SOURCES_DIR="./src"
+PRESENTATION=$1
+if [ -z "$PRESENTATION" ]; then
+  echo "No presentation set"
+  exit 1
+fi
+
+SOURCES_DIR="$PRESENTATION/src"
 REVEAL_DIR="../../-revealjs-3.8.0"
 CSS_DIR=".."
-[ -n "$1" ] && TEMPLATE_DIR=$1
 [ -n "$2" ] && SOURCES_DIR=$2
 [ -n "$3" ] && REVEAL_DIR=$3
 [ -n "$4" ] && CSS_DIR=$4
@@ -16,7 +20,7 @@ pandoc \
   --to=revealjs \
   --standalone \
   --slide-level=2 \
-  --template $TEMPLATE_DIR/template.html \
+  --template $PRESENTATION/template.html \
   --variable revealjs-url=$REVEAL_DIR \
   --css=$CSS_DIR/theme-modifications.css \
   --variable hlcss=$CSS_DIR/parallel-highlight.css \
