@@ -8,6 +8,8 @@ fi
 
 DIR=".live"
 
+rm -rf $DIR
+
 mkdir -p $DIR
 mkdir -p $DIR/images
 
