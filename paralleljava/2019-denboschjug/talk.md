@@ -36,6 +36,12 @@ inaugural Den Bosch JUG meetup, 25 September 2019
 
 ## { data-background="../images/don-quixote-1.jpg" }
 
+::: notes
+* El ingenioso hidalgo Don Quijote de la Mancha
+* Squire
+* Inn = castle → knighted
+:::
+
 ::: preload-background-images
 ![](../images/mill.jpg)
 :::
@@ -47,6 +53,10 @@ inaugural Den Bosch JUG meetup, 25 September 2019
 :::
 
 ## { data-background="../images/don-quixote-2.jpg" }
+
+::: notes
+Don Quixote's parallel universe
+:::
 
 ## Language of the Year
 
