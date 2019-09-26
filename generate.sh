@@ -14,7 +14,7 @@ CSS_DIR=".."
 [ -n "$4" ] && CSS_DIR=$4
 
 # My Logitech Spotlight only sends arrow-right and arrow-left which move right and left. We want the Spotlight to move down and up instead. This fixes that:
-KEYBOARD_OVERRIDE="\"{39:'next',37:'prev'}\""
+KEYBOARD_OVERRIDE="{39:'next',37:'prev'}"
 
 pandoc \
   --to=revealjs \
