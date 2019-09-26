@@ -2088,7 +2088,7 @@ Helps when things get **complicated**
 * Lombok
 * AutoValue
 
-# Are **all** annotations bad?
+## Are **all** annotations bad?
 
 ## Static analysis { data-state="page-good" }
 
