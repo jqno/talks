@@ -24,7 +24,7 @@ Java from a Parallel Universe
 
 <br/><br/><br/><br/>
 
-![](../images/codestar.png){style="height:30px;margin-top:5px;"} | [EqualsVerifier](https://jqno.nl/equalsverifier)
+![](../images/codestar-by-ordina.png){style="height:40px;margin-top:15px;"} | [EqualsVerifier](https://jqno.nl/equalsverifier)
 
 ![](../images/twitter.png) [jqno](https://twitter.com/jqno) | [jqno.nl](https://jqno.nl)
 
