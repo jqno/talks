@@ -13,7 +13,9 @@ center: "false"
 ::: { style="float:left;font-family:TilburgSans" }
 ![](../images/jfall2019-logo.png){ style="height:200px;" }
 <br/>
-#jfall19
+#jfall
+<br/>
+#paralleljava
 :::
 
 ::: { style="font-family:TilburgSans;font-size:3em;" }
@@ -31,7 +33,7 @@ Java from a Parallel Universe
 <br/>
 
 ::: { style="font-family:TilburgsAns;" }
-#jfall19&nbsp;&nbsp;&nbsp;&nbsp;#paralleljava
+#jfall&nbsp;&nbsp;&nbsp;&nbsp;#paralleljava
 :::
 
 ::: preload-background-images
@@ -2442,7 +2444,9 @@ And read a **good book**!
 ::: { style="float:left;font-family:TilburgSans" }
 ![](../images/jfall2019-logo.png){ style="height:200px;" }
 <br/>
-#jfall19
+#jfall
+<br/>
+#paralleljava
 :::
 
 ::: { style="font-family:TilburgSans;font-size:2.2em;" }
