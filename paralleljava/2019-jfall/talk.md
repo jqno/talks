@@ -345,9 +345,9 @@ Debugability
 java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[public abstract java.util.Collection com.example.petclinic.vet.VetRepository.findAll() throws org.springframework.dao.DataAccessException] caches=[vets] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
 	at org.springframework.cache.interceptor.AbstractCacheResolver.resolveCaches(AbstractCacheResolver.java:92) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:252) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.<init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.&lt;init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.<init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.&lt;init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
@@ -388,9 +388,9 @@ Debugability
 java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[public abstract java.util.Collection com.example.petclinic.vet.VetRepository.findAll() throws org.springframework.dao.DataAccessException] caches=[vets] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
 	at org.springframework.cache.interceptor.AbstractCacheResolver.resolveCaches(AbstractCacheResolver.java:92) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:252) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.<init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.&lt;init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.<init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.&lt;init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
