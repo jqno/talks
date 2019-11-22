@@ -1732,7 +1732,7 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 
 :::
 
-## DI with Spring
+## DI with Guice
 
 A mistake: cyclic dependencies
 
@@ -2031,7 +2031,7 @@ over Spring and Guice
 * **Con** some boilerplate
 * **Con** one dirty class
 
-over Spring
+over just Spring
 
 * **Pro** illegal states unrepresentable
 * **Pro** problems found at compile time
@@ -2054,22 +2054,6 @@ over Spring
 
 * Everything is **explicit**
 * Everything is **in the same place**
-
-## Pros & Cons
-
-* **Pro** some boilerplate
-
-<br/>
-
-Helps **discovering** a new project
-
-## Pros & Cons
-
-* **Pro** some boilerplate
-
-<br/>
-
-Helps when things get **complicated**
 
 # Other annotations { data-state="page-title" }
 
