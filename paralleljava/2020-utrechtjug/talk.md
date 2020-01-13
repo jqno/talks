@@ -1,0 +1,2433 @@
+---
+pagetitle: Java from a Parallel Universe
+theme: moon
+backgroundTransition: none
+transition: none
+progress: "false"
+controls: "false"
+center: "false"
+---
+
+# Java from a Parallel Universe { data-state="page-title" }
+
+![](../images/2020-utrechtjug.png){ style="height:200px;" }
+
+20 January 2020
+
+## Jan Ouwens
+
+<br/><br/><br/><br/>
+
+![](../images/codestar-by-ordina.png){style="height:40px;margin-top:15px;"} | [EqualsVerifier](https://jqno.nl/equalsverifier)
+
+![](../images/twitter.png) [jqno](https://twitter.com/jqno) | [jqno.nl](https://jqno.nl)
+
+<br/>
+
+::: { style="font-family:TilburgsAns;" }
+#paralleljava
+:::
+
+::: preload-background-images
+![](../images/don-quixote-1.jpg)
+:::
+
+## { data-background="../images/don-quixote-1.jpg" }
+
+::: notes
+* El ingenioso hidalgo Don Quijote de la Mancha
+* Squire
+* Inn = castle → knighted
+:::
+
+::: preload-background-images
+![](../images/mill.jpg)
+:::
+
+## { data-background="../images/mill.jpg" }
+
+::: preload-background-images
+![](../images/don-quixote-2.jpg)
+:::
+
+## { data-background="../images/don-quixote-2.jpg" }
+
+::: notes
+Don Quixote's parallel universe
+:::
+
+## Language of the Year
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+Java for parallel computing and multi-threading
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+~~Java for parallel computing and multi-threading~~
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+Java from a Parallel Universe
+
+## Language of the Year
+
+<br/>
+
+::: superbig
+**Parallel Java**
+:::
+
+Java without annotations
+
+# Annotations { data-state="page-title" }
+
+::: preload-background-images
+![](../images/mill.jpg)
+:::
+
+## Annotations { data-background="../images/mill.jpg"  }
+
+## What are they?
+
+<pre><code class="java" data-trim data-line-numbers>
+@Override
+public int hashCode() { ... }
+
+@Test
+public void something() { ... }
+
+@JsonTypeInfo(
+  use = JsonTypeInfo.Id.NAME,
+  include = JsonTypeInfo.As.PROPERTY,
+  property = "type")
+@JsonSubTypes({
+  @Type(value = SubA.class, name = "SubA")
+})
+public class Something { ... }
+</code></pre>
+
+## What are they?
+
+<pre><code class="java" data-trim data-line-numbers="1,4,7-13">
+@Override
+public int hashCode() { ... }
+
+@Test
+public void something() { ... }
+
+@JsonTypeInfo(
+  use = JsonTypeInfo.Id.NAME,
+  include = JsonTypeInfo.As.PROPERTY,
+  property = "type")
+@JsonSubTypes({
+  @Type(value = SubA.class, name = "SubA")
+})
+public class Something { ... }
+</code></pre>
+
+## Why?
+
+## Why?
+
+**C#** had them
+
+¯\\\_(ツ)\_/¯
+
+<br/>
+
+::: supersmall
+* **2002** → C#
+* **2004** → Java
+:::
+
+## Why?
+
+Add metadata
+
+::: big
+
+```java
+@Override
+
+@Deprecated
+
+@SuppressWarnings("deprecation")
+
+@Nonnull
+```
+
+:::
+
+## Why?
+
+Remove external configuration (xml)
+
+::: big
+
+```java
+@Inject
+
+@Autowired
+
+@Bean
+```
+
+:::
+
+## Why?
+
+Generate code
+
+::: big
+
+```java
+@Entity
+
+@Data(staticConstructor = "of")
+```
+
+:::
+
+## Why?
+
+Modify runtime behavior
+
+::: big
+
+```java
+@Test
+
+@Transaction(isolation = Isolation.SERIALIZABLE)
+
+@GetMethod(value = "/endpoint/{id}",
+    produces = MediaType.APPLICATION_JSON_VALUE)
+```
+
+:::
+
+## How?
+
+* Reflection
+* Code generation
+
+---
+
+::: superbig
+Magic
+:::
+
+::: preload-background-images
+![](../images/darkmagic.jpg)
+:::
+
+## { data-background="../images/darkmagic.jpg" }
+
+::: superbig
+Dark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;magic
+:::
+
+## The problem
+
+## The problems
+
+## The problems
+
+Checked at runtime
+
+## The problems { data-state="page-bad" }
+
+![](../images/funtimeexceptions.png)
+
+## The problems
+
+Weakly typed
+
+## The problems { data-state="page-bad" }
+
+Weakly typed
+
+::: big
+
+```java
+@Autowired @Bean
+@Column(name = "id")
+@PostMapping("/endpoint/new")
+@Test
+public void waitwhat() { ... }
+```
+
+:::
+
+## The problems
+
+Stringly typed
+
+## The problems { data-state="page-bad" }
+
+Stringly typed
+
+::: big
+
+```java
+@PreAuthorize("isFullyAuthenticated")
+```
+
+:::
+
+## The problems { data-state="page-good" }
+
+Stringly typed
+
+::: big
+
+```java
+@PreAuthorize("isFullyAuthenticated()")
+```
+
+:::
+
+## The problems
+
+Discoverability
+
+## The problems { data-state="page-bad" }
+
+Discoverability
+
+![](../images/discoverability.png){ height=300px }
+
+## The problems
+
+Debugability
+
+## The problems { data-state="page-bad" }
+
+Debugability
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers>
+java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[public abstract java.util.Collection com.example.petclinic.vet.VetRepository.findAll() throws org.springframework.dao.DataAccessException] caches=[vets] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at org.springframework.cache.interceptor.AbstractCacheResolver.resolveCaches(AbstractCacheResolver.java:92) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:252) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.&lt;init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.&lt;init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at com.sun.proxy.$Proxy133.findAll(Unknown Source) ~[na:na]
+	at com.example.petclinic.vet.VetController.showVetList(VetController.java:44) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.16.jar:9.0.16]
+</code></pre>
+
+:::
+
+## The problems { data-state="page-bad" }
+
+Debugability
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers="12">
+java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[public abstract java.util.Collection com.example.petclinic.vet.VetRepository.findAll() throws org.springframework.dao.DataAccessException] caches=[vets] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at org.springframework.cache.interceptor.AbstractCacheResolver.resolveCaches(AbstractCacheResolver.java:92) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:252) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.&lt;init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.&lt;init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at com.sun.proxy.$Proxy133.findAll(Unknown Source) ~[na:na]
+	at com.example.petclinic.vet.VetController.showVetList(VetController.java:44) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.16.jar:9.0.16]
+</code></pre>
+
+:::
+
+## The problems
+
+Difficult path to modules due to **reflection**
+
+## The problems { data-state="page-bad" }
+
+Difficult path to modules due to **reflection**
+
+<pre><code class="xml" data-trim data-line-numbers>
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (jar:file:/home/huzhifeng/tmp/demo/build/libs/demo-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/spring-core-5.0.1.RELEASE.jar!/) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+</code></pre>
+
+## The solution
+
+. . .
+
+::: superbig
+**λ**
+:::
+
+::: supersmall
+Also, **plain Java**
+:::
+
+## Frameworks and libraries
+
+Many existed **before** lambdas were introduced
+
+<br/>
+
+::: supersmall
+* **2004** → Annotations
+* **2014** → Lambdas
+:::
+
+## What if ...
+
+* they dropped annotations?
+
+* and **embraced lambdas**?
+
+## Parallel Java
+
+<br/>
+
+No annotations!
+
+<br/>
+
+No magic!
+
+<br/>
+
+Just **plain Java**
+
+# Testing { data-state="page-title" }
+
+## Familiar Java { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+@Test
+public void indexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+</code></pre>
+
+## Familiar Java { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1-2">
+@Test
+public void indexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+</code></pre>
+
+## JUnit 3 👹 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public void testIndexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+</code></pre>
+
+## JUnit 3 👹 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
+public void testIndexOfReturnsTheCorrectIndex() {
+    int actual = "hello world".indexOf('w');
+    assertEquals(6, actual);
+}
+</code></pre>
+
+## Parallel Java { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+test("indexOf returns the correct index", () -> {
+    int actual = "hello world".indexOf('w');
+    assertThat(actual).isEqualTo(6);
+});
+</code></pre>
+
+## Parallel Java { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
+test("indexOf returns the correct index", () -> {
+    int actual = "hello world".indexOf('w');
+    assertThat(actual).isEqualTo(6);
+});
+</code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+test("indexOf returns the correct index", new Runnable() {
+    @Override
+    public void run() {
+        int actual = "hello world".indexOf('w');
+        assertThat(actual).isEqualTo(6);
+    }
+});
+</code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+test("indexOf returns the correct index", new Runnable() {
+    @Override
+    public void run() {
+        int actual = "hello world".indexOf('w');
+        assertThat(actual).isEqualTo(6);
+    }
+});
+</code></pre>
+
+## Parallel Java { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+test("indexOf returns the correct index", () -> {
+    int actual = "hello world".indexOf('w');
+    assertThat(actual).isEqualTo(6);
+});
+</code></pre>
+
+::: superbig
+λ
+:::
+
+## Pros & cons
+
+* **Con** ugly without lambdas
+
+<br/>
+
+. . .
+
+* **Pro** clear description of test
+
+# Web { data-state="page-title" }
+
+## Familiar Java { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+@GetMapping("/todo/{id}")
+public String getTodo(@PathVariable("id") String id) {
+    return fetch(id);
+}
+</code></pre>
+
+## Familiar Java { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
+@GetMapping("/todo/{id}")
+public String getTodo(@PathVariable("id") String id) {
+    return fetch(id);
+}
+</code></pre>
+
+## Familiar Java { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+@GetMapping("/todo/{id}")
+public String getTodo(@PathVariable("id") String id) {
+    return fetch(id);
+}
+</code></pre>
+
+## Parallel Java { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+get("/todo/:id", (request, response) -> {
+    return fetch(request.params("id"));
+});
+</code></pre>
+
+## Parallel Java { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1">
+get("/todo/:id", (request, response) -> {
+    return fetch(request.params("id"));
+});
+</code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+get("/todo/:id", new Route() {
+    @Override
+    public Object handle(Request request, Response response) throws Exception {
+        return fetch(request.params("id"));
+    }
+});
+</code></pre>
+
+## Before 2014 { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+get("/todo/:id", new Route() {
+    @Override
+    public Object handle(Request request, Response response) throws Exception {
+        return fetch(request.params("id"));
+    }
+});
+</code></pre>
+
+## Parallel Java { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+get("/todo/:id", (request, response) -> {
+    return fetch(request.params("id"));
+});
+</code></pre>
+
+::: superbig
+λ
+:::
+
+## Separating concerns { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public void defineRoutes() {
+    get("/todo/:id", this::handleGet);
+}
+
+// ...
+
+public String handleGet(Request request, Response response) {
+    return fetch(request.params("id"));
+}
+</code></pre>
+
+## Separating concerns { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2,7">
+public void defineRoutes() {
+    get("/todo/:id", this::handleGet);
+}
+
+// ...
+
+public String handleGet(Request request, Response response) {
+    return fetch(request.params("id"));
+}
+</code></pre>
+
+## Cross-cutting concerns { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+before((request, response) -> {
+    if (!authenticated(request)) {
+        halt(401, "nope");
+    }
+});
+</code></pre>
+
+## Pros & Cons
+
+* **Con** ugly without lambdas
+
+<br/>
+
+. . .
+
+* **Pro** clean separation of concerns
+* **Pro** generate endpoints
+
+# Database { data-state="page-title" }
+
+## Familiar Java { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+
+## Familiar Java { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="1-2,4-6,9">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+
+## Familiar Java { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7,10">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+
+## Familiar Java { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="12-14">
+@Entity
+@Table(name = "todo")
+public class Todo {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    public Todo() {
+        // empty
+    }
+}
+</code></pre>
+
+## Parallel Java { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class Todo {
+    private final String id;
+    private final String title;
+
+    // No default constructor
+}
+</code></pre>
+
+## Parallel Java { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+List&lt;Todo> todos = engine.query(handle -> {
+    return handle
+        .createQuery("SELECT * FROM todo WHERE id = :id")
+        .bind("id", id)
+        .mapToBean(Todo.class)
+        .list();
+});
+</code></pre>
+
+## Parallel Java { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="3">
+List&lt;Todo> todos = engine.query(handle -> {
+    return handle
+        .createQuery("SELECT * FROM todo WHERE id = :id")
+        .bind("id", id)
+        .mapToBean(Todo.class)
+        .list();
+});
+</code></pre>
+
+## Parallel Java { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="5">
+List&lt;Todo> todos = engine.query(handle -> {
+    return handle
+        .createQuery("SELECT * FROM todo WHERE id = :id")
+        .bind("id", id)
+        .mapToBean(Todo.class)
+        .list();
+});
+</code></pre>
+
+## How about transactions? { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+String query = "SELECT * FROM todo WHERE title = :title";
+String update = "UPDATE todo SET completed = TRUE WHERE id = :id";
+
+engine.execute(handle -> {
+    return handle.inTransaction(h -> {
+        Todo todo = h.createQuery(query)
+                .bind("title", "rewrite annotations")
+                .mapToBean(Todo.class)
+                .findFirst();
+
+        h.createUpdate(update)
+                .bind("id", todo.id)
+                .execute();
+    });
+});
+</code></pre>
+
+## How about transactions? { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="4-5,14-15">
+String query = "SELECT * FROM todo WHERE title = :title";
+String update = "UPDATE todo SET completed = TRUE WHERE id = :id";
+
+engine.execute(handle -> {
+    return handle.inTransaction(h -> {
+        Todo todo = h.createQuery(query)
+                .bind("title", "rewrite annotations")
+                .mapToBean(Todo.class)
+                .findFirst();
+
+        h.createUpdate(update)
+                .bind("id", todo.id)
+                .execute();
+    });
+});
+</code></pre>
+
+## Pros & Cons
+
+* **Con** write SQL directly
+* **Con** still some reflection magic
+* **Con** duplication between code and SQL
+
+<br/>
+
+. . .
+
+* **Pro** write SQL directly
+* **Pro** clean separation of concerns
+* **Pro** immutable domain classes
+
+# Dependency Injection { data-state="page-title" }
+
+## Familiar Java
+
+<br/>
+
+* Spring
+* Guice
+
+## DI with Spring
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2-3">
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-8">
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    @Autowired
+    private Something needed;
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    @Autowired
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring
+
+Architectural boundaries
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class EmployeeDAO {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Util {
+    @Bean
+    public Something something = ...;
+}
+</code></pre>
+
+::: preload-background-images
+![](../images/boundary.jpg)
+:::
+
+## { data-background="../images/boundary.jpg" }
+
+## DI with Spring
+
+A mistake: no match
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    // Forgot to put @Bean here!
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-8">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { .. }
+}
+
+public class IHaveSomething {
+    // Forgot to put @Bean here!
+    public Something something = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers>
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'petController': Unsatisfied dependency expressed through field 'something'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.petclinic.model.Something' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.example.petclinic.PetClinicApplication.main(PetClinicApplication.java:32) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.petclinic.model.Something' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 common frames omitted
+</code></pre>
+
+:::
+
+## DI with Spring { data-state="page-bad" }
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers="21">
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'petController': Unsatisfied dependency expressed through field 'something'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.petclinic.model.Something' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.example.petclinic.PetClinicApplication.main(PetClinicApplication.java:32) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.petclinic.model.Something' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 common frames omitted
+</code></pre>
+
+:::
+
+## DI with Spring { data-state="page-bad" }
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers="1337">
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'petController': Unsatisfied dependency expressed through field 'something'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.petclinic.model.Something' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.example.petclinic.PetClinicApplication.main(PetClinicApplication.java:32) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.petclinic.model.Something' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 common frames omitted
+</code></pre>
+
+:::
+
+## DI with Spring { data-state="page-bad" }
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers="1,27">
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'petController': Unsatisfied dependency expressed through field 'something'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.petclinic.model.Something' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.example.petclinic.PetClinicApplication.main(PetClinicApplication.java:32) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.petclinic.model.Something' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 common frames omitted
+</code></pre>
+
+:::
+
+## DI with Spring
+
+A mistake: two matches
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+
+    @Bean
+    public Something somethingElse = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-11">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something = ...;
+
+    @Bean
+    public Something somethingElse = ...;
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers>
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field needed in com.example.petclinic.owner.PetController required a single bean, but 2 were found:
+	- something: defined by method 'something' in class path resource [com/example/petclinic/system/CacheConfiguration.class]
+	- somethingElse: defined by method 'somethingElse' in class path resource [com/example/petclinic/system/CrashController.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+</code></pre>
+
+<br/>
+
+:::
+
+. . .
+
+```xml
+logging.level.org.springframework=OFF
+```
+
+## DI with Spring
+
+A mistake: cyclic dependencies
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something(SomethingElse somethingElse) {}
+
+    @Bean
+    public SomethingElse somethingElse(Something something) {}
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-11">
+public class INeedSomething {
+
+    public INeedSomething(Something needed) { ... }
+}
+
+public class IHaveSomething {
+    @Bean
+    public Something something(SomethingElse somethingElse) {}
+
+    @Bean
+    public SomethingElse somethingElse(Something something) {}
+}
+</code></pre>
+
+## DI with Spring { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers>
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   petController defined in file [/spring-petclinic/target/classes/org/springframework/samples/petclinic/owner/PetController.class]
+┌─────┐
+|  something defined in class path resource [org/springframework/samples/petclinic/owner/OwnerController.class]
+↑     ↓
+|  somethingElse defined in class path resource [org/springframework/samples/petclinic/owner/OwnerController.class]
+└─────┘
+</code></pre>
+
+:::
+
+## DI with Guice
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2-3">
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="8">
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
+## DI with Guice
+
+A mistake: no match
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        // bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="8">
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        // bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers>
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) No implementation for Something was bound.
+  while locating Something
+    for the 1st parameter of controllers.CountController.&lt;init>(CountController.java:22)
+  while locating controllers.CountController
+    for the 3rd parameter of router.Routes.&lt;init>(Routes.scala:38)
+  at play.api.inject.RoutesProvider$.bindingsFromConfiguration(BuiltinModule.scala:123):
+Binding(class router.Routes to self) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$4)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+</code></pre>
+
+:::
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers="3-9">
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) No implementation for Something was bound.
+  while locating Something
+    for the 1st parameter of controllers.CountController.&lt;init>(CountController.java:22)
+  while locating controllers.CountController
+    for the 3rd parameter of router.Routes.&lt;init>(Routes.scala:38)
+  at play.api.inject.RoutesProvider$.bindingsFromConfiguration(BuiltinModule.scala:123):
+Binding(class router.Routes to self) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$4)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+</code></pre>
+
+:::
+
+## DI with Guice
+
+A mistake: two matches
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+        bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="8-9">
+public class INeedSomething {
+    @Inject
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Module extends AbstractModule {
+    public void configure() {
+        bind(Something.class).toInstance(...);
+        bind(Something.class).toInstance(...);
+    }
+}
+</code></pre>
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers>
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) A binding to Something was already configured at Module.configure(Module.java:29) (via modules: com.google.inject.util.Modules$OverrideModule -> Module).
+  at Module.configure(Module.java:30) (via modules: com.google.inject.util.Modules$OverrideModule -> Module)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+</code></pre>
+
+:::
+
+## DI with Guice { data-state="page-bad" }
+
+<br/>
+
+::: stacktrace
+
+<pre><code class="xml" data-trim data-line-numbers="3-4">
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) A binding to Something was already configured at Module.configure(Module.java:29) (via modules: com.google.inject.util.Modules$OverrideModule -> Module).
+  at Module.configure(Module.java:30) (via modules: com.google.inject.util.Modules$OverrideModule -> Module)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:186)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:139)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:176)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+</code></pre>
+
+:::
+
+## DI with Guice
+
+A mistake: cyclic dependencies
+
+. . .
+
+<br/>
+
+**Probably** possible?
+
+## Parallel Java
+
+<br/>
+
+Manual DI
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-9">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="6,10">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+A mistake: no matches
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        // Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-9">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        // Something needed = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(needed);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="xml" data-trim data-line-numbers>
+[ERROR] COMPILATION ERROR :
+[ERROR] [...]/Main.java:[34,82] cannot find symbol
+  symbol:   variable needed
+  location: class nl.jqno.paralleljava.Main
+</code></pre>
+
+## Manual DI
+
+A mistake: two matches
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        Something somethingElse = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(???);
+    }
+}
+</code></pre>
+
+## Manual DI { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="7-10">
+public class INeedSomething {
+    public INeedSomething(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something needed = ...;
+        Something somethingElse = ...;
+        INeedSomething iNeedSomething =
+            new INeedSomething(???);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+A mistake: cyclic dependencies
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="2,6">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="11-12">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        Something s = new Something(...);
+        SomethingElse se = new SomethingElse(s);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers="11-12">
+public class Something {
+    public Something(SomethingElse needed) { ... }
+}
+
+public class SomethingElse {
+    public SomethingElse(Something needed) { ... }
+}
+
+public class Main {
+    public static void main(String... args) {
+        SomethingElse se = new SomethingElse(...);
+        Something s = new Something(se);
+    }
+}
+</code></pre>
+
+## Manual DI
+
+<br/>
+
+Illegal states are 
+
+::: superbig
+**unrepresentable**
+:::
+
+## Pros & Cons
+
+* **Con** some boilerplate
+* **Con** one dirty class
+
+## Pros & Cons
+
+* **Con** some boilerplate
+* **Con** one dirty class
+
+over Spring and Guice
+
+* **Pro** illegal states unrepresentable
+* **Pro** problems found at compile time
+
+## Pros & Cons
+
+* **Con** some boilerplate
+* **Con** one dirty class
+
+over just Spring
+
+* **Pro** illegal states unrepresentable
+* **Pro** problems found at compile time
+* **Pro** clear architectural boundaries
+* **Pro** boots much faster
+
+## Pros & Cons
+
+* **Con** some boilerplate
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+## Pros & Cons
+
+* **Pro** some boilerplate
+
+<br/>
+
+* Everything is **explicit**
+* Everything is **in the same place**
+
+# Other annotations { data-state="page-title" }
+
+## Serialization { data-state="page-bad" }
+
+* JSON
+* XML
+
+## Properties { data-state="page-bad" }
+
+* `@Value`
+* `@ConfigurationProperties`
+
+## Code generation { data-state="page-bad" }
+
+* Lombok
+* AutoValue
+
+## Are **all** annotations bad?
+
+## Static analysis { data-state="page-good" }
+
+* `@NonNull`
+* `@Immutable`
+
+## Code meta-data { data-state="page-good" }
+
+* `@SuppressWarnings`
+* `@Deprecated`
+
+## Should have been built-in { data-state="page-good" }
+
+* `@Override`
+
+## Conclusion
+
+* Do something **useful**
+* Can't **reasonably** be done differently
+
+# Parallel Java { data-state="page-title" }
+
+## Yeah right
+
+---
+
+<br/><br/>
+
+::: superbig
+It's all **real**
+:::
+
+## TodoBackend.com
+
+![](../images/todobackend.png)
+
+## TodoBackend.com
+
+**fully compliant**
+
+![](../images/todobackend-compliance.png)
+
+## Some code
+
+## Some code { data-state="page-good" }
+
+<pre><code class="yml" data-trim data-line-numbers>
+modelVersion: 4.0.0
+groupId: nl.jqno.paralleljava
+artifactId: parallel-java
+version: 1.0
+packaging: jar
+name: parallel-java
+
+properties: {
+  encoding: utf-8,
+  maven.compiler.source: 11,
+  maven.compiler.target: 11
+}
+
+dependencies:
+  - { groupId: com.sparkjava, artifactId: spark-core, version: 2.7.2 }
+  - { groupId: com.google.code.gson, artifactId: gson, version: 2.8.5 }
+  - { groupId: org.jdbi, artifactId: jdbi3-core }
+  - { groupId: org.postgresql, artifactId: postgresql, version: 42.2.5 }
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="yml" data-trim data-line-numbers="10-11">
+modelVersion: 4.0.0
+groupId: nl.jqno.paralleljava
+artifactId: parallel-java
+version: 1.0
+packaging: jar
+name: parallel-java
+
+properties: {
+  encoding: utf-8,
+  maven.compiler.source: 11,
+  maven.compiler.target: 11
+}
+
+dependencies:
+  - { groupId: com.sparkjava, artifactId: spark-core, version: 2.7.2 }
+  - { groupId: com.google.code.gson, artifactId: gson, version: 2.8.5 }
+  - { groupId: org.jdbi, artifactId: jdbi3-core }
+  - { groupId: org.postgresql, artifactId: postgresql, version: 42.2.5 }
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers>
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers="7">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers="3">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="xml" data-trim data-line-numbers="10">
+&lt;module name = "Checker">
+    &lt;property name="charset" value="UTF-8"/>
+    &lt;property name="severity" value="error"/>
+
+    &lt;module name="TreeWalker">
+        &lt;module name="Regexp">
+            &lt;property name="format" value="@"/>
+            &lt;property name="illegalPattern" value="true"/>
+            &lt;property name="ignoreComments" value="true"/>
+            &lt;property name="message" value="Annotations are not allowed!"/>
+        &lt;/module>
+    &lt;/module>
+&lt;/module>
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="java" data-trim data-line-numbers>
+public void architecture() {
+    test("only SparkServer and SparkServerTest access Spark classes", () -> {
+        assertBoundary("spark..", SparkServer.class.getPackage());
+    });
+
+    test("only DatabaseRepository accesses Engine classes", () -> {
+        assertBoundary("org.jdbi..", DatabaseRepository.class.getPackage());
+    });
+}
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="java" data-trim data-line-numbers>
+public void run() {
+    port(port);
+    enableCors();
+
+    get(endpoint, (req, resp) -> controller.get());
+    get(endpoint + "/:id", (req, resp) -> controller.get(req.params("id")));
+    post(endpoint, (req, resp) -> controller.post(req.body()));
+}
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="java" data-trim data-line-numbers>
+public Try&lt;Void> create(Todo todo) {
+    return engine.execute(handle -> {
+        String sql = "INSERT INTO todo (id, title, completed, index)" +
+            "VALUES (:id, :title, :completed, :order)";
+        return handle.createUpdate(sql)
+            .bind("id", todo.id().toString())
+            .bind("title", todo.title())
+            .bind("completed", todo.completed())
+            .bind("order", todo.order())
+            .execute());
+    }
+}
+</code></pre>
+
+## Some code { data-state="page-good" }
+
+<pre><code class="java" data-trim data-line-numbers>
+public class Main {
+    public static void main(String... args) {
+        LoggerFactory loggerFactory =
+                c -> new Slf4jLogger(org.slf4j.LoggerFactory.getLogger(c));
+
+        // ...
+
+        var todoMapper = new TodoMapper(fullUrl);
+        var dbEngine = new JdbiEngine(jdbcUrl, todoMapper, loggerFactory);
+        var repository = new DatabaseRepository(dbEngine);
+
+        var idGenerator = new RandomIdGenerator();
+        var serializer = GsonSerializer.create(loggerFactory);
+        var controller = new DefaultController(fullUrl, repository, idGenerator, serializer, loggerFactory);
+        var server = new SparkServer(Environment.ENDPOINT, port, controller, loggerFactory);
+
+        var runner = new Runner(repository, server, loggerFactory);
+        runner.startup();
+    }
+}
+</code></pre>
+
+## Libraries used
+
+* [SparkJava](http://sparkjava.com/)
+* [JDBI](http://jdbi.org/)
+* [PicoTest](https://github.com/jqno/PicoTest)
+
+## PicoTest
+
+::: preload-background-images
+![](../images/everyonecancode.jpg)
+:::
+
+## PicoTest { data-background="../images/everyonecancode.jpg" }
+
+## Code
+
+<br/>
+
+![](../images/github.png)
+
+* [github.com/jqno/paralleljava](https://github.com/jqno/paralleljava)
+* [github.com/jqno/picotest](https://github.com/jqno/picotest)
+
+# Conclusion { data-state="page-title" }
+
+## Conclusion
+
+Think about your **libraries**
+
+. . .
+
+<br/>
+
+Do you really need them?
+
+Are they good citizens?
+
+## Conclusion
+
+Think about your **frameworks**
+
+. . .
+
+<br/>
+
+Will they infect your architecture?
+
+Are there alternatives?
+
+::: supersmall
+([Spring Functional Web Framework](https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework))
+:::
+
+## Conclusion
+
+Think about your **languages**
+
+. . .
+
+Language of the Year
+
+## Conclusion
+
+Think about your **languages**
+
+Language of the Year
+
+**Scala**
+
+## Conclusion
+
+Think about your **languages**
+
+Language of the Year
+
+**Kotlin**
+
+## Conclusion
+
+Think about your **languages**
+
+Language of the Year
+
+::: superbig
+**Parallel Java**
+:::
+
+## Conclusion
+
+::: superbig
+**fun**
+:::
+
+::: preload-background-images
+![](../images/mill.jpg)
+:::
+
+## Conclusion { data-background="../images/mill.jpg" }
+
+Keep fighting those windmills!
+
+## Conclusion
+
+![](../images/don-quixote-1.jpg){ height=400px }
+
+And read a **good book**!
+
+# Questions? { data-state="page-title" }
+
+<br/>
+
+![](../images/qr.png)
+
+[jqno.nl/talks/paralleljava](http://jqno.nl/talks/paralleljava)
+
+::: { style="font-family:TilburgsAns;" }
+![](../images/twitter-dark.png){ height=30px } #paralleljava
+:::
+
+::: { style="font-size:0.3em;" }
+Photo credits: [freestocks.org](https://unsplash.com/photos/y_dCjaRWthY), [Mitch Lensink](https://unsplash.com/photos/Ismnr6WSHCU) and [Adi Goldstein](https://unsplash.com/photos/mDinBvq1Sfg) on [Unsplash](https://unsplash.com); [Unknown](https://pixabay.com/photos/mill-wind-grind-tourist-tourism-1745186/) on [Pixabay](https://pixabay.com); and [Gustave Doré](https://www.wikiart.org/en/gustave-dore/all-works#!#filterName:Series_don-quixote,resultType:detailed)
+:::
+
