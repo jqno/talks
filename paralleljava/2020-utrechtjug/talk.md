@@ -722,6 +722,18 @@ public String handleGet(Request request, Response response) {
 }
 </code></pre>
 
+## Use variables { data-state="page-good" }
+
+<br/>
+
+<pre><code class="java" data-trim data-line-numbers>
+public void defineRoutes() {
+    String endpoint = "/todo/";
+    get(endpoint + ":id", this::handleGet);
+    put(endpoint + "update", this::handlePut);
+}
+</code></pre>
+
 ## Cross-cutting concerns { data-state="page-good" }
 
 <br/>
@@ -743,7 +755,7 @@ before((request, response) -> {
 . . .
 
 * **Pro** clean separation of concerns
-* **Pro** generate endpoints
+* **Pro** use variables to generate endpoints
 
 # Database { data-state="page-title" }
 
@@ -2096,6 +2108,7 @@ over just Spring
 
 * Do something **useful**
 * Can't **reasonably** be done differently
+* Go away at runtime
 
 # Parallel Java { data-state="page-title" }
 
