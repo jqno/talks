@@ -10,6 +10,10 @@ center: "false"
 
 # Java from a Parallel Universe { data-state="page-title" }
 
+![](../images/2020-utrechtjug.png){ style="height:200px;" }
+
+20 January 2020
+
 ## Jan Ouwens
 
 <br/><br/><br/><br/>
