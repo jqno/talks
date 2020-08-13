@@ -3,6 +3,7 @@ title: "My talks"
 ---
 # Main talks
 
+* [Just enough computer science for the busy developer](just-enough-cs/)
 * [Java from a Parallel Universe](paralleljava/)
 * [Don't hack the platform? ☠️💣💥️](dont-hack-the-platform/)
 * [Not all equals methods are created equal](equalsverifier/)
