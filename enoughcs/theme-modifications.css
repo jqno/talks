@@ -15,6 +15,14 @@
   text-transform: none;
 }
 
+.reveal h1 {
+  font-size: 2.5em;
+}
+
+.reveal h2 {
+  font-size: 1.8em;
+}
+
 .reveal strong {
   color: #ffa630;
   font-weight: normal;
