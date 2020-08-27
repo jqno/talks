@@ -1,6 +1,6 @@
 ---
 pagetitle: Just enough computer science for the busy developer
-theme: moon
+theme: white
 backgroundTransition: none
 transition: none
 progress: "false"
@@ -22,7 +22,7 @@ I studied computer science so you don't have to
 
 <br/>
 
-::: { style="font-family:TilburgsAns;" }
+::: hashtag
 #enoughcs
 :::
 
@@ -501,7 +501,7 @@ List<String> myList = new CopyOnWriteArrayList<>();
 
 [jqno.nl/talks/enoughcs](http://jqno.nl/talks/enoughcs)
 
-::: { style="font-family:TilburgsAns;" }
+::: hashtag
 ![](../images/twitter.png){ height=30px } #enoughcs
 :::
 
