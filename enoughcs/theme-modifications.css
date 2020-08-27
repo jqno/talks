@@ -44,14 +44,10 @@ html.page-title .reveal a {
 }
 
 
-/* Overrides for page-good and page-bad */
+/* Overrides for specific kinds of pages */
 
-html.page-good body {
-  background-color: #2a6d54;
-}
-
-html.page-bad body {
-  background-color: #95473d;
+html.page-portrait .reveal img {
+  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -79,6 +75,7 @@ html.page-bad body {
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
   font-family: "FiraCode";
   font-size: 0.8em;
+  margin-top: 75px;
   max-height: 600px;
   padding: 10px;
 }
