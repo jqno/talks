@@ -175,6 +175,8 @@ Q.E.D.
 
 ## What it looked like for me
 
+![](../images/homework1.jpg){ height=500px }\ ![](../images/homework2.jpg){ height=500px }
+
 ::: notes
 * plaatje van mijn huiswerk
 :::
