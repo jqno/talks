@@ -23,7 +23,7 @@ I studied computer science so you don't have to
 <br/>
 
 ::: { style="font-family:TilburgsAns;" }
-#justenoughcs
+#enoughcs
 :::
 
 ## Why
@@ -166,30 +166,17 @@ Beware of bugs in the above code; I have only proved it correct, not tried it.
 
 ## We live in an age of libraries
 
+Choose the best one
+
 ::: notes
-* Most algorithms are available in libraries
+how?
 :::
 
 ## Complexity
 
-::: notes
-* We still need to know which one to pick
-* Complexity informs that decision
-:::
+How many steps?
 
-## Big O notation
-
-* a function of N
-* how many times do we have to look
-* lower is better
-
-::: notes
-* N is length of input
-:::
-
-## Big O notation
-
-O(N)
+## Complexity
 
 ```
 public int linearSearch(int[] b, int n) {
@@ -202,15 +189,20 @@ public int linearSearch(int[] b, int n) {
 }
 ```
 
-## Big O notation
-
-O(1)
+## Complexity
 
 ```
 public int get(int[] b, int i) {
   return b[i];
 }
 ```
+
+## Big O notation
+
+if N is input size,
+
+* O(N): linear search
+* O(1): get
 
 ## Big O notation
 
@@ -231,7 +223,7 @@ O(N²)
 public boolean hasDuplicates(int[] b) {
   for (int i : b) {
     for (int j : b) {
-      if (i ≠ j && b[i] == b[j]) {
+      if (i != j && b[i] == b[j]) {
         return true;
       }
     }
@@ -246,7 +238,7 @@ O(2<sup>N</sup>)
 
 ```
 public int fibonacci(int i) {
-  if (i ≤ i) {
+  if (i <= i) {
     return i;
   }
   return fibonacci(i - 2) + fibonacci(i - 1);
@@ -268,7 +260,7 @@ O(log N)          logarithmic
 O(N)              linear
 O(N²)             quadratic
 O(2<sup>N</sup>)  exponential
-O(N!)             # TODO
+O(N!)             factorial
 
 ## Big O notation
 
@@ -314,13 +306,13 @@ de echte
 
 worse than polynomial
 
-## Checking codes
+## Verifying codes
 
 polynomial
 
 ## NP
 
-* nondeterministic-polynomial
+* "nondeterministic-polynomial"
 
 * finding an answer: slow
 * checking an answer: P
@@ -348,7 +340,7 @@ jè
 # Grace Hopper
 
 ::: notes
-* Read-admiral
+* Rear-admiral
 * COBOL
 * Bug
 :::
@@ -357,16 +349,131 @@ jè
 
 ## Array
 
-operation     big O
--------       -----
-random access O(1)
-iteration     O(N)
-append        O(?) # TODO
+operation big O
+--------- -----
+access    O(1)
+search    O(N)
+insert    O(N)
+append    O(1)
 
 ## Linked list
 
-operation     big O
--------       -----
-random access O(N)
-iteration     O(N)
-append        O(1)
+operation big O
+--------- -----
+access    O(N)
+search    O(N)
+insert    O(1)
+append    O(N)
+
+## HashMap
+
+operation big O
+--------- -----
+access    n/a
+search    O(1)
+iteration O(N)
+insert    O(1)
+
+## Other data structures
+
+* Lists: ArrayList, LinkedList, CopyOnWriteArrayList
+* Sets: HashSet, EnumSet, LinkedHashSet
+* SortedSet: TreeSet
+* Map: HashMap, EnumMap, LinkedHashMap
+* SortedMap: TreeMap
+* Queue, Deque, ...
+
+## Immutable collections
+
+Use a library
+
+* Vavr
+* Eclipse Collections
+* Guava
+
+## In Java
+
+No:
+
+```
+ArrayList<String> myList = new ArrayList<>();
+```
+
+## In Java
+
+Yes:
+
+```
+List<String> myList = new ArrayList<>();
+```
+
+## In Java
+
+Yes:
+
+```
+List<String> myList = new LinkedList<>();
+```
+
+## In Java
+
+Yes:
+
+```
+List<String> myList = new CopyOnWriteArrayList<>();
+```
+
+# Margaret Hamilton
+
+::: notes
+* Led the team that wrote NASA's Apollo navigation software
+* Coined the term "software engineering"
+:::
+
+## Software engineering
+
+* Programming
+
+. . .
+
+* Analysis
+* Architecture
+* UX design
+* Testing
+
+. . .
+
+* Computer science
+
+## Wrapping up
+
+* Many similar algorithms
+* Many similar data structures
+* Each performs differently
+* Think about which is best for your situation
+
+## Now you know enough CS!
+
+## What's next?
+
+1. Keep this in the back of your mind
+1. Look it up when you need to choose
+    * Tip: Google "Big O cheat sheet"
+1. Read more about this
+    * Tip: [A Common-Sense Guide to Data Structures and Algorithms](https://pragprog.com/titles/jwdsal2)
+1. Experiment
+    * Tip: Implement your own HashMap!
+    * Advanced tip: Implement your own compression algorithm!
+
+# Questions?
+
+<br/>
+
+![](../images/qr.png)
+
+[jqno.nl/talks/enoughcs](http://jqno.nl/talks/enoughcs)
+
+::: { style="font-family:TilburgsAns;" }
+![](../images/twitter.png){ height=30px } #enoughcs
+:::
+
