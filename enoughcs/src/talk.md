@@ -41,7 +41,7 @@ I studied computer science so you don't have to
 
 # Lots of interesting people
 
-# Edsger Dijkstra
+# Edsger Dijkstra { data-state="page-portrait" }
 
 <br/>
 
@@ -54,7 +54,7 @@ I studied computer science so you don't have to
 * TU/e
 :::
 
-# Katherine Johnson
+# Katherine Johnson { data-state="page-portrait" }
 
 <br/>
 
@@ -66,13 +66,13 @@ I studied computer science so you don't have to
 * Astronauts didn't trust automation
 :::
 
-# محمد خوارزمی
+# محمد خوارزمی { data-state="page-portrait" }
 
 <br/>
 
 ![](../images/muhammad-al-khwarizmi.png)
 
-# Muhammad al-Khwarizmi
+# Muhammad al-Khwarizmi { data-state="page-portrait" }
 
 <br/>
 
@@ -90,7 +90,7 @@ I studied computer science so you don't have to
 * Cooking recipe
 :::
 
-# Tony Hoare
+# Tony Hoare { data-state="page-portrait" }
 
 <br/>
 
@@ -103,15 +103,15 @@ I studied computer science so you don't have to
 
 ## Hoare triple
 
-```
+```pascal
 {P}
-S
+ S
 {Q}
 ```
 
 ## Hoare triple
 
-```
+```pascal
 {x = 3}
 x += 1;
 {x = 4}
@@ -123,7 +123,7 @@ Q.E.D.
 
 ## A simple algorithm
 
-```
+```java
   int[] b = ...;
   int n = ...;
   
@@ -136,11 +136,12 @@ Q.E.D.
   
   }
 
+
 ```
 
 ## A simple algorithm
 
-```
+```pascal
   var b: array[0..N] of int = ...;
   var n: int = ...;
 
@@ -158,7 +159,7 @@ Q.E.D.
 
 ## A simple algorithm
 
-```
+```pascal
   var b: array[0..N] of int = ...;
   var n: int = ...;
 
@@ -173,15 +174,15 @@ Q.E.D.
   { 0 ≤ i ⋀ b[i] = n ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ }
 ```
 
-## What it looked like for me
+## What it looked like for me { data-state="page-portrait" }
 
-![](../images/homework1.jpg){ height=500px }\ ![](../images/homework2.jpg){ height=500px }
+![](../images/homework1.jpg){ height=500px }\ \ \ \ \ \ ![](../images/homework2.jpg){ height=500px }
 
 ::: notes
 * plaatje van mijn huiswerk
 :::
 
-# Donald Knuth
+# Donald Knuth { data-state="page-portrait" }
 
 <br/>
 
@@ -205,7 +206,7 @@ How many steps?
 
 ## Complexity
 
-```
+```java
 public int linearSearch(int[] b, int n) {
   for (int i : b) {
     if (b[i] == n) {
@@ -218,7 +219,7 @@ public int linearSearch(int[] b, int n) {
 
 ## Complexity
 
-```
+```java
 public int get(int[] b, int i) {
   return b[i];
 }
@@ -246,7 +247,7 @@ Java's implementation had a bug in it for 9 years
 
 O(N²)
 
-```
+```java
 public boolean hasDuplicates(int[] b) {
   for (int i : b) {
     for (int j : b) {
@@ -263,7 +264,7 @@ public boolean hasDuplicates(int[] b) {
 
 O(2<sup>N</sup>)
 
-```
+```java
 public int fibonacci(int i) {
   if (i <= i) {
     return i;
@@ -311,7 +312,7 @@ O(N²)            Polynomial ↑
 O(2<sup>N</sup>) Slow ↓
 O(N!)
 
-# Alan Turing
+# Alan Turing { data-state="page-portrait" }
 
 <br/>
 
@@ -359,7 +360,7 @@ jè
 * secure messaging
 * society as a whole
 
-# Grace Hopper
+# Grace Hopper { data-state="page-portrait" }
 
 <br/>
 
@@ -421,7 +422,7 @@ Use a library
 
 No:
 
-```
+```java
 ArrayList<String> myList = new ArrayList<>();
 ```
 
@@ -429,7 +430,7 @@ ArrayList<String> myList = new ArrayList<>();
 
 Yes:
 
-```
+```java
 List<String> myList = new ArrayList<>();
 ```
 
@@ -437,7 +438,7 @@ List<String> myList = new ArrayList<>();
 
 Yes:
 
-```
+```java
 List<String> myList = new LinkedList<>();
 ```
 
@@ -445,11 +446,11 @@ List<String> myList = new LinkedList<>();
 
 Yes:
 
-```
+```java
 List<String> myList = new CopyOnWriteArrayList<>();
 ```
 
-# Margaret Hamilton
+# Margaret Hamilton { data-state="page-portrait" }
 
 <br/>
 
