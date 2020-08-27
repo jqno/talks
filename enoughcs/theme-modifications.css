@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url("fonts.css");
+@import url("-assets/fonts.css");
 
 
 /* General layout */
@@ -10,7 +10,7 @@
 }
 
 .reveal h1, .reveal h2 {
-  font-family: 'TilburgsAns';
+  font-family: 'TilburgsAnsText';
   font-weight: normal;
   text-transform: none;
 }
@@ -64,7 +64,7 @@ html.page-portrait .reveal img {
 /* Various */
 
 .superbig {
-  font-family: "TilburgsAns";
+  font-family: "TilburgsAnsText";
   font-size: 5em;
 }
 
@@ -77,7 +77,7 @@ html.page-portrait .reveal img {
 }
 
 .hashtag {
-  font-family: "TilburgsAns";
+  font-family: "TilburgsAnsText";
 }
 
 .preload-background-images {
