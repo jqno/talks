@@ -43,6 +43,10 @@ I studied computer science so you don't have to
 
 # Edsger Dijkstra
 
+<br/>
+
+![](../images/edsger-dijkstra.jpg)
+
 ::: notes
 * Dutch
 * pronounciation
@@ -52,6 +56,10 @@ I studied computer science so you don't have to
 
 # Katherine Johnson
 
+<br/>
+
+![](../images/katherine-johnson.jpg)
+
 ::: notes
 * Manual calculations for NASA Apollo
 * LEGO minifig and movie
@@ -59,7 +67,16 @@ I studied computer science so you don't have to
 :::
 
 # محمد خوارزمی
+
+<br/>
+
+![](../images/muhammad-al-khwarizmi.png)
+
 # Muhammad al-Khwarizmi
+
+<br/>
+
+![](../images/muhammad-al-khwarizmi.png)
 
 ::: notes
 * Islamic world middle ages
@@ -74,6 +91,10 @@ I studied computer science so you don't have to
 :::
 
 # Tony Hoare
+
+<br/>
+
+![](../images/tony-hoare.jpg)
 
 ::: notes
 * Invented famous algorithm: quicksort
@@ -159,6 +180,10 @@ Q.E.D.
 :::
 
 # Donald Knuth
+
+<br/>
+
+![](../images/donald-knuth.jpg)
 
 ::: notes
 Beware of bugs in the above code; I have only proved it correct, not tried it.
@@ -286,20 +311,15 @@ O(N!)
 
 # Alan Turing
 
-::: notes
-Benedict Cumberbatch?
-:::
+<br/>
 
-# Alan Turing
-
-::: notes
-de echte
-:::
+![](../images/alan-turing.jpg)
 
 ::: notes
 * cracked Enigma code
 * convicted for being gay
 * committed suicide
+* movie
 :::
 
 ## Cracking codes
@@ -338,6 +358,10 @@ jè
 * society as a whole
 
 # Grace Hopper
+
+<br/>
+
+![](../images/grace-hopper.jpg)
 
 ::: notes
 * Rear-admiral
@@ -424,6 +448,10 @@ List<String> myList = new CopyOnWriteArrayList<>();
 ```
 
 # Margaret Hamilton
+
+<br/>
+
+![](../images/margaret-hamilton.jpg)
 
 ::: notes
 * Led the team that wrote NASA's Apollo navigation software
