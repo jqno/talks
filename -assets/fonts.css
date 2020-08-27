@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "TilburgsAnsText";
+    src: url("TilburgsAnsText-Regular.woff") format('woff');
+}
+
+@font-face {
     font-family: "FiraCode";
     src: url("FiraCode-Regular.woff") format('woff');
 }
