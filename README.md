@@ -8,6 +8,6 @@ This repo contains my talks.
 # Credits
 
 * [Reveal.js](https://revealjs.com/).
-* Font [TilburgsAns](https://www.tilburgsans.nl/). See its license [here](_assets/tilburgsans/Ans Font License-AFL.pdf).
+* Font [TilburgsAns](https://www.tilburgsans.nl/). See its license [here](-assets/tilburgsans/Ans%20Font%20License-AFL.pdf).
 * Font [FiraCode](https://github.com/tonsky/FiraCode)
 
