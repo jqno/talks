@@ -24,26 +24,6 @@
 }
 
 
-/* Overrides for page-title */
-
-html.page-title body {
-  background-color: #eee8d5;
-}
-
-html.page-title .reveal {
-  color: #002b36;
-}
-
-html.page-title .reveal h1 {
-  color: #002b36;
-  font-size: 2.5em;
-}
-
-html.page-title .reveal a {
-  color: #002b36;
-}
-
-
 /* Overrides for specific kinds of pages */
 
 html.page-portrait .reveal img {
