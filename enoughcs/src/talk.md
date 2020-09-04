@@ -413,12 +413,33 @@ insert    O(1)
 
 ## Other data structures
 
-* Lists: ArrayList, LinkedList, CopyOnWriteArrayList
-* Sets: HashSet, EnumSet, LinkedHashSet
-* SortedSet: TreeSet
-* Map: HashMap, EnumMap, LinkedHashMap
-* SortedMap: TreeMap
-* Queue, Deque, ...
+* ArrayList
+* LinkedList
+* CopyOnWriteArrayList
+* Stack
+* ~~Vector~~
+
+## Other data structures
+
+* HashSet
+* EnumSet
+* LinkedHashSet
+* SortedSet
+* TreeSet
+
+## Other data structures
+
+* HashMap
+* EnumMap
+* LinkedHashMap
+* SortedMap
+* TreeMap
+
+## Other data structures
+
+* Queue
+* Deque
+* ...
 
 ## Immutable collections
 
