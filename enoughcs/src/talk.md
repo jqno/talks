@@ -50,8 +50,11 @@ I studied computer science so you don't have to
 ::: notes
 * Dutch
 * pronounciation
-* Quotes
 * TU/e
+* Quotes:
+  * Testing shows the presence, not the absence of bugs 
+  * The question of whether Machines Can Think... is about as relevant as the question of whether Submarines Can Swim. 
+  * Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. 
 :::
 
 # Katherine Johnson { data-state="page-portrait" }
