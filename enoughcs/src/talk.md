@@ -16,6 +16,20 @@ I studied computer science so you don't have to
 ![](../images/twitter.png){ height=30px } #enoughcs
 :::
 
+###
+
+# Just enough computer science for the busy developer
+
+I studied computer science so you don't have to
+
+::: hashtag
+![](../images/twitter.png){ height=30px } #enoughcs
+:::
+
+::: doesitwork
+.
+:::
+
 ## Jan Ouwens
 
 <br/><br/><br/><br/>
