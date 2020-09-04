@@ -376,6 +376,14 @@ jè.
 
 ## In practice
 
+## Know the big O of your algorithms
+
+::: notes
+Know if makes sense to optimize
+:::
+
+## Know your data structures
+
 ## Array
 
 operation big O
