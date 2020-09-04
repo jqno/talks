@@ -89,6 +89,12 @@ html.page-portrait .reveal img {
   bottom: 25px;
 }
 
+.doesitwork {
+  font-size: 0.2em;
+  position: fixed;
+  bottom: 25px;
+}
+
 .preload-background-images {
   /* HACK:
    * Because Reveal.js lazy-loads data-background-images,
