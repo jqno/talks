@@ -497,14 +497,31 @@ List<String> myList = new CopyOnWriteArrayList<>();
 
 ## What's next?
 
-1. Keep this in the back of your mind
-1. Look it up when you need to choose
-    * Tip: Google "Big O cheat sheet"
-1. Read more about this
-    * Tip: [A Common-Sense Guide to Data Structures and Algorithms](https://pragprog.com/titles/jwdsal2)
-1. Experiment
-    * Tip: Implement your own HashMap!
-    * Advanced tip: Implement your own compression algorithm!
+## What's next?
+
+Keep this stuff in the back of your mind
+
+## What's next?
+
+Look it up when you need to choose
+
+Tip: Google "Big O cheat sheet"
+
+## What's next?
+
+Read more about this
+
+Tip:
+
+![](../images/book.jpg){ height=400px }
+
+## What's next?
+
+Experiment
+
+* Tip:<br/>Implement your own HashMap!
+
+* Advanced tip:<br/>Implement your own compression algorithm!
 
 # Questions?
 
