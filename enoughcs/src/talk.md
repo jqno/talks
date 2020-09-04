@@ -73,7 +73,17 @@ Lots of interesting people
 
 ::: notes
 * Manual calculations for NASA Apollo
-* LEGO minifig and movie
+* Movie
+* Astronauts didn't trust automation
+:::
+
+# Katherine Johnson { data-state="page-portrait" }
+
+![](../images/katherine-johnson-movie.jpg)
+
+::: notes
+* Manual calculations for NASA Apollo
+* Movie
 * Astronauts didn't trust automation
 :::
 
@@ -344,6 +354,17 @@ O(N!)
 * movie
 :::
 
+# Alan Turing { data-state="page-portrait" }
+
+![](../images/alan-turing-movie.jpg)
+
+::: notes
+* cracked Enigma code
+* convicted for being gay
+* committed suicide
+* movie
+:::
+
 ##
 
 ::: big
@@ -523,6 +544,15 @@ List<String> myList = new CopyOnWriteArrayList<>();
 # Margaret Hamilton { data-state="page-portrait" }
 
 ![](../images/margaret-hamilton.jpg)
+
+::: notes
+* Led the team that wrote NASA's Apollo navigation software
+* Coined the term "software engineering"
+:::
+
+# Margaret Hamilton { data-state="page-portrait" }
+
+![](../images/margaret-hamilton-lego.jpg)
 
 ::: notes
 * Led the team that wrote NASA's Apollo navigation software
