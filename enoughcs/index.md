@@ -11,3 +11,16 @@ This talk gives an overview of some of these fundamentals, and introduces you to
 ## Deliveries
 * _24 September 2020_, Codesmiths Unite: [[event](https://codesmithsunite.nl/)]
 
+## Image credits
+* [alan-turing](images/alan-turing.jpg) - by Unknown author - [source](https://commons.wikimedia.org/w/index.php?curid=22828488)
+* [alan-turing-movie](images/alan-turing-movie.jpg) - from the movie [The Imitation Game](https://www.imdb.com/title/tt2084970/?ref_=fn_al_tt_1)
+* [donald-knuth](images/donald-knuth.jpg) - by Flickr user Jacob Appelbaum - [source](https://commons.wikimedia.org/w/index.php?curid=1303242)
+* [edsger-dijkstra](images/edsger-dijkstra.jpg) - by Hamilton Richards - [source](https://commons.wikimedia.org/w/index.php?curid=4204157)
+* [grace-hopper](images/grace-hopper.jpg) - by James S. Davis - [source](https://commons.wikimedia.org/w/index.php?curid=12421475)
+* [katherine-johnson](images/katherine-johnson.jpg) - by NASA - [source](https://commons.wikimedia.org/w/index.php?curid=57372693)
+* [katherine-johnson-movie](images/katherine-johnson-movie.jpg) - from the movie [Hidden Figures](https://www.imdb.com/title/tt4846340/?ref_=fn_al_tt_1)
+* [margaret-hamilton](images/margaret-hamilton.jpg) - by Draper Laboratory; restored by Adam Cuerden - [source](https://commons.wikimedia.org/w/index.php?curid=59655977)
+* [margaret-hamilton-lego](images/margaret-hamilton-lego.jpg) - by The LEGO Group - [source](https://www.lego.com/en-nl/product/women-of-nasa-21312)
+* [muhammad-al-khwarizmi](images/muhammad-al-khwarizmi.png) - by ms - [source](https://commons.wikimedia.org/w/index.php?curid=29993331)
+* [tony-hoare](images/tony-hoare.jpg) - by Photograph by Rama - [source](https://commons.wikimedia.org/w/index.php?curid=15568323)
+

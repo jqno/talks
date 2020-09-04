@@ -654,3 +654,6 @@ Experiment
 ![](../images/twitter.png){ height=30px } #enoughcs
 :::
 
+::: supersmall
+image credits: see website
+:::
