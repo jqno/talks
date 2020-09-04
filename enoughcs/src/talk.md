@@ -124,13 +124,13 @@ Q.E.D.
 ## A simple algorithm
 
 ```java
-  int[] b = ...;
-  int n = ...;
+  int[] haystack = ...;
+  int needle = ...;
   
   
   int i = 0;
   
-  while (b[i] != n) {
+  while (haystack[i] != needle) {
   
     i += 1;
   
@@ -163,15 +163,15 @@ Q.E.D.
   var b: array[0..N] of int = ...;
   var n: int = ...;
 
-  { ⟨∃x : 0 ≤ x : b[x] = n⟩ }
+  { ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
   i := 0
-  { i = 0 ⋀ ⟨∃x : 0 ≤ x : b[x] = n⟩ }
+  { i = 0 ⋀ ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
 ; do b[i] ≠ n →
-    { 0 ≤ i ⋀ ⟨∀x : 0 ≤ x ≤ i : b[x] ≠ n⟩ ⋀ ⟨∃x : i < x : b[x] = n⟩ }
+    { 0 ≤ i < N ⋀ ⟨∀x : 0 ≤ x ≤ i : b[x] ≠ n⟩ ⋀ ⟨∃x : i < x < N : b[x] = n⟩ }
     i := i + 1
-    { 0 < i ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ ⋀ ⟨∃x : i ≤ x : b[x] = n⟩ }
+    { 0 < i < N ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ ⋀ ⟨∃x : i ≤ x < N : b[x] = n⟩ }
   od
-  { 0 ≤ i ⋀ b[i] = n ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ }
+  { 0 ≤ i < N ⋀ b[i] = n ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ }
 ```
 
 ## What it looked like for me { data-state="page-portrait" }
@@ -207,9 +207,9 @@ How many steps?
 ## Complexity
 
 ```java
-public int linearSearch(int[] b, int n) {
-  for (int i : b) {
-    if (b[i] == n) {
+public int linearSearch(int needle, int[] haystack) {
+  for (int i : haystack) {
+    if (haystack[i] == needle) {
       return true;
     }
   }
@@ -220,8 +220,8 @@ public int linearSearch(int[] b, int n) {
 ## Complexity
 
 ```java
-public int get(int[] b, int i) {
-  return b[i];
+public int get(int[] ints, int index) {
+  return ints[index];
 }
 ```
 
@@ -248,10 +248,10 @@ Java's implementation had a bug in it for 9 years
 O(N²)
 
 ```java
-public boolean hasDuplicates(int[] b) {
-  for (int i : b) {
+public boolean hasDuplicates(int[] ints) {
+  for (int i : ints) {
     for (int j : b) {
-      if (i != j && b[i] == b[j]) {
+      if (i != j && ints[i] == ints[j]) {
         return true;
       }
     }
