@@ -12,6 +12,10 @@ center: "false"
 
 I studied computer science so you don't have to
 
+::: hashtag
+![](../images/twitter.png){ height=30px } #enoughcs
+:::
+
 ## Jan Ouwens
 
 <br/><br/><br/><br/>
@@ -20,10 +24,8 @@ I studied computer science so you don't have to
 
 ![](../images/twitter.png) [jqno](https://twitter.com/jqno) | [jqno.nl](https://jqno.nl)
 
-<br/>
-
 ::: hashtag
-#enoughcs
+![](../images/twitter.png){ height=30px } #enoughcs
 :::
 
 ##
@@ -652,8 +654,10 @@ Experiment
 
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #enoughcs
-:::
 
 ::: supersmall
 image credits: see website
 :::
+:::
+
+###
