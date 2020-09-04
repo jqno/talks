@@ -26,24 +26,34 @@ I studied computer science so you don't have to
 #enoughcs
 :::
 
-## Why
+##
+
+::: superbig
+Why
+:::
 
 ::: notes
 * Not everyone has a CS degree
 * That's a good thing
 :::
 
-## Diversity matters
+##
+
+::: superbig
+Diversity matters
+:::
 
 ::: notes
 * Computers would have remained stuffy
 :::
 
-# Lots of interesting people
+#
+
+::: big
+Lots of interesting people
+:::
 
 # Edsger Dijkstra { data-state="page-portrait" }
-
-<br/>
 
 ![](../images/edsger-dijkstra.jpg)
 
@@ -59,8 +69,6 @@ I studied computer science so you don't have to
 
 # Katherine Johnson { data-state="page-portrait" }
 
-<br/>
-
 ![](../images/katherine-johnson.jpg)
 
 ::: notes
@@ -71,13 +79,9 @@ I studied computer science so you don't have to
 
 # محمد خوارزمی { data-state="page-portrait" }
 
-<br/>
-
 ![](../images/muhammad-al-khwarizmi.png)
 
 # Muhammad al-Khwarizmi { data-state="page-portrait" }
-
-<br/>
 
 ![](../images/muhammad-al-khwarizmi.png)
 
@@ -87,15 +91,17 @@ I studied computer science so you don't have to
 * Moon-crater
 :::
 
-## Algorithm
+##
+
+::: superbig
+Algorithm
+:::
 
 ::: notes
 * Cooking recipe
 :::
 
 # Tony Hoare { data-state="page-portrait" }
-
-<br/>
 
 ![](../images/tony-hoare.jpg)
 
@@ -177,9 +183,13 @@ Q.E.D.
   { 0 ≤ i < N ⋀ b[i] = n ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ }
 ```
 
+. . .
+
+Q.E.D.
+
 ## What it looked like for me { data-state="page-portrait" }
 
-![](../images/homework1.jpg){ height=500px }\ \ \ \ \ \ ![](../images/homework2.jpg){ height=500px }
+![](../images/homework1.jpg){ height=450px }\ \ \ \ \ \ ![](../images/homework2.jpg){ height=450px }
 
 ::: notes
 * plaatje van mijn huiswerk
@@ -187,15 +197,19 @@ Q.E.D.
 
 # Donald Knuth { data-state="page-portrait" }
 
-<br/>
-
 ![](../images/donald-knuth.jpg)
 
 ::: notes
 Beware of bugs in the above code; I have only proved it correct, not tried it.
 :::
 
-## We live in an age of libraries
+##
+
+::: big
+We live in an
+
+age of libraries
+:::
 
 Choose the best one
 
@@ -203,7 +217,11 @@ Choose the best one
 how?
 :::
 
-## Complexity
+## 
+
+::: superbig
+Complexity
+:::
 
 How many steps?
 
@@ -317,8 +335,6 @@ O(N!)
 
 # Alan Turing { data-state="page-portrait" }
 
-<br/>
-
 ![](../images/alan-turing.jpg)
 
 ::: notes
@@ -328,11 +344,19 @@ O(N!)
 * movie
 :::
 
-## Cracking codes
+##
+
+::: big
+Cracking codes
+:::
 
 worse than polynomial
 
-## Verifying codes
+##
+
+::: big
+Verifying codes
+:::
 
 polynomial
 
@@ -367,8 +391,6 @@ jè.
 
 # Grace Hopper { data-state="page-portrait" }
 
-<br/>
-
 ![](../images/grace-hopper.jpg)
 
 ::: notes
@@ -377,15 +399,29 @@ jè.
 * Bug
 :::
 
-## In practice
+##
 
-## Know the big O of your algorithms
+::: superbig
+In practice
+:::
+
+##
+
+::: big
+Know the big O of your algorithms
+:::
 
 ::: notes
 Know if makes sense to optimize
 :::
 
-## Know your data structures
+##
+
+::: big
+Know your
+
+data structures
+:::
 
 ## Array
 
@@ -444,13 +480,13 @@ insert    O(1)
 * Deque
 * ...
 
-## Immutable collections
+##
 
-Use a library
+::: big
+Immutable collections
+:::
 
-* Vavr
-* Eclipse Collections
-* Guava
+Vavr, Eclipse Collections, Guava
 
 ## In Java
 
@@ -486,8 +522,6 @@ List<String> myList = new CopyOnWriteArrayList<>();
 
 # Margaret Hamilton { data-state="page-portrait" }
 
-<br/>
-
 ![](../images/margaret-hamilton.jpg)
 
 ::: notes
@@ -510,16 +544,47 @@ List<String> myList = new CopyOnWriteArrayList<>();
 
 * Computer science
 
+##
+
+::: big
+Wrapping up
+:::
+
 ## Wrapping up
 
-* Many similar algorithms
-* Many similar data structures
-* Each performs differently
-* Think about which is best for your situation
+::: big
+Many algorithms solve similar problems
+:::
 
-## Now you know enough CS!
+## Wrapping up
 
-## What's next?
+::: big
+Many data structures solve similar problems
+:::
+
+## Wrapping up
+
+::: big
+Each performs differently
+:::
+
+## Wrapping up
+
+::: big
+Think about which is best for your situation
+:::
+
+##
+
+::: big
+Now you know enough CS!
+:::
+
+##
+
+::: superbig
+What's next?
+:::
 
 ## What's next?
 
@@ -537,7 +602,7 @@ Read more about this
 
 Tip:
 
-![](../images/book.jpg){ height=400px }
+[![](../images/book.jpg){ height=400px }](https://pragprog.com/titles/jwdsal2)
 
 ## What's next?
 
