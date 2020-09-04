@@ -83,6 +83,10 @@ html.page-portrait .reveal img {
 
 .hashtag {
   font-family: "TilburgsAnsText";
+  margin: auto;
+  width: 100%;
+  position: fixed;
+  bottom: 25px;
 }
 
 .preload-background-images {
