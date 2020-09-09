@@ -69,7 +69,7 @@ Diversity matters
 Lots of interesting people
 :::
 
-# Edsger Dijkstra { data-state="page-portrait" }
+# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/edsger-dijkstra.jpg)
 
@@ -83,7 +83,7 @@ Lots of interesting people
   * Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. 
 :::
 
-# Katherine Johnson { data-state="page-portrait" }
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/katherine-johnson.jpg)
 
@@ -93,7 +93,7 @@ Lots of interesting people
 * Astronauts didn't trust automation
 :::
 
-# Katherine Johnson { data-state="page-portrait" }
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/katherine-johnson-movie.jpg)
 
@@ -103,11 +103,11 @@ Lots of interesting people
 * Astronauts didn't trust automation
 :::
 
-# محمد خوارزمی { data-state="page-portrait" }
+# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/muhammad-al-khwarizmi.png)
 
-# Muhammad al-Khwarizmi { data-state="page-portrait" }
+# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/muhammad-al-khwarizmi.png)
 
@@ -127,7 +127,7 @@ Algorithm
 * Cooking recipe
 :::
 
-# Tony Hoare { data-state="page-portrait" }
+# Tony Hoare { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/tony-hoare.jpg)
 
@@ -213,7 +213,7 @@ Q.E.D.
 
 Q.E.D.
 
-## What it looked like for me { data-state="page-portrait" }
+## What it looked like for me { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/homework1.jpg){ height=450px }\ \ \ \ \ \ ![](../images/homework2.jpg){ height=450px }
 
@@ -221,7 +221,7 @@ Q.E.D.
 * plaatje van mijn huiswerk
 :::
 
-# Donald Knuth { data-state="page-portrait" }
+# Donald Knuth { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/donald-knuth.jpg)
 
@@ -359,7 +359,7 @@ O(N²)            Polynomial ↑
 O(2<sup>N</sup>) Slow ↓
 O(N!)
 
-# Alan Turing { data-state="page-portrait" }
+# Alan Turing { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/alan-turing.jpg)
 
@@ -370,7 +370,7 @@ O(N!)
 * movie
 :::
 
-# Alan Turing { data-state="page-portrait" }
+# Alan Turing { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/alan-turing-movie.jpg)
 
@@ -426,7 +426,7 @@ jè.
 * secure messaging
 * society as a whole
 
-# Grace Hopper { data-state="page-portrait" }
+# Grace Hopper { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/grace-hopper.jpg)
 
@@ -557,7 +557,7 @@ Yes:
 List<String> myList = new CopyOnWriteArrayList<>();
 ```
 
-# Margaret Hamilton { data-state="page-portrait" }
+# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/margaret-hamilton.jpg)
 
@@ -566,7 +566,7 @@ List<String> myList = new CopyOnWriteArrayList<>();
 * Coined the term "software engineering"
 :::
 
-# Margaret Hamilton { data-state="page-portrait" }
+# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/margaret-hamilton-lego.jpg)
 
