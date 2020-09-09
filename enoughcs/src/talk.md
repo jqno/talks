@@ -107,11 +107,25 @@ Lots of interesting people
 * Astronauts didn't trust automation
 :::
 
+##
+
+::: superbig
+Disclaimer
+:::
+
+::: notes
+I'm oversimplifying things
+:::
+
 # محمد خوارزمی { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
 # Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+
+![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+# Algorithmi { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
@@ -407,6 +421,13 @@ polynomial
 
 * finding an answer: slow
 * checking an answer: P
+
+## NP
+
+* Rubik's cube
+* Sudoku
+* Logistics
+* Bitcoin
 
 ## NP
 
