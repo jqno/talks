@@ -30,16 +30,16 @@ I studied computer science so you don't have to
 .
 :::
 
-## Jan Ouwens
+###
 
-<br/><br/><br/><br/>
+# Jan Ouwens { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/codestar-by-ordina.png){style="height:40px;margin-top:15px;"} | [EqualsVerifier](https://jqno.nl/equalsverifier)
+![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
 
-![](../images/twitter.png) [jqno](https://twitter.com/jqno) | [jqno.nl](https://jqno.nl)
+![](../images/codestar-by-ordina.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
 
 ::: hashtag
-![](../images/twitter.png){ height=30px } #enoughcs
+![](../images/twitter.png){ style="height:30px;" } #enoughcs
 :::
 
 ##
@@ -69,9 +69,9 @@ Diversity matters
 Lots of interesting people
 :::
 
-# Edsger Dijkstra { data-state="page-portrait" }
+# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/edsger-dijkstra.jpg)
+![](../images/edsger-dijkstra.jpg){ .portrait }
 
 ::: notes
 * Dutch
@@ -83,19 +83,9 @@ Lots of interesting people
   * Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. 
 :::
 
-# Katherine Johnson { data-state="page-portrait" }
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/katherine-johnson.jpg)
-
-::: notes
-* Manual calculations for NASA Apollo
-* Movie
-* Astronauts didn't trust automation
-:::
-
-# Katherine Johnson { data-state="page-portrait" }
-
-![](../images/katherine-johnson-movie.jpg)
+![](../images/katherine-johnson.jpg){ .portrait }
 
 ::: notes
 * Manual calculations for NASA Apollo
@@ -103,13 +93,23 @@ Lots of interesting people
 * Astronauts didn't trust automation
 :::
 
-# محمد خوارزمی { data-state="page-portrait" }
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/muhammad-al-khwarizmi.png)
+![](../images/katherine-johnson-movie.jpg){ .portrait }
 
-# Muhammad al-Khwarizmi { data-state="page-portrait" }
+::: notes
+* Manual calculations for NASA Apollo
+* Movie
+* Astronauts didn't trust automation
+:::
 
-![](../images/muhammad-al-khwarizmi.png)
+# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+
+![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+
+![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
 ::: notes
 * Islamic world middle ages
@@ -127,9 +127,9 @@ Algorithm
 * Cooking recipe
 :::
 
-# Tony Hoare { data-state="page-portrait" }
+# Tony Hoare { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/tony-hoare.jpg)
+![](../images/tony-hoare.jpg){ .portrait }
 
 ::: notes
 * Invented famous algorithm: quicksort
@@ -215,15 +215,15 @@ Q.E.D.
 
 ## What it looked like for me { data-state="page-portrait" }
 
-![](../images/homework1.jpg){ height=450px }\ \ \ \ \ \ ![](../images/homework2.jpg){ height=450px }
+![](../images/homework1.jpg){ .raw }\ \ \ \ \ \ ![](../images/homework2.jpg){ .raw }
 
 ::: notes
 * plaatje van mijn huiswerk
 :::
 
-# Donald Knuth { data-state="page-portrait" }
+# Donald Knuth { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/donald-knuth.jpg)
+![](../images/donald-knuth.jpg){ .portrait }
 
 ::: notes
 Beware of bugs in the above code; I have only proved it correct, not tried it.
@@ -359,9 +359,9 @@ O(N²)            Polynomial ↑
 O(2<sup>N</sup>) Slow ↓
 O(N!)
 
-# Alan Turing { data-state="page-portrait" }
+# Alan Turing { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/alan-turing.jpg)
+![](../images/alan-turing.jpg){ .portrait }
 
 ::: notes
 * cracked Enigma code
@@ -370,9 +370,9 @@ O(N!)
 * movie
 :::
 
-# Alan Turing { data-state="page-portrait" }
+# Alan Turing { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/alan-turing-movie.jpg)
+![](../images/alan-turing-movie.jpg){ .portrait }
 
 ::: notes
 * cracked Enigma code
@@ -426,9 +426,9 @@ jè.
 * secure messaging
 * society as a whole
 
-# Grace Hopper { data-state="page-portrait" }
+# Grace Hopper { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/grace-hopper.jpg)
+![](../images/grace-hopper.jpg){ .portrait }
 
 ::: notes
 * Rear-admiral
@@ -557,18 +557,18 @@ Yes:
 List<String> myList = new CopyOnWriteArrayList<>();
 ```
 
-# Margaret Hamilton { data-state="page-portrait" }
+# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/margaret-hamilton.jpg)
+![](../images/margaret-hamilton.jpg){ .portrait }
 
 ::: notes
 * Led the team that wrote NASA's Apollo navigation software
 * Coined the term "software engineering"
 :::
 
-# Margaret Hamilton { data-state="page-portrait" }
+# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
-![](../images/margaret-hamilton-lego.jpg)
+![](../images/margaret-hamilton-lego.jpg){ .portrait }
 
 ::: notes
 * Led the team that wrote NASA's Apollo navigation software
