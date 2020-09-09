@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Just enough computer science for the busy developer</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../-revealjs-3.8.0/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../../-revealjs-3.8.0/css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="../parallel-highlight.css"/>
+  <link rel="stylesheet" href="../theme-modifications.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../-revealjs-3.8.0/css/print/pdf.css' : '../../-revealjs-3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../../-revealjs-3.8.0/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section>
+<section id="just-enough-computer-science-for-the-busy-developer" class="title-slide slide level1">
+<h1>Just enough computer science for the busy developer</h1>
+<p>I studied computer science so you don’t have to</p>
+<div class="hashtag">
+<p><img data-src="../images/twitter.png" height="30" /> #enoughcs</p>
+</div>
+</section>
+<h3 id="section"></h3></section>
+<section>
+<section id="just-enough-computer-science-for-the-busy-developer-1" class="title-slide slide level1">
+<h1>Just enough computer science for the busy developer</h1>
+<p>I studied computer science so you don’t have to</p>
+<div class="hashtag">
+<p><img data-src="../images/twitter.png" height="30" /> #enoughcs</p>
+</div>
+<div class="doesitwork">
+<p>.</p>
+</div>
+</section>
+<section id="jan-ouwens" class="slide level2">
+<h2>Jan Ouwens</h2>
+<p><br/><br/><br/><br/></p>
+<p><img data-src="../images/codestar-by-ordina.png" style="height:40px;margin-top:15px;" /> | <a href="https://jqno.nl/equalsverifier">EqualsVerifier</a></p>
+<p><img data-src="../images/twitter.png" /> <a href="https://twitter.com/jqno">jqno</a> | <a href="https://jqno.nl">jqno.nl</a></p>
+<div class="hashtag">
+<p><img data-src="../images/twitter.png" height="30" /> #enoughcs</p>
+</div>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div class="superbig">
+<p>Why</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Not everyone has a CS degree</li>
+<li>That’s a good thing</li>
+</ul>
+</aside>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="superbig">
+<p>Diversity matters</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Computers would have remained stuffy</li>
+</ul>
+</aside>
+</section></section>
+<section id="section-3" class="title-slide slide level1">
+<h1></h1>
+<div class="big">
+<p>Lots of interesting people</p>
+</div>
+</section>
+
+<section id="edsger-dijkstra" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Edsger Dijkstra</h1>
+<p><img data-src="../images/edsger-dijkstra.jpg" /></p>
+<aside class="notes">
+<ul>
+<li>Dutch</li>
+<li>pronounciation</li>
+<li>TU/e</li>
+<li>Quotes:
+<ul>
+<li>Testing shows the presence, not the absence of bugs</li>
+<li>The question of whether Machines Can Think… is about as relevant as the question of whether Submarines Can Swim.</li>
+<li>Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better.</li>
+</ul></li>
+</ul>
+</aside>
+</section>
+
+<section id="katherine-johnson" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Katherine Johnson</h1>
+<p><img data-src="../images/katherine-johnson.jpg" /></p>
+<aside class="notes">
+<ul>
+<li>Manual calculations for NASA Apollo</li>
+<li>Movie</li>
+<li>Astronauts didn’t trust automation</li>
+</ul>
+</aside>
+</section>
+
+<section id="katherine-johnson-1" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Katherine Johnson</h1>
+<p><img data-src="../images/katherine-johnson-movie.jpg" /></p>
+<aside class="notes">
+<ul>
+<li>Manual calculations for NASA Apollo</li>
+<li>Movie</li>
+<li>Astronauts didn’t trust automation</li>
+</ul>
+</aside>
+</section>
+
+<section id="محمد-خوارزمی" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">محمد خوارزمی</h1>
+<p><img data-src="../images/muhammad-al-khwarizmi.png" /></p>
+</section>
+
+<section>
+<section id="muhammad-al-khwarizmi" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Muhammad al-Khwarizmi</h1>
+<p><img data-src="../images/muhammad-al-khwarizmi.png" /></p>
+<aside class="notes">
+<ul>
+<li>Islamic world middle ages</li>
+<li>Algorithm</li>
+<li>Moon-crater</li>
+</ul>
+</aside>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="superbig">
+<p>Algorithm</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Cooking recipe</li>
+</ul>
+</aside>
+</section></section>
+<section>
+<section id="tony-hoare" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Tony Hoare</h1>
+<p><img data-src="../images/tony-hoare.jpg" /></p>
+<aside class="notes">
+<ul>
+<li>Invented famous algorithm: quicksort</li>
+<li>Invented ‘null’ - billion dollar mistake</li>
+</ul>
+</aside>
+</section>
+<section id="hoare-triple" class="slide level2">
+<h2>Hoare triple</h2>
+<pre class="pascal"><code>{P}
+ S
+{Q}</code></pre>
+</section>
+<section id="hoare-triple-1" class="slide level2">
+<h2>Hoare triple</h2>
+<pre class="pascal"><code>{x = 3}
+x += 1;
+{x = 4}</code></pre>
+<div class="fragment">
+<p>Q.E.D.</p>
+</div>
+</section>
+<section id="a-simple-algorithm" class="slide level2">
+<h2>A simple algorithm</h2>
+<pre class="java"><code>  int[] haystack = ...;
+  int needle = ...;
+  
+  
+  int i = 0;
+  
+  while (haystack[i] != needle) {
+  
+    i += 1;
+  
+  }
+
+</code></pre>
+</section>
+<section id="a-simple-algorithm-1" class="slide level2">
+<h2>A simple algorithm</h2>
+<pre class="pascal"><code>  var b: array[0..N] of int = ...;
+  var n: int = ...;
+
+
+  i := 0
+
+; do b[i] ≠ n →
+
+    i := i + 1
+
+  od
+
+</code></pre>
+</section>
+<section id="a-simple-algorithm-2" class="slide level2">
+<h2>A simple algorithm</h2>
+<pre class="pascal"><code>  var b: array[0..N] of int = ...;
+  var n: int = ...;
+
+  { ⟨∃x : 0 ≤ x &lt; N : b[x] = n⟩ }
+  i := 0
+  { i = 0 ⋀ ⟨∃x : 0 ≤ x &lt; N : b[x] = n⟩ }
+; do b[i] ≠ n →
+    { 0 ≤ i &lt; N ⋀ ⟨∀x : 0 ≤ x ≤ i : b[x] ≠ n⟩ ⋀ ⟨∃x : i &lt; x &lt; N : b[x] = n⟩ }
+    i := i + 1
+    { 0 &lt; i &lt; N ⋀ ⟨∀x : 0 ≤ x &lt; i : b[x] ≠ n⟩ ⋀ ⟨∃x : i ≤ x &lt; N : b[x] = n⟩ }
+  od
+  { 0 ≤ i &lt; N ⋀ b[i] = n ⋀ ⟨∀x : 0 ≤ x &lt; i : b[x] ≠ n⟩ }</code></pre>
+<div class="fragment">
+<p>Q.E.D.</p>
+</div>
+</section>
+<section id="what-it-looked-like-for-me" class="slide level2" data-state="page-portrait">
+<h2 data-state="page-portrait">What it looked like for me</h2>
+<p><img data-src="../images/homework1.jpg" height="450" />      <img data-src="../images/homework2.jpg" height="450" /></p>
+<aside class="notes">
+<ul>
+<li>plaatje van mijn huiswerk</li>
+</ul>
+</aside>
+</section></section>
+<section>
+<section id="donald-knuth" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Donald Knuth</h1>
+<p><img data-src="../images/donald-knuth.jpg" /></p>
+<aside class="notes">
+<p>Beware of bugs in the above code; I have only proved it correct, not tried it.</p>
+</aside>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>We live in an</p>
+<p>age of libraries</p>
+</div>
+<p>Choose the best one</p>
+<aside class="notes">
+<p>how?</p>
+</aside>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div class="superbig">
+<p>Complexity</p>
+</div>
+<p>How many steps?</p>
+</section>
+<section id="complexity" class="slide level2">
+<h2>Complexity</h2>
+<pre class="java"><code>public int linearSearch(int needle, int[] haystack) {
+  for (int i : haystack) {
+    if (haystack[i] == needle) {
+      return true;
+    }
+  }
+  return false;
+}</code></pre>
+</section>
+<section id="complexity-1" class="slide level2">
+<h2>Complexity</h2>
+<pre class="java"><code>public int get(int[] ints, int index) {
+  return ints[index];
+}</code></pre>
+</section>
+<section id="big-o-notation" class="slide level2">
+<h2>Big O notation</h2>
+<p>if N is input size,</p>
+<ul>
+<li>O(N): linear search</li>
+<li>O(1): get</li>
+</ul>
+</section>
+<section id="big-o-notation-1" class="slide level2">
+<h2>Big O notation</h2>
+<p>O(log N)</p>
+<ul>
+<li>Binary search</li>
+<li>Git bisect</li>
+</ul>
+<aside class="notes">
+<p>Java’s implementation had a bug in it for 9 years</p>
+</aside>
+</section>
+<section id="big-o-notation-2" class="slide level2">
+<h2>Big O notation</h2>
+<p>O(N²)</p>
+<pre class="java"><code>public boolean hasDuplicates(int[] ints) {
+  for (int i : ints) {
+    for (int j : b) {
+      if (i != j &amp;&amp; ints[i] == ints[j]) {
+        return true;
+      }
+    }
+  }
+  return false;
+}</code></pre>
+</section>
+<section id="big-o-notation-3" class="slide level2">
+<h2>Big O notation</h2>
+<p>O(2<sup>N</sup>)</p>
+<pre class="java"><code>public int fibonacci(int i) {
+  if (i &lt;= i) {
+    return i;
+  }
+  return fibonacci(i - 2) + fibonacci(i - 1);
+}</code></pre>
+</section>
+<section id="big-o-notation-4" class="slide level2">
+<h2>Big O notation</h2>
+<p>O(N!)</p>
+<p>Brute-forcing travelling salesman</p>
+</section>
+<section id="big-o-notation-5" class="slide level2">
+<h2>Big O notation</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">N</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">O(1)</td>
+<td>constant</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O(log N)</td>
+<td>logarithmic</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">O(N)</td>
+<td>linear</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O(N²)</td>
+<td>quadratic</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">O(2<sup>N</sup>)</td>
+<td>exponential</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O(N!)</td>
+<td>factorial</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="big-o-notation-6" class="slide level2">
+<h2>Big O notation</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">N</th>
+<th>2</th>
+<th>10</th>
+<th>100</th>
+<th>1000</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">O(1)</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O(log N)</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">O(N)</td>
+<td>1</td>
+<td>10</td>
+<td>100</td>
+<td>1000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O(N²)</td>
+<td>1</td>
+<td>100</td>
+<td>10.000</td>
+<td>1.000.000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">O(2<sup>N</sup>)</td>
+<td>2</td>
+<td>1024</td>
+<td>1,2×10<sup>30</sup></td>
+<td>1,1×10<sup>301</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O(N!)</td>
+<td>1</td>
+<td>3.628.800</td>
+<td>9,3×10<sup>157</sup></td>
+<td>🤯</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="big-o-notation-7" class="slide level2">
+<h2>Big O notation</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">N</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">O(1)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O(log N)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">O(N)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O(N²)</td>
+<td>Polynomial ↑</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">O(2<sup>N</sup>)</td>
+<td>Slow ↓</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O(N!)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section id="alan-turing" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Alan Turing</h1>
+<p><img data-src="../images/alan-turing.jpg" /></p>
+<aside class="notes">
+<ul>
+<li>cracked Enigma code</li>
+<li>convicted for being gay</li>
+<li>committed suicide</li>
+<li>movie</li>
+</ul>
+</aside>
+</section>
+
+<section>
+<section id="alan-turing-1" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Alan Turing</h1>
+<p><img data-src="../images/alan-turing-movie.jpg" /></p>
+<aside class="notes">
+<ul>
+<li>cracked Enigma code</li>
+<li>convicted for being gay</li>
+<li>committed suicide</li>
+<li>movie</li>
+</ul>
+</aside>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>Cracking codes</p>
+</div>
+<p>worse than polynomial</p>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>Verifying codes</p>
+</div>
+<p>polynomial</p>
+</section>
+<section id="np" class="slide level2">
+<h2>NP</h2>
+<ul>
+<li><p>“nondeterministic-polynomial”</p></li>
+<li><p>finding an answer: slow</p></li>
+<li><p>checking an answer: P</p></li>
+</ul>
+</section>
+<section id="np-1" class="slide level2">
+<h2>NP</h2>
+<p>Obviously, P ≠ NP</p>
+<div class="fragment">
+<div class="superbig">
+<p>jè.</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Probably P≠NP</li>
+<li>We don’t know</li>
+<li>Win $1m</li>
+</ul>
+</aside>
+</div>
+</section>
+<section id="depending-on-pnp" class="slide level2">
+<h2>Depending on P≠NP</h2>
+<ul>
+<li>banking</li>
+<li>secure messaging</li>
+<li>society as a whole</li>
+</ul>
+</section></section>
+<section>
+<section id="grace-hopper" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Grace Hopper</h1>
+<p><img data-src="../images/grace-hopper.jpg" /></p>
+<aside class="notes">
+<ul>
+<li>Rear-admiral</li>
+<li>COBOL</li>
+<li>Bug</li>
+</ul>
+</aside>
+</section>
+<section id="section-9" class="slide level2">
+<h2></h2>
+<div class="superbig">
+<p>In practice</p>
+</div>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>Know the big O of your algorithms</p>
+</div>
+<aside class="notes">
+<p>Know if makes sense to optimize</p>
+</aside>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>Know your</p>
+<p>data structures</p>
+</div>
+</section>
+<section id="array" class="slide level2">
+<h2>Array</h2>
+<table>
+<thead>
+<tr class="header">
+<th>operation</th>
+<th>big O</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>access</td>
+<td>O(1)</td>
+</tr>
+<tr class="even">
+<td>search</td>
+<td>O(N)</td>
+</tr>
+<tr class="odd">
+<td>insert</td>
+<td>O(N)</td>
+</tr>
+<tr class="even">
+<td>append</td>
+<td>O(1)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="linked-list" class="slide level2">
+<h2>Linked list</h2>
+<table>
+<thead>
+<tr class="header">
+<th>operation</th>
+<th>big O</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>access</td>
+<td>O(N)</td>
+</tr>
+<tr class="even">
+<td>search</td>
+<td>O(N)</td>
+</tr>
+<tr class="odd">
+<td>insert</td>
+<td>O(1)</td>
+</tr>
+<tr class="even">
+<td>append</td>
+<td>O(N)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hashmap" class="slide level2">
+<h2>HashMap</h2>
+<table>
+<thead>
+<tr class="header">
+<th>operation</th>
+<th>big O</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>access</td>
+<td>n/a</td>
+</tr>
+<tr class="even">
+<td>search</td>
+<td>O(1)</td>
+</tr>
+<tr class="odd">
+<td>iteration</td>
+<td>O(N)</td>
+</tr>
+<tr class="even">
+<td>insert</td>
+<td>O(1)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="other-data-structures" class="slide level2">
+<h2>Other data structures</h2>
+<ul>
+<li>ArrayList</li>
+<li>LinkedList</li>
+<li>CopyOnWriteArrayList</li>
+<li>Stack</li>
+<li><del>Vector</del></li>
+</ul>
+</section>
+<section id="other-data-structures-1" class="slide level2">
+<h2>Other data structures</h2>
+<ul>
+<li>HashSet</li>
+<li>EnumSet</li>
+<li>LinkedHashSet</li>
+<li>SortedSet</li>
+<li>TreeSet</li>
+</ul>
+</section>
+<section id="other-data-structures-2" class="slide level2">
+<h2>Other data structures</h2>
+<ul>
+<li>HashMap</li>
+<li>EnumMap</li>
+<li>LinkedHashMap</li>
+<li>SortedMap</li>
+<li>TreeMap</li>
+</ul>
+</section>
+<section id="other-data-structures-3" class="slide level2">
+<h2>Other data structures</h2>
+<ul>
+<li>Queue</li>
+<li>Deque</li>
+<li>…</li>
+</ul>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>Immutable collections</p>
+</div>
+<p>Vavr, Eclipse Collections, Guava</p>
+</section>
+<section id="in-java" class="slide level2">
+<h2>In Java</h2>
+<p>No:</p>
+<pre class="java"><code>ArrayList&lt;String&gt; myList = new ArrayList&lt;&gt;();</code></pre>
+</section>
+<section id="in-java-1" class="slide level2">
+<h2>In Java</h2>
+<p>Yes:</p>
+<pre class="java"><code>List&lt;String&gt; myList = new ArrayList&lt;&gt;();</code></pre>
+</section>
+<section id="in-java-2" class="slide level2">
+<h2>In Java</h2>
+<p>Yes:</p>
+<pre class="java"><code>List&lt;String&gt; myList = new LinkedList&lt;&gt;();</code></pre>
+</section>
+<section id="in-java-3" class="slide level2">
+<h2>In Java</h2>
+<p>Yes:</p>
+<pre class="java"><code>List&lt;String&gt; myList = new CopyOnWriteArrayList&lt;&gt;();</code></pre>
+</section></section>
+<section id="margaret-hamilton" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Margaret Hamilton</h1>
+<p><img data-src="../images/margaret-hamilton.jpg" /></p>
+<aside class="notes">
+<ul>
+<li>Led the team that wrote NASA’s Apollo navigation software</li>
+<li>Coined the term “software engineering”</li>
+</ul>
+</aside>
+</section>
+
+<section>
+<section id="margaret-hamilton-1" class="title-slide slide level1" data-state="page-portrait">
+<h1 data-state="page-portrait">Margaret Hamilton</h1>
+<p><img data-src="../images/margaret-hamilton-lego.jpg" /></p>
+<aside class="notes">
+<ul>
+<li>Led the team that wrote NASA’s Apollo navigation software</li>
+<li>Coined the term “software engineering”</li>
+</ul>
+</aside>
+</section>
+<section id="software-engineering" class="slide level2">
+<h2>Software engineering</h2>
+<ul>
+<li>Programming</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Analysis</li>
+<li>Architecture</li>
+<li>UX design</li>
+<li>Testing</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Computer science</li>
+</ul>
+</div>
+</section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>Wrapping up</p>
+</div>
+</section>
+<section id="wrapping-up" class="slide level2">
+<h2>Wrapping up</h2>
+<div class="big">
+<p>Many algorithms solve similar problems</p>
+</div>
+</section>
+<section id="wrapping-up-1" class="slide level2">
+<h2>Wrapping up</h2>
+<div class="big">
+<p>Many data structures solve similar problems</p>
+</div>
+</section>
+<section id="wrapping-up-2" class="slide level2">
+<h2>Wrapping up</h2>
+<div class="big">
+<p>Each performs differently</p>
+</div>
+</section>
+<section id="wrapping-up-3" class="slide level2">
+<h2>Wrapping up</h2>
+<div class="big">
+<p>Think about which is best for your situation</p>
+</div>
+</section>
+<section id="section-14" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>Now you know enough CS!</p>
+</div>
+</section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+<div class="superbig">
+<p>What’s next?</p>
+</div>
+</section>
+<section id="whats-next" class="slide level2">
+<h2>What’s next?</h2>
+<p>Keep this stuff in the back of your mind</p>
+</section>
+<section id="whats-next-1" class="slide level2">
+<h2>What’s next?</h2>
+<p>Look it up when you need to choose</p>
+<p>Tip: Google “Big O cheat sheet”</p>
+</section>
+<section id="whats-next-2" class="slide level2">
+<h2>What’s next?</h2>
+<p>Read more about this</p>
+<p>Tip:</p>
+<p><a href="https://pragprog.com/titles/jwdsal2"><img data-src="../images/book.jpg" height="400" /></a></p>
+</section>
+<section id="whats-next-3" class="slide level2">
+<h2>What’s next?</h2>
+<p>Experiment</p>
+<ul>
+<li><p>Tip:<br/>Implement your own HashMap!</p></li>
+<li><p>Advanced tip:<br/>Implement your own compression algorithm!</p></li>
+</ul>
+</section></section>
+<section>
+<section id="questions" class="title-slide slide level1">
+<h1>Questions?</h1>
+<p><br/></p>
+<p><img data-src="../images/qr.png" /></p>
+<p><a href="http://jqno.nl/talks/enoughcs">jqno.nl/talks/enoughcs</a></p>
+<div class="hashtag">
+<p><img data-src="../images/twitter.png" height="30" /> #enoughcs</p>
+<div class="supersmall">
+<p>image credits: see website</p>
+</div>
+</div>
+</section>
+<h3 id="section-16"></h3></section>
+    </div>
+  </div>
+
+  <script src="../../-revealjs-3.8.0/lib/js/head.min.js"></script>
+  <script src="../../-revealjs-3.8.0/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+        // Display a presentation progress bar
+        progress: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: {39:'next',37:'prev',48:()=>{Reveal.slide(0,0,0)}},
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../../-revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../-revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../-revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
+          { src: '../../-revealjs-3.8.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
