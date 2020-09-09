@@ -31,12 +31,14 @@ html.page-portrait .reveal h1 {
 }
 
 html.page-portrait .reveal img.portrait {
+  border: 1px solid #aaa;
   box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.7);
   height: 400px;
   margin-top: 75px;
 }
 
 html.page-portrait .reveal img.raw {
+  border: 1px solid #aaa;
   box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.7);
   height: 500px;
 }
