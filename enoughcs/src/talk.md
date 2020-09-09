@@ -8,7 +8,9 @@ controls: "false"
 center: "false"
 ---
 
-# Just enough computer science for the busy developer
+# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+
+<br/>
 
 I studied computer science so you don't have to
 
@@ -18,7 +20,9 @@ I studied computer science so you don't have to
 
 ###
 
-# Just enough computer science for the busy developer
+# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+
+<br/>
 
 I studied computer science so you don't have to
 
@@ -27,7 +31,7 @@ I studied computer science so you don't have to
 :::
 
 ::: doesitwork
-.
+x
 :::
 
 ###
