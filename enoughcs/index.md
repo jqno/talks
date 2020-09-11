@@ -15,12 +15,17 @@ This talk gives an overview of some of these fundamentals, and introduces you to
 * [alan-turing](images/alan-turing.jpg) - by Unknown author - [source](https://commons.wikimedia.org/w/index.php?curid=22828488)
 * [alan-turing-movie](images/alan-turing-movie.jpg) - from the movie [The Imitation Game](https://www.imdb.com/title/tt2084970/?ref_=fn_al_tt_1)
 * [donald-knuth](images/donald-knuth.jpg) - by Flickr user Jacob Appelbaum - [source](https://commons.wikimedia.org/w/index.php?curid=1303242)
+* [dijkstra-zero](images/dijkstra-zero.png) - By Edsger Dijkstra - [source](http://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF)
 * [edsger-dijkstra](images/edsger-dijkstra.jpg) - by Hamilton Richards - [source](https://commons.wikimedia.org/w/index.php?curid=4204157)
 * [grace-hopper](images/grace-hopper.jpg) - by James S. Davis - [source](https://commons.wikimedia.org/w/index.php?curid=12421475)
+* [homework1](images/homework1.jpg), [homework2](images/homework2.jpg) - by Jan Ouwens
+* [jan-ouwens](images/jan-ouwens.jpg) - By Riemke Ouwens
+* [jwdsal2](images/jwdsal2.jpg) - The Pragmatic Bookshelf - [source](https://pragprog.com/titles/jwdsal2/)
 * [katherine-johnson](images/katherine-johnson.jpg) - by NASA - [source](https://commons.wikimedia.org/w/index.php?curid=57372693)
 * [katherine-johnson-movie](images/katherine-johnson-movie.jpg) - from the movie [Hidden Figures](https://www.imdb.com/title/tt4846340/?ref_=fn_al_tt_1)
 * [margaret-hamilton](images/margaret-hamilton.jpg) - by Draper Laboratory; restored by Adam Cuerden - [source](https://commons.wikimedia.org/w/index.php?curid=59655977)
 * [margaret-hamilton-lego](images/margaret-hamilton-lego.jpg) - by The LEGO Group - [source](https://www.lego.com/en-nl/product/women-of-nasa-21312)
 * [muhammad-al-khwarizmi](images/muhammad-al-khwarizmi.png) - by ms - [source](https://commons.wikimedia.org/w/index.php?curid=29993331)
 * [tony-hoare](images/tony-hoare.jpg) - by Photograph by Rama - [source](https://commons.wikimedia.org/w/index.php?curid=15568323)
+* [wood](images/wood.jpg) - By Jan Ouwens
 

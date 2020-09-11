@@ -698,7 +698,7 @@ Read more about this
 
 Tip:
 
-[![](../images/book.jpg){ height=400px }](https://pragprog.com/titles/jwdsal2)
+[![](../images/jwdsal2.jpg){ height=400px }](https://pragprog.com/titles/jwdsal2)
 
 ## What's next?
 
