@@ -267,6 +267,8 @@ how?
 Complexity
 :::
 
+If input size = N,
+
 How many steps?
 
 ## Complexity
@@ -282,6 +284,10 @@ public int linearSearch(int needle, int[] haystack) {
 }
 ```
 
+. . .
+
+N steps
+
 ## Complexity
 
 ```java
@@ -290,12 +296,23 @@ public int get(int[] ints, int index) {
 }
 ```
 
+. . .
+
+1 step
+
 ## Big O notation
 
-if N is input size,
+* $1$ step: O(1)
+* $N$ steps: O($N$)
+* $N^2$ steps: O($N^2$)
 
-* O(N): linear search
-* O(1): get
+. . .
+
+* $42N^2$ steps: O($N^2$)
+
+. . .
+
+* $42N^2+2N+3$ steps: O($N^2$)
 
 ## Big O notation
 
@@ -376,6 +393,10 @@ O(N)
 O(N²)            Polynomial ↑ 
 O(2<sup>N</sup>) Slow ↓
 O(N!)
+
+::: notes
+polynomial is where the exponent is a number
+:::
 
 # Alan Turing { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
