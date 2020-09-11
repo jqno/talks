@@ -35,8 +35,9 @@
 
 
 <section>
-<section id="just-enough-computer-science-for-the-busy-developer" class="title-slide slide level1">
-<h1>Just enough computer science for the busy developer</h1>
+<section id="just-enough-computer-science-for-the-busy-developer" class="title-slide slide level1" data-state="page-portrait" data-background-image="../images/wood.jpg">
+<h1 data-state="page-portrait" data-background-image="../images/wood.jpg">Just enough computer science for the busy developer</h1>
+<p><br/></p>
 <p>I studied computer science so you don’t have to</p>
 <div class="hashtag">
 <p><img data-src="../images/twitter.png" height="30" /> #enoughcs</p>
@@ -44,14 +45,15 @@
 </section>
 <h3 id="section"></h3></section>
 <section>
-<section id="just-enough-computer-science-for-the-busy-developer-1" class="title-slide slide level1">
-<h1>Just enough computer science for the busy developer</h1>
+<section id="just-enough-computer-science-for-the-busy-developer-1" class="title-slide slide level1" data-state="page-portrait" data-background-image="../images/wood.jpg">
+<h1 data-state="page-portrait" data-background-image="../images/wood.jpg">Just enough computer science for the busy developer</h1>
+<p><br/></p>
 <p>I studied computer science so you don’t have to</p>
 <div class="hashtag">
 <p><img data-src="../images/twitter.png" height="30" /> #enoughcs</p>
 </div>
 <div class="doesitwork">
-<p>.</p>
+<p>x</p>
 </div>
 </section>
 <h3 id="section-1"></h3></section>
@@ -112,6 +114,11 @@
 </aside>
 </section>
 
+<section id="section-5" class="title-slide slide level1">
+<h1></h1>
+<p><a href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html"><img data-src="../images/dijkstra-zero.png" /></a></p>
+</section>
+
 <section id="katherine-johnson" class="title-slide slide level1" data-state="page-portrait" data-background-image="../images/wood.jpg">
 <h1 data-state="page-portrait" data-background-image="../images/wood.jpg">Katherine Johnson</h1>
 <p><img data-src="../images/katherine-johnson.jpg" class="portrait" /></p>
@@ -124,6 +131,7 @@
 </aside>
 </section>
 
+<section>
 <section id="katherine-johnson-1" class="title-slide slide level1" data-state="page-portrait" data-background-image="../images/wood.jpg">
 <h1 data-state="page-portrait" data-background-image="../images/wood.jpg">Katherine Johnson</h1>
 <p><img data-src="../images/katherine-johnson-movie.jpg" class="portrait" /></p>
@@ -135,15 +143,28 @@
 </ul>
 </aside>
 </section>
-
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div class="superbig">
+<p>Disclaimer</p>
+</div>
+<aside class="notes">
+<p>I’m oversimplifying things</p>
+</aside>
+</section></section>
 <section id="محمد-خوارزمی" class="title-slide slide level1" data-state="page-portrait" data-background-image="../images/wood.jpg">
 <h1 data-state="page-portrait" data-background-image="../images/wood.jpg">محمد خوارزمی</h1>
 <p><img data-src="../images/muhammad-al-khwarizmi.png" class="portrait" /></p>
 </section>
 
-<section>
 <section id="muhammad-al-khwarizmi" class="title-slide slide level1" data-state="page-portrait" data-background-image="../images/wood.jpg">
 <h1 data-state="page-portrait" data-background-image="../images/wood.jpg">Muhammad al-Khwarizmi</h1>
+<p><img data-src="../images/muhammad-al-khwarizmi.png" class="portrait" /></p>
+</section>
+
+<section>
+<section id="algorithmi" class="title-slide slide level1" data-state="page-portrait" data-background-image="../images/wood.jpg">
+<h1 data-state="page-portrait" data-background-image="../images/wood.jpg">Algorithmi</h1>
 <p><img data-src="../images/muhammad-al-khwarizmi.png" class="portrait" /></p>
 <aside class="notes">
 <ul>
@@ -153,7 +174,7 @@
 </ul>
 </aside>
 </section>
-<section id="section-5" class="slide level2">
+<section id="section-7" class="slide level2">
 <h2></h2>
 <div class="superbig">
 <p>Algorithm</p>
@@ -257,7 +278,7 @@ x += 1;
 <p>Beware of bugs in the above code; I have only proved it correct, not tried it.</p>
 </aside>
 </section>
-<section id="section-6" class="slide level2">
+<section id="section-8" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>We live in an</p>
@@ -268,11 +289,12 @@ x += 1;
 <p>how?</p>
 </aside>
 </section>
-<section id="section-7" class="slide level2">
+<section id="section-9" class="slide level2">
 <h2></h2>
 <div class="superbig">
 <p>Complexity</p>
 </div>
+<p>If input size = N,</p>
 <p>How many steps?</p>
 </section>
 <section id="complexity" class="slide level2">
@@ -285,20 +307,36 @@ x += 1;
   }
   return false;
 }</code></pre>
+<div class="fragment">
+<p>N steps</p>
+</div>
 </section>
 <section id="complexity-1" class="slide level2">
 <h2>Complexity</h2>
 <pre class="java"><code>public int get(int[] ints, int index) {
   return ints[index];
 }</code></pre>
+<div class="fragment">
+<p>1 step</p>
+</div>
 </section>
 <section id="big-o-notation" class="slide level2">
 <h2>Big O notation</h2>
-<p>if N is input size,</p>
 <ul>
-<li>O(N): linear search</li>
-<li>O(1): get</li>
+<li><span class="math inline">1</span> step: O(1)</li>
+<li><span class="math inline"><em>N</em></span> steps: O(<span class="math inline"><em>N</em></span>)</li>
+<li><span class="math inline"><em>N</em><sup>2</sup></span> steps: O(<span class="math inline"><em>N</em><sup>2</sup></span>)</li>
 </ul>
+<div class="fragment">
+<ul>
+<li><span class="math inline">42<em>N</em><sup>2</sup></span> steps: O(<span class="math inline"><em>N</em><sup>2</sup></span>)</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><span class="math inline">42<em>N</em><sup>2</sup> + 2<em>N</em> + 3</span> steps: O(<span class="math inline"><em>N</em><sup>2</sup></span>)</li>
+</ul>
+</div>
 </section>
 <section id="big-o-notation-1" class="slide level2">
 <h2>Big O notation</h2>
@@ -471,6 +509,9 @@ x += 1;
 </tr>
 </tbody>
 </table>
+<aside class="notes">
+<p>polynomial is where the exponent is a number</p>
+</aside>
 </section></section>
 <section id="alan-turing" class="title-slide slide level1" data-state="page-portrait" data-background-image="../images/wood.jpg">
 <h1 data-state="page-portrait" data-background-image="../images/wood.jpg">Alan Turing</h1>
@@ -498,14 +539,14 @@ x += 1;
 </ul>
 </aside>
 </section>
-<section id="section-8" class="slide level2">
+<section id="section-10" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>Cracking codes</p>
 </div>
 <p>worse than polynomial</p>
 </section>
-<section id="section-9" class="slide level2">
+<section id="section-11" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>Verifying codes</p>
@@ -521,6 +562,15 @@ x += 1;
 </ul>
 </section>
 <section id="np-1" class="slide level2">
+<h2>NP</h2>
+<ul>
+<li>Rubik’s cube</li>
+<li>Sudoku</li>
+<li>Logistics</li>
+<li>Bitcoin</li>
+</ul>
+</section>
+<section id="np-2" class="slide level2">
 <h2>NP</h2>
 <p>Obviously, P ≠ NP</p>
 <div class="fragment">
@@ -556,13 +606,13 @@ x += 1;
 </ul>
 </aside>
 </section>
-<section id="section-10" class="slide level2">
+<section id="section-12" class="slide level2">
 <h2></h2>
 <div class="superbig">
 <p>In practice</p>
 </div>
 </section>
-<section id="section-11" class="slide level2">
+<section id="section-13" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>Know the big O of your algorithms</p>
@@ -571,7 +621,7 @@ x += 1;
 <p>Know if makes sense to optimize</p>
 </aside>
 </section>
-<section id="section-12" class="slide level2">
+<section id="section-14" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>Know your</p>
@@ -703,7 +753,7 @@ x += 1;
 <li>…</li>
 </ul>
 </section>
-<section id="section-13" class="slide level2">
+<section id="section-15" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>Immutable collections</p>
@@ -771,7 +821,7 @@ x += 1;
 </ul>
 </div>
 </section>
-<section id="section-14" class="slide level2">
+<section id="section-16" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>Wrapping up</p>
@@ -801,13 +851,13 @@ x += 1;
 <p>Think about which is best for your situation</p>
 </div>
 </section>
-<section id="section-15" class="slide level2">
+<section id="section-17" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>Now you know enough CS!</p>
 </div>
 </section>
-<section id="section-16" class="slide level2">
+<section id="section-18" class="slide level2">
 <h2></h2>
 <div class="superbig">
 <p>What’s next?</p>
@@ -826,7 +876,7 @@ x += 1;
 <h2>What’s next?</h2>
 <p>Read more about this</p>
 <p>Tip:</p>
-<p><a href="https://pragprog.com/titles/jwdsal2"><img data-src="../images/book.jpg" height="400" /></a></p>
+<p><a href="https://pragprog.com/titles/jwdsal2"><img data-src="../images/jwdsal2.jpg" height="400" /></a></p>
 </section>
 <section id="whats-next-3" class="slide level2">
 <h2>What’s next?</h2>
@@ -849,7 +899,7 @@ x += 1;
 </div>
 </div>
 </section>
-<h3 id="section-17"></h3></section>
+<h3 id="section-19"></h3></section>
     </div>
   </div>
 

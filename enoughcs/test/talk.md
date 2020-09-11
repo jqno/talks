@@ -8,7 +8,9 @@ controls: "false"
 center: "false"
 ---
 
-# Just enough computer science for the busy developer
+# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+
+<br/>
 
 I studied computer science so you don't have to
 
@@ -18,7 +20,9 @@ I studied computer science so you don't have to
 
 ###
 
-# Just enough computer science for the busy developer
+# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+
+<br/>
 
 I studied computer science so you don't have to
 
@@ -27,7 +31,7 @@ I studied computer science so you don't have to
 :::
 
 ::: doesitwork
-.
+x
 :::
 
 ###
@@ -83,6 +87,10 @@ Lots of interesting people
   * Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. 
 :::
 
+#
+
+[![](../images/dijkstra-zero.png)](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)
+
 # Katherine Johnson { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/katherine-johnson.jpg){ .portrait }
@@ -103,11 +111,25 @@ Lots of interesting people
 * Astronauts didn't trust automation
 :::
 
+##
+
+::: superbig
+Disclaimer
+:::
+
+::: notes
+I'm oversimplifying things
+:::
+
 # محمد خوارزمی { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
 # Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+
+![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+# Algorithmi { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
@@ -249,6 +271,8 @@ how?
 Complexity
 :::
 
+If input size = N,
+
 How many steps?
 
 ## Complexity
@@ -264,6 +288,10 @@ public int linearSearch(int needle, int[] haystack) {
 }
 ```
 
+. . .
+
+N steps
+
 ## Complexity
 
 ```java
@@ -272,12 +300,23 @@ public int get(int[] ints, int index) {
 }
 ```
 
+. . .
+
+1 step
+
 ## Big O notation
 
-if N is input size,
+* $1$ step: O(1)
+* $N$ steps: O($N$)
+* $N^2$ steps: O($N^2$)
 
-* O(N): linear search
-* O(1): get
+. . .
+
+* $42N^2$ steps: O($N^2$)
+
+. . .
+
+* $42N^2+2N+3$ steps: O($N^2$)
 
 ## Big O notation
 
@@ -359,6 +398,10 @@ O(N²)            Polynomial ↑
 O(2<sup>N</sup>) Slow ↓
 O(N!)
 
+::: notes
+polynomial is where the exponent is a number
+:::
+
 # Alan Turing { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/alan-turing.jpg){ .portrait }
@@ -403,6 +446,13 @@ polynomial
 
 * finding an answer: slow
 * checking an answer: P
+
+## NP
+
+* Rubik's cube
+* Sudoku
+* Logistics
+* Bitcoin
 
 ## NP
 
@@ -648,7 +698,7 @@ Read more about this
 
 Tip:
 
-[![](../images/book.jpg){ height=400px }](https://pragprog.com/titles/jwdsal2)
+[![](../images/jwdsal2.jpg){ height=400px }](https://pragprog.com/titles/jwdsal2)
 
 ## What's next?
 
