@@ -87,6 +87,10 @@ Lots of interesting people
   * Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. 
 :::
 
+#
+
+[![](../images/dijkstra-zero.png)](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)
+
 # Katherine Johnson { data-state="page-portrait" data-background-image="../images/wood.jpg" }
 
 ![](../images/katherine-johnson.jpg){ .portrait }
