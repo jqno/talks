@@ -14,6 +14,7 @@ This talk gives an overview of some of these fundamentals, and introduces you to
 ## Image credits
 * [alan-turing](images/alan-turing.jpg) - by Unknown author - [source](https://commons.wikimedia.org/w/index.php?curid=22828488)
 * [alan-turing-movie](images/alan-turing-movie.jpg) - from the movie [The Imitation Game](https://www.imdb.com/title/tt2084970/?ref_=fn_al_tt_1)
+* [augustus-de-morgan](images/augustus-de-morgan.jpg) - By Sophia Elizabeth De Morgan - [source](https://commons.wikimedia.org/w/index.php?curid=4722207)
 * [background](images/background.jpg) - By Jan Ouwens
 * [donald-knuth](images/donald-knuth.jpg) - by Flickr user Jacob Appelbaum - [source](https://commons.wikimedia.org/w/index.php?curid=1303242)
 * [dijkstra-zero](images/dijkstra-zero.png) - By Edsger Dijkstra - [source](http://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF)

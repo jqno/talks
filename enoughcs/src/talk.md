@@ -149,6 +149,36 @@ Algorithm
 * Cooking recipe
 :::
 
+# Augustus De Morgan { data-state="page-portrait" data-background-image="../images/background.jpg" }
+
+![](../images/augustus-de-morgan.jpg){ .portrait }
+
+##
+
+::: big
+If you remember only 1 thing
+:::
+
+## De Morgan's Laws
+
+Mathy version
+
+```java
+¬(a ⋁ b) == ¬a ⋀ ¬b
+
+¬(a ⋀ b) == ¬a ⋁ ¬b
+```
+
+## De Morgan's Laws
+
+Java version
+
+```java
+!(a || b) == !a && !b
+
+!(a && b) == !a || !b
+```
+
 # Tony Hoare { data-state="page-portrait" data-background-image="../images/background.jpg" }
 
 ![](../images/tony-hoare.jpg){ .portrait }
