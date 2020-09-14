@@ -708,7 +708,8 @@ Experiment
 
 * Advanced tip:<br/>Implement your own compression algorithm!
 
-# Questions?
+# Questions? { data-background-image="../images/wood.jpg" }
+
 
 <br/>
 
