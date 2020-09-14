@@ -14,6 +14,7 @@ This talk gives an overview of some of these fundamentals, and introduces you to
 ## Image credits
 * [alan-turing](images/alan-turing.jpg) - by Unknown author - [source](https://commons.wikimedia.org/w/index.php?curid=22828488)
 * [alan-turing-movie](images/alan-turing-movie.jpg) - from the movie [The Imitation Game](https://www.imdb.com/title/tt2084970/?ref_=fn_al_tt_1)
+* [background](images/background.jpg) - By Jan Ouwens
 * [donald-knuth](images/donald-knuth.jpg) - by Flickr user Jacob Appelbaum - [source](https://commons.wikimedia.org/w/index.php?curid=1303242)
 * [dijkstra-zero](images/dijkstra-zero.png) - By Edsger Dijkstra - [source](http://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF)
 * [edsger-dijkstra](images/edsger-dijkstra.jpg) - by Hamilton Richards - [source](https://commons.wikimedia.org/w/index.php?curid=4204157)
@@ -27,5 +28,4 @@ This talk gives an overview of some of these fundamentals, and introduces you to
 * [margaret-hamilton-lego](images/margaret-hamilton-lego.jpg) - by The LEGO Group - [source](https://www.lego.com/en-nl/product/women-of-nasa-21312)
 * [muhammad-al-khwarizmi](images/muhammad-al-khwarizmi.png) - by ms - [source](https://commons.wikimedia.org/w/index.php?curid=29993331)
 * [tony-hoare](images/tony-hoare.jpg) - by Photograph by Rama - [source](https://commons.wikimedia.org/w/index.php?curid=15568323)
-* [wood](images/wood.jpg) - By Jan Ouwens
 
