@@ -179,6 +179,30 @@ Java version
 !(a && b) == !a || !b
 ```
 
+## Truth table
+
+ `a`   `b`   `!(a || b)`   `!a && !b`
+----- ----- ------------- ------------
+  0     0         1            1
+  0     1         0            0
+  1     0         0            0
+  1     1         0            0
+
+## Truth table
+
+ `a`   `b`   `!(a && b)`   `!a || !b`
+----- ----- ------------- ------------
+  0     0         1            1
+  0     1         1            1
+  1     0         1            1
+  1     1         0            0
+
+##
+
+::: big
+If you remember only 2 things
+:::
+
 # Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/tony-hoare.jpg){ .portrait }
