@@ -106,13 +106,3 @@ html.page-portrait .reveal img.raw {
   bottom: 25px;
 }
 
-.preload-background-images {
-  /* HACK:
-   * Because Reveal.js lazy-loads data-background-images,
-   * there's a slight delay when transitioning to a slide that has one.
-   * Showing these images on the first slide with this css class
-   * will pre-fetch them and make the transition smooth.
-   */
-  visibility: hidden;
-}
-
