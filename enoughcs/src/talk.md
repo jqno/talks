@@ -8,7 +8,7 @@ controls: "false"
 center: "false"
 ---
 
-# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
 
 <br/>
 
@@ -20,7 +20,7 @@ I studied computer science so you don't have to
 
 ###
 
-# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
 
 <br/>
 
@@ -36,7 +36,7 @@ x
 
 ###
 
-# Jan Ouwens { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Jan Ouwens { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
 
@@ -73,7 +73,7 @@ Diversity matters
 Lots of interesting people
 :::
 
-# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/edsger-dijkstra.jpg){ .portrait }
 
@@ -91,7 +91,7 @@ Lots of interesting people
 
 [![](../images/dijkstra-zero.png)](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)
 
-# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/katherine-johnson.jpg){ .portrait }
 
@@ -101,7 +101,7 @@ Lots of interesting people
 * Astronauts didn't trust automation
 :::
 
-# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/katherine-johnson-movie.jpg){ .portrait }
 
@@ -121,15 +121,15 @@ Disclaimer
 I'm oversimplifying things
 :::
 
-# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
-# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
-# Algorithmi { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Algorithmi { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
@@ -149,7 +149,7 @@ Algorithm
 * Cooking recipe
 :::
 
-# Augustus De Morgan { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Augustus De Morgan { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/augustus-de-morgan.jpg){ .portrait }
 
@@ -179,7 +179,7 @@ Java version
 !(a && b) == !a || !b
 ```
 
-# Tony Hoare { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/tony-hoare.jpg){ .portrait }
 
@@ -273,7 +273,7 @@ Q.E.D.
 * plaatje van mijn huiswerk
 :::
 
-# Donald Knuth { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/donald-knuth.jpg){ .portrait }
 
@@ -432,7 +432,7 @@ O(N!)
 polynomial is where the exponent is a number
 :::
 
-# Alan Turing { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/alan-turing.jpg){ .portrait }
 
@@ -443,7 +443,7 @@ polynomial is where the exponent is a number
 * movie
 :::
 
-# Alan Turing { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/alan-turing-movie.jpg){ .portrait }
 
@@ -506,7 +506,7 @@ jè.
 * secure messaging
 * society as a whole
 
-# Grace Hopper { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Grace Hopper { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/grace-hopper.jpg){ .portrait }
 
@@ -637,7 +637,7 @@ Yes:
 List<String> myList = new CopyOnWriteArrayList<>();
 ```
 
-# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/margaret-hamilton.jpg){ .portrait }
 
@@ -646,7 +646,7 @@ List<String> myList = new CopyOnWriteArrayList<>();
 * Coined the term "software engineering"
 :::
 
-# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.jpg" }
+# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/margaret-hamilton-lego.jpg){ .portrait }
 
@@ -738,7 +738,7 @@ Experiment
 
 * Advanced tip:<br/>Implement your own compression algorithm!
 
-# Questions? { data-background-image="../images/background.jpg" }
+# Questions? { data-background-image="../images/background.png" }
 
 
 <br/>
