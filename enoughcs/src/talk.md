@@ -365,7 +365,7 @@ public int linearSearch(int needle, int[] haystack) {
 
 . . .
 
-N steps
+$N$ steps
 
 ## Complexity
 
@@ -377,36 +377,9 @@ public int get(int[] ints, int index) {
 
 . . .
 
-1 step
+$1$ step
 
-## Big O notation
-
-* $1$ step: O($1$)
-* $N$ steps: O($N$)
-* $N^2$ steps: O($N^2$)
-
-. . .
-
-* $42N^2$ steps: O($N^2$)
-
-. . .
-
-* $42N^2+2N+3$ steps: O($N^2$)
-
-## Big O notation
-
-O($log\ N$)
-
-* Binary search
-* Git bisect
-
-::: notes
-Java's implementation had a bug in it for 9 years
-:::
-
-## Big O notation
-
-O($N^2$)
+## Complexity
 
 ```java
 public boolean hasDuplicates(int[] ints) {
@@ -421,9 +394,11 @@ public boolean hasDuplicates(int[] ints) {
 }
 ```
 
-## Big O notation
+. . .
 
-O($2^N$)
+$N^2$ steps
+
+## Complexity
 
 ```java
 public int fibonacci(int i) {
@@ -434,11 +409,47 @@ public int fibonacci(int i) {
 }
 ```
 
-## Big O notation
+. . .
 
-O($N!$)
+$2^N$ steps
+
+## Complexity
 
 Brute-forcing travelling salesman
+
+. . .
+
+$N!$ steps
+
+## Complexity
+
+* Binary search
+* Git bisect
+
+. . .
+
+$log\ N$ steps
+
+::: notes
+Java's implementation had a bug in it for 9 years
+:::
+
+
+## Big O notation
+
+* $1$ step: O($1$)
+* $log\ N$ step: O($log\ N$)
+* $N$ steps: O($N$)
+* $N^2$ steps: O($N^2$)
+* $2^N$ steps: O($2^N$)
+
+## Big O notation
+
+* $42N^2$ steps: O($N^2$)
+
+. . .
+
+* $42N^2+2N+3$ steps: O($N^2$)
 
 ## Big O notation
 
@@ -791,7 +802,7 @@ Experiment
 
 * Advanced tip:<br/>Implement your own compression algorithm!
 
-# Questions? { data-background-image="../images/background.png" }
+# Questions? { data-state="page-portrait" data-background-image="../images/background.png" }
 
 
 <br/>
