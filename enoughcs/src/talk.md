@@ -360,7 +360,7 @@ public int get(int[] ints, int index) {
 
 ## Big O notation
 
-* $1$ step: O(1)
+* $1$ step: O($1$)
 * $N$ steps: O($N$)
 * $N^2$ steps: O($N^2$)
 
@@ -374,7 +374,7 @@ public int get(int[] ints, int index) {
 
 ## Big O notation
 
-O(log N)
+O($log\ N$)
 
 * Binary search
 * Git bisect
@@ -385,7 +385,7 @@ Java's implementation had a bug in it for 9 years
 
 ## Big O notation
 
-O(N²)
+O($N^2$)
 
 ```java
 public boolean hasDuplicates(int[] ints) {
@@ -402,7 +402,7 @@ public boolean hasDuplicates(int[] ints) {
 
 ## Big O notation
 
-O(2<sup>N</sup>)
+O($2^N$)
 
 ```java
 public int fibonacci(int i) {
@@ -415,42 +415,42 @@ public int fibonacci(int i) {
 
 ## Big O notation
 
-O(N!)
+O($N!$)
 
 Brute-forcing travelling salesman
 
 ## Big O notation
 
-N                 name
----               ----
-O(1)              constant
-O(log N)          logarithmic
-O(N)              linear
-O(N²)             quadratic
-O(2<sup>N</sup>)  exponential
-O(N!)             factorial
+N           name
+---         ----
+O($1$)      constant
+O($log\ N$) logarithmic
+O($N$)      linear
+O($N^2$)    quadratic
+O($2^N$)    exponential
+O($N!$)     factorial
 
 ## Big O notation
 
-N                 2 10        100                  1000
----               - --        ---                  ----
-O(1)              1 1         1                    1
-O(log N)          1 1         2                    3
-O(N)              1 10        100                  1000
-O(N²)             1 100       10.000               1.000.000
-O(2<sup>N</sup>)  2 1024      1,2×10<sup>30</sup>  1,1×10<sup>301</sup>
-O(N!)             1 3.628.800 9,3×10<sup>157</sup> 🤯
+N           2 10        100                  1000
+---         - --        ---                  ----
+O($1$)      1 1         1                    1
+O($log\ N$) 1 1         2                    3
+O($N$)      1 10        100                  1000
+O($N^2$)    1 100       10.000               1.000.000
+O($2^N$)    2 1024      1,2×10<sup>30</sup>  1,1×10<sup>301</sup>
+O($N!$)     1 3.628.800 9,3×10<sup>157</sup> 🤯
 
 ## Big O notation
 
 N
----              -            
-O(1)
-O(log N)
-O(N)
-O(N²)            Polynomial ↑ 
-O(2<sup>N</sup>) Slow ↓
-O(N!)
+---         -            
+O($1$)
+O($log\ N$)
+O($N$)
+O($N^2$)    Polynomial ↑ 
+O($2^N$)    Slow ↓
+O($N!$)
 
 ::: notes
 polynomial is where the exponent is a number
@@ -568,28 +568,28 @@ data structures
 
 operation big O
 --------- -----
-access    O(1)
-search    O(N)
-insert    O(N)
-append    O(1)
+access    O($1$)
+search    O($N$)
+insert    O($N$)
+append    O($1$)
 
 ## Linked list
 
 operation big O
 --------- -----
-access    O(N)
-search    O(N)
-insert    O(1)
-append    O(N)
+access    O($N$)
+search    O($N$)
+insert    O($1$)
+append    O($N$)
 
 ## HashMap
 
 operation big O
 --------- -----
 access    n/a
-search    O(1)
-iteration O(N)
-insert    O(1)
+search    O($1$)
+iteration O($N$)
+insert    O($1$)
 
 ## Other data structures
 
