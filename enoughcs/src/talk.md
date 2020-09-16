@@ -442,17 +442,6 @@ Brute-forcing travelling salesman
 
 ## Big O notation
 
-N           name
----         ----
-O($1$)      constant
-O($log\ N$) logarithmic
-O($N$)      linear
-O($N^2$)    quadratic
-O($2^N$)    exponential
-O($N!$)     factorial
-
-## Big O notation
-
 N           2 10        100                  1000
 ---         - --        ---                  ----
 O($1$)      1 1         1                    1
@@ -461,6 +450,17 @@ O($N$)      1 10        100                  1000
 O($N^2$)    1 100       10.000               1.000.000
 O($2^N$)    2 1024      1,2×10<sup>30</sup>  1,1×10<sup>301</sup>
 O($N!$)     1 3.628.800 9,3×10<sup>157</sup> 🤯
+
+## Big O notation
+
+N           name
+---         ----
+O($1$)      constant
+O($log\ N$) logarithmic
+O($N$)      linear
+O($N^2$)    quadratic
+O($2^N$)    exponential
+O($N!$)     factorial
 
 ## Big O notation
 
