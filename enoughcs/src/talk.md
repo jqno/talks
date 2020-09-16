@@ -289,7 +289,7 @@ Q.E.D.
 
 Q.E.D.
 
-## What it looked like for me { data-state="page-portrait" }
+## What it looked like for me
 
 ![](../images/homework1.jpg){ .raw }\ \ \ \ \ \ ![](../images/homework2.jpg){ .raw }
 
@@ -750,9 +750,7 @@ Tip: Google "Big O cheat sheet"
 
 Read more about this
 
-Tip:
-
-[![](../images/jwdsal2.jpg){ height=400px }](https://pragprog.com/titles/jwdsal2)
+[![](../images/jwdsal2.jpg){ .raw }](https://pragprog.com/titles/jwdsal2)
 
 ## What's next?
 
