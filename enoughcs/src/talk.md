@@ -322,7 +322,8 @@ Q.E.D.
 1938 -
 
 ::: notes
-Beware of bugs in the above code; I have only proved it correct, not tried it.
+* Cheques
+* Beware of bugs in the above code; I have only proved it correct, not tried it.
 :::
 
 ##
