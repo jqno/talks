@@ -40,6 +40,8 @@ I studied computer science so you don't have to
 
 ![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
 
+1999 - 2005
+
 ![](../images/codestar-by-ordina.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
 
 ::: hashtag
@@ -77,6 +79,8 @@ Lots of interesting people
 
 ![](../images/edsger-dijkstra.jpg){ .portrait }
 
+1930 - 2002
+
 ::: notes
 * Dutch
 * pronounciation
@@ -95,6 +99,8 @@ Lots of interesting people
 
 ![](../images/katherine-johnson.jpg){ .portrait }
 
+1918 - 2020
+
 ::: notes
 * Manual calculations for NASA Apollo
 * Movie
@@ -104,6 +110,8 @@ Lots of interesting people
 # Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/katherine-johnson-movie.jpg){ .portrait }
+
+2016
 
 ::: notes
 * Manual calculations for NASA Apollo
@@ -125,13 +133,19 @@ I'm oversimplifying things
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
+? - 850
+
 # Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
+? - 850
+
 # Algorithmi { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+? - 850
 
 ::: notes
 * Islamic world middle ages
@@ -152,6 +166,8 @@ Algorithm
 # Augustus De Morgan { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/augustus-de-morgan.jpg){ .portrait }
+
+1806 - 1871
 
 ##
 
@@ -206,6 +222,8 @@ If you remember only 2 things
 # Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/tony-hoare.jpg){ .portrait }
+
+1934 -
 
 ::: notes
 * Invented famous algorithm: quicksort
@@ -300,6 +318,8 @@ Q.E.D.
 # Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/donald-knuth.jpg){ .portrait }
+
+1938 -
 
 ::: notes
 Beware of bugs in the above code; I have only proved it correct, not tried it.
@@ -460,6 +480,8 @@ polynomial is where the exponent is a number
 
 ![](../images/alan-turing.jpg){ .portrait }
 
+1912 - 1954
+
 ::: notes
 * cracked Enigma code
 * convicted for being gay
@@ -470,6 +492,8 @@ polynomial is where the exponent is a number
 # Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/alan-turing-movie.jpg){ .portrait }
+
+2014
 
 ::: notes
 * cracked Enigma code
@@ -533,6 +557,8 @@ jè.
 # Grace Hopper { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/grace-hopper.jpg){ .portrait }
+
+1906 - 1992
 
 ::: notes
 * Rear-admiral
@@ -665,6 +691,8 @@ List<String> myList = new CopyOnWriteArrayList<>();
 
 ![](../images/margaret-hamilton.jpg){ .portrait }
 
+1936 -
+
 ::: notes
 * Led the team that wrote NASA's Apollo navigation software
 * Coined the term "software engineering"
@@ -673,6 +701,8 @@ List<String> myList = new CopyOnWriteArrayList<>();
 # Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/margaret-hamilton-lego.jpg){ .portrait }
+
+2017
 
 ::: notes
 * Led the team that wrote NASA's Apollo navigation software
