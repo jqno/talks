@@ -8,7 +8,7 @@ controls: "false"
 center: "false"
 ---
 
-# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
 
 <br/>
 
@@ -20,7 +20,7 @@ I studied computer science so you don't have to
 
 ###
 
-# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
 
 <br/>
 
@@ -31,14 +31,16 @@ I studied computer science so you don't have to
 :::
 
 ::: doesitwork
-x
+.
 :::
 
 ###
 
-# Jan Ouwens { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Jan Ouwens { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
+
+1999 - 2005
 
 ![](../images/codestar-by-ordina.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
 
@@ -73,9 +75,11 @@ Diversity matters
 Lots of interesting people
 :::
 
-# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/edsger-dijkstra.jpg){ .portrait }
+
+1930 - 2002
 
 ::: notes
 * Dutch
@@ -91,9 +95,11 @@ Lots of interesting people
 
 [![](../images/dijkstra-zero.png)](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)
 
-# Katherine Johnson { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/katherine-johnson.jpg){ .portrait }
+
+1918 - 2020
 
 ::: notes
 * Manual calculations for NASA Apollo
@@ -101,9 +107,11 @@ Lots of interesting people
 * Astronauts didn't trust automation
 :::
 
-# Katherine Johnson { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/katherine-johnson-movie.jpg){ .portrait }
+
+2016
 
 ::: notes
 * Manual calculations for NASA Apollo
@@ -121,17 +129,23 @@ Disclaimer
 I'm oversimplifying things
 :::
 
-# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
-# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+? - 850
+
+# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
-# Algorithmi { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+? - 850
+
+# Algorithmi { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+? - 850
 
 ::: notes
 * Islamic world middle ages
@@ -149,9 +163,67 @@ Algorithm
 * Cooking recipe
 :::
 
-# Tony Hoare { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Augustus De Morgan { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/augustus-de-morgan.jpg){ .portrait }
+
+1806 - 1871
+
+##
+
+::: big
+If you remember only 1 thing
+:::
+
+## De Morgan's Laws
+
+Mathy version
+
+```java
+¬(a ⋁ b) == ¬a ⋀ ¬b
+
+¬(a ⋀ b) == ¬a ⋁ ¬b
+```
+
+## De Morgan's Laws
+
+Java version
+
+```java
+!(a || b) == !a && !b
+
+!(a && b) == !a || !b
+```
+
+## Truth table
+
+ `a`   `b`   `!(a || b)`   `!a && !b`
+----- ----- ------------- ------------
+  0     0         1            1
+  0     1         0            0
+  1     0         0            0
+  1     1         0            0
+
+## Truth table
+
+ `a`   `b`   `!(a && b)`   `!a || !b`
+----- ----- ------------- ------------
+  0     0         1            1
+  0     1         1            1
+  1     0         1            1
+  1     1         0            0
+
+##
+
+::: big
+If you remember only 2 things
+:::
+
+# Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/tony-hoare.jpg){ .portrait }
+
+1934 -
 
 ::: notes
 * Invented famous algorithm: quicksort
@@ -235,7 +307,7 @@ Q.E.D.
 
 Q.E.D.
 
-## What it looked like for me { data-state="page-portrait" }
+## What it looked like for me
 
 ![](../images/homework1.jpg){ .raw }\ \ \ \ \ \ ![](../images/homework2.jpg){ .raw }
 
@@ -243,12 +315,15 @@ Q.E.D.
 * plaatje van mijn huiswerk
 :::
 
-# Donald Knuth { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/donald-knuth.jpg){ .portrait }
 
+1938 -
+
 ::: notes
-Beware of bugs in the above code; I have only proved it correct, not tried it.
+* Cheques
+* Beware of bugs in the above code; I have only proved it correct, not tried it.
 :::
 
 ##
@@ -290,7 +365,7 @@ public int linearSearch(int needle, int[] haystack) {
 
 . . .
 
-N steps
+$N$ steps
 
 ## Complexity
 
@@ -302,36 +377,9 @@ public int get(int[] ints, int index) {
 
 . . .
 
-1 step
+$1$ step
 
-## Big O notation
-
-* $1$ step: O(1)
-* $N$ steps: O($N$)
-* $N^2$ steps: O($N^2$)
-
-. . .
-
-* $42N^2$ steps: O($N^2$)
-
-. . .
-
-* $42N^2+2N+3$ steps: O($N^2$)
-
-## Big O notation
-
-O(log N)
-
-* Binary search
-* Git bisect
-
-::: notes
-Java's implementation had a bug in it for 9 years
-:::
-
-## Big O notation
-
-O(N²)
+## Complexity
 
 ```java
 public boolean hasDuplicates(int[] ints) {
@@ -344,11 +392,14 @@ public boolean hasDuplicates(int[] ints) {
   }
   return false;
 }
+
+. . .
+
+$N^2$ steps
+
 ```
 
-## Big O notation
-
-O(2<sup>N</sup>)
+## Complexity
 
 ```java
 public int fibonacci(int i) {
@@ -359,52 +410,88 @@ public int fibonacci(int i) {
 }
 ```
 
-## Big O notation
+. . .
 
-O(N!)
+$2^N$ steps
+
+## Complexity
 
 Brute-forcing travelling salesman
 
+. . .
+
+$N!$ steps
+
+## Complexity
+
+* Binary search
+* Git bisect
+
+$log\ N$ steps
+
+::: notes
+Java's implementation had a bug in it for 9 years
+:::
+
+
 ## Big O notation
 
-N                 name
----               ----
-O(1)              constant
-O(log N)          logarithmic
-O(N)              linear
-O(N²)             quadratic
-O(2<sup>N</sup>)  exponential
-O(N!)             factorial
+* $1$ step: O($1$)
+* $log\ N$ step: O($log\ N$)
+* $N$ steps: O($N$)
+* $N^2$ steps: O($N^2$)
+* $2^N$ steps: O($2^N$)
 
 ## Big O notation
 
-N                 2 10        100                  1000
----               - --        ---                  ----
-O(1)              1 1         1                    1
-O(log N)          1 1         2                    3
-O(N)              1 10        100                  1000
-O(N²)             1 100       10.000               1.000.000
-O(2<sup>N</sup>)  2 1024      1,2×10<sup>30</sup>  1,1×10<sup>301</sup>
-O(N!)             1 3.628.800 9,3×10<sup>157</sup> 🤯
+* $42N^2$ steps: O($N^2$)
+
+. . .
+
+* $42N^2+2N+3$ steps: O($N^2$)
+
+## Big O notation
+
+N           2 10        100                  1000
+---         - --        ---                  ----
+O($1$)      1 1         1                    1
+O($log\ N$) 1 1         2                    3
+O($N$)      1 10        100                  1000
+O($N^2$)    1 100       10.000               1.000.000
+O($2^N$)    2 1024      1,2×10<sup>30</sup>  1,1×10<sup>301</sup>
+O($N!$)     1 3.628.800 9,3×10<sup>157</sup> 🤯
+
+## Big O notation
+
+N           name
+---         ----
+O($1$)      constant
+O($log\ N$) logarithmic
+O($N$)      linear
+O($N^2$)    quadratic
+O($2^N$)    exponential
+O($N!$)     factorial
 
 ## Big O notation
 
 N
----              -            
-O(1)
-O(log N)
-O(N)
-O(N²)            Polynomial ↑ 
-O(2<sup>N</sup>) Slow ↓
-O(N!)
+---         -            
+O($1$)
+O($log\ N$)
+O($N$)
+O($N^2$)    Polynomial ↑ 
+O($2^N$)    Slow ↓
+O($N!$)
 
 ::: notes
 polynomial is where the exponent is a number
 :::
 
-# Alan Turing { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/alan-turing.jpg){ .portrait }
+
+1912 - 1954
 
 ::: notes
 * cracked Enigma code
@@ -413,9 +500,11 @@ polynomial is where the exponent is a number
 * movie
 :::
 
-# Alan Turing { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/alan-turing-movie.jpg){ .portrait }
+
+2014
 
 ::: notes
 * cracked Enigma code
@@ -476,9 +565,11 @@ jè.
 * secure messaging
 * society as a whole
 
-# Grace Hopper { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Grace Hopper { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/grace-hopper.jpg){ .portrait }
+
+1906 - 1992
 
 ::: notes
 * Rear-admiral
@@ -514,28 +605,28 @@ data structures
 
 operation big O
 --------- -----
-access    O(1)
-search    O(N)
-insert    O(N)
-append    O(1)
+access    O($1$)
+search    O($N$)
+insert    O($N$)
+append    O($1$)
 
 ## Linked list
 
 operation big O
 --------- -----
-access    O(N)
-search    O(N)
-insert    O(1)
-append    O(N)
+access    O($N$)
+search    O($N$)
+insert    O($1$)
+append    O($N$)
 
 ## HashMap
 
 operation big O
 --------- -----
 access    n/a
-search    O(1)
-iteration O(N)
-insert    O(1)
+search    O($1$)
+iteration O($N$)
+insert    O($1$)
 
 ## Other data structures
 
@@ -607,18 +698,22 @@ Yes:
 List<String> myList = new CopyOnWriteArrayList<>();
 ```
 
-# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/margaret-hamilton.jpg){ .portrait }
+
+1936 -
 
 ::: notes
 * Led the team that wrote NASA's Apollo navigation software
 * Coined the term "software engineering"
 :::
 
-# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/wood.jpg" }
+# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/margaret-hamilton-lego.jpg){ .portrait }
+
+2017
 
 ::: notes
 * Led the team that wrote NASA's Apollo navigation software
@@ -696,9 +791,7 @@ Tip: Google "Big O cheat sheet"
 
 Read more about this
 
-Tip:
-
-[![](../images/jwdsal2.jpg){ height=400px }](https://pragprog.com/titles/jwdsal2)
+[![](../images/jwdsal2.jpg){ .raw }](https://pragprog.com/titles/jwdsal2)
 
 ## What's next?
 
@@ -708,7 +801,8 @@ Experiment
 
 * Advanced tip:<br/>Implement your own compression algorithm!
 
-# Questions?
+# Questions? { data-state="page-portrait" data-background-image="../images/background.png" }
+
 
 <br/>
 
