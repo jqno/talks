@@ -34,20 +34,6 @@ I studied computer science so you don't have to
 .
 :::
 
-###
-
-# Jan Ouwens { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
-
-1999 - 2005
-
-![](../images/codestar-by-ordina.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
-
-::: hashtag
-![](../images/twitter.png){ style="height:30px;" } #enoughcs
-:::
-
 ##
 
 ::: superbig
@@ -69,105 +55,11 @@ Diversity matters
 * Computers would have remained stuffy
 :::
 
-#
-
-::: big
-Lots of interesting people
-:::
-
-# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/edsger-dijkstra.jpg){ .portrait }
-
-1930 - 2002
-
-::: notes
-* Dutch
-* pronounciation
-* TU/e
-* Quotes:
-  * Testing shows the presence, not the absence of bugs 
-  * The question of whether Machines Can Think... is about as relevant as the question of whether Submarines Can Swim. 
-  * Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. 
-:::
-
-#
-
-[![](../images/dijkstra-zero.png)](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)
-
-# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/katherine-johnson.jpg){ .portrait }
-
-1918 - 2020
-
-::: notes
-* Manual calculations for NASA Apollo
-* Movie
-* Astronauts didn't trust automation
-:::
-
-# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/katherine-johnson-movie.jpg){ .portrait }
-
-2016
-
-::: notes
-* Manual calculations for NASA Apollo
-* Movie
-* Astronauts didn't trust automation
-:::
-
 ##
 
 ::: superbig
-Disclaimer
+Science matters
 :::
-
-::: notes
-I'm oversimplifying things
-:::
-
-# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/muhammad-al-khwarizmi.png){ .portrait }
-
-? - 850
-
-# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/muhammad-al-khwarizmi.png){ .portrait }
-
-? - 850
-
-# Algorithmi { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/muhammad-al-khwarizmi.png){ .portrait }
-
-? - 850
-
-::: notes
-* Islamic world middle ages
-* Algorithm
-* Moon-crater
-:::
-
-##
-
-::: superbig
-Algorithm
-:::
-
-::: notes
-* Cooking recipe
-:::
-
-# Augustus De Morgan { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/augustus-de-morgan.jpg){ .portrait }
-
-1806 - 1871
 
 ##
 
@@ -179,21 +71,25 @@ If you remember only 1 thing
 
 Mathy version
 
+::: big
 ```java
 ¬(a ⋁ b) == ¬a ⋀ ¬b
 
 ¬(a ⋀ b) == ¬a ⋁ ¬b
 ```
+:::
 
 ## De Morgan's Laws
 
 Java version
 
+::: big
 ```java
 !(a || b) == !a && !b
 
 !(a && b) == !a || !b
 ```
+:::
 
 ## Truth table
 
@@ -219,32 +115,65 @@ Java version
 If you remember only 2 things
 :::
 
-# Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
+# Jan Ouwens { data-state="page-portrait" data-background-image="../images/background.png" }
 
-![](../images/tony-hoare.jpg){ .portrait }
+![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
 
-1934 -
+1999 - 2005
 
-::: notes
-* Invented famous algorithm: quicksort
-* Invented 'null' - billion dollar mistake
+![](../images/codestar-by-ordina.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
+
+::: hashtag
+![](../images/twitter.png){ style="height:30px;" } #enoughcs
 :::
 
-## Hoare triple
+###
 
+##
+
+::: big
+Lots of interesting people
+:::
+
+# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/edsger-dijkstra.jpg){ .portrait }
+
+1930 - 2002
+
+::: notes
+* Dutch
+* pronounciation
+* TU/e
+* Quotes:
+  * Testing shows the presence, not the absence of bugs 
+  * The question of whether Machines Can Think... is about as relevant as the question of whether Submarines Can Swim. 
+  * Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. 
+:::
+
+##
+
+[![](../images/dijkstra-zero.png)](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)
+
+## Precondition + Postcondition
+
+::: big
 ```pascal
-{P}
- S
-{Q}
+   {Precondition}
+    Statement
+   {Postcondition}
 ```
+:::
 
-## Hoare triple
+## Precondition + Postcondition
 
+::: big
 ```pascal
-{x = 3}
-x += 1;
-{x = 4}
+   {x = 3}
+   x += 1;
+   {x = 4}
 ```
+:::
 
 . . .
 
@@ -287,7 +216,97 @@ Q.E.D.
 ```
 
 ## A simple algorithm
+ 
+```pascal
+  var b: array[0..N] of int = ...;
+  var n: int = ...;
 
+  { ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+  i := 0
+
+; do b[i] ≠ n →
+
+    i := i + 1
+
+  od
+
+
+```
+
+::: notes
+We assume one exists within the array
+:::
+
+## A simple algorithm
+ 
+```pascal
+  var b: array[0..N] of int = ...;
+  var n: int = ...;
+
+  { ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+  i := 0
+  { i = 0 ⋀ ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+; do b[i] ≠ n →
+
+    i := i + 1
+
+  od
+
+
+```
+
+::: notes
+Also, `i = 0`
+:::
+
+## A simple algorithm
+ 
+```pascal
+  var b: array[0..N] of int = ...;
+  var n: int = ...;
+
+  { ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+  i := 0
+  { i = 0 ⋀ ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+; do b[i] ≠ n →
+    { 0 ≤ i < N ⋀ ⟨∀x : 0 ≤ x ≤ i : b[x] ≠ n⟩ ⋀ ⟨∃x : i < x < N : b[x] = n⟩ }
+    i := i + 1
+
+  od
+
+
+```
+
+::: notes
+* `i` is in range
+* we haven't found it yet
+* it's still there were we haven't looked yet
+:::
+
+## A simple algorithm
+ 
+```pascal
+  var b: array[0..N] of int = ...;
+  var n: int = ...;
+
+  { ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+  i := 0
+  { i = 0 ⋀ ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+; do b[i] ≠ n →
+    { 0 ≤ i < N ⋀ ⟨∀x : 0 ≤ x ≤ i : b[x] ≠ n⟩ ⋀ ⟨∃x : i < x < N : b[x] = n⟩ }
+    i := i + 1
+    { 0 < i < N ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ ⋀ ⟨∃x : i ≤ x < N : b[x] = n⟩ }
+  od
+
+
+```
+
+::: notes
+Increase `i`, so update the less-than signs
+:::
+
+## A simple algorithm
+ 
 ```pascal
   var b: array[0..N] of int = ...;
   var n: int = ...;
@@ -301,7 +320,12 @@ Q.E.D.
     { 0 < i < N ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ ⋀ ⟨∃x : i ≤ x < N : b[x] = n⟩ }
   od
   { 0 ≤ i < N ⋀ b[i] = n ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ }
+
 ```
+
+::: notes
+Found it!
+:::
 
 . . .
 
@@ -315,15 +339,75 @@ Q.E.D.
 * plaatje van mijn huiswerk
 :::
 
-# Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
+##
 
-![](../images/donald-knuth.jpg){ .portrait }
+::: superbig
+Speaking of algorithms
+:::
 
-1938 -
+# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+? - 850
+
+# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+? - 850
+
+# Algorithmi { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+? - 850
 
 ::: notes
-* Cheques
-* Beware of bugs in the above code; I have only proved it correct, not tried it.
+* Islamic world middle ages
+* invented algebra
+* Algorithm
+* Moon-crater
+:::
+
+##
+
+::: superbig
+Algorithm
+:::
+
+::: notes
+* Cooking recipe
+:::
+
+##
+
+::: superbig
+More about algorithms
+:::
+
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/katherine-johnson.jpg){ .portrait }
+
+1918 - 2020
+
+::: notes
+* Manual calculations for NASA Apollo
+* Movie
+* Astronauts didn't trust automation
+:::
+
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/katherine-johnson-movie.jpg){ .portrait }
+
+2016
+
+::: notes
+* Manual calculations for NASA Apollo
+* Movie
+* Astronauts didn't trust automation
 :::
 
 ##
@@ -392,12 +476,11 @@ public boolean hasDuplicates(int[] ints) {
   }
   return false;
 }
+```
 
 . . .
 
 $N^2$ steps
-
-```
 
 ## Complexity
 
@@ -427,28 +510,57 @@ $N!$ steps
 * Binary search
 * Git bisect
 
+. . .
+
 $log\ N$ steps
 
 ::: notes
 Java's implementation had a bug in it for 9 years
 :::
 
+##
+
+::: superbig
+Abstraction
+:::
+
+over complexity
+
+# Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/donald-knuth.jpg){ .portrait }
+
+1938 -
+
+::: notes
+* Beware of bugs in the above code; I have only proved it correct, not tried it.
+* Cheques
+:::
+
+## Book
+
+[![](../images/knuth-book.jpg){ .raw style="height:500px;" }](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
+
+## Book
+
+[![](../images/knuth-excerpt.jpg)](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 
 ## Big O notation
 
-* $1$ step: O($1$)
-* $log\ N$ step: O($log\ N$)
-* $N$ steps: O($N$)
-* $N^2$ steps: O($N^2$)
-* $2^N$ steps: O($2^N$)
+steps    Big O
+-----    -----
+$1$      O($1$)
+$log\ N$ O($log\ N$)
+$N$      O($N$)
+$N^2$    O($N^2$)
+$2^N$    O($2^N$)
 
 ## Big O notation
 
-* $42N^2$ steps: O($N^2$)
-
-. . .
-
-* $42N^2+2N+3$ steps: O($N^2$)
+steps        Big O
+-----        -----
+$2N$         O($N$)
+$42N^2+2N+3$ O($N^2$)
 
 ## Big O notation
 
@@ -487,6 +599,12 @@ O($N!$)
 polynomial is where the exponent is a number
 :::
 
+##
+
+::: big
+Why do we care about this?
+:::
+
 # Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/alan-turing.jpg){ .portrait }
@@ -515,6 +633,16 @@ polynomial is where the exponent is a number
 
 ##
 
+::: superbig
+Disclaimer
+:::
+
+::: notes
+I'm oversimplifying things
+:::
+
+##
+
 ::: big
 Cracking codes
 :::
@@ -531,10 +659,15 @@ polynomial
 
 ## NP
 
-* "nondeterministic-polynomial"
+* "**nondeterministic**-polynomial"
 
 * finding an answer: slow
 * checking an answer: P
+
+::: notes
+* Would be polynomial
+* If the machine is nondeterministic
+:::
 
 ## NP
 
@@ -565,6 +698,12 @@ jè.
 * secure messaging
 * society as a whole
 
+##
+
+::: superbig
+In practice
+:::
+
 # Grace Hopper { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/grace-hopper.jpg){ .portrait }
@@ -575,12 +714,6 @@ jè.
 * Rear-admiral
 * COBOL
 * Bug
-:::
-
-##
-
-::: superbig
-In practice
 :::
 
 ##
@@ -698,6 +831,14 @@ Yes:
 List<String> myList = new CopyOnWriteArrayList<>();
 ```
 
+##
+
+::: superbig
+Let's
+
+wrap up
+:::
+
 # Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/margaret-hamilton.jpg){ .portrait }
@@ -722,6 +863,8 @@ List<String> myList = new CopyOnWriteArrayList<>();
 
 ## Software engineering
 
+. . .
+
 * Programming
 
 . . .
@@ -734,12 +877,6 @@ List<String> myList = new CopyOnWriteArrayList<>();
 . . .
 
 * Computer science
-
-##
-
-::: big
-Wrapping up
-:::
 
 ## Wrapping up
 
@@ -779,27 +916,57 @@ What's next?
 
 ## What's next?
 
+<br/>
+
 Keep this stuff in the back of your mind
 
 ## What's next?
 
-Look it up when you need to choose
+<br/>
 
+Look it up when you need to decide
+
+</br>
+
+::: small
 Tip: Google "Big O cheat sheet"
+:::
 
 ## What's next?
 
-Read more about this
+<br/>
 
 [![](../images/jwdsal2.jpg){ .raw }](https://pragprog.com/titles/jwdsal2)
 
 ## What's next?
 
+<br/>
+
 Experiment
 
-* Tip:<br/>Implement your own HashMap!
+## What's next?
 
-* Advanced tip:<br/>Implement your own compression algorithm!
+<br/>
+
+Experiment
+
+</br>
+
+::: small
+Tip:<br/>Implement your own HashMap!
+:::
+
+## What's next?
+
+<br/>
+
+Experiment
+
+</br>
+
+::: small
+Advanced tip:<br/>Implement your own compression algorithm!
+:::
 
 # Questions? { data-state="page-portrait" data-background-image="../images/background.png" }
 
