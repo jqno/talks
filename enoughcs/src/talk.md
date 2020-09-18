@@ -18,9 +18,7 @@ I studied computer science so you don't have to
 ![](../images/twitter.png){ height=30px } #enoughcs
 :::
 
-###
-
-# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
+## Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
 
 <br/>
 
@@ -351,13 +349,13 @@ Speaking of algorithms
 
 ? - 850
 
-# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/background.png" }
+## Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
 ? - 850
 
-# Algorithmi { data-state="page-portrait" data-background-image="../images/background.png" }
+## Algorithmi { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
@@ -398,7 +396,7 @@ More about algorithms
 * Astronauts didn't trust automation
 :::
 
-# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
+## Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/katherine-johnson-movie.jpg){ .portrait }
 
@@ -618,7 +616,7 @@ Why do we care about this?
 * movie
 :::
 
-# Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
+## Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/alan-turing-movie.jpg){ .portrait }
 
@@ -850,7 +848,7 @@ wrap up
 * Coined the term "software engineering"
 :::
 
-# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
+## Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/margaret-hamilton-lego.jpg){ .portrait }
 
