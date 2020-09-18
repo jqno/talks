@@ -555,10 +555,15 @@ polynomial
 
 ## NP
 
-* "nondeterministic-polynomial"
+* "**nondeterministic**-polynomial"
 
 * finding an answer: slow
 * checking an answer: P
+
+::: notes
+* Would be polynomial
+* If the machine is nondeterministic
+:::
 
 ## NP
 
