@@ -71,21 +71,25 @@ If you remember only 1 thing
 
 Mathy version
 
+::: big
 ```java
 ¬(a ⋁ b) == ¬a ⋀ ¬b
 
 ¬(a ⋀ b) == ¬a ⋁ ¬b
 ```
+:::
 
 ## De Morgan's Laws
 
 Java version
 
+::: big
 ```java
 !(a || b) == !a && !b
 
 !(a && b) == !a || !b
 ```
+:::
 
 ## Truth table
 
@@ -153,19 +157,23 @@ Lots of interesting people
 
 ## Precondition + Postcondition
 
+::: big
 ```pascal
-{P}
- S
-{Q}
+   {Precondition}
+    Statement
+   {Postcondition}
 ```
+:::
 
 ## Precondition + Postcondition
 
+::: big
 ```pascal
-{x = 3}
-x += 1;
-{x = 4}
+   {x = 3}
+   x += 1;
+   {x = 4}
 ```
+:::
 
 . . .
 
