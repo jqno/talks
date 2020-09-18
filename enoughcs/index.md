@@ -24,6 +24,8 @@ This talk gives an overview of some of these fundamentals, and introduces you to
 * [jwdsal2](images/jwdsal2.jpg) - The Pragmatic Bookshelf - [source](https://pragprog.com/titles/jwdsal2/)
 * [katherine-johnson](images/katherine-johnson.jpg) - by NASA - [source](https://commons.wikimedia.org/w/index.php?curid=57372693)
 * [katherine-johnson-movie](images/katherine-johnson-movie.jpg) - from the movie [Hidden Figures](https://www.imdb.com/title/tt4846340/?ref_=fn_al_tt_1)
+* [knuth-book](images/knuth-book.jpg) - By Jan Ouwens
+* [knuth-excerpt](images/knuth-excerpt.jpg) - By Donald Knuth - [source](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 * [margaret-hamilton](images/margaret-hamilton.jpg) - by Draper Laboratory; restored by Adam Cuerden - [source](https://commons.wikimedia.org/w/index.php?curid=59655977)
 * [margaret-hamilton-lego](images/margaret-hamilton-lego.jpg) - by The LEGO Group - [source](https://www.lego.com/en-nl/product/women-of-nasa-21312)
 * [muhammad-al-khwarizmi](images/muhammad-al-khwarizmi.png) - by ms - [source](https://commons.wikimedia.org/w/index.php?curid=29993331)

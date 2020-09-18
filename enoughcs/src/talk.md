@@ -437,9 +437,17 @@ over complexity
 1938 -
 
 ::: notes
-* Cheques
 * Beware of bugs in the above code; I have only proved it correct, not tried it.
+* Cheques
 :::
+
+## Book
+
+[![](../images/knuth-book.jpg){ .raw style="height:500px;" }](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
+
+## Book
+
+[![](../images/knuth-excerpt.jpg)](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 
 ## Big O notation
 
