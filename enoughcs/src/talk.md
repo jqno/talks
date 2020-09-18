@@ -216,7 +216,97 @@ Q.E.D.
 ```
 
 ## A simple algorithm
+ 
+```pascal
+  var b: array[0..N] of int = ...;
+  var n: int = ...;
 
+  { ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+  i := 0
+
+; do b[i] ≠ n →
+
+    i := i + 1
+
+  od
+
+
+```
+
+::: notes
+We assume one exists within the array
+:::
+
+## A simple algorithm
+ 
+```pascal
+  var b: array[0..N] of int = ...;
+  var n: int = ...;
+
+  { ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+  i := 0
+  { i = 0 ⋀ ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+; do b[i] ≠ n →
+
+    i := i + 1
+
+  od
+
+
+```
+
+::: notes
+Also, `i = 0`
+:::
+
+## A simple algorithm
+ 
+```pascal
+  var b: array[0..N] of int = ...;
+  var n: int = ...;
+
+  { ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+  i := 0
+  { i = 0 ⋀ ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+; do b[i] ≠ n →
+    { 0 ≤ i < N ⋀ ⟨∀x : 0 ≤ x ≤ i : b[x] ≠ n⟩ ⋀ ⟨∃x : i < x < N : b[x] = n⟩ }
+    i := i + 1
+
+  od
+
+
+```
+
+::: notes
+* `i` is in range
+* we haven't found it yet
+* it's still there were we haven't looked yet
+:::
+
+## A simple algorithm
+ 
+```pascal
+  var b: array[0..N] of int = ...;
+  var n: int = ...;
+
+  { ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+  i := 0
+  { i = 0 ⋀ ⟨∃x : 0 ≤ x < N : b[x] = n⟩ }
+; do b[i] ≠ n →
+    { 0 ≤ i < N ⋀ ⟨∀x : 0 ≤ x ≤ i : b[x] ≠ n⟩ ⋀ ⟨∃x : i < x < N : b[x] = n⟩ }
+    i := i + 1
+    { 0 < i < N ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ ⋀ ⟨∃x : i ≤ x < N : b[x] = n⟩ }
+  od
+
+
+```
+
+::: notes
+Increase `i`, so update the less-than signs
+:::
+
+## A simple algorithm
+ 
 ```pascal
   var b: array[0..N] of int = ...;
   var n: int = ...;
@@ -230,7 +320,12 @@ Q.E.D.
     { 0 < i < N ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ ⋀ ⟨∃x : i ≤ x < N : b[x] = n⟩ }
   od
   { 0 ≤ i < N ⋀ b[i] = n ⋀ ⟨∀x : 0 ≤ x < i : b[x] ≠ n⟩ }
+
 ```
+
+::: notes
+Found it!
+:::
 
 . . .
 
