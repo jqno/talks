@@ -270,6 +270,7 @@ Speaking of algorithms
 
 ::: notes
 * Islamic world middle ages
+* invented algebra
 * Algorithm
 * Moon-crater
 :::
