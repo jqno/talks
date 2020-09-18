@@ -34,20 +34,6 @@ I studied computer science so you don't have to
 .
 :::
 
-###
-
-# Jan Ouwens { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
-
-1999 - 2005
-
-![](../images/codestar-by-ordina.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
-
-::: hashtag
-![](../images/twitter.png){ style="height:30px;" } #enoughcs
-:::
-
 ##
 
 ::: superbig
@@ -69,105 +55,11 @@ Diversity matters
 * Computers would have remained stuffy
 :::
 
-#
-
-::: big
-Lots of interesting people
-:::
-
-# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/edsger-dijkstra.jpg){ .portrait }
-
-1930 - 2002
-
-::: notes
-* Dutch
-* pronounciation
-* TU/e
-* Quotes:
-  * Testing shows the presence, not the absence of bugs 
-  * The question of whether Machines Can Think... is about as relevant as the question of whether Submarines Can Swim. 
-  * Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. 
-:::
-
-#
-
-[![](../images/dijkstra-zero.png)](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)
-
-# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/katherine-johnson.jpg){ .portrait }
-
-1918 - 2020
-
-::: notes
-* Manual calculations for NASA Apollo
-* Movie
-* Astronauts didn't trust automation
-:::
-
-# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/katherine-johnson-movie.jpg){ .portrait }
-
-2016
-
-::: notes
-* Manual calculations for NASA Apollo
-* Movie
-* Astronauts didn't trust automation
-:::
-
 ##
 
 ::: superbig
-Disclaimer
+Science matters
 :::
-
-::: notes
-I'm oversimplifying things
-:::
-
-# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/muhammad-al-khwarizmi.png){ .portrait }
-
-? - 850
-
-# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/muhammad-al-khwarizmi.png){ .portrait }
-
-? - 850
-
-# Algorithmi { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/muhammad-al-khwarizmi.png){ .portrait }
-
-? - 850
-
-::: notes
-* Islamic world middle ages
-* Algorithm
-* Moon-crater
-:::
-
-##
-
-::: superbig
-Algorithm
-:::
-
-::: notes
-* Cooking recipe
-:::
-
-# Augustus De Morgan { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/augustus-de-morgan.jpg){ .portrait }
-
-1806 - 1871
 
 ##
 
@@ -219,18 +111,47 @@ Java version
 If you remember only 2 things
 :::
 
-# Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
+# Jan Ouwens { data-state="page-portrait" data-background-image="../images/background.png" }
 
-![](../images/tony-hoare.jpg){ .portrait }
+![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
 
-1934 -
+1999 - 2005
 
-::: notes
-* Invented famous algorithm: quicksort
-* Invented 'null' - billion dollar mistake
+![](../images/codestar-by-ordina.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
+
+::: hashtag
+![](../images/twitter.png){ style="height:30px;" } #enoughcs
 :::
 
-## Hoare triple
+###
+
+##
+
+::: big
+Lots of interesting people
+:::
+
+# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/edsger-dijkstra.jpg){ .portrait }
+
+1930 - 2002
+
+::: notes
+* Dutch
+* pronounciation
+* TU/e
+* Quotes:
+  * Testing shows the presence, not the absence of bugs 
+  * The question of whether Machines Can Think... is about as relevant as the question of whether Submarines Can Swim. 
+  * Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. 
+:::
+
+##
+
+[![](../images/dijkstra-zero.png)](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)
+
+## Precondition + Postcondition
 
 ```pascal
 {P}
@@ -238,7 +159,7 @@ If you remember only 2 things
 {Q}
 ```
 
-## Hoare triple
+## Precondition + Postcondition
 
 ```pascal
 {x = 3}
@@ -315,15 +236,68 @@ Q.E.D.
 * plaatje van mijn huiswerk
 :::
 
-# Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
+##
 
-![](../images/donald-knuth.jpg){ .portrait }
+::: superbig
+Speaking of algorithms
+:::
 
-1938 -
+# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+? - 850
+
+# Muhammad al-Khwarizmi { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+? - 850
+
+# Algorithmi { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/muhammad-al-khwarizmi.png){ .portrait }
+
+? - 850
 
 ::: notes
-* Cheques
-* Beware of bugs in the above code; I have only proved it correct, not tried it.
+* Islamic world middle ages
+* Algorithm
+* Moon-crater
+:::
+
+##
+
+::: superbig
+Algorithm
+:::
+
+::: notes
+* Cooking recipe
+:::
+
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/katherine-johnson.jpg){ .portrait }
+
+1918 - 2020
+
+::: notes
+* Manual calculations for NASA Apollo
+* Movie
+* Astronauts didn't trust automation
+:::
+
+# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/katherine-johnson-movie.jpg){ .portrait }
+
+2016
+
+::: notes
+* Manual calculations for NASA Apollo
+* Movie
+* Astronauts didn't trust automation
 :::
 
 ##
@@ -434,6 +408,16 @@ $log\ N$ steps
 Java's implementation had a bug in it for 9 years
 :::
 
+# Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/donald-knuth.jpg){ .portrait }
+
+1938 -
+
+::: notes
+* Cheques
+* Beware of bugs in the above code; I have only proved it correct, not tried it.
+:::
 
 ## Big O notation
 
@@ -513,6 +497,16 @@ polynomial is where the exponent is a number
 * convicted for being gay
 * committed suicide
 * movie
+:::
+
+##
+
+::: superbig
+Disclaimer
+:::
+
+::: notes
+I'm oversimplifying things
 :::
 
 ##
