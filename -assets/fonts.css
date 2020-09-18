@@ -13,3 +13,7 @@
     src: url("firacode/FiraCode-Regular.woff") format('woff');
 }
 
+@font-face {
+    font-family: "OpenSans";
+    src: url("opensans/open-sans-v18-latin-regular.woff") format('woff');
+}
