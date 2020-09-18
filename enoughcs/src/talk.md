@@ -838,7 +838,7 @@ Experiment
 
 * Tip:<br/>Implement your own HashMap!
 
-* Advanced tip:<br/>Implement your own compression algorithm!
+* Advanced tip:<br/>Implement your own<br/>compression algorithm!
 
 # Questions? { data-state="page-portrait" data-background-image="../images/background.png" }
 
