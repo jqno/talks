@@ -91,6 +91,10 @@ html.page-portrait .reveal img.portrait {
   padding-bottom: 50px;
 }
 
+.small {
+  font-size: 0.7em;
+}
+
 .supersmall {
   font-size: 0.3em;
 }

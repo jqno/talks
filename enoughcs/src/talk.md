@@ -863,6 +863,8 @@ wrap up
 
 ## Software engineering
 
+. . .
+
 * Programming
 
 . . .
@@ -914,27 +916,57 @@ What's next?
 
 ## What's next?
 
+<br/>
+
 Keep this stuff in the back of your mind
 
 ## What's next?
 
-Look it up when you need to choose
+<br/>
 
+Look it up when you need to decide
+
+</br>
+
+::: small
 Tip: Google "Big O cheat sheet"
+:::
 
 ## What's next?
 
-Read more about this
+<br/>
 
 [![](../images/jwdsal2.jpg){ .raw }](https://pragprog.com/titles/jwdsal2)
 
 ## What's next?
 
+<br/>
+
 Experiment
 
-* Tip:<br/>Implement your own HashMap!
+## What's next?
 
-* Advanced tip:<br/>Implement your own<br/>compression algorithm!
+<br/>
+
+Experiment
+
+</br>
+
+::: small
+Tip:<br/>Implement your own HashMap!
+:::
+
+## What's next?
+
+<br/>
+
+Experiment
+
+</br>
+
+::: small
+Advanced tip:<br/>Implement your own compression algorithm!
+:::
 
 # Questions? { data-state="page-portrait" data-background-image="../images/background.png" }
 
