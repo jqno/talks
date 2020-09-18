@@ -591,8 +591,8 @@ N
 O($1$)
 O($log\ N$)
 O($N$)
-O($N^2$)    Polynomial ↑ 
-O($2^N$)    Slow ↓
+O($N^2$)    ↑ Polynomial
+O($2^N$)    ↓ Slow
 O($N!$)
 
 ::: notes
