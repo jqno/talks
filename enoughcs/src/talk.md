@@ -437,19 +437,20 @@ Java's implementation had a bug in it for 9 years
 
 ## Big O notation
 
-* $1$ step: O($1$)
-* $log\ N$ step: O($log\ N$)
-* $N$ steps: O($N$)
-* $N^2$ steps: O($N^2$)
-* $2^N$ steps: O($2^N$)
+steps    Big O
+-----    -----
+$1$      O($1$)
+$log\ N$ O($log\ N$)
+$N$      O($N$)
+$N^2$    O($N^2$)
+$2^N$    O($2^N$)
 
 ## Big O notation
 
-* $42N^2$ steps: O($N^2$)
-
-. . .
-
-* $42N^2+2N+3$ steps: O($N^2$)
+steps        Big O
+-----        -----
+$2N$         O($N$)
+$42N^2+2N+3$ O($N^2$)
 
 ## Big O notation
 
