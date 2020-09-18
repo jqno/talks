@@ -284,6 +284,12 @@ Algorithm
 * Cooking recipe
 :::
 
+##
+
+::: superbig
+More about algorithms
+:::
+
 # Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/katherine-johnson.jpg){ .portrait }
@@ -416,6 +422,14 @@ $log\ N$ steps
 Java's implementation had a bug in it for 9 years
 :::
 
+##
+
+::: superbig
+Abstraction
+:::
+
+over complexity
+
 # Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/donald-knuth.jpg){ .portrait }
@@ -479,6 +493,12 @@ O($N!$)
 
 ::: notes
 polynomial is where the exponent is a number
+:::
+
+##
+
+::: big
+Why do we care about this?
 :::
 
 # Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
@@ -569,6 +589,12 @@ jè.
 * secure messaging
 * society as a whole
 
+##
+
+::: superbig
+In practice
+:::
+
 # Grace Hopper { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/grace-hopper.jpg){ .portrait }
@@ -579,12 +605,6 @@ jè.
 * Rear-admiral
 * COBOL
 * Bug
-:::
-
-##
-
-::: superbig
-In practice
 :::
 
 ##
@@ -702,6 +722,14 @@ Yes:
 List<String> myList = new CopyOnWriteArrayList<>();
 ```
 
+##
+
+::: superbig
+Let's
+
+wrap up
+:::
+
 # Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/margaret-hamilton.jpg){ .portrait }
@@ -738,12 +766,6 @@ List<String> myList = new CopyOnWriteArrayList<>();
 . . .
 
 * Computer science
-
-##
-
-::: big
-Wrapping up
-:::
 
 ## Wrapping up
 
