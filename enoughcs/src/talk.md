@@ -71,9 +71,11 @@ Mathy version
 
 ::: big
 ```java
-¬(a ⋁ b) == ¬a ⋀ ¬b
+ ¬(a ⋁ b) ≡ ¬a ⋀ ¬b
+```
 
-¬(a ⋀ b) == ¬a ⋁ ¬b
+```java
+ ¬(a ⋀ b) ≡ ¬a ⋁ ¬b
 ```
 :::
 
@@ -84,7 +86,9 @@ Java version
 ::: big
 ```java
 !(a || b) == !a && !b
+```
 
+```java
 !(a && b) == !a || !b
 ```
 :::
