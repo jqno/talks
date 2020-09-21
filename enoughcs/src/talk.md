@@ -337,6 +337,12 @@ Q.E.D.
 * plaatje van mijn huiswerk
 :::
 
+#
+
+::: big
+Proving algorithms is hard
+:::
+
 ##
 
 ::: superbig
@@ -364,6 +370,7 @@ Speaking of algorithms
 ::: notes
 * Islamic world middle ages
 * invented algebra
+* Helped introduce "arabic" numerals incl 0
 * Algorithm
 * Moon-crater
 :::
@@ -466,7 +473,7 @@ $1$ step
 ```java
 public boolean hasDuplicates(int[] ints) {
   for (int i : ints) {
-    for (int j : b) {
+    for (int j : ints) {
       if (i != j && ints[i] == ints[j]) {
         return true;
       }
@@ -510,7 +517,7 @@ $N!$ steps
 
 . . .
 
-$log\ N$ steps
+$log_2\ N$ steps
 
 ::: notes
 Java's implementation had a bug in it for 9 years
@@ -559,13 +566,14 @@ steps        Big O
 -----        -----
 $2N$         O($N$)
 $42N^2+2N+3$ O($N^2$)
+$log_2\ N$   O($log\ N$)
 
 ## Big O notation
 
 N           2 10        100                  1000
 ---         - --        ---                  ----
 O($1$)      1 1         1                    1
-O($log\ N$) 1 1         2                    3
+O($log\ N$) 1 3,3       6,6                  10
 O($N$)      1 10        100                  1000
 O($N^2$)    1 100       10.000               1.000.000
 O($2^N$)    2 1024      1,2×10<sup>30</sup>  1,1×10<sup>301</sup>
