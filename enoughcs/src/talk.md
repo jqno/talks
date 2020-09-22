@@ -93,6 +93,54 @@ Java version
 ```
 :::
 
+## For example
+
+```java
+if (!(product.price() <= 10 || order.amount() <= 5)) {
+  applyDiscount();
+}
+```
+
+## For example
+
+```java
+if (!(a || b)) {
+  applyDiscount();
+}
+```
+```java
+a = product.price() <= 10
+b = order.amount <= 5
+```
+
+## For example
+
+```java
+if (!a && !b) {
+  applyDiscount();
+}
+```
+```java
+a = product.price() <= 10
+b = order.amount <= 5
+```
+
+## For example
+
+```java
+if (!(product.price() <= 10) && !(order.amount() <= 5)) {
+  applyDiscount();
+}
+```
+
+## For example
+
+```java
+if (product.price() > 10 && order.amount() > 5) {
+  applyDiscount();
+}
+```
+
 ## Truth table
 
  `a`   `b`   `!(a || b)`   `!a && !b`
