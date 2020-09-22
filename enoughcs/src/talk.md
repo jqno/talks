@@ -487,9 +487,15 @@ how?
 Complexity
 :::
 
-If input size = N,
-
 How many steps?
+
+## Let's define
+
+<br/>
+
+::: big
+N = input size
+:::
 
 ## Complexity
 
