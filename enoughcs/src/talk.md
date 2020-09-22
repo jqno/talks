@@ -942,29 +942,35 @@ wrap up
 
 * Computer science
 
-## Wrapping up
+## Recap
 
 ::: big
-Many algorithms solve similar problems
+De Morgan's Laws
 :::
 
-## Wrapping up
+## Recap
 
 ::: big
-Many data structures solve similar problems
+Truth tables
 :::
 
-## Wrapping up
+## Recap
 
 ::: big
-Each performs differently
+Complexity
+
+& Big O
 :::
 
-## Wrapping up
+Choose wisely
+
+## Recap
 
 ::: big
-Think about which is best for your situation
+Data structures
 :::
+
+Choose wisely
 
 ##
 
