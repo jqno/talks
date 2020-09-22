@@ -439,8 +439,52 @@ Algorithm
 
 ##
 
-::: superbig
-More about algorithms
+::: big
+We live in an
+
+age of libraries
+:::
+
+::: notes
+* Algorithms are wrapped up in libs
+:::
+
+## Libraries
+
+Implement an algorithm
+
+## Libraries
+
+~~Implement an algorithm~~
+
+Prove an algorithm
+
+## Libraries
+
+~~Implement an algorithm~~
+
+~~Prove an algorithm~~
+
+Test an algorithm
+
+## Libraries
+
+~~Implement an algorithm~~
+
+~~Prove an algorithm~~
+
+~~Test an algorithm~~
+
+Choose an algorithm
+
+. . .
+
+how?
+
+##
+
+::: big
+Have someone do it for you
 :::
 
 # Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
@@ -465,20 +509,6 @@ More about algorithms
 * Manual calculations for NASA Apollo
 * Movie
 * Astronauts didn't trust automation
-:::
-
-##
-
-::: big
-We live in an
-
-age of libraries
-:::
-
-Choose the best one
-
-::: notes
-how?
 :::
 
 ## 
