@@ -195,10 +195,30 @@ Lots of interesting people
 * Dutch
 * pronounciation
 * TU/e
-* Quotes:
-  * Testing shows the presence, not the absence of bugs 
-  * The question of whether Machines Can Think... is about as relevant as the question of whether Submarines Can Swim. 
-  * Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. 
+:::
+
+## Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/edsger-dijkstra.jpg){ .portrait }
+
+::: small
+_"Testing shows the presence, not the absence of bugs."_
+:::
+
+## Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/edsger-dijkstra.jpg){ .portrait }
+
+::: small
+_"The question of whether machines can think is about as relevant<br/>as the question of whether submarines can swim."_
+:::
+
+## Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/edsger-dijkstra.jpg){ .portrait }
+
+::: small
+_"The teaching of BASIC should be rated as a criminal offence:<br/>it mutilates the mind beyond recovery."_
 :::
 
 ##
@@ -626,7 +646,42 @@ over complexity
 1938 -
 
 ::: notes
-* Beware of bugs in the above code; I have only proved it correct, not tried it.
+* Cheques
+:::
+
+## Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/donald-knuth.jpg){ .portrait }
+
+::: small
+_"Beware of bugs in the above code;<br/>I have only proved it correct, not tried it."_
+:::
+
+::: notes
+* Cheques
+:::
+
+## Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/donald-knuth.jpg){ .portrait }
+
+::: small
+_"We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil..."_
+:::
+
+::: notes
+* Cheques
+:::
+
+## Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/donald-knuth.jpg){ .portrait }
+
+::: small
+_"...Yet we should not pass up our opportunities in that critical 3%."_
+:::
+
+::: notes
 * Cheques
 :::
 
@@ -975,12 +1030,16 @@ wrap up
 ## Recap
 
 ::: big
+Thing 1:
+
 De Morgan's Laws
 :::
 
 ## Recap
 
 ::: big
+Thing 2:
+
 Truth tables
 :::
 
