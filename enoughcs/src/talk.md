@@ -631,6 +631,22 @@ $log_2\ N$ steps
 Java's implementation had a bug in it for 9 years
 :::
 
+## Complexity
+
+* Binary search
+* Git bisect
+
+$log_2\ N$ steps
+
+🤔🤔🤔
+
+## Complexity
+
+* Binary search
+* Git bisect
+
+Way less than $N$ steps
+
 ##
 
 ::: superbig
