@@ -822,7 +822,7 @@ ArrayList<String> myList = new ArrayList<>();
 Yes:
 
 ```java
-List<String> myList = new ArrayList<>();
+     List<String> myList = new ArrayList<>();
 ```
 
 ## In Java
@@ -830,7 +830,7 @@ List<String> myList = new ArrayList<>();
 Yes:
 
 ```java
-List<String> myList = new LinkedList<>();
+     List<String> myList = new LinkedList<>();
 ```
 
 ## In Java
@@ -838,7 +838,7 @@ List<String> myList = new LinkedList<>();
 Yes:
 
 ```java
-List<String> myList = new CopyOnWriteArrayList<>();
+     List<String> myList = new CopyOnWriteArrayList<>();
 ```
 
 ##
