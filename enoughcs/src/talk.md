@@ -738,6 +738,10 @@ O($N!$)     1 3.628.800 9,3×10<sup>157</sup> 🤯
 
 ## Big O notation
 
+![](../images/plot.png){ style="height:500px;" }
+
+## Big O notation
+
 N           name
 ---         ----
 O($1$)      constant
