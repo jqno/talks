@@ -941,6 +941,14 @@ append    O($N$)
 
 ## HashMap
 
+![](../images/hashmap0.jpg){ style="height:500px;" }
+
+## HashMap
+
+![](../images/hashmap1.jpg){ style="height:500px;" }
+
+## HashMap
+
 operation big O
 --------- -----
 access    n/a

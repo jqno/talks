@@ -20,6 +20,7 @@ This talk gives an overview of some of these fundamentals, and introduces you to
 * [dijkstra-zero](images/dijkstra-zero.png) - by Edsger Dijkstra - [source](http://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF)
 * [edsger-dijkstra](images/edsger-dijkstra.jpg) - by Hamilton Richards - [source](https://commons.wikimedia.org/w/index.php?curid=4204157)
 * [grace-hopper](images/grace-hopper.jpg) - by James S. Davis - [source](https://commons.wikimedia.org/w/index.php?curid=12421475)
+* [hashmap0](images/hashmap0.jpg), [hashmap1](images/hashmap1.jpg) - By Jan Ouwens
 * [homework1](images/homework1.jpg), [homework2](images/homework2.jpg) - by Jan Ouwens
 * [jan-ouwens](images/jan-ouwens.jpg) - by Riemke Ouwens
 * [jwdsal2](images/jwdsal2.jpg) - by The Pragmatic Bookshelf - [source](https://pragprog.com/titles/jwdsal2/)
