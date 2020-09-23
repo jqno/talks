@@ -9,7 +9,7 @@ A CS degree is not a requirement for software developer roles. Nor should it be!
 This talk gives an overview of some of these fundamentals, and introduces you to the remarkable people who came up with them. They ended wars, sent rockets to the moon, were made into Lego minifigs. Who said computer science is boring?
 
 ## Deliveries
-* _24 September 2020_, Codesmiths Unite: [[event](https://codesmithsunite.nl/)]
+* _24 September 2020_, Codesmiths Unite: [[event](https://codesmithsunite.nl/)] [[slides](2020-codesmiths-unite)]
 
 ## Image credits
 * [alan-turing](images/alan-turing.jpg) - by Unknown author - [source](https://commons.wikimedia.org/w/index.php?curid=22828488)
