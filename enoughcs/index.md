@@ -14,6 +14,7 @@ This talk gives an overview of some of these fundamentals, and introduces you to
 ## Image credits
 * [alan-turing](images/alan-turing.jpg) - by Unknown author - [source](https://commons.wikimedia.org/w/index.php?curid=22828488)
 * [alan-turing-movie](images/alan-turing-movie.jpg) - from the movie [The Imitation Game](https://www.imdb.com/title/tt2084970/?ref_=fn_al_tt_1)
+* [array0](images/array0.jpg), [array1](images/array1.jpg), [array2](images/array2.jpg) - by Jan Ouwens
 * [background](images/background.png) - by Jan Ouwens
 * [donald-knuth](images/donald-knuth.jpg) - by Flickr user Jacob Appelbaum - [source](https://commons.wikimedia.org/w/index.php?curid=1303242)
 * [dijkstra-zero](images/dijkstra-zero.png) - by Edsger Dijkstra - [source](http://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF)
@@ -26,6 +27,7 @@ This talk gives an overview of some of these fundamentals, and introduces you to
 * [katherine-johnson-movie](images/katherine-johnson-movie.jpg) - from the movie [Hidden Figures](https://www.imdb.com/title/tt4846340/?ref_=fn_al_tt_1)
 * [knuth-book](images/knuth-book.jpg) - by Jan Ouwens
 * [knuth-excerpt](images/knuth-excerpt.jpg) - by Donald Knuth - [source](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
+* [linkedlist0](images/linkedlist0.jpg), [linkedlist1](images/linkedlist1.jpg) - By Jan Ouwens
 * [margaret-hamilton](images/margaret-hamilton.jpg) - by Draper Laboratory; restored by Adam Cuerden - [source](https://commons.wikimedia.org/w/index.php?curid=59655977)
 * [margaret-hamilton-lego](images/margaret-hamilton-lego.jpg) - by The LEGO Group - [source](https://www.lego.com/en-nl/product/women-of-nasa-21312)
 * [muhammad-al-khwarizmi](images/muhammad-al-khwarizmi.png) - by ms - [source](https://commons.wikimedia.org/w/index.php?curid=29993331)

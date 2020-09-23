@@ -899,12 +899,32 @@ data structures
 
 ## Array
 
+![](../images/array0.jpg){ style="height:500px;" }
+
+## Array
+
+![](../images/array1.jpg){ style="height:500px;" }
+
+## Array
+
+![](../images/array2.jpg){ style="height:500px;" }
+
+## Array
+
 operation big O
 --------- -----
 access    O($1$)
 search    O($N$)
 insert    O($N$)
 append    O($1$)
+
+## Linked list
+
+![](../images/linkedlist0.jpg){ style="height:500px;" }
+
+## Linked list
+
+![](../images/linkedlist1.jpg){ style="height:500px;" }
 
 ## Linked list
 
