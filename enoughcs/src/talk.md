@@ -682,20 +682,18 @@ _"Beware of bugs in the above code;<br/>I have only proved it correct, not tried
 ![](../images/donald-knuth.jpg){ .portrait }
 
 ::: small
-_"We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil..."_
+_"Premature optimization is the root of all evil."_
 :::
 
 ::: notes
 * Cheques
 :::
 
-## Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
+## The full quote
 
-![](../images/donald-knuth.jpg){ .portrait }
+<br/>
 
-::: small
-_"...Yet we should not pass up our opportunities in that critical 3%."_
-:::
+_"We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%."_
 
 ::: notes
 * Cheques
