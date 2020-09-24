@@ -8,15 +8,17 @@ controls: "false"
 center: "false"
 ---
 
-# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
+## Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
 
 <br/>
 
 I studied computer science so you don't have to
 
-::: hashtag
+::: hashtag-codesmiths-unite
 ![](../images/twitter.png){ height=30px } #enoughcs
 :::
+
+###
 
 ## Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
 
@@ -24,12 +26,38 @@ I studied computer science so you don't have to
 
 I studied computer science so you don't have to
 
-::: hashtag
+::: hashtag-codesmiths-unite
 ![](../images/twitter.png){ height=30px } #enoughcs
 :::
 
 ::: doesitwork
 .
+:::
+
+###
+
+## Slides
+
+::: big
+jqno.nl/talks
+
+/enoughcs
+:::
+
+## Questions?
+
+::: big
+Check flyer for
+
+instructions
+:::
+
+## { data-state="page-portrait" data-background-image="../images/background.png" }
+
+::: superbig
+Codesmiths
+
+Unite!
 :::
 
 ##
@@ -165,7 +193,7 @@ if (product.price() > 10 && order.amount() > 5) {
 If you remember only 2 things
 :::
 
-# Jan Ouwens { data-state="page-portrait" data-background-image="../images/background.png" }
+## Jan Ouwens { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
 
@@ -173,7 +201,7 @@ If you remember only 2 things
 
 ![](../images/codestar-by-ordina.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
 
-::: hashtag
+::: hashtag-codesmiths-unite
 ![](../images/twitter.png){ style="height:30px;" } #enoughcs
 :::
 
@@ -185,7 +213,7 @@ If you remember only 2 things
 Lots of interesting people
 :::
 
-# Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
+## Edsger Dijkstra { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/edsger-dijkstra.jpg){ .portrait }
 
@@ -421,7 +449,7 @@ Proving algorithms is hard
 Speaking of algorithms
 :::
 
-# محمد خوارزمی { data-state="page-portrait" data-background-image="../images/background.png" }
+## محمد خوارزمی { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/muhammad-al-khwarizmi.png){ .portrait }
 
@@ -507,7 +535,7 @@ how?
 Have someone do it for you
 :::
 
-# Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
+## Katherine Johnson { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/katherine-johnson.jpg){ .portrait }
 
@@ -655,7 +683,7 @@ Abstraction
 
 over complexity
 
-# Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
+## Donald Knuth { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/donald-knuth.jpg){ .portrait }
 
@@ -772,7 +800,7 @@ polynomial is where the exponent is a number
 Why do we care about this?
 :::
 
-# Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
+## Alan Turing { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/alan-turing.jpg){ .portrait }
 
@@ -871,7 +899,7 @@ jè.
 In practice
 :::
 
-# Grace Hopper { data-state="page-portrait" data-background-image="../images/background.png" }
+## Grace Hopper { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/grace-hopper.jpg){ .portrait }
 
@@ -1034,7 +1062,7 @@ Let's
 wrap up
 :::
 
-# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
+## Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/margaret-hamilton.jpg){ .portrait }
 
@@ -1173,7 +1201,7 @@ Experiment
 Advanced tip:<br/>Implement your own compression algorithm!
 :::
 
-# Questions? { data-state="page-portrait" data-background-image="../images/background.png" }
+## Questions? { data-state="page-portrait" data-background-image="../images/background.png" }
 
 
 <br/>
@@ -1182,7 +1210,7 @@ Advanced tip:<br/>Implement your own compression algorithm!
 
 [jqno.nl/talks/enoughcs](http://jqno.nl/talks/enoughcs)
 
-::: hashtag
+::: hashtag-codesmiths-unite
 ![](../images/twitter.png){ height=30px } #enoughcs
 
 ::: supersmall

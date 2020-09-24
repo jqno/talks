@@ -115,3 +115,10 @@ html.page-portrait .reveal img.portrait {
   bottom: 25px;
 }
 
+.hashtag-codesmiths-unite {
+  font-family: "TilburgsAnsText";
+  margin: auto;
+  width: 100%;
+  position: fixed;
+  bottom: -100px;
+}
