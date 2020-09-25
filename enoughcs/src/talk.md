@@ -919,7 +919,7 @@ operation big O
 --------- -----
 access    O($1$)
 search    O($N$)
-insert    O($N$)
+prepend   O($N$)
 append    O($1$)
 
 ## Linked list
@@ -936,7 +936,7 @@ operation big O
 --------- -----
 access    O($N$)
 search    O($N$)
-insert    O($1$)
+prepend   O($1$)
 append    O($N$)
 
 ## HashMap
