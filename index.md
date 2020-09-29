@@ -1,7 +1,9 @@
 ---
 title: "My talks"
 ---
-There is  [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRsE7zi7YhfYWua1Jzi_iv1GQ) of my talks.
+![](devoxx.jpg)
+
+There is a [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRsE7zi7YhfYWua1Jzi_iv1GQ) of my talks.
 
 ### Main talks
 
