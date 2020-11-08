@@ -18,9 +18,9 @@ cp $PRESENTATION/src/talk.md $DIR
 cp $PRESENTATION/template.html $DIR
 cp -R $PRESENTATION/images/* $DIR/images
 cp -R $PRESENTATION/*.css $DIR
-cp -- -assets/fonts.css $DIR
-cp -- -assets/firacode/FiraCode-Regular.woff $DIR
-cp -- -assets/tilburgsans/TilburgsAns-Regular.woff $DIR
+cp assets/fonts.css $DIR
+cp assets/firacode/FiraCode-Regular.woff $DIR
+cp assets/tilburgsans/TilburgsAns-Regular.woff $DIR
 
 KEYBOARD_OVERRIDE="\"{39:'next',37:'prev'}\""
 ./generate.sh $DIR $DIR . .
