@@ -7,7 +7,7 @@ if [ -z "$PRESENTATION" ]; then
 fi
 
 SOURCES_DIR="$PRESENTATION/src"
-REVEAL_DIR="../../-revealjs-3.8.0"
+REVEAL_DIR="../../assets/revealjs-3.8.0"
 CSS_DIR=".."
 [ -n "$2" ] && SOURCES_DIR=$2
 [ -n "$3" ] && REVEAL_DIR=$3
