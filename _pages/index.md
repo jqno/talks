@@ -1,7 +1,8 @@
 ---
 title: "My talks"
+permalink: /
 ---
-![](devoxx.jpg)
+![](-assets/devoxx.jpg)
 
 There is a [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRsE7zi7YhfYWua1Jzi_iv1GQ) of my talks.
 
