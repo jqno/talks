@@ -6,8 +6,10 @@ if [ -z "$PRESENTATION" ]; then
   exit 1
 fi
 
-SOURCES_DIR="$PRESENTATION/src"
-REVEAL_DIR="../../assets/revealjs-3.8.0"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+DIR="$SCRIPT_DIR/../_slides/$PRESENTATION"
+SOURCES_DIR="$DIR/src"
+REVEAL_DIR="../../../assets/revealjs-3.8.0"
 CSS_DIR=".."
 [ -n "$2" ] && SOURCES_DIR=$2
 [ -n "$3" ] && REVEAL_DIR=$3
@@ -21,7 +23,7 @@ pandoc \
   --to=revealjs \
   --standalone \
   --slide-level=2 \
-  --template $PRESENTATION/template.html \
+  --template $DIR/template.html \
   --variable revealjs-url=$REVEAL_DIR \
   --css=$CSS_DIR/theme-modifications.css \
   --variable hlcss=$CSS_DIR/parallel-highlight.css \

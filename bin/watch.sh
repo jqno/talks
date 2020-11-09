@@ -6,5 +6,10 @@ if [ -z "$PRESENTATION" ]; then
   exit 1
 fi
 
-chokidar "$PRESENTATION/**/*.md" "$PRESENTATION/**/*.css" -c "./generate.sh $PRESENTATION"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+DIR="$SCRIPT_DIR/../_slides/$PRESENTATION"
+
+echo $DIR
+
+chokidar "$DIR/**/*.md" "$DIR/**/*.css" -c "$SCRIPT_DIR/generate.sh $PRESENTATION"
 

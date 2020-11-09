@@ -48,7 +48,7 @@ collections:
     permalink: /:path/
   slides:
     output: true
-    permalink: /:path/
+    permalink: /slides/:path/
 
 # Build settings
 remote_theme: mmistakes/minimal-mistakes@4.20.2
