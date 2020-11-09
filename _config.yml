@@ -78,5 +78,7 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - bin
 
 github: [metadata]
