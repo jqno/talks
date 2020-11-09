@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Upgrading Scala 2.12 to 2.13</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="../parallel-highlight.css"/>
+  <link rel="stylesheet" href="../theme-modifications.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../../assets/revealjs-3.8.0/css/print/pdf.css' : '../../../assets/revealjs-3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../../../assets/revealjs-3.8.0/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="upgrading-scala-2.12-to-2.13" class="title-slide slide level1"><h1>Upgrading Scala 2.12 to 2.13</h1><p><strong>Jan Ouwens</strong> | <strong><span class="citation" data-cites="jqno">@jqno</span></strong></p>
+<p>August 23rd, 2019</p></section>
+<section><section id="whats-new-in-2.13" class="title-slide slide level1"><h1>What’s new in 2.13</h1></section><section id="whats-new" class="slide level2">
+<h2>What’s new</h2>
+<ul>
+<li>Collections overhaul</li>
+<li><code>Future</code> is faster and more robust</li>
+<li>Language: literal types, partial unification, more</li>
+<li>Compiler: 5-10% faster</li>
+</ul>
+<p><a href="https://github.com/scala/scala/releases/tag/v2.13.0">Read more</a></p>
+</section><section id="whats-deprecated" class="slide level2">
+<h2>What’s deprecated</h2>
+<p>Procedure syntax</p>
+<pre class="scala"><code>def m() { ... }
+
+  ↓
+
+def m(): Unit = { ... }</code></pre>
+</section><section id="whats-deprecated-1" class="slide level2">
+<h2>What’s deprecated</h2>
+<p>Unicode arrows</p>
+<div style="font-family:Courier;">
+<p><code>←   →   ⇒</code></p>
+<p>↓</p>
+<p><code>&lt;-  -&gt;  =&gt;</code></p>
+</div>
+</section><section id="whats-deprecated-2" class="slide level2">
+<h2>What’s deprecated</h2>
+<p>Postfix operators</p>
+<pre class="scala"><code>xs size
+
+  ↓
+
+xs.size</code></pre>
+</section><section id="collections-overhaul" class="slide level2">
+<h2>Collections overhaul</h2>
+<p>For simplicity, performance and safety</p>
+<ul>
+<li>Simpler signatures:<br><del><code>CanBuildFrom</code></del></li>
+<li>Simpler hierarchy:<br><del><code>Traversable</code></del>, <del><code>TraversableOnce</code></del></li>
+</ul>
+</section><section id="collections-overhaul-1" class="slide level2">
+<h2>Collections overhaul</h2>
+<p><code>scala.Seq</code> is now immutable! 🎉</p>
+</section><section id="collections-overhaul-2" class="slide level2">
+<h2>Collections overhaul</h2>
+<p>Deprecated <code>/:</code> and <code>:\</code></p>
+<p>(use <code>foldLeft</code> and <code>foldRight</code>)</p>
+</section><section id="collections-overhaul-3" class="slide level2">
+<h2>Collections overhaul</h2>
+<p>much, much <a href="https://github.com/scala/scala/releases/tag/v2.13.0">more</a></p>
+</section><section id="java-interop-moved" class="slide level2">
+<h2>Java interop moved</h2>
+<p>more about that later</p>
+</section><section id="using" class="slide level2">
+<h2>Using</h2>
+<pre class="scala"><code>Using(new BufferedReader(new FileReader(&quot;file&quot;))) { reader =&gt;
+  // do stuff
+}</code></pre>
+<p><code>reader.close()</code> called automatically</p>
+</section><section id="tap" class="slide level2">
+<h2>tap</h2>
+<p>Useful for debugging</p>
+<pre class="scala"><code>val result = ???
+println(result)
+result</code></pre>
+<p>↓</p>
+<pre class="scala"><code>import scala.util.chaining._
+
+result.tap(println)</code></pre>
+</section><section id="tointoption" class="slide level2">
+<h2>toIntOption</h2>
+<p><br></p>
+<pre class="scala"><code>&quot;12&quot;.toIntOption   → Some(12)
+&quot;nope&quot;.toIntOption → None</code></pre>
+</section><section id="either" class="slide level2">
+<h2>Either</h2>
+<p><code>.right</code> is deprecated</p>
+<p>Either is now right-biased</p>
+</section></section>
+<section><section id="in-our-project" class="title-slide slide level1"><h1>In our project</h1></section><section id="our-application" class="slide level2">
+<h2>Our application</h2>
+<ul>
+<li>Uses Slick</li>
+<li>Uses ScalaTest</li>
+<li>Maven build 😢</li>
+<li>Lots of linting</li>
+<li>Scoverage</li>
+</ul>
+</section><section id="build" class="slide level2">
+<h2>Build</h2>
+</section><section id="build-1" class="slide level2">
+<h2>Build</h2>
+<p><a href="https://tpolecat.github.io/2017/04/25/scalac-flags.html">Recommended flags for 2.12 by tpolecat</a></p>
+<p>Not all of them work</p>
+</section><section id="build-2" class="slide level2">
+<h2>Build</h2>
+<ul>
+<li><code>-Ywarn-inaccessible</code> → <code>-Xlint:inaccessible</code><br>Inaccessible types in method signatures</li>
+<li><del><code>-Yno-adapted-args</code></del><br>Do not adapt an argument list (either by inserting () or creating a tuple) to match the receiver</li>
+</ul>
+</section><section id="build-3" class="slide level2">
+<h2>Build</h2>
+<pre class="xml"><code>&lt;artifactId&gt;scalafmt-core_${scala.version}&lt;/artifactId&gt;
+
+  ↓
+
+&lt;artifactId&gt;scalafmt-core_2.12&lt;/artifactId&gt;</code></pre>
+<p>Scala-fmt is not available for 2.13 yet</p>
+<p>But it doesn’t matter</p>
+</section><section id="code" class="slide level2">
+<h2>Code</h2>
+</section><section id="code-1" class="slide level2">
+<h2>Code</h2>
+<pre class="scala"><code>array.map(...)
+
+  ↓
+
+array.toSeq.map(...)</code></pre>
+<p>Arrays are mutable</p>
+<p><code>map</code> should not mutate in-place</p>
+</section><section id="code-2" class="slide level2">
+<h2>Code</h2>
+<pre class="scala"><code>import scala.collection.immutable.Seq
+
+  ↓
+
+nothing</code></pre>
+<p>🎉</p>
+</section><section id="code-3" class="slide level2">
+<h2>Code</h2>
+<pre class="scala"><code>import scala.collection.JavaConverters._
+
+  ↓
+
+import scala.jdk.CollectionConverters._</code></pre>
+<p>Java interop has moved</p>
+</section><section id="code-4" class="slide level2">
+<h2>Code</h2>
+<pre class="scala"><code>myMap.filterKeys(...)
+myMap.mapValues(...)
+
+  ↓
+
+myMap.view.filterKeys(...)
+myMap.view.mapValues(...)</code></pre>
+<p>They are implemented as views; this makes that explicit</p>
+<p>Strict versions may come later</p>
+</section><section id="code-5" class="slide level2">
+<h2>Code</h2>
+<pre class="scala"><code>Stream.continually(...)
+
+  ↓
+
+LazyList.continually(...)</code></pre>
+<p><code>Stream</code> is deprecated because it was not fully lazy</p>
+</section></section>
+<section><section id="dependencies" class="title-slide slide level1"><h1>Dependencies</h1></section><section id="scala-maven-plugin" class="slide level2">
+<h2>Scala-Maven-Plugin</h2>
+<p>Did you update?</p>
+<div class="fragment">
+<p>4.0 is broken for us</p>
+<p>¯\_(ツ)_/¯</p>
+</div>
+</section><section id="scalatest" class="slide level2">
+<h2>ScalaTest</h2>
+<p>≥ 3.0.8</p>
+</section><section id="scalatest-1" class="slide level2">
+<h2>ScalaTest</h2>
+<pre><code>import org.scalatest.prop.Checkers
+
+  ↓
+
+import org.scalatestplus.scalacheck.Checkers</code></pre>
+<p>ScalaCheck related classes have moved to ScalaTestPlus</p>
+</section><section id="scalatest-2" class="slide level2">
+<h2>ScalaTest</h2>
+<p>Remove <code>EitherValues</code> trait</p>
+<pre class="scala"><code>e.right.value
+
+  ↓
+
+e.toOption.value</code></pre>
+<p>Because <code>Either.right</code> is deprecated</p>
+</section><section id="slick" class="slide level2">
+<h2>Slick</h2>
+<p>≥ 3.3.2</p>
+</section><section id="slick-1" class="slide level2">
+<h2>Slick</h2>
+<ul>
+<li>Now supports <code>java.time</code></li>
+<li><strong>Requires changes</strong> if you already have mappings for these types!</li>
+<li>Especially on <strong>MySql/MariaDB</strong>, where Slick uses <code>VARCHAR</code> instead of <code>TIMESTAMP</code></li>
+</ul>
+</section><section id="scoverage" class="slide level2">
+<h2>Scoverage</h2>
+<p>≥ 1.4.0</p>
+</section><section id="scoverage-1" class="slide level2">
+<h2>Scoverage</h2>
+<p><code>scoverage-maven-plugin</code> 1.4.0 does not exist 😢</p>
+<p>Fork this <a href="https://github.com/scoverage/scoverage-maven-plugin/pull/73">Pull Request</a></p>
+</section><section id="scoverage-2" class="slide level2">
+<h2>Scoverage</h2>
+<p>Measures differently: may need to <strong>adjust thresholds</strong></p>
+</section><section id="wartremover" class="slide level2">
+<h2>WartRemover</h2>
+</section><section id="wartremover-1" class="slide level2">
+<h2>WartRemover</h2>
+<p><strong><code>Any</code></strong></p>
+<p>Now unusable due to so many false positives</p>
+</section><section id="wartremover-2" class="slide level2">
+<h2>WartRemover</h2>
+<p><strong><code>StringPlusAny</code></strong></p>
+<p>Now also applies to string-interpolation!</p>
+<p>Also, <strong><code>any2stringadd</code></strong> is now deprecated in Scala anyway</p>
+</section><section id="random-dependency-hell" class="slide level2">
+<h2>Random dependency hell</h2>
+<p>Transitive dependencies may or may not be compatible</p>
+<pre class="xml"><code>&lt;exclusions&gt;
+  &lt;!-- pulls in Jackson for Scala 2.12 instead of 2.13,
+       so we have to suppress here --&gt;
+  &lt;exclusion&gt;
+      &lt;groupId&gt;com.fasterxml.jackson.module&lt;/groupId&gt;
+      &lt;artifactId&gt;jackson-module-scala_2.12&lt;/artifactId&gt;
+  &lt;/exclusion&gt;
+&lt;/exclusions&gt;</code></pre>
+</section></section>
+<section id="questions" class="title-slide slide level1"><h1>Questions?</h1><p><img data-src="images/qr.png" /></p>
+<p><span class="citation" data-cites="jqno">@jqno</span></p></section>
+    </div>
+  </div>
+
+  <script src="../../../assets/revealjs-3.8.0/lib/js/head.min.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+        // Display a presentation progress bar
+        progress: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: "{39:'next',37:'prev'}",
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../../../assets/revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../assets/revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
+
