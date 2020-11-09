@@ -1,5 +1,16 @@
 ---
 title: "Don't hack the platform? ☠️💣💥"
+tags:
+- hack
+- jvm
+- java
+- scala
+- kotlin
+- unicode
+- reflection
+- objenesis
+- bytebuddy
+- agents
 ---
 A funny anthology of tricks and hacks for the JVM. Voted 2018’s ["best non-Venkat talk"](https://nljug.org/nieuws/j-fall-2018-the-top-10-sessions/) by the J-Fall audience! 
 

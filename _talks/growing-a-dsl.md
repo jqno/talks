@@ -1,5 +1,10 @@
 ---
 title: "Growing a DSL for financial calculations"
+tags:
+- scala
+- dsl
+- rabobank
+- finance
 ---
 The story of how my colleague and I 'discovered' a Scala DSL for writing complex mortgage calculations. 
 

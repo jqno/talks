@@ -1,5 +1,20 @@
 ---
 title: "Java from a Parallel Universe"
+tags:
+- quixote
+- annotations
+- static
+- analysis
+- dependency
+- injection
+- spring
+- boot
+- guice
+- picotest
+- junit
+- sparkjava
+- jdbi
+- lombok
 ---
 What Java would look like in a world where annotations were never invented. 
 

@@ -1,5 +1,13 @@
 ---
 title: "Not all equals methods are created equal"
+tags:
+- java
+- equalsverifier
+- equals
+- hashcode
+- reflexivity
+- symmetry
+- transitivity
 ---
 How to write a good `equals` method, and to test it with [EqualsVerifier](http://jqno.nl/equalsverifier).
 

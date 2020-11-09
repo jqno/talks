@@ -1,5 +1,28 @@
 ---
 title: "Just enough computer science for the busy developer"
+tags:
+- computer
+- science
+- demorgan
+- algorithm
+- complexity
+- bigo
+- notation
+- alan
+- turing
+- donald
+- knuth
+- edsger
+- dijkstra
+- grace
+- hopper
+- katherine
+- johnson
+- margaret
+- hamilton
+- muhammad
+- alkhwarizmi
+- khwarizmi
 ---
 I studied computer science so you don't have to!
 
