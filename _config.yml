@@ -46,6 +46,9 @@ collections:
   talks:
     output: true
     permalink: /:path/
+  slides:
+    output: true
+    permalink: /:path/
 
 # Build settings
 remote_theme: mmistakes/minimal-mistakes@4.20.2
