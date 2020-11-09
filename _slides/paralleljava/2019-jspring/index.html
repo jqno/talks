@@ -7,14 +7,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../../assets/revealjs-3.8.0/css/reveal.css">
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/reveal.css">
   <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
-  <link rel="stylesheet" href="../../assets/revealjs-3.8.0/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/theme/moon.css" id="theme">
   <link rel="stylesheet" href="../parallel-highlight.css"/>
   <link rel="stylesheet" href="../theme-modifications.css"/>
   <!-- Printing and PDF exports -->
@@ -22,11 +22,11 @@
     var link = document.createElement( 'link' );
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? '../../assets/revealjs-3.8.0/css/print/pdf.css' : '../../assets/revealjs-3.8.0/css/print/paper.css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../../assets/revealjs-3.8.0/css/print/pdf.css' : '../../../assets/revealjs-3.8.0/css/print/paper.css';
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
   <!--[if lt IE 9]>
-  <script src="../../assets/revealjs-3.8.0/lib/js/html5shiv.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/lib/js/html5shiv.js"></script>
   <![endif]-->
 </head>
 <body>
@@ -34,45 +34,51 @@
     <div class="slides">
 
 
-<section><section id="section" class="title-slide slide level1" data-background-image="../images/jfall2019-background.png"><h1></h1><div style="float:left;font-family:TilburgSans">
-<p><img data-src="../images/jfall2019-logo.png" style="height:200px;" /> <br/> #jfall <br/> #paralleljava</p>
-</div>
-<div style="font-family:TilburgSans;font-size:3em;">
-<p>Java from a Parallel Universe</p>
-</div></section><section id="jan-ouwens" class="slide level2">
+<section><section id="java-from-a-parallel-universe" class="title-slide slide level1" data-state="page-title"><h1>Java from a Parallel Universe</h1><p><img data-src="../images/jspring2019.png" style="height:200px;" /></p></section><section id="jan-ouwens" class="slide level2">
 <h2>Jan Ouwens</h2>
 <p><br/><br/><br/><br/></p>
-<p><img data-src="../images/codestar-by-ordina.png" style="height:40px;margin-top:15px;" /> | <a href="https://jqno.nl/equalsverifier">EqualsVerifier</a></p>
+<p><img data-src="../images/codestar.png" style="height:30px;margin-top:5px;" /> | <a href="https://jqno.nl/equalsverifier">EqualsVerifier</a></p>
 <p><img data-src="../images/twitter.png" /> <a href="https://twitter.com/jqno">jqno</a> | <a href="https://jqno.nl">jqno.nl</a></p>
 <p><br/></p>
 <div style="font-family:TilburgsAns;">
-<p>#jfall    #paralleljava</p>
+<p>#jspring    #paralleljava</p>
 </div>
 <div class="preload-background-images">
-<p><img data-src="../images/don-quixote-1.jpg" /></p>
+<p><img data-src="../images/universe.jpg" /></p>
 </div>
-</section><section id="section-1" class="slide level2" data-background="../images/don-quixote-1.jpg">
+</section><section id="section" class="slide level2" data-background-image="../images/universe.jpg" data-background-position="bottom">
 <h2></h2>
-<aside class="notes">
-<ul>
-<li>El ingenioso hidalgo Don Quijote de la Mancha</li>
-<li>Squire</li>
-<li>Inn = castle → knighted</li>
-</ul>
-</aside>
-<div class="preload-background-images">
-<p><img data-src="../images/mill.jpg" /></p>
+</section><section class="slide level2">
+
+<div class="superbig">
+<p>#1</p>
 </div>
-</section><section id="section-2" class="slide level2" data-background="../images/mill.jpg">
-<h2></h2>
-<div class="preload-background-images">
-<p><img data-src="../images/don-quixote-2.jpg" /></p>
+</section><section class="slide level2">
+
+<div class="superbig">
+<p>#10</p>
 </div>
-</section><section id="section-3" class="slide level2" data-background="../images/don-quixote-2.jpg">
-<h2></h2>
-<aside class="notes">
-<p>Don Quixote’s parallel universe</p>
-</aside>
+</section><section class="slide level2">
+
+<div class="superbig">
+<p>#1024579 23508726</p>
+</div>
+</section><section class="slide level2">
+
+<div class="superbig">
+<p>#1024579 2350x10<sup>42</sup></p>
+</div>
+</section><section class="slide level2">
+
+<div class="superbig">
+<p>#1024579 2350x10<sup>∞</sup></p>
+</div>
+</section><section class="slide level2">
+
+<div class="superbig">
+<p>Let me</p>
+<p><strong>help</strong> you</p>
+</div>
 </section><section id="language-of-the-year" class="slide level2">
 <h2>Language of the Year</h2>
 </section><section id="language-of-the-year-1" class="slide level2">
@@ -110,11 +116,7 @@
 </div>
 <p>Java without annotations</p>
 </section></section>
-<section><section id="annotations" class="title-slide slide level1" data-state="page-title"><h1>Annotations</h1><div class="preload-background-images">
-<p><img data-src="../images/mill.jpg" /></p>
-</div></section><section id="annotations-1" class="slide level2" data-background="../images/mill.jpg">
-<h2>Annotations</h2>
-</section><section id="what-are-they" class="slide level2">
+<section><section id="annotations" class="title-slide slide level1" data-state="page-title"><h1>Annotations</h1></section><section id="what-are-they" class="slide level2">
 <h2>What are they?</h2>
 <pre><code class="java" data-trim data-line-numbers>
 @Override
@@ -161,6 +163,7 @@ public class Something { ... }
 <ul>
 <li><strong>2002</strong> → C#</li>
 <li><strong>2004</strong> → Java</li>
+<li><strong>never</strong> → Parallel Java</li>
 </ul>
 </div>
 </section><section id="why-2" class="slide level2">
@@ -218,7 +221,7 @@ public class Something { ... }
 <div class="preload-background-images">
 <p><img data-src="../images/darkmagic.jpg" /></p>
 </div>
-</section><section id="section-4" class="slide level2" data-background="../images/darkmagic.jpg">
+</section><section id="section-1" class="slide level2" data-background="../images/darkmagic.jpg">
 <h2></h2>
 <div class="superbig">
 <p>Dark     magic</p>
@@ -279,9 +282,9 @@ public void waitwhat() { ... }</code></pre>
 java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[public abstract java.util.Collection com.example.petclinic.vet.VetRepository.findAll() throws org.springframework.dao.DataAccessException] caches=[vets] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
     at org.springframework.cache.interceptor.AbstractCacheResolver.resolveCaches(AbstractCacheResolver.java:92) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:252) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.&lt;init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.<init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.&lt;init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.<init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
@@ -318,9 +321,9 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
 java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[public abstract java.util.Collection com.example.petclinic.vet.VetRepository.findAll() throws org.springframework.dao.DataAccessException] caches=[vets] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
     at org.springframework.cache.interceptor.AbstractCacheResolver.resolveCaches(AbstractCacheResolver.java:92) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:252) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.&lt;init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.<init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.&lt;init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.<init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
@@ -397,8 +400,8 @@ WARNING: All illegal access operations will be denied in a future release
 <p><br/></p>
 <p>Just <strong>plain Java</strong></p>
 </section></section>
-<section><section id="testing" class="title-slide slide level1" data-state="page-title"><h1>Testing</h1></section><section id="familiar-java" class="slide level2" data-state="page-bad">
-<h2>Familiar Java</h2>
+<section><section id="testing" class="title-slide slide level1" data-state="page-title"><h1>Testing</h1></section><section id="in-your-universe" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 @Test
@@ -407,8 +410,8 @@ public void indexOfReturnsTheCorrectIndex() {
     assertEquals(6, actual);
 }
 </code></pre>
-</section><section id="familiar-java-1" class="slide level2" data-state="page-bad">
-<h2>Familiar Java</h2>
+</section><section id="in-your-universe-1" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers="1-2">
 @Test
@@ -435,8 +438,8 @@ public void testIndexOfReturnsTheCorrectIndex() {
     assertEquals(6, actual);
 }
 </code></pre>
-</section><section id="parallel-java-1" class="slide level2" data-state="page-good">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 test("indexOf returns the correct index", () -> {
@@ -444,8 +447,8 @@ test("indexOf returns the correct index", () -> {
     assertThat(actual).isEqualTo(6);
 });
 </code></pre>
-</section><section id="parallel-java-2" class="slide level2" data-state="page-good">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe-1" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers="1">
 test("indexOf returns the correct index", () -> {
@@ -477,8 +480,8 @@ test("indexOf returns the correct index", new Runnable() {
     }
 });
 </code></pre>
-</section><section id="parallel-java-3" class="slide level2" data-state="page-good">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe-2" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 test("indexOf returns the correct index", () -> {
@@ -501,8 +504,8 @@ test("indexOf returns the correct index", () -> {
 </ul>
 </div>
 </section></section>
-<section><section id="web" class="title-slide slide level1" data-state="page-title"><h1>Web</h1></section><section id="familiar-java-2" class="slide level2" data-state="page-bad">
-<h2>Familiar Java</h2>
+<section><section id="web" class="title-slide slide level1" data-state="page-title"><h1>Web</h1></section><section id="in-your-universe-2" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 @GetMapping("/todo/{id}")
@@ -510,8 +513,8 @@ public String getTodo(@PathVariable("id") String id) {
     return fetch(id);
 }
 </code></pre>
-</section><section id="familiar-java-3" class="slide level2" data-state="page-bad">
-<h2>Familiar Java</h2>
+</section><section id="in-your-universe-3" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers="1">
 @GetMapping("/todo/{id}")
@@ -519,8 +522,8 @@ public String getTodo(@PathVariable("id") String id) {
     return fetch(id);
 }
 </code></pre>
-</section><section id="familiar-java-4" class="slide level2" data-state="page-bad">
-<h2>Familiar Java</h2>
+</section><section id="in-your-universe-4" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers="2">
 @GetMapping("/todo/{id}")
@@ -528,16 +531,16 @@ public String getTodo(@PathVariable("id") String id) {
     return fetch(id);
 }
 </code></pre>
-</section><section id="parallel-java-4" class="slide level2" data-state="page-good">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe-3" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 get("/todo/:id", (request, response) -> {
     return fetch(request.params("id"));
 });
 </code></pre>
-</section><section id="parallel-java-5" class="slide level2" data-state="page-good">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe-4" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers="1">
 get("/todo/:id", (request, response) -> {
@@ -566,8 +569,8 @@ get("/todo/:id", new Route() {
     }
 });
 </code></pre>
-</section><section id="parallel-java-6" class="slide level2" data-state="page-good">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe-5" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 get("/todo/:id", (request, response) -> {
@@ -628,8 +631,8 @@ before((request, response) -> {
 </ul>
 </div>
 </section></section>
-<section><section id="database" class="title-slide slide level1" data-state="page-title"><h1>Database</h1></section><section id="familiar-java-5" class="slide level2" data-state="page-bad">
-<h2>Familiar Java</h2>
+<section><section id="database" class="title-slide slide level1" data-state="page-title"><h1>Database</h1></section><section id="in-your-universe-5" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 @Entity
@@ -648,8 +651,8 @@ public class Todo {
     }
 }
 </code></pre>
-</section><section id="familiar-java-6" class="slide level2" data-state="page-bad">
-<h2>Familiar Java</h2>
+</section><section id="in-your-universe-6" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers="1-2,4-6,9">
 @Entity
@@ -668,8 +671,8 @@ public class Todo {
     }
 }
 </code></pre>
-</section><section id="familiar-java-7" class="slide level2" data-state="page-bad">
-<h2>Familiar Java</h2>
+</section><section id="in-your-universe-7" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers="7,10">
 @Entity
@@ -688,8 +691,8 @@ public class Todo {
     }
 }
 </code></pre>
-</section><section id="familiar-java-8" class="slide level2" data-state="page-bad">
-<h2>Familiar Java</h2>
+</section><section id="in-your-universe-8" class="slide level2" data-state="page-bad">
+<h2>In your universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers="12-14">
 @Entity
@@ -708,8 +711,8 @@ public class Todo {
     }
 }
 </code></pre>
-</section><section id="parallel-java-7" class="slide level2" data-state="page-good">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe-6" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 public class Todo {
@@ -719,8 +722,8 @@ public class Todo {
     // No default constructor
 }
 </code></pre>
-</section><section id="parallel-java-8" class="slide level2" data-state="page-good">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe-7" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers>
 List&lt;Todo> todos = engine.query(handle -> {
@@ -731,8 +734,8 @@ List&lt;Todo> todos = engine.query(handle -> {
         .list();
 });
 </code></pre>
-</section><section id="parallel-java-9" class="slide level2" data-state="page-good">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe-8" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers="3">
 List&lt;Todo> todos = engine.query(handle -> {
@@ -743,8 +746,8 @@ List&lt;Todo> todos = engine.query(handle -> {
         .list();
 });
 </code></pre>
-</section><section id="parallel-java-10" class="slide level2" data-state="page-good">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe-9" class="slide level2" data-state="page-good">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <pre><code class="java" data-trim data-line-numbers="5">
 List&lt;Todo> todos = engine.query(handle -> {
@@ -811,8 +814,8 @@ engine.execute(handle -> {
 </ul>
 </div>
 </section></section>
-<section><section id="dependency-injection" class="title-slide slide level1" data-state="page-title"><h1>Dependency Injection</h1></section><section id="familiar-java-9" class="slide level2">
-<h2>Familiar Java</h2>
+<section><section id="dependency-injection" class="title-slide slide level1" data-state="page-title"><h1>Dependency Injection</h1></section><section id="in-your-universe-9" class="slide level2">
+<h2>In your universe</h2>
 <p><br/></p>
 <ul>
 <li>Spring</li>
@@ -980,7 +983,7 @@ public class Util {
 <div class="preload-background-images">
 <p><img data-src="../images/boundary.jpg" /></p>
 </div>
-</section><section id="section-5" class="slide level2" data-background="../images/boundary.jpg">
+</section><section id="section-2" class="slide level2" data-background="../images/boundary.jpg">
 <h2></h2>
 </section><section id="di-with-spring-13" class="slide level2">
 <h2>DI with Spring</h2>
@@ -1509,8 +1512,8 @@ com.google.inject.CreationException: Unable to create injector, see the followin
 <p><br/></p>
 <p><strong>Probably</strong> possible?</p>
 </div>
-</section><section id="parallel-java-11" class="slide level2">
-<h2>Parallel Java</h2>
+</section><section id="in-the-parallel-universe-10" class="slide level2">
+<h2>In the parallel universe</h2>
 <p><br/></p>
 <p>Manual DI</p>
 </section><section id="manual-di" class="slide level2" data-state="page-good">
@@ -1809,51 +1812,28 @@ public class Main {
 <p><br/></p>
 <p>Helps when things get <strong>complicated</strong></p>
 </section></section>
-<section><section id="other-annotations" class="title-slide slide level1" data-state="page-title"><h1>Other annotations</h1></section><section id="serialization" class="slide level2" data-state="page-bad">
-<h2>Serialization</h2>
+<section><section id="other-annotations" class="title-slide slide level1" data-state="page-title"><h1>Other annotations</h1></section><section id="bad-annotations" class="slide level2">
+<h2>Bad annotations</h2>
 <ul>
-<li>JSON</li>
-<li>XML</li>
+<li>Serialization</li>
+<li>Validation</li>
+<li>Code generation</li>
 </ul>
-</section><section id="properties" class="slide level2" data-state="page-bad">
-<h2>Properties</h2>
-<ul>
-<li><code>@Value</code></li>
-<li><code>@ConfigurationProperties</code></li>
-</ul>
-</section><section id="code-generation" class="slide level2" data-state="page-bad">
-<h2>Code generation</h2>
-<ul>
-<li>Lombok</li>
-<li>AutoValue</li>
-</ul>
-</section><section id="are-all-annotations-bad" class="slide level2">
-<h2>Are <strong>all</strong> annotations bad?</h2>
-</section><section id="static-analysis" class="slide level2" data-state="page-good">
-<h2>Static analysis</h2>
+</section><section id="so-so-annotations" class="slide level2">
+<h2>So-so annotations</h2>
 <ul>
 <li><code>@NonNull</code></li>
 <li><code>@Immutable</code></li>
-</ul>
-</section><section id="code-meta-data" class="slide level2" data-state="page-good">
-<h2>Code meta-data</h2>
-<ul>
 <li><code>@SuppressWarnings</code></li>
-<li><code>@Deprecated</code></li>
 </ul>
-</section><section id="should-have-been-built-in" class="slide level2" data-state="page-good">
-<h2>Should have been built-in</h2>
+</section><section id="good-annotations" class="slide level2">
+<h2>Good annotations</h2>
 <ul>
 <li><code>@Override</code></li>
-</ul>
-</section><section id="conclusion" class="slide level2">
-<h2>Conclusion</h2>
-<ul>
-<li>Do something <strong>useful</strong></li>
-<li>Can’t <strong>reasonably</strong> be done differently</li>
+<li><code>@Deprecated</code></li>
 </ul>
 </section></section>
-<section><section id="parallel-java-12" class="title-slide slide level1" data-state="page-title"><h1>Parallel Java</h1></section><section id="yeah-right" class="slide level2">
+<section><section id="parallel-java-1" class="title-slide slide level1" data-state="page-title"><h1>Parallel Java</h1></section><section id="yeah-right" class="slide level2">
 <h2>Yeah right</h2>
 </section><section class="slide level2">
 
@@ -2054,12 +2034,10 @@ public class Main {
 <li><a href="http://jdbi.org/">JDBI</a></li>
 <li><a href="https://github.com/jqno/PicoTest">PicoTest</a></li>
 </ul>
-</section><section id="picotest" class="slide level2">
-<h2>PicoTest</h2>
 <div class="preload-background-images">
-<p><img data-src="../images/everyonecancode.jpg" /></p>
+<p><img data-src="../images/universe.jpg" /></p>
 </div>
-</section><section id="picotest-1" class="slide level2" data-background="../images/everyonecancode.jpg">
+</section><section id="picotest" class="slide level2" data-background-image="../images/universe.jpg" data-background-position="bottom">
 <h2>PicoTest</h2>
 </section><section id="code" class="slide level2">
 <h2>Code</h2>
@@ -2070,7 +2048,7 @@ public class Main {
 <li><a href="https://github.com/jqno/picotest">github.com/jqno/picotest</a></li>
 </ul>
 </section></section>
-<section><section id="conclusion-1" class="title-slide slide level1" data-state="page-title"><h1>Conclusion</h1></section><section id="conclusion-2" class="slide level2">
+<section><section id="conclusion" class="title-slide slide level1" data-state="page-title"><h1>Conclusion</h1></section><section id="conclusion-1" class="slide level2">
 <h2>Conclusion</h2>
 <p>Think about your <strong>libraries</strong></p>
 <div class="fragment">
@@ -2078,7 +2056,7 @@ public class Main {
 <p>Do you really need them?</p>
 <p>Are they good citizens?</p>
 </div>
-</section><section id="conclusion-3" class="slide level2">
+</section><section id="conclusion-2" class="slide level2">
 <h2>Conclusion</h2>
 <p>Think about your <strong>frameworks</strong></p>
 <div class="fragment">
@@ -2089,65 +2067,54 @@ public class Main {
 <p>(<a href="https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework">Spring Functional Web Framework</a>)</p>
 </div>
 </div>
-</section><section id="conclusion-4" class="slide level2">
+</section><section id="conclusion-3" class="slide level2">
 <h2>Conclusion</h2>
 <p>Think about your <strong>languages</strong></p>
 <div class="fragment">
 <p>Language of the Year</p>
 </div>
-</section><section id="conclusion-5" class="slide level2">
+</section><section id="conclusion-4" class="slide level2">
 <h2>Conclusion</h2>
 <p>Think about your <strong>languages</strong></p>
 <p>Language of the Year</p>
 <p><strong>Scala</strong></p>
-</section><section id="conclusion-6" class="slide level2">
+</section><section id="conclusion-5" class="slide level2">
 <h2>Conclusion</h2>
 <p>Think about your <strong>languages</strong></p>
 <p>Language of the Year</p>
 <p><strong>Kotlin</strong></p>
-</section><section id="conclusion-7" class="slide level2">
+</section><section id="conclusion-6" class="slide level2">
 <h2>Conclusion</h2>
 <p>Think about your <strong>languages</strong></p>
 <p>Language of the Year</p>
 <div class="superbig">
 <p><strong>Parallel Java</strong></p>
 </div>
-</section><section id="conclusion-8" class="slide level2">
-<h2>Conclusion</h2>
-<div class="superbig">
-<p><strong>fun</strong></p>
-</div>
 <div class="preload-background-images">
-<p><img data-src="../images/mill.jpg" /></p>
+<p><img data-src="../images/universe.jpg" /></p>
 </div>
-</section><section id="conclusion-9" class="slide level2" data-background="../images/mill.jpg">
+</section><section id="conclusion-7" class="slide level2" data-background-image="../images/universe.jpg" data-background-position="bottom">
 <h2>Conclusion</h2>
-<p>Keep fighting those windmills!</p>
-</section><section id="conclusion-10" class="slide level2">
-<h2>Conclusion</h2>
-<p><img data-src="../images/don-quixote-1.jpg" height="400" /></p>
-<p>And read a <strong>good book</strong>!</p>
+<p>Think about your <strong>universe</strong></p>
 </section></section>
-<section id="section-6" class="title-slide slide level1" data-background-image="../images/jfall2019-background.png"><h1></h1><div style="float:left;font-family:TilburgSans">
-<p><img data-src="../images/jfall2019-logo.png" style="height:200px;" /> <br/> #jfall <br/> #paralleljava</p>
+<section id="rate-this-session" class="title-slide slide level1" data-state="page-title"><h1>Rate this session</h1><div class="big">
+<p>in the J-Spring app</p>
 </div>
-<div style="font-family:TilburgSans;font-size:2.2em;">
-<p>Please rate my talk in the official J-Fall app!</p>
-</div></section>
+<p><img data-src="../images/jspring2019.png" style="height:350px;" /></p></section>
 <section id="questions" class="title-slide slide level1" data-state="page-title"><h1>Questions?</h1><p><br/></p>
 <p><img data-src="../images/qr.png" /></p>
 <p><a href="http://jqno.nl/talks/paralleljava">jqno.nl/talks/paralleljava</a></p>
 <div style="font-family:TilburgsAns;">
-<p><img data-src="../images/twitter-dark.png" height="30" /> #paralleljava</p>
+<p><img data-src="../images/twitter-dark.png" height="30" />    #jspring    #paralleljava</p>
 </div>
 <div style="font-size:0.3em;">
-<p>Photo credits: <a href="https://unsplash.com/photos/y_dCjaRWthY">freestocks.org</a>, <a href="https://unsplash.com/photos/Ismnr6WSHCU">Mitch Lensink</a> and <a href="https://unsplash.com/photos/mDinBvq1Sfg">Adi Goldstein</a> on <a href="https://unsplash.com">Unsplash</a>; <a href="https://pixabay.com/photos/mill-wind-grind-tourist-tourism-1745186/">Unknown</a> on <a href="https://pixabay.com">Pixabay</a>; and <a href="https://www.wikiart.org/en/gustave-dore/all-works#!#filterName:Series_don-quixote,resultType:detailed">Gustave Doré</a></p>
+<p>Photo credits: <a href="https://unsplash.com/photos/boNRsEMxPsY">Hafidh Satyanto</a>, <a href="https://unsplash.com/photos/y_dCjaRWthY">freestocks.org</a> and <a href="https://unsplash.com/photos/Ismnr6WSHCU">Mitch Lensink</a> on <a href="https://unsplash.com">Unsplash</a> - Joke credit: <a href="https://www.youtube.com/watch?v=nu_IDIVoZ2Q">Ryan North</a></p>
 </div></section>
     </div>
   </div>
 
-  <script src="../../assets/revealjs-3.8.0/lib/js/head.min.js"></script>
-  <script src="../../assets/revealjs-3.8.0/js/reveal.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/lib/js/head.min.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/js/reveal.js"></script>
 
   <script>
 
@@ -2171,10 +2138,10 @@ public class Main {
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: '../../assets/revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: '../../assets/revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
-          { src: '../../assets/revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
-          { src: '../../assets/revealjs-3.8.0/plugin/notes/notes.js', async: true }
+          { src: '../../../assets/revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../assets/revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/notes/notes.js', async: true }
         ]
       });
     </script>

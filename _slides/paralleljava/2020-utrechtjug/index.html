@@ -7,14 +7,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../../assets/revealjs-3.8.0/css/reveal.css">
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/reveal.css">
   <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
-  <link rel="stylesheet" href="../../assets/revealjs-3.8.0/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/theme/moon.css" id="theme">
   <link rel="stylesheet" href="../parallel-highlight.css"/>
   <link rel="stylesheet" href="../theme-modifications.css"/>
   <!-- Printing and PDF exports -->
@@ -22,11 +22,11 @@
     var link = document.createElement( 'link' );
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? '../../assets/revealjs-3.8.0/css/print/pdf.css' : '../../assets/revealjs-3.8.0/css/print/paper.css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../../assets/revealjs-3.8.0/css/print/pdf.css' : '../../../assets/revealjs-3.8.0/css/print/paper.css';
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
   <!--[if lt IE 9]>
-  <script src="../../assets/revealjs-3.8.0/lib/js/html5shiv.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/lib/js/html5shiv.js"></script>
   <![endif]-->
 </head>
 <body>
@@ -34,13 +34,11 @@
     <div class="slides">
 
 
-<section><section id="java-from-a-parallel-universe" class="title-slide slide level1" data-state="page-title"><h1>Java from a Parallel Universe</h1><p><img data-src="../images/2019-denboschjug.png" style="height:200px;" /></p>
-<div style="font-size:0.3em;">
-<p>inaugural Den Bosch JUG meetup, 25 September 2019</p>
-</div></section><section id="jan-ouwens" class="slide level2">
+<section><section id="java-from-a-parallel-universe" class="title-slide slide level1" data-state="page-title"><h1>Java from a Parallel Universe</h1><p><img data-src="../images/2020-utrechtjug.png" style="height:200px;" /></p>
+<p>20 January 2020</p></section><section id="jan-ouwens" class="slide level2">
 <h2>Jan Ouwens</h2>
 <p><br/><br/><br/><br/></p>
-<p><img data-src="../images/codestar.png" style="height:30px;margin-top:5px;" /> | <a href="https://jqno.nl/equalsverifier">EqualsVerifier</a></p>
+<p><img data-src="../images/codestar-by-ordina.png" style="height:40px;margin-top:15px;" /> | <a href="https://jqno.nl/equalsverifier">EqualsVerifier</a></p>
 <p><img data-src="../images/twitter.png" /> <a href="https://twitter.com/jqno">jqno</a> | <a href="https://jqno.nl">jqno.nl</a></p>
 <p><br/></p>
 <div style="font-family:TilburgsAns;">
@@ -277,9 +275,9 @@ public void waitwhat() { ... }</code></pre>
 java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[public abstract java.util.Collection com.example.petclinic.vet.VetRepository.findAll() throws org.springframework.dao.DataAccessException] caches=[vets] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
     at org.springframework.cache.interceptor.AbstractCacheResolver.resolveCaches(AbstractCacheResolver.java:92) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:252) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.<init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.&lt;init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.<init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.&lt;init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
@@ -316,9 +314,9 @@ java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[p
 java.lang.IllegalArgumentException: Cannot find cache named 'vets' for Builder[public abstract java.util.Collection com.example.petclinic.vet.VetRepository.findAll() throws org.springframework.dao.DataAccessException] caches=[vets] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
     at org.springframework.cache.interceptor.AbstractCacheResolver.resolveCaches(AbstractCacheResolver.java:92) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:252) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.<init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.&lt;init>(CacheAspectSupport.java:707) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
-    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.<init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+    at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.&lt;init>(CacheAspectSupport.java:598) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
     at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
@@ -603,6 +601,16 @@ public String handleGet(Request request, Response response) {
     return fetch(request.params("id"));
 }
 </code></pre>
+</section><section id="use-variables" class="slide level2" data-state="page-good">
+<h2>Use variables</h2>
+<p><br/></p>
+<pre><code class="java" data-trim data-line-numbers>
+public void defineRoutes() {
+    String endpoint = "/todo/";
+    get(endpoint + ":id", this::handleGet);
+    put(endpoint + "update", this::handlePut);
+}
+</code></pre>
 </section><section id="cross-cutting-concerns" class="slide level2" data-state="page-good">
 <h2>Cross-cutting concerns</h2>
 <p><br/></p>
@@ -622,7 +630,7 @@ before((request, response) -> {
 <div class="fragment">
 <ul>
 <li><strong>Pro</strong> clean separation of concerns</li>
-<li><strong>Pro</strong> generate endpoints</li>
+<li><strong>Pro</strong> use variables to generate endpoints</li>
 </ul>
 </div>
 </section></section>
@@ -1500,8 +1508,8 @@ com.google.inject.CreationException: Unable to create injector, see the followin
     at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
 </code></pre>
 </div>
-</section><section id="di-with-spring-28" class="slide level2">
-<h2>DI with Spring</h2>
+</section><section id="di-with-guice-14" class="slide level2">
+<h2>DI with Guice</h2>
 <p>A mistake: cyclic dependencies</p>
 <div class="fragment">
 <p><br/></p>
@@ -1765,7 +1773,7 @@ public class Main {
 <li><strong>Con</strong> some boilerplate</li>
 <li><strong>Con</strong> one dirty class</li>
 </ul>
-<p>over Spring</p>
+<p>over just Spring</p>
 <ul>
 <li><strong>Pro</strong> illegal states unrepresentable</li>
 <li><strong>Pro</strong> problems found at compile time</li>
@@ -1792,20 +1800,6 @@ public class Main {
 <li>Everything is <strong>explicit</strong></li>
 <li>Everything is <strong>in the same place</strong></li>
 </ul>
-</section><section id="pros-cons-9" class="slide level2">
-<h2>Pros &amp; Cons</h2>
-<ul>
-<li><strong>Pro</strong> some boilerplate</li>
-</ul>
-<p><br/></p>
-<p>Helps <strong>discovering</strong> a new project</p>
-</section><section id="pros-cons-10" class="slide level2">
-<h2>Pros &amp; Cons</h2>
-<ul>
-<li><strong>Pro</strong> some boilerplate</li>
-</ul>
-<p><br/></p>
-<p>Helps when things get <strong>complicated</strong></p>
 </section></section>
 <section><section id="other-annotations" class="title-slide slide level1" data-state="page-title"><h1>Other annotations</h1></section><section id="serialization" class="slide level2" data-state="page-bad">
 <h2>Serialization</h2>
@@ -1825,8 +1819,9 @@ public class Main {
 <li>Lombok</li>
 <li>AutoValue</li>
 </ul>
-</section></section>
-<section><section id="are-all-annotations-bad" class="title-slide slide level1"><h1>Are <strong>all</strong> annotations bad?</h1></section><section id="static-analysis" class="slide level2" data-state="page-good">
+</section><section id="are-all-annotations-bad" class="slide level2">
+<h2>Are <strong>all</strong> annotations bad?</h2>
+</section><section id="static-analysis" class="slide level2" data-state="page-good">
 <h2>Static analysis</h2>
 <ul>
 <li><code>@NonNull</code></li>
@@ -1848,6 +1843,7 @@ public class Main {
 <ul>
 <li>Do something <strong>useful</strong></li>
 <li>Can’t <strong>reasonably</strong> be done differently</li>
+<li>Go away at runtime</li>
 </ul>
 </section></section>
 <section><section id="parallel-java-12" class="title-slide slide level1" data-state="page-title"><h1>Parallel Java</h1></section><section id="yeah-right" class="slide level2">
@@ -1862,6 +1858,9 @@ public class Main {
 <h2>TodoBackend.com</h2>
 <p><img data-src="../images/todobackend.png" /></p>
 </section><section id="todobackend.com-1" class="slide level2">
+<h2>TodoBackend.com</h2>
+<p><img data-src="../images/todobackend2.png" /></p>
+</section><section id="todobackend.com-2" class="slide level2">
 <h2>TodoBackend.com</h2>
 <p><strong>fully compliant</strong></p>
 <p><img data-src="../images/todobackend-compliance.png" /></p>
@@ -2137,8 +2136,8 @@ public class Main {
     </div>
   </div>
 
-  <script src="../../assets/revealjs-3.8.0/lib/js/head.min.js"></script>
-  <script src="../../assets/revealjs-3.8.0/js/reveal.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/lib/js/head.min.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/js/reveal.js"></script>
 
   <script>
 
@@ -2152,7 +2151,7 @@ public class Main {
         // Push each slide change to the browser history
         history: true,
         // Enable keyboard shortcuts for navigation
-        keyboard: "{39:'next',37:'prev'}",
+        keyboard: {39:'next',37:'prev'},
         // Vertical centering of slides
         center: false,
         // Transition style
@@ -2162,10 +2161,10 @@ public class Main {
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: '../../assets/revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: '../../assets/revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
-          { src: '../../assets/revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
-          { src: '../../assets/revealjs-3.8.0/plugin/notes/notes.js', async: true }
+          { src: '../../../assets/revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../assets/revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/notes/notes.js', async: true }
         ]
       });
     </script>
