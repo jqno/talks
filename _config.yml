@@ -35,6 +35,11 @@ author:
   twitter          : jqno
   youtube          : "https://www.youtube.com/playlist?list=PLBVdSBwCyRsE7zi7YhfYWua1Jzi_iv1GQ"
 
+footer:
+  links:
+    - label: "Privacy Policy"
+      url: "https://jqno.nl/privacy"
+
 defaults:
   - scope:
       path: ""
