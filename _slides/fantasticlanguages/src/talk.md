@@ -19,9 +19,80 @@ and what to learn from them
 * Language of the Year
 * Change your thinking
 
+# BASIC
+
+![](../images/basic.jpg){ .bigimg }
+
+## BASIC - creator
+
+![](../images/kemeny-kurtz.jpg){ .bigimg }
+
+John Kemeny & Thomas Kurtz
+
+## BASIC - creator
+
+![](../images/kemeny-kurtz.jpg){ .bigimg }
+
+Beard: ❌❌
+
+## BASIC - properties
+
+![](../images/basic.jpg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | weak, static with sigils |
+| Runtime | interpreted |
+| Memory | not much |
+| Appeared in | 1964 |
+
+## BASIC - what does it look like?
+
+```ruby
+10 PRINT "HELLO WORLD"
+```
+
+## BASIC - what does it look like?
+
+```basic
+10 FOR I = 1 to 100
+20 LET S$ = ""
+30 IF I % 3 = 0 THEN LET S$ = S$ + "FIZZ"
+40 IF I % 5 = 0 THEN LET S$ = S$ + "BUZZ"
+50 IF S$ = "" THEN LET S$ = I
+60 PRINT S$
+70 NEXT I
+```
+
+## BASIC - what makes it interesting?
+
+* Easy to learn (at the time)
+* Ran natively on consumer computers
+  * Commodore 64
+  * MSX
+
+## BASIC - what did I learn from it?
+
+Programming!
+
+. . .
+
+![](../images/thesis.jpg){ style="height:9em;" }
+
+::: supersmall
+from my master's thesis
+:::
+
 # Ruby
 
 ![](../images/ruby.svg.png){ .bigimg }
+
+## Ruby - creator
+
+![](../images/matsumoto.jpg){ .bigimg }
+
+Yukihiro Matsumoto
 
 ## Ruby - creator
 
@@ -97,10 +168,14 @@ end
 
 ## Ruby - what did I learn from it?
 
+A new perspective on OO
+
+. . .
+
 The importance of community
 
 ::: small
-[GitHub hack](https://gist.github.com/peternixey/1978249)
+[how it deals with problems](https://gist.github.com/peternixey/1978249)
 :::
 
 ###
