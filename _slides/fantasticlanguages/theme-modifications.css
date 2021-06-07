@@ -1,0 +1,97 @@
+/* Fonts */ @import url("../../assets/fonts.css");
+
+/* General layout */
+
+.reveal {
+  font-family: 'OpenSans';
+}
+
+.reveal h1, .reveal h2 {
+  font-family: 'TilburgsAnsText';
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 50px;
+}
+
+.reveal a {
+  color: #222222;
+}
+
+
+/* Images */
+
+.reveal section img.bigimg {
+  height: 10em;
+}
+
+.reveal section img.cardimg {
+  height: 2em;
+}
+
+.reveal section img {
+  background: none;
+  border: 0;
+  vertical-align: middle;
+  box-shadow: 0px 0px 0px;
+}
+
+
+/* Lists */
+
+.reveal ul {
+  margin-left: 5em;
+  width: 100%;
+}
+
+
+/* Code blocks */
+
+.reveal pre code {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+  font-family: "FiraCode";
+  font-size: 0.8em;
+  margin-top: 75px;
+  max-height: 600px;
+  padding: 10px;
+}
+
+
+/* Various */
+
+.subtitle {
+  font-family: "TilburgsAnsText";
+}
+
+.superbig {
+  font-family: "TilburgsAnsText";
+  font-size: 5em;
+  padding-bottom: 50px;
+}
+
+.big {
+  font-family: "TilburgsAnsText";
+  font-size: 3.5em;
+  padding-bottom: 50px;
+}
+
+.small {
+  font-size: 0.7em;
+}
+
+.supersmall {
+  font-size: 0.3em;
+}
+
+.hashtag {
+  font-family: "TilburgsAnsText";
+  margin: auto;
+  width: 100%;
+  position: fixed;
+  bottom: 25px;
+}
+
+.doesitwork {
+  font-size: 0.7em;
+  position: fixed;
+  bottom: 25px;
+}
