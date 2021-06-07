@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Fantastic languages and what to learn from them</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="../parallel-highlight.css"/>
+  <link rel="stylesheet" href="../theme-modifications.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../../assets/revealjs-3.8.0/css/print/pdf.css' : '../../../assets/revealjs-3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../../../assets/revealjs-3.8.0/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="fantastic-languages" class="title-slide slide level1">
+<h1>Fantastic languages</h1>
+<div class="subtitle">
+<p>and what to learn from them</p>
+</div>
+</section>
+
+<section id="why" class="title-slide slide level1">
+<h1>Why?</h1>
+<ul>
+<li>Language of the Year</li>
+<li>Change your thinking</li>
+</ul>
+</section>
+
+<section>
+<section id="basic" class="title-slide slide level1">
+<h1>BASIC</h1>
+<p><img data-src="../images/basic.jpg" class="bigimg" /></p>
+</section>
+<section id="basic---creator" class="slide level2">
+<h2>BASIC - creator</h2>
+<p><img data-src="../images/kemeny-kurtz.jpg" class="bigimg" /></p>
+<p>John Kemeny &amp; Thomas Kurtz</p>
+</section>
+<section id="basic---creator-1" class="slide level2">
+<h2>BASIC - creator</h2>
+<p><img data-src="../images/kemeny-kurtz.jpg" class="bigimg" /></p>
+<p>Beard: ❌❌</p>
+</section>
+<section id="basic---properties" class="slide level2">
+<h2>BASIC - properties</h2>
+<p><img data-src="../images/basic.jpg" class="cardimg" /></p>
+<table>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Typing</td>
+<td>weak, static with sigils</td>
+</tr>
+<tr class="odd">
+<td>Runtime</td>
+<td>interpreted</td>
+</tr>
+<tr class="even">
+<td>Memory</td>
+<td>not much</td>
+</tr>
+<tr class="odd">
+<td>Appeared in</td>
+<td>1964</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="basic---what-does-it-look-like" class="slide level2">
+<h2>BASIC - what does it look like?</h2>
+<pre class="ruby"><code>10 PRINT &quot;HELLO WORLD&quot;</code></pre>
+</section>
+<section id="basic---what-does-it-look-like-1" class="slide level2">
+<h2>BASIC - what does it look like?</h2>
+<pre class="basic"><code>10 FOR I = 1 to 100
+20 LET S$ = &quot;&quot;
+30 IF I % 3 = 0 THEN LET S$ = S$ + &quot;FIZZ&quot;
+40 IF I % 5 = 0 THEN LET S$ = S$ + &quot;BUZZ&quot;
+50 IF S$ = &quot;&quot; THEN LET S$ = I
+60 PRINT S$
+70 NEXT I</code></pre>
+</section>
+<section id="basic---what-makes-it-interesting" class="slide level2">
+<h2>BASIC - what makes it interesting?</h2>
+<ul>
+<li>Easy to learn (at the time)</li>
+<li>Ran natively on consumer computers
+<ul>
+<li>Commodore 64</li>
+<li>MSX</li>
+</ul></li>
+</ul>
+</section>
+<section id="basic---what-did-i-learn-from-it" class="slide level2">
+<h2>BASIC - what did I learn from it?</h2>
+<p>Programming!</p>
+<div class="fragment">
+<p><img data-src="../images/thesis.jpg" style="height:9em;" /></p>
+<div class="supersmall">
+<p>from my master’s thesis</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="ruby" class="title-slide slide level1">
+<h1>Ruby</h1>
+<p><img data-src="../images/ruby.svg.png" class="bigimg" /></p>
+</section>
+<section id="ruby---creator" class="slide level2">
+<h2>Ruby - creator</h2>
+<p><img data-src="../images/matsumoto.jpg" class="bigimg" /></p>
+<p>Yukihiro Matsumoto</p>
+</section>
+<section id="ruby---creator-1" class="slide level2">
+<h2>Ruby - creator</h2>
+<p><img data-src="../images/matsumoto.jpg" class="bigimg" /></p>
+<p>Beard: ✅</p>
+</section>
+<section id="ruby---properties" class="slide level2">
+<h2>Ruby - properties</h2>
+<p><img data-src="../images/ruby.svg.png" class="cardimg" /></p>
+<table>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Typing</td>
+<td>strong, duck</td>
+</tr>
+<tr class="odd">
+<td>Runtime</td>
+<td>interpreted</td>
+</tr>
+<tr class="even">
+<td>Memory</td>
+<td>managed</td>
+</tr>
+<tr class="odd">
+<td>Appeared in</td>
+<td>1995</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ruby---what-does-it-look-like" class="slide level2">
+<h2>Ruby - what does it look like?</h2>
+<pre class="ruby"><code>puts &quot;Hello World&quot;</code></pre>
+</section>
+<section id="ruby---what-does-it-look-like-1" class="slide level2">
+<h2>Ruby - what does it look like?</h2>
+<pre class="ruby"><code>1.upto 100 do |i|
+  string = &quot;&quot;
+
+  string += &quot;Fizz&quot; if i % 3 == 0
+  string += &quot;Buzz&quot; if i % 5 == 0
+  string = i.to_s if string == &quot;&quot;
+
+  puts &quot;#{i} = #{string}&quot;
+end</code></pre>
+</section>
+<section id="ruby---what-makes-it-interesting" class="slide level2">
+<h2>Ruby - what makes it interesting?</h2>
+<p>Beautifully consistent OO model</p>
+<ul>
+<li><code>Class</code> is an object</li>
+<li><code>Object</code> is a class</li>
+</ul>
+</section>
+<section id="ruby---what-makes-it-interesting-1" class="slide level2">
+<h2>Ruby - what makes it interesting?</h2>
+<p>Beautifully extensible OO model</p>
+<pre class="ruby"><code>class Integer
+  def to_xml
+    &quot;&lt;int&gt;#{self}&lt;/int&gt;&quot;
+  end
+end
+
+puts 10.to_xml</code></pre>
+</section>
+<section id="ruby---what-makes-it-interesting-2" class="slide level2">
+<h2>Ruby - what makes it interesting?</h2>
+<p>Beautifully <em>explosive?</em> OO model</p>
+<pre class="ruby"><code>class Module
+  alias private_old private
+  alias public_old public
+  alias private public_old
+  alias public private_old
+end</code></pre>
+</section>
+<section id="ruby---what-did-i-learn-from-it" class="slide level2">
+<h2>Ruby - what did I learn from it?</h2>
+<p>A new perspective on OO</p>
+<div class="fragment">
+<p>The importance of community</p>
+<div class="small">
+<p><a href="https://gist.github.com/peternixey/1978249">how it deals with problems</a></p>
+</div>
+<h3 id="section"></h3>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../../../assets/revealjs-3.8.0/lib/js/head.min.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+        // Display a presentation progress bar
+        progress: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: {39:'next',37:'prev',48:()=>{Reveal.slide(0,0,0)}},
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../../../assets/revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../assets/revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
