@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 PRESENTATION=$1
 if [ -z "$PRESENTATION" ]; then
