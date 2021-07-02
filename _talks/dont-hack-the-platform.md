@@ -25,6 +25,7 @@ In all seriousness, this talk will provide awareness about some of the lesser-kn
 * All **hacks** can be found on [github](https://github.com/jqno/dont-hack-the-platform-talk)
 
 ## Deliveries
+* _2 July 2021_, Mendix Runtime Guild: [[slides](https://jqno.nl/dont-hack-the-platform-talk/2021-07-02-mendix)] [[github](https://github.com/jqno/dont-hack-the-platform-talk/tree/2021-07-02-mendix)]
 * _14 September 2020_, GOTO Nights: [[event](https://www.meetup.com/GOTO-Nights-Amsterdam/events/273095070/)] [[slides](https://jqno.nl/dont-hack-the-platform-talk/2020-09-14-goto-nights)] [[github](https://github.com/jqno/dont-hack-the-platform-talk/tree/2020-09-14-goto-nights)]
 * _8 February 2019_, Clean Architecture with Uncle Bob: [[event](https://www.meetup.com/Utrecht-Java-User-Group/events/257794904/)] [[slides](https://jqno.nl/dont-hack-the-platform-talk/2019-02-08-uncle-bob-utrecht)] [[github](https://github.com/jqno/dont-hack-the-platform-talk/tree/2019-02-08-uncle-bob-utrecht)]
 * _8 November 2018_, J-Fall Netherlands: [[event](https://jfall.nl/sessions/dont-hack-the-jvm/)] [[slides](http://jqno.nl/dont-hack-the-platform-talk/2018-11-08-jfall/)] [[github](https://github.com/jqno/dont-hack-the-platform-talk/tree/2018-11-08-jfall)] [[video](https://www.youtube.com/watch?v=3750lsxn8m8)]
