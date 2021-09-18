@@ -14,10 +14,40 @@ center: "false"
 and what to learn from them
 :::
 
-# Why?
+## Why?
 
 * Language of the Year
 * Change your thinking
+
+## ∀ language
+
+::: supersmall
+in increasing order of length
+:::
+
+* Who?
+* Beard?
+* Pretty?
+* Interesting?
+* Changed my thinking?
+
+## Beard 🧔 !?
+
+::: small
+viral in 2008:
+:::
+
+Computer languages and facial hair [🔗](https://web.archive.org/web/20081013115149/http://blogs.microsoft.co.il/blogs/tamir/archive/2008/04/28/computer-languages-and-facial-hair-take-two.aspx)
+
+![](../images/beards.png)
+
+# Jan Ouwens
+
+![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
+
+![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
+
+![](../images/twitter.png){ style="height:30px;" } #fantasticlanguages
 
 # BASIC
 
@@ -180,6 +210,14 @@ The importance of community
 
 ## FIN
 
-More content to be added later
+![](../images/qr.png)
+
+[jqno.nl/talks/fantasticlanguages](https://jqno.nl/talks/fantasticlanguages)
+
+![](../images/twitter.png){ height=30px } #fantasticlanguages
+
+::: supersmall
+image credits: see website
+:::
 
 ###
