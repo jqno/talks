@@ -1,12 +1,12 @@
 /* Fonts */
 
-@import url("fonts.css");
+@import url("../../assets/fonts.css");
 
 /* General layout */
 
 .reveal {
   color: #eee8d5;
-  font-family: 'Gill Sans';
+  font-family: 'Open Sans';
 }
 
 .reveal h1, .reveal h2 {
