@@ -204,6 +204,8 @@ public class S06 {
         stopHere();
 
 
+        uniquePointList.clear();
+
         /*
          * And how many in this one?
          */
