@@ -3,8 +3,8 @@ package nl.jqno.equalsverifier.talk;
 import static nl.jqno.equalsverifier.talk.helper.StopHere.stopHere;
 import static org.junit.Assert.assertTrue;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.talk.helper.Color;
-import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
 
 public class S05 {
     public static void main(String...args) {
