@@ -1,223 +1,263 @@
 package nl.jqno.equalsverifier.talk;
 
+import static nl.jqno.equalsverifier.talk.helper.StopHere.stopHere;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
-import nl.jqno.equalsverifier.talk.S05.Point;
 import nl.jqno.equalsverifier.talk.helper.Color;
 
-import org.junit.Test;
-
 public class S06 {
+    public static void main(String...args) {
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
-	 * We can fix that!
-	 * 
-	 * We'll use the previous slide's Point, and define a new ColorPoint.
-	 */
-	public class ColorPoint extends Point {
-		private final Color color;
-		
-		public ColorPoint(int x, int y, Color color) {
-			super(x, y);
-			this.color = color;
-		}
-		
-		@Override
-		public int hashCode() {
-			return 53 * (53 + super.hashCode()) + color.hashCode();
-		}
-		
-		@Override
-		public String toString() {
-			return String.format("ColorPoint: %s,%s,%s", x, y, color);
-		}
-		
-		@Override
-		public boolean equals(Object obj) {
-	        if (obj instanceof ColorPoint) {
-	            ColorPoint other = (ColorPoint)obj;
-	            return color.equals(other.color) && super.equals(other);
-	        }
-	        else if (obj instanceof Point) {
-	        	/*
-	        	 * If it's a Point, but not a ColorPoint,
-	        	 * let's just call the Point's equals method!
-	        	 */
-	            Point other = (Point)obj;
-	            return other.equals(this);
-	        }
-	        return false;
-		}
-	}	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	private Point simplePoint     = new      Point(0, 1);
-	private ColorPoint colorPoint = new ColorPoint(0, 1, Color.RED);
-	
-	/*
-	 * It's symmetrical now!
-	 */
-	@Test
-	public void symmetry() {
-		assertTrue(simplePoint.equals(colorPoint));
-		assertTrue(colorPoint.equals(simplePoint));
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
-	 * However... is it transitive?
-	 */
-	private ColorPoint redPoint   = new ColorPoint(0, 1, Color.RED);
-	private ColorPoint greenPoint = new ColorPoint(0, 1, Color.GREEN);
-	
-//	@Test
-	public void transitivity() {
-		assertTrue(redPoint.equals(simplePoint));   // Apple  == Banana
-		assertTrue(simplePoint.equals(greenPoint)); // Banana == Orange
-		
-		assertTrue(redPoint.equals(greenPoint));    // Apple  == Orange
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
-	 * Again... why do we care?
-	 */
-	private List<Point> uniquePointList = new ArrayList<>();
-	public void addToUniquePointList(Point p) {
-		if (!uniquePointList.contains(p)) {
-			uniquePointList.add(p);
-		}
-	}
-	
-//	@Test
-	public void how_many_items_in_this_collection() {
-		addToUniquePointList(redPoint);
-		addToUniquePointList(simplePoint);
-		addToUniquePointList(greenPoint);
-		assertEquals(/*???*/ -1, uniquePointList.size());
-	}
-	
-//	@Test
-	public void and_how_many_in_this_one() {
-		addToUniquePointList(simplePoint);
-		addToUniquePointList(redPoint);
-		addToUniquePointList(greenPoint);
-		assertEquals(/*???*/ -1, uniquePointList.size());
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
-	 * Again: EqualsVerifier catches this.
-	 */
-//	@Test
-	public void equalsverifier() {
-		EqualsVerifier.forClass(ColorPoint.class)
-				.verify();
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+        /*
+         * Exactly the same Point as in the previous slide...
+         */
+        class Point {
+            protected final int x;
+            protected final int y;
+
+            public Point(int x, int y) {
+                this.x = x;
+                this.y = y;
+            }
+
+            @Override
+            public int hashCode() {
+                return 53 * (53 + x) + y;
+            }
+
+            @Override
+            public String toString() {
+                return String.format("Point: %s,%s", x, y);
+            }
+
+            @Override
+            public boolean equals(Object obj) {
+                if (!(obj instanceof Point)) {
+                    return false;
+                }
+                Point other = (Point)obj;
+                return x == other.x && y == other.y;
+            }
+        }
+
+
+
+
+
+
+
+
+
+        /*
+         * We can fix symmetry!
+         */
+        class ColorPoint extends Point {
+            private final Color color;
+
+            public ColorPoint(int x, int y, Color color) {
+                super(x, y);
+                this.color = color;
+            }
+
+            @Override
+            public int hashCode() {
+                return 53 * (53 + super.hashCode()) + color.hashCode();
+            }
+
+            @Override
+            public String toString() {
+                return String.format("ColorPoint: %s,%s,%s", x, y, color);
+            }
+
+            @Override
+            public boolean equals(Object obj) {
+                if (obj instanceof ColorPoint) {
+                    ColorPoint other = (ColorPoint)obj;
+                    return color.equals(other.color) && super.equals(other);
+                }
+                else if (obj instanceof Point) {
+                    /*
+                     * If it's a Point, but not a ColorPoint,
+                     * let's just call the Point's equals method!
+                     */
+                    Point other = (Point)obj;
+                    return other.equals(this);
+                }
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Point simplePoint     = new      Point(0, 1);
+        ColorPoint colorPoint = new ColorPoint(0, 1, Color.RED);
+
+        /*
+         * It's symmetrical now!
+         */
+        assertTrue(simplePoint.equals(colorPoint));
+        assertTrue(colorPoint.equals(simplePoint));
+
+        stopHere();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
+         * However... is it transitive?
+         */
+        ColorPoint redPoint   = new ColorPoint(0, 1, Color.RED);
+        ColorPoint greenPoint = new ColorPoint(0, 1, Color.GREEN);
+
+        assertTrue(redPoint.equals(simplePoint));   // Apple  == Banana
+        assertTrue(simplePoint.equals(greenPoint)); // Banana == Orange
+
+        stopHere();
+
+        assertTrue(redPoint.equals(greenPoint));    // Apple  == Orange
+
+        stopHere();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
+         * Again... why do we care?
+         */
+        List<Point> uniquePointList = new ArrayList<>();
+        Consumer<Point> addToUniquePointList = p -> {
+            if (!uniquePointList.contains(p)) {
+                uniquePointList.add(p);
+            }
+        };
+
+        /*
+         * How many items in this collection?
+         */
+        addToUniquePointList.accept(redPoint);
+        addToUniquePointList.accept(simplePoint);
+        addToUniquePointList.accept(greenPoint);
+        assertEquals(/*???*/ -1, uniquePointList.size());
+
+        stopHere();
+
+
+        /*
+         * And how many in this one?
+         */
+        addToUniquePointList.accept(simplePoint);
+        addToUniquePointList.accept(redPoint);
+        addToUniquePointList.accept(greenPoint);
+        assertEquals(/*???*/ -1, uniquePointList.size());
+
+        stopHere();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
+         * Again: EqualsVerifier catches this.
+         */
+        EqualsVerifier.forClass(ColorPoint.class)
+            .verify();
+
+        stopHere();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 }

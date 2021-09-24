@@ -1,6 +1,7 @@
 package nl.jqno.equalsverifier.talk.helper;
 
 import nl.jqno.equalsverifier.Warning;
+import nl.jqno.equalsverifier.api.SingleTypeEqualsVerifierApi;
 
 /*
  * OK, OK, I'm cheating a bit here:
@@ -9,7 +10,7 @@ import nl.jqno.equalsverifier.Warning;
  * No need to show this to the audience. :P
  */
 public class EqualsVerifier {
-	public static <T> nl.jqno.equalsverifier.EqualsVerifier<T> forClass(Class<T> type) {
-		return nl.jqno.equalsverifier.EqualsVerifier.forClass(type).suppress(Warning.STRICT_INHERITANCE, Warning.NULL_FIELDS);
-	}
+    public static <T> SingleTypeEqualsVerifierApi<T> forClass(Class<T> type) {
+        return nl.jqno.equalsverifier.EqualsVerifier.forClass(type).suppress(Warning.STRICT_INHERITANCE, Warning.NULL_FIELDS);
+    }
 }
