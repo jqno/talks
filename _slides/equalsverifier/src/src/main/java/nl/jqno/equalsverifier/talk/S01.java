@@ -181,5 +181,37 @@ public class S01 {
 
 
 
+        /*
+         * Here's a prettier implementation (Java 16+)
+         */
+
+        /*
+            @Override
+            public boolean equals(Object obj) {
+                return obj instanceof Point other &&
+                    x == other.x &&
+                    y == other.y;
+            }
+        */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
