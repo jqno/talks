@@ -75,6 +75,13 @@ public class S09 {
 
         /*
          * But it's not trivial.
+         *
+         *
+         *
+         *
+         * The trick is:
+         *
+         * Ask the other object if it's willing to be equal with me.
          */
 
 

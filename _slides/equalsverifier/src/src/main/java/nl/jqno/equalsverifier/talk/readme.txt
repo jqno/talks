@@ -8,4 +8,5 @@ Slide  6: transitivity
 Slide  7: getClass
 Slide  8: Liskov Substitution Principle
 Slide  9: canEqual
-Slide 10: summary
+Slide 10: concluding
+Slide 11: summary

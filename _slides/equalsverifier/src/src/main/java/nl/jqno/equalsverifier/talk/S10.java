@@ -1,6 +1,11 @@
 package nl.jqno.equalsverifier.talk;
 
+import static nl.jqno.equalsverifier.talk.helper.StopHere.stopHere;
+
+import nl.jqno.equalsverifier.EqualsVerifier;
+
 public class S10 {
+    public static void main(String... args) {
 
 
 
@@ -11,32 +16,43 @@ public class S10 {
 
 
 
-    /*
-     * Summary:
-     *
-     * - Make sure you follow the contracts.
-     *
-     * - Use final:
-     *   - use it on fields.
-     *   - use it on methods.
-     *   - use it on classes.
-     *   - use it on ALL THE THINGS.
-     *   - final should be your default; deviate ONLY when necessary.
-     *   - this is your mantra.
-     *
-     * - Use instanceof, not getClass().
-     *
-     * - If you can't avoid adding state to subclasses, use canEqual.
-     *
-     * - EqualsVerifier helps you find problems.
-     */
+        /*
+         * Concluding:
+         */
+        class Point {
 
+            private final int x;
+            private final int y;
 
+            public Point(int x, int y) {
+                this.x = x;
+                this.y = y;
+            }
 
+            @Override
+            public final boolean equals(Object obj) {
+                if (!(obj instanceof Point)) {
+                    return false;
+                }
+                Point other = (Point)obj;
+                return x == other.x && y == other.y;
+            }
 
+            @Override
+            public final int hashCode() {
+                return 53 * (53 + x) + y;
+            }
 
+            @Override
+            public String toString() {
+                return "Point: " + x + "," + y;
+            }
+        }
 
+        EqualsVerifier.forClass(Point.class)
+            .verify();
 
+        stopHere();
 
 
 
@@ -50,78 +66,15 @@ public class S10 {
 
 
 
-    /*
-     * Thank you!
-     *
-     * Do I still have time for questions?
-     */
 
 
-    /*
-     * References:
-     *
-     * - "How to Write an Equality Method in Java" by Odersky, Spoon & Venners
-     *   http://www.artima.com/lejava/articles/equality.html
-     *
-     * - Effective Java, by Joshua Bloch
-     *
-     * - Project Lombok issue tracker
-     *   https://github.com/projectlombok/lombok/issues/660
-     *
-     * - EqualsVerifier, by me :)
-     *   http://www.jqno.nl/equalsverifier
-     *
-     * - This presentation:
-     *   http://jqno.nl/talks/equalsverifier
-     */
+        /*
+         * Correct! And simple.
+         */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*            ________  ______  __    __
-     *           |        \|      \|  \  |  \
-     *           | $$$$$$$$ \$$$$$$| $$\ | $$
-     *           | $$__      | $$  | $$$\| $$
-     *           | $$  \     | $$  | $$$$\ $$
-     *           | $$$$$     | $$  | $$\$$ $$
-     *           | $$       _| $$_ | $$ \$$$$
-     *           | $$      |   $$ \| $$  \$$$
-     *            \$$       \$$$$$$ \$$   \$$
-     */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 }

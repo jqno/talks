@@ -26,8 +26,31 @@ public class S08 {
          */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /*
-         * This is the basis for all of Object-Oriented Programming.
+         * This is the basis for all of Object-Oriented Programming
+         *
+         *
+         *  S
+         *  O
+         *  L iskov Substitution Principle
+         *  I
+         *  D
+         *
          */
 
 
