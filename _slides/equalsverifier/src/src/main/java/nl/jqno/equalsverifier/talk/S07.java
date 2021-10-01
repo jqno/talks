@@ -19,6 +19,8 @@ public class S07 {
 
         /*
          * Oh, I know... let's use getClass() instead of instanceof!
+         *
+         * It's IntelliJ's default for a reason!
          */
         class Point {
             private final int x;
@@ -34,16 +36,13 @@ public class S07 {
                 return 53 * (53 + x) + y;
             }
 
+            // 👇 GENERATED (not accepting subclasses) 👇
             @Override
-            public boolean equals(Object obj) {
-                /*
-                 * Don't forget the null check!
-                 */
-                if (obj == null || getClass() != obj.getClass()) {
-                    return false;
-                }
-                Point other = (Point)obj;
-                return x == other.x && y == other.y;
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (o == null || getClass() != o.getClass()) return false;
+                Point point = (Point) o;
+                return x == point.x && y == point.y;
             }
         }
 
@@ -82,13 +81,14 @@ public class S07 {
                 return 53 * (53 + super.hashCode()) + color.hashCode();
             }
 
+            // 👇 GENERATED (not accepting subclasses) 👇
             @Override
-            public boolean equals(Object obj) {
-                if (obj == null || getClass() != obj.getClass()) {
-                    return false;
-                }
-                ColorPoint other = (ColorPoint)obj;
-                return color.equals(other.color) && super.equals(obj);
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (o == null || getClass() != o.getClass()) return false;
+                if (!super.equals(o)) return false;
+                ColorPoint that = (ColorPoint) o;
+                return color == that.color;
             }
         }
 

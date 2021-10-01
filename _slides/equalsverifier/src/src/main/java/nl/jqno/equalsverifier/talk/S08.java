@@ -92,13 +92,13 @@ public class S08 {
                 return String.format("%s: %s,%s", getClass().getSimpleName(), x, y);
             }
 
+            // 👇 GENERATED (not accepting subclasses) 👇
             @Override
-            public final boolean equals(Object obj) {
-                if (obj == null || getClass() != obj.getClass()) {
-                    return false;
-                }
-                Point other = (Point)obj;
-                return x == other.x && y == other.y;
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (o == null || getClass() != o.getClass()) return false;
+                Point point = (Point) o;
+                return x == point.x && y == point.y;
             }
         }
 
@@ -170,13 +170,13 @@ public class S08 {
 
 
         /*
+            // 👇 GENERATED (not accepting subclasses) 👇
             @Override
-            public final boolean equals(Object obj) {
-                if (!(obj instanceof Point)) {
-                    return false;
-                }
-                Point other = (Point)obj;
-                return x == other.x && y == other.y;
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (!(o instanceof Point)) return false;
+                Point point = (Point) o;
+                return x == point.x && y == point.y;
             }
         */
 
