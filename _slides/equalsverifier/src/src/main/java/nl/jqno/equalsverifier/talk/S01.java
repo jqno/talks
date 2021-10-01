@@ -122,7 +122,7 @@ public class S01 {
 
 
         /*
-         * Once more, with EqualsVerifier.
+         * Get a better error message.
          */
         EqualsVerifier.forClass(Point.class)
             .verify();
@@ -206,6 +206,16 @@ public class S01 {
 
 
 
+
+
+
+
+
+
+
+        /*
+         * Reflexivity
+         */
 
 
 

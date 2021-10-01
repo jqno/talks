@@ -282,5 +282,13 @@ public class S03 {
 
 
 
+        /*
+         * Consistency
+         */
+
+
+
+
+
     }
 }
