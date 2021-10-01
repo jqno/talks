@@ -1,6 +1,16 @@
 package nl.jqno.equalsverifier.talk;
 
 public class S11 {
+
+
+
+
+
+
+
+
+
+
     /*
      * Summary:
      *
@@ -21,6 +31,26 @@ public class S11 {
      * - EqualsVerifier helps you find problems.
      */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*
      * References:
      *
@@ -39,6 +69,25 @@ public class S11 {
      *   http://jqno.nl/talks/equalsverifier
      */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*            ________  ______  __    __
      *           |        \|      \|  \  |  \
      *           | $$$$$$$$ \$$$$$$| $$\ | $$
@@ -52,5 +101,24 @@ public class S11 {
      *
      *       http://jqno.nl/talks/equalsverifier
      */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
