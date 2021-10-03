@@ -5,7 +5,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.function.Consumer;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
@@ -121,8 +120,8 @@ public class S06 {
 
 
 
-        Point simplePoint     = new      Point(0, 1);
-        ColorPoint colorPoint = new ColorPoint(0, 1, Color.RED);
+        var simplePoint = new      Point(0, 1);
+        var colorPoint  = new ColorPoint(0, 1, Color.RED);
 
         /*
          * It's symmetrical now!
@@ -153,8 +152,8 @@ public class S06 {
         /*
          * However... is it transitive?
          */
-        ColorPoint redPoint   = new ColorPoint(0, 1, Color.RED);
-        ColorPoint greenPoint = new ColorPoint(0, 1, Color.GREEN);
+        var redPoint   = new ColorPoint(0, 1, Color.RED);
+        var greenPoint = new ColorPoint(0, 1, Color.GREEN);
 
         assertTrue(redPoint.equals(simplePoint));   // Apple  == Banana
         assertTrue(simplePoint.equals(greenPoint)); // Banana == Orange
@@ -186,7 +185,7 @@ public class S06 {
         /*
          * Again... why do we care?
          */
-        List<Point> uniquePointList = new ArrayList<>();
+        var uniquePointList = new ArrayList<Point>();
         Consumer<Point> addToUniquePointList = p -> {
             if (!uniquePointList.contains(p)) {
                 uniquePointList.add(p);

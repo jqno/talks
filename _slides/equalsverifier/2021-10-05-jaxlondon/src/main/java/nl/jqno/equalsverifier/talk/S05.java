@@ -127,8 +127,8 @@ public class S05 {
         /*
          * OK, let's define some test data.
          */
-        Point simplePoint     = new      Point(0, 1);
-        ColorPoint colorPoint = new ColorPoint(0, 1, Color.RED);
+        var simplePoint = new      Point(0, 1);
+        var colorPoint  = new ColorPoint(0, 1, Color.RED);
 
 
 

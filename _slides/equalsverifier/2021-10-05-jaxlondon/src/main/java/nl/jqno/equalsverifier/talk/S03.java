@@ -4,7 +4,6 @@ import static nl.jqno.equalsverifier.talk.helper.StopHere.stopHere;
 import static org.junit.Assert.assertTrue;
 
 import java.util.HashSet;
-import java.util.Set;
 
 import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
 
@@ -78,8 +77,8 @@ public class S03 {
          *
          * Well...
          */
-        Point p = new Point(0, 1);
-        Set<Point> set = new HashSet<>();
+        var p = new Point(0, 1);
+        var set = new HashSet<Point>();
         set.add(p);
 
 
@@ -127,7 +126,7 @@ public class S03 {
         p.setX(1337);
 
         boolean found = false;
-        for (Point maybe : set) {
+        for (var maybe : set) {
             if (maybe.equals(p)) {
                 found = true;
             }

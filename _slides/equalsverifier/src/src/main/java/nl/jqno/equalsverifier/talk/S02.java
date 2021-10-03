@@ -4,7 +4,6 @@ import static nl.jqno.equalsverifier.talk.helper.StopHere.stopHere;
 import static org.junit.Assert.assertTrue;
 
 import java.util.HashSet;
-import java.util.Set;
 
 import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
 
@@ -70,8 +69,8 @@ public class S02 {
         /*
          * Two equal points.
          */
-        Point p1 = new Point(0, 1);
-        Point p2 = new Point(0, 1);
+        var p1 = new Point(0, 1);
+        var p2 = new Point(0, 1);
 
 
 
@@ -97,7 +96,7 @@ public class S02 {
          *
          * Well... can the object be found in a hash-based collection?
          */
-        Set<Point> set = new HashSet<>();
+        var set = new HashSet<Point>();
         set.add(p1);
 
         assertTrue(set.contains(p2));  //  <-- Fails... PROBABLY.

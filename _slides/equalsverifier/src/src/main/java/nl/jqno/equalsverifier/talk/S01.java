@@ -6,7 +6,6 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
 
@@ -61,9 +60,9 @@ public class S01 {
         /*
          * Let's create some example data.
          */
-        Point p1 = new Point(0, 1);
-        Point p2 = new Point(0, 1);
-        Point p3 = new Point(1, 2);
+        var p1 = new Point(0, 1);
+        var p2 = new Point(0, 1);
+        var p3 = new Point(1, 2);
 
 
         /*
@@ -95,7 +94,7 @@ public class S01 {
         /*
          * Well... no. No it doesn't. :(
          */
-        List<Point> list = new ArrayList<>();
+        var list = new ArrayList<Point>();
         list.add(p1);
 
         assertTrue(list.contains(p2));
