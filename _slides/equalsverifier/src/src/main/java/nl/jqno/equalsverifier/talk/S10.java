@@ -31,11 +31,9 @@ public class S10 {
 
             @Override
             public final boolean equals(Object obj) {
-                if (!(obj instanceof Point)) {
-                    return false;
-                }
-                Point other = (Point)obj;
-                return x == other.x && y == other.y;
+                return obj instanceof Point other &&
+                    x == other.x &&
+                    y == other.y;
             }
 
             @Override
