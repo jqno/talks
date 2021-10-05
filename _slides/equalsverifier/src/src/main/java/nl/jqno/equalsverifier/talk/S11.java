@@ -1,6 +1,16 @@
 package nl.jqno.equalsverifier.talk;
 
 public class S11 {
+
+
+
+
+
+
+
+
+
+
     /*
      * Summary:
      *
@@ -21,23 +31,59 @@ public class S11 {
      * - EqualsVerifier helps you find problems.
      */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*
      * References:
      *
+     * - Effective Java, by Joshua Bloch
+     *
      * - "How to Write an Equality Method in Java" by Odersky, Spoon & Venners
      *   http://www.artima.com/lejava/articles/equality.html
-     *
-     * - Effective Java, by Joshua Bloch
      *
      * - Project Lombok issue tracker
      *   https://github.com/projectlombok/lombok/issues/660
      *
      * - EqualsVerifier, by me :)
      *   http://www.jqno.nl/equalsverifier
-     *
-     * - This presentation:
-     *   http://jqno.nl/talks/equalsverifier
      */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /*            ________  ______  __    __
      *           |        \|      \|  \  |  \
@@ -51,6 +97,28 @@ public class S11 {
      *
      *
      *       http://jqno.nl/talks/equalsverifier
+     *
+     *                           -by- Jan Ouwens
+     *                                @jqno
      */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

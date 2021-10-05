@@ -54,19 +54,16 @@ public class S11 {
     /*
      * References:
      *
+     * - Effective Java, by Joshua Bloch
+     *
      * - "How to Write an Equality Method in Java" by Odersky, Spoon & Venners
      *   http://www.artima.com/lejava/articles/equality.html
-     *
-     * - Effective Java, by Joshua Bloch
      *
      * - Project Lombok issue tracker
      *   https://github.com/projectlombok/lombok/issues/660
      *
      * - EqualsVerifier, by me :)
      *   http://www.jqno.nl/equalsverifier
-     *
-     * - This presentation:
-     *   http://jqno.nl/talks/equalsverifier
      */
 
 
@@ -100,6 +97,9 @@ public class S11 {
      *
      *
      *       http://jqno.nl/talks/equalsverifier
+     *
+     *                           -by- Jan Ouwens
+     *                                @jqno
      */
 
 
