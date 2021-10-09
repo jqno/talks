@@ -7,8 +7,8 @@ progress: "false"
 controls: "false"
 center: "false"
 ---
-
 # Fantastic languages
+<!-- markdownlint-disable MD045 -->
 
 ::: subtitle
 and what to learn from them
@@ -81,18 +81,13 @@ Beard: ❌❌
 
 ```ruby
 10 PRINT "HELLO WORLD"
-```
-
-## BASIC - what does it look like?
-
-```basic
-10 FOR I = 1 to 100
-20 LET S$ = ""
-30 IF I % 3 = 0 THEN LET S$ = S$ + "FIZZ"
-40 IF I % 5 = 0 THEN LET S$ = S$ + "BUZZ"
-50 IF S$ = "" THEN LET S$ = I
-60 PRINT S$
-70 NEXT I
+20 FOR I = 1 to 100
+30 LET S$ = ""
+40 IF I % 3 = 0 THEN LET S$ = S$ + "FIZZ"
+50 IF I % 5 = 0 THEN LET S$ = S$ + "BUZZ"
+60 IF S$ = "" THEN LET S$ = I
+70 PRINT S$
+80 NEXT I
 ```
 
 ## BASIC - what makes it interesting?
@@ -146,11 +141,7 @@ Beard: ✅
 
 ```ruby
 puts "Hello World"
-```
 
-## Ruby - what does it look like?
-
-```ruby
 1.upto 100 do |i|
   string = ""
 
@@ -171,7 +162,7 @@ Beautifully consistent OO model
 
 ## Ruby - what makes it interesting?
 
-Beautifully extensible OO model
+Beautifully extendable OO model
 
 ```ruby
 class Integer
@@ -208,7 +199,7 @@ The importance of community
 [how it deals with problems](https://gist.github.com/peternixey/1978249)
 :::
 
-## FIN
+# FIN
 
 ![](../images/qr.png)
 
@@ -219,5 +210,3 @@ The importance of community
 ::: supersmall
 image credits: see website
 :::
-
-###
