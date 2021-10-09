@@ -189,10 +189,6 @@ end
 
 ## Ruby - what did I learn from it?
 
-A new perspective on OO
-
-. . .
-
 The importance of community
 
 ::: small
