@@ -2,12 +2,14 @@
 title: "My talks"
 permalink: /
 ---
-![](assets/devoxx.jpg)
+![devoxx](assets/devoxx.jpg)
 
 There is a [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRsE7zi7YhfYWua1Jzi_iv1GQ) of my talks.
 
 ### Main talks
 
+* [**Fantastic Languages and What to learn from them**](fantasticlanguages/)<br/>
+  A fast-paced overview of a lot of different programming languages, intended to entertain and perhaps even change a mind or two.
 * [**Just enough computer science for the busy developer**](enoughcs/)<br/>
   A brief overview of CS topics that are relevant in the day-to-day work of every developer.<br/>Delivered at Codesmiths Unite!.
 * [**Java from a Parallel Universe**](paralleljava/)<br/>

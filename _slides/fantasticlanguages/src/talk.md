@@ -51,7 +51,7 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 # BASIC
 
-![](../images/basic.jpg){ .bigimg }
+![](../images/basic.png){ .bigimg }
 
 ## BASIC - creator
 
@@ -67,7 +67,7 @@ Beard: ❌❌
 
 ## BASIC - properties
 
-![](../images/basic.jpg){ .cardimg }
+![](../images/basic.png){ .cardimg }
 
 |||
 |---|---|
