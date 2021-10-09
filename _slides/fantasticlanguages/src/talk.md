@@ -195,6 +195,98 @@ The importance of community
 [how it deals with problems](https://gist.github.com/peternixey/1978249)
 :::
 
+# C\#
+
+![](../images/csharp.svg){ .bigimg }
+
+## C\# - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Anders Hejlsberg
+
+## C\# - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Beard: ❌
+
+## C\# - properties
+
+![](../images/csharp.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | compiled to intermediate |
+| Memory | managed |
+| Appeared in | 2000 |
+
+## C\# - what does it look like?
+
+```csharp
+using System;
+
+namespace FizzBuzz
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World");
+
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 15 == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}
+```
+
+## C\# - what makes it interesting?
+
+```csharp
+using System;
+using System.Linq;
+
+namespace FizzBuzz
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var result = from i in Enumerable.Range(1, 100)
+                         select (i % 15 == 0) ? "BuzzFizz" :
+                                (i % 5 == 0) ? "Buzz" :
+                                (i % 3 == 0) ? "Fizz" :
+                                i.ToString();
+            result.ForEach(Console.WriteLine);
+        }
+    }
+}
+```
+
+## C\# - what did I learn from it?
+
+Open source vs proprietary
+
 #
 
 ![](../images/cloud.png){ height=600px }

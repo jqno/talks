@@ -25,9 +25,11 @@ Every language is cool and unique in its own way and will influence the way you 
 
 ## Image credits
 
+* [anders-hejlsberg](/talks/slides/fantasticlanguages/images/anders-hejlsberg.jpg) - by DBegley - [source](https://commons.wikimedia.org/wiki/File:Anders_Hejlsberg.jpg)
 * [basic](/talks/slides/fantasticlanguages/images/basic.png) - by Jan Ouwens
 * [beards](/talks/slides/fantasticlanguages/images/beards.png) - screenshot from [alenz.org in 2008, via the WayBackMachine](https://web.archive.org/web/20081024204803/www.alenz.org/mirror/khason/why-microsoft-can-blow-off-with-c.html), taken by Jan Ouwens
 * [cloud](/talks/slides/fantasticlanguages/images/cloud.png) - by Jan Ouwens
+* [csharp](/talks/slides/fantasticlanguages/images/csharp.svg) - by Jason Groce - [source](https://commons.wikimedia.org/wiki/File:C_Sharp_wordmark.svg)
 * [jan-ouwens](/talks/slides/fantasticlanguages/images/jan-ouwens.jpg) - by Riemke Ouwens
 * [kemeny-kurtz](/talks/slides/fantasticlanguages/images/kemeny-kurtz.jpg) - Dartmouth College Library - [source](https://www.computerhistory.org/revolution/mainframe-computers/7/178/722)
 * [matsumoto](/talks/slides/fantasticlanguages/images/matsumoto.jpg) - by Cep21 - [source](https://commons.wikimedia.org/wiki/File:Yukihiro_Matsumoto.JPG)
