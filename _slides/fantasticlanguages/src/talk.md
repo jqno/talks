@@ -76,6 +76,7 @@ Beard: ❌❌
 | Runtime | interpreted |
 | Memory | not much |
 | Appeared in | 1964 |
+| Used for | teaching |
 
 ## BASIC - what does it look like?
 
@@ -136,6 +137,7 @@ Beard: ✅
 | Runtime | interpreted |
 | Memory | managed |
 | Appeared in | 1995 |
+| Used for | scripting, simple backends |
 
 ## Ruby - what does it look like?
 
@@ -222,6 +224,7 @@ Beard: ❌
 | Runtime | compiled to intermediate |
 | Memory | managed |
 | Appeared in | 2000 |
+| Used for | Windows GUIs, backend |
 
 ## C\# - what does it look like?
 
@@ -308,6 +311,7 @@ Beard: ✅
 | Runtime | interpreted |
 | Memory | managed |
 | Appeared in | 2021 |
+| Used for | fun |
 
 ## AnnotationScript - what does it look like?
 
