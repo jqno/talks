@@ -199,7 +199,11 @@ The importance of community
 [how it deals with problems](https://gist.github.com/peternixey/1978249)
 :::
 
-# FIN
+#
+
+![](../images/cloud.png){ height=600px }
+
+## FIN
 
 ![](../images/qr.png)
 
