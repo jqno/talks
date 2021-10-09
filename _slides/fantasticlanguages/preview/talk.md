@@ -7,8 +7,8 @@ progress: "false"
 controls: "false"
 center: "false"
 ---
-
 # Fantastic languages
+<!-- markdownlint-disable MD045 -->
 
 ::: subtitle
 and what to learn from them
@@ -49,9 +49,71 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 ![](../images/twitter.png){ style="height:30px;" } #fantasticlanguages
 
+# Java
+
+![](../images/java.svg){ .bigimg }
+
+## Java - creator
+
+![](../images/james-gosling.jpg){ .bigimg }
+
+James Gosling
+
+## Java - creator
+
+![](../images/james-gosling.jpg){ .bigimg }
+
+Beard: ✅
+
+## Java - properties
+
+![](../images/java.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | JVM |
+| Memory | managed |
+| Appeared in | 1995 |
+| Used for | Enterprise back-end, Android |
+
+## Java - what does it look like?
+
+```Java
+public class Program {
+    public static void main(String...args) {
+        System.out.println("Hello World");
+
+        for (int i = 1; i <= 100; i++) {
+            if (i % 15 == 0) {
+                System.out.println("FizzBuzz");
+            }
+            else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            }
+            else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            }
+            else {
+                System.out.println(i);
+            }
+        }
+    }
+}
+```
+
+## Java - what makes it interesting?
+
+Backwards compatibility
+
+## Java - what did I learn from it?
+
+Open source
+
 # BASIC
 
-![](../images/basic.jpg){ .bigimg }
+![](../images/basic.png){ .bigimg }
 
 ## BASIC - creator
 
@@ -67,7 +129,7 @@ Beard: ❌❌
 
 ## BASIC - properties
 
-![](../images/basic.jpg){ .cardimg }
+![](../images/basic.png){ .cardimg }
 
 |||
 |---|---|
@@ -76,23 +138,19 @@ Beard: ❌❌
 | Runtime | interpreted |
 | Memory | not much |
 | Appeared in | 1964 |
+| Used for | teaching |
 
 ## BASIC - what does it look like?
 
 ```basic
 10 PRINT "HELLO WORLD"
-```
-
-## BASIC - what does it look like?
-
-```basic
-10 FOR I = 1 to 100
-20 LET S$ = ""
-30 IF I % 3 = 0 THEN LET S$ = S$ + "FIZZ"
-40 IF I % 5 = 0 THEN LET S$ = S$ + "BUZZ"
-50 IF S$ = "" THEN LET S$ = I
-60 PRINT S$
-70 NEXT I
+20 FOR I = 1 to 100
+30 LET S$ = ""
+40 IF I % 3 = 0 THEN LET S$ = S$ + "FIZZ"
+50 IF I % 5 = 0 THEN LET S$ = S$ + "BUZZ"
+60 IF S$ = "" THEN LET S$ = I
+70 PRINT S$
+80 NEXT I
 ```
 
 ## BASIC - what makes it interesting?
@@ -141,16 +199,13 @@ Beard: ✅
 | Runtime | interpreted |
 | Memory | managed |
 | Appeared in | 1995 |
+| Used for | scripting, simple back-end |
 
 ## Ruby - what does it look like?
 
 ```ruby
 puts "Hello World"
-```
 
-## Ruby - what does it look like?
-
-```ruby
 1.upto 100 do |i|
   string = ""
 
@@ -171,7 +226,7 @@ Beautifully consistent OO model
 
 ## Ruby - what makes it interesting?
 
-Beautifully extensible OO model
+Beautifully extendable OO model
 
 ```ruby
 class Integer
@@ -198,15 +253,161 @@ end
 
 ## Ruby - what did I learn from it?
 
-A new perspective on OO
-
-. . .
-
 The importance of community
 
 ::: small
 [how it deals with problems](https://gist.github.com/peternixey/1978249)
 :::
+
+# C\#
+
+![](../images/csharp.svg){ .bigimg }
+
+## C\# - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Anders Hejlsberg
+
+## C\# - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Beard: ❌
+
+## C\# - properties
+
+![](../images/csharp.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | .NET |
+| Memory | managed |
+| Appeared in | 2000 |
+| Used for | Windows GUIs, back-end |
+
+## C\# - what does it look like?
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World");
+
+        for (int i = 1; i <= 100; i++)
+        {
+            if (i % 15 == 0)
+            {
+                Console.WriteLine("FizzBuzz");
+            }
+            else if (i % 3 == 0)
+            {
+                Console.WriteLine("Fizz");
+            }
+            else if (i % 5 == 0)
+            {
+                Console.WriteLine("Buzz");
+            }
+            else
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+}
+```
+
+## C\# - what makes it interesting?
+
+```csharp
+using System;
+using System.Linq;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var result = from i in Enumerable.Range(1, 100)
+                        select (i % 15 == 0) ? "BuzzFizz" :
+                            (i % 5 == 0) ? "Buzz" :
+                            (i % 3 == 0) ? "Fizz" :
+                            i.ToString();
+        result.ForEach(Console.WriteLine);
+    }
+}
+```
+
+## C\# - what did I learn from it?
+
+Proprietary tools & libs
+
+# AnnotationScript
+
+![](../images/annotationscript.png){ .bigimg }
+
+## AnnotationScript - creator
+
+![](../images/jan-ouwens.jpg){ .bigimg }
+
+Me!
+
+## AnnotationScript - creator
+
+![](../images/jan-ouwens.jpg){ .bigimg }
+
+Beard: ✅
+
+## AnnotationScript - properties
+
+![](../images/annotationscript.png){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | weak, dynamic |
+| Runtime | interpreted |
+| Memory | managed |
+| Appeared in | 2021 |
+| Used for | fun |
+
+## AnnotationScript - what does it look like?
+
+```java
+import nl.jqno.annotationscript.AnnotationScript;
+import nl.jqno.annotationscript.Annotations.*;
+
+@Zero("begin")
+@Zero(list={@One("println"), @One("'Hello World'")})
+@Zero(list={@One("define"), @One("fizz-buzz"), @One(list={@Two("lambda"), @Two(list=@Three("n")), @Two(list={
+    @Three("cond"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"), @Five("15")}), @Four("0")}), @Three("'fizzbuzz'"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"), @Five("3")}), @Four("0")}), @Three("'fizz'"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"), @Five("5")}), @Four("0")}), @Three("'buzz'"),
+    @Three("else"), @Three("n")})})})
+@Zero(list={@One("map"), @One("println"), @One(list={@Two("map"), @Two("fizz-buzz"), @Two(list={@Three("range"), @Three("1"), @Three("101")})})})
+public class FizzBuzz {
+    public static void main(String[] args) {
+        AnnotationScript.run(FizzBuzz.class);
+    }
+}
+```
+
+## AnnotationScript - what makes it interesting?
+
+Push Java annotations to the limit
+
+## AnnotationScript - what did I learn from it?
+
+Implement a LISP
+
+#
+
+![](../images/cloud.png){ height=600px }
 
 ## FIN
 
@@ -219,5 +420,3 @@ The importance of community
 ::: supersmall
 image credits: see website
 :::
-
-###
