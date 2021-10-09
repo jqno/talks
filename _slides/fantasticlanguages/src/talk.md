@@ -49,6 +49,68 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 ![](../images/twitter.png){ style="height:30px;" } #fantasticlanguages
 
+# Java
+
+![](../images/java.svg){ .bigimg }
+
+## Java - creator
+
+![](../images/james-gosling.jpg){ .bigimg }
+
+James Gosling
+
+## Java - creator
+
+![](../images/james-gosling.jpg){ .bigimg }
+
+Beard: ✅
+
+## Java - properties
+
+![](../images/java.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | JVM |
+| Memory | managed |
+| Appeared in | 1995 |
+| Used for | Enterprise back-end, Android |
+
+## Java - what does it look like?
+
+```Java
+public class Program {
+    public static void main(String...args) {
+        System.out.println("Hello World");
+
+        for (int i = 1; i <= 100; i++) {
+            if (i % 15 == 0) {
+                System.out.println("FizzBuzz");
+            }
+            else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            }
+            else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            }
+            else {
+                System.out.println(i);
+            }
+        }
+    }
+}
+```
+
+## Java - what makes it interesting?
+
+Backwards compatibility
+
+## Java - what did I learn from it?
+
+Open source
+
 # BASIC
 
 ![](../images/basic.png){ .bigimg }
@@ -137,7 +199,7 @@ Beard: ✅
 | Runtime | interpreted |
 | Memory | managed |
 | Appeared in | 1995 |
-| Used for | scripting, simple backends |
+| Used for | scripting, simple back-end |
 
 ## Ruby - what does it look like?
 
@@ -221,10 +283,10 @@ Beard: ❌
 |---|---|
 |||
 | Typing | strong, static |
-| Runtime | compiled to intermediate |
+| Runtime | .NET |
 | Memory | managed |
 | Appeared in | 2000 |
-| Used for | Windows GUIs, backend |
+| Used for | Windows GUIs, back-end |
 
 ## C\# - what does it look like?
 
@@ -282,7 +344,7 @@ class Program
 
 ## C\# - what did I learn from it?
 
-Open source vs proprietary
+Proprietary tools & libs
 
 # AnnotationScript
 
