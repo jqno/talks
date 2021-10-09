@@ -79,7 +79,7 @@ Beard: ❌❌
 
 ## BASIC - what does it look like?
 
-```ruby
+```basic
 10 PRINT "HELLO WORLD"
 20 FOR I = 1 to 100
 30 LET S$ = ""
@@ -111,7 +111,7 @@ from my master's thesis
 
 # Ruby
 
-![](../images/ruby.svg.png){ .bigimg }
+![](../images/ruby.png){ .bigimg }
 
 ## Ruby - creator
 

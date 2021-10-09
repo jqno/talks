@@ -79,7 +79,7 @@ Beard: ❌❌
 
 ## BASIC - what does it look like?
 
-```ruby
+```basic
 10 PRINT "HELLO WORLD"
 ```
 
@@ -116,7 +116,7 @@ from my master's thesis
 
 # Ruby
 
-![](../images/ruby.svg.png){ .bigimg }
+![](../images/ruby.png){ .bigimg }
 
 ## Ruby - creator
 

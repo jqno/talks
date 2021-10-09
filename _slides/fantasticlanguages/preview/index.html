@@ -37,6 +37,7 @@
 <section>
 <section id="fantastic-languages" class="title-slide slide level1">
 <h1>Fantastic languages</h1>
+<!-- markdownlint-disable MD045 -->
 <div class="subtitle">
 <p>and what to learn from them</p>
 </div>
@@ -121,17 +122,14 @@
 </section>
 <section id="basic---what-does-it-look-like" class="slide level2">
 <h2>BASIC - what does it look like?</h2>
-<pre class="ruby"><code>10 PRINT &quot;HELLO WORLD&quot;</code></pre>
-</section>
-<section id="basic---what-does-it-look-like-1" class="slide level2">
-<h2>BASIC - what does it look like?</h2>
-<pre class="basic"><code>10 FOR I = 1 to 100
-20 LET S$ = &quot;&quot;
-30 IF I % 3 = 0 THEN LET S$ = S$ + &quot;FIZZ&quot;
-40 IF I % 5 = 0 THEN LET S$ = S$ + &quot;BUZZ&quot;
-50 IF S$ = &quot;&quot; THEN LET S$ = I
-60 PRINT S$
-70 NEXT I</code></pre>
+<pre class="basic"><code>10 PRINT &quot;HELLO WORLD&quot;
+20 FOR I = 1 to 100
+30 LET S$ = &quot;&quot;
+40 IF I % 3 = 0 THEN LET S$ = S$ + &quot;FIZZ&quot;
+50 IF I % 5 = 0 THEN LET S$ = S$ + &quot;BUZZ&quot;
+60 IF S$ = &quot;&quot; THEN LET S$ = I
+70 PRINT S$
+80 NEXT I</code></pre>
 </section>
 <section id="basic---what-makes-it-interesting" class="slide level2">
 <h2>BASIC - what makes it interesting?</h2>
@@ -157,7 +155,7 @@
 <section>
 <section id="ruby" class="title-slide slide level1">
 <h1>Ruby</h1>
-<p><img data-src="../images/ruby.svg.png" class="bigimg" /></p>
+<p><img data-src="../images/ruby.png" class="bigimg" /></p>
 </section>
 <section id="ruby---creator" class="slide level2">
 <h2>Ruby - creator</h2>
@@ -199,11 +197,9 @@
 </section>
 <section id="ruby---what-does-it-look-like" class="slide level2">
 <h2>Ruby - what does it look like?</h2>
-<pre class="ruby"><code>puts &quot;Hello World&quot;</code></pre>
-</section>
-<section id="ruby---what-does-it-look-like-1" class="slide level2">
-<h2>Ruby - what does it look like?</h2>
-<pre class="ruby"><code>1.upto 100 do |i|
+<pre class="ruby"><code>puts &quot;Hello World&quot;
+
+1.upto 100 do |i|
   string = &quot;&quot;
 
   string += &quot;Fizz&quot; if i % 3 == 0
@@ -223,7 +219,7 @@ end</code></pre>
 </section>
 <section id="ruby---what-makes-it-interesting-1" class="slide level2">
 <h2>Ruby - what makes it interesting?</h2>
-<p>Beautifully extensible OO model</p>
+<p>Beautifully extendable OO model</p>
 <pre class="ruby"><code>class Integer
   def to_xml
     &quot;&lt;int&gt;#{self}&lt;/int&gt;&quot;
@@ -251,17 +247,16 @@ end</code></pre>
 <p><a href="https://gist.github.com/peternixey/1978249">how it deals with problems</a></p>
 </div>
 </div>
-</section>
-<section id="fin" class="slide level2">
-<h2>FIN</h2>
+</section></section>
+<section id="fin" class="title-slide slide level1">
+<h1>FIN</h1>
 <p><img data-src="../images/qr.png" /></p>
 <p><a href="https://jqno.nl/talks/fantasticlanguages">jqno.nl/talks/fantasticlanguages</a></p>
 <p><img data-src="../images/twitter.png" height="30" /> #fantasticlanguages</p>
 <div class="supersmall">
 <p>image credits: see website</p>
 </div>
-<h3 id="section"></h3>
-</section></section>
+</section>
     </div>
   </div>
 
