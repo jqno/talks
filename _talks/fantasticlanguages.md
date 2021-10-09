@@ -26,6 +26,7 @@ Every language is cool and unique in its own way and will influence the way you 
 ## Image credits
 
 * [anders-hejlsberg](/talks/slides/fantasticlanguages/images/anders-hejlsberg.jpg) - by DBegley - [source](https://commons.wikimedia.org/wiki/File:Anders_Hejlsberg.jpg)
+* [annotationscript.png](/talks/slides/fantasticlanguages/images/annotationscript.png) - by Jan Ouwens - [source](http://github.com/jqno/AnnotationScript)
 * [basic](/talks/slides/fantasticlanguages/images/basic.png) - by Jan Ouwens
 * [beards](/talks/slides/fantasticlanguages/images/beards.png) - screenshot from [alenz.org in 2008, via the WayBackMachine](https://web.archive.org/web/20081024204803/www.alenz.org/mirror/khason/why-microsoft-can-blow-off-with-c.html), taken by Jan Ouwens
 * [cloud](/talks/slides/fantasticlanguages/images/cloud.png) - by Jan Ouwens

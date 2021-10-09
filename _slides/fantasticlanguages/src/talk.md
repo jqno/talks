@@ -287,6 +287,64 @@ namespace FizzBuzz
 
 Open source vs proprietary
 
+# AnnotationScript
+
+![](../images/annotationscript.png){ .bigimg }
+
+## AnnotationScript - creator
+
+![](../images/jan-ouwens.jpg){ .bigimg }
+
+Me!
+
+## AnnotationScript - creator
+
+![](../images/jan-ouwens.jpg){ .bigimg }
+
+Beard: ✅
+
+## AnnotationScript - properties
+
+![](../images/annotationscript.png){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | weak, dynamic |
+| Runtime | interpreted |
+| Memory | managed |
+| Appeared in | 2021 |
+
+## AnnotationScript - what does it look like?
+
+```java
+import nl.jqno.annotationscript.AnnotationScript;
+import nl.jqno.annotationscript.Annotations.*;
+
+@Zero("begin")
+@Zero(list={@One("println"), @One("'Hello World'")})
+@Zero(list={@One("define"), @One("fizz-buzz"), @One(list={@Two("lambda"), @Two(list=@Three("n")), @Two(list={
+    @Three("cond"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"), @Five("15")}), @Four("0")}), @Three("'fizzbuzz'"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"), @Five("3")}), @Four("0")}), @Three("'fizz'"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"), @Five("5")}), @Four("0")}), @Three("'buzz'"),
+    @Three("else"), @Three("n")})})})
+@Zero(list={@One("map"), @One("println"), @One(list={@Two("map"), @Two("fizz-buzz"), @Two(list={@Three("range"), @Three("1"), @Three("101")})})})
+public class FizzBuzz {
+    public static void main(String[] args) {
+        AnnotationScript.run(FizzBuzz.class);
+    }
+}
+```
+
+## AnnotationScript - what makes it interesting?
+
+Push Java annotations to the limit
+
+## AnnotationScript - what did I learn from it?
+
+Implement a LISP
+
 #
 
 ![](../images/cloud.png){ height=600px }
