@@ -259,6 +259,55 @@ The importance of community
 [how it deals with problems](https://gist.github.com/peternixey/1978249)
 :::
 
+# Arabic
+
+![](../images/arabic.svg){ .bigimg }
+
+## Arabic - creator
+
+![](../images/arabic-campfire.jpg){ .bigimg }
+
+Unknowable
+
+## Arabic - creator
+
+![](../images/arabic-campfire.jpg){ .bigimg }
+
+Beard: ![](../images/trollface.png){ height=40px }
+
+## Arabic - properties
+
+![](../images/arabic.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Family | semitic |
+| Script | arabic |
+| Native speakers | ±350mln |
+| Appeared in | 5th century CE |
+| Used in | Northern Africa, Middle-East |
+
+## Arabic - what does it look like?
+
+!مرحبا بالعالم
+
+<br/>
+
+١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
+
+## Arabic - what makes it interesting?
+
+![](../images/arabic-books.jpg){ .bigimg }
+
+## Arabic - what did I learn from it?
+
+![](../images/sattouf.png){ .bigimg }
+
+::: supersmall
+From _The Arab of the Future 2_ by Riad Sattouf
+:::
+
 # C\#
 
 ![](../images/csharp.svg){ .bigimg }
