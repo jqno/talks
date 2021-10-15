@@ -190,7 +190,7 @@ Beard: ✅
 
 ## Ruby - properties
 
-![](../images/ruby.svg.png){ .cardimg }
+![](../images/ruby.png){ .cardimg }
 
 |||
 |---|---|
@@ -258,6 +258,179 @@ The importance of community
 ::: small
 [how it deals with problems](https://gist.github.com/peternixey/1978249)
 :::
+
+# Arabic
+
+![](../images/arabic.svg){ .bigimg }
+
+## Arabic - creator
+
+![](../images/arabic-campfire.jpg){ .bigimg }
+
+Unknowable
+
+## Arabic - creator
+
+![](../images/arabic-campfire.jpg){ .bigimg }
+
+Beard: ![](../images/trollface.png){ height=40px }
+
+## Arabic - properties
+
+![](../images/arabic.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Family | semitic |
+| Script | arabic |
+| Native speakers | ±350mln |
+| Appeared in | 5th century CE |
+| Used in | Northern Africa, Middle-East |
+
+## Arabic - what does it look like?
+
+!مرحبا بالعالم
+
+<br/>
+
+١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
+
+## Arabic - what makes it interesting?
+
+![](../images/arabic-books.jpg){ .bigimg }
+
+## Arabic - what did I learn from it?
+
+![](../images/sattouf.png){ .bigimg }
+
+::: supersmall
+From _The Arab of the Future 2_ by Riad Sattouf
+:::
+
+# Lisp
+
+![](../images/lisp.png){ .bigimg }
+
+## Lisp - creator
+
+![](../images/john-mccarthy.jpg){ .bigimg }
+
+John McCarthy
+
+## Lisp - creator
+
+![](../images/john-mccarthy.jpg){ .bigimg }
+
+Beard: ✅ ✅ ✅
+
+## Lisp - properties
+
+![](../images/lisp.png){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, dynamic |
+| Runtime | compiled to native |
+| Memory | managed |
+| Appeared in | 1958 |
+| Used for | AI |
+
+## Lisp - what does it look like?
+
+```lisp
+(println "Hello world")
+
+(define (fizzbuzz x y)
+  (println
+    (cond ((= (modulo x 15) 0) "FizzBuzz")
+          ((= (modulo x 3) 0) "Fizz")
+          ((= (modulo x 5) 0) "Buzz")
+          (else x)))
+ 
+    (if (< x y) (fizzbuzz (+ x 1) y)))
+ 
+(fizzbuzz 1 100)
+```
+
+::: supersmall
+Scheme dialect
+:::
+
+## Lisp - what makes it interesting?
+
+![](../images/inception.jpg)
+
+::: notes
+homo-iconicity
+:::
+
+## Lisp - what did I learn from it?
+
+::: superbig
+🤯
+:::
+
+# Delphi
+
+![](../images/delphi.jpg){ .bigimg }
+
+## Delphi - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Anders Hejlsberg
+
+## Delphi - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Beard: ❌
+
+## Delphi - properties
+
+![](../images/delphi.jpg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | compiled to native |
+| Memory | manual |
+| Appeared in | 1995 |
+| Used for | Windows GUIs |
+
+## Delphi - what does it look like?
+
+```pascal
+program HelloWorld;
+var
+  i: Integer;
+begin
+  WriteLn('Hello World');
+
+  for i := 0 to 100 do
+  begin
+    if i mod 15 = 0 then
+      WriteLn('FizzBuzz');
+    else if i mod 3 = 0 then
+      WriteLn('Fizz');
+    else if i mod 5 = 0 then
+      WriteLn('Buzz');
+    else
+      WriteLn(IntToStr(i));
+  end;
+end.
+```
+
+## Delphi - what makes it interesting?
+
+![](../images/delphi-win3.png){ .bigimg }
+
+## Delphi - what did I learn from it?
+
+![](../images/hashmap.jpg){ .bigimg }
 
 # C\#
 
@@ -346,6 +519,110 @@ class Program
 
 Proprietary tools & libs
 
+# TypeScript
+
+![](../images/typescript.svg){ .bigimg }
+
+## TypeScript - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Anders Hejlsberg
+
+## TypeScript - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Beard: ❌
+
+## TypeScript - properties
+
+![](../images/typescript.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | gradual |
+| Runtime | compiled to JavaScript |
+| Memory | managed |
+| Appeared in | 2012 |
+| Used for | front-end |
+
+## TypeScript - what does it look like?
+
+```typescript
+console.log('Hello world')
+
+for (let i = 1; i < 101; i++) {
+    if (i % 15 === 0) {
+        console.log('FizzBuzz')
+    }
+    else if (i % 3 === 0) {
+        console.log('Fizz')
+    }
+    else if (i % 5 === 0) {
+        console.log('Buzz')
+    }
+    else {
+        console.log(i)
+    }
+}
+```
+
+## TypeScript - what does it look like?
+
+```typescript
+console.log('Hello world')
+
+for (let i: number = 1; i < 101; i++) {
+    if (i % 15 === 0) {
+        console.log('FizzBuzz')
+    }
+    else if (i % 3 === 0) {
+        console.log('Fizz')
+    }
+    else if (i % 5 === 0) {
+        console.log('Buzz')
+    }
+    else {
+        console.log(i)
+    }
+}
+```
+
+## TypeScript - what makes it interesting?
+
+```typescript
+// Lodash's pick() function
+
+function pick(object, paths)
+
+pick({ a: 1, b: 2, c: 3, d: 4 }, ['a', 'd'])
+===> { a: 1, d:4 }
+
+
+
+
+```
+
+## TypeScript - what makes it interesting?
+
+```typescript
+// Lodash's pick() function
+
+function pick(object, paths)
+
+pick({ a: 1, b: 2, c: 3, d: 4 }, ['a', 'd'])
+===> { a: 1, d:4 }
+
+function pick<O extends object, Keys extends keyof O>
+             (object: O, paths: Keys[]): { [K in Keys]: O[K] }
+```
+
+## TypeScript - what did I learn from it?
+
+![](../images/lsp.png){ .bigimg }
+
 # AnnotationScript
 
 ![](../images/annotationscript.png){ .bigimg }
@@ -403,7 +680,7 @@ Push Java annotations to the limit
 
 ## AnnotationScript - what did I learn from it?
 
-Implement a LISP
+Implement a Lisp
 
 #
 
