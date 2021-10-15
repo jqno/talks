@@ -519,6 +519,110 @@ end.
 
 ![](../images/hashmap.jpg){ .bigimg }
 
+# TypeScript
+
+![](../images/typescript.svg){ .bigimg }
+
+## TypeScript - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Anders Hejlsberg
+
+## TypeScript - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Beard: ❌
+
+## TypeScript - properties
+
+![](../images/typescript.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | gradual |
+| Runtime | compiled to JavaScript |
+| Memory | managed |
+| Appeared in | 2012 |
+| Used for | front-end |
+
+## TypeScript - what does it look like?
+
+```typescript
+console.log('Hello world')
+
+for (let i = 1; i < 101; i++) {
+    if (i % 15 === 0) {
+        console.log('FizzBuzz')
+    }
+    else if (i % 3 === 0) {
+        console.log('Fizz')
+    }
+    else if (i % 5 === 0) {
+        console.log('Buzz')
+    }
+    else {
+        console.log(i)
+    }
+}
+```
+
+## TypeScript - what does it look like?
+
+```typescript
+console.log('Hello world')
+
+for (let i: number = 1; i < 101; i++) {
+    if (i % 15 === 0) {
+        console.log('FizzBuzz')
+    }
+    else if (i % 3 === 0) {
+        console.log('Fizz')
+    }
+    else if (i % 5 === 0) {
+        console.log('Buzz')
+    }
+    else {
+        console.log(i)
+    }
+}
+```
+
+## TypeScript - what makes it interesting?
+
+```typescript
+// Lodash's pick() function
+
+function pick(object, paths)
+
+pick({ a: 1, b: 2, c: 3, d: 4 }, ['a', 'd'])
+===> { a: 1, d:4 }
+
+
+
+
+```
+
+## TypeScript - what makes it interesting?
+
+```typescript
+// Lodash's pick() function
+
+function pick(object, paths)
+
+pick({ a: 1, b: 2, c: 3, d: 4 }, ['a', 'd'])
+===> { a: 1, d:4 }
+
+function pick<O extends object, Keys extends keyof O>
+             (object: O, paths: Keys[]): { [K in Keys]: O[K] }
+```
+
+## TypeScript - what did I learn from it?
+
+![](../images/lsp.png){ .bigimg }
+
 # AnnotationScript
 
 ![](../images/annotationscript.png){ .bigimg }

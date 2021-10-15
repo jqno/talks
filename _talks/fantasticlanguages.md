@@ -44,8 +44,10 @@ Every language is cool and unique in its own way and will influence the way you 
 * [john-mccarthy](/talks/slides/fantasticlanguages/images/john-mccarthy.jpg) - John McCarthy's official website - [source](http://jmc.stanford.edu/general/pictures.html)
 * [kemeny-kurtz](/talks/slides/fantasticlanguages/images/kemeny-kurtz.jpg) - Dartmouth College Library - [source](https://www.computerhistory.org/revolution/mainframe-computers/7/178/722)
 * [lisp.png](/talks/slides/fantasticlanguages/images/lisp.png) - by Lisp - [source](https://commons.wikimedia.org/wiki/File:Lisplogo.png)
+* [lsp.png](/talks/slides/fantasticlanguages/images/lsp.png) - by Jan Ouwens
 * [matsumoto](/talks/slides/fantasticlanguages/images/matsumoto.jpg) - by Cep21 - [source](https://commons.wikimedia.org/wiki/File:Yukihiro_Matsumoto.JPG)
 * [ruby](/talks/slides/fantasticlanguages/images/ruby.png) - official Ruby logo - [source](https://www.ruby-lang.org/en/about/logo/)
 * [sattouf](/talks/slides/fantasticlanguages/images/sattouf.png) - by Riad Sattouf, "The Arab of the Future 2" - [amazon](https://www.amazon.com/Arab-Future-Childhood-1984-1985-Graphic/dp/1627793518)
 * [thesis](/talks/slides/fantasticlanguages/images/thesis.jpg) - by Jan Ouwens
 * [trollface](/talks/slides/fantasticlanguages/images/trollface.png) - by Carlos "Whynne" Ramirez - [source](https://en.wikipedia.org/wiki/File:Trollface_non-free.png)
+* [typescript](/talks/slides/fantasticlanguages/images/typescript.svg) - Microsoft - [source](https://commons.wikimedia.org/wiki/File:Typescript_logo_2020.svg)
