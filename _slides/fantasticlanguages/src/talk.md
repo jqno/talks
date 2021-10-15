@@ -395,6 +395,66 @@ class Program
 
 Proprietary tools & libs
 
+# Delphi
+
+![](../images/delphi.jpg){ .bigimg }
+
+## Delphi - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Anders Hejlsberg
+
+## Delphi - creator
+
+![](../images/anders-hejlsberg.jpg){ .bigimg }
+
+Beard: ❌
+
+## Delphi - properties
+
+![](../images/delphi.jpg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | compiled to native |
+| Memory | manual |
+| Appeared in | 1995 |
+| Used for | Windows GUIs |
+
+## Delphi - what does it look like?
+
+```pascal
+program HelloWorld;
+var
+  i: Integer;
+begin
+  WriteLn('Hello World');
+
+  for i := 0 to 100 do
+  begin
+    if i mod 15 = 0 then
+      WriteLn('FizzBuzz');
+    else if i mod 3 = 0 then
+      WriteLn('Fizz');
+    else if i mod 5 = 0 then
+      WriteLn('Buzz');
+    else
+      WriteLn(IntToStr(i));
+  end;
+end.
+```
+
+## Delphi - what makes it interesting?
+
+![](../images/delphi-win3.png){ .bigimg }
+
+## Delphi - what did I learn from it?
+
+![](../images/hashmap.jpg){ .bigimg }
+
 # AnnotationScript
 
 ![](../images/annotationscript.png){ .bigimg }

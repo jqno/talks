@@ -34,6 +34,9 @@ Every language is cool and unique in its own way and will influence the way you 
 * [beards](/talks/slides/fantasticlanguages/images/beards.png) - screenshot from [alenz.org in 2008, via the WayBackMachine](https://web.archive.org/web/20081024204803/www.alenz.org/mirror/khason/why-microsoft-can-blow-off-with-c.html), taken by Jan Ouwens
 * [cloud](/talks/slides/fantasticlanguages/images/cloud.png) - by Jan Ouwens
 * [csharp](/talks/slides/fantasticlanguages/images/csharp.svg) - by Jason Groce - [source](https://commons.wikimedia.org/wiki/File:C_Sharp_wordmark.svg)
+* [delphi](/talks/slides/fantasticlanguages/images/delphi.jpg) - screenshot from Borland Delphi
+* [delphi-win3](/talks/slides/fantasticlanguages/images/delphi-win3.png) - by [WinWorld](https://winworldpc.com) - [source](https://winworldpc.com/screenshot/c38bc3b1-c3a1-2a2d-6211-c3a4e284a2ef/c3950752-240b-c3ba-11c3-a5e280ba08ef)
+* [hashmap](/talks/slides/fantasticlanguages/images/hashmap.jpg) - by Jan Ouwens
 * [james-gosling](/talks/slides/fantasticlanguages/images/james-gosling.jpg) - by Peter Campbell - [source](https://commons.wikimedia.org/wiki/File:James_Gosling_2008.jpg)
 * [jan-ouwens](/talks/slides/fantasticlanguages/images/jan-ouwens.jpg) - by Riemke Ouwens
 * [java](/talks/slides/fantasticlanguages/images/java.svg) - by Mark Anderson, for Sun Microsystems - [source](https://en.wikipedia.org/wiki/File:Java_programming_language_logo.svg)
