@@ -190,7 +190,7 @@ Beard: ✅
 
 ## Ruby - properties
 
-![](../images/ruby.svg.png){ .cardimg }
+![](../images/ruby.png){ .cardimg }
 
 |||
 |---|---|
