@@ -308,6 +308,70 @@ Beard: ![](../images/trollface.png){ height=40px }
 From _The Arab of the Future 2_ by Riad Sattouf
 :::
 
+# Lisp
+
+![](../images/lisp.png){ .bigimg }
+
+## Lisp - creator
+
+![](../images/john-mccarthy.jpg){ .bigimg }
+
+John McCarthy
+
+## Lisp - creator
+
+![](../images/john-mccarthy.jpg){ .bigimg }
+
+Beard: ✅ ✅ ✅
+
+## Lisp - properties
+
+![](../images/lisp.png){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, dynamic |
+| Runtime | compiled to native |
+| Memory | managed |
+| Appeared in | 1958 |
+| Used for | AI |
+
+## Lisp - what does it look like?
+
+```lisp
+(println "Hello world")
+
+(define (fizzbuzz x y)
+  (println
+    (cond ((= (modulo x 15) 0) "FizzBuzz")
+          ((= (modulo x 3) 0) "Fizz")
+          ((= (modulo x 5) 0) "Buzz")
+          (else x)))
+ 
+    (if (< x y) (fizzbuzz (+ x 1) y)))
+ 
+(fizzbuzz 1 100)
+```
+
+::: supersmall
+Scheme dialect
+:::
+
+## Lisp - what makes it interesting?
+
+![](../images/inception.jpg)
+
+::: notes
+homo-iconicity
+:::
+
+## Lisp - what did I learn from it?
+
+::: superbig
+🤯
+:::
+
 # C\#
 
 ![](../images/csharp.svg){ .bigimg }
@@ -512,7 +576,7 @@ Push Java annotations to the limit
 
 ## AnnotationScript - what did I learn from it?
 
-Implement a LISP
+Implement a Lisp
 
 #
 

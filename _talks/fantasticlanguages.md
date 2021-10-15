@@ -37,10 +37,13 @@ Every language is cool and unique in its own way and will influence the way you 
 * [delphi](/talks/slides/fantasticlanguages/images/delphi.jpg) - screenshot from Borland Delphi
 * [delphi-win3](/talks/slides/fantasticlanguages/images/delphi-win3.png) - by [WinWorld](https://winworldpc.com) - [source](https://winworldpc.com/screenshot/c38bc3b1-c3a1-2a2d-6211-c3a4e284a2ef/c3950752-240b-c3ba-11c3-a5e280ba08ef)
 * [hashmap](/talks/slides/fantasticlanguages/images/hashmap.jpg) - by Jan Ouwens
+* [inception](/talks/slides/fantasticlanguages/images/inception.jpg) - by ImaArtist - [source](https://pixabay.com/photos/buildings-bridges-urban-sky-5527684/)
 * [james-gosling](/talks/slides/fantasticlanguages/images/james-gosling.jpg) - by Peter Campbell - [source](https://commons.wikimedia.org/wiki/File:James_Gosling_2008.jpg)
 * [jan-ouwens](/talks/slides/fantasticlanguages/images/jan-ouwens.jpg) - by Riemke Ouwens
 * [java](/talks/slides/fantasticlanguages/images/java.svg) - by Mark Anderson, for Sun Microsystems - [source](https://en.wikipedia.org/wiki/File:Java_programming_language_logo.svg)
+* [john-mccarthy](/talks/slides/fantasticlanguages/images/john-mccarthy.jpg) - John McCarthy's official website - [source](http://jmc.stanford.edu/general/pictures.html)
 * [kemeny-kurtz](/talks/slides/fantasticlanguages/images/kemeny-kurtz.jpg) - Dartmouth College Library - [source](https://www.computerhistory.org/revolution/mainframe-computers/7/178/722)
+* [lisp.png](/talks/slides/fantasticlanguages/images/lisp.png) - by Lisp - [source](https://commons.wikimedia.org/wiki/File:Lisplogo.png)
 * [matsumoto](/talks/slides/fantasticlanguages/images/matsumoto.jpg) - by Cep21 - [source](https://commons.wikimedia.org/wiki/File:Yukihiro_Matsumoto.JPG)
 * [ruby](/talks/slides/fantasticlanguages/images/ruby.png) - official Ruby logo - [source](https://www.ruby-lang.org/en/about/logo/)
 * [sattouf](/talks/slides/fantasticlanguages/images/sattouf.png) - by Riad Sattouf, "The Arab of the Future 2" - [amazon](https://www.amazon.com/Arab-Future-Childhood-1984-1985-Graphic/dp/1627793518)
