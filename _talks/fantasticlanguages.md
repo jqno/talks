@@ -46,6 +46,8 @@ Every language is cool and unique in its own way and will influence the way you 
 * [lisp.png](/talks/slides/fantasticlanguages/images/lisp.png) - by Lisp - [source](https://commons.wikimedia.org/wiki/File:Lisplogo.png)
 * [lsp.png](/talks/slides/fantasticlanguages/images/lsp.png) - by Jan Ouwens
 * [matsumoto](/talks/slides/fantasticlanguages/images/matsumoto.jpg) - by Cep21 - [source](https://commons.wikimedia.org/wiki/File:Yukihiro_Matsumoto.JPG)
+* [php](/talks/slides/fantasticlanguages/images/php.svg) - official PHP logo by Colin Viebrock - [source](https://commons.wikimedia.org/wiki/File:PHP-logo.svg)
+* [rasmus-lerdorf](/talks/slides/fantasticlanguages/images/rasmus-lerdorf.png) - by Sebastian Bergmann - [source](https://commons.wikimedia.org/wiki/File:Rasmus_Lerdorf_cropped.jpg)
 * [ruby](/talks/slides/fantasticlanguages/images/ruby.png) - official Ruby logo - [source](https://www.ruby-lang.org/en/about/logo/)
 * [sattouf](/talks/slides/fantasticlanguages/images/sattouf.png) - by Riad Sattouf, "The Arab of the Future 2" - [amazon](https://www.amazon.com/Arab-Future-Childhood-1984-1985-Graphic/dp/1627793518)
 * [thesis](/talks/slides/fantasticlanguages/images/thesis.jpg) - by Jan Ouwens

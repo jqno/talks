@@ -372,6 +372,67 @@ homo-iconicity
 🤯
 :::
 
+# PHP
+
+![](../images/php.svg){ .bigimg }
+
+## PHP - creator
+
+![](../images/rasmus-lerdorf.jpg){ .bigimg }
+
+Rasmus Lerdorf
+
+## PHP - creator
+
+![](../images/rasmus-lerdorf.jpg){ .bigimg }
+
+Beard: ✅
+
+## PHP - properties
+
+![](../images/php.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | weak, dynamic |
+| Runtime | interpreted |
+| Memory | managed |
+| Appeared in | 1995 |
+| Used for | simple back-end |
+
+## PHP - what does it look like?
+
+```php
+<?php
+echo "Hello world\n"
+
+for ($i = 1; $i <= 100; $i++)
+{
+    if (!($i % 15))
+        echo "FizzBuzz\n";
+    else if (!($i % 3))
+        echo "Fizz\n";
+    else if (!($i % 5))
+        echo "Buzz\n";
+    else
+        echo "$i\n";
+}
+?>
+```
+
+## PHP - what makes it interesting?
+
+It Just Works™
+
+## PHP - what did I learn from it?
+
+Great online documentation
+
+::: notes
+In a time when this wasn't common
+:::
+
 # Delphi
 
 ![](../images/delphi.jpg){ .bigimg }
