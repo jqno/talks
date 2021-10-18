@@ -219,7 +219,7 @@ Access to the world
 
 # Ruby
 
-![](../images/ruby.png){ .bigimg }
+![](../images/ruby.svg){ .bigimg }
 
 ## Ruby - creator
 
@@ -235,7 +235,7 @@ Beard: ✅
 
 ## Ruby - properties
 
-![](../images/ruby.png){ .cardimg }
+![](../images/ruby.svg){ .cardimg }
 
 |||
 |---|---|
