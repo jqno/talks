@@ -454,13 +454,15 @@ Beard: ![](../images/trollface.png){ height=40px }
 
 ## Arabic - what does it look like?
 
-!مرحبا بالعالم
+مرحبا عالم
 
 <br/>
 
 ١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
 
 ## Arabic - what makes it interesting?
+
+مَرحَبًا عَالَم - مرحبا عالم
 
 ![](../images/arabic-books.jpg){ .bigimg }
 
