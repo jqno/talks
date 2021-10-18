@@ -50,7 +50,7 @@ Every language is cool and unique in its own way and will influence the way you 
 * [lsp.png](/talks/slides/fantasticlanguages/images/lsp.png) - by Jan Ouwens
 * [matsumoto](/talks/slides/fantasticlanguages/images/matsumoto.jpg) - by Cep21 - [source](https://commons.wikimedia.org/wiki/File:Yukihiro_Matsumoto.JPG)
 * [php](/talks/slides/fantasticlanguages/images/php.svg) - official PHP logo by Colin Viebrock - [source](https://commons.wikimedia.org/wiki/File:PHP-logo.svg)
-* [rasmus-lerdorf](/talks/slides/fantasticlanguages/images/rasmus-lerdorf.png) - by Sebastian Bergmann - [source](https://commons.wikimedia.org/wiki/File:Rasmus_Lerdorf_cropped.jpg)
+* [rasmus-lerdorf](/talks/slides/fantasticlanguages/images/rasmus-lerdorf.png) - by William Stadtwald Demchick - [source](https://commons.wikimedia.org/wiki/File:Rasmus_Lerdorf_August_2014_(cropped%29.JPG)
 * [ruby](/talks/slides/fantasticlanguages/images/ruby.svg) - official Ruby logo - [source](https://www.ruby-lang.org/en/about/logo/)
 * [sattouf](/talks/slides/fantasticlanguages/images/sattouf.png) - by Riad Sattouf, "The Arab of the Future 2" - [amazon](https://www.amazon.com/Arab-Future-Childhood-1984-1985-Graphic/dp/1627793518)
 * [shakespeare](/talks/slides/fantasticlanguages/images/shakespeare.jpg) - by [John Taylor](https://en.wikipedia.org/wiki/John_Taylor_(painter)) - [source](https://en.wikipedia.org/wiki/File:Shakespeare.jpg)

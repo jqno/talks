@@ -217,6 +217,259 @@ The Great Vowel Shift
 
 Access to the world
 
+# PHP
+
+![](../images/php.svg){ .bigimg }
+
+## PHP - creator
+
+![](../images/rasmus-lerdorf.jpg){ .bigimg }
+
+Rasmus Lerdorf
+
+## PHP - creator
+
+![](../images/rasmus-lerdorf.jpg){ .bigimg }
+
+Beard: ❌
+
+## PHP - properties
+
+![](../images/php.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | weak, dynamic |
+| Runtime | interpreted |
+| Memory | managed |
+| Appeared in | 1995 |
+| Used for | simple back-end |
+
+## PHP - what does it look like?
+
+```php
+<?php
+echo "Hello world\n"
+
+for ($i = 1; $i <= 100; $i++)
+{
+    if (!($i % 15))
+        echo "FizzBuzz\n";
+    else if (!($i % 3))
+        echo "Fizz\n";
+    else if (!($i % 5))
+        echo "Buzz\n";
+    else
+        echo "$i\n";
+}
+?>
+```
+
+## PHP - what makes it interesting?
+
+It Just Works™
+
+## PHP - what did I learn from it?
+
+Great online documentation
+
+::: notes
+In a time when this wasn't common
+:::
+
+# Elm
+
+![](../images/elm.svg){ .bigimg }
+
+## Elm - creator
+
+![](../images/evan-czaplicki.jpg){ .bigimg }
+
+Evan Czaplicki
+
+## Elm - creator
+
+![](../images/evan-czaplicki.jpg){ .bigimg }
+
+Beard: 🤷
+
+## Elm - properties
+
+![](../images/elm.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | compiled to JavaScript |
+| Memory | managed |
+| Appeared in | 2012 |
+| Used for | front-end |
+
+## Elm - what does it look like?
+
+```elm
+import Html exposing (text)
+import List exposing (map)
+
+main = text (helloworld ++ fizzbuzz)
+
+helloworld = "Hello world"
+
+fizzbuzz = List.range 1 100 |> map getWordForNum |> String.join " "
+ 
+getWordForNum num =
+  if modBy num 15 == 0 then
+    "FizzBuzz"
+  else if modBy num 3 == 0 then
+    "Fizz"
+  else if modBy num 5 == 0 then
+    "Buzz"
+  else
+    String.fromInt num
+```
+
+## Elm - what makes it interesting?
+
+```sh
+I got to the end of the line without seeing the closing double quote:
+
+6| helloworld = "Hello world
+                             ^
+Strings look like "this" with double quotes on each end. Is the closing double
+quote missing in your code?
+
+Note: For a string that spans multiple lines, you can use the multi-line string
+syntax like this:
+
+    """
+    # Multi-line Strings
+    
+    - start with triple double quotes
+    - write whatever you want
+    - no need to escape newlines or double quotes
+    - end with triple double quotes
+    """
+```
+
+## Elm - what did I learn from it?
+
+Even I can do front-end!
+
+# Lisp
+
+![](../images/lisp.png){ .bigimg }
+
+## Lisp - creator
+
+![](../images/john-mccarthy.jpg){ .bigimg }
+
+John McCarthy
+
+## Lisp - creator
+
+![](../images/john-mccarthy.jpg){ .bigimg }
+
+Beard: ✅ ✅ ✅
+
+## Lisp - properties
+
+![](../images/lisp.png){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, dynamic |
+| Runtime | compiled to native |
+| Memory | managed |
+| Appeared in | 1958 |
+| Used for | AI |
+
+## Lisp - what does it look like?
+
+```lisp
+(println "Hello world")
+
+(define (fizzbuzz x y)
+  (println
+    (cond ((= (modulo x 15) 0) "FizzBuzz")
+          ((= (modulo x 3) 0) "Fizz")
+          ((= (modulo x 5) 0) "Buzz")
+          (else x)))
+ 
+    (if (< x y) (fizzbuzz (+ x 1) y)))
+ 
+(fizzbuzz 1 100)
+```
+
+::: supersmall
+Scheme dialect
+:::
+
+## Lisp - what makes it interesting?
+
+![](../images/inception.jpg)
+
+::: notes
+homo-iconicity
+:::
+
+## Lisp - what did I learn from it?
+
+::: superbig
+🤯
+:::
+
+# Arabic
+
+![](../images/arabic.svg){ .bigimg }
+
+## Arabic - creator
+
+![](../images/arabic-campfire.jpg){ .bigimg }
+
+Unknowable
+
+## Arabic - creator
+
+![](../images/arabic-campfire.jpg){ .bigimg }
+
+Beard: ![](../images/trollface.png){ height=40px }
+
+## Arabic - properties
+
+![](../images/arabic.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Family | semitic |
+| Script | arabic |
+| Native speakers | ±350mln |
+| Appeared in | 5th century CE |
+| Used in | Northern Africa, Middle-East |
+
+## Arabic - what does it look like?
+
+!مرحبا بالعالم
+
+<br/>
+
+١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
+
+## Arabic - what makes it interesting?
+
+![](../images/arabic-books.jpg){ .bigimg }
+
+## Arabic - what did I learn from it?
+
+![](../images/sattouf.png){ .bigimg }
+
+::: supersmall
+From _The Arab of the Future 2_ by Riad Sattouf
+:::
+
 # Ruby
 
 ![](../images/ruby.svg){ .bigimg }
@@ -289,259 +542,6 @@ The importance of community
 
 ::: small
 [how it deals with problems](https://gist.github.com/peternixey/1978249)
-:::
-
-# Arabic
-
-![](../images/arabic.svg){ .bigimg }
-
-## Arabic - creator
-
-![](../images/arabic-campfire.jpg){ .bigimg }
-
-Unknowable
-
-## Arabic - creator
-
-![](../images/arabic-campfire.jpg){ .bigimg }
-
-Beard: ![](../images/trollface.png){ height=40px }
-
-## Arabic - properties
-
-![](../images/arabic.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Family | semitic |
-| Script | arabic |
-| Native speakers | ±350mln |
-| Appeared in | 5th century CE |
-| Used in | Northern Africa, Middle-East |
-
-## Arabic - what does it look like?
-
-!مرحبا بالعالم
-
-<br/>
-
-١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
-
-## Arabic - what makes it interesting?
-
-![](../images/arabic-books.jpg){ .bigimg }
-
-## Arabic - what did I learn from it?
-
-![](../images/sattouf.png){ .bigimg }
-
-::: supersmall
-From _The Arab of the Future 2_ by Riad Sattouf
-:::
-
-# Lisp
-
-![](../images/lisp.png){ .bigimg }
-
-## Lisp - creator
-
-![](../images/john-mccarthy.jpg){ .bigimg }
-
-John McCarthy
-
-## Lisp - creator
-
-![](../images/john-mccarthy.jpg){ .bigimg }
-
-Beard: ✅ ✅ ✅
-
-## Lisp - properties
-
-![](../images/lisp.png){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | strong, dynamic |
-| Runtime | compiled to native |
-| Memory | managed |
-| Appeared in | 1958 |
-| Used for | AI |
-
-## Lisp - what does it look like?
-
-```lisp
-(println "Hello world")
-
-(define (fizzbuzz x y)
-  (println
-    (cond ((= (modulo x 15) 0) "FizzBuzz")
-          ((= (modulo x 3) 0) "Fizz")
-          ((= (modulo x 5) 0) "Buzz")
-          (else x)))
- 
-    (if (< x y) (fizzbuzz (+ x 1) y)))
- 
-(fizzbuzz 1 100)
-```
-
-::: supersmall
-Scheme dialect
-:::
-
-## Lisp - what makes it interesting?
-
-![](../images/inception.jpg)
-
-::: notes
-homo-iconicity
-:::
-
-## Lisp - what did I learn from it?
-
-::: superbig
-🤯
-:::
-
-# Elm
-
-![](../images/elm.svg){ .bigimg }
-
-## Elm - creator
-
-![](../images/evan-czaplicki.jpg){ .bigimg }
-
-Evan Czaplicki
-
-## Elm - creator
-
-![](../images/evan-czaplicki.jpg){ .bigimg }
-
-Beard: ✅ 🤷
-
-## Elm - properties
-
-![](../images/elm.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | strong, static |
-| Runtime | compiled to JavaScript |
-| Memory | managed |
-| Appeared in | 2012 |
-| Used for | front-end |
-
-## Elm - what does it look like?
-
-```elm
-import Html exposing (text)
-import List exposing (map)
-
-main = text (helloworld ++ fizzbuzz)
-
-helloworld = "Hello world"
-
-fizzbuzz = List.range 1 100 |> map getWordForNum |> String.join " "
- 
-getWordForNum num =
-  if modBy num 15 == 0 then
-    "FizzBuzz"
-  else if modBy num 3 == 0 then
-    "Fizz"
-  else if modBy num 5 == 0 then
-    "Buzz"
-  else
-    String.fromInt num
-```
-
-## Elm - what makes it interesting?
-
-```sh
-I got to the end of the line without seeing the closing double quote:
-
-6| helloworld = "Hello world
-                             ^
-Strings look like "this" with double quotes on each end. Is the closing double
-quote missing in your code?
-
-Note: For a string that spans multiple lines, you can use the multi-line string
-syntax like this:
-
-    """
-    # Multi-line Strings
-    
-    - start with triple double quotes
-    - write whatever you want
-    - no need to escape newlines or double quotes
-    - end with triple double quotes
-    """
-```
-
-## Elm - what did I learn from it?
-
-Even I can do front-end!
-
-# PHP
-
-![](../images/php.svg){ .bigimg }
-
-## PHP - creator
-
-![](../images/rasmus-lerdorf.jpg){ .bigimg }
-
-Rasmus Lerdorf
-
-## PHP - creator
-
-![](../images/rasmus-lerdorf.jpg){ .bigimg }
-
-Beard: ✅
-
-## PHP - properties
-
-![](../images/php.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | weak, dynamic |
-| Runtime | interpreted |
-| Memory | managed |
-| Appeared in | 1995 |
-| Used for | simple back-end |
-
-## PHP - what does it look like?
-
-```php
-<?php
-echo "Hello world\n"
-
-for ($i = 1; $i <= 100; $i++)
-{
-    if (!($i % 15))
-        echo "FizzBuzz\n";
-    else if (!($i % 3))
-        echo "Fizz\n";
-    else if (!($i % 5))
-        echo "Buzz\n";
-    else
-        echo "$i\n";
-}
-?>
-```
-
-## PHP - what makes it interesting?
-
-It Just Works™
-
-## PHP - what did I learn from it?
-
-Great online documentation
-
-::: notes
-In a time when this wasn't common
 :::
 
 # Delphi
