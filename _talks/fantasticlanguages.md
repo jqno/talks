@@ -36,6 +36,8 @@ Every language is cool and unique in its own way and will influence the way you 
 * [csharp](/talks/slides/fantasticlanguages/images/csharp.svg) - by Jason Groce - [source](https://commons.wikimedia.org/wiki/File:C_Sharp_wordmark.svg)
 * [delphi](/talks/slides/fantasticlanguages/images/delphi.jpg) - screenshot from Borland Delphi
 * [delphi-win3](/talks/slides/fantasticlanguages/images/delphi-win3.png) - by [WinWorld](https://winworldpc.com) - [source](https://winworldpc.com/screenshot/c38bc3b1-c3a1-2a2d-6211-c3a4e284a2ef/c3950752-240b-c3ba-11c3-a5e280ba08ef)
+* [elm](/talks/slides/fantasticlanguages/images/elm.svg) - official Elm logo by Evan Czaplicki - [source](https://commons.wikimedia.org/wiki/File:Elm_logo.svg)
+* [evan-czaplicki](/talks/slides/fantasticlanguages/images/evan-czaplicki.jpg) - Twitter profile in 2021 - [source](https://twitter.com/evancz/photo)
 * [hashmap](/talks/slides/fantasticlanguages/images/hashmap.jpg) - by Jan Ouwens
 * [inception](/talks/slides/fantasticlanguages/images/inception.jpg) - by ImaArtist - [source](https://pixabay.com/photos/buildings-bridges-urban-sky-5527684/)
 * [james-gosling](/talks/slides/fantasticlanguages/images/james-gosling.jpg) - by Peter Campbell - [source](https://commons.wikimedia.org/wiki/File:James_Gosling_2008.jpg)

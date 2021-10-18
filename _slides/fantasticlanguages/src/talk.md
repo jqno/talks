@@ -372,6 +372,85 @@ homo-iconicity
 🤯
 :::
 
+# Elm
+
+![](../images/elm.svg){ .bigimg }
+
+## Elm - creator
+
+![](../images/evan-czaplicki.jpg){ .bigimg }
+
+Evan Czaplicki
+
+## Elm - creator
+
+![](../images/evan-czaplicki.jpg){ .bigimg }
+
+Beard: ✅ 🤷
+
+## Elm - properties
+
+![](../images/elm.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | compiled to JavaScript |
+| Memory | managed |
+| Appeared in | 2012 |
+| Used for | front-end |
+
+## Elm - what does it look like?
+
+```elm
+import Html exposing (text)
+import List exposing (map)
+
+main = text (helloworld ++ fizzbuzz)
+
+helloworld = "Hello world"
+
+fizzbuzz = List.range 1 100 |> map getWordForNum |> String.join " "
+ 
+getWordForNum num =
+  if modBy num 15 == 0 then
+    "FizzBuzz"
+  else if modBy num 3 == 0 then
+    "Fizz"
+  else if modBy num 5 == 0 then
+    "Buzz"
+  else
+    String.fromInt num
+```
+
+## Elm - what makes it interesting?
+
+```sh
+I got to the end of the line without seeing the closing double quote:
+
+6| helloworld = "Hello world
+                             ^
+Strings look like "this" with double quotes on each end. Is the closing double
+quote missing in your code?
+
+Note: For a string that spans multiple lines, you can use the multi-line string
+syntax like this:
+
+    """
+    # Multi-line Strings
+    
+    - start with triple double quotes
+    - write whatever you want
+    - no need to escape newlines or double quotes
+    - end with triple double quotes
+    """
+```
+
+## Elm - what did I learn from it?
+
+Even I can do front-end!
+
 # PHP
 
 ![](../images/php.svg){ .bigimg }
