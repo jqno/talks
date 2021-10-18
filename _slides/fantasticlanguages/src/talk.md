@@ -781,6 +781,10 @@ pick({ a: 1, b: 2, c: 3, d: 4 }, ['a', 'd'])
 
 ```
 
+::: notes
+Adds order to JavaScript's chaos
+:::
+
 ## TypeScript - what makes it interesting?
 
 ```typescript
