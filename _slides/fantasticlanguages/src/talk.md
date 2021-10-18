@@ -210,9 +210,11 @@ Hello world
 
 The Great Vowel Shift
 
+![](../images/great-vowel-shift.svg){ .bigimg }
+
 ## English - what did I learn from it?
 
-Access to the world
+![](../images/world.jpg){ .bigimg }
 
 # PHP
 
@@ -352,7 +354,11 @@ syntax like this:
 
 ## Elm - what did I learn from it?
 
-Even I can do front-end!
+![](../images/fool.jpg){ .bigimg }
+
+::: notes
+Even I can do front-end
+:::
 
 # Lisp
 
@@ -539,10 +545,10 @@ end
 
 ## Ruby - what did I learn from it?
 
-The importance of community
+![](../images/successkid.png)
 
-::: small
-[how it deals with problems](https://gist.github.com/peternixey/1978249)
+::: supersmall
+[how the community deals with problems](https://gist.github.com/peternixey/1978249)
 :::
 
 # Delphi
@@ -690,7 +696,11 @@ class Program
 
 ## C\# - what did I learn from it?
 
-Proprietary tools & libs
+![](../images/market.jpg){ .bigimg }
+
+::: notes
+Proprietary tools & libs are OK
+:::
 
 # TypeScript
 

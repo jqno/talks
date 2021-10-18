@@ -40,6 +40,8 @@ Every language is cool and unique in its own way and will influence the way you 
 * [elm](/talks/slides/fantasticlanguages/images/elm.svg) - official Elm logo by Evan Czaplicki - [source](https://commons.wikimedia.org/wiki/File:Elm_logo.svg)
 * [english](/talks/slides/fantasticlanguages/images/english.svg) - oh, but it's only the official flag of the United Kingdom - [source](https://en.wikipedia.org/wiki/File:Flag_of_the_United_Kingdom.svg)
 * [evan-czaplicki](/talks/slides/fantasticlanguages/images/evan-czaplicki.jpg) - Twitter profile in 2021 - [source](https://twitter.com/evancz/photo)
+* [fool](/talks/slides/fantasticlanguages/images/fool.jpg) - by Couleur - [source](https://pixabay.com/photos/fool-court-jester-clown-fun-1476189/)
+* [great-vowel-shift](/talks/slides/fantasticlanguages/images/great-vowel-shift.svg) - by Goran tek-en - [source](https://commons.wikimedia.org/wiki/File:Great_Vowel_Shift2a.svg)
 * [hashmap](/talks/slides/fantasticlanguages/images/hashmap.jpg) - by Jan Ouwens
 * [inception](/talks/slides/fantasticlanguages/images/inception.jpg) - by ImaArtist - [source](https://pixabay.com/photos/buildings-bridges-urban-sky-5527684/)
 * [james-gosling](/talks/slides/fantasticlanguages/images/james-gosling.jpg) - by Peter Campbell - [source](https://commons.wikimedia.org/wiki/File:James_Gosling_2008.jpg)
@@ -47,8 +49,9 @@ Every language is cool and unique in its own way and will influence the way you 
 * [java](/talks/slides/fantasticlanguages/images/java.svg) - by Mark Anderson, for Sun Microsystems - [source](https://en.wikipedia.org/wiki/File:Java_programming_language_logo.svg)
 * [john-mccarthy](/talks/slides/fantasticlanguages/images/john-mccarthy.jpg) - John McCarthy's official website - [source](http://jmc.stanford.edu/general/pictures.html)
 * [kemeny-kurtz](/talks/slides/fantasticlanguages/images/kemeny-kurtz.jpg) - Dartmouth College Library - [source](https://www.computerhistory.org/revolution/mainframe-computers/7/178/722)
-* [lisp.png](/talks/slides/fantasticlanguages/images/lisp.png) - by Lisp - [source](https://commons.wikimedia.org/wiki/File:Lisplogo.png)
-* [lsp.png](/talks/slides/fantasticlanguages/images/lsp.png) - by Jan Ouwens
+* [lisp](/talks/slides/fantasticlanguages/images/lisp.png) - by Lisp - [source](https://commons.wikimedia.org/wiki/File:Lisplogo.png)
+* [lsp](/talks/slides/fantasticlanguages/images/lsp.png) - by Jan Ouwens
+* [market](/talks/slides/fantasticlanguages/images/market.jpg) - by Alex Hudson - [source](https://unsplash.com/photos/m3I92SgM3Mk)
 * [matsumoto](/talks/slides/fantasticlanguages/images/matsumoto.jpg) - by Cep21 - [source](https://commons.wikimedia.org/wiki/File:Yukihiro_Matsumoto.JPG)
 * [msx](/talks/slides/fantasticlanguages/images/msx.jpg) - [source](https://en.wikipedia.org/wiki/File:MSX_Philips_VG8020.jpg)
 * [php](/talks/slides/fantasticlanguages/images/php.svg) - official PHP logo by Colin Viebrock - [source](https://commons.wikimedia.org/wiki/File:PHP-logo.svg)
@@ -56,6 +59,8 @@ Every language is cool and unique in its own way and will influence the way you 
 * [ruby](/talks/slides/fantasticlanguages/images/ruby.svg) - official Ruby logo - [source](https://www.ruby-lang.org/en/about/logo/)
 * [sattouf](/talks/slides/fantasticlanguages/images/sattouf.png) - by Riad Sattouf, "The Arab of the Future 2" - [amazon](https://www.amazon.com/Arab-Future-Childhood-1984-1985-Graphic/dp/1627793518)
 * [shakespeare](/talks/slides/fantasticlanguages/images/shakespeare.jpg) - by [John Taylor](https://en.wikipedia.org/wiki/John_Taylor_(painter)) - [source](https://en.wikipedia.org/wiki/File:Shakespeare.jpg)
+* [successkid](/talks/slides/fantasticlanguages/images/successkid.png) - by Laney Griner - found on [Know Your Meme](https://knowyourmeme.com/photos/185885-success-kid-i-hate-sandcastles)
 * [thesis](/talks/slides/fantasticlanguages/images/thesis.jpg) - by Jan Ouwens
 * [trollface](/talks/slides/fantasticlanguages/images/trollface.png) - by Carlos "Whynne" Ramirez - [source](https://en.wikipedia.org/wiki/File:Trollface_non-free.png)
 * [typescript](/talks/slides/fantasticlanguages/images/typescript.svg) - Microsoft - [source](https://commons.wikimedia.org/wiki/File:Typescript_logo_2020.svg)
+* [world](/talks/slides/fantasticlanguages/images/world.jpg) - by NASA - [source](https://unsplash.com/photos/Q1p7bh3SHj8)
