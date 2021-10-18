@@ -172,6 +172,51 @@ Programming!
 from my master's thesis
 :::
 
+# English
+
+![](../images/english.svg){ .bigimg }
+
+## English - creator
+
+![](../images/shakespeare.jpg){ .bigimg }
+
+Let's just say it was this guy
+
+## English - creator
+
+![](../images/shakespeare.jpg){ .bigimg }
+
+Beard: ✅
+
+## English - properties
+
+![](../images/english.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Family | germanic |
+| Script | roman |
+| Native speakers | ±380mln |
+| Appeared in | 16th century CE |
+| Used in | UK, America, the internet |
+
+## English - what does it look like?
+
+Hello world
+
+<br/>
+
+1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz, 16, 17, fizz, 19, buzz, fizz, 22, 23, fizz, buzz, 26, fizz, 28, 29, fizzbuzz
+
+## English - what makes it interesting?
+
+The Great Vowel Shift
+
+## English - what did I learn from it?
+
+Access to the world
+
 # Ruby
 
 ![](../images/ruby.png){ .bigimg }

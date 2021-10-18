@@ -37,6 +37,7 @@ Every language is cool and unique in its own way and will influence the way you 
 * [delphi](/talks/slides/fantasticlanguages/images/delphi.jpg) - screenshot from Borland Delphi
 * [delphi-win3](/talks/slides/fantasticlanguages/images/delphi-win3.png) - by [WinWorld](https://winworldpc.com) - [source](https://winworldpc.com/screenshot/c38bc3b1-c3a1-2a2d-6211-c3a4e284a2ef/c3950752-240b-c3ba-11c3-a5e280ba08ef)
 * [elm](/talks/slides/fantasticlanguages/images/elm.svg) - official Elm logo by Evan Czaplicki - [source](https://commons.wikimedia.org/wiki/File:Elm_logo.svg)
+* [english](/talks/slides/fantasticlanguages/images/english.svg) - oh, but it's only the official flag of the United Kingdom - [source](https://en.wikipedia.org/wiki/File:Flag_of_the_United_Kingdom.svg)
 * [evan-czaplicki](/talks/slides/fantasticlanguages/images/evan-czaplicki.jpg) - Twitter profile in 2021 - [source](https://twitter.com/evancz/photo)
 * [hashmap](/talks/slides/fantasticlanguages/images/hashmap.jpg) - by Jan Ouwens
 * [inception](/talks/slides/fantasticlanguages/images/inception.jpg) - by ImaArtist - [source](https://pixabay.com/photos/buildings-bridges-urban-sky-5527684/)
@@ -52,6 +53,7 @@ Every language is cool and unique in its own way and will influence the way you 
 * [rasmus-lerdorf](/talks/slides/fantasticlanguages/images/rasmus-lerdorf.png) - by Sebastian Bergmann - [source](https://commons.wikimedia.org/wiki/File:Rasmus_Lerdorf_cropped.jpg)
 * [ruby](/talks/slides/fantasticlanguages/images/ruby.png) - official Ruby logo - [source](https://www.ruby-lang.org/en/about/logo/)
 * [sattouf](/talks/slides/fantasticlanguages/images/sattouf.png) - by Riad Sattouf, "The Arab of the Future 2" - [amazon](https://www.amazon.com/Arab-Future-Childhood-1984-1985-Graphic/dp/1627793518)
+* [shakespeare](/talks/slides/fantasticlanguages/images/shakespeare.jpg) - by [John Taylor](https://en.wikipedia.org/wiki/John_Taylor_(painter)) - [source](https://en.wikipedia.org/wiki/File:Shakespeare.jpg)
 * [thesis](/talks/slides/fantasticlanguages/images/thesis.jpg) - by Jan Ouwens
 * [trollface](/talks/slides/fantasticlanguages/images/trollface.png) - by Carlos "Whynne" Ramirez - [source](https://en.wikipedia.org/wiki/File:Trollface_non-free.png)
 * [typescript](/talks/slides/fantasticlanguages/images/typescript.svg) - Microsoft - [source](https://commons.wikimedia.org/wiki/File:Typescript_logo_2020.svg)
