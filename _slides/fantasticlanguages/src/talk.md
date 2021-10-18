@@ -162,14 +162,14 @@ Beard: ❌❌
 
 ## BASIC - what did I learn from it?
 
-Programming!
-
-. . .
-
 ![](../images/thesis.jpg){ style="height:9em;" }
 
 ::: supersmall
 from my master's thesis
+:::
+
+::: notes
+Programming!
 :::
 
 # English
@@ -264,15 +264,6 @@ end
 
 ## Ruby - what makes it interesting?
 
-Beautifully consistent OO model
-
-* `Class` is an object
-* `Object` is a class
-
-## Ruby - what makes it interesting?
-
-Beautifully extendable OO model
-
 ```ruby
 class Integer
   def to_xml
@@ -282,10 +273,6 @@ end
 
 puts 10.to_xml
 ```
-
-## Ruby - what makes it interesting?
-
-Beautifully _explosive?_ OO model
 
 ```ruby
 class Module
