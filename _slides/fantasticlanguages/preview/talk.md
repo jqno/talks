@@ -155,157 +155,209 @@ Beard: ❌❌
 
 ## BASIC - what makes it interesting?
 
-* Easy to learn (at the time)
-* Ran natively on consumer computers
-  * Commodore 64
-  * MSX
+![](../images/msx.jpg){ .bigimg }
 
 ## BASIC - what did I learn from it?
 
-Programming!
-
-. . .
-
-![](../images/thesis.jpg){ style="height:9em;" }
+![](../images/thesis.jpg){ .bigimg }
 
 ::: supersmall
 from my master's thesis
 :::
 
-# Ruby
+::: notes
+Programming!
+:::
 
-![](../images/ruby.png){ .bigimg }
+# English
 
-## Ruby - creator
+![](../images/english.svg){ .bigimg }
 
-![](../images/matsumoto.jpg){ .bigimg }
+## English - creator
 
-Yukihiro Matsumoto
+![](../images/shakespeare.jpg){ .bigimg }
 
-## Ruby - creator
+Let's just say it was this guy
 
-![](../images/matsumoto.jpg){ .bigimg }
+## English - creator
+
+![](../images/shakespeare.jpg){ .bigimg }
 
 Beard: ✅
 
-## Ruby - properties
+## English - properties
 
-![](../images/ruby.png){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | strong, duck |
-| Runtime | interpreted |
-| Memory | managed |
-| Appeared in | 1995 |
-| Used for | scripting, simple back-end |
-
-## Ruby - what does it look like?
-
-```ruby
-puts "Hello World"
-
-1.upto 100 do |i|
-  string = ""
-
-  string += "Fizz" if i % 3 == 0
-  string += "Buzz" if i % 5 == 0
-  string = i.to_s if string == ""
-
-  puts "#{i} = #{string}"
-end
-```
-
-## Ruby - what makes it interesting?
-
-Beautifully consistent OO model
-
-* `Class` is an object
-* `Object` is a class
-
-## Ruby - what makes it interesting?
-
-Beautifully extendable OO model
-
-```ruby
-class Integer
-  def to_xml
-    "<int>#{self}</int>"
-  end
-end
-
-puts 10.to_xml
-```
-
-## Ruby - what makes it interesting?
-
-Beautifully _explosive?_ OO model
-
-```ruby
-class Module
-  alias private_old private
-  alias public_old public
-  alias private public_old
-  alias public private_old
-end
-```
-
-## Ruby - what did I learn from it?
-
-The importance of community
-
-::: small
-[how it deals with problems](https://gist.github.com/peternixey/1978249)
-:::
-
-# Arabic
-
-![](../images/arabic.svg){ .bigimg }
-
-## Arabic - creator
-
-![](../images/arabic-campfire.jpg){ .bigimg }
-
-Unknowable
-
-## Arabic - creator
-
-![](../images/arabic-campfire.jpg){ .bigimg }
-
-Beard: ![](../images/trollface.png){ height=40px }
-
-## Arabic - properties
-
-![](../images/arabic.svg){ .cardimg }
+![](../images/english.svg){ .cardimg }
 
 |||
 |---|---|
 |||
-| Family | semitic |
-| Script | arabic |
-| Native speakers | ±350mln |
-| Appeared in | 5th century CE |
-| Used in | Northern Africa, Middle-East |
+| Family | germanic |
+| Script | roman |
+| Native speakers | ±380mln |
+| Appeared in | 16th century CE |
+| Used in | UK, America, the internet |
 
-## Arabic - what does it look like?
+## English - what does it look like?
 
-!مرحبا بالعالم
+Hello world
 
 <br/>
 
-١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
+1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz, 16, 17, fizz, 19, buzz, fizz, 22, 23, fizz, buzz, 26, fizz, 28, 29, fizzbuzz
 
-## Arabic - what makes it interesting?
+## English - what makes it interesting?
 
-![](../images/arabic-books.jpg){ .bigimg }
+The Great Vowel Shift
 
-## Arabic - what did I learn from it?
+![](../images/great-vowel-shift.svg){ .bigimg }
 
-![](../images/sattouf.png){ .bigimg }
+## English - what did I learn from it?
 
-::: supersmall
-From _The Arab of the Future 2_ by Riad Sattouf
+![](../images/world.jpg){ .bigimg }
+
+# PHP
+
+![](../images/php.svg){ .bigimg }
+
+## PHP - creator
+
+![](../images/rasmus-lerdorf.jpg){ .bigimg }
+
+Rasmus Lerdorf
+
+## PHP - creator
+
+![](../images/rasmus-lerdorf.jpg){ .bigimg }
+
+Beard: ❌
+
+## PHP - properties
+
+![](../images/php.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | weak, dynamic |
+| Runtime | interpreted |
+| Memory | managed |
+| Appeared in | 1995 |
+| Used for | simple back-end |
+
+## PHP - what does it look like?
+
+```php
+<?php
+echo "Hello world\n"
+
+for ($i = 1; $i <= 100; $i++)
+{
+    if (!($i % 15))
+        echo "FizzBuzz\n";
+    else if (!($i % 3))
+        echo "Fizz\n";
+    else if (!($i % 5))
+        echo "Buzz\n";
+    else
+        echo "$i\n";
+}
+?>
+```
+
+## PHP - what makes it interesting?
+
+It Just Works™
+
+## PHP - what did I learn from it?
+
+Great online documentation
+
+::: notes
+In a time when this wasn't common
+:::
+
+# Elm
+
+![](../images/elm.svg){ .bigimg }
+
+## Elm - creator
+
+![](../images/evan-czaplicki.jpg){ .bigimg }
+
+Evan Czaplicki
+
+## Elm - creator
+
+![](../images/evan-czaplicki.jpg){ .bigimg }
+
+Beard: 🤷
+
+## Elm - properties
+
+![](../images/elm.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | compiled to JavaScript |
+| Memory | managed |
+| Appeared in | 2012 |
+| Used for | front-end |
+
+## Elm - what does it look like?
+
+```elm
+import Html exposing (text)
+import List exposing (map)
+
+main = text (helloworld ++ fizzbuzz)
+
+helloworld = "Hello world"
+
+fizzbuzz = List.range 1 100 |> map getWordForNum |> String.join " "
+ 
+getWordForNum num =
+  if modBy num 15 == 0 then
+    "FizzBuzz"
+  else if modBy num 3 == 0 then
+    "Fizz"
+  else if modBy num 5 == 0 then
+    "Buzz"
+  else
+    String.fromInt num
+```
+
+## Elm - what makes it interesting?
+
+```sh
+I got to the end of the line without seeing the closing double quote:
+
+6| helloworld = "Hello world
+                             ^
+Strings look like "this" with double quotes on each end. Is the closing double
+quote missing in your code?
+
+Note: For a string that spans multiple lines, you can use the multi-line string
+syntax like this:
+
+    """
+    # Multi-line Strings
+    
+    - start with triple double quotes
+    - write whatever you want
+    - no need to escape newlines or double quotes
+    - end with triple double quotes
+    """
+```
+
+## Elm - what did I learn from it?
+
+![](../images/fool.jpg){ .bigimg }
+
+::: notes
+Even I can do front-end
 :::
 
 # Lisp
@@ -360,7 +412,7 @@ Scheme dialect
 
 ## Lisp - what makes it interesting?
 
-![](../images/inception.jpg)
+![](../images/inception.jpg){ .bigimg }
 
 ::: notes
 homo-iconicity
@@ -368,8 +420,135 @@ homo-iconicity
 
 ## Lisp - what did I learn from it?
 
-::: superbig
-🤯
+![](../images/arabic-calligraphy.jpg){ .bigimg }
+
+::: notes
+beautiful, elegant, undecipherable, full of meaning
+:::
+
+# Arabic
+
+![](../images/arabic.svg){ .bigimg }
+
+## Arabic - creator
+
+![](../images/arabic-campfire.jpg){ .bigimg }
+
+Unknowable
+
+## Arabic - creator
+
+![](../images/arabic-campfire.jpg){ .bigimg }
+
+Beard: ![](../images/trollface.png){ height=40px }
+
+## Arabic - properties
+
+![](../images/arabic.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Family | semitic |
+| Script | arabic |
+| Native speakers | ±350mln |
+| Appeared in | 5th century CE |
+| Used in | Northern Africa, Middle-East |
+
+## Arabic - what does it look like?
+
+مرحبا عالم
+
+<br/>
+
+١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
+
+## Arabic - what makes it interesting?
+
+مَرحَبًا عَالَم - مرحبا عالم
+
+![](../images/arabic-books.jpg){ .bigimg }
+
+## Arabic - what did I learn from it?
+
+![](../images/sattouf.png){ .bigimg }
+
+::: supersmall
+From _The Arab of the Future 2_ by Riad Sattouf
+:::
+
+# Ruby
+
+![](../images/ruby.svg){ .bigimg }
+
+## Ruby - creator
+
+![](../images/matsumoto.jpg){ .bigimg }
+
+Yukihiro Matsumoto
+
+## Ruby - creator
+
+![](../images/matsumoto.jpg){ .bigimg }
+
+Beard: ✅
+
+## Ruby - properties
+
+![](../images/ruby.svg){ .cardimg }
+
+|||
+|---|---|
+|||
+| Typing | strong, duck |
+| Runtime | interpreted |
+| Memory | managed |
+| Appeared in | 1995 |
+| Used for | scripting, simple back-end |
+
+## Ruby - what does it look like?
+
+```ruby
+puts "Hello World"
+
+1.upto 100 do |i|
+  string = ""
+
+  string += "Fizz" if i % 3 == 0
+  string += "Buzz" if i % 5 == 0
+  string = i.to_s if string == ""
+
+  puts "#{i} = #{string}"
+end
+```
+
+## Ruby - what makes it interesting?
+
+```ruby
+class Integer
+  def to_xml
+    "<int>#{self}</int>"
+  end
+end
+
+puts 10.to_xml
+```
+
+```ruby
+class Module
+  alias private_old private
+  alias public_old public
+  alias private public_old
+  alias public private_old
+end
+```
+
+## Ruby - what did I learn from it?
+
+![](../images/successkid.png)
+
+::: supersmall
+[how the community deals with problems](https://gist.github.com/peternixey/1978249)
 :::
 
 # Delphi
@@ -517,7 +696,11 @@ class Program
 
 ## C\# - what did I learn from it?
 
-Proprietary tools & libs
+![](../images/market.jpg){ .bigimg }
+
+::: notes
+Proprietary tools & libs are OK
+:::
 
 # TypeScript
 
@@ -605,6 +788,10 @@ pick({ a: 1, b: 2, c: 3, d: 4 }, ['a', 'd'])
 
 ```
 
+::: notes
+Adds order to JavaScript's chaos
+:::
+
 ## TypeScript - what makes it interesting?
 
 ```typescript
@@ -676,11 +863,33 @@ public class FizzBuzz {
 
 ## AnnotationScript - what makes it interesting?
 
-Push Java annotations to the limit
+```java
+@Autowired @Bean
+@Column(name = "id")
+@PostMapping("/endpoint/new")
+@Test
+public void waitwhat() { ... }
+```
 
 ## AnnotationScript - what did I learn from it?
 
-Implement a Lisp
+```lisp
+(begin
+  (println 'Hello world')
+
+  (define
+    (fizzbuzz (lambda (n) (cond
+      ((eq? 0 (mod n 15)) (quote fizzbuzz))
+      ((eq? 0 (mod n 3)) (quote fizz))
+      ((eq? 0 (mod n 5)) (quote buzz))
+      (else n))))
+    (define (run (lambda (i end recurse)
+      (cond
+        ((eq? i end) (quote ()))
+        (else
+          (cons (fizzbuzz i) (recurse (add1 i) end recurse))))))
+      (run 1 31 run))))
+  ```
 
 #
 
