@@ -29,6 +29,7 @@ Every language is cool and unique in its own way and will influence the way you 
 * [annotationscript.png](/talks/slides/fantasticlanguages/images/annotationscript.png) - by Jan Ouwens - [source](http://github.com/jqno/AnnotationScript)
 * [arabic](/talks/slides/fantasticlanguages/images/arabic.svg) - by murraytheb - [source](https://commons.wikimedia.org/wiki/File:Arabic_albayancalligraphy.svg)
 * [arabic-books](/talks/slides/fantasticlanguages/arabic-books.jpg) - by Jan Ouwens
+* [arabic-calligraphy](/talks/slides/fantasticlanguages/arabic-calligraphy.jpg) - by Jan Ouwens
 * [arabic-campfire](/talks/slides/fantasticlanguages/arabic-campfire.jpg) - by Parker Hilton - [source](https://unsplash.com/photos/0gHcDpcYxOI)
 * [basic](/talks/slides/fantasticlanguages/images/basic.png) - by Jan Ouwens
 * [beards](/talks/slides/fantasticlanguages/images/beards.png) - screenshot from [alenz.org in 2008, via the WayBackMachine](https://web.archive.org/web/20081024204803/www.alenz.org/mirror/khason/why-microsoft-can-blow-off-with-c.html), taken by Jan Ouwens

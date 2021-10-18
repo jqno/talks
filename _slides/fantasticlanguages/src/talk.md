@@ -409,7 +409,7 @@ Scheme dialect
 
 ## Lisp - what makes it interesting?
 
-![](../images/inception.jpg)
+![](../images/inception.jpg){ .bigimg }
 
 ::: notes
 homo-iconicity
@@ -417,8 +417,10 @@ homo-iconicity
 
 ## Lisp - what did I learn from it?
 
-::: superbig
-🤯
+![](../images/arabic-calligraphy.jpg){ .bigimg }
+
+::: notes
+beautiful, elegant, undecipherable, full of meaning
 :::
 
 # Arabic
