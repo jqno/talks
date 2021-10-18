@@ -50,6 +50,7 @@ Every language is cool and unique in its own way and will influence the way you 
 * [lisp.png](/talks/slides/fantasticlanguages/images/lisp.png) - by Lisp - [source](https://commons.wikimedia.org/wiki/File:Lisplogo.png)
 * [lsp.png](/talks/slides/fantasticlanguages/images/lsp.png) - by Jan Ouwens
 * [matsumoto](/talks/slides/fantasticlanguages/images/matsumoto.jpg) - by Cep21 - [source](https://commons.wikimedia.org/wiki/File:Yukihiro_Matsumoto.JPG)
+* [msx](/talks/slides/fantasticlanguages/images/msx.jpg) - [source](https://en.wikipedia.org/wiki/File:MSX_Philips_VG8020.jpg)
 * [php](/talks/slides/fantasticlanguages/images/php.svg) - official PHP logo by Colin Viebrock - [source](https://commons.wikimedia.org/wiki/File:PHP-logo.svg)
 * [rasmus-lerdorf](/talks/slides/fantasticlanguages/images/rasmus-lerdorf.png) - by William Stadtwald Demchick - [source](https://commons.wikimedia.org/wiki/File:Rasmus_Lerdorf_August_2014_(cropped%29.JPG)
 * [ruby](/talks/slides/fantasticlanguages/images/ruby.svg) - official Ruby logo - [source](https://www.ruby-lang.org/en/about/logo/)

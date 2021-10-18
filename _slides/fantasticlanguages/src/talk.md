@@ -155,14 +155,11 @@ Beard: ❌❌
 
 ## BASIC - what makes it interesting?
 
-* Easy to learn (at the time)
-* Ran natively on consumer computers
-  * Commodore 64
-  * MSX
+![](../images/msx.jpg){ .bigimg }
 
 ## BASIC - what did I learn from it?
 
-![](../images/thesis.jpg){ style="height:9em;" }
+![](../images/thesis.jpg){ .bigimg }
 
 ::: supersmall
 from my master's thesis
