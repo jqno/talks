@@ -45,7 +45,6 @@ Every language is cool and unique in its own way and will influence the way you 
 * [english](/talks/slides/fantasticlanguages/images/english.svg) - oh, but it's only the official flag of the United Kingdom - [source](https://en.wikipedia.org/wiki/File:Flag_of_the_United_Kingdom.svg)
 * [evan-czaplicki](/talks/slides/fantasticlanguages/images/evan-czaplicki.jpg) - Twitter profile in 2021 - [source](https://twitter.com/evancz/photo)
 * [fool](/talks/slides/fantasticlanguages/images/fool.jpg) - by Couleur - [source](https://pixabay.com/photos/fool-court-jester-clown-fun-1476189/)
-* [great-vowel-shift](/talks/slides/fantasticlanguages/images/great-vowel-shift.svg) - by Goran tek-en - [source](https://commons.wikimedia.org/wiki/File:Great_Vowel_Shift2a.svg)
 * [hashmap](/talks/slides/fantasticlanguages/images/hashmap.jpg) - by Jan Ouwens
 * [inception](/talks/slides/fantasticlanguages/images/inception.jpg) - by ImaArtist - [source](https://pixabay.com/photos/buildings-bridges-urban-sky-5527684/)
 * [james-gosling](/talks/slides/fantasticlanguages/images/james-gosling.jpg) - by Peter Campbell - [source](https://commons.wikimedia.org/wiki/File:James_Gosling_2008.jpg)

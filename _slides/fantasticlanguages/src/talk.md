@@ -211,9 +211,15 @@ Hello world
 
 ## English - what makes it interesting?
 
-The Great Vowel Shift
+| 🇪🇺 | → | 🇬🇧 |
+|-|-|-|
+| a | → | e |
+| e | → | i |
+| i | → | ay |
 
-![](../images/great-vowel-shift.svg){ .bigimg }
+::: supersmall
+The Great Vowel Shift
+:::
 
 ## English - what did I learn from it?
 
