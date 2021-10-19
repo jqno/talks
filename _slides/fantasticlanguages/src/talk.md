@@ -16,8 +16,11 @@ and what to learn from them
 
 ## Why?
 
-* Language of the Year
-* Change your thinking
+![](../images/pragprog.jpg){ .bigimg }
+
+::: notes
+Language of the Year
+:::
 
 ## ∀ language
 
@@ -105,11 +108,11 @@ public class Program {
 
 ## Java - what makes it interesting?
 
-Backwards compatibility
+![](../images/backward-compatibility.jpg){ .bigimg }
 
 ## Java - what did I learn from it?
 
-Open source
+![](../images/community.jpg){ .bigimg }
 
 # BASIC
 
@@ -267,14 +270,18 @@ for ($i = 1; $i <= 100; $i++)
 
 ## PHP - what makes it interesting?
 
+![](../images/apple.svg){ .bigimg }
+
+::: notes
 It Just Works™
+:::
 
 ## PHP - what did I learn from it?
 
-Great online documentation
+![](../images/documentation.jpg){ .bigimg }
 
 ::: notes
-In a time when this wasn't common
+Great documentation in a time when this wasn't common
 :::
 
 # Elm
