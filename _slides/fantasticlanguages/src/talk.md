@@ -457,7 +457,7 @@ Beard: ![](../images/trollface.png){ height=40px }
 
 ## Arabic - what does it look like?
 
-مرحبا عالم
+مرحبا بالعالم
 
 <br/>
 
@@ -465,7 +465,7 @@ Beard: ![](../images/trollface.png){ height=40px }
 
 ## Arabic - what makes it interesting?
 
-مَرحَبًا عَالَم - مرحبا عالم
+مَرحَبًا بِالعَالَم - مرحبا بالعالم
 
 ![](../images/arabic-books.jpg){ .bigimg }
 
