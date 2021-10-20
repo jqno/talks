@@ -509,13 +509,10 @@ Beard: ✅
 puts "Hello World"
 
 1.upto 100 do |i|
-  string = ""
-
-  string += "Fizz" if i % 3 == 0
-  string += "Buzz" if i % 5 == 0
-  string = i.to_s if string == ""
-
-  puts "#{i} = #{string}"
+  puts "FizzBuzz" if i % 15 == 0
+  puts "Fizz" if i % 3 == 0 and i % 5 != 0
+  puts "Buzz" if i % 3 != 0 and i % 5 == 0
+  puts i if i % 3 != 0 and i % 5 != 0
 end
 ```
 
