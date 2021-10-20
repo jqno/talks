@@ -178,6 +178,10 @@ Programming!
 
 Let's just say it was this guy
 
+::: notes
+Shakespeare invented 1600 words, including "bedroom"
+:::
+
 ## ![](../images/english.svg){ .lineimg } - creator
 
 ![](../images/shakespeare.jpg){ .bigimg }
@@ -413,19 +417,15 @@ Scheme dialect
 
 ## ![](../images/lisp.png){ .lineimg } - what makes it interesting?
 
-![](../images/inception.jpg){ .bigimg }
-
-::: notes
-homo-iconicity
-:::
-
-## ![](../images/lisp.png){ .lineimg } - what did I learn from it?
-
 ![](../images/arabic-calligraphy.jpg){ .bigimg }
 
 ::: notes
 beautiful, elegant, undecipherable, full of meaning
 :::
+
+## ![](../images/lisp.png){ .lineimg } - what did I learn from it?
+
+![](../images/inception.jpg){ .bigimg }
 
 # Arabic
 
@@ -858,7 +858,7 @@ public void waitwhat() { ... }
 ```
 
 ```java
-@Node({@Node({@Node(val=1), @Node(val=2)})}, @Node(val=3))
+@Node({@Node({@Node(val=1), @Node(val=2)}), @Node(val=3)})
 public void nope() { ... }
 ```
 
