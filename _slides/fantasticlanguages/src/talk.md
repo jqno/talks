@@ -14,14 +14,6 @@ center: "false"
 and what to learn from them
 :::
 
-## Why?
-
-![](../images/pragprog.jpg){ .bigimg }
-
-::: notes
-Language of the Year
-:::
-
 ## ∀ language
 
 ::: supersmall
@@ -34,6 +26,14 @@ in increasing order of length
 * Interesting?
 * Changed my thinking?
 
+## Why?
+
+![](../images/pragprog.jpg){ .bigimg }
+
+::: notes
+Language of the Year
+:::
+
 ## Beard 🧔 !?
 
 ::: small
@@ -44,7 +44,7 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 ![](../images/beards.png)
 
-# Jan Ouwens
+## Jan Ouwens
 
 ![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
 
