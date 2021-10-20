@@ -20,7 +20,7 @@ and what to learn from them
 in increasing order of length
 :::
 
-* Who?
+* What?
 * Beard?
 * Pretty?
 * Interesting?
@@ -56,6 +56,17 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 ![](../images/java.svg){ .biglogo }
 
+## ![](../images/java.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | JVM |
+| Memory | managed |
+| Appeared in | 1995 |
+| Used for | Enterprise back-end, Android |
+
 ## ![](../images/java.svg){ .lineimg } - creator
 
 ![](../images/james-gosling.jpg){ .bigimg }
@@ -67,17 +78,6 @@ James Gosling
 ![](../images/james-gosling.jpg){ .bigimg }
 
 Beard: ✅
-
-## ![](../images/java.svg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Typing | strong, static |
-| Runtime | JVM |
-| Memory | managed |
-| Appeared in | 1995 |
-| Used for | Enterprise back-end, Android |
 
 ## ![](../images/java.svg){ .lineimg } - what does it look like?
 
@@ -116,6 +116,17 @@ public class Program {
 
 ![](../images/basic.png){ .bigimg }
 
+## ![](../images/basic.png){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Typing | weak, static with sigils |
+| Runtime | interpreted |
+| Memory | not much |
+| Appeared in | 1964 |
+| Used for | teaching |
+
 ## ![](../images/basic.png){ .lineimg } - creator
 
 ![](../images/kemeny-kurtz.jpg){ .bigimg }
@@ -127,17 +138,6 @@ John Kemeny & Thomas Kurtz
 ![](../images/kemeny-kurtz.jpg){ .bigimg }
 
 Beard: ❌❌
-
-## ![](../images/basic.png){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Typing | weak, static with sigils |
-| Runtime | interpreted |
-| Memory | not much |
-| Appeared in | 1964 |
-| Used for | teaching |
 
 ## ![](../images/basic.png){ .lineimg } - what does it look like?
 
@@ -172,6 +172,17 @@ Programming!
 
 ![](../images/english.svg){ .bigimg }
 
+## ![](../images/english.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Family | germanic |
+| Script | roman |
+| Native speakers | ±380mln |
+| Appeared in | 16th century CE |
+| Used in | UK, America, the internet |
+
 ## ![](../images/english.svg){ .lineimg } - creator
 
 ![](../images/shakespeare.jpg){ .bigimg }
@@ -187,17 +198,6 @@ Shakespeare invented 1600 words, including "bedroom"
 ![](../images/shakespeare.jpg){ .bigimg }
 
 Beard: ✅
-
-## ![](../images/english.svg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Family | germanic |
-| Script | roman |
-| Native speakers | ±380mln |
-| Appeared in | 16th century CE |
-| Used in | UK, America, the internet |
 
 ## ![](../images/english.svg){ .lineimg } - what does it look like?
 
@@ -227,6 +227,17 @@ The Great Vowel Shift
 
 ![](../images/php.svg){ .biglogo }
 
+## ![](../images/php.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Typing | weak, dynamic |
+| Runtime | interpreted |
+| Memory | managed |
+| Appeared in | 1995 |
+| Used for | simple back-end |
+
 ## ![](../images/php.svg){ .lineimg } - creator
 
 ![](../images/rasmus-lerdorf.jpg){ .bigimg }
@@ -238,17 +249,6 @@ Rasmus Lerdorf
 ![](../images/rasmus-lerdorf.jpg){ .bigimg }
 
 Beard: ❌
-
-## ![](../images/php.svg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Typing | weak, dynamic |
-| Runtime | interpreted |
-| Memory | managed |
-| Appeared in | 1995 |
-| Used for | simple back-end |
 
 ## ![](../images/php.svg){ .lineimg } - what does it look like?
 
@@ -290,6 +290,17 @@ Great documentation in a time when this wasn't common
 
 ![](../images/elm.svg){ .biglogo }
 
+## ![](../images/elm.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | compiled to JavaScript |
+| Memory | managed |
+| Appeared in | 2012 |
+| Used for | front-end |
+
 ## ![](../images/elm.svg){ .lineimg } - creator
 
 ![](../images/evan-czaplicki.jpg){ .bigimg }
@@ -301,17 +312,6 @@ Evan Czaplicki
 ![](../images/evan-czaplicki.jpg){ .bigimg }
 
 Beard: 🤷
-
-## ![](../images/elm.svg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Typing | strong, static |
-| Runtime | compiled to JavaScript |
-| Memory | managed |
-| Appeared in | 2012 |
-| Used for | front-end |
 
 ## ![](../images/elm.svg){ .lineimg } - what does it look like?
 
@@ -371,6 +371,17 @@ Even I can do front-end
 
 ![](../images/lisp.png){ .biglogo }
 
+## ![](../images/lisp.png){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Typing | strong, dynamic |
+| Runtime | compiled to native |
+| Memory | managed |
+| Appeared in | 1958 |
+| Used for | AI |
+
 ## ![](../images/lisp.png){ .lineimg } - creator
 
 ![](../images/john-mccarthy.jpg){ .bigimg }
@@ -382,17 +393,6 @@ John McCarthy
 ![](../images/john-mccarthy.jpg){ .bigimg }
 
 Beard: ✅ ✅ ✅
-
-## ![](../images/lisp.png){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Typing | strong, dynamic |
-| Runtime | compiled to native |
-| Memory | managed |
-| Appeared in | 1958 |
-| Used for | AI |
 
 ## ![](../images/lisp.png){ .lineimg } - what does it look like?
 
@@ -431,6 +431,17 @@ beautiful, elegant, undecipherable, full of meaning
 
 ![](../images/arabic.svg){ .biglogo }
 
+## ![](../images/arabic.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Family | semitic |
+| Script | arabic |
+| Native speakers | ±350mln |
+| Appeared in | 5th century CE |
+| Used in | Northern Africa, Middle-East |
+
 ## ![](../images/arabic.svg){ .lineimg } - creator
 
 ![](../images/arabic-campfire.jpg){ .bigimg }
@@ -442,17 +453,6 @@ Unknowable
 ![](../images/arabic-campfire.jpg){ .bigimg }
 
 Beard: ![](../images/trollface.png){ height=40px }
-
-## ![](../images/arabic.svg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Family | semitic |
-| Script | arabic |
-| Native speakers | ±350mln |
-| Appeared in | 5th century CE |
-| Used in | Northern Africa, Middle-East |
 
 ## ![](../images/arabic.svg){ .lineimg } - what does it look like?
 
@@ -480,6 +480,17 @@ From _The Arab of the Future 2_ by Riad Sattouf
 
 ![](../images/ruby.svg){ .biglogo }
 
+## ![](../images/ruby.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Typing | strong, duck |
+| Runtime | interpreted |
+| Memory | managed |
+| Appeared in | 1995 |
+| Used for | scripting, simple back-end |
+
 ## ![](../images/ruby.svg){ .lineimg } - creator
 
 ![](../images/matsumoto.jpg){ .bigimg }
@@ -491,17 +502,6 @@ Yukihiro Matsumoto
 ![](../images/matsumoto.jpg){ .bigimg }
 
 Beard: ✅
-
-## ![](../images/ruby.svg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Typing | strong, duck |
-| Runtime | interpreted |
-| Memory | managed |
-| Appeared in | 1995 |
-| Used for | scripting, simple back-end |
 
 ## ![](../images/ruby.svg){ .lineimg } - what does it look like?
 
@@ -549,6 +549,17 @@ end
 
 ![](../images/delphi.jpg){ .bigimg }
 
+## ![](../images/delphi.jpg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | compiled to native |
+| Memory | manual |
+| Appeared in | 1995 |
+| Used for | Windows GUIs |
+
 ## ![](../images/delphi.jpg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
@@ -560,17 +571,6 @@ Anders Hejlsberg
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Beard: ❌
-
-## ![](../images/delphi.jpg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Typing | strong, static |
-| Runtime | compiled to native |
-| Memory | manual |
-| Appeared in | 1995 |
-| Used for | Windows GUIs |
 
 ## ![](../images/delphi.jpg){ .lineimg } - what does it look like?
 
@@ -607,6 +607,17 @@ end.
 
 ![](../images/csharp.svg){ .biglogo }
 
+## ![](../images/csharp.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Typing | strong, static |
+| Runtime | .NET |
+| Memory | managed |
+| Appeared in | 2000 |
+| Used for | Windows GUIs, back-end |
+
 ## ![](../images/csharp.svg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
@@ -618,17 +629,6 @@ Anders Hejlsberg
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Beard: ❌
-
-## ![](../images/csharp.svg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Typing | strong, static |
-| Runtime | .NET |
-| Memory | managed |
-| Appeared in | 2000 |
-| Used for | Windows GUIs, back-end |
 
 ## ![](../images/csharp.svg){ .lineimg } - what does it look like?
 
@@ -696,6 +696,17 @@ Proprietary tools & libs are OK
 
 ![](../images/typescript.svg){ .biglogo }
 
+## ![](../images/typescript.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Typing | gradual |
+| Runtime | compiled to JavaScript |
+| Memory | managed |
+| Appeared in | 2012 |
+| Used for | front-end |
+
 ## ![](../images/typescript.svg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
@@ -707,17 +718,6 @@ Anders Hejlsberg
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Beard: ❌
-
-## ![](../images/typescript.svg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Typing | gradual |
-| Runtime | compiled to JavaScript |
-| Memory | managed |
-| Appeared in | 2012 |
-| Used for | front-end |
 
 ## ![](../images/typescript.svg){ .lineimg } - what does it look like?
 
@@ -802,6 +802,17 @@ function pick<O extends object, Keys extends keyof O>
 
 ![](../images/annotationscript.png){ .biglogo }
 
+## ![](../images/annotationscript.png){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Typing | weak, dynamic |
+| Runtime | interpreted |
+| Memory | managed |
+| Appeared in | 2021 |
+| Used for | fun |
+
 ## ![](../images/annotationscript.png){ .lineimg } - creator
 
 ![](../images/jan-ouwens.jpg){ .bigimg }
@@ -813,17 +824,6 @@ Me!
 ![](../images/jan-ouwens.jpg){ .bigimg }
 
 Beard: ✅
-
-## ![](../images/annotationscript.png){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Typing | weak, dynamic |
-| Runtime | interpreted |
-| Memory | managed |
-| Appeared in | 2021 |
-| Used for | fun |
 
 ## ![](../images/annotationscript.png){ .lineimg } - what does it look like?
 
