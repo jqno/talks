@@ -61,11 +61,11 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 |||
 |---|---|
 |||
+| Appeared in | 1995 |
+| Used for | Enterprise back-end, Android |
 | Typing | strong, static |
 | Runtime | JVM |
 | Memory | managed |
-| Appeared in | 1995 |
-| Used for | Enterprise back-end, Android |
 
 ## ![](../images/java.svg){ .lineimg } - creator
 
@@ -121,11 +121,11 @@ public class Program {
 |||
 |---|---|
 |||
+| Appeared in | 1964 |
+| Used for | teaching |
 | Typing | weak, static with sigils |
 | Runtime | interpreted |
 | Memory | not much |
-| Appeared in | 1964 |
-| Used for | teaching |
 
 ## ![](../images/basic.png){ .lineimg } - creator
 
@@ -177,11 +177,11 @@ Programming!
 |||
 |---|---|
 |||
+| Appeared in | 16th century CE |
+| Used in | UK, America, the internet |
 | Family | germanic |
 | Script | roman |
 | Native speakers | ±380mln |
-| Appeared in | 16th century CE |
-| Used in | UK, America, the internet |
 
 ## ![](../images/english.svg){ .lineimg } - creator
 
@@ -232,11 +232,11 @@ The Great Vowel Shift
 |||
 |---|---|
 |||
+| Appeared in | 1995 |
+| Used for | simple back-end |
 | Typing | weak, dynamic |
 | Runtime | interpreted |
 | Memory | managed |
-| Appeared in | 1995 |
-| Used for | simple back-end |
 
 ## ![](../images/php.svg){ .lineimg } - creator
 
@@ -295,11 +295,11 @@ Great documentation in a time when this wasn't common
 |||
 |---|---|
 |||
+| Appeared in | 2012 |
+| Used for | front-end |
 | Typing | strong, static |
 | Runtime | compiled to JavaScript |
 | Memory | managed |
-| Appeared in | 2012 |
-| Used for | front-end |
 
 ## ![](../images/elm.svg){ .lineimg } - creator
 
@@ -376,11 +376,11 @@ Even I can do front-end
 |||
 |---|---|
 |||
+| Appeared in | 1958 |
+| Used for | AI |
 | Typing | strong, dynamic |
 | Runtime | compiled to native |
 | Memory | managed |
-| Appeared in | 1958 |
-| Used for | AI |
 
 ## ![](../images/lisp.png){ .lineimg } - creator
 
@@ -436,11 +436,11 @@ beautiful, elegant, undecipherable, full of meaning
 |||
 |---|---|
 |||
+| Appeared in | 5th century CE |
+| Used in | Northern Africa, Middle-East |
 | Family | semitic |
 | Script | arabic |
 | Native speakers | ±350mln |
-| Appeared in | 5th century CE |
-| Used in | Northern Africa, Middle-East |
 
 ## ![](../images/arabic.svg){ .lineimg } - creator
 
@@ -485,11 +485,11 @@ From _The Arab of the Future 2_ by Riad Sattouf
 |||
 |---|---|
 |||
+| Appeared in | 1995 |
+| Used for | scripting, simple back-end |
 | Typing | strong, duck |
 | Runtime | interpreted |
 | Memory | managed |
-| Appeared in | 1995 |
-| Used for | scripting, simple back-end |
 
 ## ![](../images/ruby.svg){ .lineimg } - creator
 
@@ -554,11 +554,11 @@ end
 |||
 |---|---|
 |||
+| Appeared in | 1995 |
+| Used for | Windows GUIs |
 | Typing | strong, static |
 | Runtime | compiled to native |
 | Memory | manual |
-| Appeared in | 1995 |
-| Used for | Windows GUIs |
 
 ## ![](../images/delphi.jpg){ .lineimg } - creator
 
@@ -612,11 +612,11 @@ end.
 |||
 |---|---|
 |||
+| Appeared in | 2000 |
+| Used for | Windows GUIs, back-end |
 | Typing | strong, static |
 | Runtime | .NET |
 | Memory | managed |
-| Appeared in | 2000 |
-| Used for | Windows GUIs, back-end |
 
 ## ![](../images/csharp.svg){ .lineimg } - creator
 
@@ -701,11 +701,11 @@ Proprietary tools & libs are OK
 |||
 |---|---|
 |||
+| Appeared in | 2012 |
+| Used for | front-end |
 | Typing | gradual |
 | Runtime | compiled to JavaScript |
 | Memory | managed |
-| Appeared in | 2012 |
-| Used for | front-end |
 
 ## ![](../images/typescript.svg){ .lineimg } - creator
 
@@ -807,11 +807,11 @@ function pick<O extends object, Keys extends keyof O>
 |||
 |---|---|
 |||
+| Appeared in | 2021 |
+| Used for | fun |
 | Typing | weak, dynamic |
 | Runtime | interpreted |
 | Memory | managed |
-| Appeared in | 2021 |
-| Used for | fun |
 
 ## ![](../images/annotationscript.png){ .lineimg } - creator
 
