@@ -56,21 +56,19 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 ![](../images/java.svg){ .bigimg }
 
-## Java - creator
+## ![](../images/java.svg){ .lineimg } - creator
 
 ![](../images/james-gosling.jpg){ .bigimg }
 
 James Gosling
 
-## Java - creator
+## ![](../images/java.svg){ .lineimg } - creator
 
 ![](../images/james-gosling.jpg){ .bigimg }
 
 Beard: ✅
 
-## Java - properties
-
-![](../images/java.svg){ .cardimg }
+## ![](../images/java.svg){ .lineimg } - properties
 
 |||
 |---|---|
@@ -81,9 +79,9 @@ Beard: ✅
 | Appeared in | 1995 |
 | Used for | Enterprise back-end, Android |
 
-## Java - what does it look like?
+## ![](../images/java.svg){ .lineimg } - what does it look like?
 
-```Java
+```java
 public class Program {
     public static void main(String...args) {
         System.out.println("Hello World");
@@ -106,11 +104,11 @@ public class Program {
 }
 ```
 
-## Java - what makes it interesting?
+## ![](../images/java.svg){ .lineimg } - what makes it interesting?
 
 ![](../images/backward-compatibility.jpg){ .bigimg }
 
-## Java - what did I learn from it?
+## ![](../images/java.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/community.jpg){ .bigimg }
 
@@ -118,21 +116,19 @@ public class Program {
 
 ![](../images/basic.png){ .bigimg }
 
-## BASIC - creator
+## ![](../images/basic.png){ .lineimg } - creator
 
 ![](../images/kemeny-kurtz.jpg){ .bigimg }
 
 John Kemeny & Thomas Kurtz
 
-## BASIC - creator
+## ![](../images/basic.png){ .lineimg } - creator
 
 ![](../images/kemeny-kurtz.jpg){ .bigimg }
 
 Beard: ❌❌
 
-## BASIC - properties
-
-![](../images/basic.png){ .cardimg }
+## ![](../images/basic.png){ .lineimg } - properties
 
 |||
 |---|---|
@@ -143,7 +139,7 @@ Beard: ❌❌
 | Appeared in | 1964 |
 | Used for | teaching |
 
-## BASIC - what does it look like?
+## ![](../images/basic.png){ .lineimg } - what does it look like?
 
 ```basic
 10 PRINT "HELLO WORLD"
@@ -156,11 +152,11 @@ Beard: ❌❌
 80 NEXT I
 ```
 
-## BASIC - what makes it interesting?
+## ![](../images/basic.png){ .lineimg } - what makes it interesting?
 
 ![](../images/msx.jpg){ .bigimg }
 
-## BASIC - what did I learn from it?
+## ![](../images/basic.png){ .lineimg } - what did I learn from it?
 
 ![](../images/thesis.jpg){ .bigimg }
 
@@ -176,21 +172,19 @@ Programming!
 
 ![](../images/english.svg){ .bigimg }
 
-## English - creator
+## ![](../images/english.svg){ .lineimg } - creator
 
 ![](../images/shakespeare.jpg){ .bigimg }
 
 Let's just say it was this guy
 
-## English - creator
+## ![](../images/english.svg){ .lineimg } - creator
 
 ![](../images/shakespeare.jpg){ .bigimg }
 
 Beard: ✅
 
-## English - properties
-
-![](../images/english.svg){ .cardimg }
+## ![](../images/english.svg){ .lineimg } - properties
 
 |||
 |---|---|
@@ -201,7 +195,7 @@ Beard: ✅
 | Appeared in | 16th century CE |
 | Used in | UK, America, the internet |
 
-## English - what does it look like?
+## ![](../images/english.svg){ .lineimg } - what does it look like?
 
 Hello world
 
@@ -209,7 +203,7 @@ Hello world
 
 1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz, 16, 17, fizz, 19, buzz, fizz, 22, 23, fizz, buzz, 26, fizz, 28, 29, fizzbuzz
 
-## English - what makes it interesting?
+## ![](../images/english.svg){ .lineimg } - what makes it interesting?
 
 | 🇪🇺 | → | 🇬🇧 |
 |-|-|-|
@@ -221,7 +215,7 @@ Hello world
 The Great Vowel Shift
 :::
 
-## English - what did I learn from it?
+## ![](../images/english.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/world.jpg){ .bigimg }
 
@@ -229,21 +223,19 @@ The Great Vowel Shift
 
 ![](../images/php.svg){ .bigimg }
 
-## PHP - creator
+## ![](../images/php.svg){ .lineimg } - creator
 
 ![](../images/rasmus-lerdorf.jpg){ .bigimg }
 
 Rasmus Lerdorf
 
-## PHP - creator
+## ![](../images/php.svg){ .lineimg } - creator
 
 ![](../images/rasmus-lerdorf.jpg){ .bigimg }
 
 Beard: ❌
 
-## PHP - properties
-
-![](../images/php.svg){ .cardimg }
+## ![](../images/php.svg){ .lineimg } - properties
 
 |||
 |---|---|
@@ -254,7 +246,7 @@ Beard: ❌
 | Appeared in | 1995 |
 | Used for | simple back-end |
 
-## PHP - what does it look like?
+## ![](../images/php.svg){ .lineimg } - what does it look like?
 
 ```php
 <?php
@@ -274,7 +266,7 @@ for ($i = 1; $i <= 100; $i++)
 ?>
 ```
 
-## PHP - what makes it interesting?
+## ![](../images/php.svg){ .lineimg } - what makes it interesting?
 
 ![](../images/apple.svg){ .bigimg }
 
@@ -282,7 +274,7 @@ for ($i = 1; $i <= 100; $i++)
 It Just Works™
 :::
 
-## PHP - what did I learn from it?
+## ![](../images/php.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/documentation.jpg){ .bigimg }
 
@@ -294,21 +286,19 @@ Great documentation in a time when this wasn't common
 
 ![](../images/elm.svg){ .bigimg }
 
-## Elm - creator
+## ![](../images/elm.svg){ .lineimg } - creator
 
 ![](../images/evan-czaplicki.jpg){ .bigimg }
 
 Evan Czaplicki
 
-## Elm - creator
+## ![](../images/elm.svg){ .lineimg } - creator
 
 ![](../images/evan-czaplicki.jpg){ .bigimg }
 
 Beard: 🤷
 
-## Elm - properties
-
-![](../images/elm.svg){ .cardimg }
+## ![](../images/elm.svg){ .lineimg } - properties
 
 |||
 |---|---|
@@ -319,7 +309,7 @@ Beard: 🤷
 | Appeared in | 2012 |
 | Used for | front-end |
 
-## Elm - what does it look like?
+## ![](../images/elm.svg){ .lineimg } - what does it look like?
 
 ```elm
 import Html exposing (text)
@@ -342,7 +332,7 @@ getWordForNum num =
     String.fromInt num
 ```
 
-## Elm - what makes it interesting?
+## ![](../images/elm.svg){ .lineimg } - what makes it interesting?
 
 ```sh
 I got to the end of the line without seeing the closing double quote:
@@ -365,7 +355,7 @@ syntax like this:
     """
 ```
 
-## Elm - what did I learn from it?
+## ![](../images/elm.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/fool.jpg){ .bigimg }
 
@@ -377,21 +367,19 @@ Even I can do front-end
 
 ![](../images/lisp.png){ .bigimg }
 
-## Lisp - creator
+## ![](../images/lisp.png){ .lineimg } - creator
 
 ![](../images/john-mccarthy.jpg){ .bigimg }
 
 John McCarthy
 
-## Lisp - creator
+## ![](../images/lisp.png){ .lineimg } - creator
 
 ![](../images/john-mccarthy.jpg){ .bigimg }
 
 Beard: ✅ ✅ ✅
 
-## Lisp - properties
-
-![](../images/lisp.png){ .cardimg }
+## ![](../images/lisp.png){ .lineimg } - properties
 
 |||
 |---|---|
@@ -402,7 +390,7 @@ Beard: ✅ ✅ ✅
 | Appeared in | 1958 |
 | Used for | AI |
 
-## Lisp - what does it look like?
+## ![](../images/lisp.png){ .lineimg } - what does it look like?
 
 ```lisp
 (println "Hello world")
@@ -423,7 +411,7 @@ Beard: ✅ ✅ ✅
 Scheme dialect
 :::
 
-## Lisp - what makes it interesting?
+## ![](../images/lisp.png){ .lineimg } - what makes it interesting?
 
 ![](../images/inception.jpg){ .bigimg }
 
@@ -431,7 +419,7 @@ Scheme dialect
 homo-iconicity
 :::
 
-## Lisp - what did I learn from it?
+## ![](../images/lisp.png){ .lineimg } - what did I learn from it?
 
 ![](../images/arabic-calligraphy.jpg){ .bigimg }
 
@@ -443,21 +431,19 @@ beautiful, elegant, undecipherable, full of meaning
 
 ![](../images/arabic.svg){ .bigimg }
 
-## Arabic - creator
+## ![](../images/arabic.svg){ .lineimg } - creator
 
 ![](../images/arabic-campfire.jpg){ .bigimg }
 
 Unknowable
 
-## Arabic - creator
+## ![](../images/arabic.svg){ .lineimg } - creator
 
 ![](../images/arabic-campfire.jpg){ .bigimg }
 
 Beard: ![](../images/trollface.png){ height=40px }
 
-## Arabic - properties
-
-![](../images/arabic.svg){ .cardimg }
+## ![](../images/arabic.svg){ .lineimg } - properties
 
 |||
 |---|---|
@@ -468,7 +454,7 @@ Beard: ![](../images/trollface.png){ height=40px }
 | Appeared in | 5th century CE |
 | Used in | Northern Africa, Middle-East |
 
-## Arabic - what does it look like?
+## ![](../images/arabic.svg){ .lineimg } - what does it look like?
 
 مرحبا بالعالم
 
@@ -476,13 +462,13 @@ Beard: ![](../images/trollface.png){ height=40px }
 
 ١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
 
-## Arabic - what makes it interesting?
+## ![](../images/arabic.svg){ .lineimg } - what makes it interesting?
 
 مَرحَبًا بِالعَالَم - مرحبا بالعالم
 
 ![](../images/arabic-books.jpg){ .bigimg }
 
-## Arabic - what did I learn from it?
+## ![](../images/arabic.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/sattouf.png){ .bigimg }
 
@@ -494,21 +480,19 @@ From _The Arab of the Future 2_ by Riad Sattouf
 
 ![](../images/ruby.svg){ .bigimg }
 
-## Ruby - creator
+## ![](../images/ruby.svg){ .lineimg } - creator
 
 ![](../images/matsumoto.jpg){ .bigimg }
 
 Yukihiro Matsumoto
 
-## Ruby - creator
+## ![](../images/ruby.svg){ .lineimg } - creator
 
 ![](../images/matsumoto.jpg){ .bigimg }
 
 Beard: ✅
 
-## Ruby - properties
-
-![](../images/ruby.svg){ .cardimg }
+## ![](../images/ruby.svg){ .lineimg } - properties
 
 |||
 |---|---|
@@ -519,7 +503,7 @@ Beard: ✅
 | Appeared in | 1995 |
 | Used for | scripting, simple back-end |
 
-## Ruby - what does it look like?
+## ![](../images/ruby.svg){ .lineimg } - what does it look like?
 
 ```ruby
 puts "Hello World"
@@ -535,7 +519,7 @@ puts "Hello World"
 end
 ```
 
-## Ruby - what makes it interesting?
+## ![](../images/ruby.svg){ .lineimg } - what makes it interesting?
 
 ```ruby
 class Integer
@@ -556,7 +540,7 @@ class Module
 end
 ```
 
-## Ruby - what did I learn from it?
+## ![](../images/ruby.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/successkid.png)
 
@@ -568,21 +552,19 @@ end
 
 ![](../images/delphi.jpg){ .bigimg }
 
-## Delphi - creator
+## ![](../images/delphi.jpg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Anders Hejlsberg
 
-## Delphi - creator
+## ![](../images/delphi.jpg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Beard: ❌
 
-## Delphi - properties
-
-![](../images/delphi.jpg){ .cardimg }
+## ![](../images/delphi.jpg){ .lineimg } - properties
 
 |||
 |---|---|
@@ -593,7 +575,7 @@ Beard: ❌
 | Appeared in | 1995 |
 | Used for | Windows GUIs |
 
-## Delphi - what does it look like?
+## ![](../images/delphi.jpg){ .lineimg } - what does it look like?
 
 ```pascal
 program HelloWorld;
@@ -616,11 +598,11 @@ begin
 end.
 ```
 
-## Delphi - what makes it interesting?
+## ![](../images/delphi.jpg){ .lineimg } - what makes it interesting?
 
 ![](../images/delphi-win3.png){ .bigimg }
 
-## Delphi - what did I learn from it?
+## ![](../images/delphi.jpg){ .lineimg } - what did I learn from it?
 
 ![](../images/hashmap.jpg){ .bigimg }
 
@@ -628,21 +610,19 @@ end.
 
 ![](../images/csharp.svg){ .bigimg }
 
-## C\# - creator
+## ![](../images/csharp.svg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Anders Hejlsberg
 
-## C\# - creator
+## ![](../images/csharp.svg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Beard: ❌
 
-## C\# - properties
-
-![](../images/csharp.svg){ .cardimg }
+## ![](../images/csharp.svg){ .lineimg } - properties
 
 |||
 |---|---|
@@ -653,7 +633,7 @@ Beard: ❌
 | Appeared in | 2000 |
 | Used for | Windows GUIs, back-end |
 
-## C\# - what does it look like?
+## ![](../images/csharp.svg){ .lineimg } - what does it look like?
 
 ```csharp
 using System;
@@ -687,7 +667,7 @@ class Program
 }
 ```
 
-## C\# - what makes it interesting?
+## ![](../images/csharp.svg){ .lineimg } - what makes it interesting?
 
 ```csharp
 using System;
@@ -707,7 +687,7 @@ class Program
 }
 ```
 
-## C\# - what did I learn from it?
+## ![](../images/csharp.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/market.jpg){ .bigimg }
 
@@ -719,21 +699,19 @@ Proprietary tools & libs are OK
 
 ![](../images/typescript.svg){ .bigimg }
 
-## TypeScript - creator
+## ![](../images/typescript.svg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Anders Hejlsberg
 
-## TypeScript - creator
+## ![](../images/typescript.svg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Beard: ❌
 
-## TypeScript - properties
-
-![](../images/typescript.svg){ .cardimg }
+## ![](../images/typescript.svg){ .lineimg } - properties
 
 |||
 |---|---|
@@ -744,7 +722,7 @@ Beard: ❌
 | Appeared in | 2012 |
 | Used for | front-end |
 
-## TypeScript - what does it look like?
+## ![](../images/typescript.svg){ .lineimg } - what does it look like?
 
 ```typescript
 console.log('Hello world')
@@ -765,7 +743,7 @@ for (let i = 1; i < 101; i++) {
 }
 ```
 
-## TypeScript - what does it look like?
+## ![](../images/typescript.svg){ .lineimg } - what does it look like?
 
 ```typescript
 console.log('Hello world')
@@ -786,7 +764,7 @@ for (let i: number = 1; i < 101; i++) {
 }
 ```
 
-## TypeScript - what makes it interesting?
+## ![](../images/typescript.svg){ .lineimg } - what makes it interesting?
 
 ```typescript
 // Lodash's pick() function
@@ -805,7 +783,7 @@ pick({ a: 1, b: 2, c: 3, d: 4 }, ['a', 'd'])
 Adds order to JavaScript's chaos
 :::
 
-## TypeScript - what makes it interesting?
+## ![](../images/typescript.svg){ .lineimg } - what makes it interesting?
 
 ```typescript
 // Lodash's pick() function
@@ -819,7 +797,7 @@ function pick<O extends object, Keys extends keyof O>
              (object: O, paths: Keys[]): { [K in Keys]: O[K] }
 ```
 
-## TypeScript - what did I learn from it?
+## ![](../images/typescript.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/lsp.png){ .bigimg }
 
@@ -827,21 +805,19 @@ function pick<O extends object, Keys extends keyof O>
 
 ![](../images/annotationscript.png){ .bigimg }
 
-## AnnotationScript - creator
+## ![](../images/annotationscript.png){ .lineimg } - creator
 
 ![](../images/jan-ouwens.jpg){ .bigimg }
 
 Me!
 
-## AnnotationScript - creator
+## ![](../images/annotationscript.png){ .lineimg } - creator
 
 ![](../images/jan-ouwens.jpg){ .bigimg }
 
 Beard: ✅
 
-## AnnotationScript - properties
-
-![](../images/annotationscript.png){ .cardimg }
+## ![](../images/annotationscript.png){ .lineimg } - properties
 
 |||
 |---|---|
@@ -852,7 +828,7 @@ Beard: ✅
 | Appeared in | 2021 |
 | Used for | fun |
 
-## AnnotationScript - what does it look like?
+## ![](../images/annotationscript.png){ .lineimg } - what does it look like?
 
 ```java
 import nl.jqno.annotationscript.AnnotationScript;
@@ -874,7 +850,7 @@ public class FizzBuzz {
 }
 ```
 
-## AnnotationScript - what makes it interesting?
+## ![](../images/annotationscript.png){ .lineimg } - what makes it interesting?
 
 ```java
 @Autowired @Bean
@@ -889,7 +865,7 @@ public void waitwhat() { ... }
 public void nope() { ... }
 ```
 
-## AnnotationScript - what did I learn from it?
+## ![](../images/annotationscript.png){ .lineimg } - what did I learn from it?
 
 ```lisp
 (begin
