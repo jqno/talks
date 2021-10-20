@@ -46,7 +46,7 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 ## Jan Ouwens
 
-![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
+![](../images/jan-ouwens.jpg){ .shadow style="height:200px;" }
 
 ![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
 
@@ -54,7 +54,7 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 # Java
 
-![](../images/java.svg){ .bigimg }
+![](../images/java.svg){ .biglogo }
 
 ## ![](../images/java.svg){ .lineimg } - creator
 
@@ -221,7 +221,7 @@ The Great Vowel Shift
 
 # PHP
 
-![](../images/php.svg){ .bigimg }
+![](../images/php.svg){ .biglogo }
 
 ## ![](../images/php.svg){ .lineimg } - creator
 
@@ -268,7 +268,7 @@ for ($i = 1; $i <= 100; $i++)
 
 ## ![](../images/php.svg){ .lineimg } - what makes it interesting?
 
-![](../images/apple.svg){ .bigimg }
+![](../images/apple.svg){ .biglogo }
 
 ::: notes
 It Just Works™
@@ -284,7 +284,7 @@ Great documentation in a time when this wasn't common
 
 # Elm
 
-![](../images/elm.svg){ .bigimg }
+![](../images/elm.svg){ .biglogo }
 
 ## ![](../images/elm.svg){ .lineimg } - creator
 
@@ -365,7 +365,7 @@ Even I can do front-end
 
 # Lisp
 
-![](../images/lisp.png){ .bigimg }
+![](../images/lisp.png){ .biglogo }
 
 ## ![](../images/lisp.png){ .lineimg } - creator
 
@@ -429,7 +429,7 @@ beautiful, elegant, undecipherable, full of meaning
 
 # Arabic
 
-![](../images/arabic.svg){ .bigimg }
+![](../images/arabic.svg){ .biglogo }
 
 ## ![](../images/arabic.svg){ .lineimg } - creator
 
@@ -478,7 +478,7 @@ From _The Arab of the Future 2_ by Riad Sattouf
 
 # Ruby
 
-![](../images/ruby.svg){ .bigimg }
+![](../images/ruby.svg){ .biglogo }
 
 ## ![](../images/ruby.svg){ .lineimg } - creator
 
@@ -605,7 +605,7 @@ end.
 
 # C\#
 
-![](../images/csharp.svg){ .bigimg }
+![](../images/csharp.svg){ .biglogo }
 
 ## ![](../images/csharp.svg){ .lineimg } - creator
 
@@ -694,7 +694,7 @@ Proprietary tools & libs are OK
 
 # TypeScript
 
-![](../images/typescript.svg){ .bigimg }
+![](../images/typescript.svg){ .biglogo }
 
 ## ![](../images/typescript.svg){ .lineimg } - creator
 
@@ -796,11 +796,11 @@ function pick<O extends object, Keys extends keyof O>
 
 ## ![](../images/typescript.svg){ .lineimg } - what did I learn from it?
 
-![](../images/lsp.png){ .bigimg }
+![](../images/lsp.png){ .biglogo }
 
 # AnnotationScript
 
-![](../images/annotationscript.png){ .bigimg }
+![](../images/annotationscript.png){ .biglogo }
 
 ## ![](../images/annotationscript.png){ .lineimg } - creator
 

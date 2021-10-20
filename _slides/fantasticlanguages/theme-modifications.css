@@ -20,8 +20,17 @@
 
 /* Images */
 
+.reveal section img.shadow {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+.reveal section img.biglogo {
+  height: 10em;
+}
+
 .reveal section img.bigimg {
   height: 10em;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
 }
 
 .reveal section img.lineimg {
