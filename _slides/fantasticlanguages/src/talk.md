@@ -884,6 +884,11 @@ public class FizzBuzz {
 public void waitwhat() { ... }
 ```
 
+```java
+@Node({@Node({@Node(val=1), @Node(val=2)})}, @Node(val=3))
+public void nope() { ... }
+```
+
 ## AnnotationScript - what did I learn from it?
 
 ```lisp
