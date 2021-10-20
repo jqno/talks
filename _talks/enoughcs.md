@@ -32,7 +32,7 @@ A CS degree is not a requirement for software developer roles. Nor should it be!
 This talk gives an overview of some of these fundamentals, such as De Morgan's Laws, the Big O notation, and how algorithm complexity informs whether you should use an ArrayList or something else. It also introduces you to the remarkable people who came up with these things. They ended wars, sent rockets to the moon, and were made into Lego minifigs. Who said computer science is boring?
 
 ## Deliveries
-* _24 September 2020_, Codesmiths Unite: [[event](https://codesmithsunite.nl/)] [[slides](../talks/slides/enoughcs/2020-codesmiths-unite)] [[aftermovie](https://www.youtube.com/watch?v=QVUZguXZpJ8)]
+* _24 September 2020_, Codesmiths Unite: [[event](https://codesmithsunite.nl/)] [[slides](../slides/enoughcs/2020-codesmiths-unite)] [[aftermovie](https://www.youtube.com/watch?v=QVUZguXZpJ8)]
 
 ## Image credits
 * [alan-turing](/talks/slides/enoughcs/images/alan-turing.jpg) - by Unknown author - [source](https://commons.wikimedia.org/w/index.php?curid=22828488)
