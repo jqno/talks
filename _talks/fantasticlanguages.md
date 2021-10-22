@@ -23,6 +23,8 @@ Every language is cool and unique in its own way and will influence the way you 
 
 ## Deliveries
 
+* _2 November 2021_, Devoxx UK: [[event](https://www.devoxx.co.uk/)] [[slides](https://jqno.nl/talks/slides/fantasticlanguages/2021-11-02-devoxxuk/)]
+
 ## Image credits
 
 * [anders-hejlsberg](/talks/slides/fantasticlanguages/images/anders-hejlsberg.jpg) - by DBegley - [source](https://commons.wikimedia.org/wiki/File:Anders_Hejlsberg.jpg)
