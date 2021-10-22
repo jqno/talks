@@ -29,10 +29,10 @@ Every language is cool and unique in its own way and will influence the way you 
 * [annotationscript.png](/talks/slides/fantasticlanguages/images/annotationscript.png) - by Jan Ouwens - [source](http://github.com/jqno/AnnotationScript)
 * [apple](/talks/slides/fantasticlanguages/images/apple.svg) - official Apple rainbow logo by Rob Janoff - [source](https://commons.m.wikimedia.org/wiki/File:Apple_Computer_Logo_rainbow.svg)
 * [arabic](/talks/slides/fantasticlanguages/images/arabic.svg) - by murraytheb - [source](https://commons.wikimedia.org/wiki/File:Arabic_albayancalligraphy.svg)
-* [arabic-books](/talks/slides/fantasticlanguages/arabic-books.jpg) - by Jan Ouwens
-* [arabic-calligraphy](/talks/slides/fantasticlanguages/arabic-calligraphy.jpg) - by Jan Ouwens
-* [arabic-campfire](/talks/slides/fantasticlanguages/arabic-campfire.jpg) - by Parker Hilton - [source](https://unsplash.com/photos/0gHcDpcYxOI)
-* [backward-compatibility](/talks/slides/fantasticlanguages/backward-compatibility.jpg) - by Martin Widenka - [source](https://unsplash.com/photos/KxZyYXULMDw)
+* [arabic-books](/talks/slides/fantasticlanguages/images/arabic-books.jpg) - by Jan Ouwens
+* [arabic-calligraphy](/talks/slides/fantasticlanguages/images/arabic-calligraphy.jpg) - by Jan Ouwens
+* [arabic-campfire](/talks/slides/fantasticlanguages/images/arabic-campfire.jpg) - by Parker Hilton - [source](https://unsplash.com/photos/0gHcDpcYxOI)
+* [backward-compatibility](/talks/slides/fantasticlanguages/images/backward-compatibility.jpg) - by Martin Widenka - [source](https://unsplash.com/photos/KxZyYXULMDw)
 * [basic](/talks/slides/fantasticlanguages/images/basic.png) - by Jan Ouwens
 * [beards](/talks/slides/fantasticlanguages/images/beards.png) - screenshot from [alenz.org in 2008, via the WayBackMachine](https://web.archive.org/web/20081024204803/www.alenz.org/mirror/khason/why-microsoft-can-blow-off-with-c.html), taken by Jan Ouwens
 * [cloud](/talks/slides/fantasticlanguages/images/cloud.png) - by Jan Ouwens
@@ -59,7 +59,7 @@ Every language is cool and unique in its own way and will influence the way you 
 * [php](/talks/slides/fantasticlanguages/images/php.svg) - official PHP logo by Colin Viebrock - [source](https://commons.wikimedia.org/wiki/File:PHP-logo.svg)
 * [pragprog](/talks/slides/fantasticlanguages/images/pragprog.jpg) - cover of [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/) by Andy Hunt and Dave Thomas
 * [progbooks](/talks/slides/fantasticlanguages/images/progbooks.jpg) - by Jan Ouwens
-* [rasmus-lerdorf](/talks/slides/fantasticlanguages/images/rasmus-lerdorf.png) - by William Stadtwald Demchick - [source](https://commons.wikimedia.org/wiki/File:Rasmus_Lerdorf_August_2014_(cropped%29.JPG)
+* [rasmus-lerdorf](/talks/slides/fantasticlanguages/images/rasmus-lerdorf.jpg) - by William Stadtwald Demchick - [source](https://commons.wikimedia.org/wiki/File:Rasmus_Lerdorf_August_2014_%28cropped%29.JPG)
 * [ruby](/talks/slides/fantasticlanguages/images/ruby.svg) - official Ruby logo - [source](https://www.ruby-lang.org/en/about/logo/)
 * [sattouf](/talks/slides/fantasticlanguages/images/sattouf.png) - by Riad Sattouf, "The Arab of the Future 2" - [amazon](https://www.amazon.com/Arab-Future-Childhood-1984-1985-Graphic/dp/1627793518)
 * [shakespeare](/talks/slides/fantasticlanguages/images/shakespeare.jpg) - by [John Taylor](https://en.wikipedia.org/wiki/John_Taylor_(painter)) - [source](https://en.wikipedia.org/wiki/File:Shakespeare.jpg)
