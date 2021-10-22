@@ -65,9 +65,9 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 |||
 | Appeared in | 1995 |
 | Used for | Enterprise back-end, Android |
+| Paradigm | object-oriented |
 | Typing | strong, static |
 | Runtime | JVM |
-| Memory | managed |
 
 ## ![](../images/java.svg){ .lineimg } - creator
 
@@ -123,9 +123,9 @@ public class Program {
 |||
 | Appeared in | 1964 |
 | Used for | teaching |
+| Paradigm | imperative |
 | Typing | weak, static with sigils |
 | Runtime | interpreted |
-| Memory | not much |
 
 ## ![](../images/basic.png){ .lineimg } - creator
 
@@ -229,9 +229,9 @@ The Great Vowel Shift
 |||
 | Appeared in | 1995 |
 | Used for | simple back-end |
+| Paradigm | imperative |
 | Typing | weak, dynamic |
 | Runtime | interpreted |
-| Memory | managed |
 
 ## ![](../images/php.svg){ .lineimg } - creator
 
@@ -290,9 +290,9 @@ Great documentation in a time when this wasn't common
 |||
 | Appeared in | 2012 |
 | Used for | front-end |
+| Paradigm | functional |
 | Typing | strong, static |
 | Runtime | compiled to JavaScript |
-| Memory | managed |
 
 ## ![](../images/elm.svg){ .lineimg } - creator
 
@@ -368,9 +368,9 @@ Even I can do front-end
 |||
 | Appeared in | 1958 |
 | Used for | AI |
+| Paradigm | functional |
 | Typing | strong, dynamic |
 | Runtime | compiled to native |
-| Memory | managed |
 
 ## ![](../images/lisp.png){ .lineimg } - creator
 
@@ -471,9 +471,9 @@ From _The Arab of the Future 2_ by Riad Sattouf
 |||
 | Appeared in | 1995 |
 | Used for | scripting, simple back-end |
+| Paradigm | object-oriented |
 | Typing | strong, duck |
 | Runtime | interpreted |
-| Memory | managed |
 
 ## ![](../images/ruby.svg){ .lineimg } - creator
 
@@ -538,9 +538,9 @@ end
 |||
 | Appeared in | 1995 |
 | Used for | Windows GUIs |
+| Paradigm | object-oriented |
 | Typing | strong, static |
 | Runtime | compiled to native |
-| Memory | manual |
 
 ## ![](../images/delphi.jpg){ .lineimg } - creator
 
@@ -594,9 +594,9 @@ end.
 |||
 | Appeared in | 2000 |
 | Used for | Windows GUIs, back-end |
+| Paradigm | object-oriented |
 | Typing | strong, static |
 | Runtime | .NET |
-| Memory | managed |
 
 ## ![](../images/csharp.svg){ .lineimg } - creator
 
@@ -681,9 +681,9 @@ Proprietary tools & libs are OK
 |||
 | Appeared in | 2012 |
 | Used for | front-end |
-| Typing | gradual |
+| Paradigm | object-oriented |
+| Typing | gradual, structural |
 | Runtime | compiled to JavaScript |
-| Memory | managed |
 
 ## ![](../images/typescript.svg){ .lineimg } - creator
 
@@ -783,9 +783,9 @@ function pick<O extends object, Keys extends keyof O>
 |||
 | Appeared in | 2021 |
 | Used for | fun |
+| Paradigm | functional |
 | Typing | weak, dynamic |
-| Runtime | interpreted |
-| Memory | managed |
+| Runtime | Java annotations 🤯 |
 
 ## ![](../images/annotationscript.png){ .lineimg } - creator
 
