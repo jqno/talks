@@ -58,7 +58,8 @@ Every language is cool and unique in its own way and will influence the way you 
 * [matsumoto](/talks/slides/fantasticlanguages/images/matsumoto.jpg) - by Cep21 - [source](https://commons.wikimedia.org/wiki/File:Yukihiro_Matsumoto.JPG)
 * [msx](/talks/slides/fantasticlanguages/images/msx.jpg) - [source](https://en.wikipedia.org/wiki/File:MSX_Philips_VG8020.jpg)
 * [php](/talks/slides/fantasticlanguages/images/php.svg) - official PHP logo by Colin Viebrock - [source](https://commons.wikimedia.org/wiki/File:PHP-logo.svg)
-* [pragprog](/talks/slides/fantasticlanguages/images/pragprog.com) - cover of [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/) by Andy Hunt and Dave Thomas
+* [pragprog](/talks/slides/fantasticlanguages/images/pragprog.jpg) - cover of [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/) by Andy Hunt and Dave Thomas
+* [progbooks](/talks/slides/fantasticlanguages/images/progbooks.jpg) - by Jan Ouwens
 * [rasmus-lerdorf](/talks/slides/fantasticlanguages/images/rasmus-lerdorf.png) - by William Stadtwald Demchick - [source](https://commons.wikimedia.org/wiki/File:Rasmus_Lerdorf_August_2014_(cropped%29.JPG)
 * [ruby](/talks/slides/fantasticlanguages/images/ruby.svg) - official Ruby logo - [source](https://www.ruby-lang.org/en/about/logo/)
 * [sattouf](/talks/slides/fantasticlanguages/images/sattouf.png) - by Riad Sattouf, "The Arab of the Future 2" - [amazon](https://www.amazon.com/Arab-Future-Childhood-1984-1985-Graphic/dp/1627793518)

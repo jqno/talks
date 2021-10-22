@@ -14,6 +14,8 @@ center: "false"
 and what to learn from them
 :::
 
+![](../images/progbooks.jpg){ .shadow style="height:400px;" }
+
 ## ∀ language
 
 ::: supersmall
