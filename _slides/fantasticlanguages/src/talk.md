@@ -24,7 +24,7 @@ in increasing order of length
 
 * What?
 * Beard?
-* Pretty?
+* FizzBuzz?
 * Interesting?
 * Changed my thinking?
 
@@ -86,8 +86,6 @@ Beard: ✅
 ```java
 public class Program {
     public static void main(String...args) {
-        System.out.println("Hello World");
-
         for (int i = 1; i <= 100; i++) {
             if (i % 15 == 0) {
                 System.out.println("FizzBuzz");
@@ -144,14 +142,13 @@ Beard: ❌❌
 ## ![](../images/basic.png){ .lineimg } - what does it look like?
 
 ```basic
-10 PRINT "HELLO WORLD"
-20 FOR I = 1 to 100
-30 LET S$ = ""
-40 IF I % 3 = 0 THEN LET S$ = S$ + "FIZZ"
-50 IF I % 5 = 0 THEN LET S$ = S$ + "BUZZ"
-60 IF S$ = "" THEN LET S$ = I
-70 PRINT S$
-80 NEXT I
+10 FOR I = 1 to 100
+20 LET S$ = ""
+30 IF I % 3 = 0 THEN LET S$ = S$ + "FIZZ"
+40 IF I % 5 = 0 THEN LET S$ = S$ + "BUZZ"
+50 IF S$ = "" THEN LET S$ = I
+60 PRINT S$
+70 NEXT I
 ```
 
 ## ![](../images/basic.png){ .lineimg } - what makes it interesting?
@@ -203,10 +200,6 @@ Beard: ✅
 
 ## ![](../images/english.svg){ .lineimg } - what does it look like?
 
-Hello world
-
-<br/>
-
 1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz, 16, 17, fizz, 19, buzz, fizz, 22, 23, fizz, buzz, 26, fizz, 28, 29, fizzbuzz
 
 ## ![](../images/english.svg){ .lineimg } - what makes it interesting?
@@ -256,8 +249,6 @@ Beard: ❌
 
 ```php
 <?php
-echo "Hello world\n"
-
 for ($i = 1; $i <= 100; $i++)
 {
     if (!($i % 15))
@@ -321,11 +312,8 @@ Beard: 🤷
 import Html exposing (text)
 import List exposing (map)
 
-main = text (helloworld ++ fizzbuzz)
-
-helloworld = "Hello world"
-
-fizzbuzz = List.range 1 100 |> map getWordForNum |> String.join " "
+main =
+  List.range 1 100 |> map getWordForNum |> String.join " "
  
 getWordForNum num =
   if modBy num 15 == 0 then
@@ -399,8 +387,6 @@ Beard: ✅ ✅ ✅
 ## ![](../images/lisp.png){ .lineimg } - what does it look like?
 
 ```lisp
-(println "Hello world")
-
 (define (fizzbuzz x y)
   (println
     (cond ((= (modulo x 15) 0) "FizzBuzz")
@@ -458,10 +444,6 @@ Beard: ![](../images/trollface.png){ height=40px }
 
 ## ![](../images/arabic.svg){ .lineimg } - what does it look like?
 
-مرحبا بالعالم
-
-<br/>
-
 ١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
 
 ## ![](../images/arabic.svg){ .lineimg } - what makes it interesting?
@@ -508,8 +490,6 @@ Beard: ✅
 ## ![](../images/ruby.svg){ .lineimg } - what does it look like?
 
 ```ruby
-puts "Hello World"
-
 1.upto 100 do |i|
   puts "FizzBuzz" if i % 15 == 0
   puts "Fizz" if i % 3 == 0 and i % 5 != 0
@@ -577,12 +557,10 @@ Beard: ❌
 ## ![](../images/delphi.jpg){ .lineimg } - what does it look like?
 
 ```pascal
-program HelloWorld;
+program FizzBuzz;
 var
   i: Integer;
 begin
-  WriteLn('Hello World');
-
   for i := 0 to 100 do
   begin
     if i mod 15 = 0 then
@@ -641,8 +619,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World");
-
         for (int i = 1; i <= 100; i++)
         {
             if (i % 15 == 0)
@@ -724,8 +700,6 @@ Beard: ❌
 ## ![](../images/typescript.svg){ .lineimg } - what does it look like?
 
 ```typescript
-console.log('Hello world')
-
 for (let i = 1; i < 101; i++) {
     if (i % 15 === 0) {
         console.log('FizzBuzz')
@@ -745,8 +719,6 @@ for (let i = 1; i < 101; i++) {
 ## ![](../images/typescript.svg){ .lineimg } - what does it look like?
 
 ```typescript
-console.log('Hello world')
-
 for (let i: number = 1; i < 101; i++) {
     if (i % 15 === 0) {
         console.log('FizzBuzz')
@@ -834,7 +806,6 @@ import nl.jqno.annotationscript.AnnotationScript;
 import nl.jqno.annotationscript.Annotations.*;
 
 @Zero("begin")
-@Zero(list={@One("println"), @One("'Hello World'")})
 @Zero(list={@One("define"), @One("fizz-buzz"), @One(list={@Two("lambda"), @Two(list=@Three("n")), @Two(list={
     @Three("cond"),
     @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"), @Five("15")}), @Four("0")}), @Three("'fizzbuzz'"),
@@ -859,30 +830,17 @@ public class FizzBuzz {
 public void waitwhat() { ... }
 ```
 
-```java
-@Node({@Node({@Node(val=1), @Node(val=2)}), @Node(val=3)})
-public void nope() { ... }
-```
-
 ## ![](../images/annotationscript.png){ .lineimg } - what did I learn from it?
 
 ```lisp
 (begin
-  (println 'Hello world')
-
-  (define
-    (fizzbuzz (lambda (n) (cond
-      ((eq? 0 (mod n 15)) (quote fizzbuzz))
-      ((eq? 0 (mod n 3)) (quote fizz))
-      ((eq? 0 (mod n 5)) (quote buzz))
-      (else n))))
-    (define (run (lambda (i end recurse)
-      (cond
-        ((eq? i end) (quote ()))
-        (else
-          (cons (fizzbuzz i) (recurse (add1 i) end recurse))))))
-      (run 1 31 run))))
-  ```
+  (define fizz-buzz (lambda (n) (cond
+    (= (% n 15) 0) 'fizzbuzz
+    (= (% n 3) 0) 'fizz
+    (= (% n 5) 0) 'buzz
+    else n)))
+  (map println (map fizz-buzz (range 1 101))))
+```
 
 #
 
