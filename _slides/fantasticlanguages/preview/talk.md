@@ -14,13 +14,7 @@ center: "false"
 and what to learn from them
 :::
 
-## Why?
-
-![](../images/pragprog.jpg){ .bigimg }
-
-::: notes
-Language of the Year
-:::
+![](../images/progbooks.jpg){ .shadow style="height:400px;" }
 
 ## ∀ language
 
@@ -28,11 +22,19 @@ Language of the Year
 in increasing order of length
 :::
 
-* Who?
+* What?
 * Beard?
-* Pretty?
+* FizzBuzz?
 * Interesting?
 * Changed my thinking?
+
+## Why?
+
+![](../images/pragprog.jpg){ .bigimg }
+
+::: notes
+Language of the Year
+:::
 
 ## Beard 🧔 !?
 
@@ -44,9 +46,9 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 ![](../images/beards.png)
 
-# Jan Ouwens
+## Jan Ouwens
 
-![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
+![](../images/jan-ouwens.jpg){ .shadow style="height:200px;" }
 
 ![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
 
@@ -54,40 +56,36 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 # Java
 
-![](../images/java.svg){ .bigimg }
+![](../images/java.svg){ .biglogo }
 
-## Java - creator
+## ![](../images/java.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 1995 |
+| Used for | Enterprise back-end, Android |
+| Paradigm | object-oriented |
+| Typing | strong, static |
+| Runtime | JVM |
+
+## ![](../images/java.svg){ .lineimg } - creator
 
 ![](../images/james-gosling.jpg){ .bigimg }
 
 James Gosling
 
-## Java - creator
+## ![](../images/java.svg){ .lineimg } - creator
 
 ![](../images/james-gosling.jpg){ .bigimg }
 
 Beard: ✅
 
-## Java - properties
+## ![](../images/java.svg){ .lineimg } - what does it look like?
 
-![](../images/java.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | strong, static |
-| Runtime | JVM |
-| Memory | managed |
-| Appeared in | 1995 |
-| Used for | Enterprise back-end, Android |
-
-## Java - what does it look like?
-
-```Java
+```java
 public class Program {
     public static void main(String...args) {
-        System.out.println("Hello World");
-
         for (int i = 1; i <= 100; i++) {
             if (i % 15 == 0) {
                 System.out.println("FizzBuzz");
@@ -106,11 +104,11 @@ public class Program {
 }
 ```
 
-## Java - what makes it interesting?
+## ![](../images/java.svg){ .lineimg } - what makes it interesting?
 
 ![](../images/backward-compatibility.jpg){ .bigimg }
 
-## Java - what did I learn from it?
+## ![](../images/java.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/community.jpg){ .bigimg }
 
@@ -118,49 +116,46 @@ public class Program {
 
 ![](../images/basic.png){ .bigimg }
 
-## BASIC - creator
+## ![](../images/basic.png){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 1964 |
+| Used for | teaching |
+| Paradigm | imperative |
+| Typing | weak, static with sigils |
+| Runtime | interpreted |
+
+## ![](../images/basic.png){ .lineimg } - creator
 
 ![](../images/kemeny-kurtz.jpg){ .bigimg }
 
 John Kemeny & Thomas Kurtz
 
-## BASIC - creator
+## ![](../images/basic.png){ .lineimg } - creator
 
 ![](../images/kemeny-kurtz.jpg){ .bigimg }
 
 Beard: ❌❌
 
-## BASIC - properties
-
-![](../images/basic.png){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | weak, static with sigils |
-| Runtime | interpreted |
-| Memory | not much |
-| Appeared in | 1964 |
-| Used for | teaching |
-
-## BASIC - what does it look like?
+## ![](../images/basic.png){ .lineimg } - what does it look like?
 
 ```basic
-10 PRINT "HELLO WORLD"
-20 FOR I = 1 to 100
-30 LET S$ = ""
-40 IF I % 3 = 0 THEN LET S$ = S$ + "FIZZ"
-50 IF I % 5 = 0 THEN LET S$ = S$ + "BUZZ"
-60 IF S$ = "" THEN LET S$ = I
-70 PRINT S$
-80 NEXT I
+10 FOR I = 1 to 100
+20 LET S$ = ""
+30 IF I % 3 = 0 THEN LET S$ = S$ + "FIZZ"
+40 IF I % 5 = 0 THEN LET S$ = S$ + "BUZZ"
+50 IF S$ = "" THEN LET S$ = I
+60 PRINT S$
+70 NEXT I
 ```
 
-## BASIC - what makes it interesting?
+## ![](../images/basic.png){ .lineimg } - what makes it interesting?
 
 ![](../images/msx.jpg){ .bigimg }
 
-## BASIC - what did I learn from it?
+## ![](../images/basic.png){ .lineimg } - what did I learn from it?
 
 ![](../images/thesis.jpg){ .bigimg }
 
@@ -176,40 +171,38 @@ Programming!
 
 ![](../images/english.svg){ .bigimg }
 
-## English - creator
+## ![](../images/english.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 16th century CE |
+| Used in | UK, America, the internet |
+| Family | germanic |
+| Script | roman |
+| Native speakers | ±380mln |
+
+## ![](../images/english.svg){ .lineimg } - creator
 
 ![](../images/shakespeare.jpg){ .bigimg }
 
 Let's just say it was this guy
 
-## English - creator
+::: notes
+Shakespeare invented 1600 words, including "bedroom"
+:::
+
+## ![](../images/english.svg){ .lineimg } - creator
 
 ![](../images/shakespeare.jpg){ .bigimg }
 
 Beard: ✅
 
-## English - properties
-
-![](../images/english.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Family | germanic |
-| Script | roman |
-| Native speakers | ±380mln |
-| Appeared in | 16th century CE |
-| Used in | UK, America, the internet |
-
-## English - what does it look like?
-
-Hello world
-
-<br/>
+## ![](../images/english.svg){ .lineimg } - what does it look like?
 
 1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz, 16, 17, fizz, 19, buzz, fizz, 22, 23, fizz, buzz, 26, fizz, 28, 29, fizzbuzz
 
-## English - what makes it interesting?
+## ![](../images/english.svg){ .lineimg } - what makes it interesting?
 
 | 🇪🇺 | → | 🇬🇧 |
 |-|-|-|
@@ -221,45 +214,41 @@ Hello world
 The Great Vowel Shift
 :::
 
-## English - what did I learn from it?
+## ![](../images/english.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/world.jpg){ .bigimg }
 
 # PHP
 
-![](../images/php.svg){ .bigimg }
+![](../images/php.svg){ .biglogo }
 
-## PHP - creator
+## ![](../images/php.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 1995 |
+| Used for | simple back-end |
+| Paradigm | imperative |
+| Typing | weak, dynamic |
+| Runtime | interpreted |
+
+## ![](../images/php.svg){ .lineimg } - creator
 
 ![](../images/rasmus-lerdorf.jpg){ .bigimg }
 
 Rasmus Lerdorf
 
-## PHP - creator
+## ![](../images/php.svg){ .lineimg } - creator
 
 ![](../images/rasmus-lerdorf.jpg){ .bigimg }
 
 Beard: ❌
 
-## PHP - properties
-
-![](../images/php.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | weak, dynamic |
-| Runtime | interpreted |
-| Memory | managed |
-| Appeared in | 1995 |
-| Used for | simple back-end |
-
-## PHP - what does it look like?
+## ![](../images/php.svg){ .lineimg } - what does it look like?
 
 ```php
 <?php
-echo "Hello world\n"
-
 for ($i = 1; $i <= 100; $i++)
 {
     if (!($i % 15))
@@ -274,15 +263,15 @@ for ($i = 1; $i <= 100; $i++)
 ?>
 ```
 
-## PHP - what makes it interesting?
+## ![](../images/php.svg){ .lineimg } - what makes it interesting?
 
-![](../images/apple.svg){ .bigimg }
+![](../images/apple.svg){ .biglogo }
 
 ::: notes
 It Just Works™
 :::
 
-## PHP - what did I learn from it?
+## ![](../images/php.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/documentation.jpg){ .bigimg }
 
@@ -292,44 +281,39 @@ Great documentation in a time when this wasn't common
 
 # Elm
 
-![](../images/elm.svg){ .bigimg }
+![](../images/elm.svg){ .biglogo }
 
-## Elm - creator
+## ![](../images/elm.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 2012 |
+| Used for | front-end |
+| Paradigm | functional |
+| Typing | strong, static |
+| Runtime | compiled to JavaScript |
+
+## ![](../images/elm.svg){ .lineimg } - creator
 
 ![](../images/evan-czaplicki.jpg){ .bigimg }
 
 Evan Czaplicki
 
-## Elm - creator
+## ![](../images/elm.svg){ .lineimg } - creator
 
 ![](../images/evan-czaplicki.jpg){ .bigimg }
 
 Beard: 🤷
 
-## Elm - properties
-
-![](../images/elm.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | strong, static |
-| Runtime | compiled to JavaScript |
-| Memory | managed |
-| Appeared in | 2012 |
-| Used for | front-end |
-
-## Elm - what does it look like?
+## ![](../images/elm.svg){ .lineimg } - what does it look like?
 
 ```elm
 import Html exposing (text)
 import List exposing (map)
 
-main = text (helloworld ++ fizzbuzz)
-
-helloworld = "Hello world"
-
-fizzbuzz = List.range 1 100 |> map getWordForNum |> String.join " "
+main =
+  List.range 1 100 |> map getWordForNum |> String.join " "
  
 getWordForNum num =
   if modBy num 15 == 0 then
@@ -342,7 +326,7 @@ getWordForNum num =
     String.fromInt num
 ```
 
-## Elm - what makes it interesting?
+## ![](../images/elm.svg){ .lineimg } - what makes it interesting?
 
 ```sh
 I got to the end of the line without seeing the closing double quote:
@@ -365,7 +349,7 @@ syntax like this:
     """
 ```
 
-## Elm - what did I learn from it?
+## ![](../images/elm.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/fool.jpg){ .bigimg }
 
@@ -375,38 +359,34 @@ Even I can do front-end
 
 # Lisp
 
-![](../images/lisp.png){ .bigimg }
+![](../images/lisp.png){ .biglogo }
 
-## Lisp - creator
+## ![](../images/lisp.png){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 1958 |
+| Used for | AI |
+| Paradigm | functional |
+| Typing | strong, dynamic |
+| Runtime | compiled to native |
+
+## ![](../images/lisp.png){ .lineimg } - creator
 
 ![](../images/john-mccarthy.jpg){ .bigimg }
 
 John McCarthy
 
-## Lisp - creator
+## ![](../images/lisp.png){ .lineimg } - creator
 
 ![](../images/john-mccarthy.jpg){ .bigimg }
 
 Beard: ✅ ✅ ✅
 
-## Lisp - properties
-
-![](../images/lisp.png){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | strong, dynamic |
-| Runtime | compiled to native |
-| Memory | managed |
-| Appeared in | 1958 |
-| Used for | AI |
-
-## Lisp - what does it look like?
+## ![](../images/lisp.png){ .lineimg } - what does it look like?
 
 ```lisp
-(println "Hello world")
-
 (define (fizzbuzz x y)
   (println
     (cond ((= (modulo x 15) 0) "FizzBuzz")
@@ -423,15 +403,21 @@ Beard: ✅ ✅ ✅
 Scheme dialect
 :::
 
-## Lisp - what makes it interesting?
+## ![](../images/lisp.png){ .lineimg } - what makes it interesting?
 
-![](../images/inception.jpg){ .bigimg }
+Minimal syntax, maximal power
 
-::: notes
-homo-iconicity
-:::
+```lisp
+(println "Hello world")
 
-## Lisp - what did I learn from it?
+(+ 1 (* 2 3) 4)
+
+(define Y
+  (lambda (f)
+    (f (lambda (x) ((Y f) x)))))
+```
+
+## ![](../images/lisp.png){ .lineimg } - what did I learn from it?
 
 ![](../images/arabic-calligraphy.jpg){ .bigimg }
 
@@ -441,48 +427,42 @@ beautiful, elegant, undecipherable, full of meaning
 
 # Arabic
 
-![](../images/arabic.svg){ .bigimg }
+![](../images/arabic.svg){ .biglogo }
 
-## Arabic - creator
+## ![](../images/arabic.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 5th century CE |
+| Used in | Northern Africa, Middle-East |
+| Family | semitic |
+| Script | arabic |
+| Native speakers | ±350mln |
+
+## ![](../images/arabic.svg){ .lineimg } - creator
 
 ![](../images/arabic-campfire.jpg){ .bigimg }
 
 Unknowable
 
-## Arabic - creator
+## ![](../images/arabic.svg){ .lineimg } - creator
 
 ![](../images/arabic-campfire.jpg){ .bigimg }
 
 Beard: ![](../images/trollface.png){ height=40px }
 
-## Arabic - properties
-
-![](../images/arabic.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Family | semitic |
-| Script | arabic |
-| Native speakers | ±350mln |
-| Appeared in | 5th century CE |
-| Used in | Northern Africa, Middle-East |
-
-## Arabic - what does it look like?
-
-مرحبا بالعالم
-
-<br/>
+## ![](../images/arabic.svg){ .lineimg } - what does it look like?
 
 ١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
 
-## Arabic - what makes it interesting?
+## ![](../images/arabic.svg){ .lineimg } - what makes it interesting?
 
 مَرحَبًا بِالعَالَم - مرحبا بالعالم
 
 ![](../images/arabic-books.jpg){ .bigimg }
 
-## Arabic - what did I learn from it?
+## ![](../images/arabic.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/sattouf.png){ .bigimg }
 
@@ -492,50 +472,43 @@ From _The Arab of the Future 2_ by Riad Sattouf
 
 # Ruby
 
-![](../images/ruby.svg){ .bigimg }
+![](../images/ruby.svg){ .biglogo }
 
-## Ruby - creator
+## ![](../images/ruby.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 1995 |
+| Used for | scripting, simple back-end |
+| Paradigm | object-oriented |
+| Typing | strong, duck |
+| Runtime | interpreted |
+
+## ![](../images/ruby.svg){ .lineimg } - creator
 
 ![](../images/matsumoto.jpg){ .bigimg }
 
 Yukihiro Matsumoto
 
-## Ruby - creator
+## ![](../images/ruby.svg){ .lineimg } - creator
 
 ![](../images/matsumoto.jpg){ .bigimg }
 
 Beard: ✅
 
-## Ruby - properties
-
-![](../images/ruby.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | strong, duck |
-| Runtime | interpreted |
-| Memory | managed |
-| Appeared in | 1995 |
-| Used for | scripting, simple back-end |
-
-## Ruby - what does it look like?
+## ![](../images/ruby.svg){ .lineimg } - what does it look like?
 
 ```ruby
-puts "Hello World"
-
 1.upto 100 do |i|
-  string = ""
-
-  string += "Fizz" if i % 3 == 0
-  string += "Buzz" if i % 5 == 0
-  string = i.to_s if string == ""
-
-  puts "#{i} = #{string}"
+  puts "FizzBuzz" if i % 15 == 0
+  puts "Fizz" if i % 3 == 0 and i % 5 != 0
+  puts "Buzz" if i % 3 != 0 and i % 5 == 0
+  puts i if i % 3 != 0 and i % 5 != 0
 end
 ```
 
-## Ruby - what makes it interesting?
+## ![](../images/ruby.svg){ .lineimg } - what makes it interesting?
 
 ```ruby
 class Integer
@@ -556,7 +529,7 @@ class Module
 end
 ```
 
-## Ruby - what did I learn from it?
+## ![](../images/ruby.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/successkid.png)
 
@@ -568,40 +541,36 @@ end
 
 ![](../images/delphi.jpg){ .bigimg }
 
-## Delphi - creator
+## ![](../images/delphi.jpg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 1995 |
+| Used for | Windows GUIs |
+| Paradigm | object-oriented |
+| Typing | strong, static |
+| Runtime | compiled to native |
+
+## ![](../images/delphi.jpg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Anders Hejlsberg
 
-## Delphi - creator
+## ![](../images/delphi.jpg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Beard: ❌
 
-## Delphi - properties
-
-![](../images/delphi.jpg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | strong, static |
-| Runtime | compiled to native |
-| Memory | manual |
-| Appeared in | 1995 |
-| Used for | Windows GUIs |
-
-## Delphi - what does it look like?
+## ![](../images/delphi.jpg){ .lineimg } - what does it look like?
 
 ```pascal
-program HelloWorld;
+program FizzBuzz;
 var
   i: Integer;
 begin
-  WriteLn('Hello World');
-
   for i := 0 to 100 do
   begin
     if i mod 15 = 0 then
@@ -616,44 +585,42 @@ begin
 end.
 ```
 
-## Delphi - what makes it interesting?
+## ![](../images/delphi.jpg){ .lineimg } - what makes it interesting?
 
 ![](../images/delphi-win3.png){ .bigimg }
 
-## Delphi - what did I learn from it?
+## ![](../images/delphi.jpg){ .lineimg } - what did I learn from it?
 
 ![](../images/hashmap.jpg){ .bigimg }
 
 # C\#
 
-![](../images/csharp.svg){ .bigimg }
+![](../images/csharp.svg){ .biglogo }
 
-## C\# - creator
+## ![](../images/csharp.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 2000 |
+| Used for | Windows GUIs, back-end |
+| Paradigm | object-oriented |
+| Typing | strong, static |
+| Runtime | .NET |
+
+## ![](../images/csharp.svg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Anders Hejlsberg
 
-## C\# - creator
+## ![](../images/csharp.svg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Beard: ❌
 
-## C\# - properties
-
-![](../images/csharp.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | strong, static |
-| Runtime | .NET |
-| Memory | managed |
-| Appeared in | 2000 |
-| Used for | Windows GUIs, back-end |
-
-## C\# - what does it look like?
+## ![](../images/csharp.svg){ .lineimg } - what does it look like?
 
 ```csharp
 using System;
@@ -662,8 +629,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World");
-
         for (int i = 1; i <= 100; i++)
         {
             if (i % 15 == 0)
@@ -687,7 +652,7 @@ class Program
 }
 ```
 
-## C\# - what makes it interesting?
+## ![](../images/csharp.svg){ .lineimg } - what makes it interesting?
 
 ```csharp
 using System;
@@ -707,7 +672,7 @@ class Program
 }
 ```
 
-## C\# - what did I learn from it?
+## ![](../images/csharp.svg){ .lineimg } - what did I learn from it?
 
 ![](../images/market.jpg){ .bigimg }
 
@@ -717,38 +682,34 @@ Proprietary tools & libs are OK
 
 # TypeScript
 
-![](../images/typescript.svg){ .bigimg }
+![](../images/typescript.svg){ .biglogo }
 
-## TypeScript - creator
+## ![](../images/typescript.svg){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 2012 |
+| Used for | front-end |
+| Paradigm | object-oriented |
+| Typing | gradual, structural |
+| Runtime | compiled to JavaScript |
+
+## ![](../images/typescript.svg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Anders Hejlsberg
 
-## TypeScript - creator
+## ![](../images/typescript.svg){ .lineimg } - creator
 
 ![](../images/anders-hejlsberg.jpg){ .bigimg }
 
 Beard: ❌
 
-## TypeScript - properties
-
-![](../images/typescript.svg){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | gradual |
-| Runtime | compiled to JavaScript |
-| Memory | managed |
-| Appeared in | 2012 |
-| Used for | front-end |
-
-## TypeScript - what does it look like?
+## ![](../images/typescript.svg){ .lineimg } - what does it look like?
 
 ```typescript
-console.log('Hello world')
-
 for (let i = 1; i < 101; i++) {
     if (i % 15 === 0) {
         console.log('FizzBuzz')
@@ -765,11 +726,9 @@ for (let i = 1; i < 101; i++) {
 }
 ```
 
-## TypeScript - what does it look like?
+## ![](../images/typescript.svg){ .lineimg } - what does it look like?
 
 ```typescript
-console.log('Hello world')
-
 for (let i: number = 1; i < 101; i++) {
     if (i % 15 === 0) {
         console.log('FizzBuzz')
@@ -786,7 +745,7 @@ for (let i: number = 1; i < 101; i++) {
 }
 ```
 
-## TypeScript - what makes it interesting?
+## ![](../images/typescript.svg){ .lineimg } - what makes it interesting?
 
 ```typescript
 // Lodash's pick() function
@@ -805,7 +764,7 @@ pick({ a: 1, b: 2, c: 3, d: 4 }, ['a', 'd'])
 Adds order to JavaScript's chaos
 :::
 
-## TypeScript - what makes it interesting?
+## ![](../images/typescript.svg){ .lineimg } - what makes it interesting?
 
 ```typescript
 // Lodash's pick() function
@@ -819,47 +778,48 @@ function pick<O extends object, Keys extends keyof O>
              (object: O, paths: Keys[]): { [K in Keys]: O[K] }
 ```
 
-## TypeScript - what did I learn from it?
+## ![](../images/typescript.svg){ .lineimg } - what did I learn from it?
 
-![](../images/lsp.png){ .bigimg }
+![](../images/no-lsp.png){ .biglogo }
+
+## ![](../images/typescript.svg){ .lineimg } - what did I learn from it?
+
+![](../images/lsp.png){ .biglogo }
 
 # AnnotationScript
 
-![](../images/annotationscript.png){ .bigimg }
+![](../images/annotationscript.png){ .biglogo }
 
-## AnnotationScript - creator
+## ![](../images/annotationscript.png){ .lineimg } - properties
+
+|||
+|---|---|
+|||
+| Appeared in | 2021 |
+| Used for | fun |
+| Paradigm | functional |
+| Typing | weak, dynamic |
+| Runtime | Java annotations 🤯 |
+
+## ![](../images/annotationscript.png){ .lineimg } - creator
 
 ![](../images/jan-ouwens.jpg){ .bigimg }
 
 Me!
 
-## AnnotationScript - creator
+## ![](../images/annotationscript.png){ .lineimg } - creator
 
 ![](../images/jan-ouwens.jpg){ .bigimg }
 
 Beard: ✅
 
-## AnnotationScript - properties
-
-![](../images/annotationscript.png){ .cardimg }
-
-|||
-|---|---|
-|||
-| Typing | weak, dynamic |
-| Runtime | interpreted |
-| Memory | managed |
-| Appeared in | 2021 |
-| Used for | fun |
-
-## AnnotationScript - what does it look like?
+## ![](../images/annotationscript.png){ .lineimg } - what does it look like?
 
 ```java
 import nl.jqno.annotationscript.AnnotationScript;
 import nl.jqno.annotationscript.Annotations.*;
 
 @Zero("begin")
-@Zero(list={@One("println"), @One("'Hello World'")})
 @Zero(list={@One("define"), @One("fizz-buzz"), @One(list={@Two("lambda"), @Two(list=@Three("n")), @Two(list={
     @Three("cond"),
     @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"), @Five("15")}), @Four("0")}), @Three("'fizzbuzz'"),
@@ -874,7 +834,7 @@ public class FizzBuzz {
 }
 ```
 
-## AnnotationScript - what makes it interesting?
+## ![](../images/annotationscript.png){ .lineimg } - what makes it interesting?
 
 ```java
 @Autowired @Bean
@@ -884,25 +844,17 @@ public class FizzBuzz {
 public void waitwhat() { ... }
 ```
 
-## AnnotationScript - what did I learn from it?
+## ![](../images/annotationscript.png){ .lineimg } - what did I learn from it?
 
 ```lisp
 (begin
-  (println 'Hello world')
-
-  (define
-    (fizzbuzz (lambda (n) (cond
-      ((eq? 0 (mod n 15)) (quote fizzbuzz))
-      ((eq? 0 (mod n 3)) (quote fizz))
-      ((eq? 0 (mod n 5)) (quote buzz))
-      (else n))))
-    (define (run (lambda (i end recurse)
-      (cond
-        ((eq? i end) (quote ()))
-        (else
-          (cons (fizzbuzz i) (recurse (add1 i) end recurse))))))
-      (run 1 31 run))))
-  ```
+  (define fizz-buzz (lambda (n) (cond
+    (= (% n 15) 0) 'fizzbuzz
+    (= (% n 3) 0) 'fizz
+    (= (% n 5) 0) 'buzz
+    else n)))
+  (map println (map fizz-buzz (range 1 101))))
+```
 
 #
 
