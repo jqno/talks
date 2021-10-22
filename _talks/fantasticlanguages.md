@@ -52,7 +52,7 @@ Every language is cool and unique in its own way and will influence the way you 
 * [john-mccarthy](/talks/slides/fantasticlanguages/images/john-mccarthy.jpg) - John McCarthy's official website - [source](http://jmc.stanford.edu/general/pictures.html)
 * [kemeny-kurtz](/talks/slides/fantasticlanguages/images/kemeny-kurtz.jpg) - Dartmouth College Library - [source](https://www.computerhistory.org/revolution/mainframe-computers/7/178/722)
 * [lisp](/talks/slides/fantasticlanguages/images/lisp.png) - by Lisp - [source](https://commons.wikimedia.org/wiki/File:Lisplogo.png)
-* [lsp](/talks/slides/fantasticlanguages/images/lsp.png) - by Jan Ouwens
+* [lsp](/talks/slides/fantasticlanguages/images/lsp.png) & [no-lsp](/talks/slides/fantasticlanguages/images/no-lsp.png) - by Jan Ouwens
 * [market](/talks/slides/fantasticlanguages/images/market.jpg) - by Alex Hudson - [source](https://unsplash.com/photos/m3I92SgM3Mk)
 * [matsumoto](/talks/slides/fantasticlanguages/images/matsumoto.jpg) - by Cep21 - [source](https://commons.wikimedia.org/wiki/File:Yukihiro_Matsumoto.JPG)
 * [msx](/talks/slides/fantasticlanguages/images/msx.jpg) - [source](https://en.wikipedia.org/wiki/File:MSX_Philips_VG8020.jpg)

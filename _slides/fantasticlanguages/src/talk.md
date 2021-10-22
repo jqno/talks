@@ -780,6 +780,10 @@ function pick<O extends object, Keys extends keyof O>
 
 ## ![](../images/typescript.svg){ .lineimg } - what did I learn from it?
 
+![](../images/no-lsp.png){ .biglogo }
+
+## ![](../images/typescript.svg){ .lineimg } - what did I learn from it?
+
 ![](../images/lsp.png){ .biglogo }
 
 # AnnotationScript
