@@ -405,15 +405,25 @@ Scheme dialect
 
 ## ![](../images/lisp.png){ .lineimg } - what makes it interesting?
 
+Minimal syntax, maximal power
+
+```lisp
+(println "Hello world")
+
+(+ 1 (* 2 3) 4)
+
+(define Y
+  (lambda (f)
+    (f (lambda (x) ((Y f) x)))))
+```
+
+## ![](../images/lisp.png){ .lineimg } - what did I learn from it?
+
 ![](../images/arabic-calligraphy.jpg){ .bigimg }
 
 ::: notes
 beautiful, elegant, undecipherable, full of meaning
 :::
-
-## ![](../images/lisp.png){ .lineimg } - what did I learn from it?
-
-![](../images/inception.jpg){ .bigimg }
 
 # Arabic
 

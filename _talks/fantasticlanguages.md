@@ -46,7 +46,6 @@ Every language is cool and unique in its own way and will influence the way you 
 * [evan-czaplicki](/talks/slides/fantasticlanguages/images/evan-czaplicki.jpg) - Twitter profile in 2021 - [source](https://twitter.com/evancz/photo)
 * [fool](/talks/slides/fantasticlanguages/images/fool.jpg) - by Couleur - [source](https://pixabay.com/photos/fool-court-jester-clown-fun-1476189/)
 * [hashmap](/talks/slides/fantasticlanguages/images/hashmap.jpg) - by Jan Ouwens
-* [inception](/talks/slides/fantasticlanguages/images/inception.jpg) - by ImaArtist - [source](https://pixabay.com/photos/buildings-bridges-urban-sky-5527684/)
 * [james-gosling](/talks/slides/fantasticlanguages/images/james-gosling.jpg) - by Peter Campbell - [source](https://commons.wikimedia.org/wiki/File:James_Gosling_2008.jpg)
 * [jan-ouwens](/talks/slides/fantasticlanguages/images/jan-ouwens.jpg) - by Riemke Ouwens
 * [java](/talks/slides/fantasticlanguages/images/java.svg) - by Mark Anderson, for Sun Microsystems - [source](https://en.wikipedia.org/wiki/File:Java_programming_language_logo.svg)
