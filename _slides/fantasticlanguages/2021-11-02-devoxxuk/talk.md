@@ -458,9 +458,14 @@ Beard: ![](../images/trollface.png){ height=40px }
 
 ## ![](../images/arabic.svg){ .lineimg } - what makes it interesting?
 
-مَرحَبًا بِالعَالَم - مرحبا بالعالم
+::: small
+|||
+|-|-|
+| hll world | hello world |
+| مرحبا بالعالم | مَرحَبًا بِالعَالَم |
+:::
 
-![](../images/arabic-books.jpg){ .bigimg }
+![](../images/arabic-books.jpg){ .bigimg style="height:9em;" }
 
 ## ![](../images/arabic.svg){ .lineimg } - what did I learn from it?
 
