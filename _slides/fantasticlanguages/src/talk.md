@@ -16,6 +16,10 @@ and what to learn from them
 
 ![](../images/progbooks.jpg){ .shadow style="height:400px;" }
 
+## Learn a language!
+
+![](../images/pragprog.jpg){ .bigimg }
+
 ## ∀ language
 
 ::: supersmall
@@ -27,10 +31,6 @@ in increasing order of length
 * FizzBuzz?
 * Interesting?
 * Changed my thinking?
-
-## Why?
-
-![](../images/pragprog.jpg){ .bigimg }
 
 ::: notes
 Language of the Year
