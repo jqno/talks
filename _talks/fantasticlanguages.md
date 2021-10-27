@@ -27,6 +27,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 
 ## Deliveries
 
+* _4 November 2021_, J-Fall Netherlands: [[event](https://jfall.nl/timetable-2021/)] [[slides](https://jqno.nl/talks/slides/fantasticlanguages/2021-11-04-jfall/)]
 * _2 November 2021_, Devoxx UK: [[event](https://www.devoxx.co.uk/)] [[slides](https://jqno.nl/talks/slides/fantasticlanguages/2021-11-02-devoxxuk/)]
 
 ## Image credits
