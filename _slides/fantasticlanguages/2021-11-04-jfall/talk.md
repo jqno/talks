@@ -17,7 +17,7 @@ and what to learn from them
 ![](../images/progbooks.jpg){ .shadow style="height:320px;" }
 ![](../images/pragprog.jpg){ .shadow style="height:320px;float:left;" }
 
-## ![](../images/basic.png){ .lineimg } - BASIC
+## ![](../images/basic.png){ .lineimg } - BASIC - 💻
 
 ```basic
 10 FOR I = 1 to 100
@@ -29,11 +29,11 @@ and what to learn from them
 70 NEXT I
 ```
 
-## ![](../images/basic.png){ .lineimg } - what makes it interesting?
+## ![](../images/basic.png){ .lineimg } - BASIC - 🤔
 
 ![](../images/msx.jpg){ .bigimg }
 
-## ![](../images/basic.png){ .lineimg } - what did I learn from it?
+## ![](../images/basic.png){ .lineimg } - BASIC - 💡
 
 ![](../images/thesis.jpg){ .bigimg }
 
@@ -45,7 +45,7 @@ from my master's thesis
 Programming!
 :::
 
-## ![](../images/php.svg){ .lineimg } - PHP
+## ![](../images/php.svg){ .lineimg } - PHP - 💻
 
 ```php
 <?php
@@ -63,7 +63,7 @@ for ($i = 1; $i <= 100; $i++)
 ?>
 ```
 
-## ![](../images/php.svg){ .lineimg } - what makes it interesting?
+## ![](../images/php.svg){ .lineimg } - PHP - 🤔
 
 ![](../images/apple.svg){ .biglogo }
 
@@ -71,7 +71,7 @@ for ($i = 1; $i <= 100; $i++)
 It Just Works™
 :::
 
-## ![](../images/php.svg){ .lineimg } - what did I learn from it?
+## ![](../images/php.svg){ .lineimg } - PHP - 💡
 
 ![](../images/documentation.jpg){ .bigimg }
 
@@ -79,7 +79,7 @@ It Just Works™
 Great documentation in a time when this wasn't common
 :::
 
-## ![](../images/elm.svg){ .lineimg } - Elm
+## ![](../images/elm.svg){ .lineimg } - Elm - 💻
 
 ```elm
 import Html exposing (text)
@@ -99,7 +99,7 @@ getWordForNum num =
     String.fromInt num
 ```
 
-## ![](../images/elm.svg){ .lineimg } - what makes it interesting?
+## ![](../images/elm.svg){ .lineimg } - Elm - 🤔
 
 ```sh
 I got to the end of the line without seeing the closing double quote:
@@ -122,7 +122,7 @@ syntax like this:
     """
 ```
 
-## ![](../images/elm.svg){ .lineimg } - what did I learn from it?
+## ![](../images/elm.svg){ .lineimg } - Elm - 💡
 
 ![](../images/fool.jpg){ .bigimg }
 
@@ -130,7 +130,7 @@ syntax like this:
 Even I can do front-end
 :::
 
-## ![](../images/lisp.png){ .lineimg } - Lisp
+## ![](../images/lisp.png){ .lineimg } - Lisp - 💻
 
 ```lisp
 (define (fizzbuzz x y)
@@ -149,7 +149,7 @@ Even I can do front-end
 Scheme dialect
 :::
 
-## ![](../images/lisp.png){ .lineimg } - what makes it interesting?
+## ![](../images/lisp.png){ .lineimg } - Lisp - 🤔
 
 Minimal syntax, maximal power
 
@@ -163,7 +163,7 @@ Minimal syntax, maximal power
     (f (lambda (x) ((Y f) x)))))
 ```
 
-## ![](../images/lisp.png){ .lineimg } - what did I learn from it?
+## ![](../images/lisp.png){ .lineimg } - Lisp - 💡
 
 ![](../images/arabic-calligraphy.jpg){ .bigimg }
 
@@ -171,7 +171,7 @@ Minimal syntax, maximal power
 beautiful, elegant, undecipherable, full of meaning
 :::
 
-## ![](../images/delphi.jpg){ .lineimg } - Delphi
+## ![](../images/delphi.jpg){ .lineimg } - Delphi - 💻
 
 ```pascal
 program FizzBuzz;
@@ -192,15 +192,15 @@ begin
 end.
 ```
 
-## ![](../images/delphi.jpg){ .lineimg } - what makes it interesting?
+## ![](../images/delphi.jpg){ .lineimg } - Delphi - 🤔
 
 ![](../images/delphi-win3.png){ .bigimg }
 
-## ![](../images/delphi.jpg){ .lineimg } - what did I learn from it?
+## ![](../images/delphi.jpg){ .lineimg } - Delphi - 💡
 
 ![](../images/hashmap.jpg){ .bigimg }
 
-## ![](../images/annotationscript.png){ .lineimg } - AnnotationScript
+## ![](../images/annotationscript.png){ .lineimg } - AnnotationScript - 💻
 
 ```java
 import nl.jqno.annotationscript.AnnotationScript;
@@ -221,7 +221,7 @@ public class FizzBuzz {
 }
 ```
 
-## ![](../images/annotationscript.png){ .lineimg } - what makes it interesting?
+## ![](../images/annotationscript.png){ .lineimg } - AnnotationScript - 🤔
 
 ```java
 @Autowired @Bean
@@ -231,7 +231,7 @@ public class FizzBuzz {
 public void waitwhat() { ... }
 ```
 
-## ![](../images/annotationscript.png){ .lineimg } - what did I learn from it?
+## ![](../images/annotationscript.png){ .lineimg } - AnnotationScript - 💡
 
 ```lisp
 (begin
