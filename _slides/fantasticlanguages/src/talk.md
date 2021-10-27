@@ -657,22 +657,12 @@ class Program
 
 ## ![](../images/csharp.svg){ .lineimg } - what makes it interesting?
 
-```csharp
-using System;
-using System.Linq;
+LINQ
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        var result = from i in Enumerable.Range(1, 100)
-                        select (i % 15 == 0) ? "BuzzFizz" :
-                            (i % 5 == 0) ? "Buzz" :
-                            (i % 3 == 0) ? "Fizz" :
-                            i.ToString();
-        result.ForEach(Console.WriteLine);
-    }
-}
+```csharp
+var popular = from lang in languages
+              where lang.Creator.HasBeard
+              select lang.Name;
 ```
 
 ## ![](../images/csharp.svg){ .lineimg } - what did I learn from it?
