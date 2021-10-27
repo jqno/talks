@@ -204,15 +204,13 @@ Beard: ✅
 
 ## ![](../images/english.svg){ .lineimg } - what makes it interesting?
 
+The Great Vowel Shift
+
 | 🇪🇺 | → | 🇬🇧 |
 |-|-|-|
 | a | → | e |
 | e | → | i |
 | i | → | ay |
-
-::: supersmall
-The Great Vowel Shift
-:::
 
 ## ![](../images/english.svg){ .lineimg } - what did I learn from it?
 
