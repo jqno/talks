@@ -11,7 +11,9 @@ center: "false"
 <!-- markdownlint-disable MD045 -->
 
 ::: subtitle
+![](../images/jfall2021.png){ style="height:2em;" }
 and what to learn from them
+![](../images/jfall2021.png){ style="height:2em;" }
 :::
 
 ![](../images/progbooks.jpg){ .shadow style="height:320px;" }
