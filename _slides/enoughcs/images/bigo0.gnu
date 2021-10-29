@@ -5,7 +5,7 @@ i(x) = 2**x
 fac(x) = gamma(x+1)
 
 set terminal png size 1200,900
-set output 'plot.png'
+set output 'bigo0.png'
 
 set key left top font "TilburgsAnsText,25"
 
