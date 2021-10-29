@@ -403,7 +403,7 @@ Q.E.D.
 
 ## What it looked like for me
 
-![](../images/homework1.jpg){ .raw }\ \ \ \ \ \ ![](../images/homework2.jpg){ .raw }
+![](../images/homework0.jpg){ .raw }
 
 ::: notes
 * plaatje van mijn huiswerk
@@ -1138,8 +1138,6 @@ Tip: Google "Big O cheat sheet"
 :::
 
 ## What's next?
-
-<br/>
 
 [![](../images/jwdsal2.jpg){ .raw }](https://pragprog.com/titles/jwdsal2)
 

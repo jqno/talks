@@ -44,7 +44,7 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
 * [edsger-dijkstra](/talks/slides/enoughcs/images/edsger-dijkstra.jpg) - by Hamilton Richards - [source](https://commons.wikimedia.org/w/index.php?curid=4204157)
 * [grace-hopper](/talks/slides/enoughcs/images/grace-hopper.jpg) - by James S. Davis - [source](https://commons.wikimedia.org/w/index.php?curid=12421475)
 * [hashmap0](/talks/slides/enoughcs/images/hashmap0.jpg), [hashmap1](/talks/slides/enoughcs/images/hashmap1.jpg) - By Jan Ouwens
-* [homework1](/talks/slides/enoughcs/images/homework1.jpg), [homework2](/talks/slides/enoughcs/images/homework2.jpg) - by Jan Ouwens
+* [homework0](/talks/slides/enoughcs/images/homework0.jpg), [homework1](/talks/slides/enoughcs/images/homework1.jpg), [homework2](/talks/slides/enoughcs/images/homework2.jpg) - by Jan Ouwens
 * [jan-ouwens](/talks/slides/enoughcs/images/jan-ouwens.jpg) - by Riemke Ouwens
 * [jwdsal2](/talks/slides/enoughcs/images/jwdsal2.jpg) - by The Pragmatic Bookshelf - [source](https://pragprog.com/titles/jwdsal2/)
 * [katherine-johnson](/talks/slides/enoughcs/images/katherine-johnson.jpg) - by NASA - [source](https://commons.wikimedia.org/w/index.php?curid=57372693)
