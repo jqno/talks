@@ -39,7 +39,7 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
 * [alan-turing-movie](/talks/slides/enoughcs/images/alan-turing-movie.jpg) - from the movie [The Imitation Game](https://www.imdb.com/title/tt2084970/?ref_=fn_al_tt_1)
 * [array0](/talks/slides/enoughcs/images/array0.jpg), [array1](/talks/slides/enoughcs/images/array1.jpg), [array2](/talks/slides/enoughcs/images/array2.jpg) - by Jan Ouwens
 * [background](/talks/slides/enoughcs/images/background.png) - by Jan Ouwens
-* [bigo0](/talks/slides/enoughcs/images/bigo0.jpg) - By Jan Ouwens
+* [bigo0](/talks/slides/enoughcs/images/bigo0.jpg), [bigo1](/talks/slides/enoughcs/images/bigo1.jpg), [bigo2](/talks/slides/enoughcs/images/bigo2.jpg) - By Jan Ouwens
 * [donald-knuth](/talks/slides/enoughcs/images/donald-knuth.jpg) - by Flickr user Jacob Appelbaum - [source](https://commons.wikimedia.org/w/index.php?curid=1303242)
 * [dijkstra-zero](/talks/slides/enoughcs/images/dijkstra-zero.png) - by Edsger Dijkstra - [source](http://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF)
 * [edsger-dijkstra](/talks/slides/enoughcs/images/edsger-dijkstra.jpg) - by Hamilton Richards - [source](https://commons.wikimedia.org/w/index.php?curid=4204157)

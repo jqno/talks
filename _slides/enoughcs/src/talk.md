@@ -1065,6 +1065,50 @@ Yes:
 
 * Computer science
 
+## Software engineering
+
+::: big
+If you remember only 3 things
+:::
+
+## Software engineering
+
+::: superbig
+It depends
+:::
+
+## Big O notation
+
+![](../images/bigo0.png){ style="height:500px;" }
+
+## Big O notation
+
+![](../images/bigo1.png){ style="height:500px;" }
+
+::: notes
+If complexity < something, it may not matter
+:::
+
+## Big O notation
+
+![](../images/bigo2.png){ style="height:500px;" }
+
+::: notes
+for small values, things behave differently
+:::
+
+## Readability
+
+::: { style="font-size:3em;" }
+```java
+ 🙂 Set<T> set;
+```
+
+```java
+ 🧐 LinkedHashSet<T> set;
+```
+:::
+
 # Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/tony-hoare.jpg){ .portrait }
@@ -1117,6 +1161,14 @@ Data structures
 :::
 
 Choose wisely
+
+## Recap
+
+::: big
+Thing 3:
+
+It depends
+:::
 
 ##
 
