@@ -56,3 +56,4 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
 * [margaret-hamilton](/talks/slides/enoughcs/images/margaret-hamilton.jpg) - by Draper Laboratory; restored by Adam Cuerden - [source](https://commons.wikimedia.org/w/index.php?curid=59655977)
 * [margaret-hamilton-lego](/talks/slides/enoughcs/images/margaret-hamilton-lego.jpg) - by The LEGO Group - [source](https://www.lego.com/en-nl/product/women-of-nasa-21312)
 * [muhammad-al-khwarizmi](/talks/slides/enoughcs/images/muhammad-al-khwarizmi.png) - by ms - [source](https://commons.wikimedia.org/w/index.php?curid=29993331)
+* [tony-hoare](/talks/slides/enoughcs/images/tony-hoare.jpg) - Rama - [source](https://commons.wikimedia.org/w/index.php?curid=15568323)

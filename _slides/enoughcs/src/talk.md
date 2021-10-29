@@ -1026,14 +1026,6 @@ Yes:
      List<String> myList = new CopyOnWriteArrayList<>();
 ```
 
-##
-
-::: superbig
-Let's
-
-wrap up
-:::
-
 # Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/margaret-hamilton.jpg){ .portrait }
@@ -1072,6 +1064,25 @@ wrap up
 . . .
 
 * Computer science
+
+# Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/tony-hoare.jpg){ .portrait }
+
+1934 -
+
+::: notes
+* Invented null
+* "Billion-dollar mistake"
+:::
+
+##
+
+::: superbig
+Let's
+
+wrap up
+:::
 
 ## Recap
 
