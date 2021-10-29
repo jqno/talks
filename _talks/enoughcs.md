@@ -32,6 +32,7 @@ A CS degree is not a requirement for software developer roles. Nor should it be!
 This talk gives an overview of some of these fundamentals, such as De Morgan's Laws, the Big O notation, and how algorithm complexity informs whether you should use an ArrayList or something else. It also introduces you to the remarkable people who came up with these things. They ended wars, sent rockets to the moon, and were made into Lego minifigs. Who said computer science is boring?
 
 ## Deliveries
+* _4 November 2021_, J-Fall Netherlands: [[event](https://jfall.nl/timetable-2021/)] [[slides](https://jqno.nl/talks/slides/enoughcs/2021-11-04-jfall/)]
 * _24 September 2020_, Codesmiths Unite: [[event](https://codesmithsunite.nl/)] [[slides](../slides/enoughcs/2020-codesmiths-unite)] [[aftermovie](https://www.youtube.com/watch?v=QVUZguXZpJ8)]
 
 ## Image credits
