@@ -8,21 +8,17 @@ controls: "false"
 center: "false"
 ---
 
-# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
+# Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/jfall2021-background.jpg" }
 
-<br/>
-
-I studied computer science so you don't have to
+![](../images/jfall2021.png){ height=3.5em }
 
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #enoughcs
 :::
 
-## Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
+## Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/jfall2021-background.jpg" }
 
-<br/>
-
-I studied computer science so you don't have to
+![](../images/jfall2021.png){ height=3.5em }
 
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #enoughcs
@@ -30,6 +26,12 @@ I studied computer science so you don't have to
 
 ::: doesitwork
 .
+:::
+
+## I studied computer science
+
+::: big
+so you don't have to
 :::
 
 ##
@@ -1234,7 +1236,7 @@ Experiment
 Advanced tip:<br/>Implement your own compression algorithm!
 :::
 
-# Questions? { data-state="page-portrait" data-background-image="../images/background.png" }
+# Questions? { data-state="page-portrait" data-background-image="../images/jfall2021-background.jpg" }
 
 
 <br/>
@@ -1246,7 +1248,7 @@ Advanced tip:<br/>Implement your own compression algorithm!
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #enoughcs
 
-::: supersmall
+::: { .supersmall style="text-shadow:none;" }
 image credits: see website
 :::
 :::
