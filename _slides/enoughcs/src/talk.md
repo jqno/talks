@@ -169,7 +169,7 @@ If you remember only 2 things
 
 ![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
 
-1999 - 2005
+&nbsp;
 
 ![](../images/codestar-by-ordina.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
 
