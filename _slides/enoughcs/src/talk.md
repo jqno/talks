@@ -10,19 +10,11 @@ center: "false"
 
 # Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
 
-<br/>
-
-I studied computer science so you don't have to
-
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #enoughcs
 :::
 
 ## Just enough computer science for the busy developer { data-state="page-portrait" data-background-image="../images/background.png" }
-
-<br/>
-
-I studied computer science so you don't have to
 
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #enoughcs
@@ -178,6 +170,18 @@ If you remember only 2 things
 :::
 
 ###
+
+##
+
+::: { .big style="font-size:2.5em;" }
+I studied
+
+computer science
+
+&nbsp;
+
+**so you don't have to**
+:::
 
 ##
 

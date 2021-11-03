@@ -28,12 +28,6 @@ center: "false"
 .
 :::
 
-## I studied computer science
-
-::: big
-so you don't have to
-:::
-
 ##
 
 ::: superbig
@@ -180,6 +174,18 @@ If you remember only 2 things
 :::
 
 ###
+
+##
+
+::: { .big style="font-size:2.5em;" }
+I studied
+
+computer science
+
+&nbsp;
+
+**so you don't have to**
+:::
 
 ##
 
