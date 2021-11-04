@@ -248,7 +248,7 @@ _"The teaching of BASIC should be rated as a criminal offence:<br/>it mutilates 
 ::: big
 ```pascal
    {x = 3}
-   x += 1;
+    x += 1;
    {x = 4}
 ```
 :::
@@ -1117,6 +1117,14 @@ for small values, things behave differently
 ```
 :::
 
+##
+
+::: superbig
+Let's
+
+wrap up
+:::
+
 # Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/tony-hoare.jpg){ .portrait }
@@ -1128,12 +1136,27 @@ for small values, things behave differently
 * "Billion-dollar mistake"
 :::
 
-##
+## Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
 
-::: superbig
-Let's
+![](../images/tony-hoare.jpg){ .portrait }
 
-wrap up
+::: small
+_"I call it my billion-dollar mistake. It was the invention of the null reference in 1965."_
+:::
+
+::: notes
+* Invented null
+* "Billion-dollar mistake"
+:::
+
+## Hoare triple
+
+::: big
+```pascal
+   {Precondition}
+    Statement
+   {Postcondition}
+```
 :::
 
 ## Recap
