@@ -11,7 +11,7 @@ DIR="$SCRIPT_DIR/../_slides/$PRESENTATION"
 SOURCES_DIR="$DIR/src"
 REVEAL_DIR="../../../assets/revealjs-3.8.0"
 CSS_DIR=".."
-[ -n "$2" ] && SOURCES_DIR=$2
+[ -n "$2" ] && SOURCES_DIR="$DIR/$2"
 [ -n "$3" ] && REVEAL_DIR=$3
 [ -n "$4" ] && CSS_DIR=$4
 
