@@ -386,8 +386,6 @@ runjava -r src/main/java/demos/libraries/remote/Attack.java target/dont-hack-the
 Rating:
 <h1>😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱</h1>
 
----
-
 # </>
 
 # {data-background-image="../images/ribbon.jpg"}
