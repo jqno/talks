@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Jan Ouwens">
+  <title>Don’t hack the platform? ☠️💣💥</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="../parallel-highlight.css"/>
+  <link rel="stylesheet" href="../theme-modifications.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../../assets/revealjs-3.8.0/css/print/pdf.css' : '../../../assets/revealjs-3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../../../assets/revealjs-3.8.0/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <style>.reveal section { color: #93a1a1; }</style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Don’t hack the platform? ☠️💣💥</h1>
+  <p class="author">Jan Ouwens</p>
+  <p class="date">17 April, 2018</p>
+</section>
+
+<section id="ಠ_ಠ" class="title-slide slide level1">
+<h1>ಠ_ಠ</h1>
+
+</section>
+
+<section id="about-me" class="title-slide slide level1">
+<h1>About me 🤓</h1>
+<p>Jan Ouwens</p>
+<p><img data-src="../images/codestar.png" /></p>
+<p><img data-src="../images/twitter.png" /> <a href="https://twitter.com/jqno">jqno</a></p>
+</section>
+
+<section id="equalsverifier" class="title-slide slide level1">
+<h1>EqualsVerifier</h1>
+<p><br/></p>
+<pre class="java"><code>EqualsVerifier.forClass(Foo.class)
+              .verify();</code></pre>
+</section>
+
+<section id="about-this-talk" class="title-slide slide level1">
+<h1>About this talk</h1>
+<p><img data-src="../images/Bob_at_Easel.jpg" /></p>
+<p>Happy accidents</p>
+</section>
+
+<section id="about-this-talk-1" class="title-slide slide level1">
+<h1>About this talk</h1>
+<p><img data-src="../images/dr-evil.jpg" /></p>
+<p>Evil consequences</p>
+</section>
+
+<section id="things-you-shouldnt-mess-with-right-now" class="title-slide slide level1">
+<h1>Things you shouldn’t mess with RIGHT NOW:</h1>
+<ul>
+<li>Language ‘features’</li>
+<li>Reflection</li>
+<li>Annotations</li>
+<li>External libraries</li>
+</ul>
+</section>
+
+<section id="ratings" class="title-slide slide level1">
+<h1>Ratings</h1>
+<ul>
+<li>☠️</li>
+<li>☠️💣</li>
+<li>☠️💣💥</li>
+</ul>
+</section>
+
+<section id="language-features" class="title-slide slide level1">
+<h1>☠️ Language ‘features’</h1>
+
+</section>
+
+<section>
+<section id="true-lambda" class="title-slide slide level1">
+<h1>True Lambda</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<p><img data-src="../images/zalgo.png" /></p>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section></section>
+<section id="unicode-symbols" class="title-slide slide level1">
+<h1>Unicode symbols</h1>
+<ul>
+<li>Hard to type</li>
+<li>Hard to read</li>
+<li>Rating: ☠️</li>
+</ul>
+</section>
+
+<section id="false-is-true" class="title-slide slide level1">
+<h1>False is True</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="false-is-true-1" class="title-slide slide level1">
+<h1>False is True</h1>
+<blockquote>
+<p>Scala demo</p>
+</blockquote>
+</section>
+
+<section id="false-is-true-2" class="title-slide slide level1">
+<h1>False is True</h1>
+<blockquote>
+<p>Kotlin demo</p>
+</blockquote>
+</section>
+
+<section id="false-is-true-3" class="title-slide slide level1">
+<h1>False is True</h1>
+<p>Rating: ☠️💣</p>
+</section>
+
+<section id="unicode-converter" class="title-slide slide level1">
+<h1>Unicode converter</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="unicode-escapes" class="title-slide slide level1">
+<h1>Unicode escapes</h1>
+<ul>
+<li>Harder to type and read</li>
+<li>Maven says ¯\_(ツ)_/¯</li>
+<li>Rating: ☠️💣</li>
+</ul>
+</section>
+
+<section id="emoji" class="title-slide slide level1">
+<h1>Emoji</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="emoji-1" class="title-slide slide level1">
+<h1>Emoji</h1>
+<ul>
+<li>Rating: 🎉</li>
+</ul>
+</section>
+
+<section id="hash-code" class="title-slide slide level1">
+<h1>Hash-code</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="hash-code-1" class="title-slide slide level1">
+<h1>Hash-code</h1>
+<ul>
+<li>Fun when coworkers insist on hashCode as key</li>
+<li>Rating: ☠️</li>
+</ul>
+<div class="fragment">
+<p>However… <img data-src="../images/rtlnieuws.png" /></p>
+</div>
+</section>
+
+<section id="reflection" class="title-slide slide level1">
+<h1>☠️ Reflection</h1>
+
+</section>
+
+<section id="introducing-reflector" class="title-slide slide level1">
+<h1>Introducing: Reflector</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="call-of-the-void" class="title-slide slide level1">
+<h1>Call of the Void</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="oh-man" class="title-slide slide level1">
+<h1>Oh man 😒</h1>
+<pre><code>WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by demos.reflection.CallOfTheVoid (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
+WARNING: Please consider reporting this to the maintainers of demos.reflection.CallOfTheVoid
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release</code></pre>
+<div class="fragment">
+<p><code>--add-opens java.base/java.lang=ALL-UNNAMED</code></p>
+</div>
+</section>
+
+<section id="call-of-the-void-1" class="title-slide slide level1">
+<h1>Call of the Void</h1>
+<p>Rating: ☠️</p>
+</section>
+
+<section id="loopy" class="title-slide slide level1">
+<h1>Loopy</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="loopy-1" class="title-slide slide level1">
+<h1>Loopy</h1>
+<p>Was this hack evil? ✋</p>
+<div class="fragment">
+<p>Are Calendars and arrays evil? ✋</p>
+</div>
+<div class="fragment">
+<p>Are JPA entities evil? 👹</p>
+</div>
+</section>
+
+<section id="loopy-2" class="title-slide slide level1">
+<h1>Loopy</h1>
+<p>Rating: ☠️💣💥</p>
+</section>
+
+<section id="interning" class="title-slide slide level1">
+<h1>Interning</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="interning-1" class="title-slide slide level1">
+<h1>Interning</h1>
+<ul>
+<li>Fun way to mess up unit tests!</li>
+<li>Rating: ☠️💣</li>
+</ul>
+</section>
+
+<section id="dirty_class" class="title-slide slide level1">
+<h1>dirty_CLASS</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="you-should-probably" class="title-slide slide level1">
+<h1>You should probably</h1>
+<ul>
+<li>Call <code>close()</code> on <code>URLClassLoader</code></li>
+<li>Report compilation errors with <code>CompilationTask</code></li>
+<li>Handle exceptions</li>
+</ul>
+<div class="fragment">
+<p><br/> ¯\_(ツ)_/¯</p>
+</div>
+</section>
+
+<section id="multi-release-jar-file" class="title-slide slide level1">
+<h1>Multi-release JAR file</h1>
+
+</section>
+
+<section id="equalsverifier-1" class="title-slide slide level1">
+<h1>EqualsVerifier</h1>
+<pre class="java"><code>@Test
+public void equalsverifierSucceeds_whenOneOfTheFieldsIsSynthetic() {
+    if (!isJava8Available()) {
+        return;
+    }
+
+    Class&lt;?&gt; java8ClassWithSyntheticField = compile(JAVA_8_CLASS_WITH_SYNTHETIC_FIELD_NAME, JAVA_8_CLASS_WITH_SYNTHETIC_FIELD);
+    EqualsVerifier.forClass(java8ClassWithSyntheticField)
+            .verify();
+}
+
+private static final String JAVA_8_CLASS_WITH_SYNTHETIC_FIELD_NAME = &quot;Java8ClassWithSyntheticField&quot;;
+private static final String JAVA_8_CLASS_WITH_SYNTHETIC_FIELD =
+        &quot;\nimport java.util.Comparator;&quot; +
+        &quot;\nimport java.util.Objects;&quot; +
+        &quot;\n&quot; +
+        &quot;\npublic final class Java8ClassWithSyntheticField {&quot; +
+        &quot;\n    private static final Comparator&lt;Java8ClassWithSyntheticField&gt; COMPARATOR =&quot; +
+        &quot;\n            (c1, c2) -&gt; 0;   // A lambda is a synthetic class&quot; +
+        &quot;\n&quot; +
+        &quot;\n    private final String s;&quot; +
+        &quot;\n    &quot; +
+        &quot;\n    public Java8ClassWithSyntheticField(String s) {&quot; +
+        &quot;\n        this.s = s;&quot; +
+        &quot;\n    }&quot; +
+        &quot;\n    &quot; +
+        &quot;\n    @Override&quot; +
+        &quot;\n    public boolean equals(Object obj) {&quot; +
+        &quot;\n        if (!(obj instanceof Java8ClassWithSyntheticField)) {&quot; +
+        &quot;\n            return false;&quot; +
+        &quot;\n        }&quot; +
+        &quot;\n        return Objects.equals(s, ((Java8ClassWithSyntheticField)obj).s);&quot; +
+        &quot;\n    }&quot; +
+        &quot;\n    &quot; +
+        &quot;\n    @Override&quot; +
+        &quot;\n    public int hashCode() {&quot; +
+        &quot;\n        return Objects.hash(s);&quot; +
+        &quot;\n    }&quot; +
+        &quot;\n}&quot;;</code></pre>
+</section>
+
+<section id="javacompiler" class="title-slide slide level1">
+<h1>JavaCompiler</h1>
+<p>Rating: ☠️💣💥</p>
+</section>
+
+<section id="annotations" class="title-slide slide level1">
+<h1>☠️ Annotations</h1>
+
+</section>
+
+<section id="lombok" class="title-slide slide level1">
+<h1>Lombok 🌶</h1>
+<p>use annotations</p>
+<p>to trick the Java <em><strong>compiler</strong></em></p>
+<p>into generating bytecode</p>
+<p>that does something else</p>
+</section>
+
+<section id="spring-hibernate" class="title-slide slide level1">
+<h1>Spring &amp; Hibernate</h1>
+<p>use annotations</p>
+<p>to trick the Java <em><strong>runtime</strong></em></p>
+<p>into generating bytecode</p>
+<p>that does something else</p>
+</section>
+
+<section id="boring" class="title-slide slide level1">
+<h1>Boring</h1>
+<p>Rating: ☠️</p>
+<p><img data-src="../images/boring1.jpg" /></p>
+</section>
+
+<section id="external-libraries" class="title-slide slide level1">
+<h1>☠️ External libraries</h1>
+<p><code>Objenesis</code></p>
+</section>
+
+<section id="constructors-are-tedious" class="title-slide slide level1">
+<h1>Constructors are tedious</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="constructors-are-tedious-1" class="title-slide slide level1">
+<h1>Constructors are tedious</h1>
+<p>Rating: ☠️</p>
+</section>
+
+<section id="singletons" class="title-slide slide level1">
+<h1>Singletons</h1>
+<p>“[An enum] provides an <strong>ironclad guarantee</strong> against multiple instantiation, even in the face of <strong>sophisticated serialization or reflection attacks</strong>. […] A single-element enum type is often the best way to implement a singleton.”</p>
+<p>– Joshua Bloch, Effective Java 3rd Edition</p>
+<div class="fragment">
+<p>😇</p>
+</div>
+</section>
+
+<section id="singletons-1" class="title-slide slide level1">
+<h1>Singletons</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="singletons-2" class="title-slide slide level1">
+<h1>Singletons</h1>
+<p>Rating: ☠️💣</p>
+</section>
+
+<section>
+<section id="confusing-card-game" class="title-slide slide level1">
+<h1>Confusing card game</h1>
+
+</section>
+<section class="slide level2">
+
+<p><img data-src="../images/tarot.jpg" /></p>
+</section></section>
+<section id="confusing-card-game-1" class="title-slide slide level1">
+<h1>Confusing card game</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="confusing-card-game-2" class="title-slide slide level1">
+<h1>Confusing card game</h1>
+<p>Rating: ☠️💣💥</p>
+<p><img data-src="../images/trump.jpg" /></p>
+</section>
+
+<section id="messing-with-scala" class="title-slide slide level1">
+<h1>Messing with Scala <img data-src="../images/scala.png" /></h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+
+<section id="messing-with-scala-1" class="title-slide slide level1">
+<h1>Messing with Scala <img data-src="../images/scala.png" /></h1>
+<p>Rating: ☠️💣</p>
+</section>
+
+<section id="external-libraries-1" class="title-slide slide level1">
+<h1>External libraries</h1>
+<p><code>ByteBuddy</code></p>
+<p>&amp;</p>
+<p><code>ByteBuddy Agent</code></p>
+</section>
+
+<section id="disclaimer" class="title-slide slide level1">
+<h1>Disclaimer</h1>
+<p>Use cases for agents</p>
+<ul>
+<li>there are many</li>
+<li>they’re legitimate</li>
+</ul>
+</section>
+
+<section id="time-traveling" class="title-slide slide level1">
+<h1>Time Traveling 🕙🕚</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+<p><br/><br/> <br/><br/> Idea shamelessly stolen from<br/><img data-src="../images/github.png" /> <a href="https://github.com/TOPdesk/time-transformer-agent">/TOPdesk/time-transformer-agent</a></p>
+</section>
+
+<section id="time-traveling-1" class="title-slide slide level1">
+<h1>Time Traveling 🕙🕚</h1>
+<ul>
+<li>Unit testing legacy code</li>
+<li>Messing up any code</li>
+<li>Rating: ☠️💣💥</li>
+</ul>
+</section>
+
+<section id="but-wait" class="title-slide slide level1">
+<h1>But wait</h1>
+<div class="big">
+<p>There’s more</p>
+</div>
+</section>
+
+<section id="victim-attack" class="title-slide slide level1">
+<h1>Victim / Attack</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+<p><br/><br/></p>
+<pre><code>mvn clean package
+
+mvn exec:java -DmainClass=demos.libraries.remote.Attack -Darg0=target/dont-hack-the-platform-0.1-SNAPSHOT.jar -Darg1=???</code></pre>
+</section>
+
+<section>
+<section id="victim-attack-1" class="title-slide slide level1">
+<h1>Victim / Attack</h1>
+Rating:
+<h1>
+😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱
+</h1>
+</section>
+<section class="slide level2">
+
+<p><img data-src="../images/thats-all-folks.png" /></p>
+</section></section>
+<section id="awareness" class="title-slide slide level1">
+<h1>Awareness</h1>
+<p><img data-src="../images/ribbon.png" /></p>
+</section>
+
+<section id="emoji-unicode" class="title-slide slide level1">
+<h1>Emoji &amp; unicode</h1>
+<ul>
+<li>Checkstyle</li>
+<li>SonarQube</li>
+</ul>
+</section>
+
+<section id="security-manager" class="title-slide slide level1">
+<h1>Security manager</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+<p><br/><br/></p>
+<pre class="java"><code>System.setSecurityManager(new SecurityManager());</code></pre>
+</section>
+
+<section id="security-manager-1" class="title-slide slide level1">
+<h1>Security manager</h1>
+<p><img data-src="../images/no-spring.png" /></p>
+</section>
+
+<section id="modularisation" class="title-slide slide level1">
+<h1>Modularisation</h1>
+<pre><code>WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by demos.reflection.CallOfTheVoid (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
+WARNING: Please consider reporting this to the maintainers of demos.reflection.CallOfTheVoid
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release</code></pre>
+<p><code>--illegal-access=deny</code></p>
+</section>
+
+<section id="do-try-this-at-home" class="title-slide slide level1">
+<h1>Do try this at home!</h1>
+<p>Maybe not at work though?</p>
+</section>
+
+<section id="questions" class="title-slide slide level1">
+<h1>Questions?</h1>
+<p><br/><br/></p>
+<p>slides &amp; code at<br/> <img data-src="../images/github.png" /><a href="https://github.com/jqno/dont-hack-the-platform-talk">/jqno/dont-hack-the-platform-talk</a></p>
+<p>I’m at<br/> <img data-src="../images/twitter.png" /> <a href="https://twitter.com/jqno">jqno</a></p>
+</section>
+    </div>
+  </div>
+
+  <script src="../../../assets/revealjs-3.8.0/lib/js/head.min.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+        // Display a presentation progress bar
+        progress: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: {39:'next',37:'prev',48:()=>{Reveal.slide(0,0,0)}},
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../../../assets/revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../assets/revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
