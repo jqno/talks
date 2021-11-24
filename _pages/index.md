@@ -18,6 +18,8 @@ There is a [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRs
   A funny anthology of tricks and hacks for the JVM.<br/>Voted 2018's ["best non-Venkat talk"](https://nljug.org/nieuws/j-fall-2018-the-top-10-sessions/) by the J-Fall audience!<br>Delivered at [J-Fall 2018](https://www.youtube.com/watch?v=3750lsxn8m8), [JavaZone 2018](https://vimeo.com/289655964), JBCNConf 2018 and more.
 * [**Not all equals methods are created equal**](equalsverifier/)<br/>
   How to write a good `equals` method, and to test it with [EqualsVerifier](http://jqno.nl/equalsverifier).<br/>Delivered at [Devoxx 2017](https://www.youtube.com/watch?v=pNJ_O10XaoM) and JAX London 2021.
+* [**FP in Java 6/7**](fp-in-java)<br/>
+  How to apply principles from functional programming in older versions of Java.
 * [**Growing a DSL for financial calculations**](growing-a-dsl/)<br/>
   The story of how my colleague and I 'discovered' a Scala DSL for writing complex mortgage calculations.<br/>Delivered at [Typelevel Summit Oslo 2016](https://www.youtube.com/watch?v=w37mp3mbylw) and [Codestar Launch Event](https://www.youtube.com/watch?v=gmCQS72yFTg).
 
