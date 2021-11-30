@@ -43,19 +43,19 @@ Will you join me there?
   <br>
   _20 January 2020_
   <br>
-  [[event](https://www.meetup.com/Utrecht-Java-User-Group/events/267036025)] [[slides](../slides/paralleljava/2020-01-20-utrechtjug)]
+  [[event](https://www.meetup.com/Utrecht-Java-User-Group/events/267036025)] [[slides](/talks/slides/paralleljava/2020-01-20-utrechtjug)]
 * **J-Fall Netherlands**
   <br>
   _31 October 2019_
   <br>
-  [[event](https://2019.jfall.nl/sessions/java-from-a-parallel-universe/)] [[slides](../slides/paralleljava/2019-10-31-jfall)] [[video](https://www.youtube.com/watch?v=R0WnUd01f14)]
+  [[event](https://2019.jfall.nl/sessions/java-from-a-parallel-universe/)] [[slides](/talks/slides/paralleljava/2019-10-31-jfall)] [[video](https://www.youtube.com/watch?v=R0WnUd01f14)]
 * **Den Bosch JUG**
   <br>
   _25 September 2019_
   <br>
-  [[event](https://www.meetup.com/Den-Bosch-Java-User-Group/events/263672508/)] [[slides](../slides/paralleljava/2019-09-25-denboschjug)]
+  [[event](https://www.meetup.com/Den-Bosch-Java-User-Group/events/263672508/)] [[slides](/talks/slides/paralleljava/2019-09-25-denboschjug)]
 * **J-Spring Netherlands**
   <br>
   _29 May 2019_
   <br>
-  [[event](https://2019.jspring.nl/sessions/java-from-a-parallel-universe/)] [[slides](../slides/paralleljava/2019-05-29-jspring)] [[video](https://www.youtube.com/watch?v=Yj_Bh93omw4)]
+  [[event](https://2019.jspring.nl/sessions/java-from-a-parallel-universe/)] [[slides](/talks/slides/paralleljava/2019-05-29-jspring)] [[video](https://www.youtube.com/watch?v=Yj_Bh93omw4)]

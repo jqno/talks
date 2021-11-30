@@ -38,12 +38,12 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
   <br>
   _4 November 2021_
   <br>
-  [[event](https://jfall.nl/timetable-2021/)] [[slides](../slides/enoughcs/2021-11-04-jfall/)]
+  [[event](https://jfall.nl/timetable-2021/)] [[slides](/talks/slides/enoughcs/2021-11-04-jfall/)]
 * **Codesmiths Unite, Ordina**
   <br>
   _24 September 2020_
   <br>
-  [[event](https://codesmithsunite.nl/)] [[slides](../slides/enoughcs/2020-09-24-codesmiths-unite)] [[aftermovie](https://www.youtube.com/watch?v=QVUZguXZpJ8)]
+  [[event](https://codesmithsunite.nl/)] [[slides](/talks/slides/enoughcs/2020-09-24-codesmiths-unite)] [[aftermovie](https://www.youtube.com/watch?v=QVUZguXZpJ8)]
 
 ## Image credits
 

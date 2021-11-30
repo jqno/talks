@@ -31,12 +31,12 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
   <br>
   _4 November 2021_
   <br>
-  [[event](https://jfall.nl/timetable-2021/)] [[slides](../slides/fantasticlanguages/2021-11-04-jfall/)]
+  [[event](https://jfall.nl/timetable-2021/)] [[slides](/talks/slides/fantasticlanguages/2021-11-04-jfall/)]
 * **Devoxx UK**
   <br>
   _2 November 2021_
   <br>
-  [[event](https://www.devoxx.co.uk/)] [[slides](../slides/fantasticlanguages/2021-11-02-devoxxuk/)]
+  [[event](https://www.devoxx.co.uk/)] [[slides](/talks/slides/fantasticlanguages/2021-11-02-devoxxuk/)]
 
 ## Image credits
 
