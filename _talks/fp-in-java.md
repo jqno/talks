@@ -9,5 +9,12 @@ tags:
 How to apply principles from functional programming in older versions of Java.
 
 ## Deliveries
-* _13 April 2016_, Appril Festival: [[event](http://appril.nl/)] [[slides](https://www.dropbox.com/s/l78s9bqt1q2f1p4/presentation-fp-in-java.pdf)]
-* _November 2015_, Rabobank internal meeting
+
+* **Appril Festival**
+  <br>
+  _13 April 2016_
+  <br>
+  [[event](http://appril.nl/)] [[slides](https://www.dropbox.com/s/l78s9bqt1q2f1p4/presentation-fp-in-java.pdf)]
+* **Rabobank internal meeting**
+  <br>
+  _November 2015_

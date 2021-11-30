@@ -27,15 +27,26 @@ tags:
 I studied computer science so you don't have to!
 
 ## Abstract
+
 A CS degree is not a requirement for software developer roles. Nor should it be! I have worked with biologists, psychologists, and even a historian, who all were excellent coders. And that's great! Diversity of thought leads to better software, after all. Still, there are some super useful CS fundamentals that will make you a better programmer, but that you may not pick up on the job.
 
 This talk gives an overview of some of these fundamentals, such as De Morgan's Laws, the Big O notation, and how algorithm complexity informs whether you should use an ArrayList or something else. It also introduces you to the remarkable people who came up with these things. They ended wars, sent rockets to the moon, and were made into Lego minifigs. Who said computer science is boring?
 
 ## Deliveries
-* _4 November 2021_, J-Fall Netherlands: [[event](https://jfall.nl/timetable-2021/)] [[slides](https://jqno.nl/talks/slides/enoughcs/2021-11-04-jfall/)]
-* _24 September 2020_, Codesmiths Unite: [[event](https://codesmithsunite.nl/)] [[slides](../slides/enoughcs/2020-09-24-codesmiths-unite)] [[aftermovie](https://www.youtube.com/watch?v=QVUZguXZpJ8)]
+
+* **J-Fall Netherlands**
+  <br>
+  _4 November 2021_
+  <br>
+  [[event](https://jfall.nl/timetable-2021/)] [[slides](../slides/enoughcs/2021-11-04-jfall/)]
+* **Codesmiths Unite, Ordina**
+  <br>
+  _24 September 2020_
+  <br>
+  [[event](https://codesmithsunite.nl/)] [[slides](../slides/enoughcs/2020-09-24-codesmiths-unite)] [[aftermovie](https://www.youtube.com/watch?v=QVUZguXZpJ8)]
 
 ## Image credits
+
 * [alan-turing](/talks/slides/enoughcs/images/alan-turing.jpg) - by Unknown author - [source](https://commons.wikimedia.org/w/index.php?curid=22828488)
 * [alan-turing-movie](/talks/slides/enoughcs/images/alan-turing-movie.jpg) - from the movie [The Imitation Game](https://www.imdb.com/title/tt2084970/?ref_=fn_al_tt_1)
 * [array0](/talks/slides/enoughcs/images/array0.jpg), [array1](/talks/slides/enoughcs/images/array1.jpg), [array2](/talks/slides/enoughcs/images/array2.jpg) - by Jan Ouwens

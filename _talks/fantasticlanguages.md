@@ -21,14 +21,22 @@ Wrong.
 
 Every language is cool and unique in its own way and will influence the way you see and use your own favourite language. Put aside your preconceptions, and let me show you what I have learned from working with Java, Ruby, Elm, and yes: even PHP.
 
-## What's this AnnotationScript language you spoke of?
+## What's this AnnotationScript language?
 
 You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 
 ## Deliveries
 
-* _4 November 2021_, J-Fall Netherlands: [[event](https://jfall.nl/timetable-2021/)] [[slides](https://jqno.nl/talks/slides/fantasticlanguages/2021-11-04-jfall/)]
-* _2 November 2021_, Devoxx UK: [[event](https://www.devoxx.co.uk/)] [[slides](https://jqno.nl/talks/slides/fantasticlanguages/2021-11-02-devoxxuk/)]
+* **J-Fall Netherlands**
+  <br>
+  _4 November 2021_
+  <br>
+  [[event](https://jfall.nl/timetable-2021/)] [[slides](../slides/fantasticlanguages/2021-11-04-jfall/)]
+* **Devoxx UK**
+  <br>
+  _2 November 2021_
+  <br>
+  [[event](https://www.devoxx.co.uk/)] [[slides](../slides/fantasticlanguages/2021-11-02-devoxxuk/)]
 
 ## Image credits
 
