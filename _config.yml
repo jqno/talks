@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Talks"
+title: "Talks - tr ouwens"
 subtitle: "jqno.nl"
 name: "Jan Ouwens"
 description: "Slides for my talks 🎤"
