@@ -40,5 +40,18 @@ There is a [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRs
 
 # One-offs
 
-* [**Upgrading Scala 2.12 to 2.13**](scala-2.13/)
-* [**Scala**](scala/)
+* **Upgrading Scala 2.12 to 2.13**
+  <br>
+  _23 August 2019_, Codestar brown-bag session
+  <br>
+  [[slides](../slides/scala-2.13/2019-08-23-codestar)]
+* **Reactive Streams: Fast data processing**
+  <br>
+  _January 2016_, Ordina Code & Comedy
+  <br>
+  [[video](https://www.youtube.com/watch?v=D1njDQEldgA)]
+* **Scala**
+  <br>
+  _11 June 2014_, Sogeti
+  <br>
+  🇳🇱 [[video](https://www.youtube.com/watch?v=uksqLVk2l6M)]

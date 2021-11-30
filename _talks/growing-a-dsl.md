@@ -19,6 +19,11 @@ Rabobank is a Dutch multinational banking and financial services company headqua
   _7 October 2016_
   <br>
   [[event](http://www.hboictjobevent.nl/)]
+* **Ordina Innoveer Jij Mee sessie**
+  <br>
+  _19 May 2016_
+  <br>
+  [[aftermovie](https://www.youtube.com/watch?v=ZM8QGzj7Nzg)]
 * **Typelevel Summit Oslo**
   <br>
   _4 May 2016_

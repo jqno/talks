@@ -43,7 +43,7 @@ In all seriousness, this talk will provide awareness about some of the lesser-kn
   <br>
   _8 February 2019_
   <br>
-  [[event](https://www.meetup.com/Utrecht-Java-User-Group/events/257794904/)] [[slides](../slides/donthack/2019-02-08-uncle-bob-utrecht)] [[code](https://github.com/jqno/talks/tree/main/_slides/donthack/2019-02-08-uncle-bob-utrecht)]
+  [[event](https://www.meetup.com/Utrecht-Java-User-Group/events/257794904/)] [[slides](../slides/donthack/2019-02-08-uncle-bob-utrecht)] [[code](https://github.com/jqno/talks/tree/main/_slides/donthack/2019-02-08-uncle-bob-utrecht)] [[sketchnotes by Silke Henderickx](https://www.silkehenderickx.be/unclebobutrechtcleanarchitecture/)]
 * **J-Fall Netherlands**
   <br>
   _8 November 2018_
@@ -78,7 +78,7 @@ In all seriousness, this talk will provide awareness about some of the lesser-kn
   <br>
   _4 April 2018_
   <br>
-  [[event](https://codeandcomedy.nl/)] [[slides](../slides/donthack/2018-04-04-ordina-code-&-comedy/)] [[code](https://github.com/jqno/talks/tree/main/_slides/donthack/2018-04-04-ordina-code-&-comedy)]
+  [[event](https://codeandcomedy.nl/)] [[slides](../slides/donthack/2018-04-04-ordina-code-&-comedy/)] [[code](https://github.com/jqno/talks/tree/main/_slides/donthack/2018-04-04-ordina-code-&-comedy)] [[aftermovie](https://www.youtube.com/watch?v=fmaOWGnHJuM)]
 * **Portbase Rotterdam**
   <br>
   _23 February 2018_
@@ -88,7 +88,7 @@ In all seriousness, this talk will provide awareness about some of the lesser-kn
   <br>
   _20 January 2018_
   <br>
-  [[event](https://jvmcon.com/)] [[slides](http://jqno.nl/dont-hack-the-platform-talk/2018-01-30-jvmcon/)] [[code](https://github.com/jqno/talks/tree/main/_slides/donthack/2018-01-30-jvmcon)]
+  [[event](https://jvmcon.com/)] [[slides](http://jqno.nl/dont-hack-the-platform-talk/2018-01-30-jvmcon/)] [[code](https://github.com/jqno/talks/tree/main/_slides/donthack/2018-01-30-jvmcon)] [🇳🇱 [blog](https://blogs.infosupport.com/kom-naar-sessie/)] [🇳🇱 [blog](https://blogs.infosupport.com/terugblik-op-allereerste-jvmcon/)]
 
 ## Image credits
 
