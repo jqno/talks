@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Talks - tr ouwens"
-subtitle: "jqno.nl"
+title: "tr ouwens"
+subtitle: "Jan Ouwens ▷ by the way, things I want to say"
 name: "Jan Ouwens"
-description: "Slides for my talks 🎤"
+description: "Jan Ouwens ▷ tr ouwens ▷ by the way, things I want to say ▷ slides for my talks 🎤"
 baseurl: "/talks"
 search: true
 

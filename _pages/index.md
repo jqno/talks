@@ -1,5 +1,6 @@
 ---
 permalink: /
+title: Talks
 imagebutton_row:
   - image_path: "assets/titleslides/fantastic-languages.png"
     title: "Fantastic Languages and What to learn from them"
