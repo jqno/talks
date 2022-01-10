@@ -36,7 +36,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
   <br>
   _2 November 2021_
   <br>
-  [[event](https://www.devoxx.co.uk/)] [[slides](/talks/slides/fantasticlanguages/2021-11-02-devoxxuk/)]
+  [[event](https://www.devoxx.co.uk/)] [[slides](/talks/slides/fantasticlanguages/2021-11-02-devoxxuk/)] [[video](https://www.youtube.com/watch?v=s7qOwVvkNYU)]
 
 ## Image credits
 
