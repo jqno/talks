@@ -31,7 +31,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
   <br>
   _4 November 2021_
   <br>
-  [[event](https://jfall.nl/timetable-2021/)] [[slides](/talks/slides/fantasticlanguages/2021-11-04-jfall/)]
+  [[event](https://jfall.nl/timetable-2021/)] [[slides](/talks/slides/fantasticlanguages/2021-11-04-jfall/)] [[video](https://www.youtube.com/watch?v=Y5MfzYjTBX8&t=2530s)]
 * **Devoxx UK**
   <br>
   _2 November 2021_
