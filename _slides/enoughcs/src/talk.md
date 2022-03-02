@@ -133,6 +133,10 @@ if (product.price() > 10 && order.amount() > 5) {
 }
 ```
 
+## Real talk
+
+![](../images/tweet.png)
+
 ## Truth table
 
  `a`   `b`   `!(a || b)`   `!a && !b`
