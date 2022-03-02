@@ -233,6 +233,46 @@ _"The teaching of BASIC should be rated as a criminal offence:<br/>it mutilates 
 
 [![](../images/dijkstra-zero.png)](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)
 
+##
+
+::: big
+Lots of interesting history
+:::
+
+## History
+
+TODO
+
+##
+
+::: big
+Lots of interesting science
+:::
+
+# Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/tony-hoare.jpg){ .portrait }
+
+1934 -
+
+::: notes
+* Invented null
+* "Billion-dollar mistake"
+:::
+
+## Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/tony-hoare.jpg){ .portrait }
+
+::: small
+_"I call it my billion-dollar mistake. It was the invention of the null reference in 1965."_
+:::
+
+::: notes
+* Invented null
+* "Billion-dollar mistake"
+:::
+
 ## Precondition + Postcondition
 
 ::: big
@@ -241,6 +281,10 @@ _"The teaching of BASIC should be rated as a criminal offence:<br/>it mutilates 
     Statement
    {Postcondition}
 ```
+:::
+
+::: notes
+Hoare triple!
 :::
 
 ## Precondition + Postcondition
@@ -539,7 +583,26 @@ Have someone do it for you
 * Astronauts didn't trust automation
 :::
 
-## 
+##
+
+::: superbig
+Binary Search
+:::
+
+TODO
+
+# Hedy Lamarr { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/hedy-lamarr.jpg){ .portrait }
+
+1914 - 2000
+
+::: notes
+* invented tech for bluetooth, wifi
+* actress
+:::
+
+##
 
 ::: superbig
 Complexity
@@ -1125,38 +1188,32 @@ Let's
 wrap up
 :::
 
-# Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
+# Neumann János Lajos { data-state="page-portrait" data-background-image="../images/background.png" }
 
-![](../images/tony-hoare.jpg){ .portrait }
+![](../images/john-von-neumann.jpg){ .portrait }
 
-1934 -
-
-::: notes
-* Invented null
-* "Billion-dollar mistake"
-:::
-
-## Tony Hoare { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/tony-hoare.jpg){ .portrait }
-
-::: small
-_"I call it my billion-dollar mistake. It was the invention of the null reference in 1965."_
-:::
+1903 - 1957
 
 ::: notes
-* Invented null
-* "Billion-dollar mistake"
+* Manhattan Project
+* came up with 'mutually assured destruction' to limit arms race
+* wrote about global warming in 1955
+* invented merge sort
+* Von Neumann architecture: code and data together
 :::
 
-## Hoare triple
+## John von Neumann { data-state="page-portrait" data-background-image="../images/background.png" }
 
-::: big
-```pascal
-   {Precondition}
-    Statement
-   {Postcondition}
-```
+![](../images/john-von-neumann.jpg){ .portrait }
+
+1903 - 1957
+
+::: notes
+* Manhattan Project
+* came up with 'mutually assured destruction' to limit arms race
+* wrote about global warming in 1955
+* invented merge sort
+* Von Neumann architecture: code and data together
 :::
 
 ## Recap
