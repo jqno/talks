@@ -364,7 +364,22 @@ Hoare triple!
 
 Q.E.D.
 
-## A simple algorithm
+##
+
+::: superbig
+Linear Search
+:::
+
+::: notes
+for unordered lists
+:::
+
+## Linear Search
+
+%% diagram: nummer-reeks met pijlen
+
+
+## Linear Search
 
 ```java
   int[] haystack = ...;
@@ -382,7 +397,7 @@ Q.E.D.
 
 ```
 
-## A simple algorithm
+## Linear Search
 
 ```pascal
   var b: array[0..N] of int = ...;
@@ -400,7 +415,7 @@ Q.E.D.
 
 ```
 
-## A simple algorithm
+## Linear Search
 
 ```pascal
   var b: array[0..N] of int = ...;
@@ -422,7 +437,7 @@ Q.E.D.
 We assume one exists within the array
 :::
 
-## A simple algorithm
+## Linear Search
 
 ```pascal
   var b: array[0..N] of int = ...;
@@ -444,7 +459,7 @@ We assume one exists within the array
 Also, `i = 0`
 :::
 
-## A simple algorithm
+## Linear Search
 
 ```pascal
   var b: array[0..N] of int = ...;
@@ -468,7 +483,7 @@ Also, `i = 0`
 * it's still there were we haven't looked yet
 :::
 
-## A simple algorithm
+## Linear Search
 
 ```pascal
   var b: array[0..N] of int = ...;
@@ -490,7 +505,7 @@ Also, `i = 0`
 Increase `i`, so update the less-than signs
 :::
 
-## A simple algorithm
+## Linear Search
 
 ```pascal
   var b: array[0..N] of int = ...;
@@ -522,6 +537,12 @@ Q.E.D.
 
 ::: notes
 * plaatje van mijn huiswerk
+:::
+
+##
+
+::: big
+Algorithm
 :::
 
 ##
@@ -649,7 +670,25 @@ Have someone do it for you
 ##
 
 ::: superbig
+Linear Search
+:::
+
+::: notes
+for unordered lists
+:::
+
+## Linear Search
+
+%% diagram: nummer-reeks met pijlen
+
+##
+
+::: superbig
 Binary Search
+:::
+
+::: notes
+for sorted lists
 :::
 
 ## Binary Search
@@ -1334,6 +1373,13 @@ Thing 2:
 
 Truth tables
 :::
+
+## Recap
+
+Algorithms
+
+- Linear Search
+- Binary Search
 
 ## Recap
 
