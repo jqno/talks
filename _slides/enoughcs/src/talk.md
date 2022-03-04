@@ -239,9 +239,72 @@ _"The teaching of BASIC should be rated as a criminal offence:<br/>it mutilates 
 Lots of interesting history
 :::
 
-## History
+## George Boole { data-state="page-portrait" data-background-image="../images/background.png" }
 
-TODO
+![](../images/george-boole.jpg){ .portrait }
+
+1815 - 1864
+
+::: notes
+boolean
+:::
+
+## Jacquard Loom
+
+![](../images/jacquard-loom.jpg){ .raw style="height:400px;" }
+
+1804
+
+::: notes
+punch cards!
+:::
+
+## Charles Babbage & Ada Lovelace { data-state="page-portrait" data-background-image="../images/background.png" .small }
+
+![](../images/charles-babbage.jpg){ .portrait }
+![](../images/ada-lovelace.jpg){ .portrait }
+
+1791 - 1871 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1815 - 1852
+
+::: notes
+* difference engine
+* analytical engine
+* programmed by Lovelace
+* built in 1991; it worked!
+:::
+
+##
+
+::: big
+Programming was considered a women's job
+:::
+
+::: notes
+* often unrecognized
+* lots of examples in this talk
+:::
+
+## ENIAC
+
+![](../images/eniac.jpg){ .raw style="height:400px;" }
+
+1945 - 1955
+
+::: notes
+* "Electronic Numerical Integrator and Computer"
+* first 'real' computer
+* occupied ±170m²
+:::
+
+## Modern supercomputer
+
+![](../images/smartphone.jpg){ .raw style="height:400px;" }
+
+present day
+
+::: notes
+But enough about history
+:::
 
 ##
 
@@ -265,7 +328,7 @@ Lots of interesting science
 ![](../images/tony-hoare.jpg){ .portrait }
 
 ::: small
-_"I call it my billion-dollar mistake. It was the invention of the null reference in 1965."_
+_"I call it my billion-dollar mistake.<br/>It was the invention of the null reference in 1965."_
 :::
 
 ::: notes
@@ -338,7 +401,7 @@ Q.E.D.
 ```
 
 ## A simple algorithm
- 
+
 ```pascal
   var b: array[0..N] of int = ...;
   var n: int = ...;
@@ -360,7 +423,7 @@ We assume one exists within the array
 :::
 
 ## A simple algorithm
- 
+
 ```pascal
   var b: array[0..N] of int = ...;
   var n: int = ...;
@@ -382,7 +445,7 @@ Also, `i = 0`
 :::
 
 ## A simple algorithm
- 
+
 ```pascal
   var b: array[0..N] of int = ...;
   var n: int = ...;
@@ -406,7 +469,7 @@ Also, `i = 0`
 :::
 
 ## A simple algorithm
- 
+
 ```pascal
   var b: array[0..N] of int = ...;
   var n: int = ...;
@@ -428,7 +491,7 @@ Increase `i`, so update the less-than signs
 :::
 
 ## A simple algorithm
- 
+
 ```pascal
   var b: array[0..N] of int = ...;
   var n: int = ...;
