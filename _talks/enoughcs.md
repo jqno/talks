@@ -65,6 +65,7 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
 * [array0](/talks/slides/enoughcs/images/array0.jpg), [array1](/talks/slides/enoughcs/images/array1.jpg), [array2](/talks/slides/enoughcs/images/array2.jpg) - by Jan Ouwens
 * [background](/talks/slides/enoughcs/images/background.png) - by Jan Ouwens
 * [bigo0](/talks/slides/enoughcs/images/bigo0.jpg), [bigo1](/talks/slides/enoughcs/images/bigo1.jpg), [bigo2](/talks/slides/enoughcs/images/bigo2.jpg) - by Jan Ouwens
+* [binary-search-bug](/talks/slides/enoughcs/images/binary-search-bug.png) - screenshot from [Oracle Java Bug Database](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=5045582), taken by Jan Ouwens
 * [charles-babbage](/talks/slides/enoughcs/images/charles-babbage.jpg) - [source](https://en.wikipedia.org/wiki/File:Charles_Babbage_-_1860.jpg)
 * [donald-knuth](/talks/slides/enoughcs/images/donald-knuth.jpg) - by Flickr user Jacob Appelbaum - [source](https://commons.wikimedia.org/w/index.php?curid=1303242)
 * [dijkstra-zero](/talks/slides/enoughcs/images/dijkstra-zero.png) - by Edsger Dijkstra - [source](http://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF)
@@ -75,6 +76,7 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
 * [hashmap0](/talks/slides/enoughcs/images/hashmap0.jpg), [hashmap1](/talks/slides/enoughcs/images/hashmap1.jpg) - by Jan Ouwens
 * [hedy-lamarr](/talks/slides/enoughcs/images/hedy-lamarr.jpg) - [source](https://commons.wikimedia.org/wiki/File:Hedy_Lamarr_Publicity_Photo_for_The_Heavenly_Body_1944.jpg)
 * [homework0](/talks/slides/enoughcs/images/homework0.jpg), [homework1](/talks/slides/enoughcs/images/homework1.jpg), [homework2](/talks/slides/enoughcs/images/homework2.jpg) - by Jan Ouwens
+* [index](/talks/slides/enoughcs/images/index.jpg) - by Jan Ouwens
 * [jacquard-loom](/talks/slides/enoughcs/images/jacquard-loom.jpg) - by Dmm2va7 - [source](https://commons.wikimedia.org/w/index.php?curid=15105362)
 * [jan-ouwens](/talks/slides/enoughcs/images/jan-ouwens.jpg) - by Riemke Ouwens
 * [john-von-neumann](/talks/slides/enoughcs/images/john-von-neumann.jpg) - by LANL - [source](https://en.wikipedia.org/wiki/File:JohnvonNeumann-LosAlamos.gif)

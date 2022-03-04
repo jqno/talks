@@ -652,7 +652,47 @@ Have someone do it for you
 Binary Search
 :::
 
-TODO
+## Binary Search
+
+![](../images/index.jpg){ .raw }
+
+## Binary Search
+
+%% diagram: nummer-reeks met pijlen
+
+## Binary Search
+
+%% code
+
+## Binary Search
+
+![](../images/binary-search-bug.png){ .raw style="height:500px;" }
+
+##
+
+::: big
+Proving algorithms is hard
+:::
+
+## Git bisect
+
+%% diagram: git-commit bolletjes
+
+::: notes
+When was the bug introduced?
+:::
+
+## Git bisect
+
+%% diagram: git-commit bolletjes met thumbs up en thumbs down
+
+## Git bisect
+
+%% diagram: git-commit bolletjes met thumbs, en ook pijlen
+
+## Git bisect
+
+%% terminal output van bisect sessie
 
 # Hedy Lamarr { data-state="page-portrait" data-background-image="../images/background.png" }
 
