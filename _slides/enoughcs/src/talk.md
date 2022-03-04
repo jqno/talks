@@ -1376,10 +1376,21 @@ Truth tables
 
 ## Recap
 
+::: big
 Algorithms
+:::
 
-- Linear Search
-- Binary Search
+## Recap
+
+%% diagram: linear search
+
+Linear Search
+
+## Recap
+
+%% diagram: binary search
+
+Binary Search
 
 ## Recap
 
