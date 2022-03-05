@@ -239,7 +239,7 @@ _"The teaching of BASIC should be rated as a criminal offence:<br/>it mutilates 
 Lots of interesting history
 :::
 
-## George Boole { data-state="page-portrait" data-background-image="../images/background.png" }
+# George Boole { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/george-boole.jpg){ .portrait }
 
@@ -259,7 +259,7 @@ boolean
 punch cards!
 :::
 
-## Charles Babbage & Ada Lovelace { data-state="page-portrait" data-background-image="../images/background.png" .small }
+# Charles Babbage & Ada Lovelace { data-state="page-portrait" data-background-image="../images/background.png" .small }
 
 ![](../images/charles-babbage.jpg){ .portrait }
 ![](../images/ada-lovelace.jpg){ .portrait }
