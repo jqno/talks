@@ -376,8 +376,23 @@ for unordered lists
 
 ## Linear Search
 
-%% diagram: nummer-reeks met pijlen
+![](../images/linear-search-0.jpg)
 
+## Linear Search
+
+![](../images/linear-search-1.jpg)
+
+## Linear Search
+
+![](../images/linear-search-2.jpg)
+
+## Linear Search
+
+![](../images/linear-search-3.jpg)
+
+## Linear Search
+
+![](../images/linear-search-4.jpg)
 
 ## Linear Search
 
@@ -679,7 +694,7 @@ for unordered lists
 
 ## Linear Search
 
-%% diagram: nummer-reeks met pijlen
+![](../images/linear-search-4.jpg)
 
 ##
 
@@ -697,7 +712,19 @@ for sorted lists
 
 ## Binary Search
 
-%% diagram: nummer-reeks met pijlen
+![](../images/binary-search-0.jpg)
+
+## Binary Search
+
+![](../images/binary-search-1.jpg)
+
+## Binary Search
+
+![](../images/binary-search-2.jpg)
+
+## Binary Search
+
+![](../images/binary-search-3.jpg)
 
 ## Binary Search
 
@@ -715,7 +742,7 @@ Proving algorithms is hard
 
 ## Git bisect
 
-%% diagram: git-commit bolletjes
+![](../images/git-bisect-0.jpg)
 
 ::: notes
 When was the bug introduced?
@@ -723,11 +750,27 @@ When was the bug introduced?
 
 ## Git bisect
 
-%% diagram: git-commit bolletjes met thumbs up en thumbs down
+![](../images/git-bisect-1.jpg)
 
 ## Git bisect
 
-%% diagram: git-commit bolletjes met thumbs, en ook pijlen
+![](../images/git-bisect-2.jpg)
+
+## Git bisect
+
+![](../images/git-bisect-3.jpg)
+
+## Git bisect
+
+![](../images/git-bisect-4.jpg)
+
+## Git bisect
+
+![](../images/git-bisect-5.jpg)
+
+## Git bisect
+
+![](../images/git-bisect-6.jpg)
 
 ## Git bisect
 
@@ -1382,13 +1425,13 @@ Algorithms
 
 ## Recap
 
-%% diagram: linear search
+![](../images/linear-search-4.jpg)
 
 Linear Search
 
 ## Recap
 
-%% diagram: binary search
+![](../images/binary-search-3.jpg)
 
 Binary Search
 

@@ -65,6 +65,7 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
 * [array0](/talks/slides/enoughcs/images/array0.jpg), [array1](/talks/slides/enoughcs/images/array1.jpg), [array2](/talks/slides/enoughcs/images/array2.jpg) - by Jan Ouwens
 * [background](/talks/slides/enoughcs/images/background.png) - by Jan Ouwens
 * [bigo0](/talks/slides/enoughcs/images/bigo0.jpg), [bigo1](/talks/slides/enoughcs/images/bigo1.jpg), [bigo2](/talks/slides/enoughcs/images/bigo2.jpg) - by Jan Ouwens
+* [binary-search-0](/talks/slides/enoughcs/images/binary-search-0.jpg), [binary-search-1](/talks/slides/enoughcs/images/binary-search-1.jpg), [binary-search-2](/talks/slides/enoughcs/images/binary-search-2.jpg), [binary-search-3](/talks/slides/enoughcs/images/binary-search-3.jpg) - by Jan Ouwens
 * [binary-search-bug](/talks/slides/enoughcs/images/binary-search-bug.png) - screenshot from [Oracle Java Bug Database](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=5045582), taken by Jan Ouwens
 * [charles-babbage](/talks/slides/enoughcs/images/charles-babbage.jpg) - [source](https://en.wikipedia.org/wiki/File:Charles_Babbage_-_1860.jpg)
 * [donald-knuth](/talks/slides/enoughcs/images/donald-knuth.jpg) - by Flickr user Jacob Appelbaum - [source](https://commons.wikimedia.org/w/index.php?curid=1303242)
@@ -72,6 +73,7 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
 * [edsger-dijkstra](/talks/slides/enoughcs/images/edsger-dijkstra.jpg) - by Hamilton Richards - [source](https://commons.wikimedia.org/w/index.php?curid=4204157)
 * [eniac](/talks/slides/enoughcs/images/eniac.jpg) - by unidentified US Army photographer - [source](https://commons.wikimedia.org/wiki/File:Two_women_operating_ENIAC_%28full_resolution%29.jpg)
 * [george-boole](/talks/slides/enoughcs/images/george-boole.jpg) - [source](https://commons.wikimedia.org/wiki/File:George_Boole_color.jpg)
+* [git-bisect-0](/talks/slides/enoughcs/images/git-bisect-0.jpg), [git-bisect-1](/talks/slides/enoughcs/images/git-bisect-1.jpg), [git-bisect-2](/talks/slides/enoughcs/images/git-bisect-2.jpg), [git-bisect-3](/talks/slides/enoughcs/images/git-bisect-3.jpg), [git-bisect-4](/talks/slides/enoughcs/images/git-bisect-4.jpg), [git-bisect-5](/talks/slides/enoughcs/images/git-bisect-5.jpg), [git-bisect-6](/talks/slides/enoughcs/images/git-bisect-6.jpg) - by Jan Ouwens
 * [grace-hopper](/talks/slides/enoughcs/images/grace-hopper.jpg) - by James S. Davis - [source](https://commons.wikimedia.org/w/index.php?curid=12421475)
 * [hashmap0](/talks/slides/enoughcs/images/hashmap0.jpg), [hashmap1](/talks/slides/enoughcs/images/hashmap1.jpg) - by Jan Ouwens
 * [hedy-lamarr](/talks/slides/enoughcs/images/hedy-lamarr.jpg) - [source](https://commons.wikimedia.org/wiki/File:Hedy_Lamarr_Publicity_Photo_for_The_Heavenly_Body_1944.jpg)
@@ -85,6 +87,7 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
 * [katherine-johnson-movie](/talks/slides/enoughcs/images/katherine-johnson-movie.jpg) - from the movie [Hidden Figures](https://www.imdb.com/title/tt4846340/?ref_=fn_al_tt_1)
 * [knuth-book](/talks/slides/enoughcs/images/knuth-book.jpg) - by Jan Ouwens
 * [knuth-excerpt](/talks/slides/enoughcs/images/knuth-excerpt.jpg) - by Donald Knuth - [source](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
+* [linear-search-0](/talks/slides/enoughcs/images/linear-search-0.jpg), [linear-search-1](/talks/slides/enoughcs/images/linear-search-1.jpg), [linear-search-2](/talks/slides/enoughcs/images/linear-search-2.jpg), [linear-search-3](/talks/slides/enoughcs/images/linear-search-3.jpg), [linear-search-4](/talks/slides/enoughcs/images/linear-search-4.jpg) - by Jan Ouwens
 * [linkedlist0](/talks/slides/enoughcs/images/linkedlist0.jpg), [linkedlist1](/talks/slides/enoughcs/images/linkedlist1.jpg) - by Jan Ouwens
 * [margaret-hamilton](/talks/slides/enoughcs/images/margaret-hamilton.jpg) - by Draper Laboratory; restored by Adam Cuerden - [source](https://commons.wikimedia.org/w/index.php?curid=59655977)
 * [margaret-hamilton-lego](/talks/slides/enoughcs/images/margaret-hamilton-lego.jpg) - by The LEGO Group - [source](https://www.lego.com/en-nl/product/women-of-nasa-21312)
