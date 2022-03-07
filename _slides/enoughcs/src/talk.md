@@ -728,7 +728,28 @@ for sorted lists
 
 ## Binary Search
 
-%% code
+```java
+public static int binarySearch(Comparable[] a, Object key) {
+    int low = 0;
+    int high = a.length - 1;
+
+    while (low <= high) {
+        int mid = (low + high) >>> 1;
+        int cmp = a[mid].compareTo(key);
+        if (cmp < 0)
+            low = mid + 1;
+        else if (cmp > 0)
+            high = mid - 1;
+        else
+            return mid; // key found
+    }
+    return -(low + 1);  // key not found
+}
+```
+
+::: supersmall
+Source: [Java APIs](https://github.com/openjdk/jdk/blob/894ffb098c80bfeb4209038c017d01dbf53fac0f/src/java.base/share/classes/java/util/Arrays.java#L1620-L1637), but simplified
+:::
 
 ## Binary Search
 
