@@ -774,7 +774,206 @@ When was the bug introduced?
 
 ## Git bisect
 
-%% terminal output van bisect sessie
+```sh
+❯ ~/my-project ❯ main ❯ git log
+13439df  (HEAD -> main) updates dependencies
+a50dab8  processes review comments
+24908d8  applies formatting
+3b6483a  extracts local variable
+ebf5221  adds tests
+cdfe9ed  replaces MySQL with BlockChain Technology™
+77590b0  fixes typo
+a0be795  fixes bug
+99dc85b  updates README
+
+
+
+
+
+
+```
+
+## Git bisect
+
+```sh
+❯ ~/my-project ❯ main ❯ git log
+13439df  (HEAD -> main) updates dependencies
+a50dab8  processes review comments
+24908d8  applies formatting
+3b6483a  extracts local variable
+ebf5221  adds tests
+cdfe9ed  replaces MySQL with BlockChain Technology™
+77590b0  fixes typo
+a0be795  fixes bug
+99dc85b  updates README
+
+❯ ~/my-project ❯ main ❯ git checkout 99dc85b9
+
+
+
+
+```
+
+## Git bisect
+
+```sh
+❯ ~/my-project ❯ main ❯ git log
+13439df  (HEAD -> main) updates dependencies
+a50dab8  processes review comments
+24908d8  applies formatting
+3b6483a  extracts local variable
+ebf5221  adds tests
+cdfe9ed  replaces MySQL with BlockChain Technology™
+77590b0  fixes typo
+a0be795  fixes bug
+99dc85b  updates README
+
+❯ ~/my-project ❯ main ❯ git checkout 99dc85b9
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git bisect start
+
+
+```
+
+## Git bisect
+
+```sh
+13439df  (HEAD -> main) updates dependencies
+a50dab8  processes review comments
+24908d8  applies formatting
+3b6483a  extracts local variable
+ebf5221  adds tests
+cdfe9ed  replaces MySQL with BlockChain Technology™
+77590b0  fixes typo
+a0be795  fixes bug
+99dc85b  updates README
+
+❯ ~/my-project ❯ main ❯ git checkout 99dc85b9
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git bisect start
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git bisect good
+```
+
+## Git bisect
+
+```sh
+ebf5221  adds tests
+cdfe9ed  replaces MySQL with BlockChain Technology™
+77590b0  fixes typo
+a0be795  fixes bug
+99dc85b  updates README
+
+❯ ~/my-project ❯ main ❯ git checkout 99dc85b9
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git bisect start
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git bisect good
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git checkout main
+Previous HEAD position was 99dc85b updates README
+Switched to branch 'main'
+```
+
+## Git bisect
+
+```sh
+99dc85b  updates README
+
+❯ ~/my-project ❯ main ❯ git checkout 99dc85b9
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git bisect start
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git bisect good
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git checkout main
+Previous HEAD position was 99dc85b updates README
+Switched to branch 'main'
+
+❯ ~/my-project ❯ main ❯ git bisect bad
+Bisecting: 3 revisions left to test after this (roughly 2 steps)
+[ebf5221] adds tests
+```
+
+## Git bisect
+
+```sh
+❯ ~/my-project ❯ @99dc85b9 ❯ git bisect start
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git bisect good
+
+❯ ~/my-project ❯ @99dc85b9 ❯ git checkout main
+Previous HEAD position was 99dc85b updates README
+Switched to branch 'main'
+
+❯ ~/my-project ❯ main ❯ git bisect bad
+Bisecting: 3 revisions left to test after this (roughly 2 steps)
+[ebf5221] adds tests
+
+❯ ~/my-project ❯ @ebf52218 ❯ git bisect bad
+Bisecting: 1 revision left to test after this (roughly 1 step)
+[77590b0] fixes typo
+```
+
+## Git bisect
+
+```sh
+❯ ~/my-project ❯ @99dc85b9 ❯ git checkout main
+Previous HEAD position was 99dc85b updates README
+Switched to branch 'main'
+
+❯ ~/my-project ❯ main ❯ git bisect bad
+Bisecting: 3 revisions left to test after this (roughly 2 steps)
+[ebf5221] adds tests
+
+❯ ~/my-project ❯ @ebf52218 ❯ git bisect bad
+Bisecting: 1 revision left to test after this (roughly 1 step)
+[77590b0] fixes typo
+
+❯ ~/my-project ❯ @77590b0d ❯ git bisect good
+Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[cdfe9ed] replaces MySQL with BlockChain Technology™
+```
+
+## Git bisect
+
+```sh
+❯ ~/my-project ❯ @ebf52218 ❯ git bisect bad
+Bisecting: 1 revision left to test after this (roughly 1 step)
+[77590b0] fixes typo
+
+❯ ~/my-project ❯ @77590b0d ❯ git bisect good
+Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[cdfe9ed] replaces MySQL with BlockChain Technology™
+
+❯ ~/my-project ❯ @cdfe9ed1 ❯ git bisect bad
+cdfe9ed1f1f8ad11ec48703e90d482996322ad1a is the first bad commit
+commit cdfe9ed1f1f8ad11ec48703e90d482996322ad1a
+Author: Jan Ouwens <jan.ouwens@example.com>
+Date:   Mon Mar 7 10:19:22 2022 +0100
+
+    replaces MySQL with BlockChain Technology™
+```
+
+## Git bisect
+
+```sh
+[77590b0] fixes typo
+
+❯ ~/my-project ❯ @77590b0d ❯ git bisect good
+Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[cdfe9ed] replaces MySQL with BlockChain Technology™
+
+❯ ~/my-project ❯ @cdfe9ed1 ❯ git bisect bad
+cdfe9ed1f1f8ad11ec48703e90d482996322ad1a is the first bad commit
+commit cdfe9ed1f1f8ad11ec48703e90d482996322ad1a
+Author: Jan Ouwens <jan.ouwens@example.com>
+Date:   Mon Mar 7 10:19:22 2022 +0100
+
+    replaces MySQL with BlockChain Technology™
+
+❯ ~/my-project ❯ @ebf52218 ❯ git bisect reset
+```
 
 # Hedy Lamarr { data-state="page-portrait" data-background-image="../images/background.png" }
 
@@ -876,8 +1075,7 @@ $N!$ steps
 
 ## Complexity
 
-* Binary search
-* Git bisect
+Binary search
 
 . . .
 
@@ -889,8 +1087,7 @@ Java's implementation had a bug in it for 9 years
 
 ## Complexity
 
-* Binary search
-* Git bisect
+Binary search
 
 $log_2\ N$ steps
 
@@ -898,8 +1095,7 @@ $log_2\ N$ steps
 
 ## Complexity
 
-* Binary search
-* Git bisect
+Binary search
 
 Way less than $N$ steps
 
