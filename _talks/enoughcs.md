@@ -33,6 +33,8 @@ tags:
 - babbage
 - ada
 - lovelace
+- james
+- gosling
 - binary
 - search
 ---
@@ -85,6 +87,7 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
 * [homework0](/talks/slides/enoughcs/images/homework0.jpg), [homework1](/talks/slides/enoughcs/images/homework1.jpg), [homework2](/talks/slides/enoughcs/images/homework2.jpg) - by Jan Ouwens
 * [index](/talks/slides/enoughcs/images/index.jpg) - by Jan Ouwens
 * [jacquard-loom](/talks/slides/enoughcs/images/jacquard-loom.jpg) - by Dmm2va7 - [source](https://commons.wikimedia.org/w/index.php?curid=15105362)
+* [james-gosling](/talks/slides/fantasticlanguages/images/james-gosling.jpg) - by Peter Campbell - [source](https://commons.wikimedia.org/wiki/File:James_Gosling_2008.jpg)
 * [jan-ouwens](/talks/slides/enoughcs/images/jan-ouwens.jpg) - by Riemke Ouwens
 * [john-von-neumann](/talks/slides/enoughcs/images/john-von-neumann.jpg) - by LANL - [source](https://en.wikipedia.org/wiki/File:JohnvonNeumann-LosAlamos.gif)
 * [jwdsal2](/talks/slides/enoughcs/images/jwdsal2.jpg) - by The Pragmatic Bookshelf - [source](https://pragprog.com/titles/jwdsal2/)

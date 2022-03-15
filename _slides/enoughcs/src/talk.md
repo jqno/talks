@@ -1412,15 +1412,19 @@ search    O($N$)
 prepend   O($1$)
 append    O($N$)
 
-## HashMap
+## Hash map
 
 ![](../images/hashmap0.jpg){ style="height:500px;" }
 
-## HashMap
+::: notes
+* a.k.a. dictionary
+:::
+
+## Hash map
 
 ![](../images/hashmap1.jpg){ style="height:500px;" }
 
-## HashMap
+## Hash map
 
 operation big O
 --------- -----
@@ -1429,7 +1433,23 @@ search    O($1$)
 iteration O($N$)
 insert    O($1$)
 
-## Other data structures
+##
+
+::: big
+How do I do this in Java?
+:::
+
+# James Gosling { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/james-gosling.jpg){ .portrait }
+
+1955 -
+
+::: notes
+* father of Java
+:::
+
+## Data structures in Java
 
 * ArrayList
 * LinkedList
@@ -1437,7 +1457,7 @@ insert    O($1$)
 * Stack
 * ~~Vector~~
 
-## Other data structures
+## Data structures in Java
 
 * HashSet
 * EnumSet
@@ -1445,7 +1465,7 @@ insert    O($1$)
 * SortedSet
 * TreeSet
 
-## Other data structures
+## Data structures in Java
 
 * HashMap
 * EnumMap
@@ -1453,7 +1473,7 @@ insert    O($1$)
 * SortedMap
 * TreeMap
 
-## Other data structures
+## Data structures in Java
 
 * Queue
 * Deque
@@ -1467,7 +1487,7 @@ Immutable collections
 
 Vavr, Eclipse Collections, Guava
 
-## In Java
+## Variable declaration
 
 No:
 
@@ -1475,7 +1495,7 @@ No:
 ArrayList<String> myList = new ArrayList<>();
 ```
 
-## In Java
+## Variable declaration
 
 Yes:
 
@@ -1483,7 +1503,7 @@ Yes:
      List<String> myList = new ArrayList<>();
 ```
 
-## In Java
+## Variable declaration
 
 Yes:
 
@@ -1491,13 +1511,127 @@ Yes:
      List<String> myList = new LinkedList<>();
 ```
 
-## In Java
+## Variable declaration
 
 Yes:
 
 ```java
      List<String> myList = new CopyOnWriteArrayList<>();
 ```
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // false
+
+
+
+
+```
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+
+
+
+```
+
+## Equality
+
+%% plaatje (Gosling in map, string Gosling aan de zijkant met pijltje naar vraagteken)
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+cs1.hashCode()  // 251
+cs2.hashCode()  // 819
+```
+
+## Equality
+
+%% picture (Gosling in map met hashcode, string Gosling aan de zijkant met hashcode en pijtje naar een andere bucket)
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+    public int hashCode() { ... }
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+cs1.hashCode()  // 251
+cs2.hashCode()  // 251
+```
+
+## Equality
+
+%% picture (Gosling in map met hashcode, string Gosling aan de zijkant met hashcode en pijltje naar de goede bucket)
+
+## Equality
+
+::: big
+Override `equals`?
+:::
+
+## Equality
+
+::: big
+Override `equals` _and_ `hashCode`!
+:::
 
 # Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
@@ -1669,6 +1803,14 @@ Data structures
 :::
 
 Choose wisely
+
+## Recap
+
+::: big
+Hash-based algorithms?
+:::
+
+Implement `equals` _and_ `hashCode`
 
 ## Recap
 
