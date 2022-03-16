@@ -996,6 +996,18 @@ Date:   Mon Mar 7 10:19:22 2022 +0100
 ❯ ~/my-project ❯ @ebf52218 ❯ git bisect reset
 ```
 
+##
+
+::: big
+Better than Linear Search!
+:::
+
+##
+
+::: big
+Let's look at the fundamentals
+:::
+
 # Hedy Lamarr { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/hedy-lamarr.jpg){ .portrait }
@@ -1412,15 +1424,19 @@ search    O($N$)
 prepend   O($1$)
 append    O($N$)
 
-## HashMap
+## Hash map
 
 ![](../images/hashmap0.jpg){ style="height:500px;" }
 
-## HashMap
+::: notes
+* a.k.a. dictionary
+:::
+
+## Hash map
 
 ![](../images/hashmap1.jpg){ style="height:500px;" }
 
-## HashMap
+## Hash map
 
 operation big O
 --------- -----
@@ -1429,7 +1445,29 @@ search    O($1$)
 iteration O($N$)
 insert    O($1$)
 
-## Other data structures
+##
+
+::: big
+How do I do this in Java?
+:::
+
+# James Gosling { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/james-gosling.jpg){ .portrait }
+
+1955 -
+
+::: notes
+* father of Java
+:::
+
+##
+
+::: superbig
+Data structures
+:::
+
+## Data structures in Java
 
 * ArrayList
 * LinkedList
@@ -1437,15 +1475,7 @@ insert    O($1$)
 * Stack
 * ~~Vector~~
 
-## Other data structures
-
-* HashSet
-* EnumSet
-* LinkedHashSet
-* SortedSet
-* TreeSet
-
-## Other data structures
+## Data structures in Java
 
 * HashMap
 * EnumMap
@@ -1453,7 +1483,15 @@ insert    O($1$)
 * SortedMap
 * TreeMap
 
-## Other data structures
+## Data structures in Java
+
+* HashSet
+* EnumSet
+* LinkedHashSet
+* SortedSet
+* TreeSet
+
+## Data structures in Java
 
 * Queue
 * Deque
@@ -1467,7 +1505,13 @@ Immutable collections
 
 Vavr, Eclipse Collections, Guava
 
-## In Java
+##
+
+::: superbig
+Variable declaration
+:::
+
+## Variable declaration
 
 No:
 
@@ -1475,7 +1519,7 @@ No:
 ArrayList<String> myList = new ArrayList<>();
 ```
 
-## In Java
+## Variable declaration
 
 Yes:
 
@@ -1483,7 +1527,7 @@ Yes:
      List<String> myList = new ArrayList<>();
 ```
 
-## In Java
+## Variable declaration
 
 Yes:
 
@@ -1491,13 +1535,208 @@ Yes:
      List<String> myList = new LinkedList<>();
 ```
 
-## In Java
+## Variable declaration
 
 Yes:
 
 ```java
      List<String> myList = new CopyOnWriteArrayList<>();
 ```
+
+##
+
+::: superbig
+Equality
+:::
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+
+
+
+
+
+```
+
+## Equality
+
+![](../images/java-hashmap-0.jpg){ style="height:500px;" }
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+
+
+
+
+
+```
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    // no equals!
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // false
+
+
+
+
+```
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+
+
+
+```
+
+## Equality
+
+![](../images/java-hashmap-1.jpg){ style="height:500px;" }
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+
+
+
+```
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+    // no hashCode!
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+cs1.hashCode()  // 253
+cs2.hashCode()  // 875
+```
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+    public int hashCode() { ... }
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+cs1.hashCode()  // 253
+cs2.hashCode()  // 253 🥳
+```
+
+## Equality
+
+![](../images/java-hashmap-2.jpg){ style="height:500px;" }
+
+## Equality
+
+::: big
+Override `equals`?
+:::
+
+## Equality
+
+::: big
+Override `equals` _and_ `hashCode`!
+:::
+
+##
+
+::: superbig
+The bigger picture
+:::
 
 # Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
 
@@ -1559,7 +1798,8 @@ It depends
 ![](../images/bigo1.png){ style="height:500px;" }
 
 ::: notes
-If complexity < something, it may not matter
+* Not optimal, but "fast enough" in practice?
+* Good enough, don't waste time!
 :::
 
 ## Big O notation
@@ -1637,6 +1877,14 @@ Truth tables
 ## Recap
 
 ::: big
+Thing 3:
+
+It depends
+:::
+
+## Recap
+
+::: big
 Algorithms
 :::
 
@@ -1673,10 +1921,10 @@ Choose wisely
 ## Recap
 
 ::: big
-Thing 3:
-
-It depends
+Hash-based algorithms?
 :::
+
+Implement `equals` _and_ `hashCode`
 
 ##
 
