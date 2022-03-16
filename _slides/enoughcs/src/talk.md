@@ -1544,30 +1544,7 @@ cs1.equals(cs2) // false
 
 ## Equality
 
-```java
-class ComputerScientist {
-    private final String name;
-
-    // constructor, getters & setters
-    public boolean equals(Object obj) { ... }
-
-}
-```
-
-```java
-var cs1 = new ComputerScientist("James Gosling");
-var cs2 = new ComputerScientist("James Gosling");
-
-cs1.equals(cs2) // true 🥳
-
-
-
-
-```
-
-## Equality
-
-%% plaatje (Gosling in map, string Gosling aan de zijkant met pijltje naar vraagteken)
+![](../images/java-hashmap-0.jpg){ style="height:500px;" }
 
 ## Equality
 
@@ -1587,13 +1564,58 @@ var cs2 = new ComputerScientist("James Gosling");
 
 cs1.equals(cs2) // true 🥳
 
-cs1.hashCode()  // 251
-cs2.hashCode()  // 819
+
+
+
 ```
 
 ## Equality
 
-%% picture (Gosling in map met hashcode, string Gosling aan de zijkant met hashcode en pijtje naar een andere bucket)
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+cs1.hashCode()  // 253
+cs2.hashCode()  // 875
+```
+
+## Equality
+
+![](../images/java-hashmap-1.jpg){ style="height:500px;" }
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+cs1.hashCode()  // 253
+cs2.hashCode()  // 875
+```
 
 ## Equality
 
@@ -1613,13 +1635,13 @@ var cs2 = new ComputerScientist("James Gosling");
 
 cs1.equals(cs2) // true 🥳
 
-cs1.hashCode()  // 251
-cs2.hashCode()  // 251
+cs1.hashCode()  // 253
+cs2.hashCode()  // 253 🥳
 ```
 
 ## Equality
 
-%% picture (Gosling in map met hashcode, string Gosling aan de zijkant met hashcode en pijltje naar de goede bucket)
+![](../images/java-hashmap-2.jpg){ style="height:500px;" }
 
 ## Equality
 
@@ -1631,6 +1653,12 @@ Override `equals`?
 
 ::: big
 Override `equals` _and_ `hashCode`!
+:::
+
+##
+
+::: superbig
+The bigger picture
 :::
 
 # Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
