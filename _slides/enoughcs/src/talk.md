@@ -1435,6 +1435,95 @@ insert    O($1$)
 
 ##
 
+::: superbig
+The bigger picture
+:::
+
+# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/margaret-hamilton.jpg){ .portrait }
+
+1936 -
+
+::: notes
+* Led the team that wrote NASA's Apollo navigation software
+* Coined the term "software engineering"
+:::
+
+## Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/margaret-hamilton-lego.jpg){ .portrait }
+
+2017
+
+::: notes
+* Led the team that wrote NASA's Apollo navigation software
+* Coined the term "software engineering"
+:::
+
+## Software engineering
+
+. . .
+
+* Programming
+
+. . .
+
+* Analysis
+* Architecture
+* UX design
+* Testing
+
+. . .
+
+* Computer science
+
+## Software engineering
+
+::: big
+If you remember only 3 things
+:::
+
+## Software engineering
+
+::: superbig
+It depends
+:::
+
+## Big O notation
+
+![](../images/bigo0.png){ style="height:500px;" }
+
+## Big O notation
+
+![](../images/bigo1.png){ style="height:500px;" }
+
+::: notes
+If complexity < something, it may not matter
+:::
+
+## Big O notation
+
+![](../images/bigo2.png){ style="height:500px;" }
+
+::: notes
+for small values, things behave differently
+:::
+
+## Readability
+
+::: { style="font-size:3em;" }
+```java
+ 🙂 Set<T> set;
+```
+
+```java
+ 🧐 LinkedHashSet<T> set;
+```
+:::
+
+##
+
 ::: big
 How do I do this in Java?
 :::
@@ -1518,6 +1607,12 @@ Yes:
 ```java
      List<String> myList = new CopyOnWriteArrayList<>();
 ```
+
+##
+
+::: superbig
+By the way
+:::
 
 ## Equality
 
@@ -1653,95 +1748,6 @@ Override `equals`?
 
 ::: big
 Override `equals` _and_ `hashCode`!
-:::
-
-##
-
-::: superbig
-The bigger picture
-:::
-
-# Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/margaret-hamilton.jpg){ .portrait }
-
-1936 -
-
-::: notes
-* Led the team that wrote NASA's Apollo navigation software
-* Coined the term "software engineering"
-:::
-
-## Margaret Hamilton { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/margaret-hamilton-lego.jpg){ .portrait }
-
-2017
-
-::: notes
-* Led the team that wrote NASA's Apollo navigation software
-* Coined the term "software engineering"
-:::
-
-## Software engineering
-
-. . .
-
-* Programming
-
-. . .
-
-* Analysis
-* Architecture
-* UX design
-* Testing
-
-. . .
-
-* Computer science
-
-## Software engineering
-
-::: big
-If you remember only 3 things
-:::
-
-## Software engineering
-
-::: superbig
-It depends
-:::
-
-## Big O notation
-
-![](../images/bigo0.png){ style="height:500px;" }
-
-## Big O notation
-
-![](../images/bigo1.png){ style="height:500px;" }
-
-::: notes
-If complexity < something, it may not matter
-:::
-
-## Big O notation
-
-![](../images/bigo2.png){ style="height:500px;" }
-
-::: notes
-for small values, things behave differently
-:::
-
-## Readability
-
-::: { style="font-size:3em;" }
-```java
- 🙂 Set<T> set;
-```
-
-```java
- 🧐 LinkedHashSet<T> set;
-```
 :::
 
 ##
