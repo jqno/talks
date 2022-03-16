@@ -996,6 +996,18 @@ Date:   Mon Mar 7 10:19:22 2022 +0100
 ❯ ~/my-project ❯ @ebf52218 ❯ git bisect reset
 ```
 
+##
+
+::: big
+Better than Linear Search!
+:::
+
+##
+
+::: big
+Let's look at the fundamentals
+:::
+
 # Hedy Lamarr { data-state="page-portrait" data-background-image="../images/background.png" }
 
 ![](../images/hedy-lamarr.jpg){ .portrait }
@@ -1435,6 +1447,293 @@ insert    O($1$)
 
 ##
 
+::: big
+How do I do this in Java?
+:::
+
+# James Gosling { data-state="page-portrait" data-background-image="../images/background.png" }
+
+![](../images/james-gosling.jpg){ .portrait }
+
+1955 -
+
+::: notes
+* father of Java
+:::
+
+##
+
+::: superbig
+Data structures
+:::
+
+## Data structures in Java
+
+* ArrayList
+* LinkedList
+* CopyOnWriteArrayList
+* Stack
+* ~~Vector~~
+
+## Data structures in Java
+
+* HashMap
+* EnumMap
+* LinkedHashMap
+* SortedMap
+* TreeMap
+
+## Data structures in Java
+
+* HashSet
+* EnumSet
+* LinkedHashSet
+* SortedSet
+* TreeSet
+
+## Data structures in Java
+
+* Queue
+* Deque
+* ...
+
+##
+
+::: big
+Immutable collections
+:::
+
+Vavr, Eclipse Collections, Guava
+
+##
+
+::: superbig
+Variable declaration
+:::
+
+## Variable declaration
+
+No:
+
+```java
+ArrayList<String> myList = new ArrayList<>();
+```
+
+## Variable declaration
+
+Yes:
+
+```java
+     List<String> myList = new ArrayList<>();
+```
+
+## Variable declaration
+
+Yes:
+
+```java
+     List<String> myList = new LinkedList<>();
+```
+
+## Variable declaration
+
+Yes:
+
+```java
+     List<String> myList = new CopyOnWriteArrayList<>();
+```
+
+##
+
+::: superbig
+Equality
+:::
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+
+
+
+
+
+```
+
+## Equality
+
+![](../images/java-hashmap-0.jpg){ style="height:500px;" }
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+
+
+
+
+
+```
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    // no equals!
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // false
+
+
+
+
+```
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+
+
+
+```
+
+## Equality
+
+![](../images/java-hashmap-1.jpg){ style="height:500px;" }
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+
+
+
+```
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+    // no hashCode!
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+cs1.hashCode()  // 253
+cs2.hashCode()  // 875
+```
+
+## Equality
+
+```java
+class ComputerScientist {
+    private final String name;
+
+    // constructor, getters & setters
+    public boolean equals(Object obj) { ... }
+    public int hashCode() { ... }
+}
+```
+
+```java
+var cs1 = new ComputerScientist("James Gosling");
+var cs2 = new ComputerScientist("James Gosling");
+
+cs1.equals(cs2) // true 🥳
+
+cs1.hashCode()  // 253
+cs2.hashCode()  // 253 🥳
+```
+
+## Equality
+
+![](../images/java-hashmap-2.jpg){ style="height:500px;" }
+
+## Equality
+
+::: big
+Override `equals`?
+:::
+
+## Equality
+
+::: big
+Override `equals` _and_ `hashCode`!
+:::
+
+##
+
 ::: superbig
 The bigger picture
 :::
@@ -1499,7 +1798,8 @@ It depends
 ![](../images/bigo1.png){ style="height:500px;" }
 
 ::: notes
-If complexity < something, it may not matter
+* Not optimal, but "fast enough" in practice?
+* Good enough, don't waste time!
 :::
 
 ## Big O notation
@@ -1520,234 +1820,6 @@ for small values, things behave differently
 ```java
  🧐 LinkedHashSet<T> set;
 ```
-:::
-
-##
-
-::: big
-How do I do this in Java?
-:::
-
-# James Gosling { data-state="page-portrait" data-background-image="../images/background.png" }
-
-![](../images/james-gosling.jpg){ .portrait }
-
-1955 -
-
-::: notes
-* father of Java
-:::
-
-## Data structures in Java
-
-* ArrayList
-* LinkedList
-* CopyOnWriteArrayList
-* Stack
-* ~~Vector~~
-
-## Data structures in Java
-
-* HashSet
-* EnumSet
-* LinkedHashSet
-* SortedSet
-* TreeSet
-
-## Data structures in Java
-
-* HashMap
-* EnumMap
-* LinkedHashMap
-* SortedMap
-* TreeMap
-
-## Data structures in Java
-
-* Queue
-* Deque
-* ...
-
-##
-
-::: big
-Immutable collections
-:::
-
-Vavr, Eclipse Collections, Guava
-
-## Variable declaration
-
-No:
-
-```java
-ArrayList<String> myList = new ArrayList<>();
-```
-
-## Variable declaration
-
-Yes:
-
-```java
-     List<String> myList = new ArrayList<>();
-```
-
-## Variable declaration
-
-Yes:
-
-```java
-     List<String> myList = new LinkedList<>();
-```
-
-## Variable declaration
-
-Yes:
-
-```java
-     List<String> myList = new CopyOnWriteArrayList<>();
-```
-
-##
-
-::: superbig
-By the way
-:::
-
-## Equality
-
-```java
-class ComputerScientist {
-    private final String name;
-
-    // constructor, getters & setters
-
-
-}
-```
-
-```java
-var cs1 = new ComputerScientist("James Gosling");
-var cs2 = new ComputerScientist("James Gosling");
-
-cs1.equals(cs2) // false
-
-
-
-
-```
-
-## Equality
-
-![](../images/java-hashmap-0.jpg){ style="height:500px;" }
-
-## Equality
-
-```java
-class ComputerScientist {
-    private final String name;
-
-    // constructor, getters & setters
-    public boolean equals(Object obj) { ... }
-
-}
-```
-
-```java
-var cs1 = new ComputerScientist("James Gosling");
-var cs2 = new ComputerScientist("James Gosling");
-
-cs1.equals(cs2) // true 🥳
-
-
-
-
-```
-
-## Equality
-
-```java
-class ComputerScientist {
-    private final String name;
-
-    // constructor, getters & setters
-    public boolean equals(Object obj) { ... }
-
-}
-```
-
-```java
-var cs1 = new ComputerScientist("James Gosling");
-var cs2 = new ComputerScientist("James Gosling");
-
-cs1.equals(cs2) // true 🥳
-
-cs1.hashCode()  // 253
-cs2.hashCode()  // 875
-```
-
-## Equality
-
-![](../images/java-hashmap-1.jpg){ style="height:500px;" }
-
-## Equality
-
-```java
-class ComputerScientist {
-    private final String name;
-
-    // constructor, getters & setters
-    public boolean equals(Object obj) { ... }
-
-}
-```
-
-```java
-var cs1 = new ComputerScientist("James Gosling");
-var cs2 = new ComputerScientist("James Gosling");
-
-cs1.equals(cs2) // true 🥳
-
-cs1.hashCode()  // 253
-cs2.hashCode()  // 875
-```
-
-## Equality
-
-```java
-class ComputerScientist {
-    private final String name;
-
-    // constructor, getters & setters
-    public boolean equals(Object obj) { ... }
-    public int hashCode() { ... }
-}
-```
-
-```java
-var cs1 = new ComputerScientist("James Gosling");
-var cs2 = new ComputerScientist("James Gosling");
-
-cs1.equals(cs2) // true 🥳
-
-cs1.hashCode()  // 253
-cs2.hashCode()  // 253 🥳
-```
-
-## Equality
-
-![](../images/java-hashmap-2.jpg){ style="height:500px;" }
-
-## Equality
-
-::: big
-Override `equals`?
-:::
-
-## Equality
-
-::: big
-Override `equals` _and_ `hashCode`!
 :::
 
 ##
@@ -1805,6 +1877,14 @@ Truth tables
 ## Recap
 
 ::: big
+Thing 3:
+
+It depends
+:::
+
+## Recap
+
+::: big
 Algorithms
 :::
 
@@ -1845,14 +1925,6 @@ Hash-based algorithms?
 :::
 
 Implement `equals` _and_ `hashCode`
-
-## Recap
-
-::: big
-Thing 3:
-
-It depends
-:::
 
 ##
 
