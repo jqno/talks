@@ -52,7 +52,7 @@ This talk gives an overview of some of these fundamentals, such as De Morgan's L
   <br>
   _17 March 2022_
   <br>
-  [[event](https://www.meetup.com/OpenValue/events/284205720/)] [[slides](/talks/slides/enoughcs/2022-03-17-openvalue)]
+  [[event](https://www.meetup.com/OpenValue/events/284205720/)] [[slides](/talks/slides/enoughcs/2022-03-17-openvalue)] [[video](https://www.youtube.com/watch?v=XdmmXd9vX9o)]
 * **J-Fall Netherlands**
   <br>
   _4 November 2021_
