@@ -9,7 +9,6 @@ fi
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 DIR="$SCRIPT_DIR/../_slides/$PRESENTATION"
 
-echo $DIR
+echo "Watching $DIR"
 
-chokidar "$DIR/**/*.md" "$DIR/**/*.css" -c "$SCRIPT_DIR/generate.sh $PRESENTATION"
-
+fd . --extension md --extension css "$DIR" | entr "$SCRIPT_DIR/generate.sh" "$PRESENTATION"

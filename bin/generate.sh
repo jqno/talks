@@ -6,6 +6,8 @@ if [ -z "$PRESENTATION" ]; then
   exit 1
 fi
 
+echo "Generating $PRESENTATION"
+
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 DIR="$SCRIPT_DIR/../_slides/$PRESENTATION"
 SOURCES_DIR="$DIR/src"
