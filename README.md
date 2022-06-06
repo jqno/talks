@@ -2,10 +2,6 @@ This repo contains my talks.
 
 # Usage
 
-If you use Nix, just open a `nix-shell`.
-
-Otherwise,
-
 - Requires `pandoc` 2.7+ to generate slides.
 - Requires `fd` and `entr` to watch files.
 - run `bin/generate.sh <name-of-presentation>` to generate the html file for the presentation located in the `_slides/<name-of-presentation>` folder.
