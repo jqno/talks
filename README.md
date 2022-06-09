@@ -13,7 +13,7 @@ In case assets don't load properly in Firefox, open `about:config` and disable t
 
 ## Website
 
-Start the Jekyll server by running `docker-compose up`.
+Start the Jekyll server by running `docker-compose up` or `docker compose run jekyll serve`.
 
 # Credits
 
