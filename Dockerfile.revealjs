@@ -1,0 +1,8 @@
+FROM pandoc/minimal:2.18.0-alpine
+
+RUN apk add --no-cache bash fd entr
+
+RUN mkdir /workdir
+WORKDIR /workdir
+
+ENTRYPOINT ["/workdir/bin/inside-docker-watch.sh"]

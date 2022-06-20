@@ -3,8 +3,17 @@ services:
   jekyll:
     build:
       context: .
+      dockerfile: Dockerfile.jekyll
     volumes:
       - ".:/workdir"
     ports:
       - 4000:4000
     command: 'serve'
+  revealjs:
+    build:
+      context: .
+      dockerfile: Dockerfile.revealjs
+    volumes:
+      - ".:/workdir"
+    command: '$PRESENTATION'
+

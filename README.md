@@ -2,12 +2,16 @@ This repo contains my talks.
 
 # Usage
 
+Run `bin/watch.sh <name-of-presentation>` to automatically generate the website and the slides using Docker.
+
+# Manual usage
+
 ## Slides
 
 - Requires `pandoc` 2.7+ to generate slides.
 - Requires `fd` and `entr` to watch files.
-- run `bin/generate.sh <name-of-presentation>` to generate the html file for the presentation located in the `_slides/<name-of-presentation>` folder.
-- run `bin/watch.sh <name-of-presentation>` to watch for changes in files for the presentation located in the `_slides/<name-of-presentation>` folder, and re-generate it automatically.
+- run `bin/inside-docker-generate.sh <name-of-presentation>` to generate the html file for the presentation located in the `_slides/<name-of-presentation>` folder.
+- run `bin/inside-docker-watch.sh <name-of-presentation>` to watch for changes in files for the presentation located in the `_slides/<name-of-presentation>` folder, and re-generate it automatically.
 
 In case assets don't load properly in Firefox, open `about:config` and disable the option `security.fileuri.strict_origin_policy`.
 
