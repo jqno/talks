@@ -13,7 +13,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <encoding>UTF-8</encoding>
         <scala.version>2.13.6</scala.version>
-        <kotlin.version>1.5.10</kotlin.version>
+        <kotlin.version>1.6.0</kotlin.version>
     </properties>
 
     <dependencies>
