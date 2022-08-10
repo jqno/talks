@@ -2,6 +2,10 @@
 permalink: /
 title: Talks
 imagebutton_row:
+  - image_path: "assets/titleslides/bullshitlanguage.png"
+    title: "Building a Bullshit Language"
+    excerpt: "How I took Java annotations to their logical extreme by implementing a fully functioning, Turing-complete LISP dialect within them."
+    url: "bullshitlanguage/"
   - image_path: "assets/titleslides/fantastic-languages.png"
     title: "Fantastic Languages and What to learn from them"
     excerpt: "A fast-paced overview of a lot of different programming languages, intended to entertain and perhaps even change a mind or two.<br/>Delivered at Devoxx UK 2021 and J-Fall 2021."
@@ -31,6 +35,7 @@ imagebutton_row:
     excerpt: "How to apply principles from functional programming in older versions of Java."
     url: "fp-in-java/"
 ---
+
 ![devoxx](assets/devoxx.jpg)
 
 There is a [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRsE7zi7YhfYWua1Jzi_iv1GQ) of my talks.
@@ -41,17 +46,17 @@ There is a [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRs
 
 # One-offs
 
-* **Upgrading Scala 2.12 to 2.13**
+- **Upgrading Scala 2.12 to 2.13**
   <br>
   _23 August 2019_, Codestar brown-bag session
   <br>
   [[slides](../slides/scala-2.13/2019-08-23-codestar)]
-* **Reactive Streams: Fast data processing**
+- **Reactive Streams: Fast data processing**
   <br>
   _January 2016_, Ordina Code & Comedy
   <br>
   [[video](https://www.youtube.com/watch?v=D1njDQEldgA)]
-* **Scala**
+- **Scala**
   <br>
   _11 June 2014_, Sogeti
   <br>
