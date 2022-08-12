@@ -41,7 +41,8 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 ## Image credits
 
 * [anders-hejlsberg](/talks/slides/fantasticlanguages/images/anders-hejlsberg.jpg) - by DBegley - [source](https://commons.wikimedia.org/wiki/File:Anders_Hejlsberg.jpg)
-* [annotationscript.png](/talks/slides/fantasticlanguages/images/annotationscript.png) - by Jan Ouwens - [source](http://github.com/jqno/AnnotationScript)
+* [annotationscript](/talks/slides/bullshitlanguage/images/annotationscript.png) - by [moinart on Fiverr](https://www.fiverr.com/moinart)
+* [annotationscript-old.png](/talks/slides/fantasticlanguages/images/annotationscript-old.png) - by Jan Ouwens
 * [apple](/talks/slides/fantasticlanguages/images/apple.svg) - official Apple rainbow logo by Rob Janoff - [source](https://commons.m.wikimedia.org/wiki/File:Apple_Computer_Logo_rainbow.svg)
 * [arabic](/talks/slides/fantasticlanguages/images/arabic.svg) - by murraytheb - [source](https://commons.wikimedia.org/wiki/File:Arabic_albayancalligraphy.svg)
 * [arabic-books](/talks/slides/fantasticlanguages/images/arabic-books.jpg) - by Jan Ouwens

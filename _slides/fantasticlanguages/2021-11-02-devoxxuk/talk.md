@@ -793,9 +793,9 @@ function pick<O extends object, Keys extends keyof O>
 
 # AnnotationScript
 
-![](../images/annotationscript.png){ .biglogo }
+![](../images/annotationscript-old.png){ .biglogo }
 
-## ![](../images/annotationscript.png){ .lineimg } - properties
+## ![](../images/annotationscript-old.png){ .lineimg } - properties
 
 |||
 |---|---|
@@ -806,19 +806,19 @@ function pick<O extends object, Keys extends keyof O>
 | Typing | weak, dynamic |
 | Runtime | Java annotations 🤯 |
 
-## ![](../images/annotationscript.png){ .lineimg } - creator
+## ![](../images/annotationscript-old.png){ .lineimg } - creator
 
 ![](../images/jan-ouwens.jpg){ .bigimg }
 
 Me!
 
-## ![](../images/annotationscript.png){ .lineimg } - creator
+## ![](../images/annotationscript-old.png){ .lineimg } - creator
 
 ![](../images/jan-ouwens.jpg){ .bigimg }
 
 Beard: ✅
 
-## ![](../images/annotationscript.png){ .lineimg } - what does it look like?
+## ![](../images/annotationscript-old.png){ .lineimg } - what does it look like?
 
 ```java
 import nl.jqno.annotationscript.AnnotationScript;
@@ -839,7 +839,7 @@ public class FizzBuzz {
 }
 ```
 
-## ![](../images/annotationscript.png){ .lineimg } - what makes it interesting?
+## ![](../images/annotationscript-old.png){ .lineimg } - what makes it interesting?
 
 ```java
 @Autowired @Bean
@@ -849,7 +849,7 @@ public class FizzBuzz {
 public void waitwhat() { ... }
 ```
 
-## ![](../images/annotationscript.png){ .lineimg } - what did I learn from it?
+## ![](../images/annotationscript-old.png){ .lineimg } - what did I learn from it?
 
 ```lisp
 (begin

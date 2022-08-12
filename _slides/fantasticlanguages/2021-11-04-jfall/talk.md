@@ -202,7 +202,7 @@ end.
 
 ![](../images/hashmap.jpg){ .bigimg }
 
-## ![](../images/annotationscript.png){ .lineimg } - AnnotationScript - 💻
+## ![](../images/annotationscript-old.png){ .lineimg } - AnnotationScript - 💻
 
 ```java
 import nl.jqno.annotationscript.AnnotationScript;
@@ -223,7 +223,7 @@ public class FizzBuzz {
 }
 ```
 
-## ![](../images/annotationscript.png){ .lineimg } - AnnotationScript - 🤔
+## ![](../images/annotationscript-old.png){ .lineimg } - AnnotationScript - 🤔
 
 ```java
 @Autowired @Bean
@@ -233,7 +233,7 @@ public class FizzBuzz {
 public void waitwhat() { ... }
 ```
 
-## ![](../images/annotationscript.png){ .lineimg } - AnnotationScript - 💡
+## ![](../images/annotationscript-old.png){ .lineimg } - AnnotationScript - 💡
 
 ```lisp
 (begin
