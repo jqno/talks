@@ -36,6 +36,82 @@ Demo time!
 ![](../images/twitter.png){ style="height:30px;" } #bullshitlanguage
 :::
 
+## WHY!?
+
+##
+
+::: big
+AnnotationScript
+
+is
+
+a LISP
+:::
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: superbig
+LISP
+:::
+
+## What's a LISP?
+
+## Syntax
+
+## Map to AnnotationScript
+
+## Implementing LISP
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: big
+Implementation
+:::
+
+## Architecture
+
+![](../images/architecture.png)
+
+## Tokenizer
+
+## Parser
+
+## Evaluator
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: superbig
+Interlude
+:::
+
+## Code generator
+
+## Tokenizer
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: superbig
+Taking it
+
+TOO FAR
+:::
+
+## MetaScript
+
+## Tokenizer
+
+## Parser
+
+## Evaluator
+
+## Demo
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: superbig
+Conclusion
+:::
+
 ## Questions? { data-state="page-title" data-background-image="../images/background.png" }
 
 ![](../images/qr.png)

@@ -38,5 +38,6 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 ## Image credits
 
 - [annotationscript](/talks/slides/bullshitlanguage/images/annotationscript.png) - by [moinart on Fiverr](https://www.fiverr.com/moinart)
+- [architecture](/talks/slides/bullshitlanguage/images/architecture.png) - by Jan Ouwens
 - [background](/talks/slides/bullshitlanguage/images/background.png) - by Jan Ouwens
 - [jan-ouwens](/talks/slides/bullshitlanguage/images/jan-ouwens.jpg) - by Riemke Ouwens
