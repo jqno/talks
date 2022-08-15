@@ -38,6 +38,14 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 ## Image credits
 
 - [annotationscript](/talks/slides/bullshitlanguage/images/annotationscript.png) - by [moinart on Fiverr](https://www.fiverr.com/moinart)
-- [architecture](/talks/slides/bullshitlanguage/images/architecture.png) - by Jan Ouwens
+- [architecture-1](/talks/slides/bullshitlanguage/images/architecture-1.png) - by Jan Ouwens
+- [architecture-2](/talks/slides/bullshitlanguage/images/architecture-2.png) - by Jan Ouwens
 - [background](/talks/slides/bullshitlanguage/images/background.png) - by Jan Ouwens
+- [duke-says-no](/talks/slides/bullshitlanguage/images/duke-says-no.png) - by Jeff Dinkins for Sun/Oracle - [source](https://wiki.openjdk.org/display/duke/Gallery)
+- [duke-says-yes](/talks/slides/bullshitlanguage/images/duke-says-yes.png) - by Jeff Dinkins for Sun/Oracle - [source](https://wiki.openjdk.org/display/duke/Gallery)
+- [environment-1](/talks/slides/bullshitlanguage/images/environment-1.png) - by Jan Ouwens
+- [environment-2](/talks/slides/bullshitlanguage/images/environment-2.png) - by Jan Ouwens
+- [evaluator](/talks/slides/bullshitlanguage/images/evaluator.png) - by Jan Ouwens
 - [jan-ouwens](/talks/slides/bullshitlanguage/images/jan-ouwens.jpg) - by Riemke Ouwens
+- [parser](/talks/slides/bullshitlanguage/images/parser.png) - by Jan Ouwens
+- [tokenizer](/talks/slides/bullshitlanguage/images/tokenizer.png) - by Jan Ouwens
