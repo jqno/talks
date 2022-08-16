@@ -101,6 +101,14 @@ LISP
 
 ```lisp
 (define first (lambda (l) (head l)))
+
+
+
+
+
+
+
+
 ```
 
 ## Map to AnnotationScript
@@ -133,6 +141,7 @@ LISP
 
 <!-- prettier-ignore -->
 ```java
+
 @Zero("define")
 @Zero("first")
 @Zero(list={
@@ -144,7 +153,7 @@ public static class First {}
 
 ## Implementing LISP
 
-<!-- Image: rite of passage -->
+<!-- Image: rite of passage, or nerd hacking -->
 
 &nbsp;
 
@@ -226,7 +235,11 @@ why so `@Weird`?
 
 ## Annotations, first try
 
-![](../images/duke-says-no.png) &nbsp; No nesting annotations!
+<span style="float:left;">
+![](../images/duke-says-no.png)
+</span>
+
+No nesting annotations!
 
 ## Annotations, second try
 
@@ -241,7 +254,15 @@ why so `@Weird`?
 
 ## Annotations, second try
 
-![](../images/duke-says-no.png) &nbsp; Sure! I'll group them for you
+<span style="float:left;">
+![](../images/duke-says-yes.png)
+</span>
+
+Sure! I'll group them for you
+
+&nbsp;
+
+&nbsp;
 
 ```java
 Open[] opens = { @Open, @Open };
@@ -253,7 +274,8 @@ Close[] closes = { @Close, @Close };
 ## Annotations, third try
 
 ```java
-public @interface Syntax {}
+public @interface Syntax {}  // 👈🏻 smart-ass!
+
 public @interface Open extends Syntax {}
 public @interface Symbol extends Syntax {}
 public @interface Close extends Syntax {}
@@ -265,7 +287,11 @@ Syntax[] code = { @Open, @Symbol("if"), @Open, @Symbol("<"),
 
 ## Annotations, third try
 
-![](../images/duke-says-no.png) &nbsp; No extending annotations!
+<span style="float:left;">
+![](../images/duke-says-no.png)
+</span>
+
+No extending annotations!
 
 ## Annotations, fourth and final try
 
@@ -278,7 +304,23 @@ Syntax[] code = { @Open, @Symbol("if"), @Open, @Symbol("<"),
 
 ## Annotations, fourth and final try
 
-![](../images/duke-says-yes.png) &nbsp; I see no issue with that!
+<span style="float:left;">
+![](../images/duke-says-yes.png)
+</span>
+
+I see no issue with that!
+
+. . .
+
+Make as many as you like!
+
+. . .
+
+🥱
+
+## Architecture
+
+![](../images/architecture-2.png)
 
 ## Parser
 
@@ -299,9 +341,21 @@ List<Object> ast = List.of(
     "b");
 ```
 
+::: notes
+Nested Lists instead of a proper Tree
+:::
+
+## Architecture
+
+![](../images/architecture-2.png)
+
 ## Environment
 
 ![](../images/environment-1.png)
+
+::: notes
+Global Environment contains lots of stuff
+:::
 
 ## Environment
 
@@ -318,6 +372,10 @@ List<Object> ast = List.of(
 ```lisp
 (define x 10)
 ```
+
+## Architecture
+
+![](../images/architecture-2.png)
 
 ## Evaluator
 
@@ -353,9 +411,62 @@ Evaluate all elements<br/>Call function<br/>Return result
 Interlude
 :::
 
-## Code generator
+## A program
+
+<!-- prettier-ignore -->
+```java
+@Zero("begin")
+@Zero(list={@One("define"), @One("fizz-buzz"), @One(list={@Two("lambda"),
+  @Two(list=@Three("n")), @Two(list={@Three("cond"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"),
+      @Five("15")}), @Four("0")}), @Three("'fizzbuzz'"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"),
+      @Five("3")}), @Four("0")}), @Three("'fizz'"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"),
+      @Five("5")}), @Four("0")}), @Three("'buzz'"),
+    @Three("else"), @Three("n")})})})
+@Zero(list={@One("map"), @One("println"), @One(list={@Two("map"),
+  @Two("fizz-buzz"), @Two(list={@Three("range"),
+  @Three("1"), @Three("101")})})})
+public class FizzBuzz {}
+```
+
+## A program
+
+<!-- Image: ain't got no time to write that -->
 
 ## Tokenizer
+
+```lisp
+
+  (begin
+    (define fizz-buzz (lambda (n)
+      (cond (= (% n 15) 0) 'fizzbuzz')
+      (cond (= (% n 3) 0) 'fizz')
+      (cond (= (% n 5) 0) 'buzz')
+      (else n))
+    (map println (map fizz-buzz (range 1 101))))
+
+
+```
+
+## Tokenizer
+
+```lisp
+String code = """
+  (begin
+    (define fizz-buzz (lambda (n)
+      (cond (= (% n 15) 0) 'fizzbuzz')
+      (cond (= (% n 3) 0) 'fizz')
+      (cond (= (% n 5) 0) 'buzz')
+      (else n))
+    (map println (map fizz-buzz (range 1 101))))""";
+return code.split(" ");
+```
+
+## Code generator
+
+<!-- Image: code generator -->
 
 # { data-state="page-title" data-background-image="../images/background.png" }
 
@@ -365,13 +476,49 @@ Taking it
 TOO FAR
 :::
 
+::: notes
+Now I have a quick way to produce code
+:::
+
 ## MetaScript
+
+<!-- Image: The Little Schemer -->
 
 ## Tokenizer
 
+<!-- Image: screenshot of tokenizer -->
+
+## Tokenizer
+
+Test cases: identical!
+
+::: notes
+Trivial
+:::
+
+<!-- Image: mind blown 1 -->
+
 ## Parser
 
+<!-- Image: screenshot of parser -->
+
+## Parser
+
+Test cases: identical!
+
+::: notes
+Non-trivial
+:::
+
+<!-- Image: mind blown 2 -->
+
 ## Evaluator
+
+<!-- Image: The Little Schemer -->
+
+## Evaluator
+
+<!-- Image: screenshot of evaluator -->
 
 ## Demo
 
@@ -379,6 +526,66 @@ TOO FAR
 
 ::: superbig
 Conclusion
+:::
+
+## Drawbacks
+
+. . .
+
+::: superbig
+🤷🏻
+:::
+
+## Drawbacks
+
+::: big
+Stack overflow errors
+:::
+
+## Drawbacks
+
+::: big
+Error handling
+:::
+
+## Drawbacks
+
+::: big
+String.split
+:::
+
+## Drawbacks
+
+::: big
+No Spring integration
+:::
+
+::: notes
+No @Autowired
+:::
+
+## Conclusion
+
+<!-- Image: faded background duke-says-yes -->
+
+::: big
+Learn about annotations
+:::
+
+## Conclusion
+
+<!-- Image: rite of passage, from before -->
+
+::: big
+Learn about LISP
+:::
+
+## Conclusion
+
+<!-- Image: fun -->
+
+::: superbig
+Fun
 :::
 
 ## Questions? { data-state="page-title" data-background-image="../images/background.png" }
