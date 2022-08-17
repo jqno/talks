@@ -42,10 +42,12 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 - [architecture-2](/talks/slides/bullshitlanguage/images/architecture-2.png) - by Jan Ouwens
 - [background](/talks/slides/bullshitlanguage/images/background.png) - by Jan Ouwens
 - [duke-says-no](/talks/slides/bullshitlanguage/images/duke-says-no.png) - by Jeff Dinkins for Sun/Oracle - [source](https://wiki.openjdk.org/display/duke/Gallery)
-- [duke-says-yes](/talks/slides/bullshitlanguage/images/duke-says-yes.png) - by Jeff Dinkins for Sun/Oracle - [source](https://wiki.openjdk.org/display/duke/Gallery)
+- [duke-says-yes](/talks/slides/bullshitlanguage/images/duke-says-yes.png) & [duke-says-yes-background](/talks/slides/bullshitlanguage/images/duke-says-yes-background.png) - by Jeff Dinkins for Sun/Oracle - [source](https://wiki.openjdk.org/display/duke/Gallery)
 - [environment-1](/talks/slides/bullshitlanguage/images/environment-1.png) - by Jan Ouwens
 - [environment-2](/talks/slides/bullshitlanguage/images/environment-2.png) - by Jan Ouwens
 - [evaluator](/talks/slides/bullshitlanguage/images/evaluator.png) - by Jan Ouwens
 - [jan-ouwens](/talks/slides/bullshitlanguage/images/jan-ouwens.jpg) - by Riemke Ouwens
+- [meta-evaluator](/talks/slides/bullshitlanguage/images/meta-evaluator.png) & [meta-parser](/talks/slides/bullshitlanguage/images/meta-parser.png) & [meta-tokenizer](/talks/slides/bullshitlanguage/images/meta-tokenizer.png) - by Jan Ouwens
 - [parser](/talks/slides/bullshitlanguage/images/parser.png) - by Jan Ouwens
+- [the-little-schemer](/talks/slides/bullshitlanguage/images/the-little-schemer.jpg) - by MIT Press - [source](https://sicm.mitpress.mit.edu/books/little-schemer-fourth-edition)
 - [tokenizer](/talks/slides/bullshitlanguage/images/tokenizer.png) - by Jan Ouwens

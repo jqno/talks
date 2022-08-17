@@ -44,7 +44,16 @@ Demo time!
 
 ## WHY!?
 
-<!-- Image: Annotation overuse -->
+```java
+@Autowired
+@Bean
+@Column(name = "wat")
+@Deprecated
+@JsonAlias("whynot")
+@PostMapping("/endpoint/wtf")
+@Test
+public void waitwhat() {}
+```
 
 ## WHY!?
 
@@ -482,15 +491,21 @@ Now I have a quick way to produce code
 
 ## MetaScript
 
-<!-- Image: The Little Schemer -->
+![](../images/the-little-schemer.jpg){ .bigimg }
 
 ## Tokenizer
 
-<!-- Image: screenshot of tokenizer -->
+![](../images/meta-tokenizer.png){ .bigimg }
 
 ## Tokenizer
 
-Test cases: identical!
+- Unit tests written in Java, not AnnotationScript
+
+- AnnotationScript evaluates to regular Java objects
+
+## Tokenizer
+
+Unit tests: identical!
 
 ::: notes
 Trivial
@@ -500,11 +515,11 @@ Trivial
 
 ## Parser
 
-<!-- Image: screenshot of parser -->
+![](../images/meta-parser.png){ .bigimg }
 
 ## Parser
 
-Test cases: identical!
+Unit tests: identical!
 
 ::: notes
 Non-trivial
@@ -514,11 +529,15 @@ Non-trivial
 
 ## Evaluator
 
-<!-- Image: The Little Schemer -->
+![](../images/the-little-schemer.jpg){ .bigimg }
+
+::: notes
+Evaluator is implemented very differently, so tests are different
+:::
 
 ## Evaluator
 
-<!-- Image: screenshot of evaluator -->
+![](../images/meta-evaluator.png){ .bigimg }
 
 ## Demo
 
@@ -564,9 +583,7 @@ No Spring integration
 No @Autowired
 :::
 
-## Conclusion
-
-<!-- Image: faded background duke-says-yes -->
+## Conclusion { data-background-image="../images/duke-says-yes-background.png" data-background-size="contain" }
 
 ::: big
 Learn about annotations
