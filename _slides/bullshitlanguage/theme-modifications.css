@@ -23,6 +23,7 @@
 
 /* Overrides for specific kinds of pages */
 
+.text-shadow,
 html.page-title .reveal,
 html.page-title .reveal a,
 html.page-title .reveal h1,
@@ -35,6 +36,7 @@ html.page-title .reveal h2 {
 /* Images */
 
 .reveal section img.shadow {
+  height: 9em;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
 }
 

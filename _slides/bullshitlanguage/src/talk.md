@@ -40,7 +40,7 @@ Demo time!
 
 ## WHY!?
 
-<!-- Image: lockdown -->
+![](../images/lockdown.png){ .bigimg }
 
 ## WHY!?
 
@@ -57,7 +57,7 @@ public void waitwhat() {}
 
 ## WHY!?
 
-<!-- Image: nerd cred -->
+![](../images/nerd-cred.png){ .bigimg }
 
 ##
 
@@ -162,17 +162,7 @@ public static class First {}
 
 ## Implementing LISP
 
-<!-- Image: rite of passage, or nerd hacking -->
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
+![](../images/rite-of-passage.png){ .shadow }
 
 &nbsp;
 
@@ -184,6 +174,10 @@ Use Peter Norvig's [blog post](https://norvig.com/lispy.html)
 
 ::: big
 Implementation
+:::
+
+::: notes
+rite of passage
 :::
 
 ## Architecture
@@ -444,6 +438,8 @@ public class FizzBuzz {}
 
 <!-- Image: ain't got no time to write that -->
 
+![](../images/bored.png){ .bigimg }
+
 ## Tokenizer
 
 ```lisp
@@ -475,7 +471,7 @@ return code.split(" ");
 
 ## Code generator
 
-<!-- Image: code generator -->
+![](../images/code-generator.png){ .bigimg }
 
 # { data-state="page-title" data-background-image="../images/background.png" }
 
@@ -505,19 +501,21 @@ Now I have a quick way to produce code
 
 ## Tokenizer
 
+![](../images/mind-blown-1.png){ .shadow }
+
 Unit tests: identical!
 
 ::: notes
 Trivial
 :::
 
-<!-- Image: mind blown 1 -->
-
 ## Parser
 
 ![](../images/meta-parser.png){ .bigimg }
 
 ## Parser
+
+![](../images/mind-blown-2.png){ .shadow }
 
 Unit tests: identical!
 
@@ -544,43 +542,51 @@ Evaluator is implemented very differently, so tests are different
 # { data-state="page-title" data-background-image="../images/background.png" }
 
 ::: superbig
-Conclusion
+What's next
 :::
 
-## Drawbacks
-
-. . .
+## Next
 
 ::: superbig
 🤷🏻
 :::
 
-## Drawbacks
+## Next
 
 ::: big
 Stack overflow errors
 :::
 
-## Drawbacks
+## Next
 
 ::: big
 Error handling
 :::
 
-## Drawbacks
+## Next
 
 ::: big
 String.split
 :::
 
-## Drawbacks
+## Next
 
 ::: big
-No Spring integration
+Spring integration
+:::
+
+::: supersmall
+🤪
 :::
 
 ::: notes
 No @Autowired
+:::
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: superbig
+Conclusion
 :::
 
 ## Conclusion { data-background-image="../images/duke-says-yes-background.png" data-background-size="contain" }
@@ -589,20 +595,16 @@ No @Autowired
 Learn about annotations
 :::
 
-## Conclusion
+## Conclusion { data-background-image="../images/rite-of-passage.png" }
 
-<!-- Image: rite of passage, from before -->
-
-::: big
+::: { class="big text-shadow" }
 Learn about LISP
 :::
 
-## Conclusion
+## Conclusion { data-background-image="../images/fun.png" }
 
-<!-- Image: fun -->
-
-::: superbig
-Fun
+::: { class="superbig text-shadow" }
+It was fun
 :::
 
 ## Questions? { data-state="page-title" data-background-image="../images/background.png" }
