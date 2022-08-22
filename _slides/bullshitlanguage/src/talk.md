@@ -117,7 +117,8 @@ LISP
 ## Map to AnnotationScript
 
 ```lisp
-(define first (lambda (l) (head l)))
+(if (< x 0) "a" "b")
+
 
 
 
@@ -132,12 +133,13 @@ LISP
 
 ```lisp
 (
-  define
-  first
+  if
   (
-    lambda
-    (l)
-    (head l))
+    <
+    x
+    0)
+  "a"
+  "b"
 )
 ```
 
@@ -145,12 +147,13 @@ LISP
 
 ```lisp
 (
-       define
-       first
+       if
            (
-          lambda
-              (      l  )
-              (      head          l  ) )
+          <
+          x
+          0  )
+       "a"
+       "b"
 )
 ```
 
@@ -159,12 +162,13 @@ LISP
 <!-- prettier-ignore -->
 ```java
 
-@Zero("define")
-@Zero("first")
+@Zero("if")
 @Zero(list={
-    @One("lambda"),
-    @One(list={@Two("l")}),
-    @One(list={@Two("head"), @Two("l")})})
+    @One("<"),
+    @One("x"),
+    @One("0")})
+@Zero("'a'")
+@Zero("'b'")
 public static class First {}
 ```
 
@@ -224,8 +228,8 @@ rite of passage
     @One("x"),    // 'x'
     @One("0")     // '0'
 })                // ')'
-@Zero("'a'")        // 'a'
-@Zero("'b'")        // 'b'
+@Zero("'a'")      // 'a'
+@Zero("'b'")      // 'b'
 ```
 
 DONE! 🥳
@@ -341,8 +345,8 @@ Make as many as you like!
 
 - Atoms (`0`, `'a'`) remain the same
 - Symbols (`define`, `if`, `<`) are wrapped in `Symbol` class
-- `(` starts a list
-- `)` ends a list
+- `(` starts a sub-list
+- `)` ends a sub-list
 
 ```java
 List<Object> ast = List.of(
