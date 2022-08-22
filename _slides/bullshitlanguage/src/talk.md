@@ -20,6 +20,14 @@ center: "false"
 
 ##
 
+::: big
+AnnotationScript
+:::
+
+Java annotations with a LISP
+
+##
+
 ::: superbig
 Demo time!
 :::
@@ -606,6 +614,12 @@ Learn about LISP
 ::: { class="superbig text-shadow" }
 It was fun
 :::
+
+## Conclusion
+
+Greenspun's Tenth Rule:
+
+_Any sufficiently complicated C or Fortran program contains an ad hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp._
 
 ## Questions? { data-state="page-title" data-background-image="../images/background.png" }
 
