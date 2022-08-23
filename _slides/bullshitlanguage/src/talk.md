@@ -106,6 +106,12 @@ LISP
 (fizzbuzz 1 100)
 ```
 
+## Syntax
+
+```lisp
+(+ x 10)
+```
+
 ## The Power of LISP
 
 ```lisp
@@ -501,6 +507,10 @@ Now I have a quick way to produce code
 
 ![](../images/the-little-schemer.jpg){ .bigimg }
 
+## MetaScript
+
+![](../images/architecture-1.png)
+
 ## Tokenizer
 
 ![](../images/meta-tokenizer.png){ .bigimg }
@@ -521,6 +531,10 @@ Unit tests: identical!
 Trivial
 :::
 
+## MetaScript
+
+![](../images/architecture-1.png)
+
 ## Parser
 
 ![](../images/meta-parser.png){ .bigimg }
@@ -535,7 +549,9 @@ Unit tests: identical!
 Non-trivial
 :::
 
-<!-- Image: mind blown 2 -->
+## MetaScript
+
+![](../images/architecture-1.png)
 
 ## Evaluator
 
