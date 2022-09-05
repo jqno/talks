@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Building a Bullshit Language</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="../parallel-highlight.css"/>
+  <link rel="stylesheet" href="../theme-modifications.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../../assets/revealjs-3.8.0/css/print/pdf.css' : '../../../assets/revealjs-3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../../../assets/revealjs-3.8.0/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section>
+<section id="building-a-bullshit-language"
+class="title-slide slide level1" data-state="page-title"
+data-background-image="../images/background.png">
+<h1 data-state="page-title"
+data-background-image="../images/background.png">Building a<br/>Bullshit
+Language</h1>
+<!-- markdownlint-disable MD003 MD033 MD045 -->
+<p><img data-src="../images/annotationscript.png"
+style="height:240px;" /></p>
+<div class="hashtag">
+<p><img data-src="../images/twitter.png" height="30" />
+#bullshitlanguage</p>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>AnnotationScript</p>
+</div>
+<p>Java annotations with a LISP</p>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div class="superbig">
+<p>Demo time!</p>
+</div>
+</section>
+<section id="jan-ouwens" class="slide level2" data-state="page-title"
+data-background-image="../images/background.png">
+<h2 data-state="page-title"
+data-background-image="../images/background.png">Jan Ouwens</h2>
+<p><img data-src="../images/jan-ouwens.jpg" class="shadow"
+style="height:200px;" /></p>
+<p> </p>
+<p><img data-src="../images/yoink.png"
+style="height:40px;margin-top:15px;" /> │ <a
+href="https://jqno.nl/equalsverifier">EqualsVerifier</a> │ <a
+href="https://jqno.nl">jqno.nl</a> │ <img
+data-src="../images/twitter.png" style="height:30px;" /> <a
+href="https://twitter.com/jqno">jqno</a></p>
+<div class="hashtag">
+<p><img data-src="../images/twitter.png" style="height:30px;" />
+#bullshitlanguage</p>
+</div>
+</section>
+<section id="why" class="slide level2">
+<h2>WHY!?</h2>
+</section>
+<section id="why-1" class="slide level2">
+<h2>WHY!?</h2>
+<p><img data-src="../images/lockdown.png" class="bigimg" /></p>
+</section>
+<section id="why-2" class="slide level2">
+<h2>WHY!?</h2>
+<pre class="java"><code>@Autowired
+@Bean
+@Column(name = &quot;wat&quot;)
+@Deprecated
+@JsonAlias(&quot;whynot&quot;)
+@PostMapping(&quot;/endpoint/wtf&quot;)
+@Test
+public void waitwhat() {}</code></pre>
+</section>
+<section id="why-3" class="slide level2">
+<h2>WHY!?</h2>
+<p><img data-src="../images/nerd-cred.png" class="bigimg" /></p>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>AnnotationScript</p>
+<p>is</p>
+<p>a LISP</p>
+</div>
+</section></section>
+<section>
+<section id="section-3" class="title-slide slide level1"
+data-state="page-title"
+data-background-image="../images/background.png">
+<h1 data-state="page-title"
+data-background-image="../images/background.png"></h1>
+<div class="superbig">
+<p>LISP</p>
+</div>
+</section>
+<section id="whats-a-lisp" class="slide level2">
+<h2>What’s a LISP?</h2>
+<ul>
+<li>Common Lisp</li>
+<li>Scheme</li>
+<li>Emacs</li>
+<li>Racket</li>
+<li>Clojure</li>
+</ul>
+</section>
+<section id="syntax" class="slide level2">
+<h2>Syntax</h2>
+<pre class="scheme"><code>(define (fizzbuzz x y)
+  (cond ((eq? (remainder x 15) 0) (display &quot;FizzBuzz\n&quot;))
+        ((eq? (remainder x 3) 0) (display &quot;Fizz\n&quot;))
+        ((eq? (remainder x 5) 0) (display &quot;Buzz\n&quot;))
+        (else (display x) (display &quot;\n&quot;)))
+
+  (cond ((&lt; x y) (fizzbuzz (+ x 1) y))
+        (else ())))
+
+(fizzbuzz 1 100)</code></pre>
+</section>
+<section id="syntax-1" class="slide level2">
+<h2>Syntax</h2>
+<pre class="lisp"><code>(+ x 10)</code></pre>
+</section>
+<section id="the-power-of-lisp" class="slide level2">
+<h2>The Power of LISP</h2>
+<pre class="lisp"><code>(+ x 10)
+
+((if (#t) + -) x 10)</code></pre>
+</section>
+<section id="map-to-annotationscript" class="slide level2">
+<h2>Map to AnnotationScript</h2>
+<pre class="lisp"><code>(if (&lt; x 0) &quot;a&quot; &quot;b&quot;)
+
+
+
+
+
+
+
+
+</code></pre>
+</section>
+<section id="map-to-annotationscript-1" class="slide level2">
+<h2>Map to AnnotationScript</h2>
+<pre class="lisp"><code>(
+  if
+  (
+    &lt;
+    x
+    0)
+  &quot;a&quot;
+  &quot;b&quot;
+)</code></pre>
+</section>
+<section id="map-to-annotationscript-2" class="slide level2">
+<h2>Map to AnnotationScript</h2>
+<pre class="lisp"><code>(
+       if
+           (
+          &lt;
+          x
+          0  )
+       &quot;a&quot;
+       &quot;b&quot;
+)</code></pre>
+</section>
+<section id="map-to-annotationscript-3" class="slide level2">
+<h2>Map to AnnotationScript</h2>
+<!-- prettier-ignore -->
+<pre class="java"><code>
+@Zero(&quot;if&quot;)
+@Zero(list={
+    @One(&quot;&lt;&quot;),
+    @One(&quot;x&quot;),
+    @One(&quot;0&quot;)})
+@Zero(&quot;&#39;a&#39;&quot;)
+@Zero(&quot;&#39;b&#39;&quot;)
+public static class First {}</code></pre>
+</section>
+<section id="implementing-lisp" class="slide level2">
+<h2>Implementing LISP</h2>
+<p><img data-src="../images/rite-of-passage.png" class="shadow" /></p>
+<p> </p>
+<div class="small">
+<p>Use Peter Norvig’s <a href="https://norvig.com/lispy.html">blog
+post</a></p>
+</div>
+</section></section>
+<section>
+<section id="section-4" class="title-slide slide level1"
+data-state="page-title"
+data-background-image="../images/background.png">
+<h1 data-state="page-title"
+data-background-image="../images/background.png"></h1>
+<div class="big">
+<p>Implementation</p>
+</div>
+<aside class="notes">
+<p>rite of passage</p>
+</aside>
+</section>
+<section id="architecture" class="slide level2">
+<h2>Architecture</h2>
+<p><img data-src="../images/architecture-1.png" /></p>
+</section>
+<section id="architecture-1" class="slide level2">
+<h2>Architecture</h2>
+<p><img data-src="../images/architecture-2.png" /></p>
+</section>
+<section id="tokenizer" class="slide level2">
+<h2>Tokenizer</h2>
+<p><img data-src="../images/tokenizer.png" /></p>
+</section>
+<section id="tokenizer-1" class="slide level2">
+<h2>Tokenizer</h2>
+<!-- prettier-ignore -->
+<pre class="java"><code>@Zero(&quot;if&quot;)
+@Zero(list={
+    @One(&quot;&lt;&quot;),
+    @One(&quot;x&quot;),
+    @One(&quot;0&quot;)
+})
+@Zero(&quot;&#39;a&#39;&quot;)
+@Zero(&quot;&#39;b&#39;&quot;)</code></pre>
+</section>
+<section id="tokenizer-2" class="slide level2">
+<h2>Tokenizer</h2>
+<!-- prettier-ignore -->
+<pre class="java"><code>@Zero(&quot;if&quot;)       // &#39;if&#39;
+@Zero(list={      // &#39;(&#39;
+    @One(&quot;&lt;&quot;),    // &#39;&lt;&#39;
+    @One(&quot;x&quot;),    // &#39;x&#39;
+    @One(&quot;0&quot;)     // &#39;0&#39;
+})                // &#39;)&#39;
+@Zero(&quot;&#39;a&#39;&quot;)      // &#39;a&#39;
+@Zero(&quot;&#39;b&#39;&quot;)      // &#39;b&#39;</code></pre>
+<p>DONE! 🥳</p>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<div class="big">
+<p>But …</p>
+<p>why so <code>@Weird</code>?</p>
+</div>
+</section>
+<section id="annotations-first-try" class="slide level2">
+<h2>Annotations, first try</h2>
+<pre class="java"><code>@Parenthesis(&quot;if&quot;, @Parenthesis(&quot;&lt;&quot;, &quot;x&quot;, &quot;0&quot;), &quot;&#39;a&#39;&quot;, &quot;&#39;b&#39;&quot;)</code></pre>
+</section>
+<section id="annotations-first-try-1" class="slide level2">
+<h2>Annotations, first try</h2>
+<p><span style="float:left;"> <img
+data-src="../images/duke-says-no.png" /> </span></p>
+<p>No nesting annotations!</p>
+</section>
+<section id="annotations-second-try" class="slide level2">
+<h2>Annotations, second try</h2>
+<pre class="java"><code>@Open
+@Symbol(&quot;if&quot;)
+@Open@Symbol(&quot;&lt;&quot;)@Symbol(&quot;x&quot;)@Symbol(&quot;0&quot;)@Close
+@Symbol(&quot;&#39;a&#39;&quot;)
+@Symbol(&quot;&#39;b&#39;&quot;)
+@Close</code></pre>
+</section>
+<section id="annotations-second-try-1" class="slide level2">
+<h2>Annotations, second try</h2>
+<p><span style="float:left;"> <img
+data-src="../images/duke-says-yes.png" /> </span></p>
+<p>Sure! I’ll group them for you</p>
+<p> </p>
+<p> </p>
+<pre class="java"><code>Open[] opens = { @Open, @Open };
+Symbol[] symbols = { @Symbol(&quot;if&quot;), @Symbol(&quot;x&quot;), @Symbol(&quot;0&quot;),
+                     @Symbol(&quot;&#39;a&#39;&quot;), @Symbol(&quot;&#39;b&#39;&quot;) };
+Close[] closes = { @Close, @Close };</code></pre>
+</section>
+<section id="annotations-third-try" class="slide level2">
+<h2>Annotations, third try</h2>
+<pre class="java"><code>public @interface Syntax {}  // 👈🏻 smart-ass!
+
+public @interface Open extends Syntax {}
+public @interface Symbol extends Syntax {}
+public @interface Close extends Syntax {}
+
+Syntax[] code = { @Open, @Symbol(&quot;if&quot;), @Open, @Symbol(&quot;&lt;&quot;),
+                  @Symbol(&quot;x&quot;), @Symbol(&quot;0&quot;), @Close, @Symbol(&quot;&#39;a&#39;&quot;),
+                  @Symbol(&quot;&#39;b&#39;&quot;), @Close };</code></pre>
+</section>
+<section id="annotations-third-try-1" class="slide level2">
+<h2>Annotations, third try</h2>
+<p><span style="float:left;"> <img
+data-src="../images/duke-says-no.png" /> </span></p>
+<p>No extending annotations!</p>
+</section>
+<section id="annotations-fourth-and-final-try" class="slide level2">
+<h2>Annotations, fourth and final try</h2>
+<pre class="java"><code>@Zero(&quot;if&quot;)
+@Zero(list={@One(&quot;&lt;&quot;), @One(&quot;x&quot;), @One(&quot;0&quot;)})
+@Zero(&quot;&#39;a&#39;&quot;)
+@Zero(&quot;&#39;b&#39;&quot;)</code></pre>
+</section>
+<section id="annotations-fourth-and-final-try-1" class="slide level2">
+<h2>Annotations, fourth and final try</h2>
+<p><span style="float:left;"> <img
+data-src="../images/duke-says-yes.png" /> </span></p>
+<p>I see no issue with that!</p>
+<div class="fragment">
+<p>Make as many as you like!</p>
+</div>
+<div class="fragment">
+<p>🥱</p>
+</div>
+</section>
+<section id="architecture-2" class="slide level2">
+<h2>Architecture</h2>
+<p><img data-src="../images/architecture-2.png" /></p>
+</section>
+<section id="parser" class="slide level2">
+<h2>Parser</h2>
+<p><img data-src="../images/parser.png" /></p>
+</section>
+<section id="parser-1" class="slide level2">
+<h2>Parser</h2>
+<ul>
+<li>Atoms (<code>0</code>, <code>'a'</code>) remain the same</li>
+<li>Symbols (<code>define</code>, <code>if</code>, <code>&lt;</code>)
+are wrapped in <code>Symbol</code> class</li>
+<li><code>(</code> starts a sub-list</li>
+<li><code>)</code> ends a sub-list</li>
+</ul>
+<pre class="java"><code>List&lt;Object&gt; ast = List.of(
+    Symbol(&quot;if&quot;),
+    List.of(Symbol(&#39;&lt;&#39;), Symbol(&#39;x&#39;), 0),
+    &quot;a&quot;,
+    &quot;b&quot;);</code></pre>
+<aside class="notes">
+<p>Nested Lists instead of a proper Tree</p>
+</aside>
+</section>
+<section id="architecture-3" class="slide level2">
+<h2>Architecture</h2>
+<p><img data-src="../images/architecture-2.png" /></p>
+</section>
+<section id="environment" class="slide level2">
+<h2>Environment</h2>
+<p><img data-src="../images/environment-1.png" /></p>
+<aside class="notes">
+<p>Global Environment contains lots of stuff</p>
+</aside>
+</section>
+<section id="environment-1" class="slide level2">
+<h2>Environment</h2>
+<p><img data-src="../images/environment-1.png" /></p>
+<pre class="lisp"><code>(define x 10)</code></pre>
+</section>
+<section id="environment-2" class="slide level2">
+<h2>Environment</h2>
+<p><img data-src="../images/environment-2.png" /></p>
+<pre class="lisp"><code>(define x 10)</code></pre>
+</section>
+<section id="architecture-4" class="slide level2">
+<h2>Architecture</h2>
+<p><img data-src="../images/architecture-2.png" /></p>
+</section>
+<section id="evaluator" class="slide level2">
+<h2>Evaluator</h2>
+<p><img data-src="../images/evaluator.png" /></p>
+</section>
+<section id="evaluator-1" class="slide level2">
+<h2>Evaluator</h2>
+<p>Is it an Atom?<br/><code>0, 'a'</code></p>
+<p>↓</p>
+<p>Return it</p>
+</section>
+<section id="evaluator-2" class="slide level2">
+<h2>Evaluator</h2>
+<p>Is it a Symbol?<br/><code>if</code>, <code>&lt;</code></p>
+<p>↓</p>
+<p>Look up in Environment<br/>Return it</p>
+</section>
+<section id="evaluator-3" class="slide level2">
+<h2>Evaluator</h2>
+<p>Is it a List?<br/><code>(&lt; x 0)</code></p>
+<p>↓</p>
+<p>Evaluate all elements<br/>Call function<br/>Return result</p>
+</section></section>
+<section>
+<section id="section-6" class="title-slide slide level1"
+data-state="page-title"
+data-background-image="../images/background.png">
+<h1 data-state="page-title"
+data-background-image="../images/background.png"></h1>
+<div class="superbig">
+<p>Interlude</p>
+</div>
+</section>
+<section id="a-program" class="slide level2">
+<h2>A program</h2>
+<!-- prettier-ignore -->
+<pre class="java"><code>@Zero(&quot;begin&quot;)
+@Zero(list={@One(&quot;define&quot;), @One(&quot;fizz-buzz&quot;), @One(list={@Two(&quot;lambda&quot;),
+  @Two(list=@Three(&quot;n&quot;)), @Two(list={@Three(&quot;cond&quot;),
+    @Three(list={@Four(&quot;=&quot;), @Four(list={@Five(&quot;%&quot;), @Five(&quot;n&quot;),
+      @Five(&quot;15&quot;)}), @Four(&quot;0&quot;)}), @Three(&quot;&#39;fizzbuzz&#39;&quot;),
+    @Three(list={@Four(&quot;=&quot;), @Four(list={@Five(&quot;%&quot;), @Five(&quot;n&quot;),
+      @Five(&quot;3&quot;)}), @Four(&quot;0&quot;)}), @Three(&quot;&#39;fizz&#39;&quot;),
+    @Three(list={@Four(&quot;=&quot;), @Four(list={@Five(&quot;%&quot;), @Five(&quot;n&quot;),
+      @Five(&quot;5&quot;)}), @Four(&quot;0&quot;)}), @Three(&quot;&#39;buzz&#39;&quot;),
+    @Three(&quot;else&quot;), @Three(&quot;n&quot;)})})})
+@Zero(list={@One(&quot;map&quot;), @One(&quot;println&quot;), @One(list={@Two(&quot;map&quot;),
+  @Two(&quot;fizz-buzz&quot;), @Two(list={@Three(&quot;range&quot;),
+  @Three(&quot;1&quot;), @Three(&quot;101&quot;)})})})
+public class FizzBuzz {}</code></pre>
+</section>
+<section id="a-program-1" class="slide level2">
+<h2>A program</h2>
+<!-- Image: ain't got no time to write that -->
+<p><img data-src="../images/bored.png" class="bigimg" /></p>
+</section>
+<section id="tokenizer-3" class="slide level2">
+<h2>Tokenizer</h2>
+<pre class="lisp"><code>
+  (begin
+    (define fizz-buzz (lambda (n)
+      (cond (= (% n 15) 0) &#39;fizzbuzz&#39;)
+      (cond (= (% n 3) 0) &#39;fizz&#39;)
+      (cond (= (% n 5) 0) &#39;buzz&#39;)
+      (else n))
+    (map println (map fizz-buzz (range 1 101))))
+
+</code></pre>
+</section>
+<section id="tokenizer-4" class="slide level2">
+<h2>Tokenizer</h2>
+<pre class="lisp"><code>String code = &quot;&quot;&quot;
+  (begin
+    (define fizz-buzz (lambda (n)
+      (cond (= (% n 15) 0) &#39;fizzbuzz&#39;)
+      (cond (= (% n 3) 0) &#39;fizz&#39;)
+      (cond (= (% n 5) 0) &#39;buzz&#39;)
+      (else n))
+    (map println (map fizz-buzz (range 1 101))))&quot;&quot;&quot;;
+return code.split(&quot; &quot;);</code></pre>
+</section>
+<section id="code-generator" class="slide level2">
+<h2>Code generator</h2>
+<p><img data-src="../images/code-generator.png" class="bigimg" /></p>
+</section></section>
+<section>
+<section id="section-7" class="title-slide slide level1"
+data-state="page-title"
+data-background-image="../images/background.png">
+<h1 data-state="page-title"
+data-background-image="../images/background.png"></h1>
+<div class="superbig">
+<p>Taking it</p>
+<p>TOO FAR</p>
+</div>
+<aside class="notes">
+<p>Now I have a quick way to produce code</p>
+</aside>
+</section>
+<section id="metascript" class="slide level2">
+<h2>MetaScript</h2>
+<p><img data-src="../images/the-little-schemer.jpg"
+class="bigimg" /></p>
+</section>
+<section id="metascript-1" class="slide level2">
+<h2>MetaScript</h2>
+<p><img data-src="../images/architecture-1.png" /></p>
+</section>
+<section id="tokenizer-5" class="slide level2">
+<h2>Tokenizer</h2>
+<p><img data-src="../images/meta-tokenizer.png" class="bigimg" /></p>
+</section>
+<section id="tokenizer-6" class="slide level2">
+<h2>Tokenizer</h2>
+<ul>
+<li><p>Unit tests written in Java, not AnnotationScript</p></li>
+<li><p>AnnotationScript evaluates to regular Java objects</p></li>
+</ul>
+</section>
+<section id="tokenizer-7" class="slide level2">
+<h2>Tokenizer</h2>
+<p><img data-src="../images/mind-blown-1.png" class="shadow" /></p>
+<p>Unit tests: identical!</p>
+<aside class="notes">
+<p>Trivial</p>
+</aside>
+</section>
+<section id="metascript-2" class="slide level2">
+<h2>MetaScript</h2>
+<p><img data-src="../images/architecture-1.png" /></p>
+</section>
+<section id="parser-2" class="slide level2">
+<h2>Parser</h2>
+<p><img data-src="../images/meta-parser.png" class="bigimg" /></p>
+</section>
+<section id="parser-3" class="slide level2">
+<h2>Parser</h2>
+<p><img data-src="../images/mind-blown-2.png" class="shadow" /></p>
+<p>Unit tests: identical!</p>
+<aside class="notes">
+<p>Non-trivial</p>
+</aside>
+</section>
+<section id="metascript-3" class="slide level2">
+<h2>MetaScript</h2>
+<p><img data-src="../images/architecture-1.png" /></p>
+</section>
+<section id="evaluator-4" class="slide level2">
+<h2>Evaluator</h2>
+<p><img data-src="../images/the-little-schemer.jpg"
+class="bigimg" /></p>
+<aside class="notes">
+<p>Evaluator is implemented very differently, so tests are different</p>
+</aside>
+</section>
+<section id="evaluator-5" class="slide level2">
+<h2>Evaluator</h2>
+<p><img data-src="../images/meta-evaluator.png" class="bigimg" /></p>
+</section>
+<section id="demo" class="slide level2">
+<h2>Demo</h2>
+</section></section>
+<section>
+<section id="section-8" class="title-slide slide level1"
+data-state="page-title"
+data-background-image="../images/background.png">
+<h1 data-state="page-title"
+data-background-image="../images/background.png"></h1>
+<div class="superbig">
+<p>What’s next</p>
+</div>
+</section>
+<section id="next" class="slide level2">
+<h2>Next</h2>
+<div class="superbig">
+<p>🤷🏻</p>
+</div>
+</section>
+<section id="next-1" class="slide level2">
+<h2>Next</h2>
+<div class="big">
+<p>Stack overflow errors</p>
+</div>
+</section>
+<section id="next-2" class="slide level2">
+<h2>Next</h2>
+<div class="big">
+<p>Error handling</p>
+</div>
+</section>
+<section id="next-3" class="slide level2">
+<h2>Next</h2>
+<div class="big">
+<p>String.split</p>
+</div>
+</section>
+<section id="next-4" class="slide level2">
+<h2>Next</h2>
+<div class="big">
+<p>Spring integration</p>
+</div>
+<div class="supersmall">
+<p>🤪</p>
+</div>
+<aside class="notes">
+<p>No <span class="citation"
+data-cites="Autowired">@Autowired</span></p>
+</aside>
+</section></section>
+<section>
+<section id="section-9" class="title-slide slide level1"
+data-state="page-title"
+data-background-image="../images/background.png">
+<h1 data-state="page-title"
+data-background-image="../images/background.png"></h1>
+<div class="superbig">
+<p>Conclusion</p>
+</div>
+</section>
+<section id="conclusion" class="slide level2"
+data-background-image="../images/duke-says-yes-background.png"
+data-background-size="contain">
+<h2 data-background-image="../images/duke-says-yes-background.png"
+data-background-size="contain">Conclusion</h2>
+<div class="big">
+<p>Learn about annotations</p>
+</div>
+</section>
+<section id="conclusion-1" class="slide level2"
+data-background-image="../images/rite-of-passage.png">
+<h2
+data-background-image="../images/rite-of-passage.png">Conclusion</h2>
+<div class="big text-shadow">
+<p>Learn about LISP</p>
+</div>
+</section>
+<section id="conclusion-2" class="slide level2"
+data-background-image="../images/fun.png">
+<h2 data-background-image="../images/fun.png">Conclusion</h2>
+<div class="superbig text-shadow">
+<p>It was fun</p>
+</div>
+</section>
+<section id="conclusion-3" class="slide level2">
+<h2>Conclusion</h2>
+<p>Greenspun’s Tenth Rule:</p>
+<p><em>Any sufficiently complicated C or Fortran program contains an ad
+hoc, informally-specified, bug-ridden, slow implementation of half of
+Common Lisp.</em></p>
+</section>
+<section id="questions" class="slide level2" data-state="page-title"
+data-background-image="../images/background.png">
+<h2 data-state="page-title"
+data-background-image="../images/background.png">Questions?</h2>
+<p><img data-src="../images/qr.png" /></p>
+<p><a
+href="https://jqno.nl/talks/bullshitlanguage">jqno.nl/talks/bullshitlanguage</a></p>
+<div class="hashtag">
+<p><img data-src="../images/twitter.png" height="30" />
+#bullshitlanguage</p>
+<div class="supersmall">
+<p>image credits: see website</p>
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../../../assets/revealjs-3.8.0/lib/js/head.min.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+        // Display a presentation progress bar
+        progress: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: {39:'next',37:'prev',48:()=>{Reveal.slide(0,0,0)}},
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../../../assets/revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../assets/revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

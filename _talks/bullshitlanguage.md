@@ -33,7 +33,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
   <br>
   _6 September 2022_
   <br>
-  [[event](https://twitter.com/BrabantJug/status/1556653234726518785)]
+  [[event](https://twitter.com/BrabantJug/status/1556653234726518785)] [[slides](/talks/slides/bullshitlanguage/2022-09-06-brabantjug)]
 
 ## Image credits
 

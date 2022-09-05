@@ -27,6 +27,11 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 
 ## Deliveries
 
+* **BrabantJUG**
+  <br>
+  _6 September 2022_
+  <br>
+  [[event](https://twitter.com/BrabantJug/status/1556653234726518785)] [[slides](/talks/slides/fantasticlanguages/2022-09-06-brabantjug/)]
 * **J-Fall Netherlands**
   <br>
   _4 November 2021_
