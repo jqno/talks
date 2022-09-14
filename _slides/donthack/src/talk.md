@@ -143,9 +143,6 @@ However...
 
 # ☠️ Reflection
 
-# Introducing: Reflector
-
-
 # Loopy
 
 > Demo
@@ -378,7 +375,7 @@ There's more
 ```
 mvn clean package
 
-runjava -r src/main/java/demos/libraries/remote/Attack.java target/dont-hack-the-platform-0.1-SNAPSHOT.jar ???
+jbang Attack.java target/payload-X.jar ???
 ```
 
 # Victim / Attack

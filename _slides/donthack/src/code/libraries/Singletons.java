@@ -1,9 +1,8 @@
-package demos.libraries;
+//JAVA_OPTIONS --add-opens java.base/java.lang=ALL-UNNAMED
+//DEPS org.objenesis:objenesis:3.3
 
 import org.objenesis.Objenesis;
 import org.objenesis.ObjenesisStd;
-
-import static demos.reflection.Reflector.setPrivateFieldValue;
 
 public class Singletons {
 
@@ -46,8 +45,15 @@ public class Singletons {
 
     private static <E extends Enum<?>> E copyEnumConstant(Class<E> type, E constant) throws Exception {
         E newInstance = OBJENESIS.newInstance(type);
-        setPrivateFieldValue(Enum.class, "ordinal", newInstance, constant.ordinal());
-        setPrivateFieldValue(Enum.class, "name", newInstance, constant.name());
+
+        var ordinalField = Enum.class.getDeclaredField("ordinal");
+        ordinalField.setAccessible(true);
+        ordinalField.set(newInstance, constant.ordinal());
+
+        var nameField = Enum.class.getDeclaredField("name");
+        nameField.setAccessible(true);
+        nameField.set(newInstance, constant.name());
+
         return newInstance;
     }
 }

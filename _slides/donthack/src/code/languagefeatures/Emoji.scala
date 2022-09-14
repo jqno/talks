@@ -1,5 +1,3 @@
-package demos.languagefeatures
-
 object Emoji extends App {
 
   type `🎻` = String

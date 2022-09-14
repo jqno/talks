@@ -1,4 +1,3 @@
-package demos.languagefeatures
 
 fun main(args: Array<String>) {
     KotlinFalseIsTrue.falseIsTrue()

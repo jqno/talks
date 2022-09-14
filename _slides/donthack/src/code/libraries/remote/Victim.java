@@ -1,4 +1,4 @@
-package demos.libraries.remote;
+//DEPS net.bytebuddy:byte-buddy:1.12.16
 
 public class Victim {
 
@@ -8,7 +8,7 @@ public class Victim {
 
         while (true) {
             System.out.println(System.currentTimeMillis());
-            Thread.sleep(1000);
+            Thread.sleep(995);
         }
     }
 }

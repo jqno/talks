@@ -1,5 +1,3 @@
-package demos.reflection;
-
 import javax.tools.*;
 import java.io.File;
 import java.io.IOException;
@@ -27,7 +25,8 @@ public class AvoidingCheckstyle {
 
 
         var dirtyClass = compiler.compile("dirty_CLASS", DIRTY_CLASS);
-        var method = Reflector.getDeclaredMethod(dirtyClass, "DO_stuff");
+        var method = dirtyClass.getDeclaredMethod("DO_stuff");
+        method.setAccessible(true);
         method.invoke(null);
     }
 }

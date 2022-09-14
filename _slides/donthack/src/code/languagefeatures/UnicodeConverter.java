@@ -1,5 +1,3 @@
-package demos.languagefeatures;
-
 import java.util.stream.Collectors;
 
 public class UnicodeConverter {

@@ -1,4 +1,7 @@
-package demos.libraries;
+//JAVA_OPTIONS --add-opens java.base/java.lang=ALL-UNNAMED
+//DEPS org.objenesis:objenesis:3.3
+//DEPS net.bytebuddy:byte-buddy:1.12.16
+//DEPS net.bytebuddy:byte-buddy-agent:1.12.16
 
 import net.bytebuddy.ByteBuddy;
 import net.bytebuddy.agent.ByteBuddyAgent;
@@ -11,7 +14,6 @@ import org.objenesis.ObjenesisStd;
 import java.lang.reflect.Array;
 import java.lang.reflect.Method;
 
-import static demos.reflection.Reflector.setPrivateFieldValue;
 import static net.bytebuddy.matcher.ElementMatchers.*;
 
 public class ConfusingCardGame {
@@ -56,8 +58,14 @@ public class ConfusingCardGame {
 
         /* Create new enum instance */
         E newInstance = OBJENESIS.newInstance(type);
-        setPrivateFieldValue(Enum.class, "ordinal", newInstance, ordinal);
-        setPrivateFieldValue(Enum.class, "name", newInstance, constantName);
+
+        var ordinalField = Enum.class.getDeclaredField("ordinal");
+        ordinalField.setAccessible(true);
+        ordinalField.set(newInstance, ordinal);
+
+        var nameField = Enum.class.getDeclaredField("name");
+        nameField.setAccessible(true);
+        nameField.set(newInstance, constantName);
 
         /* Create values array with new constant */
         E[] newValues = (E[]) Array.newInstance(type, ordinal + 1);

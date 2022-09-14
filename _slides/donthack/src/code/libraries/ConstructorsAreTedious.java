@@ -1,4 +1,4 @@
-package demos.libraries;
+//DEPS org.objenesis:objenesis:3.3
 
 import org.objenesis.ObjenesisStd;
 

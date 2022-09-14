@@ -1,4 +1,5 @@
-package demos.libraries;
+//DEPS net.bytebuddy:byte-buddy:1.12.16
+//DEPS net.bytebuddy:byte-buddy-agent:1.12.16
 
 import net.bytebuddy.ByteBuddy;
 import net.bytebuddy.agent.ByteBuddyAgent;

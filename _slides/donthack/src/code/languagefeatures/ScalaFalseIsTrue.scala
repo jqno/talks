@@ -1,5 +1,3 @@
-package demos.languagefeatures
-
 object ScalaFalseIsTrue extends App {
 
   println("False is true...")

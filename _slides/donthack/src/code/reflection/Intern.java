@@ -1,7 +1,4 @@
-package demos.reflection;
-
-import static demos.reflection.Reflector.getPrivateFieldValue;
-import static demos.reflection.Reflector.setPrivateFieldValue;
+//JAVA_OPTIONS --add-opens java.base/java.lang=ALL-UNNAMED
 
 public class Intern {
     public static void main(String... args) throws Exception {
@@ -11,8 +8,11 @@ public class Intern {
         System.out.println(world);
         System.out.println(hackers);
 
-        var newValue = getPrivateFieldValue(String.class, "value", hackers);
-        setPrivateFieldValue(String.class, "value", world, newValue);
+        var valueField = String.class.getDeclaredField("value");
+        valueField.setAccessible(true);
+
+        var newValue = valueField.get(hackers);
+        valueField.set(world, newValue);
 
         System.out.println("---");
         System.out.println(world);

@@ -10,7 +10,7 @@ import static net.bytebuddy.implementation.FixedValue.value;
 import static net.bytebuddy.matcher.ElementMatchers.named;
 import static net.bytebuddy.matcher.ElementMatchers.none;
 
-public class Attack {
+public class Payload {
 
     public static void main(String... args) {
         var agentJar = new File(args[0]);
@@ -23,7 +23,7 @@ public class Attack {
         System.out.println("Let's install some malicious code...  ᕕ( ᐛ )ᕗ ");
 
         AgentBuilder.Transformer λ =
-                (builder, typeDescription, classLoader, javaModule) -> builder
+                (builder, typeDescription, classLoader, javaModule, protectionDomain) -> builder
                                 .method(named("currentTimeMillis"))
                                 .intercept(value(1337));
 
