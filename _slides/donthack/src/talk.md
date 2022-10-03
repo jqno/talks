@@ -60,18 +60,18 @@ EqualsVerifier.forClass(Foo.class)
 
 # True Lambda
 
-Java 11!
+Java 17!
 
 . . .
 
-In fact... Java 17!
+In fact... Java 19!
 
 # Sidebar
 
 Also annoy your coworkers with
 
 * Using Vim
-* Running Java from shell script
+* Running Java with JBang
 * Weird color scheme
 
 ---
@@ -153,7 +153,7 @@ However...
 
 . . .
 
-`--add-opens java.base/java.lang=ALL-UNNAMED --`
+`--add-opens java.base/java.lang=ALL-UNNAMED`
 
 # Loopy
 

@@ -1,4 +1,6 @@
-public class Loopy {
+//JAVA_OPTIONS --add-opens java.base/java.lang=ALL-UNNAMED
+
+public class Loopy2 {
     public static void main(String... args) throws Exception {
 
         var valueField = Integer.class.getDeclaredField("value");

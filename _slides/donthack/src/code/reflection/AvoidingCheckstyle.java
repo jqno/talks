@@ -11,12 +11,13 @@ import java.util.Locale;
 
 public class AvoidingCheckstyle {
 
-    private static final String DIRTY_CLASS =
-            "\npublic class dirty_CLASS {" +
-            "\n    public static void DO_stuff() {" +
-            "\n        System.out.println(\"dirty words\");" +
-            "\n    }" +
-            "\n}";
+    private static final String DIRTY_CLASS = """
+            public class dirty_CLASS {
+                public static void DO_stuff() {
+                    System.out.println("dirty words");
+                }
+            }
+            """;
 
     public static void main(String... args) throws Exception {
 

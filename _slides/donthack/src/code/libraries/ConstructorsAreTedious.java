@@ -6,7 +6,7 @@ public class ConstructorsAreTedious {
 
     static class Something {
         public Something() {
-            throw new IllegalStateException(" (╯°□°）╯︵ ┻━┻ ");
+            throw new IllegalStateException(" (╯°□°)╯︵ ┻━┻ ");
         }
 
         @Override

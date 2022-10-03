@@ -1,4 +1,6 @@
 public class Generics {
+
+
     public static void main(String... args) {
 
         var listOfInt = new ArrayListᐸintᐳ();
@@ -8,6 +10,20 @@ public class Generics {
 
         System.out.println("The answer is " + i);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

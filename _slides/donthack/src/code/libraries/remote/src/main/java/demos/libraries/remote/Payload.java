@@ -12,12 +12,6 @@ import static net.bytebuddy.matcher.ElementMatchers.none;
 
 public class Payload {
 
-    public static void main(String... args) {
-        var agentJar = new File(args[0]);
-        var pid = args[1];
-        ByteBuddyAgent.attach(agentJar, pid);
-    }
-
     public static void agentmain(String arguments, Instrumentation instrumentation) {
 
         System.out.println("Let's install some malicious code...  ᕕ( ᐛ )ᕗ ");
