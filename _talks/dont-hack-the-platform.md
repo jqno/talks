@@ -24,6 +24,11 @@ In all seriousness, this talk will provide awareness about some of the lesser-kn
 
 ## Deliveries
 
+* **Devoxx Belgium**
+  <br>
+  _12 October 2022_
+  <br>
+  [[event](https://devoxx.be)] [[slides](/talks/slides/donthack/2022-10-12-devoxx)] [[code](https://github.com/jqno/talks/tree/main/_slides/donthack/2022-10-12-devoxx)]
 * **JAX London**
   <br>
   _5 October 2021_
