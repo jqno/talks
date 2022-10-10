@@ -2,6 +2,10 @@
 permalink: /
 title: Talks
 imagebutton_row:
+  - image_path: "assets/titleslides/sustainability-panel.png"
+    title: "Exploring Sustainability in Tech (without the guilt-trips)"
+    excerpt: "A panel discussion with the audience about what we can do about climate change as software developers and human beings.<br/>Delivered at Devoxx 2022 and J-Fall 2022."
+    url: "sustainability-panel/"
   - image_path: "assets/titleslides/bullshitlanguage.png"
     title: "Building a Bullshit Language"
     excerpt: "How I took Java annotations to their logical extreme by implementing a fully functioning, Turing-complete LISP dialect within them."
