@@ -1,4 +1,4 @@
-//JAVA_OPTIONS --add-opens java.base/java.lang=ALL-UNNAMED
+//JAVA_OPTIONS --add-opens java.base/java.lang=ALL-UNNAMED                                                                                         -Djava.security.manager=allow
 
 public class Intern {
     public static void main(String... args) throws Exception {
