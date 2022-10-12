@@ -7,7 +7,7 @@ controls: "false"
 center: "false"
 background-image: "../images/background.jpg"
 ---
-# Don't hack the JVM? ☠️💣💥
+# Don't hack the Platform? ☠️💣💥
 
 Jan Ouwens<br/>
 
