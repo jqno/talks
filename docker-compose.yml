@@ -9,11 +9,11 @@ services:
     ports:
       - 4000:4000
     command: 'serve'
-  # revealjs:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile.revealjs
-  #   volumes:
-  #     - ".:/workdir:Z"
-  #   command: '$PRESENTATION'
+  revealjs:
+    build:
+      context: .
+      dockerfile: Dockerfile.revealjs
+    volumes:
+      - ".:/workdir:Z"
+    command: '$PRESENTATION'
 
