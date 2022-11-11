@@ -32,6 +32,7 @@ author:
   location         : "The Netherlands"
   github           : jqno
   twitter          : jqno
+  mastodon         : "https://mastodon.online/@jqno"
   youtube          : "https://www.youtube.com/playlist?list=PLBVdSBwCyRsE7zi7YhfYWua1Jzi_iv1GQ"
 
 twitter:
@@ -44,6 +45,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/jqno"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://mastodon.online/@jqno"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jqno"
