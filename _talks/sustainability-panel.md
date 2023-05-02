@@ -31,7 +31,7 @@ We'd like to emphasize that we don't want to guilt-trip anyone. This session is 
   <br>
   _3 November 2022_
   <br>
-  [[event](https://jfall.nl/timetable-2022/)]
+  [[event](https://jfall.nl/timetable-2022/)] [[video](https://www.youtube.com/watch?v=WTlrLnDFLG8)]
 * **Devoxx Belgium**
   <br>
   _12 October 2022_
