@@ -2,7 +2,8 @@ This repo contains my talks.
 
 # Usage
 
-Run `bin/watch.sh <name-of-presentation>` to automatically generate the website and the slides using Docker.
+- Run `bin/revealjs.sh <name-of-presentation>` to automatically generate the slides using Docker.
+- Run `bin/jekyll.sh` to automatically generate the website using Docker.
 
 # Manual usage
 
