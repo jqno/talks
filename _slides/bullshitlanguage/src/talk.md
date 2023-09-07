@@ -44,7 +44,19 @@ Demo time!
 ![](../images/twitter.png){ style="height:30px;" } #bullshitlanguage
 :::
 
+## Climate
+
+TODO
+
+## Weird projects
+
+TODO
+
 ## WHY!?
+
+## WHY!?
+
+Because I can
 
 ## WHY!?
 
@@ -66,6 +78,10 @@ public void waitwhat() {}
 ## WHY!?
 
 ![](../images/nerd-cred.png){ .bigimg }
+
+## No ChatGPT
+
+TODO
 
 ##
 
@@ -120,63 +136,21 @@ LISP
 ((if (#t) + -) x 10)
 ```
 
-## Map to AnnotationScript
+## ((Parentheses))
 
-```lisp
-(if (< x 0) "a" "b")
+TODO
 
+## Recursion
 
+TODO
 
+## Tail call optimization
 
+TODO
 
+## Y Combinator
 
-
-
-
-```
-
-## Map to AnnotationScript
-
-```lisp
-(
-  if
-  (
-    <
-    x
-    0)
-  "a"
-  "b"
-)
-```
-
-## Map to AnnotationScript
-
-```lisp
-(
-       if
-           (
-          <
-          x
-          0  )
-       "a"
-       "b"
-)
-```
-
-## Map to AnnotationScript
-
-<!-- prettier-ignore -->
-```java
-
-@Zero("if")
-@Zero(list={
-    @One("<"),
-    @One("x"),
-    @One("0")})
-@Zero("'a'")
-@Zero("'b'")
-public static class First {}
-```
+TODO / noem The Little Schemer
 
 ## Implementing LISP
 
@@ -184,69 +158,23 @@ public static class First {}
 
 &nbsp;
 
-::: small
-Use Peter Norvig's [blog post](https://norvig.com/lispy.html)
-:::
-
 # { data-state="page-title" data-background-image="../images/background.png" }
 
 ::: big
-Implementation
+Annotations
 :::
 
-::: notes
-rite of passage
-:::
+## What you can do with them
 
-## Architecture
+TODO
 
-![](../images/architecture-1.png)
+## Why I don't like them
 
-## Architecture
+TODO (can't ctrl+click and debug - but that won't stop me from doing this)
 
-![](../images/architecture-2.png)
+## Reading annotations
 
-## Tokenizer
-
-![](../images/tokenizer.png)
-
-## Tokenizer
-
-<!-- prettier-ignore -->
-```java
-@Zero("if")
-@Zero(list={
-    @One("<"),
-    @One("x"),
-    @One("0")
-})
-@Zero("'a'")
-@Zero("'b'")
-```
-
-## Tokenizer
-
-<!-- prettier-ignore -->
-```java
-@Zero("if")       // 'if'
-@Zero(list={      // '('
-    @One("<"),    // '<'
-    @One("x"),    // 'x'
-    @One("0")     // '0'
-})                // ')'
-@Zero("'a'")      // 'a'
-@Zero("'b'")      // 'b'
-```
-
-DONE! 🥳
-
-##
-
-::: big
-But ...
-
-why so `@Weird`?
-:::
+TODO
 
 ## Annotations, first try
 
@@ -339,6 +267,124 @@ Make as many as you like!
 
 🥱
 
+## Map to AnnotationScript
+
+```lisp
+(if (< x 0) "a" "b")
+
+
+
+
+
+
+
+
+
+```
+
+## Map to AnnotationScript
+
+```lisp
+(
+  if
+  (
+    <
+    x
+    0)
+  "a"
+  "b"
+)
+```
+
+## Map to AnnotationScript
+
+```lisp
+(
+       if
+           (
+          <
+          x
+          0  )
+       "a"
+       "b"
+)
+```
+
+## Map to AnnotationScript
+
+<!-- prettier-ignore -->
+```java
+
+@Zero("if")
+@Zero(list={
+    @One("<"),
+    @One("x"),
+    @One("0")})
+@Zero("'a'")
+@Zero("'b'")
+public static class First {}
+```
+
+## Examples
+
+TODO
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: big
+Implementation
+:::
+
+::: small
+Use Peter Norvig's [blog post](https://norvig.com/lispy.html)
+:::
+
+::: notes
+rite of passage
+:::
+
+## Architecture
+
+![](../images/architecture-1.png)
+
+## Architecture
+
+![](../images/architecture-2.png)
+
+## Tokenizer
+
+![](../images/tokenizer.png)
+
+## Tokenizer
+
+<!-- prettier-ignore -->
+```java
+@Zero("if")
+@Zero(list={
+    @One("<"),
+    @One("x"),
+    @One("0")
+})
+@Zero("'a'")
+@Zero("'b'")
+```
+
+## Tokenizer
+
+<!-- prettier-ignore -->
+```java
+@Zero("if")       // 'if'
+@Zero(list={      // '('
+    @One("<"),    // '<'
+    @One("x"),    // 'x'
+    @One("0")     // '0'
+})                // ')'
+@Zero("'a'")      // 'a'
+@Zero("'b'")      // 'b'
+```
+
+DONE! 🥳
+
 ## Architecture
 
 ![](../images/architecture-2.png)
@@ -426,6 +472,10 @@ Is it a List?<br/>`(< x 0)`
 
 Evaluate all elements<br/>Call function<br/>Return result
 
+## Tail call optimization
+
+TODO
+
 # { data-state="page-title" data-background-image="../images/background.png" }
 
 ::: superbig
@@ -494,9 +544,7 @@ return code.split(" ");
 # { data-state="page-title" data-background-image="../images/background.png" }
 
 ::: superbig
-Taking it
-
-TOO FAR
+(recurse
 :::
 
 ::: notes
@@ -565,7 +613,35 @@ Evaluator is implemented very differently, so tests are different
 
 ![](../images/meta-evaluator.png){ .bigimg }
 
+## Recursion workaround
+
+TODO (recurse als functie voor zichzelf)
+
 ## Demo
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: superbig
+(recurse
+:::
+
+## Turing complete
+
+TODO (I promised it in the abstract / what is it / how to prove it)
+
+## Brainfuck
+
+TODO
+
+## Demo
+
+TODO (met link naar generator)
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: superbig
+))
+:::
 
 # { data-state="page-title" data-background-image="../images/background.png" }
 
@@ -577,12 +653,6 @@ What's next
 
 ::: superbig
 🤷🏻
-:::
-
-## Next
-
-::: big
-Stack overflow errors
 :::
 
 ## Next
