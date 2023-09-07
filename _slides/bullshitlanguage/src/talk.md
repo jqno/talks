@@ -46,11 +46,31 @@ Demo time!
 
 ## Climate
 
-TODO
+Reduce cloud spend
+
+<br/><br/><br/><br/><br/><br/>
+
+Read more at [jqno.nl/climate](https://jqno.nl/climate/)
+
+<!-- TODO: image -->
 
 ## Weird projects
 
-TODO
+<!-- TODO: image of Asterix paper -->
+
+## Weird projects
+
+<!-- TODO: image of Vim dev env -->
+
+## Weird projects
+
+<!-- TODO: image of app with no annotations, maybe error message when @ is encountered -->
+
+## Weird projects
+
+I _finish_ them
+
+<!-- TODO: image -->
 
 ## WHY!?
 
@@ -77,11 +97,21 @@ public void waitwhat() {}
 
 ## WHY!?
 
+![](../images/the-little-schemer.jpg){ .bigimg }
+
+## WHY!?
+
 ![](../images/nerd-cred.png){ .bigimg }
 
-## No ChatGPT
+## Also
 
-TODO
+No ChatGPT
+
+. . .
+
+::: small
+Except for the final demo
+:::
 
 ##
 
@@ -138,25 +168,137 @@ LISP
 
 ## ((Parentheses))
 
-TODO
+. . .
+
+```java
+if (this.getId().equals(that.getId()))
+```
+
+```lisp
+(if (= (getId this) (getId that)))
+```
 
 ## Recursion
 
-TODO
+```java
+public int sum(int n) {
+    int result = 0;
+    for (int i = 0; i < 10; i++) {
+        result += i;
+    }
+    return result;
+}
+```
+
+## Recursion
+
+```java
+public int sum(int n) {
+    if (n == 0) {
+        return 0;
+    }
+    else {
+        return n + sum(n - 1);
+    }
+}
+```
+
+## Recursion
+
+```lisp
+(define (sum n)
+  (cond ((eq? n 0) 0)
+        (else (+ n (sum (- n 1))))))
+```
 
 ## Tail call optimization
 
-TODO
+```lisp
+(sum 4)
+(+ 4 (sum 3))
+(+ 4 (+ 3 (sum 2)))
+(+ 4 (+ 3 (+ 2 (sum 1))))
+(+ 4 (+ 3 (+ 2 (+ 1 (sum 0)))))
+(+ 4 (+ 3 (+ 2 (+ 1 0))))
+(+ 4 (+ 3 (+ 2 1)))
+(+ 4 (+ 3 3))
+(+ 4 6)
+10
+```
+
+## Tail call optimization
+
+<!-- TODO: image stack overflow (no, not that one) -->
+
+## Tail call optimization
+
+<!-- TODO: image stack overflow (yes, that one) -->
+
+## Tail call optimization
+
+Let's re-write
+
+## Tail call optimization
+
+```lisp
+(define (sum n)
+  (cond ((eq? n 0) 0)
+        (else (+ n (sum (- n 1))))))
+```
+
+↓
+
+```lisp
+(define (sum n acc)
+  (cond ((eq? n 0) acc)
+        (else (sum (- n 1) (+ n acc)))))
+```
+
+## Tail call optimization
+
+```lisp
+(sum 4 0)
+(sum (- 4 1) (+ 4 0))
+(sum 3 4)
+(sum (- 3 1) (+ 3 4))
+(sum 2 7)
+(sum (- 2 1) (+ 2 7))
+(sum 1 9)
+(sum (- 1 1) (+ 1 9))
+(sum 0 10)
+10
+```
+
+## Recursion
+
+What if...
+
+## Recursion
+
+![](../images/the-little-schemer.jpg){ .bigimg }
 
 ## Y Combinator
 
-TODO / noem The Little Schemer
+TODO: image Y Combinator website (no, not that one)
 
-## Implementing LISP
+## Y Combinator
 
-![](../images/rite-of-passage.png){ .shadow }
+```lisp
+(define Y
+  (lambda (le)
+    ((lambda (f) (f f))
+     (lambda (f)
+       (le (lambda (x) ((f f) x)))))))
 
-&nbsp;
+```
+
+## Y Combinator
+
+No reasonable person can understand this
+
+But it works
+
+## Demo
 
 # { data-state="page-title" data-background-image="../images/background.png" }
 
@@ -166,15 +308,34 @@ Annotations
 
 ## What you can do with them
 
-TODO
+```java
+@Autowired
+@Bean
+@Column(name = "wat")
+@Deprecated
+@JsonAlias("whynot")
+@PostMapping("/endpoint/wtf")
+@Test
+public void waitwhat() {}
+```
 
 ## Why I don't like them
 
-TODO (can't ctrl+click and debug - but that won't stop me from doing this)
+<!-- TODO: image of having clicked on an annotation -->
 
 ## Reading annotations
 
-TODO
+```java
+List<Class<?>> allTheClasses = scanTheClasspath();  // 👈 expensive!
+for (Class<?> cls : allTheClasses) {
+    for (Annotation a : cls.getAnnotations()) {
+        Class<?> ann = a.getAnnotationType();
+        if (ann.getName().equals("SpringBootApplication")) {
+            // Start the container
+        }
+    }
+}
+```
 
 ## Annotations, first try
 
@@ -339,9 +500,11 @@ Implementation
 Use Peter Norvig's [blog post](https://norvig.com/lispy.html)
 :::
 
-::: notes
-rite of passage
-:::
+## Implementing LISP
+
+![](../images/rite-of-passage.png){ .shadow }
+
+&nbsp;
 
 ## Architecture
 
