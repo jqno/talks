@@ -279,7 +279,7 @@ What if...
 
 ## Y Combinator
 
-TODO: image Y Combinator website (no, not that one)
+<!-- TODO: image Y Combinator website (no, not that one) -->
 
 ## Y Combinator
 
@@ -486,10 +486,6 @@ Make as many as you like!
 public static class First {}
 ```
 
-## Examples
-
-TODO
-
 # { data-state="page-title" data-background-image="../images/background.png" }
 
 ::: big
@@ -635,9 +631,80 @@ Is it a List?<br/>`(< x 0)`
 
 Evaluate all elements<br/>Call function<br/>Return result
 
+## Example
+
+<!-- prettier-ignore -->
+```java
+@Zero("begin")
+@Zero(list={@One("define"), @One("fizz-buzz"), @One(list={@Two("lambda"),
+  @Two(list=@Three("n")), @Two(list={@Three("cond"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"),
+      @Five("15")}), @Four("0")}), @Three("'fizzbuzz'"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"),
+      @Five("3")}), @Four("0")}), @Three("'fizz'"),
+    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"),
+      @Five("5")}), @Four("0")}), @Three("'buzz'"),
+    @Three("else"), @Three("n")})})})
+@Zero(list={@One("map"), @One("println"), @One(list={@Two("map"),
+  @Two("fizz-buzz"), @Two(list={@Three("range"),
+  @Three("1"), @Three("101")})})})
+public class FizzBuzz {}
+```
+
 ## Tail call optimization
 
-TODO
+Evaluator works recursively
+
+stack overflow after ~60
+
+## Tail call optimization
+
+::: small
+Use Peter Norvig's [second blog post](https://norvig.com/lispy2.html)
+:::
+
+- Add mutability
+- Evaluate procedure calls in-place
+
+## Tail call optimization
+
+Instead of this:
+
+```java
+public Object evaluate(Object expression) {
+    // ...
+    if (isAtom(expression)) {
+        return evaluateAtom(expression);
+    }
+    if (isProc(expression)) {
+        var evaluated = evaluateProc(expression);
+        return evaluate(evaluated); // 👈 recursive call
+    }
+}
+```
+
+## Tail call optimization
+
+We do this:
+
+```java
+public Object evaluate(Object expression) {
+    var exp = expression;
+    while (true) {
+        // ...
+        if (isAtom(expression)) {
+            return evaluateAtom(expression);
+        }
+        if (isProc(expression)) {
+            exp = evaluateProc(expression); // 👈 loop
+        }
+    }
+}
+```
+
+## Tail call optimization
+
+No more stack overflow 🥳
 
 # { data-state="page-title" data-background-image="../images/background.png" }
 
@@ -645,7 +712,7 @@ TODO
 Interlude
 :::
 
-## A program
+## FizzBuzz again
 
 <!-- prettier-ignore -->
 ```java
