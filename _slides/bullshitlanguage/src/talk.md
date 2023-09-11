@@ -50,7 +50,7 @@ Reduce cloud spend
 
 <br/><br/><br/><br/><br/><br/>
 
-Read more at [jqno.nl/climate](https://jqno.nl/climate/)
+Read more at [jqno.nl/climate 🔗](https://jqno.nl/climate/)
 
 <!-- TODO: image -->
 
@@ -73,6 +73,14 @@ I _finish_ them
 <!-- TODO: image -->
 
 ## WHY!?
+
+## WHY!?
+
+I got excited with this one!
+
+. . .
+
+![](../images/annotationscript.png)
 
 ## WHY!?
 
@@ -492,15 +500,17 @@ public static class First {}
 Implementation
 :::
 
-::: small
-Use Peter Norvig's [blog post](https://norvig.com/lispy.html)
-:::
-
 ## Implementing LISP
 
 ![](../images/rite-of-passage.png){ .shadow }
 
 &nbsp;
+
+## Implementing LISP
+
+Using Peter Norvig's blog post:
+
+_[(How to Write a (Lisp) Interpreter (in Python)) 🔗](https://norvig.com/lispy.html)_
 
 ## Architecture
 
@@ -659,9 +669,11 @@ stack overflow after ~60
 
 ## Tail call optimization
 
-::: small
-Use Peter Norvig's [second blog post](https://norvig.com/lispy2.html)
-:::
+Use Peter Norvig's second blog post:
+
+[(An ((Even Better) Lisp) Interpreter (in Python)) 🔗](https://norvig.com/lispy2.html)
+
+## Tail call optimization
 
 - Add mutability
 - Evaluate procedure calls in-place
@@ -843,9 +855,63 @@ Evaluator is implemented very differently, so tests are different
 
 ![](../images/meta-evaluator.png){ .bigimg }
 
-## Recursion workaround
+## Recursion issue
 
-TODO (recurse als functie voor zichzelf)
+```lisp
+(define (sum
+  (lambda (i)
+    (cond
+      ((eq? i 0) 0)
+      (else
+        (+ i (sum (sub1 i)))))))
+
+  (sum 5))
+```
+
+## Recursion issue
+
+```lisp
+(define (sum
+  (lambda (i)
+    (cond
+      ((eq? i 0) 0)
+      (else
+        (+ i (sum (sub1 i)))))))
+
+  (sum 5))
+```
+
+`cond has no true branch`
+
+## Recursion issue
+
+```lisp
+(define (sum
+  (lambda (i)
+    (cond
+      ((eq? i 0) 0)
+      (else
+        (+ i (sum (sub1 i)))))))
+
+  (sum 5))
+```
+
+Invalid identifier: `sum`
+
+## Recursion issue
+
+```lisp
+(define (sum
+  (lambda (recurse i)
+    (cond
+      ((eq? i 0) 0)
+      (else
+        (+ i (recurse recurse (sub1 i)))))))
+
+  (sum sum 5))
+```
+
+Solution: function is parameter to itself
 
 ## Demo
 
@@ -857,15 +923,43 @@ TODO (recurse als functie voor zichzelf)
 
 ## Turing complete
 
-TODO (I promised it in the abstract / what is it / how to prove it)
+I promised
 
-## Brainfuck
+. . .
 
-TODO
+But how to prove it?
+
+## Turing complete
+
+- Can solve any computable problem
+- Need loops, if, IO
+- Mathematical proof is hard and boring
+
+## Turing machine
+
+- Turing complete by definition
+- Tape with cells
+- Operations: read at head, write at head, move head
+
+## Turing machine
+
+<!-- TODO: image Turing machine -->
+
+## Turing machine
+
+...
+
+. . .
+
+Brainfuck!
 
 ## Demo
 
-TODO (met link naar generator)
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+::: small
+[brainfuck generator 🔗](https://tnu.me/brainfuck/generator)
+:::
 
 # { data-state="page-title" data-background-image="../images/background.png" }
 
