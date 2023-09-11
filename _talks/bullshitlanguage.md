@@ -57,5 +57,5 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 - [nerd-cred](/talks/slides/bullshitlanguage/images/nerd-cred.png) - by DALL·E with prompt _"hip hop album cover with nerds"_
 - [parser](/talks/slides/bullshitlanguage/images/parser.png) - by Jan Ouwens
 - [rite-of-passage](/talks/slides/bullshitlanguage/images/rite-of-passage.png) - by DALL·E with prompt _"photo of a fat nerd with a spear in attack pose facing an angry male lion on the african savannah"_
-- [the-little-schemer](/talks/slides/bullshitlanguage/images/the-little-schemer.jpg) - by MIT Press - [source](https://sicm.mitpress.mit.edu/books/little-schemer-fourth-edition)
+- [the-little-schemer](/talks/slides/bullshitlanguage/images/the-little-schemer.jpg) - by MIT Press - [source](https://mitpress.mit.edu/9780262560993/the-little-schemer/)
 - [tokenizer](/talks/slides/bullshitlanguage/images/tokenizer.png) - by Jan Ouwens
