@@ -219,7 +219,30 @@ public int sum(int n) {
         (else (+ n (sum (- n 1))))))
 ```
 
-## Tail call optimization
+## Stack overflow
+
+```plaintext
+java.lang.StackOverflowError
+        at java.base/java.util.Objects.hashCode(Objects.java:103)
+        at io.vavr.collection.HashArrayMappedTrieModule$AbstractNode.get(HashArrayMappedTrie.java:235)
+        at io.vavr.collection.HashMap.get(HashMap.java:615)
+        at nl.jqno.annotationscript.language.Environment.lookupOption(Environment.java:16)
+        at nl.jqno.annotationscript.language.Environment.lookup(Environment.java:20)
+        at nl.jqno.annotationscript.language.Evaluator.evaluateSymbol(Evaluator.java:53)
+        at nl.jqno.annotationscript.language.Evaluator.evaluate(Evaluator.java:21)
+        at nl.jqno.annotationscript.language.Evaluator.evaluateProc(Evaluator.java:117)
+        at nl.jqno.annotationscript.language.Evaluator.evaluate(Evaluator.java:45)
+        at nl.jqno.annotationscript.language.Evaluator.lambda$4(Evaluator.java:121)
+        at io.vavr.collection.Traversable.foldLeft(Traversable.java:493)
+        at nl.jqno.annotationscript.language.Evaluator.evaluateProc(Evaluator.java:120)
+        at nl.jqno.annotationscript.language.Evaluator.evaluate(Evaluator.java:45)
+        at nl.jqno.annotationscript.language.Evaluator.lambda$0(Evaluator.java:76)
+        at io.vavr.collection.Traversable.find(Traversable.java:458)
+        at nl.jqno.annotationscript.language.Evaluator.evaluateCond(Evaluator.java:76)
+        at nl.jqno.annotationscript.language.Evaluator.evaluate(Evaluator.java:33)
+```
+
+## Stack overflow
 
 ```lisp
 (sum 4)
@@ -234,13 +257,9 @@ public int sum(int n) {
 10
 ```
 
-## Tail call optimization
+## Stack overflow
 
-<!-- TODO: image stack overflow (no, not that one) -->
-
-## Tail call optimization
-
-<!-- TODO: image stack overflow (yes, that one) -->
+![](../images/stackoverflow.png){ .bigimg }
 
 ## Tail call optimization
 
@@ -260,6 +279,21 @@ Let's re-write
 (define (sum n acc)
   (cond ((eq? n 0) acc)
         (else (sum (- n 1) (+ n acc)))))
+```
+
+## Tail call optimization
+
+```lisp
+(sum 4)
+(+ 4 (sum 3))
+(+ 4 (+ 3 (sum 2)))
+(+ 4 (+ 3 (+ 2 (sum 1))))
+(+ 4 (+ 3 (+ 2 (+ 1 (sum 0)))))
+(+ 4 (+ 3 (+ 2 (+ 1 0))))
+(+ 4 (+ 3 (+ 2 1)))
+(+ 4 (+ 3 3))
+(+ 4 6)
+10
 ```
 
 ## Tail call optimization
@@ -287,7 +321,7 @@ What if...
 
 ## Y Combinator
 
-<!-- TODO: image Y Combinator website (no, not that one) -->
+![](../images/hackernews.png){ .bigimg }
 
 ## Y Combinator
 
@@ -314,7 +348,23 @@ But it works
 Annotations
 :::
 
-## What you can do with them
+## Why I don't like them
+
+## Why I don't like them
+
+Checked at runtime
+
+<br/><br/><br/><br/>
+
+::: small
+You have a nice, compiled, strongly-typed language underneath
+
+Why not use it!
+:::
+
+## Why I don't like them
+
+Weakly typed
 
 ```java
 @Autowired
@@ -329,9 +379,50 @@ public void waitwhat() {}
 
 ## Why I don't like them
 
-<!-- TODO: image of having clicked on an annotation -->
+Stringly typed
 
-## Reading annotations
+```java
+@PreAuthorize("isFullyAuthenticated")
+```
+
+. . .
+
+```java
+@PreAuthorize("isFullyAuthenticated()")
+```
+
+## Why I don't like them
+
+Hard to discover
+
+![](../images/discoverability.png){ height=300px }
+
+## Why I don't like them
+
+Hard to debug
+
+<!-- prettier-ignore -->
+```java
+public @interface GetMapping {
+    /**
+     * Alias for {@link RequestMapping#name}.
+     */
+    @AliasFor(annotation = RequestMapping.class)
+    String name() default "";
+
+    /**
+     * Alias for {@link RequestMapping#value}.
+     */
+    @AliasFor(annotation = RequestMapping.class)
+    String[] value() default {};
+
+    // ...
+}
+```
+
+## Why I don't like them
+
+Slow
 
 ```java
 List<Class<?>> allTheClasses = scanTheClasspath();  // 👈 expensive!

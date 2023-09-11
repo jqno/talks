@@ -43,12 +43,14 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 - [background](/talks/slides/bullshitlanguage/images/background.png) - by Jan Ouwens
 - [bored](/talks/slides/bullshitlanguage/images/bored.png) - by DALL·E with prompt _"photo of a bored white nerd with a neckbeard, sitting at a desk with a computer displaying java code, glancing at an alarm clock while surrounded by melting clocks"_ <small>(not sure where the neckbeard went 😉)</small>
 - [code-generator](/talks/slides/bullshitlanguage/images/code-generator.png) - by DALL·E with prompt _"pixel art of a monkey typing at a computer"_
+- [discoverability](/talks/slides/bullshitlanguage/images/discoverability.png) - Screenshot from IntelliJ IDEA, taken by Jan Ouwens
 - [duke-says-no](/talks/slides/bullshitlanguage/images/duke-says-no.png) - by Jeff Dinkins for Sun/Oracle - [source](https://wiki.openjdk.org/display/duke/Gallery)
 - [duke-says-yes](/talks/slides/bullshitlanguage/images/duke-says-yes.png) & [duke-says-yes-background](/talks/slides/bullshitlanguage/images/duke-says-yes-background.png) - by Jeff Dinkins for Sun/Oracle - [source](https://wiki.openjdk.org/display/duke/Gallery)
 - [environment-1](/talks/slides/bullshitlanguage/images/environment-1.png) - by Jan Ouwens
 - [environment-2](/talks/slides/bullshitlanguage/images/environment-2.png) - by Jan Ouwens
 - [evaluator](/talks/slides/bullshitlanguage/images/evaluator.png) - by Jan Ouwens
 - [fun](/talks/slides/bullshitlanguage/images/fun.png) - by DALL·E with prompt _"childrens drawing of stick fligure children playing in a school playground with a swing, a slide and a tree"_
+- [hackernews](/talsk/slides/bullshitlanguage/images/hackernews.png) - Screenshot from [Hacker News](https://news.ycombinator.com/), taken by Jan Ouwens on 2023-09-11
 - [jan-ouwens](/talks/slides/bullshitlanguage/images/jan-ouwens.jpg) - by Riemke Ouwens
 - [lockdown](/talks/slides/bullshitlanguage/images/lockdown.png) - by DALL·E with prompt _"photo of a programmer wearing only short pants and no shirt sitting behind a computer in his man cave showing code on the screen, surrounded by amazon packages, books, game controllers and a guitar"_
 - [meta-evaluator](/talks/slides/bullshitlanguage/images/meta-evaluator.png) & [meta-parser](/talks/slides/bullshitlanguage/images/meta-parser.png) & [meta-tokenizer](/talks/slides/bullshitlanguage/images/meta-tokenizer.png) - by Jan Ouwens
@@ -58,6 +60,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 - [paralleljava](/talks/slides/bullshitlanguage/images/paralleljava.png) - by J-Fall - [source](https://www.youtube.com/watch?v=R0WnUd01f14)
 - [parser](/talks/slides/bullshitlanguage/images/parser.png) - by Jan Ouwens
 - [rite-of-passage](/talks/slides/bullshitlanguage/images/rite-of-passage.png) - by DALL·E with prompt _"photo of a fat nerd with a spear in attack pose facing an angry male lion on the african savannah"_
+- [stackoverflow](/talsk/slides/bullshitlanguage/images/stackoverflow.png) - Screenshot from [StackOverflow](https://stackoverflow.com/), taken by Jan Ouwens on 2023-09-11
 - [the-little-schemer](/talks/slides/bullshitlanguage/images/the-little-schemer.jpg) - by MIT Press - [source](https://mitpress.mit.edu/9780262560993/the-little-schemer/)
 - [tokenizer](/talks/slides/bullshitlanguage/images/tokenizer.png) - by Jan Ouwens
 - [vim](/talks/slides/bullshitlanguage/images/vim.png) - by Jan Ouwens
