@@ -44,15 +44,17 @@ Demo time!
 ![](../images/twitter.png){ style="height:30px;" } #bullshitlanguage
 :::
 
-## Climate
+## Climate for developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { data-state="page-title" data-background-image="../images/climate-change.png" }
 
-Reduce cloud spend
+<br/><br/><br/><br/><br/><br/><br/><br/>
 
-<br/><br/><br/><br/><br/><br/>
+TL;DR: reduce cloud spend
+
+## Climate for developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { data-state="page-title" data-background-image="../images/climate-change.png" }
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
 
 Read more at [jqno.nl/climate 🔗](https://jqno.nl/climate/)
-
-<!-- TODO: image -->
 
 ## Weird projects
 
@@ -66,11 +68,9 @@ Read more at [jqno.nl/climate 🔗](https://jqno.nl/climate/)
 
 ![](../images/paralleljava.png){ .bigimg }
 
-## Weird projects
+## I _finish_ them
 
-I _finish_ them
-
-<!-- TODO: image -->
+![](../images/finisher.png){ .bigimg }
 
 ## WHY!?
 
@@ -1034,7 +1034,7 @@ But how to prove it?
 
 ## Turing machine
 
-<!-- TODO: image Turing machine -->
+![](../images/turing-machine.png){ .bigimg }
 
 ## Turing machine
 

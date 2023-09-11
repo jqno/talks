@@ -42,6 +42,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 - [architecture-2](/talks/slides/bullshitlanguage/images/architecture-2.png) - by Jan Ouwens
 - [background](/talks/slides/bullshitlanguage/images/background.png) - by Jan Ouwens
 - [bored](/talks/slides/bullshitlanguage/images/bored.png) - by DALL·E with prompt _"photo of a bored white nerd with a neckbeard, sitting at a desk with a computer displaying java code, glancing at an alarm clock while surrounded by melting clocks"_ <small>(not sure where the neckbeard went 😉)</small>
+- [climate-change](/talks/slides/bullshitlanguage/images/climate-change.png) - by DreamStudio (Stable Diffusion) with prompt _"Laptop with image of a coal plant emitting thick black smoke. It's on a table next to a pile of books and a coffee cup. In the background lush springtime forest"_
 - [code-generator](/talks/slides/bullshitlanguage/images/code-generator.png) - by DALL·E with prompt _"pixel art of a monkey typing at a computer"_
 - [discoverability](/talks/slides/bullshitlanguage/images/discoverability.png) - Screenshot from IntelliJ IDEA, taken by Jan Ouwens
 - [duke-says-no](/talks/slides/bullshitlanguage/images/duke-says-no.png) - by Jeff Dinkins for Sun/Oracle - [source](https://wiki.openjdk.org/display/duke/Gallery)
@@ -49,6 +50,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 - [environment-1](/talks/slides/bullshitlanguage/images/environment-1.png) - by Jan Ouwens
 - [environment-2](/talks/slides/bullshitlanguage/images/environment-2.png) - by Jan Ouwens
 - [evaluator](/talks/slides/bullshitlanguage/images/evaluator.png) - by Jan Ouwens
+- [finisher](/talks/slides/bullshitlanguage/images/finisher.png) - by DreamStudio (Stable Diffusion) with prompt _"Running fat nerd with glasses and unkempt beard crossing the finish line"_
 - [fun](/talks/slides/bullshitlanguage/images/fun.png) - by DALL·E with prompt _"childrens drawing of stick fligure children playing in a school playground with a swing, a slide and a tree"_
 - [hackernews](/talsk/slides/bullshitlanguage/images/hackernews.png) - Screenshot from [Hacker News](https://news.ycombinator.com/), taken by Jan Ouwens on 2023-09-11
 - [jan-ouwens](/talks/slides/bullshitlanguage/images/jan-ouwens.jpg) - by Riemke Ouwens
@@ -63,4 +65,5 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 - [stackoverflow](/talsk/slides/bullshitlanguage/images/stackoverflow.png) - Screenshot from [StackOverflow](https://stackoverflow.com/), taken by Jan Ouwens on 2023-09-11
 - [the-little-schemer](/talks/slides/bullshitlanguage/images/the-little-schemer.jpg) - by MIT Press - [source](https://mitpress.mit.edu/9780262560993/the-little-schemer/)
 - [tokenizer](/talks/slides/bullshitlanguage/images/tokenizer.png) - by Jan Ouwens
+- [turing-machine](/talks/slides/bullshitlanguage/images/turing-machine.png) - by DreamStudio (Stable Diffusion) with prompt _"A sewing machine sewing a long, straight, white ribbon that must not be bundled up"_
 - [vim](/talks/slides/bullshitlanguage/images/vim.png) - by Jan Ouwens
