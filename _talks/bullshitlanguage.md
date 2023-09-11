@@ -55,7 +55,9 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 - [mind-blown-1](/talks/slides/bullshitlanguage/images/mind-blown-1.png) - by DALL·E with prompt _"meme of a person looking very surprised whose head explodes"_
 - [mind-blown-2](/talks/slides/bullshitlanguage/images/mind-blown-2.png) - by DALL·E with prompt _"meme of a person looking very surprised"_
 - [nerd-cred](/talks/slides/bullshitlanguage/images/nerd-cred.png) - by DALL·E with prompt _"hip hop album cover with nerds"_
+- [paralleljava](/talks/slides/bullshitlanguage/images/paralleljava.png) - by J-Fall - [source](https://www.youtube.com/watch?v=R0WnUd01f14)
 - [parser](/talks/slides/bullshitlanguage/images/parser.png) - by Jan Ouwens
 - [rite-of-passage](/talks/slides/bullshitlanguage/images/rite-of-passage.png) - by DALL·E with prompt _"photo of a fat nerd with a spear in attack pose facing an angry male lion on the african savannah"_
 - [the-little-schemer](/talks/slides/bullshitlanguage/images/the-little-schemer.jpg) - by MIT Press - [source](https://mitpress.mit.edu/9780262560993/the-little-schemer/)
 - [tokenizer](/talks/slides/bullshitlanguage/images/tokenizer.png) - by Jan Ouwens
+- [vim](/talks/slides/bullshitlanguage/images/vim.png) - by Jan Ouwens

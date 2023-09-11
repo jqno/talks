@@ -56,15 +56,15 @@ Read more at [jqno.nl/climate 🔗](https://jqno.nl/climate/)
 
 ## Weird projects
 
-<!-- TODO: image of Asterix paper -->
+![](../images/vim.png){ .bigimg }
 
 ## Weird projects
 
-<!-- TODO: image of Vim dev env -->
+![](../images/asterix.png){ .bigimg }
 
 ## Weird projects
 
-<!-- TODO: image of app with no annotations, maybe error message when @ is encountered -->
+![](../images/paralleljava.png){ .bigimg }
 
 ## Weird projects
 
