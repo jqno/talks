@@ -48,7 +48,7 @@ Demo time!
 
 ## WHY!?
 
-![](../images/lockdown.png){ .bigimg }
+![](../images/lockdown-old.png){ .bigimg }
 
 ## WHY!?
 
@@ -65,7 +65,7 @@ public void waitwhat() {}
 
 ## WHY!?
 
-![](../images/nerd-cred.png){ .bigimg }
+![](../images/nerd-cred-old.png){ .bigimg }
 
 ##
 
@@ -180,7 +180,7 @@ public static class First {}
 
 ## Implementing LISP
 
-![](../images/rite-of-passage.png){ .shadow }
+![](../images/rite-of-passage-old.png){ .shadow }
 
 &nbsp;
 
@@ -456,7 +456,7 @@ public class FizzBuzz {}
 
 <!-- Image: ain't got no time to write that -->
 
-![](../images/bored.png){ .bigimg }
+![](../images/bored-old.png){ .bigimg }
 
 ## Tokenizer
 
@@ -489,7 +489,7 @@ return code.split(" ");
 
 ## Code generator
 
-![](../images/code-generator.png){ .bigimg }
+![](../images/code-generator-old.png){ .bigimg }
 
 # { data-state="page-title" data-background-image="../images/background.png" }
 
@@ -523,7 +523,7 @@ Now I have a quick way to produce code
 
 ## Tokenizer
 
-![](../images/mind-blown-1.png){ .shadow }
+![](../images/mind-blown-1-old.png){ .shadow }
 
 Unit tests: identical!
 
@@ -541,7 +541,7 @@ Trivial
 
 ## Parser
 
-![](../images/mind-blown-2.png){ .shadow }
+![](../images/mind-blown-2-old.png){ .shadow }
 
 Unit tests: identical!
 
@@ -623,13 +623,13 @@ Conclusion
 Learn about annotations
 :::
 
-## Conclusion { data-background-image="../images/rite-of-passage.png" }
+## Conclusion { data-background-image="../images/rite-of-passage-old.png" }
 
 ::: { class="big text-shadow" }
 Learn about LISP
 :::
 
-## Conclusion { data-background-image="../images/fun.png" }
+## Conclusion { data-background-image="../images/fun-old.png" }
 
 ::: { class="superbig text-shadow" }
 It was fun

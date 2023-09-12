@@ -593,7 +593,7 @@ Implementation
 
 ## Implementing LISP
 
-![](../images/rite-of-passage.png){ .shadow }
+![](../images/rite-of-passage.png){ .bigimg }
 
 &nbsp;
 
