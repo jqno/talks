@@ -48,13 +48,7 @@ Demo time!
 
 <br/><br/><br/><br/><br/><br/><br/><br/>
 
-TL;DR: reduce cloud spend
-
-## Climate for developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { data-state="page-title" data-background-image="../images/climate-change.png" }
-
-<br/><br/><br/><br/><br/><br/><br/><br/>
-
-Read more at [jqno.nl/climate 🔗](https://jqno.nl/climate/)
+Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 
 ## Weird projects
 
@@ -137,6 +131,24 @@ a LISP
 LISP
 :::
 
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: superbig
+(LISP)
+:::
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: superbig
+((LISP))
+:::
+
+# { data-state="page-title" data-background-image="../images/background.png" }
+
+::: superbig
+(((LISP)))
+:::
+
 ## What's a LISP?
 
 - Common Lisp
@@ -191,7 +203,7 @@ if (this.getId().equals(that.getId()))
 ```java
 public int sum(int n) {
     int result = 0;
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < n; i++) {
         result += i;
     }
     return result;
@@ -218,6 +230,12 @@ public int sum(int n) {
   (cond ((eq? n 0) 0)
         (else (+ n (sum (- n 1))))))
 ```
+
+## Stack overflow
+
+. . .
+
+![](../images/stackoverflow.png){ .bigimg }
 
 ## Stack overflow
 
@@ -256,10 +274,6 @@ java.lang.StackOverflowError
 (+ 4 6)
 10
 ```
-
-## Stack overflow
-
-![](../images/stackoverflow.png){ .bigimg }
 
 ## Tail call optimization
 
@@ -321,6 +335,8 @@ What if...
 
 ## Y Combinator
 
+. . .
+
 ![](../images/hackernews.png){ .bigimg }
 
 ## Y Combinator
@@ -357,7 +373,7 @@ Checked at runtime
 <br/><br/><br/><br/>
 
 ::: small
-You have a nice, compiled, strongly-typed language underneath
+You have a nice, compiled, strongly-typed language underneath:
 
 Why not use it!
 :::
@@ -435,6 +451,12 @@ for (Class<?> cls : allTheClasses) {
     }
 }
 ```
+
+##
+
+::: big
+Anyway
+:::
 
 ## Annotations, first try
 
@@ -526,6 +548,10 @@ Make as many as you like!
 . . .
 
 🥱
+
+. . .
+
+`@Zero` to `@Eleven`
 
 ## Map to AnnotationScript
 
@@ -835,13 +861,11 @@ Interlude
 public class FizzBuzz {}
 ```
 
-## A program
-
-<!-- Image: ain't got no time to write that -->
+## Ain't nobody got no time for that
 
 ![](../images/bored.png){ .bigimg }
 
-## Tokenizer
+## Write normal LISP
 
 ```lisp
 
@@ -856,6 +880,19 @@ public class FizzBuzz {}
 
 ```
 
+## Wrap it
+
+```lisp
+String code = """
+  (begin
+    (define fizz-buzz (lambda (n)
+      (cond (= (% n 15) 0) 'fizzbuzz')
+      (cond (= (% n 3) 0) 'fizz')
+      (cond (= (% n 5) 0) 'buzz')
+      (else n))
+    (map println (map fizz-buzz (range 1 101))))""";
+```
+
 ## Tokenizer
 
 ```lisp
@@ -867,6 +904,7 @@ String code = """
       (cond (= (% n 5) 0) 'buzz')
       (else n))
     (map println (map fizz-buzz (range 1 101))))""";
+
 return code.split(" ");
 ```
 
@@ -993,6 +1031,21 @@ Invalid identifier: `sum`
 
 ```lisp
 (define (sum
+  (lambda (i)
+    (cond
+      ((eq? i 0) 0)
+      (else
+        (+ i (sum (sub1 i)))))))
+
+  (sum 5))
+```
+
+Y Combinator ???
+
+## Recursion issue
+
+```lisp
+(define (sum
   (lambda (recurse i)
     (cond
       ((eq? i 0) 0)
@@ -1028,21 +1081,27 @@ But how to prove it?
 
 ## Turing machine
 
+![](../images/turing-machine.png){ .bigimg }
+
+## Turing machine
+
 - Turing complete by definition
 - Tape with cells
 - Operations: read at head, write at head, move head
 
 ## Turing machine
 
-![](../images/turing-machine.png){ .bigimg }
+Implement one!
 
-## Turing machine
+. . .
 
 ...
 
 . . .
 
+::: big
 Brainfuck!
+:::
 
 ## Demo
 
@@ -1076,11 +1135,17 @@ What's next
 Error handling
 :::
 
+`cond has no true branch`
+
 ## Next
 
 ::: big
 String.split
 :::
+
+```java
+"'Hello world'" → "'Hello" + "world'"
+```
 
 ## Next
 
@@ -1125,6 +1190,12 @@ It was fun
 Greenspun's Tenth Rule:
 
 _Any sufficiently complicated C or Fortran program contains an ad hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp._
+
+## Climate for developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { data-state="page-title" data-background-image="../images/climate-change.png" }
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+[jqno.nl/climate](https://jqno.nl/climate/)
 
 ## Questions? { data-state="page-title" data-background-image="../images/background.png" }
 
