@@ -1200,17 +1200,17 @@ Greenspun's Tenth Rule:
 
 _Any sufficiently complicated C or Fortran program contains an ad hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp._
 
-## Climate for developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { data-state="page-title" data-background-image="../images/climate-change.png" }
-
-<br/><br/><br/><br/><br/><br/><br/><br/>
-
-[jqno.nl/climate](https://jqno.nl/climate/)
-
 ## Questions? { data-state="page-title" data-background-image="../images/background.png" }
 
+<span style="float:left;width:200px;margin-top:20px;">
 ![](../images/qr.png)
+</span>
 
-[jqno.nl/talks/bullshitlanguage](https://jqno.nl/talks/bullshitlanguage)
+- [github.com/jqno/AnnotationScript](https://github.com/jqno/AnnotationScript)
+
+- [jqno.nl/talks/bullshitlanguage](https://jqno.nl/talks/bullshitlanguage)
+
+- [jqno.nl/climate](https://jqno.nl/climate)
 
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #bullshitlanguage
