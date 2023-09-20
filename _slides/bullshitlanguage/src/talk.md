@@ -178,12 +178,22 @@ LISP
 (+ x 10)
 ```
 
+## Syntax
+
+```lisp
+(+ x 10)
+
+(+ x (* 2 5))
+```
+
 ## The Power of LISP
 
 ```lisp
 (+ x 10)
 
-((if (#t) + -) x 10)
+(+ x (* 2 5))
+
+((if #t + -) x 10)
 ```
 
 ## ((Parentheses))
@@ -689,7 +699,7 @@ DONE! 🥳
 ```java
 List<Object> ast = List.of(
     Symbol("if"),
-    List.of(Symbol('<'), Symbol('x'), 0),
+    List.of(Symbol("<"), Symbol("x"), 0),
     "a",
     "b");
 ```
@@ -758,26 +768,6 @@ Is it a List?<br/>`(< x 0)`
 
 Evaluate all elements<br/>Call function<br/>Return result
 
-## Example
-
-<!-- prettier-ignore -->
-```java
-@Zero("begin")
-@Zero(list={@One("define"), @One("fizz-buzz"), @One(list={@Two("lambda"),
-  @Two(list=@Three("n")), @Two(list={@Three("cond"),
-    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"),
-      @Five("15")}), @Four("0")}), @Three("'fizzbuzz'"),
-    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"),
-      @Five("3")}), @Four("0")}), @Three("'fizz'"),
-    @Three(list={@Four("="), @Four(list={@Five("%"), @Five("n"),
-      @Five("5")}), @Four("0")}), @Three("'buzz'"),
-    @Three("else"), @Three("n")})})})
-@Zero(list={@One("map"), @One("println"), @One(list={@Two("map"),
-  @Two("fizz-buzz"), @Two(list={@Three("range"),
-  @Three("1"), @Three("101")})})})
-public class FizzBuzz {}
-```
-
 ## Tail call optimization
 
 Evaluator works recursively
@@ -841,7 +831,7 @@ No more stack overflow 🥳
 Interlude
 :::
 
-## FizzBuzz again
+## Code sample
 
 <!-- prettier-ignore -->
 ```java
@@ -877,7 +867,6 @@ public class FizzBuzz {}
       (else n))
     (map println (map fizz-buzz (range 1 101))))
 
-
 ```
 
 ## Wrap it
@@ -905,7 +894,27 @@ String code = """
       (else n))
     (map println (map fizz-buzz (range 1 101))))""";
 
-return code.split(" ");
+return code
+    .replace("(", " ( ")
+    .replace(")", " ) ")
+```
+
+## Tokenizer
+
+```lisp
+String code = """
+  (begin
+    (define fizz-buzz (lambda (n)
+      (cond (= (% n 15) 0) 'fizzbuzz')
+      (cond (= (% n 3) 0) 'fizz')
+      (cond (= (% n 5) 0) 'buzz')
+      (else n))
+    (map println (map fizz-buzz (range 1 101))))""";
+
+return code
+    .replace("(", " ( ")
+    .replace(")", " ) ")
+    .split(" ");
 ```
 
 ## Code generator
