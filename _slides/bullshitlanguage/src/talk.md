@@ -52,6 +52,12 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 
 ## Weird projects
 
+. . .
+
+![](../images/finisher.png){ .bigimg }
+
+## Weird projects
+
 ![](../images/vim.png){ .bigimg }
 
 ## Weird projects
@@ -62,23 +68,21 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 
 ![](../images/paralleljava.png){ .bigimg }
 
-## I _finish_ them
+## Weird projects
 
-![](../images/finisher.png){ .bigimg }
+<br/>
+
+Let's do the opposite!
+
+<br/><br/>
+
+no annotations → only annotations
 
 ## WHY!?
-
-## WHY!?
-
-I got excited with this one!
 
 . . .
 
-![](../images/annotationscript.png)
-
-## WHY!?
-
-Because I can
+Why not?
 
 ## WHY!?
 
@@ -104,6 +108,14 @@ public void waitwhat() {}
 ## WHY!?
 
 ![](../images/nerd-cred.png){ .bigimg }
+
+## WHY!?
+
+I got excited with this one!
+
+. . .
+
+![](../images/annotationscript.png)
 
 ## Also
 
