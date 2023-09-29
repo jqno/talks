@@ -1140,13 +1140,17 @@ Demo time!
 What's next
 :::
 
-## Next
+## Did I _finish_ it?
+
+![](../images/finisher.png){ .bigimg }
+
+## Did I _finish_ it?
 
 ::: superbig
 🤷🏻
 :::
 
-## Next
+##
 
 ::: big
 Error handling
@@ -1154,7 +1158,9 @@ Error handling
 
 `cond has no true branch`
 
-## Next
+> "[It] expects the programmer to be perfect"
+
+##
 
 ::: big
 String.split
@@ -1164,7 +1170,7 @@ String.split
 "'Hello world'" → "'Hello" + "world'"
 ```
 
-## Next
+##
 
 ::: big
 Spring integration
