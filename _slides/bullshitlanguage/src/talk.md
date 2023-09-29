@@ -931,6 +931,12 @@ return code
 Now I have a quick way to produce code
 :::
 
+##
+
+::: superbig
+Demo time!
+:::
+
 ## MetaScript
 
 ![](../images/the-little-schemer.jpg){ .bigimg }
@@ -1066,8 +1072,6 @@ Y Combinator ???
 
 Solution: function is parameter to itself
 
-## Demo
-
 # { data-state="page-title" data-background-image="../images/background.png" }
 
 ::: superbig
@@ -1112,9 +1116,13 @@ Implement one!
 Brainfuck!
 :::
 
-## Demo
+##
 
-<br/><br/><br/><br/><br/><br/><br/><br/>
+::: superbig
+Demo time!
+:::
+
+<br/><br/>
 
 ::: small
 [brainfuck generator 🔗](https://tnu.me/brainfuck/generator)
