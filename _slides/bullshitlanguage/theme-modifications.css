@@ -57,6 +57,51 @@ html.page-title .reveal h2 {
 }
 
 
+/* Stacked images */
+
+.stacked-image-container {
+  position: relative;
+  height: 12em;
+}
+
+.stacked-image {
+  position: absolute;
+  top: 50%;
+  transform-origin: center center;
+  transition: all 0.5s ease;
+}
+
+.stacked-image:nth-child(1) {
+  z-index: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.stacked-image:nth-child(2) {
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(5deg);
+}
+
+.stacked-image:nth-child(3) {
+  z-index: 3;
+  transform: translate(-50%, -50%) rotate(-3deg);
+}
+
+.stacked-image:nth-child(4) {
+  z-index: 4;
+  transform: translate(-50%, -50%) rotate(3deg);
+}
+
+.stacked-image:nth-child(5) {
+  z-index: 5;
+  transform: translate(-50%, -50%) rotate(-6deg);
+}
+
+.stacked-image:nth-child(6) {
+  z-index: 6;
+  transform: translate(-50%, -50%) rotate(-1deg);
+}
+
+
 /* Code blocks */
 
 .reveal pre code {

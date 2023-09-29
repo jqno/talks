@@ -54,21 +54,152 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 
 . . .
 
-![](../images/finisher.png){ .bigimg }
+![](../images/escalation.png){ .bigimg }
 
-## Weird projects
+## Weird project: Vim
 
 ![](../images/vim.png){ .bigimg }
 
-## Weird projects
+## Weird project: Astérix
 
-![](../images/asterix.png){ .bigimg }
+::: stacked-image-container
+![](../images/comics-0.jpg){ .bigimg .stacked-image }
+:::
 
-## Weird projects
+## Weird project: Astérix
 
-![](../images/paralleljava.png){ .bigimg }
+::: stacked-image-container
+![](../images/comics-0.jpg){ .bigimg .stacked-image }
+![](../images/comics-1.jpg){ .bigimg .stacked-image }
+:::
 
-## Weird projects
+## Weird project: Astérix
+
+::: stacked-image-container
+![](../images/comics-0.jpg){ .bigimg .stacked-image }
+![](../images/comics-1.jpg){ .bigimg .stacked-image }
+![](../images/comics-2.jpg){ .bigimg .stacked-image }
+:::
+
+## Weird project: Astérix
+
+::: stacked-image-container
+![](../images/comics-0.jpg){ .bigimg .stacked-image }
+![](../images/comics-1.jpg){ .bigimg .stacked-image }
+![](../images/comics-2.jpg){ .bigimg .stacked-image }
+![](../images/comics-3.png){ .bigimg .stacked-image }
+:::
+
+## Weird project: Astérix
+
+::: stacked-image-container
+![](../images/comics-0.jpg){ .bigimg .stacked-image }
+![](../images/comics-1.jpg){ .bigimg .stacked-image }
+![](../images/comics-2.jpg){ .bigimg .stacked-image }
+![](../images/comics-3.png){ .bigimg .stacked-image }
+![](../images/comics-4.jpg){ .bigimg .stacked-image }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-0.png){ .bigimg .stacked-image }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-1.jpg){ .bigimg .stacked-image }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-1.jpg){ .bigimg .stacked-image }
+![](../images/lego-2.jpg){ .bigimg .stacked-image }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-1.jpg){ .bigimg .stacked-image }
+![](../images/lego-2.jpg){ .bigimg .stacked-image }
+![](../images/lego-3.png){ .bigimg .stacked-image }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-1.jpg){ .bigimg .stacked-image }
+![](../images/lego-2.jpg){ .bigimg .stacked-image }
+![](../images/lego-3.png){ .bigimg .stacked-image }
+![](../images/lego-4.png){ .bigimg .stacked-image }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-1.jpg){ .bigimg .stacked-image }
+![](../images/lego-2.jpg){ .bigimg .stacked-image }
+![](../images/lego-3.png){ .bigimg .stacked-image }
+![](../images/lego-4.png){ .bigimg .stacked-image }
+![](../images/lego-5.jpg){ .bigimg .stacked-image }
+:::
+
+## Weird project: Parallel Java
+
+::: stacked-image-container
+![](../images/paralleljava-0.png){ .bigimg .stacked-image }
+:::
+
+## Weird project: Parallel Java
+
+::: stacked-image-container
+![](../images/paralleljava-0.png){ .bigimg .stacked-image }
+![](../images/paralleljava-1.png){ .bigimg .stacked-image }
+:::
+
+## Weird project: Parallel Java
+
+::: stacked-image-container
+![](../images/paralleljava-0.png){ .bigimg .stacked-image }
+![](../images/paralleljava-1.png){ .bigimg .stacked-image }
+![](../images/paralleljava-2.png){ .bigimg .stacked-image }
+:::
+
+## Weird project: Parallel Java
+
+::: stacked-image-container
+![](../images/paralleljava-0.png){ .bigimg .stacked-image }
+![](../images/paralleljava-1.png){ .bigimg .stacked-image }
+![](../images/paralleljava-2.png){ .bigimg .stacked-image }
+![](../images/paralleljava-3.png){ .bigimg .stacked-image }
+:::
+
+## Weird project: Parallel Java
+
+::: stacked-image-container
+![](../images/paralleljava-0.png){ .bigimg .stacked-image }
+![](../images/paralleljava-1.png){ .bigimg .stacked-image }
+![](../images/paralleljava-2.png){ .bigimg .stacked-image }
+![](../images/paralleljava-3.png){ .bigimg .stacked-image }
+![](../images/paralleljava-4.png){ .bigimg .stacked-image }
+:::
+
+## Weird project: AnnotationScript
+
+<br/>
+
+::: big
+The weirdest yet!
+:::
+
+## Weird project: AnnotationScript
 
 <br/>
 
@@ -1152,15 +1283,9 @@ Demo time!
 What's next
 :::
 
-## Did I _finish_ it?
+## Did it escalate?
 
-![](../images/finisher.png){ .bigimg }
-
-## Did I _finish_ it?
-
-::: superbig
-🤷🏻
-:::
+![](../images/escalation.png){ .bigimg }
 
 ##
 
