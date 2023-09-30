@@ -5,6 +5,11 @@
 
 /* General layout */
 
+html body {
+  background-color: #143A46;
+  color: white;
+}
+
 .reveal {
   font-family: 'OpenSans';
 }
@@ -36,6 +41,10 @@ html.page-title .reveal h2 {
 /* Images */
 
 .reveal section img.shadow {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+.reveal section img.regularimg {
   height: 9em;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
 }
@@ -47,6 +56,10 @@ html.page-title .reveal h2 {
 
 .reveal section img.lineimg {
   height: 1em;
+}
+
+.reveal section img.whitebackground {
+  background: white;
 }
 
 .reveal section img {
@@ -193,5 +206,5 @@ html.end-titles-page body {
 }
 
 .end-titles table td a {
-  color: #33FFFF;
+  color: #1caf55;
 }

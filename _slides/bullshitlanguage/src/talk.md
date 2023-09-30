@@ -1,6 +1,5 @@
 ---
 pagetitle: Building a Bullshit Language
-theme: white
 backgroundTransition: none
 transition: none
 progress: "false"
@@ -103,20 +102,20 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
-![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 :::
 
 ## Weird project: Lego
 
 ::: stacked-image-container
-![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 :::
 
 ## Weird project: Lego
 
 ::: stacked-image-container
-![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
 :::
@@ -124,7 +123,7 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
-![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
 ![](../images/lego-3.png){ .bigimg .stacked-image }
@@ -133,7 +132,7 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
-![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
 ![](../images/lego-3.png){ .bigimg .stacked-image }
@@ -143,7 +142,7 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
-![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
 ![](../images/lego-3.png){ .bigimg .stacked-image }
@@ -154,7 +153,7 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
-![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
 ![](../images/lego-3.png){ .bigimg .stacked-image }
@@ -796,15 +795,15 @@ _[(How to Write a (Lisp) Interpreter (in Python)) 🔗](https://norvig.com/lispy
 
 ## Architecture
 
-![](../images/architecture-1.png)
+![](../images/architecture-1.png){ .shadow .whitebackground }
 
 ## Architecture
 
-![](../images/architecture-2.png)
+![](../images/architecture-2.png){ .shadow .whitebackground }
 
 ## Tokenizer
 
-![](../images/tokenizer.png)
+![](../images/tokenizer.png){ .shadow .whitebackground }
 
 ## Tokenizer
 
@@ -838,11 +837,11 @@ DONE! 🥳
 
 ## Architecture
 
-![](../images/architecture-2.png)
+![](../images/architecture-2.png){ .shadow .whitebackground }
 
 ## Parser
 
-![](../images/parser.png)
+![](../images/parser.png){ .shadow .whitebackground }
 
 ## Parser
 
@@ -865,11 +864,11 @@ Nested Lists instead of a proper Tree
 
 ## Architecture
 
-![](../images/architecture-2.png)
+![](../images/architecture-2.png){ .shadow .whitebackground }
 
 ## Environment
 
-![](../images/environment-1.png)
+![](../images/environment-1.png){ .shadow .whitebackground }
 
 ::: notes
 Global Environment contains lots of stuff
@@ -877,7 +876,7 @@ Global Environment contains lots of stuff
 
 ## Environment
 
-![](../images/environment-1.png)
+![](../images/environment-1.png){ .shadow .whitebackground }
 
 ```lisp
 (define x 10)
@@ -885,7 +884,7 @@ Global Environment contains lots of stuff
 
 ## Environment
 
-![](../images/environment-2.png)
+![](../images/environment-2.png){ .shadow .whitebackground }
 
 ```lisp
 (define x 10)
@@ -893,11 +892,11 @@ Global Environment contains lots of stuff
 
 ## Architecture
 
-![](../images/architecture-2.png)
+![](../images/architecture-2.png){ .shadow .whitebackground }
 
 ## Evaluator
 
-![](../images/evaluator.png)
+![](../images/evaluator.png){ .shadow .whitebackground }
 
 ## Evaluator
 
@@ -1098,7 +1097,7 @@ Demo time!
 
 ## MetaScript
 
-![](../images/architecture-1.png)
+![](../images/architecture-1.png){ .shadow .whitebackground }
 
 ## Tokenizer
 
@@ -1112,7 +1111,7 @@ Demo time!
 
 ## Tokenizer
 
-![](../images/mind-blown-1.png){ .shadow }
+![](../images/mind-blown-1.png){ .regularimg }
 
 Unit tests: identical!
 
@@ -1122,7 +1121,7 @@ Trivial
 
 ## MetaScript
 
-![](../images/architecture-1.png)
+![](../images/architecture-1.png){ .shadow .whitebackground }
 
 ## Parser
 
@@ -1130,7 +1129,7 @@ Trivial
 
 ## Parser
 
-![](../images/mind-blown-2.png){ .shadow }
+![](../images/mind-blown-2.png){ .regularimg }
 
 Unit tests: identical!
 
@@ -1140,7 +1139,7 @@ Non-trivial
 
 ## MetaScript
 
-![](../images/architecture-1.png)
+![](../images/architecture-1.png){ .shadow .whitebackground }
 
 ## Evaluator
 
