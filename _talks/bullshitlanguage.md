@@ -29,6 +29,11 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 
 ## Deliveries
 
+- **Devoxx Belgium**
+  <br>
+  _5 October 2023_
+  <br>
+  [[event](https://devoxx.be)] [[slides](/talks/slides/bullshitlanguage/2023-10-05-devoxx)]
 - **Brabant JUG**
   <br>
   _6 September 2022_
