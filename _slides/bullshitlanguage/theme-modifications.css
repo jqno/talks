@@ -101,6 +101,11 @@ html.page-title .reveal h2 {
   transform: translate(-50%, -50%) rotate(-1deg);
 }
 
+.stacked-image:nth-child(7) {
+  z-index: 7;
+  transform: translate(-50%, -50%) rotate(4deg);
+}
+
 
 /* Code blocks */
 

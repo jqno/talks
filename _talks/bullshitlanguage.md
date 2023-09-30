@@ -63,8 +63,9 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 - [lego-1](/talks/slides/bullshitlanguage/images/lego-1.jpg) - by Jan Ouwens
 - [lego-2](/talks/slides/bullshitlanguage/images/lego-2.jpg) - by Jan Ouwens
 - [lego-3](/talks/slides/bullshitlanguage/images/lego-3.png) - by Jan Ouwens
-- [lego-4](/talks/slides/bullshitlanguage/images/lego-4.png) - Screenshot from [Rebrickable](https://rebrickable.com/mocs/MOC-159312/jqno/minimalistic-star-trek-the-original-series-cast), taken by Jan Ouwens on 2023-09-29
-- [lego-5](/talks/slides/bullshitlanguage/images/lego-5.jpg) - by Jan Ouwens
+- [lego-4](/talks/slides/bullshitlanguage/images/lego-4.png) - Screenshot from [my website](https://jqno.nl/lego/tos/), taken by Jan Ouwens on 2023-09-30
+- [lego-5](/talks/slides/bullshitlanguage/images/lego-5.png) - Screenshot from [Rebrickable](https://rebrickable.com/mocs/MOC-159312/jqno/minimalistic-star-trek-the-original-series-cast), taken by Jan Ouwens on 2023-09-29
+- [lego-6](/talks/slides/bullshitlanguage/images/lego-6.jpg) - by Jan Ouwens
 - [lockdown](/talks/slides/bullshitlanguage/images/lockdown.png) - by DreamStudio (Stable Diffusion) with prompt _"fat nerdy person at computer. man cave. messy room with parcels, stacks of books, empty pizza boxes, gadgets"_
 - [meta-evaluator](/talks/slides/bullshitlanguage/images/meta-evaluator.png) & [meta-parser](/talks/slides/bullshitlanguage/images/meta-parser.png) & [meta-tokenizer](/talks/slides/bullshitlanguage/images/meta-tokenizer.png) - by Jan Ouwens
 - [mind-blown-1](/talks/slides/bullshitlanguage/images/mind-blown-1.png) - by DreamStudio (Stable Diffusion) with prompt _"Person looking at a computer screen, very surprised, wide eyes, open mouth"_

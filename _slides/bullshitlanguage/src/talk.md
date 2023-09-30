@@ -148,7 +148,19 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
 ![](../images/lego-3.png){ .bigimg .stacked-image }
 ![](../images/lego-4.png){ .bigimg .stacked-image }
-![](../images/lego-5.jpg){ .bigimg .stacked-image }
+![](../images/lego-5.png){ .bigimg .stacked-image }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-0.png){ .bigimg .stacked-image }
+![](../images/lego-1.jpg){ .bigimg .stacked-image }
+![](../images/lego-2.jpg){ .bigimg .stacked-image }
+![](../images/lego-3.png){ .bigimg .stacked-image }
+![](../images/lego-4.png){ .bigimg .stacked-image }
+![](../images/lego-5.png){ .bigimg .stacked-image }
+![](../images/lego-6.jpg){ .bigimg .stacked-image }
 :::
 
 ## Weird project: Parallel Java
