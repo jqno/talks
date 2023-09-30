@@ -172,7 +172,7 @@ html.end-titles-page body {
   overflow: hidden;
   height: 100%;
   position: relative;
-  animation: scroll-up 20s linear infinite;
+  animation: scroll-up 10s linear 1 forwards;
 }
 
 @keyframes scroll-up {
@@ -180,7 +180,7 @@ html.end-titles-page body {
     bottom: -70vh;
   }
   to {
-    bottom: 100%;
+    bottom: 110%;
   }
 }
 

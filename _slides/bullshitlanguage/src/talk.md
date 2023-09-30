@@ -1386,7 +1386,9 @@ _Any sufficiently complicated C or Fortran program contains an ad hoc, informall
 Fin
 :::
 
+::: subtitle
 Image credits
+:::
 
 ::: supersmall
 
@@ -1439,5 +1441,11 @@ Image credits
 | [turing-machine](/talks/slides/bullshitlanguage/images/turing-machine.png) | by DreamStudio (Stable Diffusion) with prompt _"A sewing machine sewing a long, straight, white ribbon that must not be bundled up"_ |
 | [vim](/talks/slides/bullshitlanguage/images/vim.png) | by Jan Ouwens |
 
+:::
+
+<br/>
+
+::: supersmall
+No animals were harmed during the making of this slide deck.<br/>Except bugs. Bugs were _squashed_ without hesitation.
 :::
 :::
