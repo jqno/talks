@@ -158,3 +158,40 @@ html.page-title .reveal h2 {
   position: fixed;
   bottom: 25px;
 }
+
+
+/* End titles */
+
+html.end-titles-page body {
+  background-color: black;
+}
+
+.end-titles {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  animation: scroll-up 20s linear infinite;
+}
+
+@keyframes scroll-up {
+  from {
+    bottom: -70vh;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+
+.end-titles table {
+  width: 60%;
+}
+
+.end-titles table td {
+  border: none;
+}
+
+.end-titles table td a {
+  color: #33FFFF;
+}
