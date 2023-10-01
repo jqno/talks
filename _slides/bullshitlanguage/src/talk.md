@@ -1374,6 +1374,8 @@ _Any sufficiently complicated C or Fortran program contains an ad hoc, informall
 
 - [jqno.nl/climate](https://jqno.nl/climate)
 
+![](../images/annotationscript.png){ height=130px }
+
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #bullshitlanguage
 :::
@@ -1384,6 +1386,8 @@ _Any sufficiently complicated C or Fortran program contains an ad hoc, informall
 ::: big
 Fin
 :::
+
+![](../images/annotationscript.png)
 
 ::: subtitle
 Image credits
