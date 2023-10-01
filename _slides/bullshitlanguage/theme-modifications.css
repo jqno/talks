@@ -162,8 +162,6 @@ html.page-title .reveal h2 {
   font-family: "TilburgsAnsText";
   margin: auto;
   width: 100%;
-  position: fixed;
-  bottom: 25px;
 }
 
 .doesitwork {
