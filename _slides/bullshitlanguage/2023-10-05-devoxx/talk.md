@@ -449,6 +449,8 @@ Let's re-write
 (define (sum n)
   (cond ((eq? n 0) 0)
         (else (+ n (sum (- n 1))))))
+
+(sum 4)
 ```
 
 ↓
@@ -457,6 +459,8 @@ Let's re-write
 (define (sum n acc)
   (cond ((eq? n 0) acc)
         (else (sum (- n 1) (+ n acc)))))
+
+(sum 4 0)
 ```
 
 ## Tail call optimization
@@ -491,7 +495,11 @@ Let's re-write
 
 ## Recursion
 
+::: big
 What if...
+:::
+
+recursion is not supported?
 
 ## Recursion
 
@@ -520,7 +528,11 @@ No reasonable person can understand this
 
 But it works
 
-## Demo
+##
+
+::: superbig
+Demo time!
+:::
 
 # { data-state="page-title" data-background-image="../images/background.png" }
 
@@ -965,11 +977,11 @@ public Object evaluate(Object expression) {
     var exp = expression;
     while (true) {
         // ...
-        if (isAtom(expression)) {
+        if (isAtom(exp)) {
             return evaluateAtom(expression);
         }
-        if (isProc(expression)) {
-            exp = evaluateProc(expression); // 👈 loop
+        if (isProc(exp)) {
+            exp = evaluateProc(exp); // 👈 loop
         }
     }
 }
@@ -1085,17 +1097,17 @@ return code
 Now I have a quick way to produce code
 :::
 
+## MetaScript
+
+![](../images/the-little-schemer.jpg){ .bigimg }
+
 ##
 
 ::: superbig
 Demo time!
 :::
 
-## MetaScript
-
-![](../images/the-little-schemer.jpg){ .bigimg }
-
-## MetaScript
+## Architecture
 
 ![](../images/architecture-1.png){ .shadow .whitebackground }
 
@@ -1163,7 +1175,7 @@ Evaluator is implemented very differently, so tests are different
       (else
         (+ i (sum (sub1 i)))))))
 
-  (sum 5))
+  (sum 4))
 ```
 
 ## Recursion issue
@@ -1176,7 +1188,7 @@ Evaluator is implemented very differently, so tests are different
       (else
         (+ i (sum (sub1 i)))))))
 
-  (sum 5))
+  (sum 4))
 ```
 
 `cond has no true branch`
@@ -1191,7 +1203,7 @@ Evaluator is implemented very differently, so tests are different
       (else
         (+ i (sum (sub1 i)))))))
 
-  (sum 5))
+  (sum 4))
 ```
 
 Invalid identifier: `sum`
@@ -1206,7 +1218,7 @@ Invalid identifier: `sum`
       (else
         (+ i (sum (sub1 i)))))))
 
-  (sum 5))
+  (sum 4))
 ```
 
 Y Combinator ???
@@ -1215,13 +1227,13 @@ Y Combinator ???
 
 ```lisp
 (define (sum
-  (lambda (recurse i)
+  (lambda (i recurse)
     (cond
       ((eq? i 0) 0)
       (else
-        (+ i (recurse recurse (sub1 i)))))))
+        (+ i (recurse (sub1 i) recurse))))))
 
-  (sum sum 5))
+  (sum 4 sum))
 ```
 
 Solution: function is parameter to itself
@@ -1374,6 +1386,8 @@ _Any sufficiently complicated C or Fortran program contains an ad hoc, informall
 
 - [jqno.nl/climate](https://jqno.nl/climate)
 
+![](../images/annotationscript.png){ height=130px }
+
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #bullshitlanguage
 :::
@@ -1384,6 +1398,8 @@ _Any sufficiently complicated C or Fortran program contains an ad hoc, informall
 ::: big
 Fin
 :::
+
+![](../images/annotationscript.png)
 
 ::: subtitle
 Image credits

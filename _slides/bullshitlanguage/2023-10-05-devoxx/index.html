@@ -498,11 +498,15 @@ data-background-image="../images/background.png"></h1>
 <h2>Tail call optimization</h2>
 <pre class="lisp"><code>(define (sum n)
   (cond ((eq? n 0) 0)
-        (else (+ n (sum (- n 1))))))</code></pre>
+        (else (+ n (sum (- n 1))))))
+
+(sum 4)</code></pre>
 <p>↓</p>
 <pre class="lisp"><code>(define (sum n acc)
   (cond ((eq? n 0) acc)
-        (else (sum (- n 1) (+ n acc)))))</code></pre>
+        (else (sum (- n 1) (+ n acc)))))
+
+(sum 4 0)</code></pre>
 </section>
 <section id="tail-call-optimization-2" class="slide level2">
 <h2>Tail call optimization</h2>
@@ -532,7 +536,10 @@ data-background-image="../images/background.png"></h1>
 </section>
 <section id="recursion-3" class="slide level2">
 <h2>Recursion</h2>
+<div class="big">
 <p>What if…</p>
+</div>
+<p>recursion is not supported?</p>
 </section>
 <section id="recursion-4" class="slide level2">
 <h2>Recursion</h2>
@@ -559,11 +566,14 @@ class="bigimg" /></p>
 <p>No reasonable person can understand this</p>
 <p>But it works</p>
 </section>
-<section id="demo" class="slide level2">
-<h2>Demo</h2>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<div class="superbig">
+<p>Demo time!</p>
+</div>
 </section></section>
 <section>
-<section id="section-7" class="title-slide slide level1"
+<section id="section-8" class="title-slide slide level1"
 data-state="page-title"
 data-background-image="../images/background.png">
 <h1 data-state="page-title"
@@ -642,7 +652,7 @@ for (Class&lt;?&gt; cls : allTheClasses) {
     }
 }</code></pre>
 </section>
-<section id="section-8" class="slide level2">
+<section id="section-9" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>Anyway</p>
@@ -770,7 +780,7 @@ data-src="../images/duke-says-yes.png" /> </span></p>
 public static class First {}</code></pre>
 </section></section>
 <section>
-<section id="section-9" class="title-slide slide level1"
+<section id="section-10" class="title-slide slide level1"
 data-state="page-title"
 data-background-image="../images/background.png">
 <h1 data-state="page-title"
@@ -950,11 +960,11 @@ Interpreter (in Python)) 🔗</a></p>
     var exp = expression;
     while (true) {
         // ...
-        if (isAtom(expression)) {
+        if (isAtom(exp)) {
             return evaluateAtom(expression);
         }
-        if (isProc(expression)) {
-            exp = evaluateProc(expression); // 👈 loop
+        if (isProc(exp)) {
+            exp = evaluateProc(exp); // 👈 loop
         }
     }
 }</code></pre>
@@ -964,7 +974,7 @@ Interpreter (in Python)) 🔗</a></p>
 <p>No more stack overflow 🥳</p>
 </section></section>
 <section>
-<section id="section-10" class="title-slide slide level1"
+<section id="section-11" class="title-slide slide level1"
 data-state="page-title"
 data-background-image="../images/background.png">
 <h1 data-state="page-title"
@@ -1054,7 +1064,7 @@ return code
 <p><img data-src="../images/code-generator.png" class="bigimg" /></p>
 </section></section>
 <section>
-<section id="section-11" class="title-slide slide level1"
+<section id="section-12" class="title-slide slide level1"
 data-state="page-title"
 data-background-image="../images/background.png">
 <h1 data-state="page-title"
@@ -1066,19 +1076,19 @@ data-background-image="../images/background.png"></h1>
 <p>Now I have a quick way to produce code</p>
 </aside>
 </section>
-<section id="section-12" class="slide level2">
-<h2></h2>
-<div class="superbig">
-<p>Demo time!</p>
-</div>
-</section>
 <section id="metascript" class="slide level2">
 <h2>MetaScript</h2>
 <p><img data-src="../images/the-little-schemer.jpg"
 class="bigimg" /></p>
 </section>
-<section id="metascript-1" class="slide level2">
-<h2>MetaScript</h2>
+<section id="section-13" class="slide level2">
+<h2></h2>
+<div class="superbig">
+<p>Demo time!</p>
+</div>
+</section>
+<section id="architecture-5" class="slide level2">
+<h2>Architecture</h2>
 <p><img data-src="../images/architecture-1.png"
 class="shadow whitebackground" /></p>
 </section>
@@ -1101,7 +1111,7 @@ class="shadow whitebackground" /></p>
 <p>Trivial</p>
 </aside>
 </section>
-<section id="metascript-2" class="slide level2">
+<section id="metascript-1" class="slide level2">
 <h2>MetaScript</h2>
 <p><img data-src="../images/architecture-1.png"
 class="shadow whitebackground" /></p>
@@ -1118,7 +1128,7 @@ class="shadow whitebackground" /></p>
 <p>Non-trivial</p>
 </aside>
 </section>
-<section id="metascript-3" class="slide level2">
+<section id="metascript-2" class="slide level2">
 <h2>MetaScript</h2>
 <p><img data-src="../images/architecture-1.png"
 class="shadow whitebackground" /></p>
@@ -1144,7 +1154,7 @@ class="bigimg" /></p>
       (else
         (+ i (sum (sub1 i)))))))
 
-  (sum 5))</code></pre>
+  (sum 4))</code></pre>
 </section>
 <section id="recursion-issue-1" class="slide level2">
 <h2>Recursion issue</h2>
@@ -1155,7 +1165,7 @@ class="bigimg" /></p>
       (else
         (+ i (sum (sub1 i)))))))
 
-  (sum 5))</code></pre>
+  (sum 4))</code></pre>
 <p><code>cond has no true branch</code></p>
 </section>
 <section id="recursion-issue-2" class="slide level2">
@@ -1167,7 +1177,7 @@ class="bigimg" /></p>
       (else
         (+ i (sum (sub1 i)))))))
 
-  (sum 5))</code></pre>
+  (sum 4))</code></pre>
 <p>Invalid identifier: <code>sum</code></p>
 </section>
 <section id="recursion-issue-3" class="slide level2">
@@ -1179,23 +1189,23 @@ class="bigimg" /></p>
       (else
         (+ i (sum (sub1 i)))))))
 
-  (sum 5))</code></pre>
+  (sum 4))</code></pre>
 <p>Y Combinator ???</p>
 </section>
 <section id="recursion-issue-4" class="slide level2">
 <h2>Recursion issue</h2>
 <pre class="lisp"><code>(define (sum
-  (lambda (recurse i)
+  (lambda (i recurse)
     (cond
       ((eq? i 0) 0)
       (else
-        (+ i (recurse recurse (sub1 i)))))))
+        (+ i (recurse (sub1 i) recurse))))))
 
-  (sum sum 5))</code></pre>
+  (sum 4 sum))</code></pre>
 <p>Solution: function is parameter to itself</p>
 </section></section>
 <section>
-<section id="section-13" class="title-slide slide level1"
+<section id="section-14" class="title-slide slide level1"
 data-state="page-title"
 data-background-image="../images/background.png">
 <h1 data-state="page-title"
@@ -1243,7 +1253,7 @@ data-background-image="../images/background.png"></h1>
 </div>
 </div>
 </section>
-<section id="section-14" class="slide level2">
+<section id="section-15" class="slide level2">
 <h2></h2>
 <div class="superbig">
 <p>Demo time!</p>
@@ -1254,7 +1264,7 @@ data-background-image="../images/background.png"></h1>
 🔗</a></p>
 </div>
 </section></section>
-<section id="section-15" class="title-slide slide level1"
+<section id="section-16" class="title-slide slide level1"
 data-state="page-title"
 data-background-image="../images/background.png">
 <h1 data-state="page-title"
@@ -1265,7 +1275,7 @@ data-background-image="../images/background.png"></h1>
 </section>
 
 <section>
-<section id="section-16" class="title-slide slide level1"
+<section id="section-17" class="title-slide slide level1"
 data-state="page-title"
 data-background-image="../images/background.png">
 <h1 data-state="page-title"
@@ -1278,7 +1288,7 @@ data-background-image="../images/background.png"></h1>
 <h2>Did it escalate?</h2>
 <p><img data-src="../images/escalation.png" class="bigimg" /></p>
 </section>
-<section id="section-17" class="slide level2">
+<section id="section-18" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>Error handling</p>
@@ -1288,14 +1298,14 @@ data-background-image="../images/background.png"></h1>
 <p>“[It] expects the programmer to be perfect”</p>
 </blockquote>
 </section>
-<section id="section-18" class="slide level2">
+<section id="section-19" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>String.split</p>
 </div>
 <pre class="java"><code>&quot;&#39;Hello world&#39;&quot; → &quot;&#39;Hello&quot; + &quot;world&#39;&quot;</code></pre>
 </section>
-<section id="section-19" class="slide level2">
+<section id="section-20" class="slide level2">
 <h2></h2>
 <div class="big">
 <p>Spring integration</p>
@@ -1309,7 +1319,7 @@ data-cites="Autowired">@Autowired</span></p>
 </aside>
 </section></section>
 <section>
-<section id="section-20" class="title-slide slide level1"
+<section id="section-21" class="title-slide slide level1"
 data-state="page-title"
 data-background-image="../images/background.png">
 <h1 data-state="page-title"
@@ -1362,18 +1372,20 @@ href="https://github.com/jqno/AnnotationScript">github.com/jqno/AnnotationScript
 href="https://jqno.nl/talks/bullshitlanguage">jqno.nl/talks/bullshitlanguage</a></p></li>
 <li><p><a href="https://jqno.nl/climate">jqno.nl/climate</a></p></li>
 </ul>
+<p><img data-src="../images/annotationscript.png" height="130" /></p>
 <div class="hashtag">
 <p><img data-src="../images/twitter.png" height="30" />
 #bullshitlanguage</p>
 </div>
 </section>
-<section id="section-21" class="slide level2"
+<section id="section-22" class="slide level2"
 data-state="end-titles-page">
 <h2 data-state="end-titles-page"></h2>
 <div class="end-titles">
 <div class="big">
 <p>Fin</p>
 </div>
+<p><img data-src="../images/annotationscript.png" /></p>
 <div class="subtitle">
 <p>Image credits</p>
 </div>
