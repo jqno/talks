@@ -1455,6 +1455,8 @@ Image credits
 | [tokenizer](/talks/slides/bullshitlanguage/images/tokenizer.png) | by Jan Ouwens |
 | [turing-machine](/talks/slides/bullshitlanguage/images/turing-machine.png) | by DreamStudio (Stable Diffusion) with prompt _"A sewing machine sewing a long, straight, white ribbon that must not be bundled up"_ |
 | [vim](/talks/slides/bullshitlanguage/images/vim.png) | by Jan Ouwens |
+| <br/><br/><br/> | |
+| Enterprise Lego model | designed by [MiniTrekMocs](https://www.minitrekmocs.com/) |
 
 :::
 

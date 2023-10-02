@@ -89,6 +89,10 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 - [turing-machine](/talks/slides/bullshitlanguage/images/turing-machine.png) - by DreamStudio (Stable Diffusion) with prompt _"A sewing machine sewing a long, straight, white ribbon that must not be bundled up"_
 - [vim](/talks/slides/bullshitlanguage/images/vim.png) - by Jan Ouwens
 
+### Other credits
+
+- Enterprise Lego model - designed by [MiniTrekMocs](https://www.minitrekmocs.com/)
+
 ### Images used in previous iterations
 
 - [bored-old](/talks/slides/bullshitlanguage/images/bored-old.png) - by DALL·E with prompt _"photo of a bored white nerd with a neckbeard, sitting at a desk with a computer displaying java code, glancing at an alarm clock while surrounded by melting clocks"_ <small>(not sure where the neckbeard went 😉)</small>
