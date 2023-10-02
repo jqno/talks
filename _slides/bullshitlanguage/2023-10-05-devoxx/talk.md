@@ -7,11 +7,23 @@ controls: "false"
 center: "false"
 ---
 
-# Building a<br/>Bullshit Language { data-state="page-title" data-background-image="../images/background.png" }
+# Building a<br/>Bullsh\*t Language { data-state="page-title" data-background-image="../images/background.png" }
 
 <!-- markdownlint-disable MD003 MD033 MD045 -->
 
-![](../images/annotationscript.png){ style="height:240px;" }
+<div>
+![](../images/devoxx-logo.png){ .whitebackground .shadow height=240px }
+</div>
+
+::: hashtag
+![](../images/twitter.png){ height=30px } #bullshitlanguage
+:::
+
+# Building a<br/>Bullsh\*t Language { data-state="page-title" data-background-image="../images/background.png" }
+
+<div>
+![](../images/annotationscript.png){ height=240px }
+</div>
 
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #bullshitlanguage
