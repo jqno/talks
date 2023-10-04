@@ -1390,6 +1390,7 @@ _Any sufficiently complicated C or Fortran program contains an ad hoc, informall
 
 <span style="float:left;width:200px;margin-top:20px;">
 ![](../images/qr.png)
+![](../images/annotationscript.png){ height=130px }
 </span>
 
 - [github.com/jqno/AnnotationScript](https://github.com/jqno/AnnotationScript)
@@ -1398,7 +1399,7 @@ _Any sufficiently complicated C or Fortran program contains an ad hoc, informall
 
 - [jqno.nl/climate](https://jqno.nl/climate)
 
-![](../images/annotationscript.png){ height=130px }
+Please rate this talk in the app!
 
 ::: hashtag
 ![](../images/twitter.png){ height=30px } #bullshitlanguage

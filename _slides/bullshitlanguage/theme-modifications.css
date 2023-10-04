@@ -188,7 +188,7 @@ html.end-titles-page body {
 
 @keyframes scroll-up {
   from {
-    bottom: -70vh;
+    bottom: -90vh;
   }
   to {
     bottom: 110%;
