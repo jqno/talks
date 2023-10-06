@@ -33,7 +33,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
   <br>
   _5 October 2023_
   <br>
-  [[event](https://devoxx.be)] [[slides](/talks/slides/bullshitlanguage/2023-10-05-devoxx)]
+  [[event](https://devoxx.be)] [[slides](/talks/slides/bullshitlanguage/2023-10-05-devoxx)] [[video](https://www.youtube.com/watch?v=Q6h36S7caNU)]
 - **Brabant JUG**
   <br>
   _6 September 2022_
