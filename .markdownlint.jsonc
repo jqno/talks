@@ -1,0 +1,25 @@
+{
+  // Header style
+  "MD003": false,
+
+  // Line length
+  "MD013": false,
+
+  // Duplicate headers
+  "MD024": false,
+
+  // Single title / single H1
+  "MD025": false,
+
+  // Blanks around fences
+  "MD031": false,
+
+  // Blanks around lists
+  "MD032": false,
+
+  // Inline html
+  "MD033": { "allowed_elements": [ "br", "sub", "sup" ] },
+
+  // Alt text
+  "MD045": false
+}
