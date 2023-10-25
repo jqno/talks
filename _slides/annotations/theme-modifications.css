@@ -22,10 +22,11 @@ html body {
 }
 
 .reveal a {
-  color: #009999;
+  color: white;
 }
 
 .reveal code:not(.hljs),
+.reveal strong a,
 .reveal strong {
   color: #e4ff1a;
 }
@@ -33,6 +34,10 @@ html body {
 .reveal table th,
 .reveal table td {
   border: none;
+}
+
+.reveal li > ul {
+  margin-bottom: 50px;
 }
 
 /* Overrides for specific kinds of pages */

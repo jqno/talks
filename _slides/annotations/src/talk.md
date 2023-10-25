@@ -5,6 +5,7 @@ transition: none
 progress: "false"
 controls: "false"
 center: "false"
+autoSlide: 15000
 ---
 
 #
@@ -17,13 +18,13 @@ How
 work
 :::
 
-## My credentials
+## My **credentials**
 
 - EqualsVerifier
 - "Parallel Java"
 - AnnotationScript
 
-## What is this magic?
+## **What** is this magic?
 
 ```java
 @Entity
@@ -48,7 +49,7 @@ public class User {
 
 ## What is an annotation?
 
-- metadata for code
+- **metadata** for code
 - for code analysis
 - overpowered
 
@@ -154,6 +155,8 @@ public class iDealPaymentStrategy extends PaymentStrategy {}
 
 `@Retention(RetentionPolicy.RUNTIME)`
 
+<br/><br/>
+
 Available through reflection
 
 - Spring
@@ -162,6 +165,8 @@ Available through reflection
 ## Retention: class
 
 `@Retention(RetentionPolicy.CLASS)`
+
+<br/><br/>
 
 Written into classfile but unavailable
 
@@ -172,11 +177,13 @@ Written into classfile but unavailable
 
 `@Retention(RetentionPolicy.SOURCE)`
 
+<br/><br/>
+
 Available only at compile-time
 
 - @Override
 - @Deprecated
-- but also: Lombok
+- but also: **Lombok**
 
 ## Reading RUNTIME annotations
 
@@ -217,27 +224,46 @@ if (field.isAnnotationPresent(FieldAnnotation.class)) {
 
 ## Reading CLASS annotations
 
-- Need a tool like Byte Buddy
+- Need a tool like **Byte Buddy**
 - Requires a lot more code
 
 ## Reading SOURCE annotations
 
 - Need to write a compiler plugin
 - Oh no
-- Why would you make one
+- **Why** would you make one
 
 ## Frameworks
 
-- Spring is RUNTIME
-  - slow startup
-- Quarkus, Micronaut are RUNTIME
-  - but process at compile-time
+- Spring
+  - process at run-time
+  - **slow startup**
+- Quarkus, Micronaut
+  - but process at **compile-time**
   - slow compile
 
 ## Conclusion
 
-Todo
+Annotations are like **magic**
 
-## Thanks
+<br/>
 
-Todo: QR code
+Magic takes **a lot** of work
+
+<br/>
+
+Not just to **code**, but also at **runtime**
+
+## Thanks!
+
+![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
+
+::: small
+Jan Ouwens
+
+![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
+:::
+
+<br/>
+
+Slides at **[jqno.nl/talks](https://jqno.nl/talks)**
