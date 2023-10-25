@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>How Java annotations work</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <base target="_blank">
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../parallel-highlight.css"/>
+  <link rel="stylesheet" href="../theme-modifications.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../../assets/revealjs-3.8.0/css/print/pdf.css' : '../../../assets/revealjs-3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../../../assets/revealjs-3.8.0/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section>
+<section id="section" class="title-slide slide level1">
+<h1></h1>
+<div class="big">
+<p>How</p>
+<p><strong>Java annotations</strong></p>
+<p>work</p>
+</div>
+</section>
+<section id="my-credentials" class="slide level2">
+<h2>My <strong>credentials</strong></h2>
+<ul>
+<li>EqualsVerifier</li>
+<li>“Parallel Java”</li>
+<li>AnnotationScript</li>
+</ul>
+</section>
+<section id="what-is-this-magic" class="slide level2">
+<h2><strong>What</strong> is this magic?</h2>
+<pre class="java"><code>@Entity
+@Data
+public class User {
+    @Id
+    private Long id;
+
+    @NotNull
+    @Valid
+    private String name;
+
+    @Autowired
+    private Service service;
+
+    @Override
+    public String toString() {
+        return &quot;User: &quot; + name;
+    }
+}</code></pre>
+</section>
+<section id="what-is-an-annotation" class="slide level2">
+<h2>What is an annotation?</h2>
+<ul>
+<li><strong>metadata</strong> for code</li>
+<li>for code analysis</li>
+<li>overpowered</li>
+</ul>
+</section>
+<section id="syntax-of-an-annotation" class="slide level2">
+<h2>Syntax of an annotation</h2>
+<pre class="java"><code>@Inherited                               // optional
+@Repeatable(Container.class)             // optional
+@Retention(RetentionPolicy.RUNTIME)      // required
+@Target(ElementType.METHOD)              // required
+public @interface MyAnnotation {         // note: @interface
+
+    String value();                      // parameter
+    int count() default 0;               // parameter with default
+}</code></pre>
+</section>
+<section id="allowed-parameter-types" class="slide level2">
+<h2>Allowed parameter types</h2>
+<ul>
+<li>primitive types (<code>int</code>, <code>long</code>,
+<code>double</code>, etc)</li>
+<li><code>String</code></li>
+<li><code>Class</code></li>
+<li><code>Enum</code></li>
+<li>Another annotation</li>
+<li>1-dimensional arrays of these</li>
+</ul>
+</section>
+<section id="parameter-syntax" class="slide level2">
+<h2>Parameter syntax</h2>
+<pre class="java"><code>@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface MyAnnotation {
+
+    String value();
+    int count() default 0;
+}</code></pre>
+<pre class="java"><code>✅ @MyAnnotation(&quot;value&quot;)
+✅ @MyAnnotation(value = &quot;value&quot;)
+✅ @MyAnnotation(value = &quot;value&quot;, count = 42)
+
+⛔ @MyAnnotation(&quot;value&quot;, count = 42)
+⛔ @MyAnnotation(count = 42)</code></pre>
+</section>
+<section id="repeatable" class="slide level2">
+<h2><span class="citation"
+data-cites="Repeatable">@Repeatable</span></h2>
+<pre class="java"><code>@Repeatable(Container.class)             // @Repeatable
+public @interface Tag {
+    String value();
+}
+
+public @interface Tags {                 // container
+    Tag[] value();
+}</code></pre>
+<pre class="java"><code>@Tags({ @Tag(&quot;fast&quot;), @Tag(&quot;unit&quot;) })
+class Test {}                            // explicit container</code></pre>
+<pre class="java"><code>@Tag(&quot;fast&quot;)
+@Tag(&quot;unit&quot;)
+class Test {}                            // implicit container/still in Tags</code></pre>
+</section>
+<section id="inherited" class="slide level2">
+<h2><span class="citation" data-cites="Inherited">@Inherited</span></h2>
+<pre class="java"><code>@Inherited
+public @interface Component {}
+
+// Not @Inherited !
+public @interface Primary {}</code></pre>
+<pre class="java"><code>@Component
+@Primary
+public class PaymentStrategy {}                 // A component, and @Primary
+
+public class iDealPaymentStrategy extends PaymentStrategy {}
+                                     // Still a @Component, but not @Primary</code></pre>
+</section>
+<section id="targets" class="slide level2">
+<h2>Targets</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"> </th>
+<th style="text-align: left;"> </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">- Type</td>
+<td style="text-align: left;">- Annotation type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">- Field</td>
+<td style="text-align: left;">- Package</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">- Method</td>
+<td style="text-align: left;">- Type parameter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">- Parameter</td>
+<td style="text-align: left;">- Type use</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">- Constructor</td>
+<td style="text-align: left;">- Module</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">- Local variable</td>
+<td style="text-align: left;">- Record</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="retention-runtime" class="slide level2">
+<h2>Retention: runtime</h2>
+<p><code>@Retention(RetentionPolicy.RUNTIME)</code></p>
+<p><br/><br/></p>
+<p>Available through reflection</p>
+<ul>
+<li>Spring</li>
+<li>JPA</li>
+</ul>
+</section>
+<section id="retention-class" class="slide level2">
+<h2>Retention: class</h2>
+<p><code>@Retention(RetentionPolicy.CLASS)</code></p>
+<p><br/><br/></p>
+<p>Written into classfile but unavailable</p>
+<ul>
+<li><span class="citation" data-cites="NonNull">@NonNull</span></li>
+<li><span class="citation" data-cites="Nullable">@Nullable</span></li>
+</ul>
+</section>
+<section id="retention-source" class="slide level2">
+<h2>Retention: source</h2>
+<p><code>@Retention(RetentionPolicy.SOURCE)</code></p>
+<p><br/><br/></p>
+<p>Available only at compile-time</p>
+<ul>
+<li><span class="citation" data-cites="Override">@Override</span></li>
+<li><span class="citation"
+data-cites="Deprecated">@Deprecated</span></li>
+<li>but also: <strong>Lombok</strong></li>
+</ul>
+</section>
+<section id="reading-runtime-annotations" class="slide level2">
+<h2>Reading RUNTIME annotations</h2>
+<pre class="java"><code>@MyAnnotation(&quot;value&quot;)
+public class MyClass {}</code></pre>
+<pre class="java"><code>Class&lt;?&gt; myClass = MyClass.class;
+
+if (myClass.isAnnotationPresent(MyAnnotation.class)) {
+
+    MyAnnotation ann = myClass.getAnnotation(MyAnnotation.class);
+    System.out.println(&quot;Value from MyAnnotation: &quot; + ann.value());
+}</code></pre>
+</section>
+<section id="reading-runtime-annotations-1" class="slide level2">
+<h2>Reading RUNTIME annotations</h2>
+<pre class="java"><code>public class MyClass {
+    @MyAnnotation(&quot;value&quot;)
+    public String myField;
+}</code></pre>
+<pre class="java"><code>Class&lt;?&gt; myClass = MyClass.class;
+Field field = myClass.getField(&quot;myField&quot;);
+
+if (field.isAnnotationPresent(FieldAnnotation.class)) {
+
+    MyAnnotation ann = field.getAnnotation(MyAnnotation.class);
+    System.out.println(&quot;Value from MyAnnotation: &quot; + ann.value());
+}</code></pre>
+</section>
+<section id="reading-class-annotations" class="slide level2">
+<h2>Reading CLASS annotations</h2>
+<ul>
+<li>Need a tool like <strong>Byte Buddy</strong></li>
+<li>Requires a lot more code</li>
+</ul>
+</section>
+<section id="reading-source-annotations" class="slide level2">
+<h2>Reading SOURCE annotations</h2>
+<ul>
+<li>Need to write a compiler plugin</li>
+<li>Oh no</li>
+<li><strong>Why</strong> would you make one</li>
+</ul>
+</section>
+<section id="frameworks" class="slide level2">
+<h2>Frameworks</h2>
+<ul>
+<li>Spring
+<ul>
+<li>process at run-time</li>
+<li><strong>slow startup</strong></li>
+</ul></li>
+<li>Quarkus, Micronaut
+<ul>
+<li>but process at <strong>compile-time</strong></li>
+<li>slow compile</li>
+</ul></li>
+</ul>
+</section>
+<section id="conclusion" class="slide level2">
+<h2>Conclusion</h2>
+<p>Annotations are like <strong>magic</strong></p>
+<p><br/></p>
+<p>Magic takes <strong>a lot</strong> of work</p>
+<p><br/></p>
+<p>Not just to <strong>code</strong>, but also at
+<strong>runtime</strong></p>
+</section>
+<section id="thanks" class="slide level2">
+<h2>Thanks!</h2>
+<p><img data-src="../images/jan-ouwens.jpg" class="portrait"
+style="height:200px;" /></p>
+<div class="small">
+<p>Jan Ouwens</p>
+<p><img data-src="../images/yoink.png"
+style="height:40px;margin-top:15px;" /> │ <a
+href="https://jqno.nl/equalsverifier">EqualsVerifier</a> │ <a
+href="https://jqno.nl">jqno.nl</a> │ <img
+data-src="../images/twitter.png" style="height:30px;" /> <a
+href="https://twitter.com/jqno">jqno</a></p>
+</div>
+<p><br/></p>
+<p>Slides at <strong><a
+href="https://jqno.nl/talks">jqno.nl/talks</a></strong></p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../../../assets/revealjs-3.8.0/lib/js/head.min.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+        // Display a presentation progress bar
+        progress: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: {39:'next',37:'prev',48:()=>{Reveal.slide(0,0,0)}},
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 15000,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../../../assets/revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../assets/revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
