@@ -54,12 +54,12 @@ There is a [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRs
   <br>
   _9 November 2023_, J-Fall ignite session
   <br>
-  [[slides](../slides/annotations/2023-11-09-jfall)]
+  [[slides](/talks/slides/annotations/2023-11-09-jfall)]
 - **Upgrading Scala 2.12 to 2.13**
   <br>
   _23 August 2019_, Codestar brown-bag session
   <br>
-  [[slides](../slides/scala-2.13/2019-08-23-codestar)]
+  [[slides](/talks/slides/scala-2.13/2019-08-23-codestar)]
 - **Reactive Streams: Fast data processing**
   <br>
   _January 2016_, Ordina Code & Comedy
