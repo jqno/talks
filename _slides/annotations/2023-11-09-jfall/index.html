@@ -38,7 +38,7 @@
 <section>
 <section id="section" class="title-slide slide level1">
 <h1></h1>
-<div class="big">
+<div class="superbig">
 <p>How</p>
 <p><strong>Java annotations</strong></p>
 <p>work</p>
@@ -47,9 +47,9 @@
 <section id="my-credentials" class="slide level2">
 <h2>My <strong>credentials</strong></h2>
 <ul>
-<li>EqualsVerifier</li>
-<li>“Parallel Java”</li>
-<li>AnnotationScript</li>
+<li>✅ EqualsVerifier</li>
+<li>✅ AnnotationScript</li>
+<li>⛔ “Parallel Java”</li>
 </ul>
 </section>
 <section id="what-is-this-magic" class="slide level2">
@@ -95,15 +95,16 @@ public @interface MyAnnotation {         // note: @interface
 </section>
 <section id="allowed-parameter-types" class="slide level2">
 <h2>Allowed parameter types</h2>
+<p><br/></p>
 <ul>
 <li>primitive types (<code>int</code>, <code>long</code>,
 <code>double</code>, etc)</li>
-<li><code>String</code></li>
-<li><code>Class</code></li>
-<li><code>Enum</code></li>
-<li>Another annotation</li>
-<li>1-dimensional arrays of these</li>
+<li><code>String</code>, <code>Class</code>, <code>Enum</code></li>
+<li>Another <strong>annotation</strong></li>
+<li>1-dimensional <strong>arrays</strong> of these</li>
 </ul>
+<p><br/></p>
+<p>Must be <span class="big"><strong>CONSTANT</strong></span></p>
 </section>
 <section id="parameter-syntax" class="slide level2">
 <h2>Parameter syntax</h2>
@@ -129,10 +130,10 @@ public @interface Tag {
     String value();
 }
 
-public @interface Tags {                 // container
+public @interface Container {            // container
     Tag[] value();
 }</code></pre>
-<pre class="java"><code>@Tags({ @Tag(&quot;fast&quot;), @Tag(&quot;unit&quot;) })
+<pre class="java"><code>@Container({ @Tag(&quot;fast&quot;), @Tag(&quot;unit&quot;) })
 class Test {}                            // explicit container</code></pre>
 <pre class="java"><code>@Tag(&quot;fast&quot;)
 @Tag(&quot;unit&quot;)
@@ -199,6 +200,39 @@ public class iDealPaymentStrategy extends PaymentStrategy {}
 <li>JPA</li>
 </ul>
 </section>
+<section id="reading-runtime-annotations" class="slide level2">
+<h2>Reading <strong>RUNTIME</strong> annotations</h2>
+<pre class="java"><code>@MyAnnotation(&quot;woohoo&quot;)
+public class MyClass {}</code></pre>
+<pre class="java"><code>Class&lt;?&gt; myClass = MyClass.class;
+
+Annotation[] annotations = myClass.getDeclaredAnnotations();
+                               // Annotation[1] = { MyAnnotation(&quot;woohoo&quot;) }
+
+MyAnnotation ann = myClass.getAnnotation(MyAnnotation.class);
+                               // MyAnnotation(&quot;woohoo&quot;)
+
+ann.value()
+                               // &quot;woohoo&quot;</code></pre>
+</section>
+<section id="reading-runtime-annotations-1" class="slide level2">
+<h2>Reading <strong>RUNTIME</strong> annotations</h2>
+<pre class="java"><code>public class MyClass {
+    @MyAnnotation(&quot;wheee&quot;)
+    public String myField;
+}</code></pre>
+<pre class="java"><code>Class&lt;?&gt; myClass = MyClass.class;
+Field field = myClass.getField(&quot;myField&quot;);
+
+Annotation[] annotations = field.getDeclaredAnnotations();
+                               // Annotation[1] = { MyAnnotation(&quot;wheee&quot;) }
+
+MyAnnotation ann = field.getAnnotation(MyAnnotation.class);
+                               // MyAnnotation(&quot;wheee&quot;)
+
+ann.value()
+                               // &quot;wheee&quot;</code></pre>
+</section>
 <section id="retention-class" class="slide level2">
 <h2>Retention: class</h2>
 <p><code>@Retention(RetentionPolicy.CLASS)</code></p>
@@ -207,6 +241,13 @@ public class iDealPaymentStrategy extends PaymentStrategy {}
 <ul>
 <li><span class="citation" data-cites="NonNull">@NonNull</span></li>
 <li><span class="citation" data-cites="Nullable">@Nullable</span></li>
+</ul>
+</section>
+<section id="reading-class-annotations" class="slide level2">
+<h2>Reading <strong>CLASS</strong> annotations</h2>
+<ul>
+<li>Need a tool like <strong>Byte Buddy</strong></li>
+<li>Requires a lot more code</li>
 </ul>
 </section>
 <section id="retention-source" class="slide level2">
@@ -221,46 +262,14 @@ data-cites="Deprecated">@Deprecated</span></li>
 <li>but also: <strong>Lombok</strong></li>
 </ul>
 </section>
-<section id="reading-runtime-annotations" class="slide level2">
-<h2>Reading RUNTIME annotations</h2>
-<pre class="java"><code>@MyAnnotation(&quot;value&quot;)
-public class MyClass {}</code></pre>
-<pre class="java"><code>Class&lt;?&gt; myClass = MyClass.class;
-
-if (myClass.isAnnotationPresent(MyAnnotation.class)) {
-
-    MyAnnotation ann = myClass.getAnnotation(MyAnnotation.class);
-    System.out.println(&quot;Value from MyAnnotation: &quot; + ann.value());
-}</code></pre>
-</section>
-<section id="reading-runtime-annotations-1" class="slide level2">
-<h2>Reading RUNTIME annotations</h2>
-<pre class="java"><code>public class MyClass {
-    @MyAnnotation(&quot;value&quot;)
-    public String myField;
-}</code></pre>
-<pre class="java"><code>Class&lt;?&gt; myClass = MyClass.class;
-Field field = myClass.getField(&quot;myField&quot;);
-
-if (field.isAnnotationPresent(FieldAnnotation.class)) {
-
-    MyAnnotation ann = field.getAnnotation(MyAnnotation.class);
-    System.out.println(&quot;Value from MyAnnotation: &quot; + ann.value());
-}</code></pre>
-</section>
-<section id="reading-class-annotations" class="slide level2">
-<h2>Reading CLASS annotations</h2>
-<ul>
-<li>Need a tool like <strong>Byte Buddy</strong></li>
-<li>Requires a lot more code</li>
-</ul>
-</section>
 <section id="reading-source-annotations" class="slide level2">
-<h2>Reading SOURCE annotations</h2>
+<h2>Reading <strong>SOURCE</strong> annotations</h2>
 <ul>
-<li>Need to write a compiler plugin</li>
+<li>Need to be the compiler</li>
+<li>Or write a <strong>compiler plugin</strong></li>
 <li>Oh no</li>
-<li><strong>Why</strong> would you make one</li>
+<li>Why would you do that?</li>
+<li>So much <strong>WHY</strong></li>
 </ul>
 </section>
 <section id="frameworks" class="slide level2">
@@ -268,13 +277,13 @@ if (field.isAnnotationPresent(FieldAnnotation.class)) {
 <ul>
 <li>Spring
 <ul>
-<li>process at run-time</li>
+<li>process at <strong>run-time</strong></li>
 <li><strong>slow startup</strong></li>
 </ul></li>
 <li>Quarkus, Micronaut
 <ul>
-<li>but process at <strong>compile-time</strong></li>
-<li>slow compile</li>
+<li>process at <strong>compile-time</strong></li>
+<li>has to process files anyway</li>
 </ul></li>
 </ul>
 </section>
@@ -282,10 +291,10 @@ if (field.isAnnotationPresent(FieldAnnotation.class)) {
 <h2>Conclusion</h2>
 <p>Annotations are like <strong>magic</strong></p>
 <p><br/></p>
-<p>Magic takes <strong>a lot</strong> of work</p>
-<p><br/></p>
-<p>Not just to <strong>code</strong>, but also at
-<strong>runtime</strong></p>
+<ul>
+<li>They <strong>do</strong> a lot of work</li>
+<li>They <strong>require</strong> a lot of work</li>
+</ul>
 </section>
 <section id="thanks" class="slide level2">
 <h2>Thanks!</h2>

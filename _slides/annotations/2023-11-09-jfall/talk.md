@@ -10,7 +10,7 @@ autoSlide: 15000
 
 #
 
-::: big
+::: superbig
 How
 
 **Java annotations**
@@ -20,9 +20,9 @@ work
 
 ## My **credentials**
 
-- EqualsVerifier
-- "Parallel Java"
-- AnnotationScript
+- ✅ EqualsVerifier
+- ✅ AnnotationScript
+- ⛔ "Parallel Java"
 
 ## **What** is this magic?
 
@@ -69,12 +69,16 @@ public @interface MyAnnotation {         // note: @interface
 
 ## Allowed parameter types
 
+<br/>
+
 - primitive types (`int`, `long`, `double`, etc)
-- `String`
-- `Class`
-- `Enum`
-- Another annotation
-- 1-dimensional arrays of these
+- `String`, `Class`, `Enum`
+- Another **annotation**
+- 1-dimensional **arrays** of these
+
+<br/>
+
+Must be <span class="big">**CONSTANT**</span>
 
 ## Parameter syntax
 
@@ -105,13 +109,13 @@ public @interface Tag {
     String value();
 }
 
-public @interface Tags {                 // container
+public @interface Container {            // container
     Tag[] value();
 }
 ```
 
 ```java
-@Tags({ @Tag("fast"), @Tag("unit") })
+@Container({ @Tag("fast"), @Tag("unit") })
 class Test {}                            // explicit container
 ```
 
@@ -162,6 +166,49 @@ Available through reflection
 - Spring
 - JPA
 
+## Reading **RUNTIME** annotations
+
+```java
+@MyAnnotation("woohoo")
+public class MyClass {}
+```
+
+```java
+Class<?> myClass = MyClass.class;
+
+Annotation[] annotations = myClass.getDeclaredAnnotations();
+                               // Annotation[1] = { MyAnnotation("woohoo") }
+
+MyAnnotation ann = myClass.getAnnotation(MyAnnotation.class);
+                               // MyAnnotation("woohoo")
+
+ann.value()
+                               // "woohoo"
+```
+
+## Reading **RUNTIME** annotations
+
+```java
+public class MyClass {
+    @MyAnnotation("wheee")
+    public String myField;
+}
+```
+
+```java
+Class<?> myClass = MyClass.class;
+Field field = myClass.getField("myField");
+
+Annotation[] annotations = field.getDeclaredAnnotations();
+                               // Annotation[1] = { MyAnnotation("wheee") }
+
+MyAnnotation ann = field.getAnnotation(MyAnnotation.class);
+                               // MyAnnotation("wheee")
+
+ann.value()
+                               // "wheee"
+```
+
 ## Retention: class
 
 `@Retention(RetentionPolicy.CLASS)`
@@ -172,6 +219,11 @@ Written into classfile but unavailable
 
 - @NonNull
 - @Nullable
+
+## Reading **CLASS** annotations
+
+- Need a tool like **Byte Buddy**
+- Requires a lot more code
 
 ## Retention: source
 
@@ -185,62 +237,22 @@ Available only at compile-time
 - @Deprecated
 - but also: **Lombok**
 
-## Reading RUNTIME annotations
+## Reading **SOURCE** annotations
 
-```java
-@MyAnnotation("value")
-public class MyClass {}
-```
-
-```java
-Class<?> myClass = MyClass.class;
-
-if (myClass.isAnnotationPresent(MyAnnotation.class)) {
-
-    MyAnnotation ann = myClass.getAnnotation(MyAnnotation.class);
-    System.out.println("Value from MyAnnotation: " + ann.value());
-}
-```
-
-## Reading RUNTIME annotations
-
-```java
-public class MyClass {
-    @MyAnnotation("value")
-    public String myField;
-}
-```
-
-```java
-Class<?> myClass = MyClass.class;
-Field field = myClass.getField("myField");
-
-if (field.isAnnotationPresent(FieldAnnotation.class)) {
-
-    MyAnnotation ann = field.getAnnotation(MyAnnotation.class);
-    System.out.println("Value from MyAnnotation: " + ann.value());
-}
-```
-
-## Reading CLASS annotations
-
-- Need a tool like **Byte Buddy**
-- Requires a lot more code
-
-## Reading SOURCE annotations
-
-- Need to write a compiler plugin
+- Need to be the compiler
+- Or write a **compiler plugin**
 - Oh no
-- **Why** would you make one
+- Why would you do that?
+- So much **WHY**
 
 ## Frameworks
 
 - Spring
-  - process at run-time
+  - process at **run-time**
   - **slow startup**
 - Quarkus, Micronaut
-  - but process at **compile-time**
-  - slow compile
+  - process at **compile-time**
+  - has to process files anyway
 
 ## Conclusion
 
@@ -248,11 +260,8 @@ Annotations are like **magic**
 
 <br/>
 
-Magic takes **a lot** of work
-
-<br/>
-
-Not just to **code**, but also at **runtime**
+- They **do** a lot of work
+- They **require** a lot of work
 
 ## Thanks!
 
