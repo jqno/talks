@@ -144,14 +144,30 @@ public class iDealPaymentStrategy extends PaymentStrategy {}
 
 ## Targets
 
-&nbsp;            &nbsp;
-----------------  -----------------
-- Type            - Annotation type
-- Field           - Package
-- Method          - Type parameter
-- Parameter       - Type use
-- Constructor     - Module
-- Local variable  - Record
+`@Target({ ElementType.FIELD, ElementType.METHOD })`
+
+::: supersmall
+&nbsp;
+:::
+
+::: twocolumn
+<div>
+- Type
+- Field
+- Method
+- Parameter
+- Constructor
+- Local variable
+</div>
+<div>
+- Annotation type
+- Package
+- Type parameter
+- Type use
+- Module
+- Record
+</div>
+:::
 
 ## Retention: runtime
 

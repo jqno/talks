@@ -148,6 +148,15 @@ html.page-title .reveal h2 {
 
 /* Various */
 
+.twocolumn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.twocolumn > div {
+  flex: 1;
+}
+
 .subtitle {
   font-family: "TilburgsAnsText";
 }
