@@ -44,93 +44,27 @@ html body {
 
 .text-shadow,
 html.page-title .reveal,
-html.page-title .reveal a,
 html.page-title .reveal h1,
 html.page-title .reveal h2 {
   color: #DDDDDD;
+}
+
+.text-shadow,
+html.page-title .reveal,
+html.page-title .reveal a,
+html.page-title .reveal h1,
+html.page-title .reveal h2 {
   text-shadow: 0 1px 0 #666, 0 2px 0 #a6a6a6, 0 3px 0 #555, 0 4px 0 #555, 0 5px 0 #334, 0 6px 1px rgba(0, 0, 0, 0.2), 0 0 5px rgb(0, 0, 0), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 
 /* Images */
 
-.reveal section img.shadow {
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
-}
-
-.reveal section img.regularimg {
-  height: 9em;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
-}
-
-.reveal section img.bigimg {
-  height: 12em;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
-}
-
-.reveal section img.lineimg {
-  height: 1em;
-}
-
-.reveal section img.whitebackground {
-  background: white;
-}
-
 .reveal section img {
   background: none;
   border: 0;
   vertical-align: middle;
   box-shadow: 0px 0px 0px;
-}
-
-
-/* Stacked images */
-
-.stacked-image-container {
-  position: relative;
-  height: 12em;
-}
-
-.stacked-image {
-  position: absolute;
-  top: 50%;
-  transform-origin: center center;
-  transition: all 0.5s ease;
-}
-
-.stacked-image:nth-child(1) {
-  z-index: 1;
-  transform: translate(-50%, -50%) rotate(0deg);
-}
-
-.stacked-image:nth-child(2) {
-  z-index: 2;
-  transform: translate(-50%, -50%) rotate(5deg);
-}
-
-.stacked-image:nth-child(3) {
-  z-index: 3;
-  transform: translate(-50%, -50%) rotate(-3deg);
-}
-
-.stacked-image:nth-child(4) {
-  z-index: 4;
-  transform: translate(-50%, -50%) rotate(3deg);
-}
-
-.stacked-image:nth-child(5) {
-  z-index: 5;
-  transform: translate(-50%, -50%) rotate(-6deg);
-}
-
-.stacked-image:nth-child(6) {
-  z-index: 6;
-  transform: translate(-50%, -50%) rotate(-1deg);
-}
-
-.stacked-image:nth-child(7) {
-  z-index: 7;
-  transform: translate(-50%, -50%) rotate(4deg);
 }
 
 
@@ -155,10 +89,6 @@ html.page-title .reveal h2 {
 
 .twocolumn > div {
   flex: 1;
-}
-
-.subtitle {
-  font-family: "TilburgsAnsText";
 }
 
 .superbig {
@@ -191,41 +121,4 @@ html.page-title .reveal h2 {
   font-size: 0.7em;
   position: fixed;
   bottom: 25px;
-}
-
-
-/* End titles */
-
-html.end-titles-page body {
-  background-color: black;
-}
-
-.end-titles {
-  background-color: black;
-  color: white;
-  overflow: hidden;
-  height: 100%;
-  position: relative;
-  animation: scroll-up 10s linear 1 forwards;
-}
-
-@keyframes scroll-up {
-  from {
-    bottom: -90vh;
-  }
-  to {
-    bottom: 110%;
-  }
-}
-
-.end-titles table {
-  width: 60%;
-}
-
-.end-titles table td {
-  border: none;
-}
-
-.end-titles table td a {
-  color: #1caf55;
 }
