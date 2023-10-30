@@ -8,15 +8,13 @@ center: "false"
 autoSlide: 15000
 ---
 
-#
+# { data-state="page-title" data-background-image="../images/jfall-background.png" }
 
 ::: superbig
-How
-
-**Java annotations**
-
-work
+How<br/>**Java annotations**<br/>work
 :::
+
+![](../images/jfall.png){ style="height:100px;" }
 
 ## My **credentials**
 
@@ -263,7 +261,7 @@ Annotations are like **magic**
 - They **do** a lot of work
 - They **require** a lot of work
 
-## Thanks!
+## Thanks! { data-state="page-title" data-background-image="../images/jfall-background.png" }
 
 ![](../images/jan-ouwens.jpg){ .portrait style="height:200px;" }
 
@@ -271,8 +269,8 @@ Annotations are like **magic**
 Jan Ouwens
 
 ![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
-:::
 
-<br/>
+![](../images/jfall.png){ style="height:40px;" }
+:::
 
 Slides at **[jqno.nl/talks](https://jqno.nl/talks)**
