@@ -54,14 +54,10 @@ public class User {
 ## Syntax of an annotation
 
 ```java
-@Inherited                               // optional
-@Repeatable(Container.class)             // optional
-@Retention(RetentionPolicy.RUNTIME)      // required
-@Target(ElementType.METHOD)              // required
-public @interface MyAnnotation {         // note: @interface
+@Target(ElementType.METHOD)
+public @interface MyAnnotation {
 
-    String value();                      // parameter
-    int count() default 0;               // parameter with default
+    String value();
 }
 ```
 
@@ -81,8 +77,6 @@ Must be <span class="big">**CONSTANT**</span>
 ## Parameter syntax
 
 ```java
-@Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)
 public @interface MyAnnotation {
 
     String value();
@@ -91,56 +85,23 @@ public @interface MyAnnotation {
 ```
 
 ```java
-✅ @MyAnnotation("value")
-✅ @MyAnnotation(value = "value")
-✅ @MyAnnotation(value = "value", count = 42)
+✅ @MyAnnotation("x")
+✅ @MyAnnotation(value = "x")
+✅ @MyAnnotation(value = "x", count = 42)
 
-⛔ @MyAnnotation("value", count = 42)
+⛔ @MyAnnotation("x", count = 42)
 ⛔ @MyAnnotation(count = 42)
 ```
 
-## @Repeatable
+## Meta-annotations
 
-```java
-@Repeatable(Container.class)             // @Repeatable
-public @interface Tag {
-    String value();
-}
-
-public @interface Container {            // container
-    Tag[] value();
-}
-```
-
-```java
-@Container({ @Tag("fast"), @Tag("unit") })
-class Test {}                            // explicit container
-```
-
-```java
-@Tag("fast")
-@Tag("unit")
-class Test {}                            // implicit container/still in Tags
-```
-
-## @Inherited
-
-```java
-@Inherited
-public @interface Component {}
-
-// Not @Inherited !
-public @interface Primary {}
-```
-
-```java
-@Component
-@Primary
-public class PaymentStrategy {}                 // A component, and @Primary
-
-public class iDealPaymentStrategy extends PaymentStrategy {}
-                                     // Still a @Component, but not @Primary
-```
+&nbsp;        &nbsp; &nbsp;
+------------- ------ -------------------------
+`@Target`     🟢     where does it go
+`@Retention`  🟢     how is it stored
+`@Documented` ⭕     put it in Javadoc
+`@Repeatable` ⭕     use it multiple times
+`@Inherited`  ⭕     also put it on subclasses
 
 ## Targets
 

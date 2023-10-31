@@ -85,14 +85,10 @@ public class User {
 </section>
 <section id="syntax-of-an-annotation" class="slide level2">
 <h2>Syntax of an annotation</h2>
-<pre class="java"><code>@Inherited                               // optional
-@Repeatable(Container.class)             // optional
-@Retention(RetentionPolicy.RUNTIME)      // required
-@Target(ElementType.METHOD)              // required
-public @interface MyAnnotation {         // note: @interface
+<pre class="java"><code>@Target(ElementType.METHOD)
+public @interface MyAnnotation {
 
-    String value();                      // parameter
-    int count() default 0;               // parameter with default
+    String value();
 }</code></pre>
 </section>
 <section id="allowed-parameter-types" class="slide level2">
@@ -110,50 +106,56 @@ public @interface MyAnnotation {         // note: @interface
 </section>
 <section id="parameter-syntax" class="slide level2">
 <h2>Parameter syntax</h2>
-<pre class="java"><code>@Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)
-public @interface MyAnnotation {
+<pre class="java"><code>public @interface MyAnnotation {
 
     String value();
     int count() default 0;
 }</code></pre>
-<pre class="java"><code>✅ @MyAnnotation(&quot;value&quot;)
-✅ @MyAnnotation(value = &quot;value&quot;)
-✅ @MyAnnotation(value = &quot;value&quot;, count = 42)
+<pre class="java"><code>✅ @MyAnnotation(&quot;x&quot;)
+✅ @MyAnnotation(value = &quot;x&quot;)
+✅ @MyAnnotation(value = &quot;x&quot;, count = 42)
 
-⛔ @MyAnnotation(&quot;value&quot;, count = 42)
+⛔ @MyAnnotation(&quot;x&quot;, count = 42)
 ⛔ @MyAnnotation(count = 42)</code></pre>
 </section>
-<section id="repeatable" class="slide level2">
-<h2><span class="citation"
-data-cites="Repeatable">@Repeatable</span></h2>
-<pre class="java"><code>@Repeatable(Container.class)             // @Repeatable
-public @interface Tag {
-    String value();
-}
-
-public @interface Container {            // container
-    Tag[] value();
-}</code></pre>
-<pre class="java"><code>@Container({ @Tag(&quot;fast&quot;), @Tag(&quot;unit&quot;) })
-class Test {}                            // explicit container</code></pre>
-<pre class="java"><code>@Tag(&quot;fast&quot;)
-@Tag(&quot;unit&quot;)
-class Test {}                            // implicit container/still in Tags</code></pre>
-</section>
-<section id="inherited" class="slide level2">
-<h2><span class="citation" data-cites="Inherited">@Inherited</span></h2>
-<pre class="java"><code>@Inherited
-public @interface Component {}
-
-// Not @Inherited !
-public @interface Primary {}</code></pre>
-<pre class="java"><code>@Component
-@Primary
-public class PaymentStrategy {}                 // A component, and @Primary
-
-public class iDealPaymentStrategy extends PaymentStrategy {}
-                                     // Still a @Component, but not @Primary</code></pre>
+<section id="meta-annotations" class="slide level2">
+<h2>Meta-annotations</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"> </th>
+<th> </th>
+<th style="text-align: left;"> </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>@Target</code></td>
+<td>🟢</td>
+<td style="text-align: left;">where does it go</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>@Retention</code></td>
+<td>🟢</td>
+<td style="text-align: left;">how is it stored</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>@Documented</code></td>
+<td>⭕</td>
+<td style="text-align: left;">put it in Javadoc</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>@Repeatable</code></td>
+<td>⭕</td>
+<td style="text-align: left;">use it multiple times</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>@Inherited</code></td>
+<td>⭕</td>
+<td style="text-align: left;">also put it on subclasses</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="targets" class="slide level2">
 <h2>Targets</h2>
