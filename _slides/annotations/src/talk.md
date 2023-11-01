@@ -97,13 +97,21 @@ public @interface MyAnnotation {
 
 ## Meta-annotations
 
-&nbsp;        &nbsp; &nbsp;
-------------- ------ -------------------------
-`@Target`     🟢     where does it go
-`@Retention`  🟢     how is it stored
-`@Documented` ⭕     put it in Javadoc
-`@Repeatable` ⭕     use it multiple times
-`@Inherited`  ⭕     also put it on subclasses
+&nbsp;        &nbsp;
+------------- ------
+`@Target`     🟢
+`@Retention`  🟢
+`@Documented` ⭕
+`@Repeatable` ⭕
+`@Inherited`  ⭕
+
+## Optional meta-annotations
+
+&nbsp;        &nbsp;
+------------- -------------------------
+`@Documented` put it in Javadoc
+`@Repeatable` use it multiple times
+`@Inherited`  also put it on subclasses
 
 ## Targets
 
