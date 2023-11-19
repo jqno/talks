@@ -332,7 +332,7 @@ Transitive dependencies may or may not be compatible
 
 # Questions?
 
-![](images/qr.png)
+![](../images/qr.png)
 
 @jqno
 
