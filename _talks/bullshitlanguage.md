@@ -29,6 +29,11 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 
 ## Deliveries
 
+- **RotterdamJUG**
+  <br>
+  _27 November 2023_
+  <br>
+  [[event](https://www.meetup.com/rotterdamjug/events/297195768/)] [[slides](/talks/slides/bullshitlanguage/2023-11-27-rotterdamjug)]
 - **Devoxx Belgium**
   <br>
   _5 October 2023_
