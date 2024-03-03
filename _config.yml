@@ -27,7 +27,7 @@ search: true
 
 author:
   name             : "Jan Ouwens"
-  avatar           : "assets/avatar.jpg"
+  avatar           : "assets/avatar.webp"
   bio              : "Slides for my talks 🎤"
   location         : "The Netherlands"
   github           : jqno
@@ -61,7 +61,7 @@ defaults:
       layout: single
       author_profile: true
       header:
-        og_image: "assets/devoxx.jpg"
+        og_image: "assets/devoxx.webp"
 
 collections:
   talks:
