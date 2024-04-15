@@ -54,7 +54,7 @@ There is a [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRs
   <br>
   _9 November 2023_, J-Fall ignite session
   <br>
-  [[slides](/talks/slides/annotations/2023-11-09-jfall)]
+  [[slides](/talks/slides/annotations/2023-11-09-jfall)] [[video](https://youtube.com/watch?v=M-tz0pDtMJk&t=1181)]
 - **Upgrading Scala 2.12 to 2.13**
   <br>
   _23 August 2019_, Codestar brown-bag session
