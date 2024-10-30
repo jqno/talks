@@ -102,12 +102,20 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 :::
 
 ## Weird project: Lego
 
 ::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 :::
@@ -115,6 +123,7 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
@@ -123,6 +132,7 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
@@ -132,6 +142,7 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
@@ -142,6 +153,7 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
@@ -153,6 +165,7 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ## Weird project: Lego
 
 ::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
 ![](../images/lego-1.jpg){ .bigimg .stacked-image }
 ![](../images/lego-2.jpg){ .bigimg .stacked-image }
@@ -160,6 +173,20 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ![](../images/lego-4.png){ .bigimg .stacked-image }
 ![](../images/lego-5.png){ .bigimg .stacked-image }
 ![](../images/lego-6.jpg){ .bigimg .stacked-image }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-1.jpg){ .bigimg .stacked-image }
+![](../images/lego-2.jpg){ .bigimg .stacked-image }
+![](../images/lego-3.png){ .bigimg .stacked-image }
+![](../images/lego-4.png){ .bigimg .stacked-image }
+![](../images/lego-5.png){ .bigimg .stacked-image }
+![](../images/lego-6.jpg){ .bigimg .stacked-image }
+![](../images/lego-tilburg.png){ .bigimg .stacked-image .whitebackground }
 :::
 
 ## Weird project: Parallel Java
