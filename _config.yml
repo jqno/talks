@@ -32,6 +32,7 @@ author:
   location         : "The Netherlands"
   github           : jqno
   twitter          : jqno
+  bluesky          : "https://bsky.app/profile/jqno.bsky.social"
   mastodon         : "https://mastodon.online/@jqno"
   youtube          : "https://www.youtube.com/playlist?list=PLBVdSBwCyRsE7zi7YhfYWua1Jzi_iv1GQ"
 
@@ -47,6 +48,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/jqno"
+    - label: "Bluesky"
+      icon: "fab fa-fw fa-bluesky"
+      url: "https://bsky.app/profile/jqno.bsky.social"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
       url: "https://mastodon.online/@jqno"
@@ -72,7 +76,7 @@ collections:
     permalink: /slides/:path/
 
 # Build settings
-remote_theme: mmistakes/minimal-mistakes@4.20.2
+remote_theme: mmistakes/minimal-mistakes@4.26.2
 plugins:
   - jekyll-feed
   - jekyll-include-cache
