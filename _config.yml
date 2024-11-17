@@ -32,7 +32,7 @@ author:
   location         : "The Netherlands"
   github           : jqno
   twitter          : jqno
-  bluesky          : "https://bsky.app/profile/jqno.bsky.social"
+  bluesky          : "https://bsky.app/profile/jqno.nl"
   mastodon         : "https://mastodon.online/@jqno"
   youtube          : "https://www.youtube.com/playlist?list=PLBVdSBwCyRsE7zi7YhfYWua1Jzi_iv1GQ"
 
@@ -50,7 +50,7 @@ footer:
       url: "https://twitter.com/jqno"
     - label: "Bluesky"
       icon: "fab fa-fw fa-bluesky"
-      url: "https://bsky.app/profile/jqno.bsky.social"
+      url: "https://bsky.app/profile/jqno.nl"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
       url: "https://mastodon.online/@jqno"
