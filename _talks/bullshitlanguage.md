@@ -33,7 +33,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
   <br>
   _7 November 2024_
   <br>
-  [[event](https://jfall.nl/)] [[slides](/talks/slides/bullshitlanguage/2024-11-07-jfall)]
+  [[event](https://jfall.nl/)] [[slides](/talks/slides/bullshitlanguage/2024-11-07-jfall)] [[video](https://www.youtube.com/watch?v=mzMd45NpfN0)]
 - **RotterdamJUG**
   <br>
   _27 November 2023_
