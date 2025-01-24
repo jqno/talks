@@ -21,22 +21,93 @@ reduce $ and CO<sub>2</sub> to improve<br/>performance 🚀 and joy 🥳
 
 # The un-fun bit
 
-<!--The climate emergency-->
-<!--IT's part in the climate emergency-->
+Gebruik Figure 1 uit [K.D. Burke et al. Pliocene and Eocene provide best analogs for near-future climates. PNAS, 2018](https://www.pnas.org/doi/full/10.1073/pnas.1809600115) ?
 
-# My place in this
+## The costs in 2050
 
-<!-- Enough doom & gloom, let's talk about something fun: me! -->
-<!-- Grew up in 80s; constraints: 640k, Game23 with 64k jar; Moore's law -->
+- $ 38 000 000 000 000 per year (???)
+- 19% loss to world economy
+
+::: small
+Source: [M. Kotz, A. Levermann & L. Wenz. The economic commitment of climate change. Nature 628, 551–557 (2024)](https://doi.org/10.1038/s41586-024-07219-0)
+:::
+
+## IT's contribution
+
+- Datacenters: ±1% of global CO₂
+- Datacenters: ±1-1.5% of global energy
+- Networking: ±1-1.5% of global energy
+
+::: small
+Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 2025](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks)
+:::
+
+## IT's contribution
+
+is still growing
+
+## Enough doom & gloom
+
+Let's talk about something fun
+
+## Jan Ouwens { data-state="page-title" data-background-image="../images/background.png" }
+
+![](../images/jan-ouwens.jpg){ .shadow style="height:200px;" }
+
+&nbsp;
+
+![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ [@jqno.nl](https://bsky.app/profile/jqno.nl)
 
 # Personal things
 
-<!-- Ecosia -->
-<!-- phone -->
+~~Google~~ Ecosia
+
+# Personal things
+
+![](../images/phone-repair.webp){ .bigimg }
+
+# My place in this
+
+::: superbig
+80s
+:::
+
+# My place in this
+
+"640k ought to be enough for everyone"
+
+# My place in this
+
+Game23
+
+# Moore's law
+
+Machines got faster
+
+Software got slower!?
+
+# Oulipo
 
 # Developers, developers, developers
 
 <!-- our position  -->
+
+---
+::: big
+The next slide
+
+is the most
+
+important one
+:::
+
+# Economic model of green software
+
+cloud bill ↓ == footprint ↓
+
+::: small
+Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In Computer Science. 2023](https://hollycummins.com/the-vroom-model-naming/0)
+:::
 
 # Stop chasing nines
 
@@ -50,34 +121,35 @@ reduce $ and CO<sub>2</sub> to improve<br/>performance 🚀 and joy 🥳
 
 🪶
 
+# Enable build caching
+
+📁📁
+
 # Conclusion
 
-## Our customers
+That most important slide one more time!
 
-::: superbig
-🤑
-:::
+## Economic model of green software
 
-## Our software
+cloud bill ↓ == footprint ↓
 
-::: superbig
-🚀
-:::
+## Results
 
-## We
-
-::: superbig
-🥳
-:::
+- 🤑 Our bosses
+- 🚀 Our software
+- 💚 The world
+- 🥳 We
 
 # Thank you
 
 <!-- QR code -->
 
 <span style="float:left;width:200px;margin-top:20px;">
-![](../images/qr.png)
+![](../images/qr.jpg)
 </span>
 
-- ❌9️⃣
-- 🐋📉
-- 🪶
+cloud bill ↓
+
+==
+
+footprint ↓
