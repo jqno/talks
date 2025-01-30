@@ -60,6 +60,10 @@ Let's talk about something fun
 
 # Personal things
 
+I'm not perfect :(
+
+# Personal things
+
 ~~Google~~ Ecosia
 
 # Personal things
@@ -90,9 +94,10 @@ Software got slower!?
 
 # Developers, developers, developers
 
-<!-- our position  -->
+We can influence bigger things
 
 ---
+
 ::: big
 The next slide
 
@@ -111,19 +116,58 @@ Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In
 
 # Stop chasing nines
 
-❌9️⃣
+<!-- architectuur met dubbel uitgevoerde services en een load balancer -->
+
+# Stop chasing nines
+
+<!-- christelijke website -->
+<!-- bricklink -->
+
+# Stop chasing nines
+
+<!-- eenvoudige architectuur -->
 
 # Make small Docker images
 
-🐋📉
+- Need to be stored <!-- disk to CO2 -->
+- Need to be transmitted <!-- network to CO2 -->
 
 # Run SQLite in prod
 
-🪶
+<!-- classic architecture -->
+<!-- sqlite architecture -->
+
+# Run SQLite in prod
+
+<!-- Ruby <3 sqlite -->
+
+# Make small Docker images
+
+Hello world: 512MB
+
+. . .
+
+Multi-stage: 426MB
+
+. . .
+
+Minimal base: 202MB
+
+. . .
+
+JLink: 115MB
+
+. . .
+
+GraalVM: 89MB
+
+. . .
+
+Single binary: 16MB
 
 # Enable build caching
 
-📁📁
+<!-- gif van EqualsVerifier die aan het bouwen is -->
 
 # Conclusion
 
@@ -138,18 +182,12 @@ cloud bill ↓ == footprint ↓
 - 🤑 Our bosses
 - 🚀 Our software
 - 💚 The world
-- 🥳 We
+- 🥳 Us
 
 # Thank you
-
-<!-- QR code -->
 
 <span style="float:left;width:200px;margin-top:20px;">
 ![](../images/qr.jpg)
 </span>
 
-cloud bill ↓
-
-==
-
-footprint ↓
+<!-- That most important slide _again_ -->
