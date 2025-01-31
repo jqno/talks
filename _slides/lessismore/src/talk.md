@@ -13,15 +13,13 @@ center: "false"
 
 reduce $ and CO<sub>2</sub> to improve<br/>performance 🚀 and joy 🥳
 
-# Less is more
-
-<br/>
-
-reduce $ and CO<sub>2</sub> to improve<br/>performance 🚀 and joy 🥳
-
 # The un-fun bit
 
-Gebruik Figure 1 uit [K.D. Burke et al. Pliocene and Eocene provide best analogs for near-future climates. PNAS, 2018](https://www.pnas.org/doi/full/10.1073/pnas.1809600115) ?
+![](../images/climate-change.webp)
+
+::: small
+Source: [K.D. Burke et al. Pliocene and Eocene provide best analogs for near-future climates. PNAS, 2018](https://www.pnas.org/doi/full/10.1073/pnas.1809600115)
+:::
 
 ## The costs in 2050
 
@@ -46,7 +44,7 @@ Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 202
 
 is still growing
 
-## Enough doom & gloom
+# Enough doom & gloom
 
 Let's talk about something fun
 
@@ -58,39 +56,51 @@ Let's talk about something fun
 
 ![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ [@jqno.nl](https://bsky.app/profile/jqno.nl)
 
-# Personal things
+## Personal things
 
-I'm not perfect :(
+I'm not perfect 😢
 
-# Personal things
+## Personal things
 
 ~~Google~~ Ecosia
 
-# Personal things
+## Personal things
 
 ![](../images/phone-repair.webp){ .bigimg }
 
-# My place in this
+## My place in this
 
 ::: superbig
 80s
 :::
 
-# My place in this
+## My place in this
+
+::: superbig
+90s
+:::
+
+## My place in this
+
+::: superbig
+2000s
+:::
+
+## My place in this
 
 "640k ought to be enough for everyone"
 
-# My place in this
+## My place in this
 
-Game23
+<video data-autoplay src="../images/game23.webm"/>
 
-# Moore's law
+## Moore's law
 
 Machines got faster
 
 Software got slower!?
 
-# Oulipo
+## Oulipo
 
 # Developers, developers, developers
 
@@ -106,42 +116,92 @@ is the most
 important one
 :::
 
-# Economic model of green software
+## Economic model of green software
 
-cloud bill ↓ == footprint ↓
+![](../images/economic-model.webp)
 
 ::: small
 Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In Computer Science. 2023](https://hollycummins.com/the-vroom-model-naming/0)
 :::
 
-# Stop chasing nines
+# So what can we do!?
+
+## Stop chasing nines
 
 <!-- architectuur met dubbel uitgevoerde services en een load balancer -->
 
-# Stop chasing nines
+## Stop chasing nines
 
-<!-- christelijke website -->
+<span style="float:left;width:200px;margin-top:20px;">
+![](../images/rd-doordeweek.webp)
+</span>
+
+<span style="float:right;width:200px;margin-top:20px;">
+![](../images/rd-zondag.webp)
+</span>
+
+<br/><br/>
+
+← Monday
+
+<br/>
+
+Sunday →
+
+## Stop chasing nines
+
 <!-- bricklink -->
 
-# Stop chasing nines
+## Stop chasing nines
 
 <!-- eenvoudige architectuur -->
 
-# Make small Docker images
+## Re-think your DB
+
+<!-- classic architecture -->
+
+## Re-think your DB
+
+::: big
+![](../images/sqlite.svg){ style="height:1.4em;" }
+:::
+
+## Re-think your DB
+
+- Stable
+- Reliable
+- Backward-compatible
+- Billions(!) of deploys
+
+## Re-think your DB
+
+<!-- sqlite architecture -->
+
+## Re-think your DB
+
+Pros:
+- No DB server
+- Simplicity
+
+Cons:
+- Must carefully tweak defaults
+- Only one concurrent write
+- Must arrange for backups
+
+## Re-think your DB
+
+<br/>
+
+::: big
+![](../images/rails.png){ style="height:1.4em;" } ❤️ ![](../images/sqlite.svg){ style="height:1.4em;" }
+:::
+
+## Make small Docker images
 
 - Need to be stored <!-- disk to CO2 -->
 - Need to be transmitted <!-- network to CO2 -->
 
-# Run SQLite in prod
-
-<!-- classic architecture -->
-<!-- sqlite architecture -->
-
-# Run SQLite in prod
-
-<!-- Ruby <3 sqlite -->
-
-# Make small Docker images
+## Make small Docker images
 
 Hello world: 512MB
 
@@ -165,17 +225,25 @@ GraalVM: 89MB
 
 Single binary: 16MB
 
-# Enable build caching
+::: small
+Source: [My minimal-docker repo](https://github.com/jqno/minimal-docker)
+:::
 
-<!-- gif van EqualsVerifier die aan het bouwen is -->
+## Enable build caching
+
+<video data-autoplay src="../images/maven.webm"/>
 
 # Conclusion
 
-That most important slide one more time!
+That most important slide again
 
 ## Economic model of green software
 
-cloud bill ↓ == footprint ↓
+![](../images/economic-model.webp)
+
+::: small
+Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In Computer Science. 2023](https://hollycummins.com/the-vroom-model-naming/0)
+:::
 
 ## Results
 
@@ -186,8 +254,16 @@ cloud bill ↓ == footprint ↓
 
 # Thank you
 
-<span style="float:left;width:200px;margin-top:20px;">
+<span style="float:left;width:300px;margin-top:20px;">
 ![](../images/qr.jpg)
 </span>
 
-<!-- That most important slide _again_ -->
+<span style="float:right;width:300px;margin-top:20px;">
+![](../images/economic-model.webp)
+</span>
+
+<br/>
+
+::: big
+¿ ?
+:::
