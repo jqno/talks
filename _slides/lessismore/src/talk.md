@@ -11,23 +11,27 @@ center: "false"
 
 <br/>
 
-reduce $ and CO<sub>2</sub> to improve<br/>performance 🚀 and joy 🥳
+reduce $ and CO<sub>2</sub>
+
+to improve performance 🚀 and joy 🥳
 
 # The un-fun bit
 
 ![](../images/climate-change.webp)
 
-::: small
+::: supersmall
 Source: [K.D. Burke et al. Pliocene and Eocene provide best analogs for near-future climates. PNAS, 2018](https://www.pnas.org/doi/full/10.1073/pnas.1809600115)
 :::
 
 ## The costs in 2050
 
-- $ 38 000 000 000 000 per year (???)
+- $ trillions per year
 - 19% loss to world economy
 
-::: small
-Source: [M. Kotz, A. Levermann & L. Wenz. The economic commitment of climate change. Nature 628, 551–557 (2024)](https://doi.org/10.1038/s41586-024-07219-0)
+<br/><br/><br/><br/><br/>
+
+::: supersmall
+Sources:<br/>[M. Kotz, A. Levermann & L. Wenz. The economic commitment of climate change. Nature 628, 551–557 (2024)](https://doi.org/10.1038/s41586-024-07219-0)<br/>[World Economic Forum, 2023](https://www.weforum.org/stories/2023/10/climate-loss-and-damage-cost-16-million-per-hour/)
 :::
 
 ## IT's contribution
@@ -36,7 +40,9 @@ Source: [M. Kotz, A. Levermann & L. Wenz. The economic commitment of climate cha
 - Datacenters: ±1-1.5% of global energy
 - Networking: ±1-1.5% of global energy
 
-::: small
+<br/><br/><br/><br/><br/>
+
+::: supersmall
 Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 2025](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks)
 :::
 
@@ -62,7 +68,13 @@ I'm not perfect 😢
 
 ## Personal things
 
-~~Google~~ Ecosia
+Google
+
+## Personal things
+
+~~Google~~
+
+![](../images/ecosia.webp){ .bigimg }
 
 ## Personal things
 
@@ -80,6 +92,8 @@ I'm not perfect 😢
 90s
 :::
 
+"640k ought to be enough for everyone"
+
 ## My place in this
 
 ::: superbig
@@ -88,11 +102,11 @@ I'm not perfect 😢
 
 ## My place in this
 
-"640k ought to be enough for everyone"
-
-## My place in this
-
 <video data-autoplay src="../images/game23.webm"/>
+
+## Oulipo
+
+![](../images/oulipo.webp){ .bigimg }
 
 ## Moore's law
 
@@ -100,11 +114,21 @@ Machines got faster
 
 Software got slower!?
 
-## Oulipo
+## Constraints
 
-# Developers, developers, developers
+They're fun!
 
-We can influence bigger things
+# Developers
+
+We have power over things
+
+many people don't understand
+
+---
+
+::: big
+Let's use that power
+:::
 
 ---
 
@@ -118,9 +142,10 @@ important one
 
 ## Economic model of green software
 
-![](../images/economic-model.webp)
+![](../images/economic-model.webp){ .bigimg }
 
-::: small
+::: supersmall
+<br/>
 Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In Computer Science. 2023](https://hollycummins.com/the-vroom-model-naming/0)
 :::
 
@@ -128,17 +153,15 @@ Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In
 
 ## Stop chasing nines
 
-<!-- architectuur met dubbel uitgevoerde services en een load balancer -->
+## Stop chasing nines
+
+99.999% uptime
 
 ## Stop chasing nines
 
-<span style="float:left;width:200px;margin-top:20px;">
-![](../images/rd-doordeweek.webp)
-</span>
+![](../images/rd-doordeweek.webp){ .left .w200 }
 
-<span style="float:right;width:200px;margin-top:20px;">
-![](../images/rd-zondag.webp)
-</span>
+![](../images/rd-zondag.webp){ .right .w200 }
 
 <br/><br/>
 
@@ -150,15 +173,25 @@ Sunday →
 
 ## Stop chasing nines
 
-<!-- bricklink -->
+![](../images/bricklink.webp){ .bigimg }
 
 ## Stop chasing nines
 
-<!-- eenvoudige architectuur -->
+![](../images/architecture-full.webp){ .bigimg }
+
+## Stop chasing nines
+
+![](../images/architecture-nope.webp){ .bigimg }
+
+## Stop chasing nines
+
+![](../images/architecture-simple.webp){ .bigimg }
+
+## Stop chasing nines
+
+![](../images/economic-model.webp){ .bigimg }
 
 ## Re-think your DB
-
-<!-- classic architecture -->
 
 ## Re-think your DB
 
@@ -168,25 +201,12 @@ Sunday →
 
 ## Re-think your DB
 
+SQLite is
+
 - Stable
 - Reliable
 - Backward-compatible
 - Billions(!) of deploys
-
-## Re-think your DB
-
-<!-- sqlite architecture -->
-
-## Re-think your DB
-
-Pros:
-- No DB server
-- Simplicity
-
-Cons:
-- Must carefully tweak defaults
-- Only one concurrent write
-- Must arrange for backups
 
 ## Re-think your DB
 
@@ -196,42 +216,134 @@ Cons:
 ![](../images/rails.png){ style="height:1.4em;" } ❤️ ![](../images/sqlite.svg){ style="height:1.4em;" }
 :::
 
+## Re-think your DB
+
+![](../images/architecture-simple.webp){ .bigimg }
+
+## Re-think your DB
+
+![](../images/architecture-sqlite.webp){ .bigimg }
+
+## Re-think your DB
+
+Cons:
+
+- Must carefully tweak defaults
+- Only one concurrent write
+- Must arrange for backups
+
+## Re-think your DB
+
+Pros:
+
+- No DB server
+- Simplicity
+
+## Re-think your DB
+
+![](../images/economic-model.webp){ .bigimg }
+
 ## Make small Docker images
 
-- Need to be stored <!-- disk to CO2 -->
-- Need to be transmitted <!-- network to CO2 -->
+## Make small Docker images
+
+- Need to be stored → embedded CO₂
+- Need to be transmitted → actual CO₂
 
 ## Make small Docker images
 
-Hello world: 512MB
+| Tech | size |
+|-|-|
+| Hello world | 512MB |
 
-. . .
+## Make small Docker images
 
-Multi-stage: 426MB
+| Tech | size |
+|-|-|
+| Hello world | 512MB |
+| Multi-stage | 426MB |
 
-. . .
+## Make small Docker images
 
-Minimal base: 202MB
+| Tech | size |
+|-|-|
+| Hello world | 512MB |
+| Multi-stage | 426MB |
+| Minimal base | 202MB |
 
-. . .
+## Make small Docker images
 
-JLink: 115MB
+| Tech | size |
+|-|-|
+| Hello world | 512MB |
+| Multi-stage | 426MB |
+| Minimal base | 202MB |
+| JLink | 115MB |
 
-. . .
+## Make small Docker images
 
-GraalVM: 89MB
+| Tech | size |
+|-|-|
+| Hello world | 512MB |
+| Multi-stage | 426MB |
+| Minimal base | 202MB |
+| JLink | 115MB |
+| GraalVM | 89MB |
 
-. . .
+## Make small Docker images
 
-Single binary: 16MB
+| Tech | size |
+|-|-|
+| Hello world | 512MB |
+| Multi-stage | 426MB |
+| Minimal base | 202MB |
+| JLink | 115MB |
+| GraalVM | 89MB |
+| Single binary | 16MB |
 
-::: small
+::: supersmall
 Source: [My minimal-docker repo](https://github.com/jqno/minimal-docker)
+:::
+
+## Make small Docker images
+
+![](../images/economic-model.webp){ .bigimg }
+
+## Enable build caching
+
+## Enable build caching
+
+<video data-autoplay src="../images/maven.webm" style="height:10em;box-shadow:0px 15px 25px rgba(0,0,0,0.7);"/>
+
+## Enable build caching
+
+::: big
+Every time
 :::
 
 ## Enable build caching
 
-<video data-autoplay src="../images/maven.webm"/>
+::: big
+Many times
+
+per day
+:::
+
+## Enable build caching
+
+::: big
+Many times
+
+per ~~day~~ hour
+:::
+
+## Enable build caching
+
+![](../images/economic-model.webp){ .bigimg }
+
+# Many other things
+
+12 minutes is short!
 
 # Conclusion
 
@@ -239,9 +351,10 @@ That most important slide again
 
 ## Economic model of green software
 
-![](../images/economic-model.webp)
+![](../images/economic-model.webp){ .bigimg }
 
-::: small
+::: supersmall
+<br/>
 Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In Computer Science. 2023](https://hollycummins.com/the-vroom-model-naming/0)
 :::
 
@@ -254,13 +367,9 @@ Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In
 
 # Thank you
 
-<span style="float:left;width:300px;margin-top:20px;">
-![](../images/qr.jpg)
-</span>
+![](../images/qr.jpg){ .left .w300 }
 
-<span style="float:right;width:300px;margin-top:20px;">
-![](../images/economic-model.webp)
-</span>
+![](../images/economic-model.webp){ .right .w300 }
 
 <br/>
 

@@ -24,17 +24,9 @@
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
 }
 
-.reveal section img.biglogo {
-  height: 10em;
-}
-
 .reveal section img.bigimg {
   height: 10em;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
-}
-
-.reveal section img.lineimg {
-  height: 1em;
 }
 
 .reveal section img {
@@ -42,6 +34,22 @@
   border: 0;
   vertical-align: middle;
   box-shadow: 0px 0px 0px;
+}
+
+.reveal section img.left {
+  float: left;
+}
+
+.reveal section img.right {
+  float: right;
+}
+
+.reveal section img.w300 {
+  width: 300px;
+}
+
+.reveal section img.w200 {
+  width: 200px;
 }
 
 
@@ -53,23 +61,7 @@
 }
 
 
-/* Code blocks */
-
-.reveal pre code {
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
-  font-family: "FiraCode";
-  font-size: 0.8em;
-  margin-top: 50px;
-  max-height: 510px;
-  padding: 10px;
-}
-
-
 /* Various */
-
-.subtitle {
-  font-family: "TilburgsAnsText";
-}
 
 .superbig {
   font-family: "TilburgsAnsText";
@@ -89,18 +81,4 @@
 
 .supersmall {
   font-size: 0.3em;
-}
-
-.hashtag {
-  font-family: "TilburgsAnsText";
-  margin: auto;
-  width: 100%;
-  position: fixed;
-  bottom: 25px;
-}
-
-.doesitwork {
-  font-size: 0.7em;
-  position: fixed;
-  bottom: 25px;
 }
