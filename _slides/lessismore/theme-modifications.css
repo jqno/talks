@@ -17,6 +17,11 @@
   color: #222222;
 }
 
+.reveal em {
+  font-weight: bold;
+  color: #1b7f6b;
+}
+
 
 /* Images */
 

@@ -11,9 +11,9 @@ center: "false"
 
 <br/>
 
-reduce $ and CO<sub>2</sub>
+_reduce_ $ and CO<sub>2</sub>
 
-to improve performance 🚀 and joy 🥳
+to _improve_ performance 🚀 and joy 🥳
 
 # The un-fun bit
 
@@ -25,8 +25,8 @@ Source: [K.D. Burke et al. Pliocene and Eocene provide best analogs for near-fut
 
 ## The costs in 2050
 
-- $ trillions per year
-- 19% loss to world economy
+- _$ trillions_ per year
+- _19% loss_ to world economy
 
 <br/><br/><br/><br/><br/>
 
@@ -36,9 +36,9 @@ Sources:<br/>[M. Kotz, A. Levermann & L. Wenz. The economic commitment of climat
 
 ## IT's contribution
 
-- Datacenters: ±1% of global CO₂
-- Datacenters: ±1-1.5% of global energy
-- Networking: ±1-1.5% of global energy
+- Datacenters: _±1%_ of global CO₂
+- Datacenters: _±1-1.5%_ of global energy
+- Networking: _±1-1.5%_ of global energy
 
 <br/><br/><br/><br/><br/>
 
@@ -52,7 +52,7 @@ is still growing
 
 # Enough doom & gloom
 
-Let's talk about something fun
+Let's talk about something _fun_
 
 ## Jan Ouwens { data-state="page-title" data-background-image="../images/background.png" }
 
@@ -64,7 +64,15 @@ Let's talk about something fun
 
 ## Personal things
 
+<br/>
+
 I'm not perfect 😢
+
+. . .
+
+<br/>
+
+But I _try_
 
 ## Personal things
 
@@ -112,22 +120,24 @@ Google
 
 Machines got faster
 
-Software got slower!?
+Software got _slower_!?
 
 ## Constraints
 
-They're fun!
+::: big
+They're _fun_!
+:::
 
 # Developers
 
-We have power over things
+We have _power_ over things
 
 many people don't understand
 
 ---
 
 ::: big
-Let's use that power
+Let's _use_ that power
 :::
 
 ---
@@ -228,15 +238,15 @@ SQLite is
 
 Cons:
 
-- Must carefully tweak defaults
-- Only one concurrent write
-- Must arrange for backups
+- Must carefully _tweak defaults_
+- _Only one_ concurrent write
+- Must arrange for _backups_
 
 ## Re-think your DB
 
 Pros:
 
-- No DB server
+- _No_ DB server
 - Simplicity
 
 ## Re-think your DB
@@ -247,8 +257,8 @@ Pros:
 
 ## Make small Docker images
 
-- Need to be stored → embedded CO₂
-- Need to be transmitted → actual CO₂
+- Need to be _stored_ → embedded CO₂
+- Need to be _transmitted_ → actual CO₂
 
 ## Make small Docker images
 
@@ -334,7 +344,7 @@ per day
 ::: big
 Many times
 
-per ~~day~~ hour
+per _hour_
 :::
 
 ## Enable build caching
@@ -347,7 +357,7 @@ per ~~day~~ hour
 
 # Conclusion
 
-That most important slide again
+That _most important_ slide again
 
 ## Economic model of green software
 
@@ -367,12 +377,12 @@ Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In
 
 # Thank you
 
-![](../images/qr.jpg){ .left .w300 }
+![](../images/qr.jpg){ .left .w300 .shadow }
 
-![](../images/economic-model.webp){ .right .w300 }
+![](../images/economic-model.webp){ .right .w300 .shadow }
 
 <br/>
 
 ::: big
-¿ ?
+_¿ ?_
 :::
