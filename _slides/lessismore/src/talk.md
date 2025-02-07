@@ -110,7 +110,9 @@ Google
 
 ## My place in this
 
-<video data-autoplay src="../images/game23.webm"/>
+<div style="position:absolute;top:350px;left:430px;">_64KB_ !</div>
+
+<video data-autoplay src="../images/game23.webm" style="position:fixed;top:50px;left:0px;"/>
 
 ## Oulipo
 
@@ -262,6 +264,20 @@ Pros:
 
 ## Make small Docker images
 
+```java
+public class Main {
+    public static void main(String...args) {
+        System.out.println("Hello World!");
+    }
+}
+```
+
+↓
+
+🐋
+
+## Make small Docker images
+
 | Tech | size |
 |-|-|
 | Hello world | 512MB |
@@ -314,6 +330,10 @@ Pros:
 ::: supersmall
 Source: [My minimal-docker repo](https://github.com/jqno/minimal-docker)
 :::
+
+## Make small Docker images
+
+<span class="big">16MB</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="supersmall">_64KB_</span>
 
 ## Make small Docker images
 
