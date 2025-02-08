@@ -259,8 +259,8 @@ Pros:
 
 ## Make small Docker images
 
-- Need to be _stored_ → embedded CO₂
-- Need to be _transmitted_ → actual CO₂
+- Need to be _stored_<br/>&nbsp;&nbsp;&nbsp;↳ embedded CO₂
+- Need to be _transmitted_<br/>&nbsp;&nbsp;&nbsp;↳ actual CO₂
 
 ## Make small Docker images
 
