@@ -274,7 +274,7 @@ public class Main {
 
 ↓
 
-🐋
+![](../images/docker.webp)
 
 ## Make small Docker images
 
