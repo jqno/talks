@@ -48,7 +48,19 @@ Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 202
 
 ## IT's contribution
 
-is still growing
+- Datacenters: _±1%_ of global CO₂
+- Datacenters: _±1-1.5%_ of global energy
+- Networking: _±1-1.5%_ of global energy
+
+<br/>
+
+...and _growing_
+
+<br/><br/>
+
+::: supersmall
+Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 2025](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks)
+:::
 
 # Enough doom & gloom
 
@@ -60,7 +72,7 @@ Let's talk about something _fun_
 
 &nbsp;
 
-![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ [@jqno.nl](https://bsky.app/profile/jqno.nl)
+![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ [🦋jqno.nl](https://bsky.app/profile/jqno.nl)
 
 ## Personal things
 
@@ -118,17 +130,17 @@ Google
 
 ![](../images/oulipo.webp){ .bigimg }
 
-## Moore's law
-
-Machines got faster
-
-Software got _slower_!?
-
 ## Constraints
 
 ::: big
 They're _fun_!
 :::
+
+## Moore's law
+
+1. Machines got faster
+2. Constraints got thrown out
+3. Software got _slower_!?
 
 # Developers
 
