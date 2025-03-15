@@ -72,7 +72,7 @@ Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 202
 
 Let's talk about something _fun_
 
-## Jan Ouwens { data-state="page-title" data-background-image="../images/background.png" }
+## Jan Ouwens
 
 ![](../images/jan-ouwens.jpg){ .shadow style="height:200px;" }
 
