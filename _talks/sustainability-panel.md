@@ -27,6 +27,8 @@ So how can you use innovation to become more sustainable, both as a software dev
 
 We'd like to emphasize that we don't want to guilt-trip anyone. This session is intended as a source of inspiration. The sheer scope of the problem can cause even the best of us to freeze up. Hearing ideas, no matter how small, from peers will provide you and us with ideas for the next step to take. This talk could be an opportunity for you to catch a few sustainability tips that can find their way into your life without costing you any noticeable effort.
 
+## Deliveries
+
 * **J-Fall Netherlands**
   <br>
   _3 November 2022_
