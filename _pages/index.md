@@ -2,6 +2,10 @@
 permalink: /
 title: Talks
 imagebutton_row:
+  - image_path: "assets/titleslides/less-is-more.webp"
+    title: "Less is more - reduce $ and CO₂ to improve performance 🚀 and joy 🥳"
+    excerpt: "Ideas on how reduction of cost and emissions can improve application performance and developer joy."
+    url: "lessismore/"
   - image_path: "assets/titleslides/sustainability-panel.webp"
     title: "Exploring Sustainability in Tech (without the guilt-trips)"
     excerpt: "A panel discussion with the audience about what we can do about climate change as software developers and human beings.<br/>Delivered at Devoxx 2022 and J-Fall 2022."

@@ -6,4 +6,4 @@ if [ -z "$PRESENTATION" ]; then
   exit 1
 fi
 
-PRESENTATION="$PRESENTATION" docker-compose -f docker-compose.revealjs.yml up
+PRESENTATION="$PRESENTATION" docker compose -f docker-compose.revealjs.yml up

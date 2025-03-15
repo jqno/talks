@@ -1,0 +1,117 @@
+/* Fonts */ @import url("../../assets/fonts.css");
+
+/* General layout */
+
+.reveal {
+  font-family: 'FiraGO';
+}
+
+.reveal h1, .reveal h2 {
+  font-family: 'TilburgsAnsText';
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 50px;
+}
+
+.reveal a {
+  color: #222222;
+}
+
+.reveal em {
+  font-weight: bold;
+  color: #1caf55;
+}
+
+.reveal .footer {
+  position: fixed;
+  bottom: 0em;
+  right: 0.5em;
+  font-size: 0.3em;
+  text-align: right;
+}
+
+
+/* Images */
+
+.reveal section img.shadow {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+.reveal section img.bigimg {
+  height: 10em;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+.reveal section img {
+  background: none;
+  border: 0;
+  vertical-align: middle;
+  box-shadow: 0px 0px 0px;
+}
+
+.reveal section img.left {
+  float: left;
+}
+
+.reveal section img.right {
+  float: right;
+}
+
+.reveal section video.left {
+  float: left;
+}
+
+.reveal section video.right {
+  float: right;
+}
+
+.reveal section img.w300 {
+  width: 300px;
+}
+
+.reveal section img.w200 {
+  width: 200px;
+}
+
+
+/* Lists */
+
+.reveal ul {
+  margin-left: 5em;
+  width: 100%;
+}
+
+
+/* Code blocks */
+
+.reveal pre code {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+  font-family: "FiraCode";
+  font-size: 0.8em;
+  margin-top: 75px;
+  max-height: 600px;
+  padding: 10px;
+}
+
+
+/* Various */
+
+.superbig {
+  font-family: "TilburgsAnsText";
+  font-size: 5em;
+  padding-bottom: 50px;
+}
+
+.big {
+  font-family: "TilburgsAnsText";
+  font-size: 3.5em;
+  padding-bottom: 50px;
+}
+
+.small {
+  font-size: 0.7em;
+}
+
+.supersmall {
+  font-size: 0.3em;
+}

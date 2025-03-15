@@ -14,6 +14,34 @@
 }
 
 @font-face {
+    font-family: "FiraGO";
+    src: url("firago/FiraGO-Regular.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FiraGO";
+    src: url("firago/FiraGO-Italic.woff2") format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FiraGO";
+    src: url("firago/FiraGO-Bold.woff2") format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FiraGO";
+    src: url("firago/FiraGO-BoldItalic.woff2") format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
     font-family: "OpenSans";
     src: url("opensans/open-sans-v18-latin-regular.woff") format('woff');
 }
