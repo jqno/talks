@@ -35,4 +35,4 @@ In this talk, I'll explain why emitting CO₂ is a problem, how the IT sector co
   <br>
   _20 March 2025_
   <br>
-  [[event](https://miniconf.io/episodes/episode-x/)]
+  [[event](https://miniconf.io/episodes/episode-x/)] [[slides](/talks/slides/lessismore/2025-03-20-miniconf)]
