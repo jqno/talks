@@ -7,19 +7,23 @@ progress: "false"
 controls: "false"
 center: "false"
 ---
-# Less is more
-
-<br/>
+# Less is more { data-background="../images/iceland.jpg" }
 
 _reduce_ $ and CO<sub>2</sub>
 
 to _improve_ performance 🚀 and joy 🥳
 
+<br/><br/><br/><br/><br/>
+
+::: footer
+Source: personal archive - Iceland
+:::
+
 # The un-fun bit
 
 ![](../images/climate-change.webp)
 
-::: supersmall
+::: footer
 Source: [K.D. Burke et al. Pliocene and Eocene provide best analogs for near-future climates. PNAS, 2018](https://www.pnas.org/doi/full/10.1073/pnas.1809600115)
 :::
 
@@ -28,10 +32,16 @@ Source: [K.D. Burke et al. Pliocene and Eocene provide best analogs for near-fut
 - _$ trillions_ per year
 - _19% loss_ to world economy
 
-<br/><br/><br/><br/><br/>
+::: footer
+Sources:<br/>- [M. Kotz, A. Levermann & L. Wenz. The economic commitment of climate change. Nature 628, 551–557 (2024)](https://doi.org/10.1038/s41586-024-07219-0)<br/>- [World Economic Forum, 2023](https://www.weforum.org/stories/2023/10/climate-loss-and-damage-cost-16-million-per-hour/)
+:::
 
-::: supersmall
-Sources:<br/>[M. Kotz, A. Levermann & L. Wenz. The economic commitment of climate change. Nature 628, 551–557 (2024)](https://doi.org/10.1038/s41586-024-07219-0)<br/>[World Economic Forum, 2023](https://www.weforum.org/stories/2023/10/climate-loss-and-damage-cost-16-million-per-hour/)
+## IT's contribution
+
+![](../images/it.webp)
+
+::: footer
+Source: AI-generated
 :::
 
 ## IT's contribution
@@ -40,9 +50,7 @@ Sources:<br/>[M. Kotz, A. Levermann & L. Wenz. The economic commitment of climat
 - Datacenters: _±1-1.5%_ of global energy
 - Networking: _±1-1.5%_ of global energy
 
-<br/><br/><br/><br/><br/>
-
-::: supersmall
+::: footer
 Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 2025](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks)
 :::
 
@@ -56,9 +64,7 @@ Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 202
 
 ...and _growing_
 
-<br/><br/>
-
-::: supersmall
+::: footer
 Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 2025](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks)
 :::
 
@@ -84,7 +90,7 @@ I'm not perfect 😢
 
 <br/>
 
-But I _try_
+I do _my best_
 
 ## Personal things
 
@@ -96,9 +102,17 @@ Google
 
 ![](../images/ecosia.webp){ .bigimg }
 
+::: footer
+Source: ecosia.org
+:::
+
 ## Personal things
 
 ![](../images/phone-repair.webp){ .bigimg }
+
+::: footer
+Source: personal archive
+:::
 
 ## My place in this
 
@@ -122,13 +136,23 @@ Google
 
 ## My place in this
 
-<div style="position:absolute;top:350px;left:430px;">_64KB_ !</div>
+<div style="position:absolute;top:350px;left:540px;">_64KB_ !</div>
 
+<div style="position:absolute;top:50px;left:10px;">
 <video data-autoplay src="../images/game23.webm" style="position:fixed;top:50px;left:0px;"/>
+</div>
+
+::: footer
+Sources:<br/>- personal archive<br/>- [https://commons.wikimedia.org/wiki/File:Nokia_3200_(transparent_bg).png](https://commons.wikimedia.org/wiki/File:Nokia_3200_(transparent_bg).png)
+:::
 
 ## Oulipo
 
 ![](../images/oulipo.webp){ .bigimg }
+
+::: footer
+Source: personal archive
+:::
 
 ## Constraints
 
@@ -168,9 +192,8 @@ important one
 
 ![](../images/economic-model.webp){ .bigimg }
 
-::: supersmall
-<br/>
-Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In Computer Science. 2023](https://hollycummins.com/the-vroom-model-naming/0)
+::: footer
+Concept: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In Computer Science. 2023](https://hollycummins.com/the-vroom-model-naming/0)
 :::
 
 # So what can we do!?
@@ -179,7 +202,19 @@ Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In
 
 ## Stop chasing nines
 
+99.9% uptime
+
+## Stop chasing nines
+
+99.99% uptime
+
+## Stop chasing nines
+
 99.999% uptime
+
+## Stop chasing nines
+
+99.999% uptime _??_
 
 ## Stop chasing nines
 
@@ -195,9 +230,25 @@ Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In
 
 Sunday →
 
+::: footer
+Source: [Reformatorisch Dagblad](https://www.rd.nl)
+:::
+
 ## Stop chasing nines
 
 ![](../images/bricklink.webp){ .bigimg }
+
+::: footer
+Source: [Bricklink.com](https://www.bricklink.com)
+:::
+
+## Stop chasing nines
+
+![](../images/bricklink2.webp){ .shadow }
+
+::: footer
+Source: [Bricklink.com](https://www.bricklink.com)
+:::
 
 ## Stop chasing nines
 
@@ -294,12 +345,20 @@ public class Main {
 |-|-|
 | Hello world | 512MB |
 
+::: footer
+Source: [My minimal-docker repo](https://github.com/jqno/minimal-docker)
+:::
+
 ## Make small Docker images
 
 | Tech | size |
 |-|-|
 | Hello world | 512MB |
 | Multi-stage | 426MB |
+
+::: footer
+Source: [My minimal-docker repo](https://github.com/jqno/minimal-docker)
+:::
 
 ## Make small Docker images
 
@@ -308,6 +367,10 @@ public class Main {
 | Hello world | 512MB |
 | Multi-stage | 426MB |
 | Minimal base | 202MB |
+
+::: footer
+Source: [My minimal-docker repo](https://github.com/jqno/minimal-docker)
+:::
 
 ## Make small Docker images
 
@@ -317,6 +380,10 @@ public class Main {
 | Multi-stage | 426MB |
 | Minimal base | 202MB |
 | JLink | 115MB |
+
+::: footer
+Source: [My minimal-docker repo](https://github.com/jqno/minimal-docker)
+:::
 
 ## Make small Docker images
 
@@ -327,6 +394,10 @@ public class Main {
 | Minimal base | 202MB |
 | JLink | 115MB |
 | GraalVM | 89MB |
+
+::: footer
+Source: [My minimal-docker repo](https://github.com/jqno/minimal-docker)
+:::
 
 ## Make small Docker images
 
@@ -339,11 +410,15 @@ public class Main {
 | GraalVM | 89MB |
 | Single binary | 16MB |
 
-::: supersmall
+::: footer
 Source: [My minimal-docker repo](https://github.com/jqno/minimal-docker)
 :::
 
 ## Make small Docker images
+
+<br/>
+
+still...
 
 <span class="big">16MB</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="supersmall">_64KB_</span>
 
@@ -395,9 +470,8 @@ That _most important_ slide again
 
 ![](../images/economic-model.webp){ .bigimg }
 
-::: supersmall
-<br/>
-Source: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In Computer Science. 2023](https://hollycummins.com/the-vroom-model-naming/0)
+::: footer
+Concept: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In Computer Science. 2023](https://hollycummins.com/the-vroom-model-naming/0)
 :::
 
 ## Results

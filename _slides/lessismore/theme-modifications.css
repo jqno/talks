@@ -19,7 +19,15 @@
 
 .reveal em {
   font-weight: bold;
-  color: #1b7f6b;
+  color: #1caf55;
+}
+
+.reveal .footer {
+  position: fixed;
+  bottom: 0em;
+  right: 0.5em;
+  font-size: 0.3em;
+  text-align: right;
 }
 
 
