@@ -13,7 +13,11 @@ _reduce_ $ and CO<sub>2</sub>
 
 to _improve_ performance 🚀 and joy 🥳
 
-<br/><br/><br/><br/><br/>
+<br/>
+
+![](../images/miniconf.png)
+
+<br/>
 
 ::: footer
 Source: personal archive - Iceland
@@ -38,7 +42,7 @@ Sources:<br/>- [M. Kotz, A. Levermann & L. Wenz. The economic commitment of clim
 
 ## IT's contribution
 
-![](../images/it.webp)
+![](../images/it.webp){ .bigimg }
 
 ::: footer
 Source: AI-generated

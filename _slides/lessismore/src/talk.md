@@ -38,7 +38,7 @@ Sources:<br/>- [M. Kotz, A. Levermann & L. Wenz. The economic commitment of clim
 
 ## IT's contribution
 
-![](../images/it.webp)
+![](../images/it.webp){ .bigimg }
 
 ::: footer
 Source: AI-generated
