@@ -66,6 +66,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 * [english](/talks/slides/fantasticlanguages/images/english.svg) - oh, but it's only the official flag of the United Kingdom - [source](https://en.wikipedia.org/wiki/File:Flag_of_the_United_Kingdom.svg)
 * [evan-czaplicki](/talks/slides/fantasticlanguages/images/evan-czaplicki.jpg) - Twitter profile in 2021 - [source](https://twitter.com/evancz/photo)
 * [fool](/talks/slides/fantasticlanguages/images/fool.jpg) - by Couleur - [source](https://pixabay.com/photos/fool-court-jester-clown-fun-1476189/)
+* [gleam](/talks/slides/fantasticlanguages/images/gleam.svg) - by Louis Pilfold - [source](https://commons.wikimedia.org/wiki/File:Gleam_Lucy.svg)
 * [hashmap](/talks/slides/fantasticlanguages/images/hashmap.jpg) - by Jan Ouwens
 * [james-gosling](/talks/slides/fantasticlanguages/images/james-gosling.jpg) - by Peter Campbell - [source](https://commons.wikimedia.org/wiki/File:James_Gosling_2008.jpg)
 * [jan-ouwens](/talks/slides/fantasticlanguages/images/jan-ouwens.jpg) - by Riemke Ouwens
@@ -77,6 +78,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 * [market](/talks/slides/fantasticlanguages/images/market.jpg) - by Alex Hudson - [source](https://unsplash.com/photos/m3I92SgM3Mk)
 * [matsumoto](/talks/slides/fantasticlanguages/images/matsumoto.jpg) - by Cep21 - [source](https://commons.wikimedia.org/wiki/File:Yukihiro_Matsumoto.JPG)
 * [msx](/talks/slides/fantasticlanguages/images/msx.jpg) - [source](https://en.wikipedia.org/wiki/File:MSX_Philips_VG8020.jpg)
+* [ocaml](/talks/slides/fantasticlanguages/images/ocaml.svg) - by OCaml.org project - [source](https://commons.wikimedia.org/wiki/File:OCaml_Logo.svg) (cropped)
 * [php](/talks/slides/fantasticlanguages/images/php.svg) - official PHP logo by Colin Viebrock - [source](https://commons.wikimedia.org/wiki/File:PHP-logo.svg)
 * [pragprog](/talks/slides/fantasticlanguages/images/pragprog.jpg) - cover of [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/) by Andy Hunt and Dave Thomas
 * [progbooks](/talks/slides/fantasticlanguages/images/progbooks.jpg) - by Jan Ouwens

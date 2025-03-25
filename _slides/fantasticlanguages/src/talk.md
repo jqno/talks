@@ -20,6 +20,25 @@ and what to learn from them
 
 ![](../images/pragprog.jpg){ .bigimg }
 
+## But why?
+
+<br/>
+
+::: superbig
+↔️ 🧠 ↔️
+:::
+
+::: notes
+Influences your thinking
+:::
+
+## AI?
+
+<br/>
+
+- Unhelpful for niche languages
+- Still ↔️ 🧠 ↔️
+
 ## ∀ language
 
 ::: supersmall
@@ -50,9 +69,7 @@ Computer languages and facial hair [🔗](https://web.archive.org/web/2008101311
 
 ![](../images/jan-ouwens.jpg){ .shadow style="height:200px;" }
 
-![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
-
-![](../images/twitter.png){ style="height:30px;" } #fantasticlanguages
+![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl)
 
 # Java
 
@@ -167,55 +184,6 @@ from my master's thesis
 Programming!
 :::
 
-# English
-
-![](../images/english.svg){ .bigimg }
-
-## ![](../images/english.svg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Appeared in | 16th century CE |
-| Used in | UK, America, the internet |
-| Family | germanic |
-| Script | roman |
-| Native speakers | ±380mln |
-
-## ![](../images/english.svg){ .lineimg } - creator
-
-![](../images/shakespeare.jpg){ .bigimg }
-
-Let's just say it was this guy
-
-::: notes
-Shakespeare invented 1600 words, including "bedroom"
-:::
-
-## ![](../images/english.svg){ .lineimg } - creator
-
-![](../images/shakespeare.jpg){ .bigimg }
-
-Beard: ✅
-
-## ![](../images/english.svg){ .lineimg } - what does it look like?
-
-1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz, 16, 17, fizz, 19, buzz, fizz, 22, 23, fizz, buzz, 26, fizz, 28, 29, fizzbuzz
-
-## ![](../images/english.svg){ .lineimg } - what makes it interesting?
-
-The Great Vowel Shift
-
-| 🇪🇺 | → | 🇬🇧 |
-|-|-|-|
-| a | → | e |
-| e | → | i |
-| i | → | ay |
-
-## ![](../images/english.svg){ .lineimg } - what did I learn from it?
-
-![](../images/world.jpg){ .bigimg }
-
 # PHP
 
 ![](../images/php.svg){ .biglogo }
@@ -312,7 +280,7 @@ import List exposing (map)
 
 main =
   List.range 1 100 |> map getWordForNum |> String.join " "
- 
+
 getWordForNum num =
   if modBy num 15 == 0 then
     "FizzBuzz"
@@ -339,7 +307,7 @@ syntax like this:
 
     """
     # Multi-line Strings
-    
+
     - start with triple double quotes
     - write whatever you want
     - no need to escape newlines or double quotes
@@ -421,56 +389,6 @@ Minimal syntax, maximal power
 
 ::: notes
 beautiful, elegant, undecipherable, full of meaning
-:::
-
-# Arabic
-
-![](../images/arabic.svg){ .biglogo }
-
-## ![](../images/arabic.svg){ .lineimg } - properties
-
-|||
-|---|---|
-|||
-| Appeared in | 5th century CE |
-| Used in | Northern Africa, Middle-East |
-| Family | semitic |
-| Script | arabic |
-| Native speakers | ±350mln |
-
-## ![](../images/arabic.svg){ .lineimg } - creator
-
-![](../images/arabic-campfire.jpg){ .bigimg }
-
-Unknowable
-
-## ![](../images/arabic.svg){ .lineimg } - creator
-
-![](../images/arabic-campfire.jpg){ .bigimg }
-
-Beard: ![](../images/trollface.png){ height=40px }
-
-## ![](../images/arabic.svg){ .lineimg } - what does it look like?
-
-١ ،٢، فيز، ٤، بوز، فيز، ٧، ٨، فيز، بوز، ١١، فيز، ١٣، ١٤، فيزبوز، ١٦، ١٧، فيز، ١٩، بوز، فيز، ٢٢، ٢٣، فيز، بوز، ٢٦، فيز، ٢٨، ٢٩، فيزبوز
-
-## ![](../images/arabic.svg){ .lineimg } - what makes it interesting?
-
-::: small
-|||
-|-|-|
-| hll wrld | hello world |
-| مرحبا بالعالم | مَرحَبًا بِالعَالَم |
-:::
-
-![](../images/arabic-books.jpg){ .bigimg style="height:9em;" }
-
-## ![](../images/arabic.svg){ .lineimg } - what did I learn from it?
-
-![](../images/sattouf.png){ .bigimg }
-
-::: supersmall
-From _The Arab of the Future 2_ by Riad Sattouf
 :::
 
 # Ruby
@@ -853,13 +771,18 @@ public void waitwhat() { ... }
 
 ![](../images/cloud.png){ height=600px }
 
+## Wishlist
+
+<br/>
+
+- Gleam ![](../images/gleam.svg){ .lineimg }
+- OCaml ![](../images/ocaml.svg){ .lineimg }
+
 ## FIN
 
 ![](../images/qr.png)
 
 [jqno.nl/talks/fantasticlanguages](https://jqno.nl/talks/fantasticlanguages)
-
-![](../images/twitter.png){ height=30px } #fantasticlanguages
 
 ::: supersmall
 image credits: see website
