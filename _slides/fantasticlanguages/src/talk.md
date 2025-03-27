@@ -125,7 +125,7 @@ public class Program {
 
 ![](../images/backward-compatibility.jpg){ .bigimg }
 
-## ![](../images/java.svg){ .lineimg } - what did I learn from it?
+## ![](../images/java.svg){ .lineimg } - how did it change my thinking?
 
 ![](../images/community.jpg){ .bigimg }
 
@@ -172,7 +172,7 @@ Beard: ❌❌
 
 ![](../images/msx.jpg){ .bigimg }
 
-## ![](../images/basic.png){ .lineimg } - what did I learn from it?
+## ![](../images/basic.png){ .lineimg } - how did it change my thinking?
 
 ![](../images/thesis.jpg){ .bigimg }
 
@@ -237,7 +237,7 @@ for ($i = 1; $i <= 100; $i++)
 It Just Works™
 :::
 
-## ![](../images/php.svg){ .lineimg } - what did I learn from it?
+## ![](../images/php.svg){ .lineimg } - how did it change my thinking?
 
 ![](../images/documentation.jpg){ .bigimg }
 
@@ -294,6 +294,10 @@ getWordForNum num =
 
 ## ![](../images/elm.svg){ .lineimg } - what makes it interesting?
 
+```haskell
+helloworld = "Hello world
+```
+
 ```sh
 I got to the end of the line without seeing the closing double quote:
 
@@ -315,12 +319,13 @@ syntax like this:
     """
 ```
 
-## ![](../images/elm.svg){ .lineimg } - what did I learn from it?
+## ![](../images/elm.svg){ .lineimg } - how did it change my thinking?
 
-![](../images/fool.jpg){ .bigimg }
+<br/><br/><br/>
+<div style="margin-left:5em; font-family:'FiraCode'; font-size:2em; transform:rotate(122deg);">&lt;div&gt;</div>
 
 ::: notes
-Even I can do front-end
+Centering a div is still hard
 :::
 
 # Lisp
@@ -383,7 +388,7 @@ Minimal syntax, maximal power
     (f (lambda (x) ((Y f) x)))))
 ```
 
-## ![](../images/lisp.png){ .lineimg } - what did I learn from it?
+## ![](../images/lisp.png){ .lineimg } - how did it change my thinking?
 
 ![](../images/arabic-calligraphy.jpg){ .bigimg }
 
@@ -450,13 +455,13 @@ class Module
 end
 ```
 
-## ![](../images/ruby.svg){ .lineimg } - what did I learn from it?
+## ![](../images/ruby.svg){ .lineimg } - how did it change my thinking?
 
-![](../images/successkid.png)
+<br/>
 
-::: supersmall
-[how the community deals with problems](https://gist.github.com/peternixey/1978249)
-:::
+![](../images/sqlite.svg)
+
+in _production_!?
 
 # Delphi
 
@@ -510,7 +515,7 @@ end.
 
 ![](../images/delphi-win3.png){ .bigimg }
 
-## ![](../images/delphi.jpg){ .lineimg } - what did I learn from it?
+## ![](../images/delphi.jpg){ .lineimg } - how did it change my thinking?
 
 ![](../images/hashmap.jpg){ .bigimg }
 
@@ -583,7 +588,7 @@ var popular = from lang in languages
               select lang.Name;
 ```
 
-## ![](../images/csharp.svg){ .lineimg } - what did I learn from it?
+## ![](../images/csharp.svg){ .lineimg } - how did it change my thinking?
 
 ![](../images/market.jpg){ .bigimg }
 
@@ -689,11 +694,11 @@ function pick<O extends object, Keys extends keyof O>
              (object: O, paths: Keys[]): { [K in Keys]: O[K] }
 ```
 
-## ![](../images/typescript.svg){ .lineimg } - what did I learn from it?
+## ![](../images/typescript.svg){ .lineimg } - how did it change my thinking?
 
 ![](../images/no-lsp.png){ .biglogo }
 
-## ![](../images/typescript.svg){ .lineimg } - what did I learn from it?
+## ![](../images/typescript.svg){ .lineimg } - how did it change my thinking?
 
 ![](../images/lsp.png){ .biglogo }
 
@@ -755,7 +760,7 @@ public class FizzBuzz {
 public void waitwhat() { ... }
 ```
 
-## ![](../images/annotationscript.png){ .lineimg } - what did I learn from it?
+## ![](../images/annotationscript.png){ .lineimg } - how did it change my thinking?
 
 ```lisp
 (begin
@@ -770,6 +775,20 @@ public void waitwhat() { ... }
 #
 
 ![](../images/cloud.png){ height=600px }
+
+## Why didn't you talk about
+
+::: small
+|||||||
+|---|-|-|----|-|-|---|
+| | ![](../images/8086.svg){ .lineimg } | Assembler | | ![](../images/kotlin.svg){ .lineimg } | Kotlin | |
+| | ![](../images/c.svg){ .lineimg } | C | | ![](../images/lua.svg){ .lineimg } | Lua | |
+| | ![](../images/cpp.svg){ .lineimg } | C++ | | ![](../images/python.svg){ .lineimg } | Python | |
+| | ![](../images/clojure.svg){ .lineimg } | Clojure | | ![](../images/ruby.svg){ .lineimg } | Rust | |
+| | ![](../images/erlang.svg){ .lineimg } | Erlang | | ![](../images/scala.svg){ .lineimg } | Scala | |
+| | ![](../images/go.svg){ .lineimg } | Go | | ![](../images/turbopascal.png){ .lineimg } | Turbo Pascal | |
+| | ![](../images/javascript.svg){ .lineimg } | JavaScript | | ![](../images/vimscript.svg){ .lineimg } | VimScript | |
+:::
 
 ## Wishlist
 

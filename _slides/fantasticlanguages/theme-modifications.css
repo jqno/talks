@@ -45,11 +45,15 @@
 }
 
 
-/* Lists */
+/* Lists & tables */
 
 .reveal ul {
   margin-left: 5em;
   width: 100%;
+}
+
+.reveal table td {
+  border: none;
 }
 
 
