@@ -8,13 +8,14 @@ controls: "false"
 center: "false"
 ---
 # Fantastic languages
-<!-- markdownlint-disable MD045 -->
 
 ::: subtitle
 and what to learn from them
 :::
 
-![](../images/progbooks.jpg){ .shadow style="height:400px;" }
+![](../images/progbooks.jpg){ .shadow style="height:400px; opacity:0.7;" }
+
+![](../images/voxxed-amsterdam.webp){ style="position:absolute; left:13em; top:8em; width:500px; transform:rotate(30deg);" }
 
 ## Learn a language!
 
@@ -801,7 +802,11 @@ public void waitwhat() { ... }
 
 ![](../images/qr.png)
 
+::: small
 [jqno.nl/talks/fantasticlanguages](https://jqno.nl/talks/fantasticlanguages)
+:::
+
+Please don't forget to rate my talk!
 
 ::: supersmall
 image credits: see website

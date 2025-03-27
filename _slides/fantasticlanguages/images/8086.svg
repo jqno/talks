@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style="background:transparent;">
+  <style>
+    .digital-font {
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
+      fill: #000;
+    }
+  </style>
+  
+  <!-- Number 86 (bottom layer) -->
+  <text x="150" y="250" text-anchor="middle" font-size="140" class="digital-font">86</text>
+  
+  <!-- Number 80 (top layer) -->
+  <text x="150" y="140" text-anchor="middle" font-size="140" class="digital-font">80</text>
+</svg>
