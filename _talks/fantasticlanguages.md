@@ -27,6 +27,11 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 
 ## Deliveries
 
+* **Voxxed Days Amsterdam**
+  <br>
+  _3 April 2025_
+  <br>
+  [[event](https://amsterdam.voxxeddays.com/)] [[slides](https://jqno.nl/talks/slides/fantasticlanguages/2025-04-03-voxxed-days-amsterdam/)]
 * **BrabantJUG**
   <br>
   _6 September 2022_
