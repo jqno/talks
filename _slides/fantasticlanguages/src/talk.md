@@ -480,13 +480,13 @@ in _production_!?
 
 ## ![](../images/delphi.jpg){ .lineimg } - creator
 
-![](../images/anders-hejlsberg.jpg){ .bigimg }
+![](../images/anders-hejlsberg-0.jpg){ .bigimg }
 
 Anders Hejlsberg
 
 ## ![](../images/delphi.jpg){ .lineimg } - creator
 
-![](../images/anders-hejlsberg.jpg){ .bigimg }
+![](../images/anders-hejlsberg-0.jpg){ .bigimg }
 
 Beard: ❌
 
@@ -536,13 +536,13 @@ end.
 
 ## ![](../images/csharp.svg){ .lineimg } - creator
 
-![](../images/anders-hejlsberg.jpg){ .bigimg }
+![](../images/anders-hejlsberg-1.jpg){ .bigimg }
 
 Anders Hejlsberg
 
 ## ![](../images/csharp.svg){ .lineimg } - creator
 
-![](../images/anders-hejlsberg.jpg){ .bigimg }
+![](../images/anders-hejlsberg-1.jpg){ .bigimg }
 
 Beard: ❌
 
@@ -613,13 +613,13 @@ Proprietary tools & libs are OK
 
 ## ![](../images/typescript.svg){ .lineimg } - creator
 
-![](../images/anders-hejlsberg.jpg){ .bigimg }
+![](../images/anders-hejlsberg-2.jpg){ .bigimg }
 
 Anders Hejlsberg
 
 ## ![](../images/typescript.svg){ .lineimg } - creator
 
-![](../images/anders-hejlsberg.jpg){ .bigimg }
+![](../images/anders-hejlsberg-2.jpg){ .bigimg }
 
 Beard: ❌
 

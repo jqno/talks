@@ -51,6 +51,9 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
 ## Image credits
 
 * [anders-hejlsberg](/talks/slides/fantasticlanguages/images/anders-hejlsberg.jpg) - by DBegley - [source](https://commons.wikimedia.org/wiki/File:Anders_Hejlsberg.jpg)
+* [anders-hejlsberg-0](/talks/slides/fantasticlanguages/images/anders-hejlsberg-0.jpg) - JAOO conference 2004 - [source](http://jaoo.dk/jaoo2004/speakers/show_speaker.jsp?oid=37)
+* [anders-hejlsberg-1](/talks/slides/fantasticlanguages/images/anders-hejlsberg-1.jpg) - by DBegley - [source](https://commons.wikimedia.org/wiki/File:Anders_Hejlsberg.jpg)
+* [anders-hejlsberg-2](/talks/slides/fantasticlanguages/images/anders-hejlsberg-2.jpg) - Anders Hejlsberg's GitHub profile (retrieved April 2025) - [source](https://github.com/ahejlsberg)
 * [apple](/talks/slides/fantasticlanguages/images/apple.svg) - official Apple rainbow logo by Rob Janoff - [source](https://commons.m.wikimedia.org/wiki/File:Apple_Computer_Logo_rainbow.svg)
 * [arabic](/talks/slides/fantasticlanguages/images/arabic.svg) - by murraytheb - [source](https://commons.wikimedia.org/wiki/File:Arabic_albayancalligraphy.svg)
 * [arabic-books](/talks/slides/fantasticlanguages/images/arabic-books.jpg) - by Jan Ouwens
