@@ -802,11 +802,7 @@ public void waitwhat() { ... }
 
 ![](../images/qr.png)
 
-::: small
 [jqno.nl/talks/fantasticlanguages](https://jqno.nl/talks/fantasticlanguages)
-:::
-
-Please don't forget to rate my talk!
 
 ::: supersmall
 image credits: see website
