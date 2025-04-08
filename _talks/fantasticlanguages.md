@@ -31,7 +31,7 @@ You can find it [on GitHub](https://github.com/jqno/AnnotationScript)!
   <br>
   _3 April 2025_
   <br>
-  [[event](https://amsterdam.voxxeddays.com/)] [[slides](https://jqno.nl/talks/slides/fantasticlanguages/2025-04-03-voxxed-days-amsterdam/)]
+  [[event](https://amsterdam.voxxeddays.com/)] [[slides](https://jqno.nl/talks/slides/fantasticlanguages/2025-04-03-voxxed-days-amsterdam/)] [[video](https://www.youtube.com/watch?v=HdUMblHOpk4)]
 * **BrabantJUG**
   <br>
   _6 September 2022_
