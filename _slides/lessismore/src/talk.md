@@ -198,6 +198,74 @@ Concept: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem I
 
 # So what can we do!?
 
+## The thing we can't not talk about
+
+![](../images/it.webp){ .bigimg }
+
+::: footer
+Source: AI-generated
+:::
+
+## The thing we can't not talk about
+
+![](../images/it.webp){ .bigimg }
+
+Source: AI-generated
+
+## The thing we can't not talk about
+
+<br/>
+
+Isn't AI _bad_ for the climate?
+
+## The thing we can't not talk about
+
+1 ChatGPT query<br/>_≡_<br/>10 Google queries<br/>_≡_<br/>watch tv 50 seconds<br/>_≡_<br/>drive a car 1.2 meters<br/>_≡_<br/>upload 9 photos to social media
+
+::: footer
+Source: [Andy Masley, Using ChatGPT is not bad for the environment](https://andymasley.substack.com/p/individual-ai-use-is-not-bad-for)
+:::
+
+## The thing we can't not talk about
+
+<br/>
+
+ChatGPT _≡_ 20.000 households
+
+Fortnite _≡_ 400.000 households
+
+YouTube _≡_ 2.000.000 households
+
+::: footer
+Source: [Andy Masley, Using ChatGPT is not bad for the environment - a cheat sheet](https://andymasley.substack.com/p/a-cheat-sheet-for-conversations-about)
+:::
+
+## The thing we can't not talk about
+
+<br/>
+
+We all use energy
+
+We all emit CO₂
+
+<br/>
+
+That's _ok_
+
+## The thing we can't not talk about
+
+Where does your app spend energy _?_
+
+<br/>
+
+- An AI chatbot _?_
+- Unskippable video ads _?_
+- Accepting Bitcoin payments _?_
+
+## The thing we can't not talk about
+
+![](../images/economic-model.webp){ .bigimg }
+
 ## Stop chasing nines
 
 ## Stop chasing nines
