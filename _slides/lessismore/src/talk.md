@@ -78,7 +78,7 @@ Let's talk about something _fun_
 
 &nbsp;
 
-![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ [🦋jqno.nl](https://bsky.app/profile/jqno.nl)
+![](../images/yoink.png){ style="height:1em;margin-top:8px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ [🦋jqno.nl](https://bsky.app/profile/jqno.nl)
 
 ## Personal things
 
@@ -214,7 +214,7 @@ Source: AI-generated
 
 <br/>
 
-Isn't AI _bad_ for the climate?
+Isn't AI _bad_ for the climate? ![](../images/angry-eyes.webp){ style="height:1em;margin-top:0px;" }
 
 ## The thing we can't not talk about
 
