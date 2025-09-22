@@ -252,15 +252,94 @@ That's _ok_
 
 ## The thing we can't not talk about
 
-Where does your app spend energy _?_
+_Where_ does your app spend energy?
 
 <br/>
 
-- An AI chatbot _?_
-- Unskippable video ads _?_
-- Accepting Bitcoin payments _?_
+- An AI chatbot?
+- Unskippable video ads?
+- Accept Bitcoin payments?
+
+## The thing we can't not talk about
+
+_Everything_ has a footprint
+
+::: small
+(Some more than others)
+:::
+
+. . .
+
+<br/>
+
+Use what's _valuable_
+
+_Discard_ the rest
 
 ## So what else can we do?
+
+## So what else can we do?
+
+![](../images/architecture-full.webp){ .bigimg }
+
+::: small
+Reference architecture
+:::
+
+## Simplify infrastructure
+
+## Simplify infrastructure
+
+- `test`
+- `accept`
+- `prod`
+
+::: container
+![](../images/architecture-full.webp){ .stacked-image }
+![](../images/architecture-full.webp){ .stacked-image }
+![](../images/architecture-full.webp){ .stacked-image }
+:::
+
+## Simplify infrastructure
+
+- `test` _?_
+- `accept`
+- `prod`
+
+::: container
+![](../images/architecture-full.webp){ .stacked-image }
+![](../images/architecture-full.webp){ .stacked-image }
+![](../images/architecture-full.webp){ .stacked-image }
+:::
+
+## Simplify infrastructure
+
+- ~~`test`~~
+- `accept`
+- `prod`
+
+::: container
+![](../images/architecture-full.webp){ .stacked-image }
+![](../images/architecture-full.webp){ .stacked-image }
+
+::: diagonal-overlay
+_33%_ reduction!
+:::
+
+:::
+
+## Simplify infrastructure
+
+![](../images/economic-model.webp){ .bigimg }
+
+## Simplify infrastructure
+
+Advanced:
+
+- Pull up at will
+- Tear down at will
+
+_disaster recovery_ testing
 
 ## Stop chasing nines
 
