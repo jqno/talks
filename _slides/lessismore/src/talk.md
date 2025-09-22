@@ -94,16 +94,20 @@ I do _my best_
 
 ## Personal things
 
-Google
+![](../images/google-logo.webp)
+
+::: footer
+Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Google_2015_logo.svg)
+:::
 
 ## Personal things
 
-~~Google~~
+![](../images/google-logo-cross.webp)
 
-![](../images/ecosia.webp){ .bigimg }
+![](../images/ecosia-cropped.webp){ .shadow }
 
 ::: footer
-Source: ecosia.org
+Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Google_2015_logo.svg), [Ecosia](https://www.ecosia.org)
 :::
 
 ## Personal things
@@ -116,22 +120,16 @@ Source: personal archive
 
 ## My place in this
 
-::: superbig
-80s
-:::
+_80s_ / _90s_
 
-## My place in this
+<br/>
 
-::: superbig
-90s
-:::
+![](../images/bill-gates.webp){ .mediumimg }
 
 "640k ought to be enough for everyone"
 
-## My place in this
-
-::: superbig
-2000s
+::: footer
+Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Bill_Gates_in_2002#/media/File:Bill_Gates_-_World_Economic_Forum_Annual_Meeting_New_York_2002.jpg)
 :::
 
 ## My place in this
@@ -160,12 +158,6 @@ Source: personal archive
 They're _fun_!
 :::
 
-## Moore's law
-
-1. Machines got faster
-2. Constraints got thrown out
-3. Software got _slower_!?
-
 # Developers
 
 We have _power_ over things
@@ -177,6 +169,12 @@ many people don't understand
 ::: big
 Let's _use_ that power
 :::
+
+## Moore's law
+
+1. Machines got faster
+2. Constraints got thrown out
+3. Software got _slower_!?
 
 ---
 
@@ -262,9 +260,7 @@ Where does your app spend energy _?_
 - Unskippable video ads _?_
 - Accepting Bitcoin payments _?_
 
-## The thing we can't not talk about
-
-![](../images/economic-model.webp){ .bigimg }
+## So what else can we do?
 
 ## Stop chasing nines
 
@@ -286,13 +282,13 @@ Where does your app spend energy _?_
 
 ## Stop chasing nines
 
-![](../images/rd-doordeweek.webp){ .left .w200 }
+![](../images/rd-doordeweek.webp){ .left .w200 .shadow }
 
-![](../images/rd-zondag.webp){ .right .w200 }
+![](../images/rd-zondag.webp){ .right .w200 .shadow }
 
 <br/><br/>
 
-← Monday
+← Monday to Saturday
 
 <br/>
 
@@ -528,7 +524,7 @@ per _hour_
 
 # Many other things
 
-12 minutes is short!
+16 minutes is short!
 
 # Conclusion
 
