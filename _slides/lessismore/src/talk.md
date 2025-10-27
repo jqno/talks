@@ -68,6 +68,20 @@ Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 202
 Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 2025](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks)
 :::
 
+## IT's contribution
+
+- Datacenters: _±1%_ of global CO₂
+- Datacenters: _±1-1.5%_ of global energy
+- Networking: _±1-1.5%_ of global energy
+
+<br/>
+
+Similar to aviation! ✈️
+
+::: footer
+Source: [IEA. Data Centres and Data Transmission Networks. Retrieved January 2025](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks)
+:::
+
 # Enough doom & gloom
 
 Let's talk about something _fun_
@@ -176,10 +190,32 @@ Let's _use_ that power
 2. Constraints got thrown out
 3. Software got _slower_!?
 
+# So what can we do!?
+
+. . .
+
+Constrain!
+
+. . .
+
+Optimize!
+
+. . .
+
+..._measure_?
+
+## Economic model of green software
+
+![](../images/economic-model.webp){ .bigimg }
+
+::: footer
+Concept: [Holly Cummins. The Vroom Model, or Why Naming is The Hardest Problem In Computer Science. 2023](https://hollycummins.com/the-vroom-model-naming/0)
+:::
+
 ---
 
 ::: big
-The next slide
+That last slide
 
 is the most
 
