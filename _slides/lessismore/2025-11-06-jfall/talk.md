@@ -13,7 +13,7 @@ _reduce_ $ and CO<sub>2</sub>
 
 to _improve_ performance 🚀 and joy 🥳
 
-<br/><br/><br/><br/><br/>
+![](../images/jfall.png)
 
 ::: footer
 Source: personal archive - Iceland
