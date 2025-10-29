@@ -31,6 +31,11 @@ In this talk, I'll explain why emitting CO₂ is a problem, how the IT sector co
 
 ## Deliveries
 
+* **J-Fall**
+  <br>
+  _6 November 2025_
+  <br>
+  [[event](https://jfall.nl)] [[slides](/talks/slides/lessismore/2025-11-06-jfall)]
 * **MiniConf** Episode X
   <br>
   _20 March 2025_

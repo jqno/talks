@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Less is more: reduce $ and CO₂ to improve performance 🚀 and
+joy 🥳</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../../../assets/revealjs-3.8.0/css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="../parallel-highlight.css"/>
+  <link rel="stylesheet" href="../theme-modifications.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../../assets/revealjs-3.8.0/css/print/pdf.css' : '../../../assets/revealjs-3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../../../assets/revealjs-3.8.0/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="less-is-more" class="title-slide slide level1"
+data-background="../images/iceland.jpg">
+<h1 data-background="../images/iceland.jpg">Less is more</h1>
+<p><em>reduce</em> $ and CO<sub>2</sub></p>
+<p>to <em>improve</em> performance 🚀 and joy 🥳</p>
+<p><img data-src="../images/jfall.png" /></p>
+<div class="footer">
+<p>Source: personal archive - Iceland</p>
+</div>
+</section>
+
+<section>
+<section id="the-un-fun-bit" class="title-slide slide level1">
+<h1>The un-fun bit</h1>
+<p><img data-src="../images/climate-change.webp" /></p>
+<div class="footer">
+<p>Source: <a
+href="https://www.pnas.org/doi/full/10.1073/pnas.1809600115">K.D. Burke
+et al. Pliocene and Eocene provide best analogs for near-future
+climates. PNAS, 2018</a></p>
+</div>
+</section>
+<section id="the-costs-in-2050" class="slide level2">
+<h2>The costs in 2050</h2>
+<ul>
+<li><em>$ trillions</em> per year</li>
+<li><em>19% loss</em> to world economy</li>
+</ul>
+<div class="footer">
+<p>Sources:<br/>- <a
+href="https://doi.org/10.1038/s41586-024-07219-0">M. Kotz, A. Levermann
+&amp; L. Wenz. The economic commitment of climate change. Nature 628,
+551–557 (2024)</a><br/>- <a
+href="https://www.weforum.org/stories/2023/10/climate-loss-and-damage-cost-16-million-per-hour/">World
+Economic Forum, 2023</a></p>
+</div>
+</section>
+<section id="its-contribution" class="slide level2">
+<h2>IT’s contribution</h2>
+<p><img data-src="../images/it.webp" class="bigimg" /></p>
+<div class="footer">
+<p>Source: AI-generated</p>
+</div>
+</section>
+<section id="its-contribution-1" class="slide level2">
+<h2>IT’s contribution</h2>
+<ul>
+<li>Datacenters: <em>±1%</em> of global CO₂</li>
+<li>Datacenters: <em>±1-1.5%</em> of global energy</li>
+<li>Networking: <em>±1-1.5%</em> of global energy</li>
+</ul>
+<div class="footer">
+<p>Source: <a
+href="https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks">IEA.
+Data Centres and Data Transmission Networks. Retrieved January
+2025</a></p>
+</div>
+</section>
+<section id="its-contribution-2" class="slide level2">
+<h2>IT’s contribution</h2>
+<ul>
+<li>Datacenters: <em>±1%</em> of global CO₂</li>
+<li>Datacenters: <em>±1-1.5%</em> of global energy</li>
+<li>Networking: <em>±1-1.5%</em> of global energy</li>
+</ul>
+<p><br/></p>
+<p>…and <em>growing</em></p>
+<div class="footer">
+<p>Source: <a
+href="https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks">IEA.
+Data Centres and Data Transmission Networks. Retrieved January
+2025</a></p>
+</div>
+</section>
+<section id="its-contribution-3" class="slide level2">
+<h2>IT’s contribution</h2>
+<ul>
+<li>Datacenters: <em>±1%</em> of global CO₂</li>
+<li>Datacenters: <em>±1-1.5%</em> of global energy</li>
+<li>Networking: <em>±1-1.5%</em> of global energy</li>
+</ul>
+<p><br/></p>
+<p>Similar to aviation! ✈️</p>
+<div class="footer">
+<p>Source: <a
+href="https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks">IEA.
+Data Centres and Data Transmission Networks. Retrieved January
+2025</a></p>
+</div>
+</section></section>
+<section>
+<section id="enough-doom-gloom" class="title-slide slide level1">
+<h1>Enough doom &amp; gloom</h1>
+<p>Let’s talk about something <em>fun</em></p>
+</section>
+<section id="jan-ouwens" class="slide level2">
+<h2>Jan Ouwens</h2>
+<p><img data-src="../images/jan-ouwens.jpg" class="shadow"
+style="height:200px;" /></p>
+<p> </p>
+<p><img data-src="../images/yoink.png"
+style="height:1em;margin-top:8px;" /> │ <a
+href="https://jqno.nl/equalsverifier">EqualsVerifier</a> │ <a
+href="https://jqno.nl">jqno.nl</a> │ <a
+href="https://bsky.app/profile/jqno.nl">🦋jqno.nl</a></p>
+</section>
+<section id="personal-things" class="slide level2">
+<h2>Personal things</h2>
+<p><br/></p>
+<p>I’m not perfect 😢</p>
+<div class="fragment">
+<p><br/></p>
+<p>I do <em>my best</em></p>
+</div>
+</section>
+<section id="personal-things-1" class="slide level2">
+<h2>Personal things</h2>
+<p><img data-src="../images/google-logo.webp" /></p>
+<div class="footer">
+<p>Source: <a
+href="https://commons.wikimedia.org/wiki/File:Google_2015_logo.svg">Wikimedia
+Commons</a></p>
+</div>
+</section>
+<section id="personal-things-2" class="slide level2">
+<h2>Personal things</h2>
+<p><img data-src="../images/google-logo-cross.webp" /></p>
+<p><img data-src="../images/ecosia-cropped.webp" class="shadow" /></p>
+<div class="footer">
+<p>Source: <a
+href="https://commons.wikimedia.org/wiki/File:Google_2015_logo.svg">Wikimedia
+Commons</a>, <a href="https://www.ecosia.org">Ecosia</a></p>
+</div>
+</section>
+<section id="personal-things-3" class="slide level2">
+<h2>Personal things</h2>
+<p><img data-src="../images/phone-repair.webp" class="bigimg" /></p>
+<div class="footer">
+<p>Source: personal archive</p>
+</div>
+</section>
+<section id="my-place-in-this" class="slide level2">
+<h2>My place in this</h2>
+<p><em>80s</em> / <em>90s</em></p>
+<p><br/></p>
+<p><img data-src="../images/bill-gates.webp" class="mediumimg" /></p>
+<p>“640k ought to be enough for everyone”</p>
+<div class="footer">
+<p>Source: <a
+href="https://commons.wikimedia.org/wiki/Category:Bill_Gates_in_2002#/media/File:Bill_Gates_-_World_Economic_Forum_Annual_Meeting_New_York_2002.jpg">Wikimedia
+Commons</a></p>
+</div>
+</section>
+<section id="my-place-in-this-1" class="slide level2">
+<h2>My place in this</h2>
+<div style="position:absolute;top:350px;left:540px;">
+<em>64KB</em> !
+</div>
+<div style="position:absolute;top:50px;left:10px;">
+<video data-autoplay src="../images/game23.webm" style="position:fixed;top:50px;left:0px;"/>
+</div>
+<div class="footer">
+<p>Sources:<br/>- personal archive<br/>- <a
+href="https://commons.wikimedia.org/wiki/File:Nokia_3200_(transparent_bg).png">https://commons.wikimedia.org/wiki/File:Nokia_3200_(transparent_bg).png</a></p>
+</div>
+</section>
+<section id="oulipo" class="slide level2">
+<h2>Oulipo</h2>
+<p><img data-src="../images/oulipo.webp" class="bigimg" /></p>
+<div class="footer">
+<p>Source: personal archive</p>
+</div>
+</section>
+<section id="constraints" class="slide level2">
+<h2>Constraints</h2>
+<div class="big">
+<p>They’re <em>fun</em>!</p>
+</div>
+</section></section>
+<section>
+<section id="developers" class="title-slide slide level1">
+<h1>Developers</h1>
+<p>We have <em>power</em> over things</p>
+<p>many people don’t understand</p>
+</section>
+<section class="slide level2">
+
+<div class="big">
+<p>Let’s <em>use</em> that power</p>
+</div>
+</section>
+<section id="moores-law" class="slide level2">
+<h2>Moore’s law</h2>
+<ol type="1">
+<li>Machines got faster</li>
+<li>Constraints got thrown out</li>
+<li>Software got <em>slower</em>!?</li>
+</ol>
+</section></section>
+<section>
+<section id="so-what-can-we-do" class="title-slide slide level1">
+<h1>So what can we do!?</h1>
+<div class="fragment">
+<p>Constrain!</p>
+</div>
+<div class="fragment">
+<p>Optimize!</p>
+</div>
+<div class="fragment">
+<p>…<em>measure</em>?</p>
+</div>
+</section>
+<section id="economic-model-of-green-software" class="slide level2">
+<h2>Economic model of green software</h2>
+<p><img data-src="../images/economic-model.webp" class="bigimg" /></p>
+<div class="footer">
+<p>Concept: <a
+href="https://hollycummins.com/the-vroom-model-naming/0">Holly Cummins.
+The Vroom Model, or Why Naming is The Hardest Problem In Computer
+Science. 2023</a></p>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="big">
+<p>That last slide</p>
+<p>is the most</p>
+<p>important one</p>
+</div>
+</section>
+<section id="economic-model-of-green-software-1" class="slide level2">
+<h2>Economic model of green software</h2>
+<p><img data-src="../images/economic-model.webp" class="bigimg" /></p>
+<div class="footer">
+<p>Concept: <a
+href="https://hollycummins.com/the-vroom-model-naming/0">Holly Cummins.
+The Vroom Model, or Why Naming is The Hardest Problem In Computer
+Science. 2023</a></p>
+</div>
+</section></section>
+<section>
+<section id="so-what-can-we-do-1" class="title-slide slide level1">
+<h1>So what can we do!?</h1>
+
+</section>
+<section id="the-thing-we-cant-not-talk-about" class="slide level2">
+<h2>The thing we can’t not talk about</h2>
+<p><img data-src="../images/it.webp" class="bigimg" /></p>
+<div class="footer">
+<p>Source: AI-generated</p>
+</div>
+</section>
+<section id="the-thing-we-cant-not-talk-about-1" class="slide level2">
+<h2>The thing we can’t not talk about</h2>
+<p><img data-src="../images/it.webp" class="bigimg" /></p>
+<p>Source: AI-generated</p>
+</section>
+<section id="the-thing-we-cant-not-talk-about-2" class="slide level2">
+<h2>The thing we can’t not talk about</h2>
+<p><br/></p>
+<p>Isn’t AI <em>bad</em> for the climate? <img
+data-src="../images/angry-eyes.webp"
+style="height:1em;margin-top:0px;" /></p>
+</section>
+<section id="the-thing-we-cant-not-talk-about-3" class="slide level2">
+<h2>The thing we can’t not talk about</h2>
+<p>1 ChatGPT query<br/><em>≡</em><br/>10 Google
+queries<br/><em>≡</em><br/>watch tv 50 seconds<br/><em>≡</em><br/>drive
+a car 1.2 meters<br/><em>≡</em><br/>upload 9 photos to social media</p>
+<div class="footer">
+<p>Source: <a
+href="https://andymasley.substack.com/p/individual-ai-use-is-not-bad-for">Andy
+Masley, Using ChatGPT is not bad for the environment</a></p>
+</div>
+</section>
+<section id="the-thing-we-cant-not-talk-about-4" class="slide level2">
+<h2>The thing we can’t not talk about</h2>
+<p><br/></p>
+<p>ChatGPT <em>≡</em> 20.000 households</p>
+<div class="fragment">
+<p>Fortnite <em>≡</em> 400.000 households</p>
+<p>YouTube <em>≡</em> 2.000.000 households</p>
+<div class="footer">
+<p>Source: <a
+href="https://andymasley.substack.com/p/a-cheat-sheet-for-conversations-about">Andy
+Masley, Using ChatGPT is not bad for the environment - a cheat
+sheet</a></p>
+</div>
+</div>
+</section>
+<section id="the-thing-we-cant-not-talk-about-5" class="slide level2">
+<h2>The thing we can’t not talk about</h2>
+<p><br/></p>
+<p>We all use energy</p>
+<p>We all emit CO₂</p>
+<p><br/></p>
+<p>That’s <em>ok</em></p>
+</section>
+<section id="the-thing-we-cant-not-talk-about-6" class="slide level2">
+<h2>The thing we can’t not talk about</h2>
+<p><em>Where</em> does your app spend energy?</p>
+<p><br/></p>
+<ul>
+<li>An AI chatbot?</li>
+<li>Unskippable video ads?</li>
+<li>Accept Bitcoin payments?</li>
+</ul>
+</section>
+<section id="the-thing-we-cant-not-talk-about-7" class="slide level2">
+<h2>The thing we can’t not talk about</h2>
+<p><em>Everything</em> has a footprint</p>
+<div class="small">
+<p>(Some more than others)</p>
+</div>
+<div class="fragment">
+<p><br/></p>
+<p>Use what’s <em>valuable</em></p>
+<p><em>Discard</em> the rest</p>
+</div>
+</section>
+<section id="so-what-else-can-we-do" class="slide level2">
+<h2>So what else can we do?</h2>
+</section>
+<section id="so-what-else-can-we-do-1" class="slide level2">
+<h2>So what else can we do?</h2>
+<p><img data-src="../images/architecture-full.webp"
+class="bigimg" /></p>
+<div class="small">
+<p>Reference architecture</p>
+</div>
+</section>
+<section id="simplify-infrastructure" class="slide level2">
+<h2>Simplify infrastructure</h2>
+</section>
+<section id="simplify-infrastructure-1" class="slide level2">
+<h2>Simplify infrastructure</h2>
+<ul>
+<li><code>test</code></li>
+<li><code>accept</code></li>
+<li><code>prod</code></li>
+</ul>
+<div class="container">
+<p><img data-src="../images/architecture-full.webp"
+class="stacked-image" /> <img
+data-src="../images/architecture-full.webp" class="stacked-image" />
+<img data-src="../images/architecture-full.webp"
+class="stacked-image" /></p>
+</div>
+</section>
+<section id="simplify-infrastructure-2" class="slide level2">
+<h2>Simplify infrastructure</h2>
+<ul>
+<li><code>test</code> <em>?</em></li>
+<li><code>accept</code></li>
+<li><code>prod</code></li>
+</ul>
+<div class="container">
+<p><img data-src="../images/architecture-full.webp"
+class="stacked-image" /> <img
+data-src="../images/architecture-full.webp" class="stacked-image" />
+<img data-src="../images/architecture-full.webp"
+class="stacked-image" /></p>
+</div>
+</section>
+<section id="simplify-infrastructure-3" class="slide level2">
+<h2>Simplify infrastructure</h2>
+<ul>
+<li><del><code>test</code></del></li>
+<li><code>accept</code></li>
+<li><code>prod</code></li>
+</ul>
+<div class="container">
+<p><img data-src="../images/architecture-full.webp"
+class="stacked-image" /> <img
+data-src="../images/architecture-full.webp" class="stacked-image" /></p>
+<div class="diagonal-overlay">
+<p><em>33%</em> reduction!</p>
+</div>
+</div>
+</section>
+<section id="simplify-infrastructure-4" class="slide level2">
+<h2>Simplify infrastructure</h2>
+<p><img data-src="../images/economic-model.webp" class="bigimg" /></p>
+</section>
+<section id="simplify-infrastructure-5" class="slide level2">
+<h2>Simplify infrastructure</h2>
+<p>Advanced: LightSwitchOps</p>
+<ul>
+<li>Pull up at will</li>
+<li>Tear down at will</li>
+</ul>
+<p><em>disaster recovery</em> testing</p>
+</section>
+<section id="stop-chasing-nines" class="slide level2">
+<h2>Stop chasing nines</h2>
+</section>
+<section id="stop-chasing-nines-1" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p>99.9% uptime</p>
+</section>
+<section id="stop-chasing-nines-2" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p>99.99% uptime</p>
+</section>
+<section id="stop-chasing-nines-3" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p>99.999% uptime</p>
+</section>
+<section id="stop-chasing-nines-4" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p>99.999% uptime <em>??</em></p>
+</section>
+<section id="stop-chasing-nines-5" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p><img data-src="../images/rd-doordeweek.webp"
+class="left w200 shadow" /></p>
+<p><img data-src="../images/rd-zondag.webp"
+class="right w200 shadow" /></p>
+<p><br/><br/></p>
+<p>← Monday to Saturday</p>
+<p><br/></p>
+<p>Sunday →</p>
+<div class="footer">
+<p>Source: <a href="https://www.rd.nl">Reformatorisch Dagblad</a></p>
+</div>
+</section>
+<section id="stop-chasing-nines-6" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p><img data-src="../images/bricklink.webp" class="bigimg" /></p>
+<div class="footer">
+<p>Source: <a href="https://www.bricklink.com">Bricklink.com</a></p>
+</div>
+</section>
+<section id="stop-chasing-nines-7" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p><img data-src="../images/bricklink2.webp" class="shadow" /></p>
+<div class="footer">
+<p>Source: <a href="https://www.bricklink.com">Bricklink.com</a></p>
+</div>
+</section>
+<section id="stop-chasing-nines-8" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p><img data-src="../images/architecture-full.webp"
+class="bigimg" /></p>
+</section>
+<section id="stop-chasing-nines-9" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p><img data-src="../images/architecture-nope.webp"
+class="bigimg" /></p>
+</section>
+<section id="stop-chasing-nines-10" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p><img data-src="../images/architecture-simple.webp"
+class="bigimg" /></p>
+</section>
+<section id="stop-chasing-nines-11" class="slide level2">
+<h2>Stop chasing nines</h2>
+<p><img data-src="../images/economic-model.webp" class="bigimg" /></p>
+</section>
+<section id="re-think-your-db" class="slide level2">
+<h2>Re-think your DB</h2>
+</section>
+<section id="re-think-your-db-1" class="slide level2">
+<h2>Re-think your DB</h2>
+<div class="big">
+<p><img data-src="../images/sqlite.svg" style="height:1.4em;" /></p>
+</div>
+</section>
+<section id="re-think-your-db-2" class="slide level2">
+<h2>Re-think your DB</h2>
+<p>SQLite is</p>
+<ul>
+<li>Stable</li>
+<li>Reliable</li>
+<li>Backward-compatible</li>
+<li>Billions(!) of deploys</li>
+</ul>
+</section>
+<section id="re-think-your-db-3" class="slide level2">
+<h2>Re-think your DB</h2>
+<p><br/></p>
+<div class="big">
+<p><img data-src="../images/rails.png" style="height:1.4em;" /> ❤️ <img
+data-src="../images/sqlite.svg" style="height:1.4em;" /></p>
+</div>
+</section>
+<section id="re-think-your-db-4" class="slide level2">
+<h2>Re-think your DB</h2>
+<p><img data-src="../images/architecture-simple.webp"
+class="bigimg" /></p>
+</section>
+<section id="re-think-your-db-5" class="slide level2">
+<h2>Re-think your DB</h2>
+<p><img data-src="../images/architecture-sqlite.webp"
+class="bigimg" /></p>
+</section>
+<section id="re-think-your-db-6" class="slide level2">
+<h2>Re-think your DB</h2>
+<p>Cons:</p>
+<ul>
+<li>Must carefully <em>tweak defaults</em></li>
+<li><em>Only one</em> concurrent write</li>
+<li>Must arrange for <em>backups</em></li>
+</ul>
+</section>
+<section id="re-think-your-db-7" class="slide level2">
+<h2>Re-think your DB</h2>
+<p>Pros:</p>
+<ul>
+<li><em>No</em> DB server</li>
+<li>Simplicity</li>
+</ul>
+</section>
+<section id="re-think-your-db-8" class="slide level2">
+<h2>Re-think your DB</h2>
+<p><img data-src="../images/economic-model.webp" class="bigimg" /></p>
+</section>
+<section id="make-small-docker-images" class="slide level2">
+<h2>Make small Docker images</h2>
+</section>
+<section id="make-small-docker-images-1" class="slide level2">
+<h2>Make small Docker images</h2>
+<ul>
+<li>Need to be <em>stored</em><br/>   ↳ embedded CO₂</li>
+<li>Need to be <em>transmitted</em><br/>   ↳ actual CO₂</li>
+</ul>
+</section>
+<section id="make-small-docker-images-2" class="slide level2">
+<h2>Make small Docker images</h2>
+<pre class="java"><code>public class Main {
+    public static void main(String...args) {
+        System.out.println(&quot;Hello World!&quot;);
+    }
+}</code></pre>
+<p>↓</p>
+<p><img data-src="../images/docker.webp" /></p>
+</section>
+<section id="make-small-docker-images-3" class="slide level2">
+<h2>Make small Docker images</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Tech</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hello world</td>
+<td>512MB</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p>Source: <a href="https://github.com/jqno/minimal-docker">My
+minimal-docker repo</a></p>
+</div>
+</section>
+<section id="make-small-docker-images-4" class="slide level2">
+<h2>Make small Docker images</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Tech</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hello world</td>
+<td>512MB</td>
+</tr>
+<tr class="even">
+<td>Multi-stage</td>
+<td>426MB</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p>Source: <a href="https://github.com/jqno/minimal-docker">My
+minimal-docker repo</a></p>
+</div>
+</section>
+<section id="make-small-docker-images-5" class="slide level2">
+<h2>Make small Docker images</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Tech</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hello world</td>
+<td>512MB</td>
+</tr>
+<tr class="even">
+<td>Multi-stage</td>
+<td>426MB</td>
+</tr>
+<tr class="odd">
+<td>Minimal base</td>
+<td>202MB</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p>Source: <a href="https://github.com/jqno/minimal-docker">My
+minimal-docker repo</a></p>
+</div>
+</section>
+<section id="make-small-docker-images-6" class="slide level2">
+<h2>Make small Docker images</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Tech</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hello world</td>
+<td>512MB</td>
+</tr>
+<tr class="even">
+<td>Multi-stage</td>
+<td>426MB</td>
+</tr>
+<tr class="odd">
+<td>Minimal base</td>
+<td>202MB</td>
+</tr>
+<tr class="even">
+<td>JLink</td>
+<td>115MB</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p>Source: <a href="https://github.com/jqno/minimal-docker">My
+minimal-docker repo</a></p>
+</div>
+</section>
+<section id="make-small-docker-images-7" class="slide level2">
+<h2>Make small Docker images</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Tech</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hello world</td>
+<td>512MB</td>
+</tr>
+<tr class="even">
+<td>Multi-stage</td>
+<td>426MB</td>
+</tr>
+<tr class="odd">
+<td>Minimal base</td>
+<td>202MB</td>
+</tr>
+<tr class="even">
+<td>JLink</td>
+<td>115MB</td>
+</tr>
+<tr class="odd">
+<td>GraalVM</td>
+<td>89MB</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p>Source: <a href="https://github.com/jqno/minimal-docker">My
+minimal-docker repo</a></p>
+</div>
+</section>
+<section id="make-small-docker-images-8" class="slide level2">
+<h2>Make small Docker images</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Tech</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hello world</td>
+<td>512MB</td>
+</tr>
+<tr class="even">
+<td>Multi-stage</td>
+<td>426MB</td>
+</tr>
+<tr class="odd">
+<td>Minimal base</td>
+<td>202MB</td>
+</tr>
+<tr class="even">
+<td>JLink</td>
+<td>115MB</td>
+</tr>
+<tr class="odd">
+<td>GraalVM</td>
+<td>89MB</td>
+</tr>
+<tr class="even">
+<td>Single binary</td>
+<td>16MB</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p>Source: <a href="https://github.com/jqno/minimal-docker">My
+minimal-docker repo</a></p>
+</div>
+</section>
+<section id="make-small-docker-images-9" class="slide level2">
+<h2>Make small Docker images</h2>
+<p><br/></p>
+<p>still…</p>
+<p><span class="big">16MB</span>     &gt;     <span
+class="supersmall"><em>64KB</em></span></p>
+</section>
+<section id="make-small-docker-images-10" class="slide level2">
+<h2>Make small Docker images</h2>
+<p><img data-src="../images/economic-model.webp" class="bigimg" /></p>
+</section>
+<section id="enable-build-caching" class="slide level2">
+<h2>Enable build caching</h2>
+</section>
+<section id="enable-build-caching-1" class="slide level2">
+<h2>Enable build caching</h2>
+<video data-autoplay src="../images/maven.webm" style="height:10em;box-shadow:0px 15px 25px rgba(0,0,0,0.7);"/>
+</section>
+<section id="enable-build-caching-2" class="slide level2">
+<h2>Enable build caching</h2>
+<div class="big">
+<p>Every time</p>
+</div>
+</section>
+<section id="enable-build-caching-3" class="slide level2">
+<h2>Enable build caching</h2>
+<div class="big">
+<p>Many times</p>
+<p>per day</p>
+</div>
+</section>
+<section id="enable-build-caching-4" class="slide level2">
+<h2>Enable build caching</h2>
+<div class="big">
+<p>Many times</p>
+<p>per <em>hour</em></p>
+</div>
+</section>
+<section id="enable-build-caching-5" class="slide level2">
+<h2>Enable build caching</h2>
+<p><img data-src="../images/economic-model.webp" class="bigimg" /></p>
+</section></section>
+<section id="many-other-things" class="title-slide slide level1">
+<h1>Many other things</h1>
+<p>16 minutes is short!</p>
+</section>
+
+<section>
+<section id="conclusion" class="title-slide slide level1">
+<h1>Conclusion</h1>
+<p>That <em>most important</em> slide again</p>
+</section>
+<section id="economic-model-of-green-software-2" class="slide level2">
+<h2>Economic model of green software</h2>
+<p><img data-src="../images/economic-model.webp" class="bigimg" /></p>
+<div class="footer">
+<p>Concept: <a
+href="https://hollycummins.com/the-vroom-model-naming/0">Holly Cummins.
+The Vroom Model, or Why Naming is The Hardest Problem In Computer
+Science. 2023</a></p>
+</div>
+</section>
+<section id="results" class="slide level2">
+<h2>Results</h2>
+<ul>
+<li>🤑 Our bosses</li>
+<li>🚀 Our software</li>
+<li>💚 The world</li>
+<li>🥳 Us</li>
+</ul>
+</section></section>
+<section id="thank-you" class="title-slide slide level1">
+<h1>Thank you</h1>
+<p><img data-src="../images/qr.jpg" class="left w300 shadow" /></p>
+<p><img data-src="../images/economic-model.webp"
+class="right w300 shadow" /></p>
+<p><br/></p>
+<div class="big">
+<p><em>¿ ?</em></p>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script src="../../../assets/revealjs-3.8.0/lib/js/head.min.js"></script>
+  <script src="../../../assets/revealjs-3.8.0/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+        // Display a presentation progress bar
+        progress: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: {39:'next',37:'prev',48:()=>{Reveal.slide(0,0,0)}},
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../../../assets/revealjs-3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../assets/revealjs-3.8.0/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/highlight/highlight.js', async: true },
+          { src: '../../../assets/revealjs-3.8.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
