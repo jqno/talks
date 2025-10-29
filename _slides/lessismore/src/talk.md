@@ -370,7 +370,7 @@ _33%_ reduction!
 
 ## Simplify infrastructure
 
-Advanced:
+Advanced: LightSwitchOps
 
 - Pull up at will
 - Tear down at will
