@@ -266,6 +266,8 @@ Source: [Andy Masley, Using ChatGPT is not bad for the environment](https://andy
 
 ChatGPT _≡_ 20.000 households
 
+. . .
+
 Fortnite _≡_ 400.000 households
 
 YouTube _≡_ 2.000.000 households
