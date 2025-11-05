@@ -172,6 +172,13 @@ Source: personal archive
 They're _fun_!
 :::
 
+## Developers
+
+1. Machines got faster
+2. Constraints got thrown out
+3. ...
+4. Software got _slower_!?
+
 # Developers
 
 We have _power_ over things
@@ -183,12 +190,6 @@ many people don't understand
 ::: big
 Let's _use_ that power
 :::
-
-## Moore's law
-
-1. Machines got faster
-2. Constraints got thrown out
-3. Software got _slower_!?
 
 # So what can we do!?
 
@@ -204,7 +205,7 @@ Optimize!
 
 ..._measure_?
 
-## Economic model of green software
+## Economic model of _green_ software
 
 ![](../images/economic-model.webp){ .bigimg }
 
@@ -222,7 +223,7 @@ is the most
 important one
 :::
 
-## Economic model of green software
+## Economic model of _green_ software
 
 ![](../images/economic-model.webp){ .bigimg }
 
@@ -645,9 +646,15 @@ per _hour_
 
 # Conclusion
 
+Constraints! They're _fun!_
+
+. . .
+
+<br/>
+
 That _most important_ slide again
 
-## Economic model of green software
+## Economic model of _green_ software
 
 ![](../images/economic-model.webp){ .bigimg }
 
