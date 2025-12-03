@@ -29,6 +29,10 @@ Even better: this opens up fun rabbit holes for us to dive into. How small are y
 
 In this talk, I'll explain why emitting CO₂ is a problem, how the IT sector contributes to it (and does other things that are bad for the climate), and share some tips to save you (or, let's be honest: your employer) money and cut down emissions at the same time. Not because you have to, but because it's fun.
 
+## Podcast interview
+
+In December 2025, Frank Delporte of Foojay.io interviewed me about the ideas I present in this talk for the Foojay podcast: [see here](/other/#podcast-appearances) for more information.
+
 ## Deliveries
 
 * **J-Fall**
