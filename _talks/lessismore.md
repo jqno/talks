@@ -39,7 +39,7 @@ In December 2025, Frank Delporte of Foojay.io interviewed me about the ideas I p
   <br>
   _6 November 2025_
   <br>
-  [[event](https://jfall.nl)] [[slides](/talks/slides/lessismore/2025-11-06-jfall)]
+  [[event](https://jfall.nl)] [[slides](/talks/slides/lessismore/2025-11-06-jfall)] [[video](https://www.youtube.com/watch?v=4nVc0Pt1z2w)]
 * **MiniConf** Episode X
   <br>
   _20 March 2025_
