@@ -28,7 +28,7 @@ Rabobank is a Dutch multinational banking and financial services company headqua
   <br>
   _4 May 2016_
   <br>
-  [[event](https://typelevel.org/event/2016-05-summit-oslo/)] [[slides](https://www.dropbox.com/s/gyk3l0v0okd0pli/presentation-dsl.pdf)] [[video](https://www.youtube.com/watch?v=W37Mp3mBYLw)]
+  [[event](https://typelevel.org/event/2016-05-summit-oslo/)] [[slides](https://jqno.nl/website-files/presentation-dsl.pdf)] [[video](https://www.youtube.com/watch?v=W37Mp3mBYLw)]
 * **Appril Festival**
   <br>
   _13 April 2016_
