@@ -189,6 +189,54 @@ Read more at [jqno.nl/climate](https://jqno.nl/climate/)
 ![](../images/lego-tilburg.png){ .bigimg .stacked-image .whitebackground }
 :::
 
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-1.jpg){ .bigimg .stacked-image }
+![](../images/lego-2.jpg){ .bigimg .stacked-image }
+![](../images/lego-3.png){ .bigimg .stacked-image }
+![](../images/lego-4.png){ .bigimg .stacked-image }
+![](../images/lego-5.png){ .bigimg .stacked-image }
+![](../images/lego-6.jpg){ .bigimg .stacked-image }
+![](../images/lego-tilburg.png){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-7.jpg){ .bigimg .stacked-image }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-1.jpg){ .bigimg .stacked-image }
+![](../images/lego-2.jpg){ .bigimg .stacked-image }
+![](../images/lego-3.png){ .bigimg .stacked-image }
+![](../images/lego-4.png){ .bigimg .stacked-image }
+![](../images/lego-5.png){ .bigimg .stacked-image }
+![](../images/lego-6.jpg){ .bigimg .stacked-image }
+![](../images/lego-tilburg.png){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-7.jpg){ .bigimg .stacked-image }
+![](../images/lego-8.jpg){ .bigimg .stacked-image }
+:::
+
+## Weird project: Lego
+
+::: stacked-image-container
+![](../images/lego-paris.webp){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-0.png){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-1.jpg){ .bigimg .stacked-image }
+![](../images/lego-2.jpg){ .bigimg .stacked-image }
+![](../images/lego-3.png){ .bigimg .stacked-image }
+![](../images/lego-4.png){ .bigimg .stacked-image }
+![](../images/lego-5.png){ .bigimg .stacked-image }
+![](../images/lego-6.jpg){ .bigimg .stacked-image }
+![](../images/lego-tilburg.png){ .bigimg .stacked-image .whitebackground }
+![](../images/lego-7.jpg){ .bigimg .stacked-image }
+![](../images/lego-8.jpg){ .bigimg .stacked-image }
+![](../images/lego-9.webp){ .bigimg .stacked-image }
+:::
+
 ## Weird project: Parallel Java
 
 ::: stacked-image-container
@@ -1465,6 +1513,11 @@ Image credits
 | [lego-4](/talks/slides/bullshitlanguage/images/lego-4.png) | Screenshot from [my website](https://jqno.nl/lego/tos/), taken by Jan Ouwens on 2023-09-30 |
 | [lego-5](/talks/slides/bullshitlanguage/images/lego-5.png) | Screenshot from [Rebrickable](https://rebrickable.com/mocs/MOC-159312/jqno/minimalistic-star-trek-the-original-series-cast), taken by Jan Ouwens on 2023-09-29 |
 | [lego-6](/talks/slides/bullshitlanguage/images/lego-6.jpg) | by Jan Ouwens |
+| [lego-7](/talks/slides/bullshitlanguage/images/lego-7.jpg) | by Jan Ouwens |
+| [lego-8](/talks/slides/bullshitlanguage/images/lego-8.jpg) | by Jan Ouwens |
+| [lego-9](/talks/slides/bullshitlanguage/images/lego-9.webp) | Screenshot from Google Ads by Jan Ouwens. Page has since been taken down. |
+| [lego-paris](/talks/slides/bullshitlanguage/images/lego-paris.webp) | Screenshot from [Lego.com](https://www.lego.com/en-nl/product/paris-21044) |
+| [lego-tilburg](/talks/slides/bullshitlanguage/images/lego-tilburg.jpg) | by Jan Ouwens |
 | [lockdown](/talks/slides/bullshitlanguage/images/lockdown.png) | by DreamStudio (Stable Diffusion) with prompt _"fat nerdy person at computer. man cave. messy room with parcels, stacks of books, empty pizza boxes, gadgets"_ |
 | [meta-evaluator](/talks/slides/bullshitlanguage/images/meta-evaluator.png) & [meta-parser](/talks/slides/bullshitlanguage/images/meta-parser.png) & [meta-tokenizer](/talks/slides/bullshitlanguage/images/meta-tokenizer.png) | by Jan Ouwens |
 | [mind-blown-1](/talks/slides/bullshitlanguage/images/mind-blown-1.png) | by DreamStudio (Stable Diffusion) with prompt _"Person looking at a computer screen, very surprised, wide eyes, open mouth"_ |
