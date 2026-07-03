@@ -14,7 +14,7 @@ center: "false"
 ![](../images/annotationscript.png){ style="height:240px;" }
 
 ::: hashtag
-![](../images/twitter.png){ height=30px } #bullshitlanguage
+#bullshitlanguage
 :::
 
 ##
@@ -37,10 +37,10 @@ Demo time!
 
 &nbsp;
 
-![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl) │ ![](../images/twitter.png){ style="height:30px;" } [jqno](https://twitter.com/jqno)
+![](../images/yoink.png){ style="height:40px;margin-top:15px;" } │ [EqualsVerifier](https://jqno.nl/equalsverifier) │ [jqno.nl](https://jqno.nl)
 
 ::: hashtag
-![](../images/twitter.png){ style="height:30px;" } #bullshitlanguage
+#bullshitlanguage
 :::
 
 ## Climate for developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { data-state="page-title" data-background-image="../images/climate-change.png" }
@@ -1470,7 +1470,7 @@ _Any sufficiently complicated C or Fortran program contains an ad hoc, informall
 ![](../images/annotationscript.png){ height=130px }
 
 ::: hashtag
-![](../images/twitter.png){ height=30px } #bullshitlanguage
+#bullshitlanguage
 :::
 
 ## { data-state="end-titles-page" }
