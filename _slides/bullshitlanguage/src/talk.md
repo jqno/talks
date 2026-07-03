@@ -336,11 +336,13 @@ I got excited with this one!
 
 ## Also
 
-No ChatGPT
+No AI-generated code
+
+<br/><br/><br/><br/>
 
 . . .
 
-::: small
+::: supersmall
 Except for the final demo
 :::
 
@@ -599,9 +601,13 @@ recursion is not supported?
 
 ## Y Combinator
 
-No reasonable person can understand this
+<br/>
 
-But it works
+No reasonable person can understand this thing
+
+<br/><br/><br/>
+
+Somehow it works
 
 ##
 
