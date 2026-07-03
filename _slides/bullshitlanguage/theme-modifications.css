@@ -129,6 +129,21 @@ html.page-title .reveal h2 {
   transform: translate(-50%, -50%) rotate(-4deg);
 }
 
+.stacked-image:nth-child(10) {
+  z-index: 10;
+  transform: translate(-50%, -50%) rotate(1deg);
+}
+
+.stacked-image:nth-child(11) {
+  z-index: 11;
+  transform: translate(-50%, -50%) rotate(-5deg);
+}
+
+.stacked-image:nth-child(12) {
+  z-index: 12;
+  transform: translate(-50%, -50%) rotate(3deg);
+}
+
 
 /* Code blocks */
 
