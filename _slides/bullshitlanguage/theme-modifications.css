@@ -208,12 +208,16 @@ html.end-titles-page body {
   overflow: hidden;
   height: 100%;
   position: relative;
-  animation: scroll-up 10s linear 1 forwards;
+  bottom: -60vh;
+}
+
+html.end-titles-page .end-titles {
+  animation: scroll-up 20s linear 1 forwards;
 }
 
 @keyframes scroll-up {
   from {
-    bottom: -90vh;
+    bottom: -60vh;
   }
   to {
     bottom: 110%;
