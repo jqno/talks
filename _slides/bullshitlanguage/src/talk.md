@@ -1363,6 +1363,29 @@ Implement one!
 Brainfuck!
 :::
 
+## Brainfuck
+
+```brainfuck
+Syntax
+
+  >   move 1 cell right
+  <   move 1 cell left
+  +   increment current cell by 1
+  -   decrement current cell by 1
+  .   output current cell
+  ,   input into current cell (not implemented)
+  [   start loop (jump to matching `]` if current cell 0)
+  ]   end loop   (jump to matching `[` if current cell non-0)
+```
+
+```brainfuck
+Hello world:
+
+>+++++++++[<++++++++>-]<.>+++++++[<++++>-]<+.+++++++..+++.>>>+
++++++++[<++++>-]<.>>>++++++++++[<+++++++++>-]<---.<<<<.+++.---
+---.--------.>>+.>++++++++++.
+```
+
 ##
 
 ::: superbig
