@@ -1392,7 +1392,9 @@ Hello world:
 Demo time!
 :::
 
-<br/><br/>
+This is where I used AI code generation... 🙈
+
+<br/>
 
 ::: small
 [brainfuck generator 🔗](https://tnu.me/brainfuck/generator)
