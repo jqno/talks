@@ -1029,8 +1029,9 @@ Use Peter Norvig's second blog post:
 
 ## Tail call optimization
 
-- Add mutability
-- Evaluate procedure calls in-place
+- Turn recursion into loop
+  - Add mutability
+  - Evaluate procedure calls in-place
 
 ## Tail call optimization
 
@@ -1318,6 +1319,25 @@ Y Combinator ???
 ```
 
 Solution: function is parameter to itself
+
+## Recursion issue
+
+```lisp
+(define (sum
+  (lambda (i recurse)
+    (cond
+      ((eq? i 0) 0)
+      (else
+        (+ i (recurse (sub1 i) recurse))))))
+
+  (sum 4 sum))
+```
+
+Solution: ~~function is parameter to itself~~
+
+::: small
+Poor man's specialized but slightly more undestandable Y Combinator
+:::
 
 # { data-state="page-title" data-background-image="../images/background.png" }
 
