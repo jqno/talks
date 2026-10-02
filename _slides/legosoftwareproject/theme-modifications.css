@@ -1,0 +1,124 @@
+/* Fonts */
+
+@import url("../../assets/fonts.css");
+
+
+/* General layout */
+
+html body {
+  background-color: #143A46;
+  color: white;
+}
+
+.reveal {
+  font-family: 'FiraGO';
+}
+
+.reveal h1, .reveal h2 {
+  font-family: 'TilburgsAnsText';
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 50px;
+}
+
+.reveal a {
+  color: white;
+}
+
+.reveal code:not(.hljs),
+.reveal strong a,
+.reveal strong {
+  color: #e4ff1a;
+}
+
+.reveal table th,
+.reveal table td {
+  border: none;
+}
+
+.reveal li > ul {
+  margin-bottom: 50px;
+}
+
+/* Overrides for specific kinds of pages */
+
+.text-shadow,
+html.page-title .reveal,
+html.page-title .reveal h1,
+html.page-title .reveal h2 {
+  color: #DDDDDD;
+}
+
+.text-shadow,
+html.page-title .reveal,
+html.page-title .reveal a,
+html.page-title .reveal h1,
+html.page-title .reveal h2 {
+  text-shadow: 0 1px 0 #666, 0 2px 0 #a6a6a6, 0 3px 0 #555, 0 4px 0 #555, 0 5px 0 #334, 0 6px 1px rgba(0, 0, 0, 0.2), 0 0 5px rgb(0, 0, 0), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Images */
+
+.reveal section img {
+  background: none;
+  border: 0;
+  vertical-align: middle;
+  box-shadow: 0px 0px 0px;
+}
+
+
+/* Code blocks */
+
+.reveal pre code {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+  font-family: "FiraCode";
+  font-size: 0.8em;
+  margin-top: 50px;
+  max-height: 510px;
+  padding: 10px;
+}
+
+
+/* Various */
+
+.twocolumn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.twocolumn > div {
+  flex: 1;
+}
+
+.superbig {
+  font-family: "TilburgsAnsText";
+  font-size: 2.5em;
+  padding-bottom: 50px;
+}
+
+.big {
+  font-family: "TilburgsAnsText";
+  font-size: 2em;
+  padding-bottom: 50px;
+}
+
+.small {
+  font-size: 0.7em;
+}
+
+.supersmall {
+  font-size: 0.3em;
+}
+
+.hashtag {
+  font-family: "TilburgsAnsText";
+  margin: auto;
+  width: 100%;
+}
+
+.doesitwork {
+  font-size: 0.7em;
+  position: fixed;
+  bottom: 25px;
+}
