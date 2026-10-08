@@ -46,10 +46,6 @@ Make a plan
 
 One building at a time; submodels
 
-## Compile
-
-Order real bricks on Bricklink
-
 ## Prototype
 
 Use real bricks (heb ik nog foto's??)
@@ -77,6 +73,14 @@ Hidden 013
 
 "un ouvrage n’est jamais achevé . . . mais abandonné" Paul Valéry
 
+## Compile
+
+Order real bricks on Bricklink
+
+## Build
+
+!!
+
 ## Document
 
 Instructions PDF
@@ -84,12 +88,6 @@ Instructions PDF
 ## Distribute
 
 Rebrickable
-
-## Advertise
-
-Newspaper
-
-(news coverage is usually not good for software projects)
 
 ## Piracy
 
