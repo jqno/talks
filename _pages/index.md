@@ -54,6 +54,11 @@ There is a [YouTube playlist](https://www.youtube.com/playlist?list=PLBVdSBwCyRs
 
 # One-offs
 
+- **Designing a Lego model -or- how my relaxing hobby turned out to be a software project in disguise**
+  <br>
+  _12 November 2026_, J-Fall ignite session
+  <br>
+  [[slides](https://jqno.nl/website-files/presentation-lego-as-a-software-project.pdf)]
 - **How Java annotations work**
   <br>
   _9 November 2023_, J-Fall ignite session
